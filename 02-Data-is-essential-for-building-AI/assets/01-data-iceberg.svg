@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="760" height="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0C2D6B"/>
+    </linearGradient>
+    <linearGradient id="iceTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DDEBFF"/>
+    </linearGradient>
+    <linearGradient id="iceBot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9EC5FF"/>
+      <stop offset="100%" stop-color="#5B93E8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="760" height="520" rx="14" fill="url(#sky)"/>
+  <rect y="170" width="760" height="350" fill="url(#sea)"/>
+
+  <text x="380" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#0F172A">Ma'lumot aysbergi</text>
+  <text x="380" y="66" text-anchor="middle" font-size="14" fill="#334155">Ko'rinadigan qismi kichik — asosiysi suv ostida</text>
+
+  <!-- iceberg above water -->
+  <polygon points="380,96 470,170 290,170" fill="url(#iceTop)" stroke="#93C5FD" stroke-width="2"/>
+  <!-- iceberg below water -->
+  <polygon points="290,170 470,170 560,300 500,430 380,470 250,420 205,300" fill="url(#iceBot)" opacity="0.92" stroke="#BFDBFE" stroke-width="2"/>
+
+  <!-- waterline -->
+  <line x1="0" y1="170" x2="760" y2="170" stroke="#93C5FD" stroke-width="3"/>
+
+  <!-- Above label -->
+  <rect x="512" y="92" width="228" height="66" rx="10" fill="#FFFFFF" opacity="0.95" stroke="#93C5FD"/>
+  <text x="526" y="116" font-size="15" font-weight="700" fill="#1D4ED8">STRUCTURED  ~10–20%</text>
+  <text x="526" y="137" font-size="13" fill="#334155">Excel, SQL, satr va ustunlar</text>
+  <text x="526" y="152" font-size="12" fill="#64748B">Tahlil qilish oson</text>
+
+  <!-- Below label -->
+  <rect x="20" y="196" width="252" height="86" rx="10" fill="#FFFFFF" opacity="0.95" stroke="#93C5FD"/>
+  <text x="34" y="220" font-size="15" font-weight="700" fill="#1D4ED8">UNSTRUCTURED  ~80–90%</text>
+  <text x="34" y="241" font-size="13" fill="#334155">Rasm, video, audio, matn</text>
+  <text x="34" y="258" font-size="13" fill="#334155">Telegram, TikTok, YouTube...</text>
+  <text x="34" y="274" font-size="12" fill="#64748B">Tahlil qilish uchun AI kerak</text>
+
+  <!-- icons inside iceberg -->
+  <g fill="#0C2D6B" font-size="13" font-weight="600" text-anchor="middle">
+    <rect x="318" y="215" width="124" height="30" rx="8" fill="#FFFFFF" opacity="0.85"/>
+    <text x="380" y="235">Rasmlar</text>
+    <rect x="300" y="258" width="160" height="30" rx="8" fill="#FFFFFF" opacity="0.85"/>
+    <text x="380" y="278">Videolar</text>
+    <rect x="308" y="301" width="144" height="30" rx="8" fill="#FFFFFF" opacity="0.85"/>
+    <text x="380" y="321">Audio / ovoz</text>
+    <rect x="312" y="344" width="136" height="30" rx="8" fill="#FFFFFF" opacity="0.85"/>
+    <text x="380" y="364">Matnlar</text>
+    <rect x="322" y="387" width="116" height="30" rx="8" fill="#FFFFFF" opacity="0.85"/>
+    <text x="380" y="407">Emaillar</text>
+  </g>
+
+  <text x="380" y="500" text-anchor="middle" font-size="13" fill="#DBEAFE">Meta va Google aynan suv ostidagi qismdan qiymat chiqarishni o'rgandi</text>
+</svg>

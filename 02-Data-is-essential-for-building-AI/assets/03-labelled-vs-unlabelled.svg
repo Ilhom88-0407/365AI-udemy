@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="900" height="440" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">10 000 ta rasm — ikki xil yo'l</text>
+
+  <!-- LEFT: labelled -->
+  <rect x="26" y="62" width="410" height="352" rx="12" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="2"/>
+  <rect x="26" y="62" width="410" height="40" rx="12" fill="#059669"/>
+  <rect x="26" y="90" width="410" height="12" fill="#059669"/>
+  <text x="231" y="89" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">LABELLED — inson belgilagan</text>
+
+  <g font-size="12">
+    <!-- photo cards with labels -->
+    <rect x="52" y="122" width="84" height="84" rx="8" fill="#FEF3C7" stroke="#FCD34D"/>
+    <text x="94" y="170" text-anchor="middle" font-size="30">🐕</text>
+    <rect x="52" y="206" width="84" height="24" rx="5" fill="#DCFCE7" stroke="#86EFAC"/>
+    <text x="94" y="223" text-anchor="middle" font-weight="700" fill="#166534">dog ✓</text>
+
+    <rect x="150" y="122" width="84" height="84" rx="8" fill="#DBEAFE" stroke="#93C5FD"/>
+    <text x="192" y="170" text-anchor="middle" font-size="30">🐈</text>
+    <rect x="150" y="206" width="84" height="24" rx="5" fill="#FEE2E2" stroke="#FCA5A5"/>
+    <text x="192" y="223" text-anchor="middle" font-weight="700" fill="#991B1B">not a dog</text>
+
+    <rect x="248" y="122" width="84" height="84" rx="8" fill="#FEF3C7" stroke="#FCD34D"/>
+    <text x="290" y="170" text-anchor="middle" font-size="30">🐩</text>
+    <rect x="248" y="206" width="84" height="24" rx="5" fill="#DCFCE7" stroke="#86EFAC"/>
+    <text x="290" y="223" text-anchor="middle" font-weight="700" fill="#166534">dog ✓</text>
+
+    <rect x="346" y="122" width="66" height="84" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="379" y="170" text-anchor="middle" font-size="26" fill="#64748B">…</text>
+    <rect x="346" y="206" width="66" height="24" rx="5" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="379" y="223" text-anchor="middle" fill="#64748B">9 997 ta</text>
+  </g>
+
+  <rect x="52" y="248" width="360" height="30" rx="7" fill="#FEF9C3" stroke="#FDE68A"/>
+  <text x="232" y="268" text-anchor="middle" font-size="13" fill="#854D0E">👤 Inson har bir rasmni qo'lda ko'rib chiqdi</text>
+
+  <g font-size="13" fill="#0F172A">
+    <text x="52" y="304">✅  Model aniqligi <tspan font-weight="700">yuqori</tspan></text>
+    <text x="52" y="328">✅  Real ilovalarda <tspan font-weight="700">ishonchli</tspan></text>
+    <text x="52" y="352">❌  <tspan font-weight="700">Ko'p vaqt</tspan> ketadi</text>
+    <text x="52" y="376">❌  <tspan font-weight="700">Qimmat</tspan> turadi</text>
+  </g>
+  <text x="231" y="402" text-anchor="middle" font-size="12" fill="#64748B">→ Supervised learning uchun asos</text>
+
+  <!-- RIGHT: unlabelled -->
+  <rect x="464" y="62" width="410" height="352" rx="12" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="2"/>
+  <rect x="464" y="62" width="410" height="40" rx="12" fill="#7C3AED"/>
+  <rect x="464" y="90" width="410" height="12" fill="#7C3AED"/>
+  <text x="669" y="89" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">UNLABELLED — belgi yo'q</text>
+
+  <g font-size="12">
+    <rect x="490" y="122" width="84" height="84" rx="8" fill="#FEF3C7" stroke="#FCD34D"/>
+    <text x="532" y="170" text-anchor="middle" font-size="30">🐕</text>
+    <rect x="490" y="206" width="84" height="24" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-dasharray="4 3"/>
+    <text x="532" y="223" text-anchor="middle" fill="#94A3B8">?</text>
+
+    <rect x="588" y="122" width="84" height="84" rx="8" fill="#DBEAFE" stroke="#93C5FD"/>
+    <text x="630" y="170" text-anchor="middle" font-size="30">🐈</text>
+    <rect x="588" y="206" width="84" height="24" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-dasharray="4 3"/>
+    <text x="630" y="223" text-anchor="middle" fill="#94A3B8">?</text>
+
+    <rect x="686" y="122" width="84" height="84" rx="8" fill="#FEF3C7" stroke="#FCD34D"/>
+    <text x="728" y="170" text-anchor="middle" font-size="30">🐩</text>
+    <rect x="686" y="206" width="84" height="24" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-dasharray="4 3"/>
+    <text x="728" y="223" text-anchor="middle" fill="#94A3B8">?</text>
+
+    <rect x="784" y="122" width="66" height="84" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="817" y="170" text-anchor="middle" font-size="26" fill="#64748B">…</text>
+    <rect x="784" y="206" width="66" height="24" rx="5" fill="#F1F5F9" stroke="#CBD5E1" stroke-dasharray="4 3"/>
+    <text x="817" y="223" text-anchor="middle" fill="#94A3B8">?</text>
+  </g>
+
+  <rect x="490" y="248" width="360" height="30" rx="7" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="670" y="268" text-anchor="middle" font-size="13" fill="#5B21B6">🤖 Model o'xshashliklarni o'zi topadi</text>
+
+  <g font-size="13" fill="#0F172A">
+    <text x="490" y="304">✅  <tspan font-weight="700">Tez</tspan> — tayyorgarlik kerak emas</text>
+    <text x="490" y="328">✅  <tspan font-weight="700">Arzon</tspan></text>
+    <text x="490" y="352">❌  Natija <tspan font-weight="700">oldindan noma'lum</tspan></text>
+    <text x="490" y="376">❌  Nazorat qilish qiyinroq</text>
+  </g>
+  <text x="669" y="402" text-anchor="middle" font-size="12" fill="#64748B">→ Unsupervised learning uchun asos</text>
+</svg>

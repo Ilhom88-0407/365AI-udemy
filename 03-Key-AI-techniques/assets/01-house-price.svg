@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" width="940" height="430" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="940" height="430" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ah" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748B"/></marker></defs>
+<text x="470" y="38" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">y = f(x) &#8212; uy narxini bashorat qilish</text>
+<text x="470" y="62" text-anchor="middle" font-size="13.5" fill="#475569">Ko'chmas mulk agenti va data scientist hikoyasi</text>
+<rect x="34" y="90" width="238" height="230" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<rect x="34" y="90" width="238" height="38" rx="12" fill="#2563EB"/>
+<rect x="34" y="116" width="238" height="12" fill="#2563EB"/>
+<text x="153" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">INPUT  &#8212;  X</text>
+<text x="56" y="156" font-size="12.5" fill="#0F172A">&#8226; hajmi (m&#178;)</text>
+<text x="56" y="182" font-size="12.5" fill="#0F172A">&#8226; xonalar soni</text>
+<text x="56" y="208" font-size="12.5" fill="#0F172A">&#8226; yotoqxonalar soni</text>
+<text x="56" y="234" font-size="12.5" fill="#0F172A">&#8226; markazgacha masofa</text>
+<text x="56" y="260" font-size="12.5" fill="#0F172A">&#8226; mahalla</text>
+<text x="56" y="286" font-size="12.5" fill="#0F172A">&#8226; ...va boshqalar</text>
+<text x="153" y="308" text-anchor="middle" font-size="11" fill="#64748B">uyning ma'lum xususiyatlari</text>
+<line x1="278" y1="205" x2="326" y2="205" stroke="#64748B" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="330" y="90" width="278" height="230" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2.5"/>
+<text x="469" y="122" text-anchor="middle" font-size="15" font-weight="700" fill="#6D28D9">ML MODEL  &#8212;  f( )</text>
+<text x="469" y="156" text-anchor="middle" font-size="12.5" fill="#0F172A">Minglab o'tmish tranzaksiyada</text>
+<text x="469" y="176" text-anchor="middle" font-size="12.5" fill="#0F172A">o'rgatilgan</text>
+<rect x="356" y="192" width="226" height="52" rx="9" fill="#FFFFFF" stroke="#DDD6FE"/>
+<text x="469" y="213" text-anchor="middle" font-size="11.5" fill="#5B21B6">X va Y ikkalasi ham MA'LUM edi</text>
+<text x="469" y="233" text-anchor="middle" font-size="11.5" fill="#5B21B6">&#8594; model naqshlarni topdi</text>
+<text x="469" y="268" text-anchor="middle" font-size="11.5" fill="#64748B">"Men bu bilan ML model qura olaman"</text>
+<text x="469" y="288" text-anchor="middle" font-size="11" font-style="italic" fill="#94A3B8">&#8212; data scientist</text>
+<line x1="614" y1="205" x2="662" y2="205" stroke="#64748B" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="666" y="90" width="238" height="230" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+<rect x="666" y="90" width="238" height="38" rx="12" fill="#059669"/>
+<rect x="666" y="116" width="238" height="12" fill="#059669"/>
+<text x="785" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">OUTPUT  &#8212;  Y</text>
+<text x="785" y="192" text-anchor="middle" font-size="34">&#127991;</text>
+<text x="785" y="232" text-anchor="middle" font-size="20" font-weight="700" fill="#047857">$ 248 000</text>
+<text x="785" y="258" text-anchor="middle" font-size="12.5" fill="#0F172A">bashorat qilingan narx</text>
+<text x="785" y="290" text-anchor="middle" font-size="11" fill="#64748B">o'xshash uylar tarixiga</text>
+<text x="785" y="304" text-anchor="middle" font-size="11" fill="#64748B">asoslanib</text>
+<rect x="34" y="340" width="870" height="70" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+<text x="54" y="364" font-size="13" font-weight="700" fill="#0F172A">Biznes natijasi:</text>
+<text x="54" y="386" font-size="12.5" fill="#334155">Foydalanuvchi ilovada savollarga javob beradi &#8594; narx bahosini oladi &#8594; agent uy sotmoqchi bo'lgan odamning kontaktini oladi.</text>
+<text x="54" y="404" font-size="12" font-weight="600" fill="#047857">Natija: ilova agentning biznesi uchun katta muvaffaqiyat bo'ldi.</text>
+</svg>

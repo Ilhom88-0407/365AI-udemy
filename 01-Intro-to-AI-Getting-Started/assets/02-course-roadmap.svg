@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" width="980" height="480" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#CBD5E1"/>
+    </marker>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#DB2777"/>
+    </linearGradient>
+  </defs>
+  <rect width="980" height="480" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="490" y="40" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">Bootcamp yo'l xaritasi</text>
+  <text x="490" y="64" text-anchor="middle" font-size="13.5" fill="#475569">Nolinchi bilimdan to'liq AI ilovagacha — 8 bosqich</text>
+
+  <!-- path line -->
+  <path d="M90,150 L890,150 M90,300 L890,300" stroke="none"/>
+  <rect x="70" y="146" width="840" height="8" rx="4" fill="url(#path)" opacity="0.25"/>
+  <rect x="70" y="296" width="840" height="8" rx="4" fill="url(#path)" opacity="0.25"/>
+
+  <!-- Row 1 -->
+  <g>
+    <circle cx="150" cy="150" r="30" fill="#2563EB"/>
+    <text x="150" y="158" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="150" y="204" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">Intro to AI</text>
+    <text x="150" y="222" text-anchor="middle" font-size="11" fill="#64748B">tarix, ta'riflar,</text>
+    <text x="150" y="236" text-anchor="middle" font-size="11" fill="#64748B">buzzword'lar</text>
+    <rect x="106" y="102" width="88" height="20" rx="10" fill="#DBEAFE"/>
+    <text x="150" y="116" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1D4ED8">← SIZ SHU YERDA</text>
+  </g>
+
+  <g>
+    <circle cx="340" cy="150" r="30" fill="#3B82F6"/>
+    <text x="340" y="158" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="340" y="204" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">Python</text>
+    <text x="340" y="222" text-anchor="middle" font-size="11" fill="#64748B">asoslar, API,</text>
+    <text x="340" y="236" text-anchor="middle" font-size="11" fill="#64748B">web scraping</text>
+  </g>
+
+  <g>
+    <circle cx="530" cy="150" r="30" fill="#6366F1"/>
+    <text x="530" y="158" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="530" y="204" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">NLP</text>
+    <text x="530" y="222" text-anchor="middle" font-size="11" fill="#64748B">matnni qayta ishlash,</text>
+    <text x="530" y="236" text-anchor="middle" font-size="11" fill="#64748B">vektorlashtirish</text>
+  </g>
+
+  <g>
+    <circle cx="720" cy="150" r="30" fill="#7C3AED"/>
+    <text x="720" y="158" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="720" y="204" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">LLM</text>
+    <text x="720" y="222" text-anchor="middle" font-size="11" fill="#64748B">Transformer,</text>
+    <text x="720" y="236" text-anchor="middle" font-size="11" fill="#64748B">attention</text>
+  </g>
+
+  <path d="M868,150 L890,150 L890,230 L70,230 L70,300 L92,300" fill="none" stroke="#CBD5E1" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#ar2)"/>
+
+  <!-- Row 2 -->
+  <g>
+    <circle cx="150" cy="300" r="30" fill="#9333EA"/>
+    <text x="150" y="308" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">5</text>
+    <text x="150" y="354" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">LangChain</text>
+    <text x="150" y="372" text-anchor="middle" font-size="11" fill="#64748B">AI ilovalar</text>
+    <text x="150" y="386" text-anchor="middle" font-size="11" fill="#64748B">yaratish</text>
+  </g>
+
+  <g>
+    <circle cx="340" cy="300" r="30" fill="#A855F7"/>
+    <text x="340" y="308" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">6</text>
+    <text x="340" y="354" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">Vector DB</text>
+    <text x="340" y="372" text-anchor="middle" font-size="11" fill="#64748B">Pinecone,</text>
+    <text x="340" y="386" text-anchor="middle" font-size="11" fill="#64748B">semantik qidiruv</text>
+  </g>
+
+  <g>
+    <circle cx="530" cy="300" r="30" fill="#C026D3"/>
+    <text x="530" y="308" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">7</text>
+    <text x="530" y="354" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">Speech</text>
+    <text x="530" y="372" text-anchor="middle" font-size="11" fill="#64748B">nutq ⇄ matn,</text>
+    <text x="530" y="386" text-anchor="middle" font-size="11" fill="#64748B">Whisper</text>
+  </g>
+
+  <g>
+    <circle cx="720" cy="300" r="34" fill="#DB2777" stroke="#FBCFE8" stroke-width="4"/>
+    <text x="720" y="309" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">8</text>
+    <text x="720" y="358" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">Applied AI</text>
+    <text x="720" y="376" text-anchor="middle" font-size="11" fill="#64748B">yakuniy loyiha:</text>
+    <text x="720" y="390" text-anchor="middle" font-size="11" fill="#64748B">intervyu simulyatori</text>
+  </g>
+
+  <g>
+    <rect x="796" y="266" width="150" height="70" rx="10" fill="#FDF2F8" stroke="#F9A8D4" stroke-width="2"/>
+    <text x="871" y="292" text-anchor="middle" font-size="24">🏁</text>
+    <text x="871" y="316" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9D174D">AI Engineer</text>
+  </g>
+  <line x1="758" y1="300" x2="790" y2="300" stroke="#CBD5E1" stroke-width="2.5" marker-end="url(#ar2)"/>
+
+  <rect x="70" y="422" width="840" height="40" rx="10" fill="#FEF9C3" stroke="#FDE68A"/>
+  <text x="490" y="447" text-anchor="middle" font-size="13" font-weight="600" fill="#854D0E">⚠️ Ma'ruzalarni tashlab ketmang — har bir bosqich oldingisi ustiga quriladi</text>
+</svg>

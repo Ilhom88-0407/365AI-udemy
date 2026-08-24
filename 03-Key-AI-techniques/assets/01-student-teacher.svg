@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" width="940" height="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="940" height="440" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="470" y="38" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">ML modeli — bu o'quvchi, data scientist — ustoz</text>
+  <text x="470" y="62" text-anchor="middle" font-size="13.5" fill="#475569">Ma'ruzadagi asosiy analogiya</text>
+
+  <!-- header row -->
+  <rect x="34" y="86" width="428" height="40" rx="10" fill="#2563EB"/>
+  <text x="248" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">🎓  MAKTAB</text>
+  <rect x="478" y="86" width="428" height="40" rx="10" fill="#7C3AED"/>
+  <text x="692" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">🤖  MACHINE LEARNING</text>
+
+  <!-- rows -->
+  <g font-size="12.5">
+    <rect x="34" y="134" width="428" height="52" rx="9" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <text x="54" y="156" font-weight="700" fill="#1D4ED8">O'quvchi</text>
+    <text x="54" y="176" fill="#334155">bilim oladigan tomon</text>
+    <rect x="478" y="134" width="428" height="52" rx="9" fill="#FFFFFF" stroke="#DDD6FE"/>
+    <text x="498" y="156" font-weight="700" fill="#6D28D9">ML modeli</text>
+    <text x="498" y="176" fill="#334155">o'rganadigan tizim</text>
+
+    <rect x="34" y="192" width="428" height="52" rx="9" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <text x="54" y="214" font-weight="700" fill="#1D4ED8">Ustoz</text>
+    <text x="54" y="234" fill="#334155">o'rgatishni tashkil qiladi</text>
+    <rect x="478" y="192" width="428" height="52" rx="9" fill="#FFFFFF" stroke="#DDD6FE"/>
+    <text x="498" y="214" font-weight="700" fill="#6D28D9">Data scientist</text>
+    <text x="498" y="234" fill="#334155">modelni loyihalaydi va o'rgatadi</text>
+
+    <rect x="34" y="250" width="428" height="52" rx="9" fill="#FFFFFF" stroke="#BFDBFE"/>
+    <text x="54" y="272" font-weight="700" fill="#1D4ED8">O'quv materiallari</text>
+    <text x="54" y="292" fill="#334155">darslik, mashqlar, misollar</text>
+    <rect x="478" y="250" width="428" height="52" rx="9" fill="#FFFFFF" stroke="#DDD6FE"/>
+    <text x="498" y="272" font-weight="700" fill="#6D28D9">Training data</text>
+    <text x="498" y="292" fill="#334155">ko'p miqdordagi sifatli ma'lumot</text>
+
+    <rect x="34" y="308" width="428" height="52" rx="9" fill="#FEF9C3" stroke="#FDE68A"/>
+    <text x="54" y="330" font-weight="700" fill="#854D0E">Yakuniy imtihon</text>
+    <text x="54" y="350" fill="#713F12">notanish savollar, o'tilgan mavzu bo'yicha</text>
+    <rect x="478" y="308" width="428" height="52" rx="9" fill="#FEF9C3" stroke="#FDE68A"/>
+    <text x="498" y="330" font-weight="700" fill="#854D0E">Yangi ma'lumot</text>
+    <text x="498" y="350" fill="#713F12">model hech qachon ko'rmagan ma'lumot</text>
+  </g>
+
+  <rect x="34" y="376" width="872" height="46" rx="10" fill="#0F172A"/>
+  <text x="470" y="396" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">🔑 Ko'p yaxshi ma'lumotga ega ODDIY model — kam ma'lumotli MURAKKAB modeldan yaxshiroq bo'lishi mumkin</text>
+  <text x="470" y="414" text-anchor="middle" font-size="12" fill="#CBD5E1">Xuddi shunday: yaxshi o'qitilgan o'quvchi, iqtidoridan qat'i nazar, yomon o'qitilganidan ustun keladi</text>
+</svg>

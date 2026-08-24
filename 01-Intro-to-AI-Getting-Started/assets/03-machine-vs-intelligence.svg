@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" width="900" height="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="900" height="470" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="450" y="38" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">Mashina ≠ aqlli mashina</text>
+
+  <!-- definition banner -->
+  <rect x="130" y="58" width="640" height="52" rx="10" fill="#0F172A"/>
+  <text x="450" y="80" text-anchor="middle" font-size="12.5" fill="#93C5FD">OKSFORD LUG'ATI · INTELLEKT TA'RIFI</text>
+  <text x="450" y="100" text-anchor="middle" font-size="14" font-weight="600" fill="#FFFFFF">bilim va ko'nikmalarni EGALLASH hamda QO'LLASH qobiliyati</text>
+
+  <!-- LEFT: printing press -->
+  <rect x="34" y="128" width="396" height="300" rx="12" fill="#FFFFFF" stroke="#FCA5A5" stroke-width="2"/>
+  <rect x="34" y="128" width="396" height="42" rx="12" fill="#DC2626"/>
+  <rect x="34" y="156" width="396" height="14" fill="#DC2626"/>
+  <text x="232" y="156" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">MASHINA — lekin aqlli emas</text>
+
+  <text x="232" y="212" text-anchor="middle" font-size="40">🖨️</text>
+  <text x="232" y="240" text-anchor="middle" font-size="15" font-weight="700" fill="#0F172A">Gutenberg bosmaxona dastgohi</text>
+  <text x="232" y="260" text-anchor="middle" font-size="13" fill="#475569">1440-yil</text>
+
+  <rect x="58" y="276" width="348" height="30" rx="7" fill="#FEF9C3" stroke="#FDE68A"/>
+  <text x="232" y="296" text-anchor="middle" font-size="12" fill="#854D0E">🏆 Barcha davrlarning eng ajoyib mashinasi bo'lishi mumkin</text>
+
+  <text x="58" y="332" font-size="12.5" fill="#0F172A">✅  Bilim almashishni tubdan o'zgartirdi</text>
+  <text x="58" y="356" font-size="12.5" fill="#0F172A">✅  Mahsuldorlikni ko'p barobar oshirdi</text>
+  <text x="58" y="384" font-size="12.5" fill="#991B1B">❌  <tspan font-weight="700">Qat'iy parametrlarda</tspan> ishlaydi</text>
+  <text x="58" y="408" font-size="12.5" fill="#991B1B">❌  Bilim <tspan font-weight="700">egallay va qo'llay olmaydi</tspan></text>
+
+  <!-- RIGHT: AI -->
+  <rect x="470" y="128" width="396" height="300" rx="12" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="2"/>
+  <rect x="470" y="128" width="396" height="42" rx="12" fill="#059669"/>
+  <rect x="470" y="156" width="396" height="14" fill="#059669"/>
+  <text x="668" y="156" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">AQLLI MASHINA — maqsad</text>
+
+  <text x="668" y="212" text-anchor="middle" font-size="40">🧠</text>
+  <text x="668" y="240" text-anchor="middle" font-size="15" font-weight="700" fill="#0F172A">Artificial Intelligence</text>
+  <text x="668" y="260" text-anchor="middle" font-size="13" fill="#475569">Asrlar keyin paydo bo'lgan g'oya</text>
+
+  <rect x="494" y="276" width="348" height="30" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+  <text x="668" y="296" text-anchor="middle" font-size="12" fill="#065F46">💡 Ilhom manbai — inson miyasi va tabiiy intellekt</text>
+
+  <text x="494" y="332" font-size="12.5" fill="#0F172A">✅  Kuzatadi va ma'lumotni qayta ishlaydi</text>
+  <text x="494" y="356" font-size="12.5" fill="#0F172A">✅  <tspan font-weight="700">Bilim egallaydi</tspan> (acquire)</text>
+  <text x="494" y="384" font-size="12.5" fill="#0F172A">✅  <tspan font-weight="700">Bilimni qo'llaydi</tspan> (apply)</text>
+  <text x="494" y="408" font-size="12.5" fill="#047857">✅  Kechagidan aqlliroq bo'la oladi</text>
+
+  <text x="450" y="452" text-anchor="middle" font-size="13" fill="#475569">Farq — mashinaning kuchida emas, <tspan font-weight="700" fill="#0F172A">o'rgana olishida</tspan></text>
+</svg>

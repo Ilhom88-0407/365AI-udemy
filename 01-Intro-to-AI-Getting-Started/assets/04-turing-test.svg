@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="820" height="430" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="820" height="430" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="410" y="38" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">Turing testi — "imitation game"</text>
+  <text x="410" y="62" text-anchor="middle" font-size="13.5" fill="#475569">1950 · Alan Turing: savolni falsafiydan amaliyga aylantirgan g'oya</text>
+
+  <!-- interrogator -->
+  <rect x="40" y="150" width="180" height="150" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="130" y="200" text-anchor="middle" font-size="34">🕵️</text>
+  <text x="130" y="230" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">SO'ROQCHI</text>
+  <text x="130" y="250" text-anchor="middle" font-size="11.5" fill="#64748B">inson</text>
+  <text x="130" y="274" text-anchor="middle" font-size="11.5" fill="#1D4ED8">tabiiy tilda savol beradi</text>
+
+  <!-- wall -->
+  <rect x="288" y="96" width="16" height="270" rx="4" fill="#334155"/>
+  <text x="296" y="88" text-anchor="middle" font-size="11.5" font-weight="700" fill="#334155">DEVOR</text>
+  <text x="296" y="384" text-anchor="middle" font-size="10.5" fill="#64748B">ikkalasi ham</text>
+  <text x="296" y="398" text-anchor="middle" font-size="10.5" fill="#64748B">ko'rinmaydi</text>
+
+  <!-- arrows -->
+  <path d="M224,206 L282,206" stroke="#2563EB" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <path d="M224,246 L282,246" stroke="#2563EB" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <path d="M310,150 L370,150" stroke="#64748B" stroke-width="2.2" stroke-dasharray="5 4"/>
+  <path d="M310,300 L370,300" stroke="#64748B" stroke-width="2.2" stroke-dasharray="5 4"/>
+
+  <!-- hidden human -->
+  <rect x="376" y="106" width="200" height="96" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <text x="410" y="152" text-anchor="middle" font-size="28">🙋</text>
+  <text x="500" y="142" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">A — inson</text>
+  <text x="500" y="162" text-anchor="middle" font-size="11" fill="#64748B">yashirin</text>
+
+  <!-- hidden machine -->
+  <rect x="376" y="252" width="200" height="96" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="410" y="298" text-anchor="middle" font-size="28">🤖</text>
+  <text x="500" y="288" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">B — mashina</text>
+  <text x="500" y="308" text-anchor="middle" font-size="11" fill="#64748B">yashirin</text>
+
+  <!-- verdict -->
+  <rect x="612" y="106" width="176" height="118" rx="12" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="2"/>
+  <text x="700" y="132" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">✅ TEST O'TILDI</text>
+  <text x="700" y="158" text-anchor="middle" font-size="11.5" fill="#065F46">So'roqchi mashinani</text>
+  <text x="700" y="175" text-anchor="middle" font-size="11.5" fill="#065F46">insondan ishonchli</text>
+  <text x="700" y="192" text-anchor="middle" font-size="11.5" fill="#065F46">ajrata olmadi</text>
+  <text x="700" y="212" text-anchor="middle" font-size="11" font-weight="600" fill="#047857">→ insonga o'xshash intellekt</text>
+
+  <rect x="612" y="238" width="176" height="110" rx="12" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="700" y="264" text-anchor="middle" font-size="13" font-weight="700" fill="#991B1B">❌ TEST O'TILMADI</text>
+  <text x="700" y="290" text-anchor="middle" font-size="11.5" fill="#7F1D1D">So'roqchi mashinani</text>
+  <text x="700" y="307" text-anchor="middle" font-size="11.5" fill="#7F1D1D">aniq tanidi</text>
+  <text x="700" y="330" text-anchor="middle" font-size="11" font-weight="600" fill="#991B1B">→ hali yetarli emas</text>
+
+  <rect x="40" y="380" width="748" height="0.5" fill="#E2E8F0"/>
+  <text x="410" y="412" text-anchor="middle" font-size="13" fill="#334155">2022-yilda ChatGPT bu testdan o'tdi. <tspan font-weight="700" fill="#0F172A">72 yil kerak bo'ldi.</tspan></text>
+</svg>

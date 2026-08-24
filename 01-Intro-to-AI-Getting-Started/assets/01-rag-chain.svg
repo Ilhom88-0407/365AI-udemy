@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 460" width="1120" height="460" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ag" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="460" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="560" y="38" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">Q&amp;A chatbot qanday ishlaydi — RAG quvuri</text>
+  <text x="560" y="62" text-anchor="middle" font-size="13.5" fill="#475569">Ma'ruza PDF'idan javob beradigan bot: 9 qadam</text>
+
+  <!-- STAGE A: tayyorgarlik (bir marta) -->
+  <rect x="26" y="86" width="486" height="228" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="46" y="112" font-size="14" font-weight="700" fill="#1D4ED8">A · TAYYORGARLIK — bir marta bajariladi</text>
+
+  <rect x="46" y="126" width="98" height="66" rx="9" fill="#FFFFFF" stroke="#2563EB"/>
+  <text x="95" y="150" text-anchor="middle" font-size="20">📄</text>
+  <text x="95" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">1 · LOAD</text>
+  <text x="95" y="185" text-anchor="middle" font-size="10" fill="#64748B">PDF → documents</text>
+
+  <line x1="148" y1="159" x2="176" y2="159" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="180" y="126" width="98" height="66" rx="9" fill="#FFFFFF" stroke="#2563EB"/>
+  <text x="229" y="150" text-anchor="middle" font-size="20">✂️</text>
+  <text x="229" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">2 · SPLIT</text>
+  <text x="229" y="185" text-anchor="middle" font-size="10" fill="#64748B">≤200 token</text>
+
+  <line x1="282" y1="159" x2="310" y2="159" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="314" y="126" width="98" height="66" rx="9" fill="#FFFFFF" stroke="#2563EB"/>
+  <text x="363" y="150" text-anchor="middle" font-size="20">🔢</text>
+  <text x="363" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">3 · EMBED</text>
+  <text x="363" y="185" text-anchor="middle" font-size="10" fill="#64748B">matn → vektor</text>
+
+  <line x1="416" y1="159" x2="444" y2="159" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="42" y="212" width="452" height="86" rx="10" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+  <text x="268" y="238" text-anchor="middle" font-size="13" font-weight="700" fill="#1D4ED8">4 · CHROMA — lokal vektor bazasi</text>
+  <text x="268" y="259" text-anchor="middle" font-size="11.5" fill="#334155">papka: intro-to-ai</text>
+  <text x="268" y="282" text-anchor="middle" font-size="10.5" fill="#64748B">barcha vektorlar shu yerda saqlanadi — keyin qayta ishlatiladi</text>
+  <line x1="470" y1="192" x2="470" y2="208" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+
+  <!-- STAGE B: savol-javob -->
+  <rect x="536" y="86" width="560" height="228" rx="12" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="2"/>
+  <text x="556" y="112" font-size="14" font-weight="700" fill="#6D28D9">B · SAVOL-JAVOB — har safar bajariladi</text>
+
+  <rect x="556" y="126" width="112" height="66" rx="9" fill="#FFFFFF" stroke="#7C3AED"/>
+  <text x="612" y="150" text-anchor="middle" font-size="20">❓</text>
+  <text x="612" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">SAVOL</text>
+  <text x="612" y="185" text-anchor="middle" font-size="9.5" fill="#64748B">"What did Turing do?"</text>
+
+  <line x1="672" y1="159" x2="700" y2="159" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="704" y="126" width="112" height="66" rx="9" fill="#FFFFFF" stroke="#7C3AED"/>
+  <text x="760" y="150" text-anchor="middle" font-size="20">🔍</text>
+  <text x="760" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">5 · RETRIEVER</text>
+  <text x="760" y="185" text-anchor="middle" font-size="9.5" fill="#64748B">eng mos bo'lakni topadi</text>
+
+  <line x1="820" y1="159" x2="848" y2="159" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="852" y="126" width="112" height="66" rx="9" fill="#FFFFFF" stroke="#7C3AED"/>
+  <text x="908" y="150" text-anchor="middle" font-size="20">📝</text>
+  <text x="908" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">6 · PROMPT</text>
+  <text x="908" y="185" text-anchor="middle" font-size="9.5" fill="#64748B">{question} + {context}</text>
+
+  <line x1="968" y1="159" x2="996" y2="159" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+
+  <rect x="972" y="126" width="112" height="66" rx="9" fill="#FFFFFF" stroke="#7C3AED"/>
+  <text x="1028" y="150" text-anchor="middle" font-size="20">🤖</text>
+  <text x="1028" y="170" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">7 · GPT-4o</text>
+  <text x="1028" y="185" text-anchor="middle" font-size="9.5" fill="#64748B">temperature = 0</text>
+
+  <rect x="556" y="212" width="242" height="86" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+  <text x="677" y="238" text-anchor="middle" font-size="13" font-weight="700" fill="#6D28D9">8 · STRING PARSER</text>
+  <text x="677" y="259" text-anchor="middle" font-size="11.5" fill="#334155">natija albatta matn bo'ladi</text>
+  <text x="677" y="282" text-anchor="middle" font-size="10.5" fill="#64748B">stream() → chunk-chunk chiqadi</text>
+
+  <rect x="822" y="212" width="262" height="86" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+  <text x="953" y="238" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">9 · STREAMLIT UI</text>
+  <text x="953" y="259" text-anchor="middle" font-size="11.5" fill="#334155">365 Q&amp;A chatbot</text>
+  <text x="953" y="282" text-anchor="middle" font-size="10.5" fill="#64748B">foydalanuvchi ko'radigan yagona qism</text>
+
+  <line x1="806" y1="255" x2="816" y2="255" stroke="#94A3B8" stroke-width="2" marker-end="url(#ag)"/>
+  <path d="M1028,192 L1028,204 L1090,204 L1090,208" fill="none" stroke="#94A3B8" stroke-width="2"/>
+  <path d="M492,255 L520,255" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#ag)"/>
+  <text x="512" y="245" text-anchor="middle" font-size="9.5" fill="#64748B">vektorlar</text>
+
+  <!-- CHAIN highlight -->
+  <rect x="26" y="330" width="1070" height="52" rx="10" fill="#0F172A"/>
+  <text x="48" y="352" font-size="12.5" font-weight="700" fill="#93C5FD">⛓ CHAIN — LangChain'ning eng muhim konstruksiyasi</text>
+  <text x="48" y="371" font-size="12" font-family="Consolas, monospace" fill="#E2E8F0">{question, context}  →  Prompt Template  →  LLM  →  String Parser  →  matn</text>
+
+  <rect x="26" y="396" width="1070" height="44" rx="10" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="560" y="415" text-anchor="middle" font-size="12.5" font-weight="700" fill="#991B1B">Nega bu muhim? Bot umumiy bilimidan emas, AYNAN MA'RUZA MATNIDAN javob beradi.</text>
+  <text x="560" y="432" text-anchor="middle" font-size="11.5" fill="#7F1D1D">Bu — RAG: Retrieval Augmented Generation</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="am" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="300" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="450" y="38" text-anchor="middle" font-size="21" font-weight="700" fill="#0F172A">02-modul xaritasi: ma'lumotning 4 ta savoli</text>
+
+  <g>
+    <rect x="30" y="76" width="192" height="150" rx="12" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+    <circle cx="60" cy="106" r="16" fill="#2563EB"/>
+    <text x="60" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="88" y="112" font-size="14" font-weight="700" fill="#1E3A8A">TURI</text>
+    <text x="50" y="146" font-size="13" fill="#1E293B">Qanday ko'rinishda?</text>
+    <text x="50" y="172" font-size="12.5" fill="#475569">Structured yoki</text>
+    <text x="50" y="190" font-size="12.5" fill="#475569">unstructured?</text>
+    <text x="50" y="214" font-size="11.5" fill="#2563EB">80–90% strukturasiz</text>
+  </g>
+
+  <line x1="228" y1="151" x2="256" y2="151" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#am)"/>
+
+  <g>
+    <rect x="262" y="76" width="192" height="150" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2"/>
+    <circle cx="292" cy="106" r="16" fill="#7C3AED"/>
+    <text x="292" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="320" y="112" font-size="14" font-weight="700" fill="#5B21B6">MANBASI</text>
+    <text x="282" y="146" font-size="13" fill="#1E293B">Qayerdan olinadi?</text>
+    <text x="282" y="172" font-size="12.5" fill="#475569">Sensor, API, scraping</text>
+    <text x="282" y="190" font-size="12.5" fill="#475569">→ 0 va 1 ga aylanadi</text>
+    <text x="282" y="214" font-size="11.5" fill="#7C3AED">Garbage in, garbage out</text>
+  </g>
+
+  <line x1="460" y1="151" x2="488" y2="151" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#am)"/>
+
+  <g>
+    <rect x="494" y="76" width="192" height="150" rx="12" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+    <circle cx="524" cy="106" r="16" fill="#059669"/>
+    <text x="524" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="552" y="112" font-size="14" font-weight="700" fill="#065F46">TAYYORLIGI</text>
+    <text x="514" y="146" font-size="13" fill="#1E293B">Belgilanganmi?</text>
+    <text x="514" y="172" font-size="12.5" fill="#475569">Labelled yoki</text>
+    <text x="514" y="190" font-size="12.5" fill="#475569">unlabelled?</text>
+    <text x="514" y="214" font-size="11.5" fill="#059669">Narx ⟷ aniqlik</text>
+  </g>
+
+  <line x1="692" y1="151" x2="720" y2="151" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#am)"/>
+
+  <g>
+    <rect x="726" y="76" width="146" height="150" rx="12" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+    <circle cx="756" cy="106" r="16" fill="#EA580C"/>
+    <text x="756" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="784" y="112" font-size="14" font-weight="700" fill="#9A3412">TAVSIFI</text>
+    <text x="746" y="146" font-size="13" fill="#1E293B">Kim, qachon,</text>
+    <text x="746" y="164" font-size="13" fill="#1E293B">qanday?</text>
+    <text x="746" y="190" font-size="12.5" fill="#475569">Metadata</text>
+    <text x="746" y="214" font-size="11.5" fill="#EA580C">Har doim shart</text>
+  </g>
+
+  <rect x="30" y="244" width="842" height="34" rx="9" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="451" y="266" text-anchor="middle" font-size="13" fill="#334155">Bu 4 ta savolga javob bermay turib hech qanday AI model qurib bo'lmaydi</text>
+</svg>

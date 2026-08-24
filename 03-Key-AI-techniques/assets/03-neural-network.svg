@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 560" width="1060" height="560" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1060" height="560" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="530" y="38" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">Artificial Neural Network (ANN) &#8212; MNIST misolida</text>
+<text x="530" y="62" text-anchor="middle" font-size="13.5" fill="#475569">Kenglik (width) = qatordagi tugunlar soni &#183; Chuqurlik (depth) = qatlamlar soni</text>
+<line x1="143" y1="130.0" x2="307" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="130.0" x2="307" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="130.0" x2="307" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="163.3" x2="307" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="163.3" x2="307" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="196.7" x2="307" y2="172.9" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="196.7" x2="307" y2="301.4" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="196.7" x2="307" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="230.0" x2="307" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="230.0" x2="307" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="230.0" x2="307" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="263.3" x2="307" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="263.3" x2="307" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="296.7" x2="307" y2="172.9" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="296.7" x2="307" y2="301.4" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="296.7" x2="307" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="330.0" x2="307" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="330.0" x2="307" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="330.0" x2="307" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="363.3" x2="307" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="363.3" x2="307" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="396.7" x2="307" y2="172.9" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="396.7" x2="307" y2="301.4" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="396.7" x2="307" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="430.0" x2="307" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="430.0" x2="307" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="143" y1="430.0" x2="307" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="130.0" x2="487" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="130.0" x2="487" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="130.0" x2="487" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="172.9" x2="487" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="172.9" x2="487" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="215.7" x2="487" y2="172.9" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="215.7" x2="487" y2="301.4" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="215.7" x2="487" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="258.6" x2="487" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="258.6" x2="487" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="258.6" x2="487" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="301.4" x2="487" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="301.4" x2="487" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="344.3" x2="487" y2="172.9" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="344.3" x2="487" y2="301.4" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="344.3" x2="487" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="387.1" x2="487" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="387.1" x2="487" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="387.1" x2="487" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="430.0" x2="487" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="333" y1="430.0" x2="487" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="130.0" x2="667" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="130.0" x2="667" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="130.0" x2="667" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="172.9" x2="667" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="172.9" x2="667" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="215.7" x2="667" y2="172.9" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="215.7" x2="667" y2="301.4" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="215.7" x2="667" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="258.6" x2="667" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="258.6" x2="667" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="258.6" x2="667" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="301.4" x2="667" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="301.4" x2="667" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="344.3" x2="667" y2="172.9" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="344.3" x2="667" y2="301.4" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="344.3" x2="667" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="387.1" x2="667" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="387.1" x2="667" y2="258.6" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="387.1" x2="667" y2="387.1" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="430.0" x2="667" y2="215.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="513" y1="430.0" x2="667" y2="344.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="130.0" x2="867" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="130.0" x2="867" y2="230.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="130.0" x2="867" y2="330.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="130.0" x2="867" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="172.9" x2="867" y2="196.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="172.9" x2="867" y2="296.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="172.9" x2="867" y2="396.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="215.7" x2="867" y2="163.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="215.7" x2="867" y2="263.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="215.7" x2="867" y2="363.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="258.6" x2="867" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="258.6" x2="867" y2="230.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="258.6" x2="867" y2="330.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="258.6" x2="867" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="301.4" x2="867" y2="196.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="301.4" x2="867" y2="296.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="301.4" x2="867" y2="396.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="344.3" x2="867" y2="163.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="344.3" x2="867" y2="263.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="344.3" x2="867" y2="363.3" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="387.1" x2="867" y2="130.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="387.1" x2="867" y2="230.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="387.1" x2="867" y2="330.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="387.1" x2="867" y2="430.0" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="430.0" x2="867" y2="196.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="430.0" x2="867" y2="296.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<line x1="693" y1="430.0" x2="867" y2="396.7" stroke="#CBD5E1" stroke-width="0.7" opacity="0.55"/>
+<circle cx="130" cy="130.0" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<circle cx="130" cy="163.3" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<circle cx="130" cy="196.7" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<circle cx="130" cy="230.0" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<text x="130" y="263.3" text-anchor="middle" font-size="16" fill="#94A3B8">&#8226;</text>
+<text x="130" y="296.7" text-anchor="middle" font-size="16" fill="#94A3B8">&#8226;</text>
+<circle cx="130" cy="330.0" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<circle cx="130" cy="363.3" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<circle cx="130" cy="396.7" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<circle cx="130" cy="430.0" r="13" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<text x="130" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#2563EB">INPUT</text>
+<text x="130" y="115" text-anchor="middle" font-size="10.5" fill="#64748B">784 node</text>
+<circle cx="320" cy="130.0" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="320" cy="172.9" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="320" cy="215.7" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="320" cy="258.6" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="320" cy="301.4" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="320" cy="344.3" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="320" cy="387.1" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="320" cy="430.0" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<text x="320" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">HIDDEN 1</text>
+<text x="320" y="115" text-anchor="middle" font-size="10.5" fill="#64748B">chekka va egri</text>
+<circle cx="500" cy="130.0" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="500" cy="172.9" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="500" cy="215.7" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="500" cy="258.6" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="500" cy="301.4" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="500" cy="344.3" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="500" cy="387.1" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="500" cy="430.0" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<text x="500" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">HIDDEN 2</text>
+<text x="500" y="115" text-anchor="middle" font-size="10.5" fill="#64748B">halqa va kesishma</text>
+<circle cx="680" cy="130.0" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="680" cy="172.9" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="680" cy="215.7" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="680" cy="258.6" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="680" cy="301.4" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="680" cy="344.3" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="680" cy="387.1" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="680" cy="430.0" r="13" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<text x="680" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#7C3AED">HIDDEN 3</text>
+<text x="680" y="115" text-anchor="middle" font-size="10.5" fill="#64748B">umumiy shakl</text>
+<circle cx="880" cy="130.0" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="163.3" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="196.7" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="230.0" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="263.3" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="296.7" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="330.0" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="363.3" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="396.7" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<circle cx="880" cy="430.0" r="13" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<text x="880" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#059669">OUTPUT</text>
+<text x="880" y="115" text-anchor="middle" font-size="10.5" fill="#64748B">10 raqam</text>
+<text x="908" y="134.0" font-size="10.5" fill="#334155">0</text>
+<text x="908" y="167.3" font-size="10.5" fill="#334155">1</text>
+<text x="908" y="200.7" font-size="10.5" fill="#334155">2</text>
+<text x="908" y="234.0" font-size="10.5" fill="#334155">3</text>
+<text x="908" y="267.3" font-size="10.5" fill="#334155">4</text>
+<text x="908" y="300.7" font-size="10.5" fill="#334155">5</text>
+<text x="908" y="334.0" font-size="10.5" fill="#334155">6</text>
+<text x="908" y="367.3" font-size="10.5" fill="#334155">7</text>
+<text x="908" y="400.7" font-size="10.5" fill="#334155">8</text>
+<text x="908" y="434.0" font-size="10.5" fill="#334155">9</text>
+<rect x="928" y="252" width="112" height="56" rx="9" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+<text x="984" y="276" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">javob: 3</text>
+<text x="984" y="295" text-anchor="middle" font-size="10.5" fill="#065F46">eng yuqori qiymat</text>
+<rect x="30" y="228" width="74" height="74" rx="8" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+<text x="67" y="280" text-anchor="middle" font-size="40" fill="#0F172A">3</text>
+<text x="67" y="318" text-anchor="middle" font-size="10.5" fill="#64748B">28&#215;28 px</text>
+<line x1="108" y1="265" x2="114" y2="265" stroke="#94A3B8" stroke-width="2"/>
+<line x1="130" y1="464" x2="880" y2="464" stroke="#EA580C" stroke-width="2"/>
+<polygon points="880,464 870,459 870,469" fill="#EA580C"/>
+<polygon points="130,464 140,459 140,469" fill="#EA580C"/>
+<text x="505" y="482" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2410C">DEPTH (chuqurlik) = 5 qatlam</text>
+<line x1="100" y1="130" x2="100" y2="430" stroke="#DB2777" stroke-width="2"/>
+<polygon points="100,130 95,140 105,140" fill="#DB2777"/>
+<polygon points="100,430 95,420 105,420" fill="#DB2777"/>
+<text x="92" y="285" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9D174D" transform="rotate(-90 92 285)">WIDTH = 784</text>
+<rect x="30" y="496" width="1000" height="46" rx="10" fill="#0F172A"/>
+<text x="50" y="516" font-size="12" fill="#93C5FD">ACTIVATION &#8212; har bir tugundagi son: 0 = oq, 0 dan katta = oqdan boshqa rang. Qancha katta bo'lsa, shuncha qorong'i.</text>
+<text x="50" y="534" font-size="12" fill="#A7F3D0">O'RGANISH &#8212; minglab takrorlash orqali eng maqbul WEIGHTS (og'irliklar) va BIASES kombinatsiyasini topish.</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="720" height="440" rx="14" fill="#F1F5F9" stroke="#E2E8F0"/>
+  <text x="360" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#0F172A">Streamlit bilan qurilgan interfeys</text>
+
+  <!-- browser chrome -->
+  <rect x="40" y="54" width="640" height="352" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="40" y="54" width="640" height="34" rx="12" fill="#E2E8F0"/>
+  <rect x="40" y="76" width="640" height="12" fill="#E2E8F0"/>
+  <circle cx="62" cy="71" r="5" fill="#EF4444"/>
+  <circle cx="80" cy="71" r="5" fill="#F59E0B"/>
+  <circle cx="98" cy="71" r="5" fill="#22C55E"/>
+  <rect x="118" y="63" width="360" height="17" rx="8" fill="#FFFFFF"/>
+  <text x="130" y="76" font-size="10.5" font-family="Consolas, monospace" fill="#64748B">localhost:8501</text>
+
+  <!-- app content -->
+  <text x="72" y="126" font-size="21" font-weight="700" fill="#0F172A">365 Q&amp;A chatbot</text>
+  <line x1="72" y1="140" x2="648" y2="140" stroke="#E2E8F0" stroke-width="2"/>
+
+  <text x="72" y="168" font-size="12.5" fill="#475569">Savolingizni yozing</text>
+  <rect x="72" y="178" width="576" height="34" rx="7" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <text x="86" y="200" font-size="12.5" fill="#0F172A">What did Alan Turing do?</text>
+
+  <rect x="72" y="224" width="72" height="30" rx="7" fill="#FF4B4B"/>
+  <text x="108" y="244" text-anchor="middle" font-size="12.5" font-weight="600" fill="#FFFFFF">Ask</text>
+
+  <!-- streaming response -->
+  <rect x="72" y="270" width="576" height="112" rx="9" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="88" y="294" font-size="12" fill="#0F172A">Alan Turing 1950-yilda "Mashinalar fikrlay oladimi?"</text>
+  <text x="88" y="313" font-size="12" fill="#0F172A">degan savolni qo'ydi va Turing testini taklif qildi.</text>
+  <text x="88" y="332" font-size="12" fill="#0F172A">U muhokamani falsafiydan amaliy tekislikka</text>
+  <text x="88" y="351" font-size="12" fill="#0F172A">ko'chirdi<tspan fill="#94A3B8">▌</tspan></text>
+  <text x="88" y="372" font-size="10" fill="#059669">● javob real vaqtda oqib kelmoqda (streaming)</text>
+
+  <!-- warning callout -->
+  <rect x="40" y="414" width="640" height="0" fill="none"/>
+  <text x="360" y="428" text-anchor="middle" font-size="12" fill="#475569">Savol bo'sh bo'lsa — "⚠ Please type your question" ogohlantirishi chiqadi</text>
+</svg>

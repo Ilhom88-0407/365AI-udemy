@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="an" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#EA580C"/>
+    </marker>
+  </defs>
+  <rect width="780" height="470" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="390" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Reinforcement learning — Netflix misolida</text>
+  <text x="390" y="62" text-anchor="middle" font-size="13" fill="#475569">Model foydalanuvchi bilan muloqotdan o'rganadi</text>
+
+  <!-- cycle -->
+  <circle cx="390" cy="262" r="140" fill="none" stroke="#FED7AA" stroke-width="2" stroke-dasharray="7 6"/>
+
+  <!-- 1 -->
+  <rect x="278" y="92" width="224" height="62" rx="10" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <text x="390" y="116" text-anchor="middle" font-size="13" font-weight="700" fill="#C2410C">1 · TAVSIYA</text>
+  <text x="390" y="138" text-anchor="middle" font-size="11.5" fill="#334155">Boshida — tasodifiy shoular</text>
+
+  <!-- 2 -->
+  <rect x="536" y="222" width="224" height="80" rx="10" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <text x="648" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#C2410C">2 · MULOQOT</text>
+  <text x="648" y="268" text-anchor="middle" font-size="11.5" fill="#334155">Ko'radi · ro'yxatga qo'shadi</text>
+  <text x="648" y="286" text-anchor="middle" font-size="11.5" fill="#334155">yoki tashlab ketadi</text>
+
+  <!-- 3 -->
+  <rect x="278" y="370" width="224" height="80" rx="10" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <text x="390" y="394" text-anchor="middle" font-size="13" font-weight="700" fill="#C2410C">3 · FIKR-MULOHAZA</text>
+  <text x="390" y="416" text-anchor="middle" font-size="11.5" fill="#047857">✅ To'liq epizod → o'xshashini ber</text>
+  <text x="390" y="434" text-anchor="middle" font-size="11.5" fill="#991B1B">❌ Tashlab ketdi → moslashtir</text>
+
+  <!-- 4 -->
+  <rect x="20" y="222" width="224" height="80" rx="10" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <text x="132" y="246" text-anchor="middle" font-size="13" font-weight="700" fill="#C2410C">4 · TAKOMILLASHUV</text>
+  <text x="132" y="268" text-anchor="middle" font-size="11.5" fill="#334155">Model bashoratlarini</text>
+  <text x="132" y="286" text-anchor="middle" font-size="11.5" fill="#334155">aniqlashtiradi</text>
+
+  <!-- arrows -->
+  <path d="M506,132 C560,146 590,180 610,216" fill="none" stroke="#EA580C" stroke-width="2.5" marker-end="url(#an)"/>
+  <path d="M610,308 C588,344 552,368 508,384" fill="none" stroke="#EA580C" stroke-width="2.5" marker-end="url(#an)"/>
+  <path d="M272,384 C226,368 192,342 172,308" fill="none" stroke="#EA580C" stroke-width="2.5" marker-end="url(#an)"/>
+  <path d="M172,216 C192,180 224,146 272,132" fill="none" stroke="#EA580C" stroke-width="2.5" marker-end="url(#an)"/>
+
+  <!-- center -->
+  <circle cx="390" cy="262" r="74" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+  <text x="390" y="248" text-anchor="middle" font-size="26">🔁</text>
+  <text x="390" y="276" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9A3412">TRIAL</text>
+  <text x="390" y="294" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9A3412">AND ERROR</text>
+
+  <text x="390" y="462" text-anchor="middle" font-size="11.5" fill="#64748B">Vaqt o'tishi bilan model yangi ko'rish naqshlariga doimiy moslashib boradi</text>
+</svg>

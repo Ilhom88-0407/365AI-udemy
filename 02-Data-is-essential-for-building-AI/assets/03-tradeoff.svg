@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="720" height="420" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="360" y="36" text-anchor="middle" font-size="21" font-weight="700" fill="#0F172A">Trade-off: belgilash narxi ⟷ model aniqligi</text>
+
+  <!-- axes -->
+  <line x1="90" y1="330" x2="640" y2="330" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="90" y1="330" x2="90" y2="80" stroke="#94A3B8" stroke-width="2"/>
+  <text x="365" y="366" text-anchor="middle" font-size="13.5" font-weight="600" fill="#334155">Belgilashga sarflangan vaqt va pul →</text>
+  <text x="30" y="205" font-size="13.5" font-weight="600" fill="#334155" transform="rotate(-90 30 205)">Model aniqligi →</text>
+
+  <!-- grid -->
+  <g stroke="#E2E8F0" stroke-width="1">
+    <line x1="90" y1="268" x2="640" y2="268"/>
+    <line x1="90" y1="206" x2="640" y2="206"/>
+    <line x1="90" y1="144" x2="640" y2="144"/>
+    <line x1="90" y1="82" x2="640" y2="82"/>
+  </g>
+
+  <!-- curve: diminishing returns -->
+  <path d="M110,318 C210,318 250,180 360,140 C470,102 540,96 620,92"
+        fill="none" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- points -->
+  <circle cx="128" cy="316" r="8" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="360" cy="140" r="8" fill="#059669" stroke="#FFFFFF" stroke-width="2.5"/>
+  <circle cx="612" cy="93" r="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2.5"/>
+
+  <!-- callout 1 -->
+  <rect x="112" y="228" width="176" height="62" rx="9" fill="#F5F3FF" stroke="#C4B5FD"/>
+  <text x="126" y="250" font-size="12.5" font-weight="700" fill="#5B21B6">0% belgilangan</text>
+  <text x="126" y="268" font-size="11.5" fill="#4C1D95">Tekin va tez,</text>
+  <text x="126" y="283" font-size="11.5" fill="#4C1D95">lekin natija noaniq</text>
+
+  <!-- callout 2 -->
+  <rect x="288" y="164" width="192" height="70" rx="9" fill="#ECFDF5" stroke="#6EE7B7"/>
+  <text x="302" y="186" font-size="12.5" font-weight="700" fill="#065F46">🎯 Oltin o'rta</text>
+  <text x="302" y="204" font-size="11.5" fill="#065F46">Muhim qismi belgilangan —</text>
+  <text x="302" y="219" font-size="11.5" fill="#065F46">aniqlik keskin oshadi</text>
+
+  <!-- callout 3 -->
+  <rect x="446" y="118" width="188" height="66" rx="9" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="460" y="140" font-size="12.5" font-weight="700" fill="#991B1B">100% belgilangan</text>
+  <text x="460" y="158" font-size="11.5" fill="#7F1D1D">Juda qimmat, lekin</text>
+  <text x="460" y="173" font-size="11.5" fill="#7F1D1D">foyda deyarli o'smaydi</text>
+
+  <text x="360" y="396" text-anchor="middle" font-size="12.5" fill="#64748B">Amalda jamoalar chapdan o'ngga qarab harakatlanadi va budjet tugagan joyda to'xtaydi</text>
+</svg>

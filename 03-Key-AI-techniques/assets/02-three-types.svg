@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 500" width="1020" height="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1020" height="500" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="510" y="38" text-anchor="middle" font-size="23" font-weight="700" fill="#0F172A">Machine learning ning uch asosiy turi</text>
+  <text x="510" y="62" text-anchor="middle" font-size="13.5" fill="#475569">Farq — modelga NIMA berilishida</text>
+
+  <!-- SUPERVISED -->
+  <rect x="26" y="86" width="312" height="330" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <rect x="26" y="86" width="312" height="44" rx="12" fill="#059669"/>
+  <rect x="26" y="116" width="312" height="14" fill="#059669"/>
+  <text x="182" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">SUPERVISED</text>
+
+  <rect x="48" y="146" width="268" height="34" rx="8" fill="#ECFDF5" stroke="#A7F3D0"/>
+  <text x="182" y="168" text-anchor="middle" font-size="12.5" font-weight="700" fill="#065F46">✅ BELGILANGAN ma'lumot bor</text>
+
+  <text x="48" y="204" font-size="12.5" font-weight="700" fill="#0F172A">Ikkita asosiy vazifa:</text>
+  <rect x="48" y="212" width="130" height="76" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="113" y="234" text-anchor="middle" font-size="12.5" font-weight="700" fill="#047857">CLASSIFICATION</text>
+  <text x="113" y="253" text-anchor="middle" font-size="11" fill="#334155">toifaga ajratish</text>
+  <text x="113" y="272" text-anchor="middle" font-size="11" fill="#64748B">"dog" / "not dog"</text>
+
+  <rect x="186" y="212" width="130" height="76" rx="8" fill="#F0FDF4" stroke="#BBF7D0"/>
+  <text x="251" y="234" text-anchor="middle" font-size="12.5" font-weight="700" fill="#047857">REGRESSION</text>
+  <text x="251" y="253" text-anchor="middle" font-size="11" fill="#334155">son bashorat qilish</text>
+  <text x="251" y="272" text-anchor="middle" font-size="11" fill="#64748B">uy narxi</text>
+
+  <rect x="48" y="300" width="268" height="52" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="182" y="322" text-anchor="middle" font-size="11.5" fill="#334155">Modelni MA'LUM natijalar bilan</text>
+  <text x="182" y="340" text-anchor="middle" font-size="11.5" fill="#334155">ochiq-oydin o'rgatamiz</text>
+
+  <text x="182" y="378" text-anchor="middle" font-size="12" fill="#64748B">Misol: it/mushuk rasmlari,</text>
+  <text x="182" y="396" text-anchor="middle" font-size="12" fill="#64748B">o'tmish uy sotuvlari</text>
+
+  <!-- UNSUPERVISED -->
+  <rect x="354" y="86" width="312" height="330" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="354" y="86" width="312" height="44" rx="12" fill="#7C3AED"/>
+  <rect x="354" y="116" width="312" height="14" fill="#7C3AED"/>
+  <text x="510" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">UNSUPERVISED</text>
+
+  <rect x="376" y="146" width="268" height="34" rx="8" fill="#F5F3FF" stroke="#DDD6FE"/>
+  <text x="510" y="168" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5B21B6">❌ Belgi YO'Q</text>
+
+  <text x="376" y="204" font-size="12.5" font-weight="700" fill="#0F172A">Model o'zi naqsh qidiradi:</text>
+  <rect x="376" y="212" width="268" height="76" rx="8" fill="#FAF5FF" stroke="#E9D5FF"/>
+  <text x="510" y="234" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6D28D9">CLUSTERING</text>
+  <text x="510" y="253" text-anchor="middle" font-size="11" fill="#334155">guruhlarga ajratadi</text>
+  <text x="510" y="272" text-anchor="middle" font-size="11" fill="#64748B">🐕 guruh · 🐈 guruh · ...</text>
+
+  <rect x="376" y="300" width="268" height="52" rx="8" fill="#FEF2F2" stroke="#FECACA"/>
+  <text x="510" y="322" text-anchor="middle" font-size="11.5" font-weight="600" fill="#991B1B">⚠️ Model guruhga NOM QO'YMAYDI</text>
+  <text x="510" y="340" text-anchor="middle" font-size="11" fill="#7F1D1D">faqat "bular o'xshash" deydi</text>
+
+  <text x="510" y="378" text-anchor="middle" font-size="12" fill="#64748B">Nega kerak: belgilash qimmat;</text>
+  <text x="510" y="396" text-anchor="middle" font-size="12" fill="#64748B">qanday aloqa borligi noma'lum</text>
+
+  <!-- REINFORCEMENT -->
+  <rect x="682" y="86" width="312" height="330" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <rect x="682" y="86" width="312" height="44" rx="12" fill="#EA580C"/>
+  <rect x="682" y="116" width="312" height="14" fill="#EA580C"/>
+  <text x="838" y="116" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">REINFORCEMENT</text>
+
+  <rect x="704" y="146" width="268" height="34" rx="8" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="838" y="168" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9A3412">❌ Belgi yo'q · ✅ QOIDA bor</text>
+
+  <text x="704" y="204" font-size="12.5" font-weight="700" fill="#0F172A">Sinov va xato orqali:</text>
+  <rect x="704" y="212" width="268" height="76" rx="8" fill="#FFFBEB" stroke="#FDE68A"/>
+  <text x="838" y="234" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2410C">TRIAL AND ERROR</text>
+  <text x="838" y="253" text-anchor="middle" font-size="11" fill="#334155">maqsadga erishishni optimallashtiradi</text>
+  <text x="838" y="272" text-anchor="middle" font-size="11" fill="#64748B">biz yaratgan qoidalar doirasida</text>
+
+  <rect x="704" y="300" width="268" height="52" rx="8" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="838" y="322" text-anchor="middle" font-size="11.5" fill="#334155">Supervised bilan umumiy jihati:</text>
+  <text x="838" y="340" text-anchor="middle" font-size="11.5" font-weight="600" fill="#0F172A">kerakli natijani BILAMIZ</text>
+
+  <text x="838" y="378" text-anchor="middle" font-size="12" fill="#64748B">Qo'llanadi: robototexnika,</text>
+  <text x="838" y="396" text-anchor="middle" font-size="12" fill="#64748B">onlayn tavsiya tizimlari (Netflix)</text>
+
+  <!-- bottom -->
+  <rect x="26" y="432" width="968" height="46" rx="10" fill="#0F172A"/>
+  <text x="510" y="452" text-anchor="middle" font-size="13" font-weight="700" fill="#93C5FD">Kalit savol: modelga TO'G'RI JAVOB berilganmi?</text>
+  <text x="510" y="470" text-anchor="middle" font-size="12" fill="#CBD5E1">Ha → supervised  ·  Yo'q → unsupervised  ·  Javob emas, MAQSAD va QOIDA berilgan → reinforcement</text>
+</svg>

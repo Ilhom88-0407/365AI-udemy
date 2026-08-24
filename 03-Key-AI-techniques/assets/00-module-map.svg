@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="900" height="320" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="450" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">03-modul xaritasi — AI ning asosiy texnikalari</text>
+  <text x="450" y="60" text-anchor="middle" font-size="13" fill="#475569">Umumiydan xususiyga: ML nima → qanday turlari bor → eng kuchlisi qanday ishlaydi</text>
+
+  <g>
+    <rect x="30" y="84" width="256" height="164" rx="12" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+    <circle cx="60" cy="114" r="16" fill="#2563EB"/>
+    <text x="60" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="158" y="150" text-anchor="middle" font-size="28">🎓</text>
+    <text x="158" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">Machine Learning</text>
+    <text x="158" y="202" text-anchor="middle" font-size="11.5" fill="#64748B">o'quvchi–ustoz analogiyasi</text>
+    <text x="158" y="220" text-anchor="middle" font-size="11.5" fill="#64748B">uy narxi misoli</text>
+    <text x="158" y="240" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1D4ED8">y = f(x)</text>
+  </g>
+
+  <line x1="292" y1="166" x2="316" y2="166" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#a3)"/>
+
+  <g>
+    <rect x="322" y="84" width="256" height="164" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2"/>
+    <circle cx="352" cy="114" r="16" fill="#7C3AED"/>
+    <text x="352" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="450" y="150" text-anchor="middle" font-size="28">🔀</text>
+    <text x="450" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">Uchta tur</text>
+    <text x="450" y="202" text-anchor="middle" font-size="11.5" fill="#64748B">supervised · unsupervised</text>
+    <text x="450" y="220" text-anchor="middle" font-size="11.5" fill="#64748B">reinforcement</text>
+    <text x="450" y="240" text-anchor="middle" font-size="11.5" font-weight="600" fill="#6D28D9">modelga NIMA beriladi?</text>
+  </g>
+
+  <line x1="584" y1="166" x2="608" y2="166" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#a3)"/>
+
+  <g>
+    <rect x="614" y="84" width="256" height="164" rx="12" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+    <circle cx="644" cy="114" r="16" fill="#059669"/>
+    <text x="644" y="120" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="742" y="150" text-anchor="middle" font-size="28">🧠</text>
+    <text x="742" y="180" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">Deep Learning</text>
+    <text x="742" y="202" text-anchor="middle" font-size="11.5" fill="#64748B">neyron tarmoq (ANN)</text>
+    <text x="742" y="220" text-anchor="middle" font-size="11.5" fill="#64748B">qatlamlar, weights, activation</text>
+    <text x="742" y="240" text-anchor="middle" font-size="11.5" font-weight="600" fill="#047857">bugungi AI ning asosi</text>
+  </g>
+
+  <rect x="30" y="264" width="840" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="450" y="289" text-anchor="middle" font-size="13" fill="#334155">Modul yakunida siz "neyron tarmoq" iborasidan qo'rqmaysiz — uni sxema bilan tushuntira olasiz</text>
+</svg>

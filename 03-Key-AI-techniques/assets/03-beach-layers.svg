@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ab" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+    <linearGradient id="bsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BFDBFE"/><stop offset="100%" stop-color="#FEF3C7"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="380" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="480" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Miyamiz axborotni bosqichma-bosqich qayta ishlaydi</text>
+  <text x="480" y="60" text-anchor="middle" font-size="13" fill="#475569">Ma'ruzadagi plyaj rasmi — deep learning intuitsiyasi</text>
+
+  <!-- panel 1 -->
+  <g>
+    <rect x="26" y="84" width="280" height="180" rx="12" fill="url(#bsky)" stroke="#93C5FD" stroke-width="2"/>
+    <circle cx="70" cy="122" r="18" fill="#FDE047"/>
+    <rect x="26" y="216" width="280" height="48" rx="0" fill="#FCD34D" opacity="0.7"/>
+    <text x="166" y="188" text-anchor="middle" font-size="30">🏖️</text>
+    <text x="166" y="292" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">1 · Xom, keng taassurot</text>
+    <text x="166" y="314" text-anchor="middle" font-size="12" fill="#475569">"Quyoshli kun, gavjum plyaj"</text>
+    <rect x="60" y="328" width="212" height="26" rx="7" fill="#DBEAFE"/>
+    <text x="166" y="346" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1D4ED8">INPUT LAYER</text>
+  </g>
+
+  <line x1="314" y1="174" x2="336" y2="174" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ab)"/>
+
+  <!-- panel 2 -->
+  <g>
+    <rect x="340" y="84" width="280" height="180" rx="12" fill="#FEF9C3" stroke="#FCD34D" stroke-width="2"/>
+    <polygon points="440,220 480,150 520,220" fill="#D97706" opacity="0.6"/>
+    <rect x="430" y="220" width="100" height="14" fill="#B45309" opacity="0.6"/>
+    <text x="404" y="212" text-anchor="middle" font-size="20">🧒</text>
+    <text x="556" y="212" text-anchor="middle" font-size="20">🧒</text>
+    <text x="480" y="292" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">2 · Murakkabroq belgilar</text>
+    <text x="480" y="314" text-anchor="middle" font-size="12" fill="#475569">"Bolalar, ulkan qum qal'asi"</text>
+    <rect x="374" y="328" width="212" height="26" rx="7" fill="#EDE9FE"/>
+    <text x="480" y="346" text-anchor="middle" font-size="11.5" font-weight="600" fill="#6D28D9">HIDDEN LAYERS</text>
+  </g>
+
+  <line x1="628" y1="174" x2="650" y2="174" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ab)"/>
+
+  <!-- panel 3 -->
+  <g>
+    <rect x="654" y="84" width="280" height="180" rx="12" fill="#FEE2E2" stroke="#FCA5A5" stroke-width="2"/>
+    <circle cx="794" cy="164" r="46" fill="#FECACA" stroke="#F87171" stroke-width="2"/>
+    <circle cx="778" cy="152" r="6" fill="#0F172A"/>
+    <circle cx="812" cy="156" r="9" fill="#0F172A"/>
+    <path d="M772,186 Q794,172 818,190" fill="none" stroke="#0F172A" stroke-width="2.5"/>
+    <text x="794" y="234" text-anchor="middle" font-size="11.5" font-style="italic" fill="#991B1B">g'alati, biroz bezovta qiluvchi</text>
+    <text x="794" y="292" text-anchor="middle" font-size="13.5" font-weight="700" fill="#0F172A">3 · Nozik tafsilot</text>
+    <text x="794" y="314" text-anchor="middle" font-size="12" fill="#475569">"AI bu yuzni g'alati chizgan"</text>
+    <rect x="688" y="328" width="212" height="26" rx="7" fill="#D1FAE5"/>
+    <text x="794" y="346" text-anchor="middle" font-size="11.5" font-weight="600" fill="#047857">OUTPUT LAYER</text>
+  </g>
+
+  <text x="480" y="376" text-anchor="middle" font-size="11.5" fill="#64748B">Qancha ko'p vaqt va diqqat — shuncha ko'p tafsilot. Neyron tarmoq ham xuddi shunday ishlaydi.</text>
+</svg>
