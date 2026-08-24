@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="900" height="420" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">NLP ning dastlabki ikki davri</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#475569">Qoidalardan ehtimollarga — 1950-yillardan 1990-yillargacha</text>
+
+  <!-- RULE BASED -->
+  <rect x="24" y="84" width="418" height="266" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <rect x="24" y="84" width="418" height="42" rx="12" fill="#EA580C"/>
+  <rect x="24" y="112" width="418" height="14" fill="#EA580C"/>
+  <text x="233" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">1950-yillar · RULE-BASED</text>
+
+  <text x="233" y="150" text-anchor="middle" font-size="12.5" fill="#334155">Til GRAMMATIKASI qoidalaridan foydalanish</text>
+
+  <rect x="48" y="164" width="370" height="76" rx="9" fill="#FFF7ED" stroke="#FED7AA"/>
+  <text x="64" y="186" font-size="12" font-weight="700" fill="#9A3412">QOIDA:</text>
+  <text x="64" y="206" font-size="11.5" font-family="Consolas, monospace" fill="#7C2D12">"Can you", "Will you", "Is it" bilan boshlangan</text>
+  <text x="64" y="224" font-size="11.5" font-family="Consolas, monospace" fill="#7C2D12">jumlalarni SAVOL deb hisobla</text>
+
+  <rect x="48" y="252" width="370" height="42" rx="9" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="64" y="270" font-size="11.5" fill="#334155">Kirish: <tspan font-family="Consolas, monospace" font-weight="700">"Can you help me?"</tspan></text>
+  <text x="64" y="288" font-size="11.5" fill="#047857">Natija: ✅ savol deb tanildi</text>
+
+  <rect x="48" y="304" width="370" height="30" rx="8" fill="#FEE2E2"/>
+  <text x="233" y="324" text-anchor="middle" font-size="12" font-weight="600" fill="#991B1B">⚠️ Juda oddiy va QO'LDA yoziladi</text>
+
+  <!-- STATISTICAL -->
+  <rect x="458" y="84" width="418" height="266" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="458" y="84" width="418" height="42" rx="12" fill="#2563EB"/>
+  <rect x="458" y="112" width="418" height="14" fill="#2563EB"/>
+  <text x="667" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">1980-90-yillar · STATISTICAL</text>
+
+  <text x="667" y="150" text-anchor="middle" font-size="12.5" fill="#334155">Keng ma'lumot tahlili orqali EHTIMOLLIK</text>
+
+  <rect x="482" y="164" width="370" height="76" rx="9" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <text x="498" y="186" font-size="12" font-weight="700" fill="#1E40AF">VAZIFA: "can" — ot mi, fe'l mi?</text>
+  <text x="498" y="206" font-size="11.5" fill="#1E3A8A">fe'l → qobiliyat ("I can swim")</text>
+  <text x="498" y="224" font-size="11.5" fill="#1E3A8A">ot → idish ("Coca-Cola can")</text>
+
+  <rect x="482" y="252" width="370" height="42" rx="9" fill="#F1F5F9" stroke="#CBD5E1"/>
+  <text x="498" y="270" font-size="11.5" fill="#334155">Yaqinda <tspan font-weight="700">"you"</tspan> yoki <tspan font-weight="700">"I"</tspan> bo'lsa → odatda FE'L</text>
+  <text x="498" y="288" font-size="11.5" fill="#334155">Yaqinda <tspan font-weight="700">"soda"</tspan> bo'lsa → ehtimol OT</text>
+
+  <rect x="482" y="304" width="370" height="30" rx="8" fill="#DCFCE7"/>
+  <text x="667" y="324" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">✅ Bu allaqachon ibtidoiy machine learning</text>
+
+  <rect x="24" y="364" width="852" height="44" rx="10" fill="#0F172A"/>
+  <text x="450" y="382" text-anchor="middle" font-size="12.5" font-weight="700" fill="#93C5FD">Ikkinchi usulda odam qoida yozmaydi — u MISOLLARNI belgilaydi, model qoidani o'zi topadi</text>
+  <text x="450" y="400" text-anchor="middle" font-size="11.5" fill="#CBD5E1">Kontekst tahlili: so'z QAYSI so'zlar bilan birga ishlatilgan?</text>
+</svg>

@@ -12,6 +12,8 @@
 | 01 | [Intro to AI — Getting Started](01-Intro-to-AI-Getting-Started/README.md) | 6 | ✅ Tayyor |
 | 02 | [Ma'lumot — AI ning asosiy ingredienti](02-Data-is-essential-for-building-AI/README.md) | 4 | ✅ Tayyor |
 | 03 | [AI ning asosiy texnikalari](03-Key-AI-techniques/README.md) | 3 | ✅ Tayyor |
+| 04 | [AI ning muhim tarmoqlari](04-Important-AI-branches/README.md) | 4 | ✅ Tayyor |
+| 05 | [Generativ AI ni tushunish](05-Understanding-Generative-AI/README.md) | 10 | ✅ Tayyor |
 
 ---
 
@@ -57,11 +59,40 @@
 
 ---
 
+## 🧭 Modul 04 — AI ning to'rt tarmog'i
+
+**Nimani beradi:** eng shov-shuvli AI va eng ko'p pul ishlaydigan AI — bir xil emasligini tushunish.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Robototexnika](04-Important-AI-branches/01-Robotics.md) |
+| 2 | [Computer Vision](04-Important-AI-branches/02-Computer-vision.md) 💻 |
+| 3 | [An'anaviy ML](04-Important-AI-branches/03-Traditional-ML.md) 💼 |
+| 4 | [Generativ AI](04-Important-AI-branches/04-Generative-AI.md) ⭐ 💻 |
+
+---
+
+## 🧭 Modul 05 — Generativ AI ni tushunish
+
+**Nimani beradi:** ChatGPT ning "tug'ilish guvohnomasi" — 1950-yillardan bugungacha. Kursning eng katta nazariy bo'limi.
+
+| Dars | Mavzu | | Dars | Mavzu |
+|---|---|---|---|---|
+| 1 | [ChatGPT ning ko'tarilishi](05-Understanding-Generative-AI/01-The-rise-of-GenAI-ChatGPT.md) | | 6 | [N-gram → Transformer](05-Understanding-Generative-AI/06-From-Ngrams-to-Transformers.md) ⭐ 💻 |
+| 2 | [Erta NLP](05-Understanding-Generative-AI/02-Early-approaches-to-NLP.md) | | 7 | [LLM qurish bosqichlari](05-Understanding-Generative-AI/07-Phases-in-building-LLMs.md) |
+| 3 | [Zamonaviy NLP](05-Understanding-Generative-AI/03-Recent-NLP-advancements.md) ⭐ 💻 | | 8 | [PE vs RAG vs FT](05-Understanding-Generative-AI/08-Prompt-engineering-vs-Fine-tuning-vs-RAG.md) ⭐ |
+| 4 | [LM dan LLM ga](05-Understanding-Generative-AI/04-From-LM-to-LLM.md) ⭐ | | 9 | [Foundation modellar](05-Understanding-Generative-AI/09-The-importance-of-foundation-models.md) |
+| 5 | [O'qitish samaradorligi](05-Understanding-Generative-AI/05-Efficiency-of-LLM-training.md) 💻 | | 10 | [Buy vs Make](05-Understanding-Generative-AI/10-Buy-vs-Make.md) 💼 |
+
+⭐ = eng muhim · 💻 = Python amaliyoti · 💼 = karyera uchun
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
 
-Modullar bir-biriga tayanadi. 02-modul 01-moduldagi "ikkita ingredient" g'oyasiga tayanadi.
+Modullar bir-biriga tayanadi. Masalan, 05-modul 01-moduldagi Transformer, 02-moduldagi labelled data va 03-moduldagi weights tushunchalariga tayanadi.
 
 ### 2. Topshiriqlarni **bajaring**, o'qib qo'yaqolmang
 
@@ -110,14 +141,22 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── README.md
 │   ├── 01..04-*.md                    ← 4 ta dars
 │   └── assets/                        ← 8 ta SVG grafika
-└── 03-Key-AI-techniques/
+├── 03-Key-AI-techniques/
+│   ├── README.md
+│   ├── 01..03-*.md                    ← 3 ta dars
+│   └── assets/                        ← 8 ta SVG grafika
+├── 04-Important-AI-branches/
+│   ├── README.md
+│   ├── 01..04-*.md                    ← 4 ta dars
+│   └── assets/                        ← 6 ta SVG grafika
+└── 05-Understanding-Generative-AI/
     ├── README.md
-    ├── 01..03-*.md                    ← 3 ta dars
-    └── assets/                        ← 8 ta SVG grafika
+    ├── 01..10-*.md                    ← 10 ta dars
+    └── assets/                        ← 11 ta SVG grafika
 ```
 
 ---
 
 ## ⏭ Keyingi modullar
 
-Manba kursda "Intro to AI" bo'yicha yana 6 ta modul bor (04–09), so'ngra Python, NLP, LLM, LangChain, Vector DB, Speech Recognition va Applied AI modullari.
+Manba kursda "Intro to AI" bo'yicha yana 4 ta modul bor (06–09), so'ngra Python, NLP, LLM, LangChain, Vector DB, Speech Recognition va Applied AI modullari.

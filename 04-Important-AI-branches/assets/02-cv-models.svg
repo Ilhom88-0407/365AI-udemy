@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" width="980" height="480" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="980" height="480" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="490" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Computer Vision — 4 ta model oilasi</text>
+  <text x="490" y="58" text-anchor="middle" font-size="13" fill="#475569">"Agar AI — miya bo'lsa, computer vision — ko'zlar"</text>
+
+  <!-- CNN -->
+  <rect x="24" y="80" width="466" height="200" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="24" y="80" width="466" height="40" rx="12" fill="#2563EB"/>
+  <rect x="24" y="106" width="466" height="14" fill="#2563EB"/>
+  <text x="257" y="107" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">1 · CNN — Convolutional Neural Networks</text>
+  <rect x="44" y="132" width="426" height="26" rx="7" fill="#DBEAFE"/>
+  <text x="257" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#1D4ED8">Computer vision uchun FUNDAMENTAL</text>
+
+  <text x="44" y="180" font-size="12" fill="#0F172A">Nima uchun ular kerak bo'ldi:</text>
+  <text x="60" y="200" font-size="11.5" fill="#475569">Oddiy neyron tarmoqlar rasmlar bilan qiynalardi —</text>
+  <text x="60" y="217" font-size="11.5" fill="#475569">juda ko'p parametr talab qilinardi.</text>
+  <text x="44" y="242" font-size="12" font-weight="700" fill="#1D4ED8">Kuchli tomoni: spatial hierarchies</text>
+  <text x="60" y="262" font-size="11.5" fill="#475569">= rasmdagi elementlarni MUHIMLIGI va CHUQURLIGI bo'yicha tartiblash</text>
+
+  <!-- spatial hierarchy illustration -->
+  <rect x="512" y="80" width="444" height="200" rx="12" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="734" y="106" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1D4ED8">Spatial hierarchy oddiy tilda</text>
+
+  <rect x="536" y="120" width="396" height="110" rx="8" fill="#EFF6FF" stroke="#BFDBFE"/>
+  <ellipse cx="880" cy="146" rx="26" ry="14" fill="#CBD5E1"/>
+  <text x="880" y="150" text-anchor="middle" font-size="9" fill="#475569">fon</text>
+  <rect x="700" y="160" width="70" height="46" rx="6" fill="#94A3B8"/>
+  <text x="735" y="188" text-anchor="middle" font-size="10" fill="#FFFFFF">o'rta</text>
+  <rect x="556" y="140" width="110" height="80" rx="8" fill="#2563EB"/>
+  <text x="611" y="186" text-anchor="middle" font-size="12" font-weight="700" fill="#FFFFFF">OLD PLAN</text>
+
+  <text x="536" y="252" font-size="11.5" fill="#475569">• Kattaroq obyektlar yaqinroq va muhimroq ko'rinadi</text>
+  <text x="536" y="270" font-size="11.5" fill="#475569">• Ustma-ust tushganda — oldingisi yaqinroq</text>
+
+  <!-- Other three -->
+  <rect x="24" y="294" width="300" height="128" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+  <text x="174" y="320" text-anchor="middle" font-size="14" font-weight="700" fill="#6D28D9">2 · Transformers</text>
+  <text x="174" y="348" text-anchor="middle" font-size="11.5" fill="#334155">Ba'zi hollarda transformer</text>
+  <text x="174" y="366" text-anchor="middle" font-size="11.5" fill="#334155">arxitekturasi rasmlarga</text>
+  <text x="174" y="384" text-anchor="middle" font-size="11.5" fill="#334155">qo'llaniladi</text>
+  <text x="174" y="408" text-anchor="middle" font-size="11" font-style="italic" fill="#64748B">generativ AI da asosiy mavzu</text>
+
+  <rect x="340" y="294" width="300" height="128" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2"/>
+  <text x="490" y="320" text-anchor="middle" font-size="14" font-weight="700" fill="#C2410C">3 · GAN</text>
+  <text x="490" y="342" text-anchor="middle" font-size="11" fill="#64748B">Generative Adversarial Networks</text>
+  <text x="490" y="368" text-anchor="middle" font-size="11.5" fill="#334155">Asosan HAYOTIY rasmlar</text>
+  <text x="490" y="386" text-anchor="middle" font-size="11.5" fill="#334155">yaratadi</text>
+  <text x="490" y="410" text-anchor="middle" font-size="11" font-style="italic" fill="#64748B">2014-yilda taqdim etilgan</text>
+
+  <rect x="656" y="294" width="300" height="128" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+  <text x="806" y="320" text-anchor="middle" font-size="14" font-weight="700" fill="#047857">4 · Maxsus tarmoqlar</text>
+  <text x="806" y="346" text-anchor="middle" font-size="11.5" fill="#334155"><tspan font-weight="700">U-Net</tspan> — tibbiy tasvirlarni</text>
+  <text x="806" y="364" text-anchor="middle" font-size="11.5" fill="#334155">segmentatsiya qilish</text>
+  <text x="806" y="388" text-anchor="middle" font-size="11.5" fill="#334155"><tspan font-weight="700">EfficientNet</tspan> — resurslarni</text>
+  <text x="806" y="406" text-anchor="middle" font-size="11.5" fill="#334155">samarali ishlatish</text>
+
+  <rect x="24" y="436" width="932" height="32" rx="9" fill="#FEF9C3" stroke="#FDE68A"/>
+  <text x="490" y="457" text-anchor="middle" font-size="12.5" fill="#854D0E">⚠️ Computer vision robotning qismi bo'lishi SHART EMAS — masalan, yuzni tanish dasturi tanasiz ishlaydi</text>
+</svg>

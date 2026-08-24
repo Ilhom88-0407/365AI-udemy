@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="960" height="480" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ar1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="960" height="480" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="480" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Robot — bitta model emas, MODELLAR TIZIMI</text>
+  <text x="480" y="60" text-anchor="middle" font-size="13" fill="#475569">Interdisiplinar soha: har bir mutaxassis o'z qismini quradi</text>
+
+  <!-- LEFT: disciplines -->
+  <rect x="24" y="84" width="270" height="230" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="159" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">KIMLAR QURADI</text>
+
+  <rect x="44" y="124" width="230" height="52" rx="9" fill="#FEF3C7" stroke="#FCD34D"/>
+  <text x="60" y="146" font-size="12.5" font-weight="700" fill="#92400E">🔧 Mexanika muhandislari</text>
+  <text x="60" y="165" font-size="11" fill="#78350F">jismoniy tuzilma, harakat mexanizmi</text>
+
+  <rect x="44" y="182" width="230" height="52" rx="9" fill="#DBEAFE" stroke="#93C5FD"/>
+  <text x="60" y="204" font-size="12.5" font-weight="700" fill="#1E40AF">⚡ Elektronika muhandislari</text>
+  <text x="60" y="223" font-size="11" fill="#1E3A8A">quvvat, boshqaruv tizimlari</text>
+
+  <rect x="44" y="240" width="230" height="52" rx="9" fill="#EDE9FE" stroke="#C4B5FD"/>
+  <text x="60" y="262" font-size="12.5" font-weight="700" fill="#5B21B6">🧠 AI muhandislari</text>
+  <text x="60" y="281" font-size="11" fill="#4C1D95">qaror qabul qilish va xulq-atvor</text>
+
+  <text x="159" y="336" text-anchor="middle" font-size="11.5" fill="#64748B">Sensorlar va kameralar —</text>
+  <text x="159" y="352" text-anchor="middle" font-size="11.5" fill="#64748B">atrofni idrok etish uchun</text>
+
+  <line x1="302" y1="200" x2="326" y2="200" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ar1)"/>
+
+  <!-- CENTER: robot with 4 models -->
+  <rect x="332" y="84" width="292" height="308" rx="12" fill="#F1F5F9" stroke="#475569" stroke-width="2"/>
+  <text x="478" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">ROBOT ICHIDAGI 4 TA MODEL</text>
+
+  <rect x="352" y="124" width="252" height="58" rx="9" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.8"/>
+  <text x="368" y="146" font-size="12.5" font-weight="700" fill="#6D28D9">👁 Computer Vision</text>
+  <text x="368" y="165" font-size="11" fill="#475569">obyektni aniqlash, muhitni tushunish</text>
+
+  <rect x="352" y="188" width="252" height="58" rx="9" fill="#FFFFFF" stroke="#0891B2" stroke-width="1.8"/>
+  <text x="368" y="210" font-size="12.5" font-weight="700" fill="#0E7490">🗺 SLAM</text>
+  <text x="368" y="229" font-size="11" fill="#475569">navigatsiya va xaritalash</text>
+
+  <rect x="352" y="252" width="252" height="58" rx="9" fill="#FFFFFF" stroke="#EA580C" stroke-width="1.8"/>
+  <text x="368" y="274" font-size="12.5" font-weight="700" fill="#C2410C">🎯 Reinforcement Learning</text>
+  <text x="368" y="293" font-size="11" fill="#475569">qaror qabul qilish</text>
+
+  <rect x="352" y="316" width="252" height="58" rx="9" fill="#FFFFFF" stroke="#059669" stroke-width="1.8"/>
+  <text x="368" y="338" font-size="12.5" font-weight="700" fill="#047857">💬 NLP</text>
+  <text x="368" y="357" font-size="11" fill="#475569">inson tilini tushunish va yaratish</text>
+
+  <line x1="632" y1="200" x2="656" y2="200" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ar1)"/>
+
+  <!-- RIGHT: capabilities -->
+  <rect x="662" y="84" width="274" height="230" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+  <text x="799" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#047857">NATIJADA ROBOT:</text>
+  <g font-size="12.5" fill="#0F172A">
+    <text x="684" y="146">✅  Atrof-muhitni idrok etadi</text>
+    <text x="684" y="182">✅  Qaror qabul qiladi</text>
+    <text x="684" y="218">✅  Odamlar bilan muloqot qiladi</text>
+    <text x="684" y="254">✅  Mos ravishda harakat qiladi</text>
+  </g>
+  <rect x="684" y="272" width="230" height="30" rx="7" fill="#ECFDF5"/>
+  <text x="799" y="292" text-anchor="middle" font-size="11.5" font-weight="600" fill="#065F46">Insonni taqlid qiladi va kuchaytiradi</text>
+
+  <rect x="24" y="410" width="912" height="54" rx="10" fill="#0F172A"/>
+  <text x="480" y="434" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">🔑 Hammasini bajaradigan BITTA model emas — har biri o'z ishini qiladigan KO'P model</text>
+  <text x="480" y="454" text-anchor="middle" font-size="12" fill="#CBD5E1">Bu — real AI tizimlarining asosiy loyihalash tamoyili</text>
+</svg>

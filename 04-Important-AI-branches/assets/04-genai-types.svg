@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1000" height="500" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="500" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Generativ AI ni amalga oshirishning 5 usuli</text>
+  <text x="500" y="58" text-anchor="middle" font-size="13" fill="#475569">"Generativ" = mavjud ma'lumotni qayta ishlamaydi, YANGI narsa yaratadi</text>
+
+  <!-- LLM -->
+  <rect x="24" y="80" width="308" height="176" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="24" y="80" width="308" height="38" rx="12" fill="#2563EB"/>
+  <rect x="24" y="106" width="308" height="12" fill="#2563EB"/>
+  <text x="178" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1 · LLM</text>
+  <text x="178" y="140" text-anchor="middle" font-size="11.5" fill="#64748B">Large Language Models</text>
+  <rect x="44" y="150" width="268" height="24" rx="7" fill="#DBEAFE"/>
+  <text x="178" y="167" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1D4ED8">ChatGPT ortidagi FUNDAMENTAL texnologiya</text>
+  <text x="44" y="196" font-size="11.5" fill="#334155">Ulkan matn hajmlarida o'rgatilgan</text>
+  <text x="44" y="214" font-size="11.5" fill="#334155">neyron tarmoqlar. Ular:</text>
+  <text x="60" y="234" font-size="11.5" fill="#0F172A">• so'zlar orasidagi aloqani</text>
+  <text x="60" y="250" font-size="11.5" fill="#0F172A">• jumladagi keyingi ehtimoliy so'zni bashorat qiladi</text>
+
+  <!-- Diffusion -->
+  <rect x="348" y="80" width="308" height="176" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="348" y="80" width="308" height="38" rx="12" fill="#7C3AED"/>
+  <rect x="348" y="106" width="308" height="12" fill="#7C3AED"/>
+  <text x="502" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2 · Diffusion models</text>
+  <text x="502" y="140" text-anchor="middle" font-size="11.5" fill="#64748B">masalan: DALL·E</text>
+  <text x="368" y="166" font-size="11.5" fill="#334155">Asosan rasm va video yaratish uchun.</text>
+  <text x="368" y="188" font-size="11.5" font-weight="700" fill="#6D28D9">Qanday ishlaydi:</text>
+  <g font-size="11.5" fill="#334155">
+    <text x="384" y="208">1. Tasodifiy SHOVQIN naqshidan boshlaydi</text>
+    <text x="384" y="226">2. Uni bosqichma-bosqich tozalaydi</text>
+    <text x="384" y="244">3. Realizmni oshiradi</text>
+  </g>
+
+  <!-- GAN -->
+  <rect x="672" y="80" width="304" height="176" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <rect x="672" y="80" width="304" height="38" rx="12" fill="#EA580C"/>
+  <rect x="672" y="106" width="304" height="12" fill="#EA580C"/>
+  <text x="824" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">3 · GAN</text>
+  <text x="824" y="140" text-anchor="middle" font-size="11.5" fill="#64748B">2014-yil · matn va rasm</text>
+  <rect x="690" y="152" width="126" height="46" rx="8" fill="#FFF7ED" stroke="#FDBA74"/>
+  <text x="753" y="172" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9A3412">GENERATOR</text>
+  <text x="753" y="190" text-anchor="middle" font-size="10.5" fill="#7C2D12">kontent yaratadi</text>
+  <rect x="834" y="152" width="126" height="46" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="897" y="172" text-anchor="middle" font-size="11.5" font-weight="700" fill="#991B1B">JUDGE</text>
+  <text x="897" y="190" text-anchor="middle" font-size="10.5" fill="#7F1D1D">realligini baholaydi</text>
+  <path d="M818,168 L830,168 M830,182 L818,182" stroke="#EA580C" stroke-width="2"/>
+  <text x="824" y="220" text-anchor="middle" font-size="11" fill="#334155">Ikkisi bir-birini kuchaytiradi —</text>
+  <text x="824" y="238" text-anchor="middle" font-size="11" fill="#334155">natija haqiqatdan deyarli farq qilmaydi</text>
+
+  <!-- NeRF -->
+  <rect x="24" y="272" width="466" height="106" rx="12" fill="#FFFFFF" stroke="#0891B2" stroke-width="2"/>
+  <text x="257" y="298" text-anchor="middle" font-size="14" font-weight="700" fill="#0E7490">4 · Neural Radiance Fields (NeRF)</text>
+  <text x="257" y="324" text-anchor="middle" font-size="12" fill="#334155">3D modellashtirish uchun ixtisoslashgan AI</text>
+  <text x="257" y="348" text-anchor="middle" font-size="11.5" fill="#64748B">Taxminan 2020-yilda paydo bo'lgan</text>
+
+  <!-- Hybrid -->
+  <rect x="510" y="272" width="466" height="106" rx="12" fill="#FFFFFF" stroke="#DB2777" stroke-width="2"/>
+  <text x="743" y="298" text-anchor="middle" font-size="14" font-weight="700" fill="#9D174D">5 · Gibrid yondashuv</text>
+  <text x="743" y="324" text-anchor="middle" font-size="12" fill="#334155">LLM + GAN → bitta kuchli kontent yaratish tizimi</text>
+  <text x="743" y="348" text-anchor="middle" font-size="11.5" fill="#64748B">Tobora ommalashib bormoqda</text>
+
+  <!-- formats -->
+  <rect x="24" y="394" width="952" height="82" rx="12" fill="#0F172A"/>
+  <text x="500" y="418" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">Generativ AI ishlay oladigan formatlar</text>
+  <g font-size="12" fill="#E2E8F0" text-anchor="middle">
+    <text x="130" y="446">📝 matn</text>
+    <text x="270" y="446">🖼 rasm</text>
+    <text x="410" y="446">🎬 video</text>
+    <text x="550" y="446">🎵 audio</text>
+    <text x="690" y="446">📊 ma'lumot</text>
+    <text x="830" y="446">💻 kod</text>
+    <text x="930" y="446">🧊 3D</text>
+  </g>
+  <text x="500" y="468" text-anchor="middle" font-size="11.5" fill="#94A3B8">Dunyo bo'ylab ulkan investitsiya · yetakchilar — yirik texnologiya kompaniyalari</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="820" height="430" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="820" height="430" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+<text x="410" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Tarixdagi eng tez o'sgan iste'molchi ilovasi</text>
+<text x="410" y="60" text-anchor="middle" font-size="13" fill="#475569">100 million foydalanuvchiga yetish vaqti</text>
+<text x="176" y="139" text-anchor="end" font-size="14" font-weight="700" fill="#0F172A">ChatGPT</text>
+<rect x="190" y="110" width="34" height="46" rx="8" fill="#DB2777"/>
+<text x="236" y="139" font-size="13.5" font-weight="700" fill="#DB2777">2 oy</text>
+<text x="176" y="205" text-anchor="end" font-size="14" font-weight="700" fill="#0F172A">TikTok</text>
+<rect x="190" y="176" width="93" height="46" rx="8" fill="#0891B2"/>
+<text x="295" y="205" font-size="13.5" font-weight="700" fill="#0891B2">9 oy</text>
+<text x="176" y="271" text-anchor="end" font-size="14" font-weight="700" fill="#0F172A">Instagram</text>
+<rect x="190" y="242" width="311" height="46" rx="8" fill="#7C3AED"/>
+<text x="513" y="271" font-size="13.5" font-weight="700" fill="#7C3AED">30 oy</text>
+<text x="176" y="337" text-anchor="end" font-size="14" font-weight="700" fill="#0F172A">Facebook</text>
+<rect x="190" y="308" width="560" height="46" rx="8" fill="#2563EB"/>
+<text x="762" y="337" font-size="13.5" font-weight="700" fill="#2563EB">54 oy</text>
+<rect x="190" y="366" width="600" height="44" rx="10" fill="#FDF2F8" stroke="#F9A8D4"/>
+<text x="490" y="384" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9D174D">1 hafta &#8594; 1 million foydalanuvchi</text>
+<text x="490" y="402" text-anchor="middle" font-size="12" fill="#831843">2 oydan kam vaqtda &#8594; 100 million (2023-yil yanvar)</text>
+<text x="26" y="392" font-size="11" fill="#64748B">2022</text>
+<text x="26" y="408" font-size="11" fill="#64748B">30-noyabr</text>
+</svg>

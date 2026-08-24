@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 470" width="1000" height="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="1000" height="470" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="500" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Prompt engineering · RAG · Fine-tuning</text>
+  <text x="500" y="58" text-anchor="middle" font-size="13" fill="#475569">Uchtasi ham LLM javobini yaxshilaydi — lekin bu UCHTA BOSHQA narsa</text>
+
+  <!-- PROMPT ENGINEERING -->
+  <rect x="24" y="84" width="308" height="272" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="24" y="84" width="308" height="42" rx="12" fill="#2563EB"/>
+  <rect x="24" y="112" width="308" height="14" fill="#2563EB"/>
+  <text x="178" y="112" text-anchor="middle" font-size="14.5" font-weight="700" fill="#FFFFFF">PROMPT ENGINEERING</text>
+
+  <text x="178" y="148" text-anchor="middle" font-size="12" fill="#334155">Modelga QANDAY xulq qilishni tushuntiramiz</text>
+
+  <rect x="46" y="162" width="264" height="26" rx="7" fill="#FEE2E2"/>
+  <text x="178" y="180" text-anchor="middle" font-size="11.5" font-weight="700" fill="#991B1B">❌ Weights O'ZGARMAYDI</text>
+  <rect x="46" y="194" width="264" height="26" rx="7" fill="#FEE2E2"/>
+  <text x="178" y="212" text-anchor="middle" font-size="11.5" font-weight="700" fill="#991B1B">❌ Yangi ma'lumot QO'SHILMAYDI</text>
+
+  <text x="46" y="244" font-size="11.5" fill="#0F172A">Nima qilamiz:</text>
+  <text x="60" y="264" font-size="11" fill="#475569">• ko'rsatmalar beramiz</text>
+  <text x="60" y="282" font-size="11" fill="#475569">• og'zaki misollar keltiramiz</text>
+  <text x="60" y="300" font-size="11" fill="#475569">• kerakli natijani tushuntiramiz</text>
+
+  <rect x="46" y="314" width="264" height="30" rx="7" fill="#DCFCE7"/>
+  <text x="178" y="334" text-anchor="middle" font-size="11.5" font-weight="700" fill="#166534">✅ Oson · ITERATIV · arzon</text>
+
+  <!-- RAG -->
+  <rect x="346" y="84" width="308" height="272" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="346" y="84" width="308" height="42" rx="12" fill="#7C3AED"/>
+  <rect x="346" y="112" width="308" height="14" fill="#7C3AED"/>
+  <text x="500" y="112" text-anchor="middle" font-size="14.5" font-weight="700" fill="#FFFFFF">RAG</text>
+
+  <text x="500" y="140" text-anchor="middle" font-size="10.5" fill="#64748B">Retrieval Augmented Generation</text>
+  <text x="500" y="160" text-anchor="middle" font-size="12" fill="#334155">Modelga MA'LUMOTLAR BAZASI ulaymiz</text>
+
+  <rect x="368" y="172" width="264" height="26" rx="7" fill="#FEE2E2"/>
+  <text x="500" y="190" text-anchor="middle" font-size="11.5" font-weight="700" fill="#991B1B">❌ Weights O'ZGARMAYDI</text>
+  <rect x="368" y="204" width="264" height="26" rx="7" fill="#DCFCE7"/>
+  <text x="500" y="222" text-anchor="middle" font-size="11.5" font-weight="700" fill="#166534">✅ Yangi ma'lumot QO'SHILADI</text>
+
+  <g>
+    <rect x="382" y="244" width="80" height="46" rx="8" fill="#F5F3FF" stroke="#C4B5FD"/>
+    <text x="422" y="264" text-anchor="middle" font-size="11" font-weight="700" fill="#5B21B6">BAZA</text>
+    <text x="422" y="280" text-anchor="middle" font-size="9.5" fill="#6D28D9">kutubxona</text>
+    <path d="M466,267 L494,267" stroke="#7C3AED" stroke-width="2"/>
+    <polygon points="494,267 486,263 486,271" fill="#7C3AED"/>
+    <rect x="498" y="244" width="140" height="46" rx="8" fill="#EDE9FE" stroke="#C4B5FD"/>
+    <text x="568" y="264" text-anchor="middle" font-size="11" font-weight="700" fill="#5B21B6">MODEL</text>
+    <text x="568" y="280" text-anchor="middle" font-size="9.5" fill="#6D28D9">kengaytirilgan kontekst</text>
+  </g>
+
+  <rect x="368" y="314" width="264" height="30" rx="7" fill="#DCFCE7"/>
+  <text x="500" y="334" text-anchor="middle" font-size="11.5" font-weight="700" fill="#166534">✅ Ko'proq misol · ITERATIV</text>
+
+  <!-- FINE-TUNING -->
+  <rect x="668" y="84" width="308" height="272" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <rect x="668" y="84" width="308" height="42" rx="12" fill="#EA580C"/>
+  <rect x="668" y="112" width="308" height="14" fill="#EA580C"/>
+  <text x="822" y="112" text-anchor="middle" font-size="14.5" font-weight="700" fill="#FFFFFF">FINE-TUNING</text>
+
+  <text x="822" y="148" text-anchor="middle" font-size="12" fill="#334155">Modelning O'ZINI qayta o'qitamiz</text>
+
+  <rect x="690" y="162" width="264" height="26" rx="7" fill="#DCFCE7"/>
+  <text x="822" y="180" text-anchor="middle" font-size="11.5" font-weight="700" fill="#166534">✅ Weights O'ZGARADI</text>
+  <rect x="690" y="194" width="264" height="26" rx="7" fill="#FEF9C3"/>
+  <text x="822" y="212" text-anchor="middle" font-size="11.5" font-weight="700" fill="#854D0E">⚠️ Qo'shimcha ma'lumot kerak bo'lishi mumkin</text>
+
+  <text x="690" y="244" font-size="11.5" fill="#0F172A">Nima beradi:</text>
+  <text x="704" y="264" font-size="11" fill="#475569">• modelni AQLLIROQ qiladi</text>
+  <text x="704" y="282" font-size="11" fill="#475569">• yoki TEZROQ va kichikroq</text>
+  <text x="704" y="300" font-size="11" fill="#475569">• aniq vazifaga moslashtiradi</text>
+
+  <rect x="690" y="314" width="264" height="30" rx="7" fill="#FEE2E2"/>
+  <text x="822" y="334" text-anchor="middle" font-size="11.5" font-weight="700" fill="#991B1B">❌ Qimmat · ITERATIV EMAS</text>
+
+  <!-- bottom -->
+  <rect x="24" y="374" width="952" height="80" rx="12" fill="#0F172A"/>
+  <text x="500" y="398" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">Kalit savol: modelning WEIGHTS lari o'zgaradimi?</text>
+  <text x="330" y="424" text-anchor="middle" font-size="12" fill="#93C5FD">Yo'q → Prompt engineering</text>
+  <text x="560" y="424" text-anchor="middle" font-size="12" fill="#C4B5FD">Yo'q, lekin baza qo'shildi → RAG</text>
+  <text x="820" y="424" text-anchor="middle" font-size="12" fill="#FDBA74">Ha → Fine-tuning</text>
+  <text x="500" y="444" text-anchor="middle" font-size="11.5" fill="#CBD5E1">365 jamoasining intervyu simulyatorida: RAG + prompt engineering ishlatilgan, fine-tuning emas</text>
+</svg>

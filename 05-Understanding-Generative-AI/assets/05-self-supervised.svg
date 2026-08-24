@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 470" width="980" height="470" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="980" height="470" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="490" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Nima uchun LLM lar uchinchi yo'l kerak edi</text>
+  <text x="490" y="58" text-anchor="middle" font-size="13" fill="#475569">Ikkala klassik yondashuv ham ishlamadi — self-supervised learning yechim bo'ldi</text>
+
+  <!-- SUPERVISED -->
+  <rect x="24" y="84" width="300" height="238" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <rect x="24" y="84" width="300" height="40" rx="12" fill="#DC2626"/>
+  <rect x="24" y="110" width="300" height="14" fill="#DC2626"/>
+  <text x="174" y="111" text-anchor="middle" font-size="14.5" font-weight="700" fill="#FFFFFF">SUPERVISED</text>
+  <text x="174" y="146" text-anchor="middle" font-size="12" fill="#334155">Odam har bir namunani belgilaydi</text>
+
+  <rect x="46" y="160" width="256" height="88" rx="9" fill="#FEF2F2" stroke="#FCA5A5"/>
+  <text x="174" y="182" text-anchor="middle" font-size="11.5" font-weight="700" fill="#991B1B">HISOB-KITOB</text>
+  <text x="62" y="202" font-size="11" font-family="Consolas, monospace" fill="#7F1D1D">100 000 sharh × $0.30 = $30 000</text>
+  <text x="62" y="220" font-size="11" font-family="Consolas, monospace" fill="#7F1D1D">100 000 tibbiy yozuv × $30 = $3 000 000</text>
+  <text x="62" y="240" font-size="11" font-style="italic" fill="#991B1B">butun internet-chi?</text>
+
+  <rect x="46" y="258" width="256" height="52" rx="8" fill="#FEE2E2"/>
+  <text x="174" y="278" text-anchor="middle" font-size="12" font-weight="700" fill="#991B1B">❌ MASSHTABLANMAYDI</text>
+  <text x="174" y="297" text-anchor="middle" font-size="10.5" fill="#7F1D1D">narx murakkablik bilan eksponensial oshadi</text>
+
+  <!-- UNSUPERVISED -->
+  <rect x="340" y="84" width="300" height="238" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <rect x="340" y="84" width="300" height="40" rx="12" fill="#EA580C"/>
+  <rect x="340" y="110" width="300" height="14" fill="#EA580C"/>
+  <text x="490" y="111" text-anchor="middle" font-size="14.5" font-weight="700" fill="#FFFFFF">UNSUPERVISED</text>
+  <text x="490" y="146" text-anchor="middle" font-size="12" fill="#334155">Belgi yo'q, model o'zi struktura qidiradi</text>
+
+  <rect x="362" y="160" width="256" height="88" rx="9" fill="#FFF7ED" stroke="#FDBA74"/>
+  <text x="490" y="182" text-anchor="middle" font-size="11.5" font-weight="700" fill="#9A3412">MUAMMO</text>
+  <text x="378" y="202" font-size="11" fill="#7C2D12">• Aniq MAQSAD yo'q</text>
+  <text x="378" y="220" font-size="11" fill="#7C2D12">• Tilda KONTEKST juda muhim</text>
+  <text x="378" y="238" font-size="11" fill="#7C2D12">• Keyingi so'zni bashorat qilishni</text>
+  <text x="386" y="244" font-size="11" fill="#7C2D12"> </text>
+
+  <rect x="362" y="258" width="256" height="52" rx="8" fill="#FFEDD5"/>
+  <text x="490" y="278" text-anchor="middle" font-size="12" font-weight="700" fill="#9A3412">❌ MAQSAD YO'Q</text>
+  <text x="490" y="297" text-anchor="middle" font-size="10.5" fill="#7C2D12">til nozikliklarini e'tibordan chetda qoldiradi</text>
+
+  <!-- SELF-SUPERVISED -->
+  <rect x="656" y="84" width="300" height="238" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="3"/>
+  <rect x="656" y="84" width="300" height="40" rx="12" fill="#059669"/>
+  <rect x="656" y="110" width="300" height="14" fill="#059669"/>
+  <text x="806" y="111" text-anchor="middle" font-size="14.5" font-weight="700" fill="#FFFFFF">SELF-SUPERVISED</text>
+  <text x="806" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#047857">LLM larni yaratgan YUTUQ</text>
+
+  <rect x="678" y="160" width="256" height="88" rx="9" fill="#ECFDF5" stroke="#6EE7B7"/>
+  <text x="806" y="182" text-anchor="middle" font-size="11.5" font-weight="700" fill="#065F46">QANDAY ISHLAYDI</text>
+  <text x="694" y="202" font-size="11" fill="#065F46">1. Matn bazalarini tahlil qiladi</text>
+  <text x="694" y="220" font-size="11" fill="#065F46">2. Belgilarni AVTOMATIK yaratadi</text>
+  <text x="694" y="238" font-size="11" fill="#065F46">3. Atrofdagi so'zlar konteksti bo'yicha</text>
+
+  <rect x="678" y="258" width="256" height="52" rx="8" fill="#D1FAE5"/>
+  <text x="806" y="278" text-anchor="middle" font-size="12" font-weight="700" fill="#047857">✅ MASSHTABLANADI + MAQSAD BOR</text>
+  <text x="806" y="297" text-anchor="middle" font-size="10.5" fill="#065F46">o'zi o'rganadi · kontekstli · avtonom</text>
+
+  <!-- key insight -->
+  <rect x="24" y="342" width="932" height="110" rx="12" fill="#0F172A"/>
+  <text x="490" y="368" text-anchor="middle" font-size="14" font-weight="700" fill="#FBBF24">🔑 Sir shunday: matnning O'ZI o'z belgisidir</text>
+  <rect x="180" y="382" width="620" height="34" rx="8" fill="#1E293B"/>
+  <text x="490" y="404" text-anchor="middle" font-size="13" font-family="Consolas, monospace" fill="#E2E8F0">"suv nol darajada  ______"   →   belgi: "muzlaydi"</text>
+  <text x="490" y="436" text-anchor="middle" font-size="12" fill="#CBD5E1">So'zni yashirasiz — javob allaqachon matnda bor. Odam kerak emas. Internet miqyosida ishlaydi.</text>
+</svg>

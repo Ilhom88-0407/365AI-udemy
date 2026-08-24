@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="1100" height="360" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1100" height="360" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+<text x="550" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">LLM qurishning 7 bosqichi</text>
+<text x="550" y="60" text-anchor="middle" font-size="13" fill="#475569">Real hayotda ular qat'iy ketma-ket emas &#8212; ba'zan bir-birining ustiga tushadi</text>
+<rect x="24" y="96" width="140" height="180" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.2"/>
+<circle cx="94" cy="126" r="17" fill="#2563EB"/>
+<text x="94" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+<text x="94" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">Model design</text>
+<text x="94" y="187" text-anchor="middle" font-size="10" fill="#64748B">arxitektura tanlash</text>
+<text x="94" y="200" text-anchor="middle" font-size="10" fill="#64748B">chuqurlik, parametrlar</text>
+<line x1="166" y1="186" x2="176" y2="186" stroke="#94A3B8" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="178" y="96" width="140" height="180" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.2"/>
+<circle cx="248" cy="126" r="17" fill="#7C3AED"/>
+<text x="248" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+<text x="248" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">Dataset</text>
+<text x="248" y="181" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">engineering</text>
+<text x="248" y="202" text-anchor="middle" font-size="10" fill="#64748B">to'plash, tozalash,</text>
+<text x="248" y="215" text-anchor="middle" font-size="10" fill="#64748B">strukturalash</text>
+<line x1="320" y1="186" x2="330" y2="186" stroke="#94A3B8" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="332" y="96" width="140" height="180" rx="12" fill="#FFFFFF" stroke="#DB2777" stroke-width="2.2"/>
+<circle cx="402" cy="126" r="17" fill="#DB2777"/>
+<text x="402" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+<text x="402" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">Pre-training</text>
+<text x="402" y="187" text-anchor="middle" font-size="10" fill="#64748B">xom korpusda</text>
+<text x="402" y="200" text-anchor="middle" font-size="10" fill="#64748B">o'qitish</text>
+<line x1="474" y1="186" x2="484" y2="186" stroke="#94A3B8" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="486" y="96" width="140" height="180" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.2"/>
+<circle cx="556" cy="126" r="17" fill="#EA580C"/>
+<text x="556" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">4</text>
+<text x="556" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">Preliminary</text>
+<text x="556" y="181" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">evaluation</text>
+<text x="556" y="202" text-anchor="middle" font-size="10" fill="#64748B">dastlabki</text>
+<text x="556" y="215" text-anchor="middle" font-size="10" fill="#64748B">baholash</text>
+<line x1="628" y1="186" x2="638" y2="186" stroke="#94A3B8" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="640" y="96" width="140" height="180" rx="12" fill="#FFFFFF" stroke="#CA8A04" stroke-width="2.2"/>
+<circle cx="710" cy="126" r="17" fill="#CA8A04"/>
+<text x="710" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">5</text>
+<text x="710" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">Post-training</text>
+<text x="710" y="187" text-anchor="middle" font-size="10" fill="#64748B">supervised fine-tuning</text>
+<text x="710" y="200" text-anchor="middle" font-size="10" fill="#64748B">+ inson fikri</text>
+<line x1="782" y1="186" x2="792" y2="186" stroke="#94A3B8" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="794" y="96" width="140" height="180" rx="12" fill="#FFFFFF" stroke="#0891B2" stroke-width="2.2"/>
+<circle cx="864" cy="126" r="17" fill="#0891B2"/>
+<text x="864" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">6</text>
+<text x="864" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">Fine-tuning</text>
+<text x="864" y="187" text-anchor="middle" font-size="10" fill="#64748B">weights ni</text>
+<text x="864" y="200" text-anchor="middle" font-size="10" fill="#64748B">yangilash</text>
+<line x1="936" y1="186" x2="946" y2="186" stroke="#94A3B8" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="948" y="96" width="140" height="180" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.2"/>
+<circle cx="1018" cy="126" r="17" fill="#059669"/>
+<text x="1018" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">7</text>
+<text x="1018" y="166" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0F172A">Final testing</text>
+<text x="1018" y="187" text-anchor="middle" font-size="10" fill="#64748B">sifat, aniqlik, tezlik,</text>
+<text x="1018" y="200" text-anchor="middle" font-size="10" fill="#64748B">ETIKA</text>
+<rect x="24" y="296" width="1052" height="44" rx="10" fill="#FEF9C3" stroke="#FDE68A"/>
+<text x="550" y="314" text-anchor="middle" font-size="12.5" font-weight="700" fill="#854D0E">"Model o'zini qurgan ma'lumot qanchalik yaxshi bo'lsa, shunchalik yaxshi"</text>
+<text x="550" y="332" text-anchor="middle" font-size="11.5" fill="#713F12">2-bosqichda etika muhim: ma'lumot xilma-xilligi va bias larni hisobga olish</text>
+</svg>

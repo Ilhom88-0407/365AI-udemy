@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 450" width="960" height="450" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="af" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="960" height="450" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Tor modellardan Foundation modellarga</text>
+  <text x="480" y="58" text-anchor="middle" font-size="13" fill="#475569">Bir vazifa uchun bir model → bitta model ko'p vazifa uchun</text>
+
+  <!-- BEFORE -->
+  <rect x="24" y="84" width="386" height="250" rx="12" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="217" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">ILGARI · tor qo'llanishlar</text>
+
+  <g font-size="11.5">
+    <rect x="46" y="124" width="168" height="52" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="130" y="145" text-anchor="middle" font-weight="700" fill="#334155">Image recognition</text>
+    <text x="130" y="163" text-anchor="middle" fill="#64748B">rasmdagi obyektlar</text>
+
+    <rect x="222" y="124" width="166" height="52" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="305" y="145" text-anchor="middle" font-weight="700" fill="#334155">Speech recognition</text>
+    <text x="305" y="163" text-anchor="middle" fill="#64748B">nutq → matn</text>
+
+    <rect x="46" y="186" width="168" height="52" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="130" y="207" text-anchor="middle" font-weight="700" fill="#334155">NLP modellari</text>
+    <text x="130" y="225" text-anchor="middle" fill="#64748B">sentiment, tarjima</text>
+
+    <rect x="222" y="186" width="166" height="52" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="305" y="207" text-anchor="middle" font-weight="700" fill="#334155">Time series</text>
+    <text x="305" y="225" text-anchor="middle" fill="#64748B">aksiya narxlari</text>
+  </g>
+  <rect x="46" y="252" width="342" height="30" rx="7" fill="#FEE2E2"/>
+  <text x="217" y="272" text-anchor="middle" font-size="12" font-weight="600" fill="#991B1B">Har biri JUDA TOR vazifalar doirasida a'lo</text>
+  <text x="217" y="308" text-anchor="middle" font-size="11.5" fill="#64748B">Yangi vazifa = yangi model = noldan boshlash</text>
+
+  <line x1="420" y1="200" x2="452" y2="200" stroke="#94A3B8" stroke-width="3" marker-end="url(#af)"/>
+  <text x="436" y="188" text-anchor="middle" font-size="10" fill="#64748B">LLM</text>
+
+  <!-- AFTER -->
+  <rect x="462" y="84" width="474" height="250" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <text x="699" y="110" text-anchor="middle" font-size="14" font-weight="700" fill="#047857">BUGUN · FOUNDATION MODEL</text>
+
+  <rect x="574" y="122" width="250" height="52" rx="9" fill="#059669"/>
+  <text x="699" y="144" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">BITTA MODEL</text>
+  <text x="699" y="163" text-anchor="middle" font-size="10.5" fill="#D1FAE5">ulkan · ko'p vazifali · nihoyatda kuchli</text>
+
+  <g stroke="#6EE7B7" stroke-width="1.6" fill="none">
+    <path d="M600,176 L520,206"/><path d="M655,176 L620,206"/>
+    <path d="M699,176 L699,206"/><path d="M743,176 L778,206"/>
+    <path d="M798,176 L878,206"/>
+  </g>
+
+  <g font-size="10.5" text-anchor="middle">
+    <rect x="482" y="208" width="76" height="40" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="520" y="225" fill="#065F46">📝 matn</text>
+    <text x="520" y="240" fill="#047857">text-to-text</text>
+
+    <rect x="574" y="208" width="76" height="40" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="612" y="225" fill="#065F46">💻 kod</text>
+    <text x="612" y="240" fill="#047857">Python, SQL</text>
+
+    <rect x="662" y="208" width="76" height="40" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="700" y="225" fill="#065F46">📄 fayllar</text>
+    <text x="700" y="240" fill="#047857">Excel, PDF</text>
+
+    <rect x="750" y="208" width="76" height="40" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="788" y="225" fill="#065F46">🖼 rasm</text>
+    <text x="788" y="240" fill="#047857">o'qish + yaratish</text>
+
+    <rect x="838" y="208" width="80" height="40" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="878" y="225" fill="#065F46">🎬 video</text>
+    <text x="878" y="240" fill="#047857">multimodal</text>
+  </g>
+
+  <rect x="484" y="258" width="430" height="30" rx="7" fill="#DCFCE7"/>
+  <text x="699" y="278" text-anchor="middle" font-size="12" font-weight="600" fill="#166534">Biroz fine-tuning va prompt engineering bilan — KO'P sohada</text>
+  <text x="699" y="312" text-anchor="middle" font-size="11.5" fill="#64748B">"Foundation" — chunki ular ko'p intizom uchun POYDEVOR qatlami bo'lib xizmat qiladi</text>
+
+  <!-- Altman quote -->
+  <rect x="24" y="352" width="912" height="80" rx="12" fill="#0F172A"/>
+  <text x="480" y="378" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">Sam Altman: kelajakda KAM TASHKILOT o'z foundation modelini qura oladi</text>
+  <text x="270" y="404" text-anchor="middle" font-size="11.5" fill="#93C5FD">Yirik texnologiya kompaniyalari</text>
+  <text x="480" y="404" text-anchor="middle" font-size="11.5" fill="#93C5FD">Ba'zi davlatlar</text>
+  <text x="720" y="404" text-anchor="middle" font-size="11.5" fill="#93C5FD">Qolgan hamma — ustiga quradi</text>
+  <text x="480" y="424" text-anchor="middle" font-size="11" fill="#94A3B8">Lekin OPEN SOURCE hamjamiyat bu bashoratni rad etishi ham mumkin</text>
+</svg>

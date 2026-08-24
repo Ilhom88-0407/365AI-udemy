@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="920" height="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="920" height="440" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="460" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Til modelining ikki turi</text>
+  <text x="460" y="58" text-anchor="middle" font-size="13" fill="#475569">Ikkalasi ham bo'sh joyni to'ldiradi — farq: qayerga qaray oladi</text>
+
+  <!-- MASKED -->
+  <rect x="24" y="84" width="428" height="236" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="24" y="84" width="428" height="42" rx="12" fill="#7C3AED"/>
+  <rect x="24" y="112" width="428" height="14" fill="#7C3AED"/>
+  <text x="238" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">MASKED</text>
+
+  <text x="238" y="150" text-anchor="middle" font-size="12.5" fill="#334155">Bo'sh joy QAYERDA bo'lishidan qat'i nazar topadi</text>
+
+  <g font-size="14">
+    <rect x="52" y="166" width="72" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="88" y="189" text-anchor="middle" fill="#0F172A">water</text>
+    <rect x="130" y="166" width="88" height="34" rx="7" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+    <text x="174" y="189" text-anchor="middle" font-weight="700" fill="#991B1B">?????</text>
+    <rect x="224" y="166" width="52" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="250" y="189" text-anchor="middle" fill="#0F172A">at</text>
+    <rect x="282" y="166" width="54" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="309" y="189" text-anchor="middle" fill="#0F172A">zero</text>
+    <rect x="342" y="166" width="82" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="383" y="189" text-anchor="middle" fill="#0F172A">degrees</text>
+  </g>
+  <path d="M88,208 L88,222 L174,222 L174,210" fill="none" stroke="#7C3AED" stroke-width="2"/>
+  <path d="M320,208 L320,222 L174,222" fill="none" stroke="#7C3AED" stroke-width="2"/>
+  <text x="238" y="242" text-anchor="middle" font-size="11" fill="#6D28D9">oldingi VA keyingi so'zlardan foydalanadi</text>
+
+  <rect x="90" y="256" width="296" height="40" rx="8" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text x="238" y="281" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">javob: freezes</text>
+
+  <!-- AUTOREGRESSIVE -->
+  <rect x="468" y="84" width="428" height="236" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <rect x="468" y="84" width="428" height="42" rx="12" fill="#059669"/>
+  <rect x="468" y="112" width="428" height="14" fill="#059669"/>
+  <text x="682" y="112" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">AUTOREGRESSIVE</text>
+
+  <text x="682" y="150" text-anchor="middle" font-size="12.5" fill="#334155">Faqat KEYINGI so'zni bashorat qiladi</text>
+
+  <g font-size="14">
+    <rect x="492" y="166" width="66" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="525" y="189" text-anchor="middle" fill="#0F172A">water</text>
+    <rect x="564" y="166" width="76" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="602" y="189" text-anchor="middle" fill="#0F172A">freezes</text>
+    <rect x="646" y="166" width="42" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="667" y="189" text-anchor="middle" fill="#0F172A">at</text>
+    <rect x="694" y="166" width="52" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="720" y="189" text-anchor="middle" fill="#0F172A">zero</text>
+    <rect x="752" y="166" width="76" height="34" rx="7" fill="#F1F5F9" stroke="#CBD5E1"/>
+    <text x="790" y="189" text-anchor="middle" fill="#0F172A">degrees</text>
+    <rect x="834" y="166" width="42" height="34" rx="7" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+    <text x="855" y="189" text-anchor="middle" font-weight="700" fill="#991B1B">?</text>
+  </g>
+  <path d="M525,208 L525,222 L830,222 L830,210" fill="none" stroke="#059669" stroke-width="2"/>
+  <text x="682" y="242" text-anchor="middle" font-size="11" fill="#047857">faqat OLDINGI so'zlardan foydalanadi</text>
+
+  <rect x="534" y="256" width="296" height="40" rx="8" fill="#DCFCE7" stroke="#86EFAC"/>
+  <text x="682" y="281" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">javob: Celsius</text>
+
+  <rect x="24" y="336" width="872" height="42" rx="10" fill="#0F172A"/>
+  <text x="460" y="362" text-anchor="middle" font-size="13" font-weight="700" fill="#6EE7B7">OpenAI ning GPT modellari — AUTOREGRESSIVE. Har bir bashorat oldin yaratilgan BARCHA so'zlarga tayanadi.</text>
+
+  <rect x="24" y="388" width="872" height="42" rx="10" fill="#FEF9C3" stroke="#FDE68A"/>
+  <text x="460" y="414" text-anchor="middle" font-size="12.5" fill="#854D0E">Til modeli — bu EHTIMOLLIK modeli: oldingi so'zlar bergan kontekst asosida yetishmayotgan so'zni bashorat qiladi</text>
+</svg>

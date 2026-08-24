@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="960" height="300" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="480" y="36" text-anchor="middle" font-size="21" font-weight="700" fill="#0F172A">Robot g'oyasi yangi emas — u ming yillik</text>
+  <text x="480" y="58" text-anchor="middle" font-size="13" fill="#475569">Yangi bo'lgani — AI. Endi mifni qurish mumkin.</text>
+
+  <line x1="60" y1="170" x2="900" y2="170" stroke="#CBD5E1" stroke-width="3"/>
+  <polygon points="900,170 888,164 888,176" fill="#CBD5E1"/>
+
+  <!-- 1 -->
+  <circle cx="150" cy="170" r="9" fill="#B45309" stroke="#FFFFFF" stroke-width="2.5"/>
+  <line x1="150" y1="161" x2="150" y2="122" stroke="#B45309" stroke-width="2"/>
+  <rect x="70" y="80" width="160" height="42" rx="9" fill="#FEF3C7" stroke="#FCD34D"/>
+  <text x="150" y="98" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400E">Qadimgi Yunoniston</text>
+  <text x="150" y="114" text-anchor="middle" font-size="11" fill="#78350F">TALOS mifi</text>
+  <text x="150" y="200" text-anchor="middle" font-size="11" fill="#475569">Hefest yaratgan</text>
+  <text x="150" y="215" text-anchor="middle" font-size="11" fill="#475569">bronza gigant —</text>
+  <text x="150" y="230" text-anchor="middle" font-size="11" fill="#475569">Kritni qo'riqlagan</text>
+
+  <!-- 2 -->
+  <circle cx="390" cy="170" r="9" fill="#0E7490" stroke="#FFFFFF" stroke-width="2.5"/>
+  <line x1="390" y1="161" x2="390" y2="122" stroke="#0E7490" stroke-width="2"/>
+  <rect x="310" y="80" width="160" height="42" rx="9" fill="#CFFAFE" stroke="#67E8F9"/>
+  <text x="390" y="98" text-anchor="middle" font-size="12.5" font-weight="700" fill="#155E75">O'rta asrlar</text>
+  <text x="390" y="114" text-anchor="middle" font-size="11" fill="#164E63">al-Jazariy avtomatlari</text>
+  <text x="390" y="200" text-anchor="middle" font-size="11" fill="#475569">Suv soatlari va</text>
+  <text x="390" y="215" text-anchor="middle" font-size="11" fill="#475569">dasturlanadigan</text>
+  <text x="390" y="230" text-anchor="middle" font-size="11" fill="#475569">mashinalar</text>
+
+  <!-- 3 -->
+  <circle cx="630" cy="170" r="9" fill="#7C3AED" stroke="#FFFFFF" stroke-width="2.5"/>
+  <line x1="630" y1="161" x2="630" y2="122" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="550" y="80" width="160" height="42" rx="9" fill="#EDE9FE" stroke="#C4B5FD"/>
+  <text x="630" y="98" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5B21B6">Uyg'onish davri</text>
+  <text x="630" y="114" text-anchor="middle" font-size="11" fill="#4C1D95">Leonardo da Vinchi</text>
+  <text x="630" y="200" text-anchor="middle" font-size="11" fill="#475569">Mexanik ritsar va</text>
+  <text x="630" y="215" text-anchor="middle" font-size="11" fill="#475569">mexanik sher —</text>
+  <text x="630" y="230" text-anchor="middle" font-size="11" fill="#475569">humanoidning kashshofi</text>
+
+  <!-- 4 -->
+  <circle cx="850" cy="170" r="11" fill="#DB2777" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="850" y1="159" x2="850" y2="122" stroke="#DB2777" stroke-width="2"/>
+  <rect x="768" y="80" width="164" height="42" rx="9" fill="#FCE7F3" stroke="#F9A8D4"/>
+  <text x="850" y="98" text-anchor="middle" font-size="12.5" font-weight="700" fill="#9D174D">BUGUN</text>
+  <text x="850" y="114" text-anchor="middle" font-size="11" fill="#831843">AI + robototexnika</text>
+  <text x="850" y="200" text-anchor="middle" font-size="11" fill="#475569">Tesla Bot, jarrohlik</text>
+  <text x="850" y="215" text-anchor="middle" font-size="11" fill="#475569">robotlari, o'zi</text>
+  <text x="850" y="230" text-anchor="middle" font-size="11" fill="#475569">yuruvchi mashinalar</text>
+
+  <rect x="60" y="252" width="840" height="32" rx="9" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="480" y="273" text-anchor="middle" font-size="12.5" fill="#334155">Odamlar robotlar haqida ming yillar orzu qilgan. Faqat bugun ularni <tspan font-weight="700" fill="#0F172A">aqlli</tspan> qilish mumkin bo'ldi.</text>
+</svg>
