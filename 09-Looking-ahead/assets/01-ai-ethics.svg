@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 500" width="980" height="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="980" height="500" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="490" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">AI etikasi — imkoniyat va xavf</text>
+  <text x="490" y="58" text-anchor="middle" font-size="13" fill="#475569">"AI modellari hali ham INSONLAR tomonidan o'ylab topiladi, loyihalanadi va o'qitiladi"</text>
+
+  <!-- definition -->
+  <rect x="24" y="76" width="932" height="54" rx="11" fill="#0F172A"/>
+  <text x="490" y="99" text-anchor="middle" font-size="12.5" fill="#93C5FD">OKSFORD: etika — insonning xulq-atvorini boshqaradigan MORAL TAMOYILLAR</text>
+  <text x="490" y="119" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FFFFFF">AI ETIKASI = AI ning umumiy manfaat uchun foydasini MAKSIMALLASHTIRISH va zararini MINIMALLASHTIRISH tamoyillari</text>
+
+  <!-- BENEFITS -->
+  <rect x="24" y="144" width="460" height="170" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <rect x="24" y="144" width="460" height="38" rx="12" fill="#059669"/>
+  <rect x="24" y="170" width="460" height="12" fill="#059669"/>
+  <text x="254" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">✅ AI INSONIYATGA NIMA BERADI</text>
+  <g font-size="12.5" fill="#334155">
+    <text x="46" y="208">🎓  Ta'limni DEMOKRATLASHTIRISH va kirishni yaxshilash</text>
+    <text x="46" y="238">💊  Sog'liqni saqlashda DORI KASHFIYOTIDA inqilob</text>
+    <text x="46" y="268">🌱  Energiya iste'molini optimallashtirib</text>
+    <text x="66" y="288">EKOLOGIK BARQARORLIKKA hal qiluvchi turtki</text>
+  </g>
+
+  <!-- RISKS -->
+  <rect x="496" y="144" width="460" height="170" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <rect x="496" y="144" width="460" height="38" rx="12" fill="#DC2626"/>
+  <rect x="496" y="170" width="460" height="12" fill="#DC2626"/>
+  <text x="726" y="170" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">⚠️ XAVFLAR</text>
+  <g font-size="12.5" fill="#334155">
+    <text x="518" y="204">🔒  Ma'lumot maxfiyligi</text>
+    <text x="518" y="228">📰  Yolg'on axborot tarqalishi</text>
+    <text x="518" y="252">💼  Ish o'rinlarining yo'qolishi</text>
+    <text x="518" y="276">🎯  AI qurollari</text>
+    <text x="518" y="300">🏭  Kritik infratuzilmaga masofadan kirish</text>
+  </g>
+
+  <!-- moral hazard -->
+  <rect x="24" y="330" width="460" height="86" rx="11" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="254" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#991B1B">⚖️ MORAL HAZARD (axloqiy xavf)</text>
+  <text x="254" y="378" text-anchor="middle" font-size="11.5" fill="#7F1D1D">BIR NECHTASI texnologiya foydasini oladi,</text>
+  <text x="254" y="396" text-anchor="middle" font-size="11.5" fill="#7F1D1D">potensial xavf va zarar KO'PCHILIKKA taqsimlanadi</text>
+
+  <!-- jobs -->
+  <rect x="496" y="330" width="460" height="86" rx="11" fill="#FFF7ED" stroke="#FDBA74" stroke-width="2"/>
+  <text x="726" y="354" text-anchor="middle" font-size="13" font-weight="700" fill="#9A3412">💼 ISH O'RINLARI (Oq uy tahlili)</text>
+  <text x="726" y="376" text-anchor="middle" font-size="11.5" fill="#7C2D12">AQSh ishchilarining ~10% i eng yuqori xavf ostida</text>
+  <text x="726" y="396" text-anchor="middle" font-size="11.5" fill="#7C2D12">Kam ma'lumotli va past daromadlilar ayniqsa zaif → TENGSIZLIK ↑</text>
+
+  <!-- regulation -->
+  <rect x="24" y="432" width="932" height="54" rx="11" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+  <text x="490" y="454" text-anchor="middle" font-size="13" font-weight="700" fill="#1D4ED8">🇪🇺 EU AI Act — AI bo'yicha birinchi global tartibga solish ramkasi</text>
+  <text x="490" y="474" text-anchor="middle" font-size="11.5" fill="#334155">Fuqarolar, bizneslar va davlat idoralarini himoya qilish · AI ni XAVFSIZROQ va SHAFFOFROQ qilish</text>
+</svg>

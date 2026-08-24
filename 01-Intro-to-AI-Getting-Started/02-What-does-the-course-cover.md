@@ -1,10 +1,5 @@
 # 2-dars. Kurs nimalarni qamrab oladi
 
-> **Modul:** 01. Intro to AI — Getting started · **Manba:** `2. What does the course cover.vtt`
-> ⏱ **O'qish vaqti:** ~8 daqiqa · 🎯 **Daraja:** tanishuv
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Ko'p odamlar onlayn kursni **boshlaydi**, lekin oz qismi **tugatadi**.

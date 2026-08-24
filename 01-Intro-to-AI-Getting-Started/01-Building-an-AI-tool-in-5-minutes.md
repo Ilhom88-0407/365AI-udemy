@@ -1,10 +1,5 @@
 # 1-dars. 5 daqiqada AI vositasini yaratish — amaliy demo
 
-> **Modul:** 01. Intro to AI — Getting started · **Manba:** `1. Building an AI tool in 5 minutes A quick demo.vtt`
-> ⏱ **O'qish vaqti:** ~18 daqiqa · 🎯 **Daraja:** ko'rib chiqish (hozir kod yozish shart emas)
-
----
-
 ## 🎬 Boshlashdan oldin
 
 O'qituvchi kursning **eng birinchi darsida** shunday deydi:

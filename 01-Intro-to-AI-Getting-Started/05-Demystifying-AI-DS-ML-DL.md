@@ -1,10 +1,5 @@
 # 5-dars. AI, Data Science, Machine Learning va Deep Learning farqi
 
-> **Modul:** 01. Intro to AI — Getting started · **Manba:** `5. Demystifying AI, Data science, Machine learning, and Deep learning.vtt`
-> ⏱ **O'qish vaqti:** ~12 daqiqa · 🎯 **Daraja:** boshlang'ich · ⭐ **Eng ko'p chalkashtiriladigan mavzu**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Bitta ish e'lonini o'qing:

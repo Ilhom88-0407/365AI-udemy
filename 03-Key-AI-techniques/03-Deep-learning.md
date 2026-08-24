@@ -1,10 +1,5 @@
 # 3-dars. Deep Learning
 
-> **Modul:** 03. Intro to AI — Key AI techniques · **Manba:** `3. Deep learning.vtt`
-> ⏱ **O'qish vaqti:** ~20 daqiqa · 🎯 **Daraja:** o'rta · 💻 **Python amaliyoti bor** · ⭐ **Modulning eng muhim darsi**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Do'stingizning telefonidagi rasmga qarang. Bir soniyada bilasiz: **"Bu Toshkentda olingan."**

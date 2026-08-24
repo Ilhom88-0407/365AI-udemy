@@ -1,10 +1,5 @@
 # 3-dars. Zamonaviy NLP yutuqlari
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `3. Recent NLP advancements.vtt`
-> ⏱ **O'qish vaqti:** ~15 daqiqa · 🎯 **Daraja:** o'rta · 💻 **Python amaliyoti bor** · ⭐ **Kalit tushuncha: embeddings**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Google'da **"iliq kiyim"** deb qidiring. Natijada **"palto"**, **"kurtka"**, **"sviter"** chiqadi — garchi bu so'zlar sizning so'rovingizda **umuman yo'q** bo'lsa ham.

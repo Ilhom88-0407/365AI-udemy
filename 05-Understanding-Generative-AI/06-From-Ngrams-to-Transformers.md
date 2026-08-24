@@ -1,10 +1,5 @@
 # 6-dars. N-gram dan RNN va Transformer gacha — NLP evolyutsiyasi
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `6. From N-Grams to RNNs to Transformers The Evolution of NLP.vtt`
-> ⏱ **O'qish vaqti:** ~18 daqiqa · 🎯 **Daraja:** o'rta · 💻 **Python amaliyoti bor** · ⭐ **Modulning eng texnik darsi**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Bu dars — **detektiv hikoya**.

@@ -1,10 +1,5 @@
 # 1-dars. Strukturalangan va strukturalanmagan ma'lumot
 
-> **Modul:** 02. Intro to AI — Data is essential for building AI · **Manba:** `1. Structured vs unstructured data.vtt`
-> ⏱ **O'qish vaqti:** ~10 daqiqa · 🎯 **Daraja:** boshlang'ich
-
----
-
 ## 🎬 Boshlashdan oldin: bir daqiqalik o'ylash
 
 Telefoningizni qo'lingizga oling va o'ylab ko'ring:

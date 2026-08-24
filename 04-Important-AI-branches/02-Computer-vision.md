@@ -1,10 +1,5 @@
 # 2-dars. Computer Vision
 
-> **Modul:** 04. Intro to AI — Important AI branches · **Manba:** `2. Computer vision.vtt`
-> ⏱ **O'qish vaqti:** ~16 daqiqa · 🎯 **Daraja:** boshlang'ich · 💻 **Python amaliyoti bor**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Telefoningizni oling va kameraga qarang. **Face ID ochildi.**

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 460" width="940" height="460" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="aj" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="940" height="460" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">AI as a judge — AI ni AI baholaydi</text>
+  <text x="470" y="58" text-anchor="middle" font-size="13" fill="#475569">LangChain State of AI hisoboti: platformadagi loyihalarning 58% i shu yondashuvni ishlatgan</text>
+
+  <!-- flow -->
+  <rect x="30" y="86" width="220" height="86" rx="11" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="140" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#1D4ED8">AI MAHSULOT</text>
+  <text x="140" y="134" text-anchor="middle" font-size="11.5" fill="#334155">intervyu simulyatori</text>
+  <text x="140" y="154" text-anchor="middle" font-size="11" fill="#64748B">savol beradi, javob oladi</text>
+
+  <line x1="256" y1="129" x2="290" y2="129" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#aj)"/>
+  <text x="273" y="120" text-anchor="middle" font-size="9.5" fill="#64748B">namuna</text>
+
+  <rect x="296" y="86" width="220" height="86" rx="11" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="406" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#6D28D9">⚖️ AI JUDGE</text>
+  <text x="406" y="134" text-anchor="middle" font-size="11.5" fill="#334155">savol va javoblardan</text>
+  <text x="406" y="154" text-anchor="middle" font-size="11.5" fill="#334155">namunani tanlaydi va baholaydi</text>
+
+  <line x1="522" y1="129" x2="556" y2="129" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#aj)"/>
+
+  <rect x="562" y="86" width="348" height="86" rx="11" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <text x="736" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">👤 INSON HAKAM</text>
+  <text x="736" y="134" text-anchor="middle" font-size="11.5" fill="#334155">Nozik tushunish va axloqiy hukm</text>
+  <text x="736" y="154" text-anchor="middle" font-size="11" font-weight="600" fill="#065F46">ZARUR — AI ni to'liq almashtirmaydi</text>
+
+  <!-- two question types -->
+  <text x="470" y="204" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">Ikki xil savol — ikki xil qiyinlik</text>
+
+  <rect x="30" y="216" width="430" height="110" rx="11" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="245" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">KOD SAVOLLARI — oson baholanadi</text>
+  <g font-size="11.5" fill="#065F46">
+    <text x="50" y="264">• Yopiq uchli (closed-end) vazifalar</text>
+    <text x="50" y="284">• AI qanday natija kutilishini BILADI</text>
+    <text x="50" y="304">• Hisob to'g'rimi, kod kerakli natija berdimi —</text>
+    <text x="50" y="320">  oson tekshiriladi</text>
+  </g>
+
+  <rect x="480" y="216" width="430" height="110" rx="11" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+  <text x="695" y="240" text-anchor="middle" font-size="13" font-weight="700" fill="#C2410C">OCHIQ SAVOLLAR — qiyin baholanadi</text>
+  <g font-size="11.5" fill="#7C2D12">
+    <text x="500" y="264">• Ancha SUBYEKTIV</text>
+    <text x="500" y="284">• "To'g'ri javob" yagona emas</text>
+    <text x="500" y="304">• Lekin kuchli modellar bu sohada</text>
+    <text x="500" y="320">  yaxshilanib bormoqda</text>
+  </g>
+
+  <!-- pros cons -->
+  <rect x="30" y="340" width="430" height="104" rx="11" fill="#0F172A"/>
+  <text x="245" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#6EE7B7">✅ AI ni AI baholashning foydalari</text>
+  <g font-size="11.5" fill="#E2E8F0">
+    <text x="52" y="388">• Narx samaradorligi</text>
+    <text x="52" y="408">• Masshtablilik va tezlik</text>
+    <text x="52" y="428">• Katta hajmdagi muloqotni ko'rib chiqish imkoni</text>
+  </g>
+
+  <rect x="480" y="340" width="430" height="104" rx="11" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="695" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#991B1B">⚠️ Kamchiligi</text>
+  <text x="695" y="390" text-anchor="middle" font-size="11.5" fill="#7F1D1D">AI modellarida INSON INTUITSIYASI va ETIKASI yo'q</text>
+  <text x="695" y="412" text-anchor="middle" font-size="11.5" fill="#7F1D1D">Nozik tushunish va axloqiy hukm zarur bo'lganda</text>
+  <text x="695" y="432" text-anchor="middle" font-size="12" font-weight="700" fill="#991B1B">→ INSON HAKAM SHART</text>
+</svg>

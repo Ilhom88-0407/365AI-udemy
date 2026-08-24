@@ -1,10 +1,5 @@
 # 1-dars. Gen AI ning ko'tarilishi — ChatGPT bilan tanishuv
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `1. The rise of Gen AI Introducing ChatGPT.vtt`
-> ⏱ **O'qish vaqti:** ~8 daqiqa · 🎯 **Daraja:** boshlang'ich
-
----
-
 ## 🎬 Boshlashdan oldin
 
 **2022-yil 29-noyabr:** dunyoning katta qismi "AI" so'zini shunchaki ilmiy-fantastika deb bilardi.

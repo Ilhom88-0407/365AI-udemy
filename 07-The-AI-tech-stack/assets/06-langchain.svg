@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 450" width="960" height="450" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="al" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="960" height="450" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="480" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">LangChain — Lego bloklari kabi</text>
+  <text x="480" y="58" text-anchor="middle" font-size="13" fill="#475569">Chatbot qurish: LangChain'siz va LangChain bilan</text>
+
+  <!-- WITHOUT -->
+  <rect x="24" y="76" width="440" height="248" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <rect x="24" y="76" width="440" height="40" rx="12" fill="#DC2626"/>
+  <rect x="24" y="102" width="440" height="14" fill="#DC2626"/>
+  <text x="244" y="103" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">LANGCHAIN'SIZ — qo'lda</text>
+
+  <g font-size="11.5">
+    <rect x="48" y="132" width="392" height="30" rx="7" fill="#FEF2F2" stroke="#FCA5A5"/>
+    <text x="64" y="152" fill="#7F1D1D">1. Til modelini qo'lda tanlash (masalan GPT)</text>
+    <rect x="48" y="168" width="392" height="30" rx="7" fill="#FEF2F2" stroke="#FCA5A5"/>
+    <text x="64" y="188" fill="#7F1D1D">2. API ni integratsiya qilish</text>
+    <rect x="48" y="204" width="392" height="30" rx="7" fill="#FEF2F2" stroke="#FCA5A5"/>
+    <text x="64" y="224" fill="#7F1D1D">3. Foydalanuvchi so'rovlarini boshqarish</text>
+    <rect x="48" y="240" width="392" height="30" rx="7" fill="#FEF2F2" stroke="#FCA5A5"/>
+    <text x="64" y="260" fill="#7F1D1D">4. Modelga mos formatga oldindan ishlash</text>
+    <rect x="48" y="276" width="392" height="30" rx="7" fill="#FEF2F2" stroke="#FCA5A5"/>
+    <text x="64" y="296" fill="#7F1D1D">5. Model javobini talqin qilish va chiqarish</text>
+  </g>
+
+  <!-- WITH -->
+  <rect x="496" y="76" width="440" height="248" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <rect x="496" y="76" width="440" height="40" rx="12" fill="#059669"/>
+  <rect x="496" y="102" width="440" height="14" fill="#059669"/>
+  <text x="716" y="103" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">LANGCHAIN BILAN</text>
+
+  <text x="716" y="140" text-anchor="middle" font-size="12" fill="#334155">Tayyor komponentlardan foydalanasiz</text>
+
+  <!-- lego blocks -->
+  <g>
+    <rect x="530" y="152" width="110" height="52" rx="8" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+    <circle cx="552" cy="148" r="7" fill="#059669"/><circle cx="580" cy="148" r="7" fill="#059669"/><circle cx="608" cy="148" r="7" fill="#059669"/>
+    <text x="585" y="176" text-anchor="middle" font-size="11" font-weight="700" fill="#065F46">API</text>
+    <text x="585" y="192" text-anchor="middle" font-size="9.5" fill="#047857">boshqaruv</text>
+
+    <rect x="660" y="152" width="110" height="52" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+    <circle cx="682" cy="148" r="7" fill="#2563EB"/><circle cx="710" cy="148" r="7" fill="#2563EB"/><circle cx="738" cy="148" r="7" fill="#2563EB"/>
+    <text x="715" y="176" text-anchor="middle" font-size="11" font-weight="700" fill="#1E40AF">DATA</text>
+    <text x="715" y="192" text-anchor="middle" font-size="9.5" fill="#1D4ED8">preprocessing</text>
+
+    <rect x="790" y="152" width="110" height="52" rx="8" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+    <circle cx="812" cy="148" r="7" fill="#7C3AED"/><circle cx="840" cy="148" r="7" fill="#7C3AED"/><circle cx="868" cy="148" r="7" fill="#7C3AED"/>
+    <text x="845" y="176" text-anchor="middle" font-size="11" font-weight="700" fill="#5B21B6">RESPONSE</text>
+    <text x="845" y="192" text-anchor="middle" font-size="9.5" fill="#6D28D9">generatsiya</text>
+  </g>
+
+  <rect x="530" y="222" width="370" height="34" rx="8" fill="#ECFDF5" stroke="#A7F3D0"/>
+  <text x="715" y="244" text-anchor="middle" font-size="11.5" fill="#065F46">"Bugun Nyu-Yorkda ob-havo qanday?" → LangChain butun oqimni boshqaradi</text>
+
+  <rect x="530" y="264" width="370" height="42" rx="8" fill="#FEF9C3" stroke="#FDE68A"/>
+  <text x="715" y="282" text-anchor="middle" font-size="11.5" font-weight="600" fill="#854D0E">🔄 Bitta modelni boshqasiga ALMASHTIRISH</text>
+  <text x="715" y="299" text-anchor="middle" font-size="11" fill="#713F12">kodni qayta yozmasdan — Lego blokini almashtirgandek</text>
+
+  <!-- bottom -->
+  <rect x="24" y="340" width="460" height="94" rx="11" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="2"/>
+  <text x="254" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">✅ AFZALLIKLARI</text>
+  <g font-size="11.5" fill="#065F46">
+    <text x="46" y="388">• Tez va qulay LLM integratsiyasi</text>
+    <text x="46" y="408">• Vaqt tejaydi, kod izchilligini saqlaydi</text>
+    <text x="46" y="426">• Uzoq muddatli XOTIRA qo'shish oson</text>
+  </g>
+
+  <rect x="500" y="340" width="436" height="94" rx="11" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+  <text x="718" y="364" text-anchor="middle" font-size="13" font-weight="700" fill="#991B1B">⚠️ NARXI</text>
+  <text x="718" y="392" text-anchor="middle" font-size="11.5" fill="#7F1D1D">Barcha LLM integratsiyasini QO'LDA yozishga qaraganda</text>
+  <text x="718" y="412" text-anchor="middle" font-size="12" font-weight="600" fill="#991B1B">KAMROQ MOSLASHTIRISH imkoni beradi</text>
+</svg>

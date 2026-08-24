@@ -1,10 +1,5 @@
 # 3-dars. Tabiiy va sun'iy intellekt
 
-> **Modul:** 01. Intro to AI — Getting started · **Manba:** `3. Natural vs Artificial Intelligence.vtt`
-> ⏱ **O'qish vaqti:** ~10 daqiqa · 🎯 **Daraja:** boshlang'ich
-
----
-
 ## 🎬 Boshlashdan oldin: bir savol
 
 Kir yuvish mashinasi **aqllimi?**

@@ -1,11 +1,5 @@
 # 04-Modul · AI ning muhim tarmoqlari
 
-> **Manba:** *The AI Engineer Course 2025: Complete AI Engineer Bootcamp* (365 Careers, Udemy)
-> **Bo'lim:** `04. Intro to AI Module — Important AI branches`
-> **Darslar:** 4 ta video + Quiz 4 · **O'qish vaqti:** ~56 daqiqa · **Amaliyot bilan:** ~3 soat
-
----
-
 ## 🌳 Bir jumlada
 
 > **"AI" — bu bitta narsa emas. Bu — bir necha butunlay boshqa dunyoning umumiy nomi.**
@@ -152,6 +146,3 @@ Har bir darsdagi **"O'zini tekshirish savollari"** — jami **37 ta savol**.
 1. **Quiz 4** ni yeching (`5.4 Quiz 4.html`)
 2. **05-modul: Generativ AI ni tushunish** ga o'ting
 
----
-
-*📁 Manba: har bir dars mos `.vtt` transkriptdan tayyorlangan. Amaliy topshiriqlar, grafikalar va Python skriptlari — o'quvchilar uchun qo'shimcha material.*

@@ -1,10 +1,5 @@
 # 4-dars. AI ning qisqacha tarixi
 
-> **Modul:** 01. Intro to AI — Getting started · **Manba:** `4. Brief history of AI.vtt`
-> ⏱ **O'qish vaqti:** ~18 daqiqa · 🎯 **Daraja:** boshlang'ich · ⭐ **Modulning eng muhim darsi**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Ko'pchilik o'ylaydi: **"AI 2022-yilda ChatGPT bilan paydo bo'ldi."**

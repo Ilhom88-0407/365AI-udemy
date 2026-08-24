@@ -1,10 +1,5 @@
 # 2-dars. Ma'lumotni qanday to'playmiz
 
-> **Modul:** 02. Intro to AI — Data is essential for building AI · **Manba:** `2. How we collect data.vtt`
-> ⏱ **O'qish vaqti:** ~15 daqiqa · 🎯 **Daraja:** boshlang'ich · 💻 **Python amaliyoti bor**
-
----
-
 ## 🎬 Boshlashdan oldin: g'alati savol
 
 Qog'ozga **3** raqamini yozing. Endi yoningizdagi odamdan ham shuni yozishni so'rang.

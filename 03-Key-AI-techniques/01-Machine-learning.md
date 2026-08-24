@@ -1,10 +1,5 @@
 # 1-dars. Machine Learning
 
-> **Modul:** 03. Intro to AI — Key AI techniques · **Manba:** `1. Machine learning.vtt`
-> ⏱ **O'qish vaqti:** ~15 daqiqa · 🎯 **Daraja:** boshlang'ich · 💻 **Python amaliyoti bor**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Bir savol: **siz velosiped haydashni qanday o'rgandingiz?**

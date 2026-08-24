@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="900" height="380" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+<text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">API &#8212; klient va server o&#8216;rtasidagi ko&#8216;prik</text>
+<text x="450" y="58" text-anchor="middle" font-size="13" fill="#475569">Ikki qadam: REQUEST (so&#8216;rov) va RESPONSE (javob)</text>
+<rect x="40" y="120" width="200" height="120" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="140" y="166" text-anchor="middle" font-size="30">&#128187;</text>
+<text x="140" y="196" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">KLIENT</text>
+<text x="140" y="216" text-anchor="middle" font-size="11.5" fill="#64748B">sizning kompyuteringiz</text>
+<rect x="270" y="150" width="360" height="60" rx="10" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="450" y="186" text-anchor="middle" font-size="17" font-weight="700" fill="#1D4ED8">A P I</text>
+<text x="450" y="142" text-anchor="middle" font-size="11" fill="#64748B">Application Programming Interface</text>
+<path d="M246,168 L640,168" stroke="#059669" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="443" y="162" text-anchor="middle" font-size="11.5" font-weight="600" fill="#047857">1 &#183; REQUEST &#8594;</text>
+<path d="M654,198 L260,198" stroke="#EA580C" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="457" y="215" text-anchor="middle" font-size="11.5" font-weight="600" fill="#C2410C">&#8592; 2 &#183; RESPONSE (ma&#8216;lumot)</text>
+<rect x="660" y="120" width="200" height="120" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+<text x="760" y="166" text-anchor="middle" font-size="30">&#128421;</text>
+<text x="760" y="196" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">SERVER</text>
+<text x="760" y="216" text-anchor="middle" font-size="11.5" fill="#64748B">OpenAI / 365 / boshqa</text>
+<rect x="40" y="262" width="400" height="98" rx="11" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+<text x="240" y="286" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">MISOL 1 &#183; ikki kompaniya</text>
+<text x="60" y="310" font-size="11.5" fill="#475569">365 kompaniyasi va ish e&#8216;lonlari platformasi hamkorlik qiladi.</text>
+<text x="60" y="330" font-size="11.5" fill="#475569">Platforma 365 serverlaridan talaba nimani o&#8216;rganganini</text>
+<text x="60" y="348" font-size="11.5" fill="#475569">TO&#8216;G&#8216;RIDAN-TO&#8216;G&#8216;RI va DOIM YANGI holatda oladi.</text>
+<rect x="460" y="262" width="400" height="98" rx="11" fill="#0F172A"/>
+<text x="660" y="286" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">MISOL 2 &#183; sizning ilovangiz</text>
+<text x="480" y="310" font-size="11.5" fill="#E2E8F0">GPT ni mahsulotingizga qo&#8216;shish uchun</text>
+<text x="480" y="330" font-size="11.5" fill="#93C5FD">OpenAI ning API siga ULANISH shart.</text>
+<text x="480" y="350" font-size="11.5" fill="#94A3B8">API bilan ishlash &#8212; AI muhandisining kalit ko&#8216;nikmasi</text>
+</svg>

@@ -1,10 +1,5 @@
 # 9-dars. Foundation modellarning ahamiyati
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `9. The importance of foundation models.vtt`
-> ⏱ **O'qish vaqti:** ~12 daqiqa · 🎯 **Daraja:** o'rta
-
----
-
 ## 🎬 Boshlashdan oldin
 
 10 yil oldin AI kompaniyasi qurmoqchi bo'lsangiz, sizga kerak edi:
@@ -96,7 +91,7 @@ Bugun — **bitta API kaliti**.
 > - **turli vazifalarni bajara oladi**
 > - **nihoyatda kuchli** (immensely powerful)
 
-> 🏛 **"Foundation" — poydevor.** Siz uy qurayotganda **beton quymaysiz** — tayyor poydevor ustiga qurасиз. AI da ham shunday bo'ldi.
+> 🏛 **"Foundation" — poydevor.** Siz uy qurayotganda **beton quymaysiz** — tayyor poydevor ustiga quraciz. AI da ham shunday bo'ldi.
 
 ---
 

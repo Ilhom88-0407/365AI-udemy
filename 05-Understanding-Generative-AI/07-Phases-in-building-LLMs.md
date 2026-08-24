@@ -1,10 +1,5 @@
 # 7-dars. LLM qurish bosqichlari
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `7. Phases in building LLMs.vtt`
-> ⏱ **O'qish vaqti:** ~15 daqiqa · 🎯 **Daraja:** o'rta
-
----
-
 ## 🎬 Boshlashdan oldin
 
 ChatGPT'ga savol berasiz — 2 soniyada javob keladi.

@@ -1,11 +1,5 @@
 # 03-Modul · AI ning asosiy texnikalari
 
-> **Manba:** *The AI Engineer Course 2025: Complete AI Engineer Bootcamp* (365 Careers, Udemy)
-> **Bo'lim:** `03. Intro to AI Module — Key AI techniques`
-> **Darslar:** 3 ta video + Quiz 3 · **O'qish vaqti:** ~50 daqiqa · **Amaliyot bilan:** ~3 soat
-
----
-
 ## 🧠 Bir jumlada
 
 > **01-modul aytdi: AI o'rganadi. 02-modul aytdi: buning uchun ma'lumot kerak.**
@@ -154,6 +148,3 @@ Har bir darsdagi **"O'zini tekshirish savollari"** — jami **26 ta savol**.
 1. **Quiz 3** ni yeching (`4.3 Quiz 3.html`)
 2. **04-modul: Important AI branches** ga o'ting
 
----
-
-*📁 Manba: har bir dars mos `.vtt` transkriptdan tayyorlangan. Amaliy topshiriqlar, grafikalar va Python skriptlari — o'quvchilar uchun qo'shimcha material.*

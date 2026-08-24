@@ -1,10 +1,5 @@
 # 4-dars. Metadata — ma'lumotni tavsiflovchi ma'lumot
 
-> **Modul:** 02. Intro to AI — Data is essential for building AI · **Manba:** `4. Metadata Data that describes data.vtt`
-> ⏱ **O'qish vaqti:** ~12 daqiqa · 🎯 **Daraja:** boshlang'ich · 💻 **Python amaliyoti bor** · 🔒 **Xavfsizlik mavzusi bor**
-
----
-
 ## 🎬 Boshlashdan oldin: telefoningizdagi maxfiy ma'lumot
 
 Galereyangizni oching, istalgan rasmni tanlang va **"Ma'lumot" / "Details" / "ⓘ"** tugmasini bosing.

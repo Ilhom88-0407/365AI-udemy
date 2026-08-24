@@ -1,10 +1,5 @@
 # 1-dars. Robototexnika (Robotics)
 
-> **Modul:** 04. Intro to AI — Important AI branches · **Manba:** `1. Robotics.vtt`
-> ⏱ **O'qish vaqti:** ~14 daqiqa · 🎯 **Daraja:** boshlang'ich
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Robot haqidagi birinchi hikoya **necha yoshda** deb o'ylaysiz?

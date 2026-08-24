@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 440" width="940" height="440" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="940" height="440" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+<text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Vector database &#8212; YouTube misolida</text>
+<text x="470" y="58" text-anchor="middle" font-size="13" fill="#475569">O&#8216;xshash kontent vektor fazosida YAQIN joylashadi</text>
+<rect x="30" y="82" width="270" height="150" rx="12" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+<text x="165" y="106" text-anchor="middle" font-size="13.5" font-weight="700" fill="#475569">RELATSION BAZA</text>
+<text x="165" y="128" text-anchor="middle" font-size="11.5" fill="#334155">satr va ustunlar</text>
+<g font-size="10.5" fill="#334155">
+<rect x="54" y="146" width="100" height="22" fill="#E2E8F0" stroke="#CBD5E1"/>
+<rect x="154" y="146" width="120" height="22" fill="#E2E8F0" stroke="#CBD5E1"/>
+<text x="104" y="161" text-anchor="middle">ID</text>
+<text x="214" y="161" text-anchor="middle">Nom</text>
+<rect x="54" y="170" width="100" height="22" fill="#FFFFFF" stroke="#CBD5E1"/>
+<rect x="154" y="170" width="120" height="22" fill="#FFFFFF" stroke="#CBD5E1"/>
+<text x="104" y="185" text-anchor="middle">1</text>
+<text x="214" y="185" text-anchor="middle">video_a</text>
+<rect x="54" y="194" width="100" height="22" fill="#FFFFFF" stroke="#CBD5E1"/>
+<rect x="154" y="194" width="120" height="22" fill="#FFFFFF" stroke="#CBD5E1"/>
+<text x="104" y="209" text-anchor="middle">2</text>
+<text x="214" y="209" text-anchor="middle">video_b</text>
+</g>
+<rect x="54" y="220" width="220" height="0" fill="none"/>
+<text x="165" y="252" text-anchor="middle" font-size="11.5" fill="#991B1B">&#10007; strukturalanmagan ma&#8216;lumot uchun optimal emas</text>
+<line x1="308" y1="150" x2="336" y2="150" stroke="#94A3B8" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="322" y="140" text-anchor="middle" font-size="10" fill="#64748B">embed</text>
+<rect x="344" y="82" width="566" height="252" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+<text x="627" y="106" text-anchor="middle" font-size="13.5" font-weight="700" fill="#047857">VEKTOR BAZASI &#8212; ma&#8216;no fazosi</text>
+<circle cx="440" cy="165" r="42" fill="#DBEAFE" stroke="#2563EB" stroke-width="2"/>
+<text x="440" y="169" text-anchor="middle" font-size="10.5" font-weight="600" fill="#2563EB">vloglar</text>
+<circle cx="560" cy="145" r="38" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<text x="560" y="149" text-anchor="middle" font-size="10.5" font-weight="600" fill="#7C3AED">o&#8216;yin</text>
+<circle cx="690" cy="175" r="44" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+<text x="690" y="179" text-anchor="middle" font-size="10.5" font-weight="600" fill="#D97706">darsliklar</text>
+<circle cx="820" cy="150" r="36" fill="#FCE7F3" stroke="#DB2777" stroke-width="2"/>
+<text x="820" y="154" text-anchor="middle" font-size="10.5" font-weight="600" fill="#DB2777">musiqa</text>
+<circle cx="520" cy="262" r="40" fill="#D1FAE5" stroke="#059669" stroke-width="2"/>
+<text x="520" y="266" text-anchor="middle" font-size="10.5" font-weight="600" fill="#059669">tech review</text>
+<circle cx="680" cy="270" r="34" fill="#FFE4E6" stroke="#E11D48" stroke-width="2"/>
+<text x="680" y="274" text-anchor="middle" font-size="10.5" font-weight="600" fill="#E11D48">how-to</text>
+<text x="627" y="318" text-anchor="middle" font-size="11.5" fill="#64748B">o&#8216;xshashlik metrikasi: janr &#183; kontent &#183; uzunlik &#183; uslub</text>
+<rect x="30" y="352" width="430" height="70" rx="11" fill="#EFF6FF" stroke="#93C5FD" stroke-width="2"/>
+<text x="245" y="376" text-anchor="middle" font-size="13" font-weight="700" fill="#1D4ED8">Qo&#8216;llanish 1 &#183; QIDIRUV</text>
+<text x="245" y="398" text-anchor="middle" font-size="11.5" fill="#334155">O&#8216;xshashlik bo&#8216;yicha qidiruv, MA&#8216;NO va KONTEKST</text>
+<text x="245" y="414" text-anchor="middle" font-size="11" fill="#64748B">indekslash + ML texnikalari &#8594; millionlab vektorda TEZ</text>
+<rect x="480" y="352" width="430" height="70" rx="11" fill="#0F172A"/>
+<text x="695" y="376" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">Qo&#8216;llanish 2 &#183; UZOQ MUDDATLI XOTIRA</text>
+<text x="695" y="398" text-anchor="middle" font-size="11.5" fill="#E2E8F0">O&#8216;tmish suhbatlarni vektor sifatida saqlash</text>
+<text x="695" y="414" text-anchor="middle" font-size="11" fill="#94A3B8">&#8594; LLM kontekstni yaxshiroq tushunadi</text>
+</svg>

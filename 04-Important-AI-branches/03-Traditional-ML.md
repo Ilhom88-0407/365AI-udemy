@@ -1,10 +1,5 @@
 # 3-dars. An'anaviy Machine Learning
 
-> **Modul:** 04. Intro to AI — Important AI branches · **Manba:** `3. Traditional ML.vtt`
-> ⏱ **O'qish vaqti:** ~10 daqiqa · 🎯 **Daraja:** boshlang'ich · 💼 **Karyera uchun muhim**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Bir savol: **AI bugun eng ko'p pulni qayerda ishlab beryapti?**

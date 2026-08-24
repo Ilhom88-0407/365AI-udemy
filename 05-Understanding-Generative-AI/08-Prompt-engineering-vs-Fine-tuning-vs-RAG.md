@@ -1,10 +1,5 @@
 # 8-dars. Prompt engineering vs Fine-tuning vs RAG
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `8. Prompt engineering vs Fine-tuning vs RAG Techniques for AI optimization.vtt`
-> ⏱ **O'qish vaqti:** ~16 daqiqa · 🎯 **Daraja:** o'rta · ⭐ **Amaliyot uchun eng muhim dars**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Ish e'lonlarida bu uch ibora doim uchraydi:

@@ -1,10 +1,5 @@
 # 2-dars. Supervised, Unsupervised va Reinforcement learning
 
-> **Modul:** 03. Intro to AI — Key AI techniques · **Manba:** `2. Supervised, Unsupervised, and Reinforcement learning.vtt`
-> ⏱ **O'qish vaqti:** ~15 daqiqa · 🎯 **Daraja:** boshlang'ich · 💻 **Python amaliyoti bor**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Uch xil o'qituvchini tasavvur qiling:

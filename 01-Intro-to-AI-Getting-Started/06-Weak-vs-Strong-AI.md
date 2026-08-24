@@ -1,10 +1,5 @@
 # 6-dars. Weak (Narrow) AI va Strong AI (AGI)
 
-> **Modul:** 01. Intro to AI — Getting started · **Manba:** `6. Weak vs Strong AI.vtt`
-> ⏱ **O'qish vaqti:** ~12 daqiqa · 🎯 **Daraja:** boshlang'ich · 🤔 **Muhokamaga boy dars**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Telefoningizda bugun nechta AI ishlatdingiz?

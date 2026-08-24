@@ -1,10 +1,5 @@
 # 10-dars. Buy vs Make — Foundation modellar va shaxsiy modellar
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `10. Buy vs Make foundation models vs private models.vtt`
-> ⏱ **O'qish vaqti:** ~13 daqiqa · 🎯 **Daraja:** o'rta · 💼 **Karyera uchun eng muhim dars**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Savol: **agar hamma bir xil OpenAI API dan foydalansa, kim yutadi?**

@@ -1,10 +1,5 @@
 # 2-dars. NLP ga dastlabki yondashuvlar
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `2. Early approaches to Natural Language Processing (NLP).vtt`
-> ⏱ **O'qish vaqti:** ~12 daqiqa · 🎯 **Daraja:** boshlang'ich
-
----
-
 ## 🎬 Boshlashdan oldin
 
 Ingliz tilidagi bir so'zga qarang: **`can`**

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 480" width="980" height="480" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="ad" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+  <rect width="980" height="480" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="490" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Ma'lumot devori — GPT-5 uchun ma'lumot qayerdan keladi?</text>
+  <text x="490" y="58" text-anchor="middle" font-size="13" fill="#475569">Uchta bir vaqtda kelayotgan to'siq</text>
+
+  <!-- Problem 1 -->
+  <rect x="24" y="80" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="174" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#991B1B">1 · MA'LUMOT TUGAMOQDA</text>
+  <text x="174" y="134" text-anchor="middle" font-size="12" fill="#334155">GPT-4 internetdagi ochiq</text>
+  <text x="174" y="152" text-anchor="middle" font-size="12" fill="#334155">ma'lumotning katta qismini</text>
+  <text x="174" y="170" text-anchor="middle" font-size="12" fill="#334155">allaqachon o'qigan</text>
+  <rect x="46" y="184" width="256" height="30" rx="7" fill="#FEE2E2"/>
+  <text x="174" y="204" text-anchor="middle" font-size="12" font-weight="600" fill="#991B1B">Yangisi qayerdan?</text>
+
+  <!-- Problem 2 -->
+  <rect x="340" y="80" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <text x="490" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#9A3412">2 · AI KONTENTI QAYTMOQDA</text>
+  <text x="490" y="130" text-anchor="middle" font-size="11.5" fill="#334155">Internetdagi yangi maqolalar</text>
+  <text x="490" y="148" text-anchor="middle" font-size="11.5" fill="#334155">endi AI bilan yozilmoqda</text>
+  <g font-size="11" fill="#7C2D12">
+    <text x="366" y="174">↻ Model o'zi yozganini qayta o'qiydi</text>
+    <text x="366" y="192">↻ Takroriy, hosila kontent</text>
+  </g>
+  <rect x="362" y="200" width="256" height="20" rx="6" fill="#FFEDD5"/>
+  <text x="490" y="215" text-anchor="middle" font-size="11" font-weight="600" fill="#9A3412">→ gallyutsinatsiya · bias · noaniqlik ↑</text>
+
+  <!-- Problem 3 -->
+  <rect x="656" y="80" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="806" y="106" text-anchor="middle" font-size="14" font-weight="700" fill="#6D28D9">3 · ESHIKLAR YOPILMOQDA</text>
+  <text x="806" y="130" text-anchor="middle" font-size="11.5" fill="#334155">Sud da'volari va scraping taqiqlari</text>
+  <g font-size="11" fill="#4C1D95">
+    <text x="682" y="154">⚖ The New York Times</text>
+    <text x="682" y="172">⚖ Shutterstock</text>
+    <text x="682" y="190">⚖ John Grisham (yozuvchi)</text>
+    <text x="682" y="208">🚫 Reddit · Quora — siyosat o'zgardi</text>
+  </g>
+
+  <!-- Solution -->
+  <rect x="24" y="252" width="932" height="140" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <rect x="24" y="252" width="932" height="40" rx="12" fill="#059669"/>
+  <rect x="24" y="278" width="932" height="14" fill="#059669"/>
+  <text x="490" y="279" text-anchor="middle" font-size="14.5" font-weight="700" fill="#FFFFFF">YECHIM: OpenAI ning KONTENT LITSENZIYALASH dasturi</text>
+
+  <text x="490" y="318" text-anchor="middle" font-size="15" font-weight="700" fill="#047857">Noshirlarga yiliga $1–5 million taklif qilindi</text>
+  <text x="490" y="338" text-anchor="middle" font-size="12" fill="#334155">arxivlarga kirish va gen AI modellarini o'qitish uchun</text>
+
+  <g font-size="11.5" text-anchor="middle" fill="#065F46">
+    <rect x="60" y="350" width="160" height="28" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="140" y="369">Shutterstock</text>
+    <rect x="234" y="350" width="160" height="28" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="314" y="369">Axel Springer</text>
+    <rect x="408" y="350" width="180" height="28" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="498" y="369">The Associated Press</text>
+    <rect x="602" y="350" width="150" height="28" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="677" y="369">Le Monde</text>
+    <rect x="766" y="350" width="154" height="28" rx="7" fill="#ECFDF5" stroke="#A7F3D0"/>
+    <text x="843" y="369">Prisa Media</text>
+  </g>
+
+  <rect x="24" y="406" width="932" height="52" rx="12" fill="#0F172A"/>
+  <text x="490" y="430" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">Kelajakdagi oqibat</text>
+  <text x="490" y="450" text-anchor="middle" font-size="12" fill="#CBD5E1">Big tech firmalar o'rtasidagi raqobat KATTA PROPRIETARY DATASETLAR narxini sezilarli oshiradi</text>
+</svg>

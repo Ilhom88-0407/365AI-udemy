@@ -1,10 +1,5 @@
 # 3-dars. Belgilangan (labelled) va belgilanmagan (unlabelled) ma'lumot
 
-> **Modul:** 02. Intro to AI — Data is essential for building AI · **Manba:** `3. Labelled and unlabelled data.vtt`
-> ⏱ **O'qish vaqti:** ~12 daqiqa · 🎯 **Daraja:** boshlang'ich · 💻 **Python amaliyoti bor**
-
----
-
 ## 🎬 Boshlashdan oldin: siz allaqachon buni qilgansiz
 
 Instagram'da rasmga **teg** qo'yganmisiz? YouTube'da videoga **👍 / 👎** bosganmisiz? Spam xatni **"Spam"** deb belgilaganmisiz?

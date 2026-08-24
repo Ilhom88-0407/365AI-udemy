@@ -1,11 +1,5 @@
 # 01-Modul · Intro to AI — Getting Started
 
-> **Manba:** *The AI Engineer Course 2025: Complete AI Engineer Bootcamp* (365 Careers, Udemy)
-> **Bo'lim:** `01. Intro to AI Module — Getting started`
-> **Darslar:** 6 ta video + Quiz 1 · **Umumiy o'qish vaqti:** ~80 daqiqa · **Amaliyot bilan:** ~3 soat
-
----
-
 ## 🚀 Bir jumlada
 
 > **Bu modul sizga AI ni o'rgatmaydi — u sizga AI nima ekanini tushuntiradi.**
@@ -159,6 +153,3 @@ Qiynalgan savol bo'lsa → o'sha darsga qayting.
 1. **Quiz 1** ni yeching (`7.1 Quiz 1.html`)
 2. **[02-modul: Ma'lumot — AI ning asosiy ingredienti](../02-Data-is-essential-for-building-AI/README.md)** ga o'ting
 
----
-
-*📁 Manba: har bir dars mos `.vtt` transkriptdan tayyorlangan. Amaliy topshiriqlar, grafikalar, analogiyalar va qo'shimcha izohlar — o'quvchilar uchun qo'shimcha material.*

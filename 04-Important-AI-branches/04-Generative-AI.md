@@ -1,10 +1,5 @@
 # 4-dars. Generativ AI
 
-> **Modul:** 04. Intro to AI — Important AI branches · **Manba:** `4. Generative AI.vtt`
-> ⏱ **O'qish vaqti:** ~16 daqiqa · 🎯 **Daraja:** boshlang'ich · 💻 **Python amaliyoti bor**
-
----
-
 ## 🎬 Boshlashdan oldin
 
 ChatGPT'ga bir savol bering va javobni ko'chirib oling. Endi **aynan o'sha savolni** yangi chatda qayta bering.

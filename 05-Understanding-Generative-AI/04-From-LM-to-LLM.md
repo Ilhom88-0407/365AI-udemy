@@ -1,10 +1,5 @@
 # 4-dars. Language Model dan Large Language Model (LLM) ga
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `4. From Language Models to Large Language Models (LLMs).vtt`
-> ⏱ **O'qish vaqti:** ~18 daqiqa · 🎯 **Daraja:** o'rta · ⭐ **Modulning markaziy darsi**
-
----
-
 ## 🎬 Boshlashdan oldin: bolalik o'yini
 
 Ma'ruzachi bu darsni **bolalikdagi o'yin** bilan boshlaydi. Va bu — butun LLM texnologiyasining eng yaxshi tushuntirishi.

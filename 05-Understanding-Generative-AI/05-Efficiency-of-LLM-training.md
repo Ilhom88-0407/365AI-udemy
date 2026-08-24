@@ -1,10 +1,5 @@
 # 5-dars. LLM o'qitish samaradorligi — Supervised vs Semi-supervised
 
-> **Modul:** 05. Intro to AI — Understanding Generative AI · **Manba:** `5. The efficiency of LLM training. Supervised vs Semi-supervised learning.vtt`
-> ⏱ **O'qish vaqti:** ~15 daqiqa · 🎯 **Daraja:** o'rta · 💻 **Python amaliyoti bor**
-
----
-
 ## 🎬 Boshlashdan oldin: bitta hisob
 
 Odamlar aytadi: **"ChatGPT deyarli butun internetni o'qigan."**

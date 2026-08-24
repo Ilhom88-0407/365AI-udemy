@@ -1,11 +1,5 @@
 # 02-Modul · Ma'lumot — AI ning asosiy ingredienti
 
-> **Manba:** *The AI Engineer Course 2025: Complete AI Engineer Bootcamp* (365 Careers, Udemy)
-> **Bo'lim:** `02. Intro to AI Module — Data is essential for building AI`
-> **Darslar:** 4 ta video + Quiz 2 · **Umumiy o'qish vaqti:** ~50 daqiqa · **Amaliyot bilan:** ~2 soat
-
----
-
 ## 🍲 Bir jumlada
 
 > **AI model — bu taom. Algoritm — retsept. Ma'lumot esa — mahsulotlar.**
@@ -140,6 +134,3 @@ Qiynalgan savol bo'lsa → o'sha darsga qayting.
 1. **Quiz 2** ni yeching (`5.2 Quiz 2.html`)
 2. **03-modul: Key AI techniques** ga o'ting
 
----
-
-*📁 Manba: har bir dars mos `.vtt` transkriptdan tayyorlangan. Amaliy topshiriqlar, grafikalar, Python skriptlari va xavfsizlik bo'limi — o'quvchilar uchun qo'shimcha material.*

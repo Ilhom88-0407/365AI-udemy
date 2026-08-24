@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="880" height="480" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+<text x="440" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">07-modul &#8212; AI muhandisining texnologik steki</text>
+<text x="440" y="58" text-anchor="middle" font-size="13" fill="#475569">Pastdan yuqoriga: har bir qatlam oldingisiga tayanadi</text>
+<rect x="80" y="82" width="720" height="48" rx="10" fill="#FDF2F8" stroke="#DB2777" stroke-width="2"/>
+<rect x="80" y="82" width="8" height="48" rx="4" fill="#DB2777"/>
+<text x="104" y="103" font-size="14" font-weight="700" fill="#DB2777">7 &#183; BAHOLASH</text>
+<text x="104" y="121" font-size="12" fill="#475569">AI evaluation &#183; AI as a judge</text>
+<rect x="80" y="136" width="720" height="48" rx="10" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2"/>
+<rect x="80" y="136" width="8" height="48" rx="4" fill="#7C3AED"/>
+<text x="104" y="157" font-size="14" font-weight="700" fill="#7C3AED">6 &#183; ORKESTRATSIYA</text>
+<text x="104" y="175" font-size="12" fill="#475569">LangChain &#8212; modellarni bog&#8216;lash</text>
+<rect x="80" y="190" width="720" height="48" rx="10" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+<rect x="80" y="190" width="8" height="48" rx="4" fill="#EA580C"/>
+<text x="104" y="211" font-size="14" font-weight="700" fill="#EA580C">5 &#183; MODELLAR MANBASI</text>
+<text x="104" y="229" font-size="12" fill="#475569">Hugging Face &#8212; "ML ning GitHub&#8216;i"</text>
+<rect x="80" y="244" width="720" height="48" rx="10" fill="#FEFCE8" stroke="#CA8A04" stroke-width="2"/>
+<rect x="80" y="244" width="8" height="48" rx="4" fill="#CA8A04"/>
+<text x="104" y="265" font-size="14" font-weight="700" fill="#CA8A04">4 &#183; FALSAFA</text>
+<text x="104" y="283" font-size="12" fill="#475569">Open source vs closed source</text>
+<rect x="80" y="298" width="720" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+<rect x="80" y="298" width="8" height="48" rx="4" fill="#059669"/>
+<text x="104" y="319" font-size="14" font-weight="700" fill="#059669">3 &#183; XOTIRA</text>
+<text x="104" y="337" font-size="12" fill="#475569">Vector databases &#8212; Pinecone, Chroma...</text>
+<rect x="80" y="352" width="720" height="48" rx="10" fill="#ECFEFF" stroke="#0891B2" stroke-width="2"/>
+<rect x="80" y="352" width="8" height="48" rx="4" fill="#0891B2"/>
+<text x="104" y="373" font-size="14" font-weight="700" fill="#0891B2">2 &#183; ULANISH</text>
+<text x="104" y="391" font-size="12" fill="#475569">API &#8212; klient va server ko&#8216;prigi</text>
+<rect x="80" y="406" width="720" height="48" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+<rect x="80" y="406" width="8" height="48" rx="4" fill="#2563EB"/>
+<text x="104" y="427" font-size="14" font-weight="700" fill="#2563EB">1 &#183; POYDEVOR</text>
+<text x="104" y="445" font-size="12" fill="#475569">Python &#8212; kod yozishni bilish SHART</text>
+<rect x="80" y="464" width="720" height="34" rx="9" fill="#0F172A"/>
+<text x="440" y="486" text-anchor="middle" font-size="12.5" fill="#93C5FD">Bu 7 ta vosita &#8212; AI muhandisi ish e&#8216;lonlarida eng ko&#8216;p uchraydigan talablar</text>
+</svg>

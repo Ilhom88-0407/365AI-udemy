@@ -1,11 +1,5 @@
 # 05-Modul · Generativ AI ni tushunish
 
-> **Manba:** *The AI Engineer Course 2025: Complete AI Engineer Bootcamp* (365 Careers, Udemy)
-> **Bo'lim:** `05. Intro to AI Module — Understanding Generative AI`
-> **Darslar:** 10 ta video · **O'qish vaqti:** ~2.5 soat · **Amaliyot bilan:** ~8 soat
-
----
-
 ## 🧬 Bir jumlada
 
 > **Bu modul ChatGPT ning "tug'ilish guvohnomasi".**
@@ -217,6 +211,3 @@ Har bir darsdagi **"O'zini tekshirish savollari"** — jami **106 ta savol**.
 
 **06-modul: Generativ AI dagi amaliy qiyinchiliklar** ga o'ting
 
----
-
-*📁 Manba: har bir dars mos `.vtt` transkriptdan tayyorlangan. Amaliy topshiriqlar, grafikalar va Python skriptlari — o'quvchilar uchun qo'shimcha material.*
