@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" width="860" height="560" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="560" fill="#0f172a"/>
+  <text x="430" y="36" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="bold">if / elif / else — boshqaruv oqimi</text>
+  <text x="430" y="60" text-anchor="middle" fill="#94a3b8" font-size="14">kompyuter YUQORIDAN PASTGA o'qiydi va BIRINCHI mos shartda TO'XTAYDI</text>
+
+  <!-- IF -->
+  <rect x="60" y="82" width="420" height="58" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="80" y="108" fill="#fbbf24" font-size="15" font-weight="bold">1 ·  if</text>
+  <text x="160" y="108" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">y &gt; 5</text>
+  <text x="80" y="130" fill="#94a3b8" font-size="13">shart tekshiriladi</text>
+  <line x1="480" y1="111" x2="590" y2="111" stroke="#4ade80" stroke-width="2"/>
+  <polygon points="598,111 586,105 586,117" fill="#4ade80"/>
+  <text x="512" y="103" fill="#4ade80" font-size="13" font-weight="bold">True</text>
+  <rect x="602" y="88" width="212" height="46" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="708" y="117" text-anchor="middle" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">return "Greater"</text>
+
+  <line x1="270" y1="140" x2="270" y2="170" stroke="#f87171" stroke-width="2"/>
+  <polygon points="270,178 264,166 276,166" fill="#f87171"/>
+  <text x="286" y="163" fill="#f87171" font-size="13" font-weight="bold">False → keyingisiga</text>
+
+  <!-- ELIF 1 -->
+  <rect x="60" y="180" width="420" height="58" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="80" y="206" fill="#38bdf8" font-size="15" font-weight="bold">2 ·  elif</text>
+  <text x="160" y="206" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">y &lt; 0</text>
+  <text x="80" y="228" fill="#94a3b8" font-size="13">faqat 1 bajarilmasa tekshiriladi</text>
+  <line x1="480" y1="209" x2="590" y2="209" stroke="#4ade80" stroke-width="2"/>
+  <polygon points="598,209 586,203 586,215" fill="#4ade80"/>
+  <text x="512" y="201" fill="#4ade80" font-size="13" font-weight="bold">True</text>
+  <rect x="602" y="186" width="212" height="46" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="708" y="215" text-anchor="middle" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">return "Negative"</text>
+
+  <line x1="270" y1="238" x2="270" y2="268" stroke="#f87171" stroke-width="2"/>
+  <polygon points="270,276 264,264 276,264" fill="#f87171"/>
+  <text x="286" y="261" fill="#f87171" font-size="13" font-weight="bold">False → keyingisiga</text>
+
+  <!-- ELIF 2 -->
+  <rect x="60" y="278" width="420" height="58" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="80" y="304" fill="#38bdf8" font-size="15" font-weight="bold">3 ·  elif</text>
+  <text x="160" y="304" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">y &lt; 5</text>
+  <text x="80" y="326" fill="#94a3b8" font-size="13">nechta bo'lsa ham mumkin</text>
+  <line x1="480" y1="307" x2="590" y2="307" stroke="#4ade80" stroke-width="2"/>
+  <polygon points="598,307 586,301 586,313" fill="#4ade80"/>
+  <text x="512" y="299" fill="#4ade80" font-size="13" font-weight="bold">True</text>
+  <rect x="602" y="284" width="212" height="46" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="708" y="313" text-anchor="middle" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">return "Less"</text>
+
+  <line x1="270" y1="336" x2="270" y2="366" stroke="#f87171" stroke-width="2"/>
+  <polygon points="270,374 264,362 276,362" fill="#f87171"/>
+  <text x="286" y="359" fill="#f87171" font-size="13" font-weight="bold">hech biri mos kelmadi</text>
+
+  <!-- ELSE -->
+  <rect x="60" y="376" width="420" height="58" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+  <text x="80" y="402" fill="#f472b6" font-size="15" font-weight="bold">4 ·  else</text>
+  <text x="160" y="402" fill="#94a3b8" font-size="15">shart YO'Q — qolgan hamma holat</text>
+  <text x="80" y="424" fill="#94a3b8" font-size="13">ixtiyoriy, lekin tavsiya etiladi</text>
+  <line x1="480" y1="405" x2="590" y2="405" stroke="#f472b6" stroke-width="2"/>
+  <polygon points="598,405 586,399 586,411" fill="#f472b6"/>
+  <rect x="602" y="382" width="212" height="46" rx="8" fill="#500724" stroke="#f472b6" stroke-width="2"/>
+  <text x="708" y="411" text-anchor="middle" fill="#fbcfe8" font-size="14" font-family="Consolas, monospace">return "Equal"</text>
+
+  <rect x="60" y="456" width="754" height="88" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="82" y="482" fill="#f87171" font-size="16" font-weight="bold">⚠️  TARTIB MUHIM</text>
+  <text x="82" y="506" fill="#fecaca" font-size="14" font-family="Consolas, monospace">elif y &lt; 5   ni   elif y &lt; 0   dan OLDIN qo'ysangiz — y = -3 uchun "Less" chiqadi!</text>
+  <text x="82" y="530" fill="#fecaca" font-size="14">Kompyuter BIRINCHI mos shartda to'xtaydi va keyingi kodni O'QIMAYDI ham.</text>
+</svg>

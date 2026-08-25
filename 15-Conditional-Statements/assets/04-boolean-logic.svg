@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 420" width="840" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="840" height="420" fill="#0f172a"/>
+  <text x="420" y="38" text-anchor="middle" fill="#f8fafc" font-size="24" font-weight="bold">if ning ichida nima sodir bo'ladi</text>
+
+  <rect x="40" y="66" width="230" height="72" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="155" y="94" text-anchor="middle" fill="#38bdf8" font-size="15" font-weight="bold">1 · SHART</text>
+  <text x="155" y="122" text-anchor="middle" fill="#e2e8f0" font-size="16" font-family="Consolas, monospace">x &gt; 4</text>
+
+  <text x="292" y="108" text-anchor="middle" fill="#94a3b8" font-size="26">→</text>
+
+  <rect x="314" y="66" width="230" height="72" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="429" y="94" text-anchor="middle" fill="#fbbf24" font-size="15" font-weight="bold">2 · BOOLEAN QIYMAT</text>
+  <text x="429" y="122" text-anchor="middle" fill="#e2e8f0" font-size="16" font-family="Consolas, monospace">True  yoki  False</text>
+
+  <text x="566" y="108" text-anchor="middle" fill="#94a3b8" font-size="26">→</text>
+
+  <rect x="588" y="66" width="212" height="72" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="694" y="94" text-anchor="middle" fill="#4ade80" font-size="15" font-weight="bold">3 · YO'L TANLANADI</text>
+  <text x="694" y="122" text-anchor="middle" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">if  yoki  else</text>
+
+  <rect x="40" y="164" width="370" height="140" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="62" y="192" fill="#38bdf8" font-size="15" font-weight="bold">x = 2 bo'lganda</text>
+  <text x="62" y="220" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">if x &gt; 4:</text>
+  <text x="62" y="242" fill="#64748b" font-size="15" font-family="Consolas, monospace">    print("Correct")</text>
+  <text x="62" y="264" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">else:</text>
+  <text x="62" y="286" fill="#4ade80" font-size="15" font-family="Consolas, monospace">    print("Incorrect")</text>
+
+  <rect x="430" y="164" width="370" height="140" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="452" y="192" fill="#fbbf24" font-size="15" font-weight="bold">Kompyuterning fikri</text>
+  <text x="452" y="220" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">2 &gt; 4  ?</text>
+  <text x="452" y="244" fill="#f87171" font-size="15" font-family="Consolas, monospace">→  False</text>
+  <text x="452" y="270" fill="#94a3b8" font-size="14">if bloki O'TKAZIB YUBORILADI</text>
+  <text x="452" y="292" fill="#4ade80" font-size="14">else bloki BAJARILADI  →  Incorrect</text>
+
+  <rect x="40" y="322" width="760" height="76" rx="10" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="62" y="350" fill="#38bdf8" font-size="16" font-weight="bold">💡 Ma'ruzachidan</text>
+  <text x="62" y="376" fill="#e2e8f0" font-size="15">"Ma'lum nuqtai nazardan, kompyuter tizimidagi HAMMA NARSA boolean —</text>
+  <text x="62" y="394" fill="#e2e8f0" font-size="15">nol va birlar ketma-ketligi, false va true."</text>
+</svg>

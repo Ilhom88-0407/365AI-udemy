@@ -30,7 +30,8 @@
 | 12 | [O'zgaruvchilar va ma'lumot turlari](12-Python-Variables-and-Data-Types/README.md) | 6 | ✅ Tayyor |
 | 13 | [Asosiy Python sintaksisi](13-Basic-Python-Syntax/README.md) | 7 | ✅ Tayyor |
 | 14 | [Operatorlar haqida ko'proq](14-More-on-Operators/README.md) | 2 | ✅ Tayyor |
-| 15–19 | Shartlar, funksiyalar, ketma-ketliklar, iteratsiya | 29 | ⏳ Navbatda |
+| 15 | [Shart operatorlari](15-Conditional-Statements/README.md) | 4 | ✅ Tayyor |
+| 16–19 | Funksiyalar, ketma-ketliklar, iteratsiya, muhim tushunchalar | 25 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -224,6 +225,21 @@
 
 ---
 
+## 🧭 Modul 15 — Shart operatorlari
+
+**Nimani beradi:** kodingiz endi QAROR QABUL QILADI — `if`, `elif`, `else`.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [`if` operatori](15-Conditional-Statements/01-The-IF-Statement.md) ⭐ |
+| 2 | [`else` operatori](15-Conditional-Statements/02-The-ELSE-Statement.md) ⭐ |
+| 3 | [`elif` operatori](15-Conditional-Statements/03-The-ELIF-Statement.md) ⭐ |
+| 4 | [Boolean qiymatlar haqida](15-Conditional-Statements/04-A-Note-on-Boolean-Values.md) |
+
+📝 **[64 ta mashq](15-Conditional-Statements/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](15-Conditional-Statements/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -301,8 +317,11 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 13-Basic-Python-Syntax/                     ← 7 dars, 4 SVG
 │   ├── MASHQLAR.md                             ← 62 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 14-More-on-Operators/                       ← 2 dars, 3 SVG
-    ├── MASHQLAR.md                             ← 58 ta mashq
+├── 14-More-on-Operators/                       ← 2 dars, 3 SVG
+│   ├── MASHQLAR.md                             ← 58 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 15-Conditional-Statements/                  ← 4 dars, 4 SVG
+    ├── MASHQLAR.md                             ← 64 ta mashq
     └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
@@ -311,9 +330,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
-**Python bo'limi davom etmoqda** — 10–14-modullar tayyor.
+**Python bo'limi davom etmoqda** — 10–15-modullar tayyor.
 
-Manba kursda keyingi bo'limlar: **Python** (15–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **Python** (16–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

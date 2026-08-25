@@ -186,7 +186,7 @@ Hammasi ✅ bo'lsa — **15-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**15-modul: Shartlar** — `if`, `elif`, `else`
+**[15-modul: Shartlar](../15-Conditional-Statements/README.md)** — `if`, `elif`, `else`
 
 ---
 
