@@ -183,8 +183,8 @@ python -m spacy download en_core_web_sm
 
 ## ➡️ Keyingi qadam
 
-**28-modul — NLP kelajagi**: NLP bo'limining yakuniy darsi. Keyin **29-moduldan** boshlab **katta til modellari** *(LLM)* va **transformerlar** dunyosiga kiramiz.
+**[28-modul — NLP kelajagi](../28-Future-of-NLP/README.md)**: NLP bo'limining yakuniy moduli — chuqur o'qitish, LLM'lar va 🇺🇿 **o'zbek tilida ishlaydigan to'liq NLP quvuri**. Keyin **29-moduldan** boshlab **katta til modellari** *(LLM)* va **transformerlar** dunyosiga kiramiz.
 
 ---
 
-⬅️ [26-modul — O'z matn tasniflagichingiz](../26-Text-Classifier/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [26-modul — O'z matn tasniflagichingiz](../26-Text-Classifier/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [28-modul — NLP kelajagi](../28-Future-of-NLP/README.md)

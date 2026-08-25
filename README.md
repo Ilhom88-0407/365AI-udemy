@@ -50,7 +50,7 @@
 | 25 | [Mavzu modellashtirish](25-Topic-Modelling/README.md) | 7 | ✅ Tayyor |
 | 26 | [O'z matn tasniflagichingiz](26-Text-Classifier/README.md) | 4 | ✅ Tayyor |
 | 27 | [Soxta yangiliklar (keys)](27-Fake-News-Case-Study/README.md) | 8 | ✅ Tayyor |
-| 28 | NLP kelajagi | 1 | ⏳ Navbatda |
+| 28 | [NLP kelajagi](28-Future-of-NLP/README.md) 🇺🇿 | 4 | ✅ Tayyor |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -483,6 +483,33 @@
 
 ---
 
+## 🧭 Modul 28 — NLP ning kelajagi 🇺🇿
+
+**Nimani beradi:** chuqur o'qitish va LLM'lar — va ## **O'ZBEK TILIDA ISHLAYDIGAN TO'LIQ NLP QUVURI**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Chuqur o'qitish nima?](28-Future-of-NLP/01-What-is-Deep-Learning.md) |
+| 2 | [NLP uchun chuqur o'qitish](28-Future-of-NLP/02-Deep-Learning-for-NLP.md) |
+| 3 | [Ingliz tilidan boshqa NLP](28-Future-of-NLP/03-Non-English-NLP.md) ⭐⭐ 🇺🇿 |
+| 4 | [NLP uchun keyingi nima?](28-Future-of-NLP/04-Whats-Next-for-NLP.md) |
+
+📝 **[42 ta mashq](28-Future-of-NLP/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](28-Future-of-NLP/LOYIHALAR.md)**
+
+> 🇺🇿 **Bu darslikning eng qimmatli moduli.** Kursda bu modul **nazariy**, bu yerda esa u **o'zbek tilida ishlaydigan amaliy vositaga** aylantirilgan:
+>
+> ```
+> ✅ NLTK'da 288 ta O'ZBEK to'xtatish so'zi BOR   (ingliz tilida — 198!)
+> ⚠️ token_pattern = r"[\w'ʻ’]+"  ← APOSTROF muammosi (o' va g' harflari)
+> ⚠️ Agglyutinatsiya: uyim·uyimda·uylarim·uylarimda = 4 ustun (house·houses = 2)
+> ✅ 21, 24, 25, 26, 27-modullar — o'zbek tilida TO'LIQ ishlaydi
+> ❌ 22, 23-modullar (POS/NER, VADER) — o'zbek modeli YO'Q
+> ```
+>
+> 🛠️ **Tayyor `uznlp` moduli:** kirill→lotin konvertor · apostrofni saqlovchi tokenizator · o'zbek stemmeri *(istisnolar bilan)* · shipcha detektori · ablatsiya paneli · to'liq matn tahlilchisi.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -605,10 +632,13 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── MASHQLAR.md                             ← 40 ta mashq
 │   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
 │   └── data/                                   ← 20 ta jumla + 100 ta sharh
-└── 27-Fake-News-Case-Study/                    ← 8 dars, 2 SVG  ⭐ KEYS
-    ├── MASHQLAR.md                             ← 36 ta mashq
-    ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
-    └── data/                                   ← 198 ta yangilik maqolasi
+├── 27-Fake-News-Case-Study/                    ← 8 dars, 2 SVG  ⭐ KEYS
+│   ├── MASHQLAR.md                             ← 36 ta mashq
+│   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+│   └── data/                                   ← 198 ta yangilik maqolasi
+└── 28-Future-of-NLP/                           ← 4 dars, 3 SVG  🇺🇿 O'ZBEK NLP
+    ├── MASHQLAR.md                             ← 42 ta mashq
+    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (uznlp moduli)
 ```
 
 ---
