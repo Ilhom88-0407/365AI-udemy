@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" width="860" height="500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="500" fill="#f7f9fc"/>
+  <text x="430" y="34" text-anchor="middle" font-size="23" font-weight="bold" fill="#1a2b4c">Sentimentni hisoblashning ikki yo'li</text>
+
+  <rect x="250" y="52" width="360" height="40" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="78" text-anchor="middle" font-size="14" font-style="italic" fill="#334155">"the parking wasn't great"</text>
+
+  <defs>
+    <marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2563eb"/></marker>
+    <marker id="v" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#7c3aed"/></marker>
+  </defs>
+  <path d="M 380 92 L 220 122" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#b)"/>
+  <path d="M 480 92 L 640 122" stroke="#7c3aed" stroke-width="2.5" fill="none" marker-end="url(#v)"/>
+
+  <!-- rule based -->
+  <rect x="30" y="122" width="380" height="316" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="220" y="150" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d4ed8">QOIDAGA ASOSLANGAN</text>
+  <text x="220" y="170" text-anchor="middle" font-size="12" fill="#3b82f6">TextBlob · VADER</text>
+
+  <rect x="52" y="184" width="336" height="92" rx="8" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5"/>
+  <text x="220" y="204" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">LUG'AT (leksikon)</text>
+  <g font-size="12" fill="#334155">
+    <text x="80" y="226">great</text>      <text x="200" y="226" fill="#16a34a">+0.8</text>
+    <text x="80" y="246">terrible</text>   <text x="200" y="246" fill="#dc2626">−1.0</text>
+    <text x="80" y="266">okay</text>       <text x="200" y="266" fill="#16a34a">+0.3</text>
+  </g>
+  <text x="300" y="246" font-size="11" fill="#64748b">odamlar</text>
+  <text x="300" y="262" font-size="11" fill="#64748b">QO'LDA yozgan</text>
+
+  <text x="220" y="298" text-anchor="middle" font-size="12" fill="#1e40af">har bir so'z ball oladi → yig'iladi</text>
+
+  <rect x="52" y="312" width="336" height="34" rx="7" fill="#dbeafe" stroke="#60a5fa"/>
+  <text x="220" y="334" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">natija: −0.44  (compound)</text>
+
+  <g font-size="12">
+    <text x="62" y="370" fill="#15803d">✅ juda tez (ms)</text>
+    <text x="230" y="370" fill="#15803d">✅ ~1 MB</text>
+    <text x="62" y="390" fill="#15803d">✅ tushuntirish oson</text>
+    <text x="230" y="390" fill="#15803d">✅ internetsiz</text>
+    <text x="62" y="410" fill="#b91c1c">❌ kontekstni ko'rmaydi</text>
+    <text x="62" y="428" fill="#b91c1c">❌ kinoyani tushunmaydi</text>
+  </g>
+
+  <!-- transformer -->
+  <rect x="450" y="122" width="380" height="316" rx="12" fill="#faf5ff" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="640" y="150" text-anchor="middle" font-size="17" font-weight="bold" fill="#6d28d9">TRANSFORMER</text>
+  <text x="640" y="170" text-anchor="middle" font-size="12" fill="#8b5cf6">transformers (Hugging Face)</text>
+
+  <rect x="472" y="184" width="336" height="92" rx="8" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.5"/>
+  <text x="640" y="204" text-anchor="middle" font-size="12" font-weight="bold" fill="#5b21b6">CHUQUR NEYRON TARMOQ</text>
+  <g font-size="11" fill="#334155">
+    <text x="640" y="228" text-anchor="middle">so'zlar bir-biriga QANDAY TA'SIR</text>
+    <text x="640" y="246" text-anchor="middle">qilishini o'rganadi</text>
+    <text x="640" y="266" text-anchor="middle" font-style="italic" fill="#7c3aed">"great" ← "wasn't" ga bog'liq</text>
+  </g>
+
+  <text x="640" y="298" text-anchor="middle" font-size="12" fill="#5b21b6">millionlab misolda O'QITILGAN</text>
+
+  <rect x="472" y="312" width="336" height="34" rx="7" fill="#ede9fe" stroke="#a78bfa"/>
+  <text x="640" y="334" text-anchor="middle" font-size="14" font-weight="bold" fill="#5b21b6">natija: NEGATIVE (99.8%)</text>
+
+  <g font-size="12">
+    <text x="482" y="370" fill="#15803d">✅ kontekstni ko'radi</text>
+    <text x="482" y="390" fill="#15803d">✅ ancha aniqroq (95%)</text>
+    <text x="482" y="410" fill="#b91c1c">❌ 250 MB – 1 GB</text>
+    <text x="672" y="410" fill="#b91c1c">❌ sekin</text>
+    <text x="482" y="428" fill="#b91c1c">❌ qora quti</text>
+    <text x="672" y="428" fill="#b91c1c">❌ kinoya</text>
+  </g>
+
+  <rect x="30" y="452" width="800" height="34" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="430" y="474" text-anchor="middle" font-size="13" font-weight="bold" fill="#854d0e">100 ta kitob sharhida: Transformer 95.2%  ·  VADER 72.3%  ·  TextBlob 63.9%</text>
+</svg>

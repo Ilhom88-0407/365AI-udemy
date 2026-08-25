@@ -172,8 +172,8 @@ England (47 sarlavha) →  win · lead      ⚽  SPORT
 
 ## ➡️ Keyingi qadam
 
-**23-modul — Sentiment Analysis**: 2-darsda `"Emma"` matnidagi sifatlar **hammasi ijobiy** ekanini ko'rdik. Endi buni **avtomatik** o'lchashni o'rganamiz: matn **ijobiymi** yoki **salbiymi**?
+**[23-modul — Sentiment tahlili](../23-Sentiment-Analysis/README.md)**: 2-darsda `"Emma"` matnidagi sifatlar **hammasi ijobiy** ekanini ko'rdik. Endi buni **avtomatik** o'lchashni o'rganamiz: matn **ijobiymi** yoki **salbiymi**?
 
 ---
 
-⬅️ [21-modul — Matnni oldindan qayta ishlash](../21-Text-Preprocessing/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [21-modul — Matnni oldindan qayta ishlash](../21-Text-Preprocessing/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [23-modul](../23-Sentiment-Analysis/README.md)

@@ -45,7 +45,8 @@
 | 20 | [NLP ga kirish](20-NLP-Introduction/README.md) | 4 | ✅ Tayyor |
 | 21 | [Matnni oldindan qayta ishlash](21-Text-Preprocessing/README.md) | 9 | ✅ Tayyor |
 | 22 | [POS teglash va NER](22-POS-and-NER/README.md) | 4 | ✅ Tayyor |
-| 23–28 | Sentiment, vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 26 | ⏳ Navbatda |
+| 23 | [Sentiment tahlili](23-Sentiment-Analysis/README.md) | 4 | ✅ Tayyor |
+| 24–28 | Vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 22 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -377,6 +378,25 @@
 
 ---
 
+## 🧭 Modul 23 — Sentiment tahlili
+
+**Nimani beradi:** matnning **hissiy ohangini** aniqlaysiz. Bu yerda siz kursdagi **birinchi chuqur o'qitish modelini** ishlatasiz — `transformers`.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Sentiment tahlili nima?](23-Sentiment-Analysis/01-What-is-Sentiment-Analysis.md) |
+| 2 | [Qoidaga asoslangan sentiment](23-Sentiment-Analysis/02-Rule-Based-Sentiment.md) ⭐ |
+| 3 | [Transformer modellari](23-Sentiment-Analysis/03-Pre-trained-Transformer-Models.md) ⭐ |
+| 4 | [🏆 Amaliy vazifa — 100 ta kitob sharhi](23-Sentiment-Analysis/04-Practical-Task.md) ⭐ |
+
+📝 **[44 ta mashq](23-Sentiment-Analysis/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](23-Sentiment-Analysis/LOYIHALAR.md)**
+
+> ⚠️ **Bu modulda 21-modul qoidasi TESKARI ishlaydi:** sentiment uchun to'xtatish so'zlarni **o'chirmang** — `not`, `no`, `never` ular ichida! `"not good"` → `"good"` bo'lib **ma'no teskari** aylanadi.
+>
+> 🏆 **100 ta kitob sharhida o'lchandi:** Transformer **95.2%**, VADER **72.3%**, TextBlob **63.9%**.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -479,10 +499,14 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── MASHQLAR.md                             ← 48 ta mashq
 │   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
 │   └── data/                                   ← 109 ta mehmonxona sharhi (CSV)
-└── 22-POS-and-NER/                             ← 4 dars, 3 SVG
-    ├── MASHQLAR.md                             ← 42 ta mashq
+├── 22-POS-and-NER/                             ← 4 dars, 3 SVG
+│   ├── MASHQLAR.md                             ← 42 ta mashq
+│   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+│   └── data/                                   ← 1000 ta BBC yangiligi + 2 matn
+└── 23-Sentiment-Analysis/                      ← 4 dars, 2 SVG
+    ├── MASHQLAR.md                             ← 44 ta mashq
     ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
-    └── data/                                   ← 1000 ta BBC yangiligi + 2 matn
+    └── data/                                   ← 100 ta kitob sharhi (reytingi bilan)
 ```
 
 ---
