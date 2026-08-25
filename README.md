@@ -27,7 +27,10 @@
 |---|---|---|---|
 | 10 | [Nima uchun Python](10-Why-Python/README.md) | 2 | ✅ Tayyor |
 | 11 | [Muhitni sozlash](11-Setting-Up-the-Environment/README.md) | 7 | ✅ Tayyor |
-| 12–19 | O'zgaruvchilar, sintaksis, operatorlar, shartlar, funksiyalar, ketma-ketliklar, iteratsiya | 44 | ⏳ Navbatda |
+| 12 | [O'zgaruvchilar va ma'lumot turlari](12-Python-Variables-and-Data-Types/README.md) | 6 | ✅ Tayyor |
+| 13–19 | Sintaksis, operatorlar, shartlar, funksiyalar, ketma-ketliklar, iteratsiya | 38 | ⏳ Navbatda |
+
+> 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
 ---
 
@@ -171,6 +174,23 @@
 
 ---
 
+## 🧭 Modul 12 — O'zgaruvchilar va turlar
+
+**Nimani beradi:** birinchi haqiqiy Python kodi — `int`, `float`, `bool`, `str`.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Python o'zgaruvchilari](12-Python-Variables-and-Data-Types/01-Python-Variables.md) ⭐ |
+| 2 | [Kodlash mashqlari haqida](12-Python-Variables-and-Data-Types/02-Python-Coding-Exercises.md) |
+| 3 | [Sonlar va Boolean](12-Python-Variables-and-Data-Types/03-Numbers-and-Boolean-Values.md) ⭐ |
+| 4 | [Satrlar](12-Python-Variables-and-Data-Types/04-Strings.md) ⭐ |
+| 5 | [Anaconda AI — kirish](12-Python-Variables-and-Data-Types/05-Anaconda-AI-Introduction.md) |
+| 6 | [Assistant bilan ishlash](12-Python-Variables-and-Data-Types/06-Using-the-Anaconda-Assistant.md) |
+
+📝 **[60 ta mashq](12-Python-Variables-and-Data-Types/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](12-Python-Variables-and-Data-Types/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -241,7 +261,10 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 08-AI-job-positions/                        ← 3 dars, 1 SVG
 ├── 09-Looking-ahead/                           ← 2 dars, 2 SVG
 ├── 10-Why-Python/                              ← 2 dars, 2 SVG
-└── 11-Setting-Up-the-Environment/              ← 7 dars, 4 SVG
+├── 11-Setting-Up-the-Environment/              ← 7 dars, 4 SVG
+└── 12-Python-Variables-and-Data-Types/         ← 6 dars, 3 SVG
+    ├── MASHQLAR.md                             ← 60 ta mashq
+    └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
 ---
@@ -249,9 +272,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
-**Python bo'limi boshlandi** — 10 va 11-modullar tayyor.
+**Python bo'limi boshlandi** — 10, 11 va 12-modullar tayyor.
 
-Manba kursda keyingi bo'limlar: **Python** (12–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **Python** (13–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

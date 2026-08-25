@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 430" width="940" height="430" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="940" height="430" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+<text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">O&#8216;zgaruvchi &#8212; ma&#8216;lumotni saqlaydigan quti</text>
+<text x="470" y="58" text-anchor="middle" font-size="13" fill="#475569"><tspan font-family='Consolas, Menlo, monospace'>=</tspan> belgisi &#8212; tenglik EMAS, BIRIKTIRISH (assign)</text>
+<rect x="40" y="86" width="380" height="120" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="230" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#1D4ED8">1 &#183; BIRIKTIRISH</text>
+<rect x="66" y="126" width="328" height="34" rx="7" fill="#EFF6FF"/>
+<text x="230" y="149" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, monospace" fill="#1D4ED8">x = 5</text>
+<text x="230" y="182" text-anchor="middle" font-size="11.5" fill="#475569">"x nomli quti yarat va unga 5 ni sol"</text>
+<text x="230" y="198" text-anchor="middle" font-size="10.5" fill="#94A3B8">Shift + Enter bosmaguncha hech narsa bo&#8216;lmaydi</text>
+<rect x="440" y="86" width="460" height="120" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+<text x="670" y="112" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">2 &#183; QIYMATNI KO&#8216;RSATISH &#8212; ikki yo&#8216;l</text>
+<rect x="466" y="126" width="200" height="34" rx="7" fill="#ECFDF5"/>
+<text x="566" y="149" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, monospace" fill="#047857">x</text>
+<rect x="678" y="126" width="200" height="34" rx="7" fill="#ECFDF5"/>
+<text x="778" y="149" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, monospace" fill="#047857">print(x)</text>
+<text x="566" y="182" text-anchor="middle" font-size="10.5" fill="#64748B">faqat Jupyter&#8216;da, oxirgi qator</text>
+<text x="778" y="182" text-anchor="middle" font-size="10.5" fill="#64748B">HAR QAYERDA ishlaydi &#183; professionallar shuni ishlatadi</text>
+<rect x="40" y="222" width="420" height="112" rx="12" fill="#FEF2F2" stroke="#DC2626" stroke-width="2.5"/>
+<text x="250" y="248" text-anchor="middle" font-size="13.5" font-weight="700" fill="#991B1B">&#9888; PYTHON &#8212; CASE SENSITIVE</text>
+<rect x="66" y="260" width="180" height="30" rx="7" fill="#FFFFFF" stroke="#86EFAC"/>
+<text x="156" y="281" text-anchor="middle" font-size="13.5" font-family="Consolas, Menlo, monospace" fill="#047857">y</text>
+<text x="156" y="306" text-anchor="middle" font-size="11" fill="#047857">&#10003; ishlaydi</text>
+<rect x="256" y="260" width="180" height="30" rx="7" fill="#FFFFFF" stroke="#FCA5A5"/>
+<text x="346" y="281" text-anchor="middle" font-size="13.5" font-family="Consolas, Menlo, monospace" fill="#991B1B">Y</text>
+<text x="346" y="306" text-anchor="middle" font-size="11" fill="#991B1B">&#10007; NameError</text>
+<text x="250" y="326" text-anchor="middle" font-size="10.5" fill="#7F1D1D">kichik va katta harf &#8212; BOSHQA o&#8216;zgaruvchi</text>
+<rect x="480" y="222" width="420" height="112" rx="12" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2.5"/>
+<text x="690" y="248" text-anchor="middle" font-size="13.5" font-weight="700" fill="#6D28D9">KO&#8216;P QIYMATNI BIR QATORDA</text>
+<rect x="506" y="260" width="368" height="30" rx="7" fill="#FFFFFF"/>
+<text x="690" y="281" text-anchor="middle" font-size="14" font-family="Consolas, Menlo, monospace" fill="#5B21B6">x, y = (1, 2)</text>
+<text x="690" y="306" text-anchor="middle" font-size="11" fill="#4C1D95">Qavslar shart emas &#8212; O&#8216;QILISHNI yaxshilaydi</text>
+<text x="690" y="324" text-anchor="middle" font-size="11" font-weight="600" fill="#991B1B">&#9888; o&#8216;zgaruvchi soni = qiymat soni bo&#8216;lishi SHART</text>
+<rect x="40" y="350" width="860" height="60" rx="11" fill="#0F172A"/>
+<text x="470" y="374" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">Dasturlashda <tspan font-family="Consolas, Menlo, monospace">=</tspan> "teng" degani EMAS &#8212; "BIRIKTIR" (assign / bind to) degani</text>
+<text x="470" y="396" text-anchor="middle" font-size="11.5" fill="#CBD5E1">Buyruq yozilishi kifoya emas &#8212; uni BAJARISH kerak (Shift + Enter)</text>
+</svg>

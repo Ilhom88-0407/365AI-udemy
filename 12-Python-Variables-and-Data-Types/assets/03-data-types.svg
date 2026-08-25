@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 460" width="980" height="460" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="980" height="460" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#94A3B8"/></marker></defs>
+<text x="490" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Python&#8216;ning 4 ta asosiy ma&#8216;lumot turi</text>
+<text x="490" y="58" text-anchor="middle" font-size="13" fill="#475569"><tspan font-family='Consolas, Menlo, monospace'>type()</tspan> funksiyasi turini aytadi &#183; Python turni O&#8216;ZI aniqlaydi</text>
+<rect x="24" y="82" width="228" height="204" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+<rect x="24" y="82" width="228" height="40" rx="12" fill="#2563EB"/>
+<rect x="24" y="108" width="228" height="14" fill="#2563EB"/>
+<text x="138" y="109" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">int</text>
+<text x="138" y="144" text-anchor="middle" font-size="12" fill="#64748B">butun son</text>
+<rect x="44" y="150" width="188" height="26" rx="6" fill="#EFF6FF"/>
+<text x="138" y="168" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#2563EB">5</text>
+<rect x="44" y="182" width="188" height="26" rx="6" fill="#EFF6FF"/>
+<text x="138" y="200" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#2563EB">-6</text>
+<rect x="44" y="214" width="188" height="26" rx="6" fill="#EFF6FF"/>
+<text x="138" y="232" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#2563EB">0</text>
+<rect x="44" y="246" width="188" height="26" rx="6" fill="#EFF6FF"/>
+<text x="138" y="264" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#2563EB">1000</text>
+<text x="138" y="272" text-anchor="middle" font-size="10.5" font-weight="600" fill="#2563EB">kasr nuqtasiz</text>
+<rect x="260" y="82" width="228" height="204" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+<rect x="260" y="82" width="228" height="40" rx="12" fill="#7C3AED"/>
+<rect x="260" y="108" width="228" height="14" fill="#7C3AED"/>
+<text x="374" y="109" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">float</text>
+<text x="374" y="144" text-anchor="middle" font-size="12" fill="#64748B">haqiqiy son</text>
+<rect x="280" y="150" width="188" height="26" rx="6" fill="#F5F3FF"/>
+<text x="374" y="168" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#7C3AED">4.75</text>
+<rect x="280" y="182" width="188" height="26" rx="6" fill="#F5F3FF"/>
+<text x="374" y="200" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#7C3AED">-0.5</text>
+<rect x="280" y="214" width="188" height="26" rx="6" fill="#F5F3FF"/>
+<text x="374" y="232" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#7C3AED">5.0</text>
+<rect x="280" y="246" width="188" height="26" rx="6" fill="#F5F3FF"/>
+<text x="374" y="264" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#7C3AED">3.14</text>
+<text x="374" y="272" text-anchor="middle" font-size="10.5" font-weight="600" fill="#7C3AED">kasr nuqtali</text>
+<rect x="496" y="82" width="228" height="204" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+<rect x="496" y="82" width="228" height="40" rx="12" fill="#EA580C"/>
+<rect x="496" y="108" width="228" height="14" fill="#EA580C"/>
+<text x="610" y="109" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">bool</text>
+<text x="610" y="144" text-anchor="middle" font-size="12" fill="#64748B">mantiqiy</text>
+<rect x="516" y="150" width="188" height="26" rx="6" fill="#FFF7ED"/>
+<text x="610" y="168" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#EA580C">True</text>
+<rect x="516" y="182" width="188" height="26" rx="6" fill="#FFF7ED"/>
+<text x="610" y="200" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#EA580C">False</text>
+<text x="610" y="272" text-anchor="middle" font-size="10.5" font-weight="600" fill="#EA580C">&#9888; BOSH HARF bilan!</text>
+<rect x="732" y="82" width="228" height="204" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+<rect x="732" y="82" width="228" height="40" rx="12" fill="#059669"/>
+<rect x="732" y="108" width="228" height="14" fill="#059669"/>
+<text x="846" y="109" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">str</text>
+<text x="846" y="144" text-anchor="middle" font-size="12" fill="#64748B">satr (matn)</text>
+<rect x="752" y="150" width="188" height="26" rx="6" fill="#ECFDF5"/>
+<text x="846" y="168" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#059669">'George'</text>
+<rect x="752" y="182" width="188" height="26" rx="6" fill="#ECFDF5"/>
+<text x="846" y="200" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#059669">"George"</text>
+<text x="846" y="272" text-anchor="middle" font-size="10.5" font-weight="600" fill="#059669">qo&#8216;shtirnoq ichida</text>
+<text x="490" y="316" text-anchor="middle" font-size="14" font-weight="700" fill="#0F172A">Turni o&#8216;zgartirish funksiyalari</text>
+<rect x="24" y="328" width="228" height="76" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+<text x="138" y="352" text-anchor="middle" font-size="13.5" font-family="Consolas, Menlo, monospace" fill="#0F172A">int(4.75)</text>
+<text x="138" y="374" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#DC2626">&#8594; 4</text>
+<text x="138" y="394" text-anchor="middle" font-size="10" fill="#64748B">kasrni TASHLAYDI, yaxlitlamaydi!</text>
+<rect x="260" y="328" width="228" height="76" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+<text x="374" y="352" text-anchor="middle" font-size="13.5" font-family="Consolas, Menlo, monospace" fill="#0F172A">float(5)</text>
+<text x="374" y="374" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#059669">&#8594; 5.0</text>
+<text x="374" y="394" text-anchor="middle" font-size="10" fill="#64748B">kasr nuqtasi qo&#8216;shadi</text>
+<rect x="496" y="328" width="228" height="76" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+<text x="610" y="352" text-anchor="middle" font-size="13.5" font-family="Consolas, Menlo, monospace" fill="#0F172A">str(10)</text>
+<text x="610" y="374" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#7C3AED">&#8594; '10'</text>
+<text x="610" y="394" text-anchor="middle" font-size="10" fill="#64748B">matnga aylantiradi</text>
+<rect x="732" y="328" width="228" height="76" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+<text x="846" y="352" text-anchor="middle" font-size="13.5" font-family="Consolas, Menlo, monospace" fill="#0F172A">int(0.99)</text>
+<text x="846" y="374" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#DC2626">&#8594; 0</text>
+<text x="846" y="394" text-anchor="middle" font-size="10" fill="#64748B">&#9888; 1 emas &#8212; 0!</text>
+<rect x="24" y="416" width="932" height="32" rx="9" fill="#0F172A"/>
+<text x="490" y="437" text-anchor="middle" font-size="12.5" fill="#93C5FD">Python turni AVTOMATIK aniqlaydi &#8212; boshqa tillardagidek oldindan e&#8216;lon qilish SHART EMAS</text>
+</svg>

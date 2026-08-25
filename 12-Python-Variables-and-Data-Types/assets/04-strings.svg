@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" width="980" height="520" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="980" height="520" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="490" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Satrlar (strings) bilan ishlash</text>
+  <text x="490" y="58" text-anchor="middle" font-size="13" fill="#475569">Satr — belgilar ketma-ketligidan iborat matn qiymati</text>
+
+  <!-- 1 quotes -->
+  <rect x="24" y="78" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <text x="174" y="102" text-anchor="middle" font-size="13.5" font-weight="700" fill="#047857">1 · QO'SHTIRNOQLAR</text>
+  <g font-family="Consolas, monospace" font-size="13">
+    <rect x="44" y="114" width="260" height="26" rx="6" fill="#FEE2E2"/>
+    <text x="56" y="132" fill="#991B1B">George</text>
+    <text x="290" y="132" text-anchor="end" fill="#991B1B">✗ NameError</text>
+    <rect x="44" y="146" width="260" height="26" rx="6" fill="#ECFDF5"/>
+    <text x="56" y="164" fill="#047857">'George'</text>
+    <text x="290" y="164" text-anchor="end" fill="#047857">✓</text>
+    <rect x="44" y="178" width="260" height="26" rx="6" fill="#ECFDF5"/>
+    <text x="56" y="196" fill="#047857">"George"</text>
+    <text x="290" y="196" text-anchor="end" fill="#047857">✓</text>
+  </g>
+  <text x="174" y="220" text-anchor="middle" font-size="10.5" fill="#64748B">Ikkalasi ham bir xil ishlaydi</text>
+
+  <!-- 2 print vs bare -->
+  <rect x="340" y="78" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="490" y="102" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1D4ED8">2 · print BOR / YO'Q</text>
+  <g font-family="Consolas, monospace" font-size="13">
+    <rect x="360" y="114" width="260" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="372" y="132" fill="#1D4ED8">'George'</text>
+    <text x="372" y="150" fill="#64748B">→ 'George'</text>
+    <rect x="360" y="164" width="260" height="44" rx="6" fill="#EFF6FF"/>
+    <text x="372" y="182" fill="#1D4ED8">print('George')</text>
+    <text x="372" y="200" fill="#64748B">→ George</text>
+  </g>
+  <text x="490" y="222" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1D4ED8">print — qo'shtirnoqsiz TOZA matn</text>
+
+  <!-- 3 escape -->
+  <rect x="656" y="78" width="300" height="150" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <text x="806" y="102" text-anchor="middle" font-size="13.5" font-weight="700" fill="#C2410C">3 · APOSTROF MUAMMOSI</text>
+  <g font-family="Consolas, monospace" font-size="12.5">
+    <rect x="676" y="112" width="260" height="24" rx="6" fill="#FEE2E2"/>
+    <text x="686" y="129" fill="#991B1B">'I'm fine'</text>
+    <text x="926" y="129" text-anchor="end" fill="#991B1B">✗</text>
+    <rect x="676" y="140" width="260" height="24" rx="6" fill="#ECFDF5"/>
+    <text x="686" y="157" fill="#047857">"I'm fine"</text>
+    <text x="926" y="157" text-anchor="end" fill="#047857">✓ tashqi ≠ ichki</text>
+    <rect x="676" y="168" width="260" height="24" rx="6" fill="#ECFDF5"/>
+    <text x="686" y="185" fill="#047857">'I\'m fine'</text>
+    <text x="926" y="185" text-anchor="end" fill="#047857">✓ escape</text>
+    <rect x="676" y="196" width="260" height="24" rx="6" fill="#ECFDF5"/>
+    <text x="686" y="213" fill="#047857">'Press "Enter"'</text>
+  </g>
+
+  <!-- 4 concat -->
+  <text x="490" y="256" text-anchor="middle" font-size="15" font-weight="700" fill="#0F172A">Satrlarni birlashtirishning 4 usuli</text>
+
+  <g>
+    <rect x="24" y="268" width="228" height="96" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+    <text x="138" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#6D28D9">Yonma-yon</text>
+    <text x="138" y="312" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#0F172A">'Red' 'car'</text>
+    <text x="138" y="332" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, monospace" fill="#991B1B">→ Redcar</text>
+    <text x="138" y="352" text-anchor="middle" font-size="10" fill="#64748B">⚠️ bo'shliq YO'Q</text>
+
+    <rect x="264" y="268" width="228" height="96" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+    <text x="378" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#6D28D9">Bo'shliq bilan</text>
+    <text x="378" y="312" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#0F172A">'Red ' 'car'</text>
+    <text x="378" y="332" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, monospace" fill="#047857">→ Red car</text>
+    <text x="378" y="352" text-anchor="middle" font-size="10" fill="#64748B">bo'shliq qo'lda qo'shildi</text>
+
+    <rect x="504" y="268" width="228" height="96" rx="10" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+    <text x="618" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#6D28D9">Plyus belgisi</text>
+    <text x="618" y="312" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#0F172A">'Red ' + 'car'</text>
+    <text x="618" y="332" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, monospace" fill="#047857">→ Red car</text>
+    <text x="618" y="352" text-anchor="middle" font-size="10" fill="#64748B">eng ko'p ishlatiladi</text>
+
+    <rect x="744" y="268" width="212" height="96" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+    <text x="850" y="290" text-anchor="middle" font-size="12" font-weight="700" fill="#047857">Vergul (print ichida)</text>
+    <text x="850" y="312" text-anchor="middle" font-size="12" font-family="Consolas, monospace" fill="#0F172A">print('Red','car')</text>
+    <text x="850" y="332" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, monospace" fill="#047857">→ Red car</text>
+    <text x="850" y="352" text-anchor="middle" font-size="10" fill="#047857">bo'shliq AVTOMATIK</text>
+  </g>
+
+  <!-- 5 type mixing -->
+  <rect x="24" y="378" width="932" height="126" rx="12" fill="#FEF2F2" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="490" y="402" text-anchor="middle" font-size="14" font-weight="700" fill="#991B1B">⚠️ ENG KENG TARQALGAN XATO: turlarni aralashtirish</text>
+
+  <rect x="60" y="414" width="400" height="72" rx="9" fill="#FFFFFF" stroke="#FCA5A5"/>
+  <text x="76" y="436" font-size="12.5" font-family="Consolas, monospace" fill="#0F172A">y = 10</text>
+  <text x="76" y="456" font-size="12.5" font-family="Consolas, monospace" fill="#991B1B">print(y + "Dollars")</text>
+  <text x="76" y="478" font-size="11" fill="#991B1B">✗ TypeError: can only concatenate str</text>
+
+  <text x="490" y="452" text-anchor="middle" font-size="22" fill="#DC2626">→</text>
+
+  <rect x="520" y="414" width="400" height="72" rx="9" fill="#FFFFFF" stroke="#86EFAC"/>
+  <text x="536" y="436" font-size="12.5" font-family="Consolas, monospace" fill="#0F172A">y = 10</text>
+  <text x="536" y="456" font-size="12.5" font-family="Consolas, monospace" fill="#047857">print(str(y) + " Dollars")</text>
+  <text x="536" y="478" font-size="11" font-weight="700" fill="#047857">✓ 10 Dollars</text>
+</svg>
