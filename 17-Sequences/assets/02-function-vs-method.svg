@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="420" fill="#0f172a"/>
+  <text x="430" y="38" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">Funksiya  va  Metod</text>
+  <text x="430" y="62" text-anchor="middle" fill="#94a3b8" font-size="14">Sintaksis ikkalasini farqlashga yordam beradi</text>
+
+  <rect x="30" y="84" width="390" height="150" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="225" y="114" text-anchor="middle" fill="#38bdf8" font-size="20" font-weight="bold">ICHKI FUNKSIYA</text>
+  <text x="225" y="150" text-anchor="middle" fill="#e2e8f0" font-size="17" font-family="Consolas, monospace">len(Participants)</text>
+  <text x="225" y="180" text-anchor="middle" fill="#94a3b8" font-size="14">obyekt ARGUMENT sifatida</text>
+  <text x="225" y="200" text-anchor="middle" fill="#94a3b8" font-size="14">qavslar ICHIDA turadi</text>
+  <text x="225" y="224" text-anchor="middle" fill="#4ade80" font-size="15" font-family="Consolas, monospace">→ 6</text>
+
+  <rect x="440" y="84" width="390" height="150" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="635" y="114" text-anchor="middle" fill="#4ade80" font-size="20" font-weight="bold">METOD</text>
+  <text x="635" y="150" text-anchor="middle" fill="#e2e8f0" font-size="17" font-family="Consolas, monospace">Participants.append("Dwayne")</text>
+  <text x="635" y="180" text-anchor="middle" fill="#94a3b8" font-size="14">obyektga NUQTA orqali qo'llanadi</text>
+  <text x="635" y="200" text-anchor="middle" fill="#94a3b8" font-size="14">obyekt qavslardan OLDIN turadi</text>
+  <text x="635" y="224" text-anchor="middle" fill="#4ade80" font-size="15" font-family="Consolas, monospace">→ ro'yxatga qo'shildi</text>
+
+  <text x="430" y="270" text-anchor="middle" fill="#fbbf24" font-size="17" font-weight="bold">Nuqta operatori  ( . )</text>
+  <text x="430" y="296" text-anchor="middle" fill="#e2e8f0" font-size="17" font-family="Consolas, monospace">obyekt . metod_nomi ( argumentlar )</text>
+
+  <rect x="30" y="316" width="390" height="86" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="52" y="344" fill="#4ade80" font-size="15" font-weight="bold">append — BITTA element</text>
+  <text x="52" y="370" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">P.append("Dwayne")</text>
+  <text x="52" y="392" fill="#94a3b8" font-size="13">→ oxiriga 1 ta element qo'shadi</text>
+
+  <rect x="440" y="316" width="390" height="86" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="462" y="344" fill="#4ade80" font-size="15" font-weight="bold">extend — RO'YXAT</text>
+  <text x="462" y="370" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">P.extend(['George', 'Catherine'])</text>
+  <text x="462" y="392" fill="#94a3b8" font-size="13">→ ichkaridagi qavslarga E'TIBOR BERING</text>
+</svg>

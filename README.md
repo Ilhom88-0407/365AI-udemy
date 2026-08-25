@@ -32,7 +32,8 @@
 | 14 | [Operatorlar haqida ko'proq](14-More-on-Operators/README.md) | 2 | ✅ Tayyor |
 | 15 | [Shart operatorlari](15-Conditional-Statements/README.md) | 4 | ✅ Tayyor |
 | 16 | [Funksiyalar](16-Functions/README.md) | 7 | ✅ Tayyor |
-| 17–19 | Ketma-ketliklar, iteratsiya, muhim tushunchalar | 18 | ⏳ Navbatda |
+| 17 | [Ketma-ketliklar](17-Sequences/README.md) | 5 | ✅ Tayyor |
+| 18–19 | Iteratsiya, muhim tushunchalar | 13 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -259,6 +260,22 @@
 
 ---
 
+## 🧭 Modul 17 — Ketma-ketliklar
+
+**Nimani beradi:** ma'lumotni tashkil qilish — bitta o'zgaruvchida yuzlab qiymat.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Ro'yxatlar](17-Sequences/01-Lists.md) ⭐ |
+| 2 | [Metodlar](17-Sequences/02-Using-Methods.md) ⭐ |
+| 3 | [Kesish (slicing)](17-Sequences/03-List-Slicing.md) ⭐ |
+| 4 | [Tuple lar](17-Sequences/04-Tuples.md) |
+| 5 | [Lug'atlar](17-Sequences/05-Dictionaries.md) ⭐ |
+
+📝 **[72 ta mashq](17-Sequences/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](17-Sequences/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -342,8 +359,11 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 15-Conditional-Statements/                  ← 4 dars, 4 SVG
 │   ├── MASHQLAR.md                             ← 64 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 16-Functions/                               ← 7 dars, 4 SVG
-    ├── MASHQLAR.md                             ← 68 ta mashq
+├── 16-Functions/                               ← 7 dars, 4 SVG
+│   ├── MASHQLAR.md                             ← 68 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 17-Sequences/                               ← 5 dars, 5 SVG
+    ├── MASHQLAR.md                             ← 72 ta mashq
     └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
@@ -352,9 +372,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
-**Python bo'limi davom etmoqda** — 10–16-modullar tayyor.
+**Python bo'limi davom etmoqda** — 10–17-modullar tayyor.
 
-Manba kursda keyingi bo'limlar: **Python** (17–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **Python** (18–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

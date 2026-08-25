@@ -212,7 +212,7 @@ Hammasi ✅ bo'lsa — **17-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**17-modul: Ketma-ketliklar** — `list`, `tuple`, `dict`
+**[17-modul: Ketma-ketliklar](../17-Sequences/README.md)** — `list`, `tuple`, `dict`
 
 ---
 
