@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" width="940" height="400" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="940" height="400" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="470" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Indekslash &#8212; belgini pozitsiya bo&#8216;yicha olish</text>
+<text x="470" y="58" text-anchor="middle" font-size="13" fill="#475569">&#9888; Python&#8216;da sanash NOLDAN boshlanadi</text>
+<rect x="206" y="96" width="78" height="76" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="245" y="146" text-anchor="middle" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">F</text>
+<text x="245" y="194" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">0</text>
+<text x="245" y="216" text-anchor="middle" font-size="12" fill="#94A3B8">-6</text>
+<rect x="294" y="96" width="78" height="76" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="333" y="146" text-anchor="middle" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">r</text>
+<text x="333" y="194" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">1</text>
+<text x="333" y="216" text-anchor="middle" font-size="12" fill="#94A3B8">-5</text>
+<rect x="382" y="96" width="78" height="76" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="421" y="146" text-anchor="middle" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">i</text>
+<text x="421" y="194" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">2</text>
+<text x="421" y="216" text-anchor="middle" font-size="12" fill="#94A3B8">-4</text>
+<rect x="470" y="96" width="78" height="76" rx="10" fill="#FCE7F3" stroke="#DB2777" stroke-width="2.5"/>
+<text x="509" y="146" text-anchor="middle" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#DB2777">d</text>
+<text x="509" y="194" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#DB2777">3</text>
+<text x="509" y="216" text-anchor="middle" font-size="12" fill="#94A3B8">-3</text>
+<rect x="558" y="96" width="78" height="76" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="597" y="146" text-anchor="middle" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">a</text>
+<text x="597" y="194" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">4</text>
+<text x="597" y="216" text-anchor="middle" font-size="12" fill="#94A3B8">-2</text>
+<rect x="646" y="96" width="78" height="76" rx="10" fill="#EFF6FF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="685" y="146" text-anchor="middle" font-size="30" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">y</text>
+<text x="685" y="194" text-anchor="middle" font-size="16" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">5</text>
+<text x="685" y="216" text-anchor="middle" font-size="12" fill="#94A3B8">-1</text>
+<text x="470" y="86" text-anchor="middle" font-size="11.5" font-weight="600" fill="#475569">&#8595; belgilar</text>
+<text x="116" y="194" font-size="11.5" font-weight="600" fill="#2563EB">indeks:</text>
+<text x="116" y="216" font-size="11.5" fill="#94A3B8">manfiy:</text>
+<rect x="140" y="240" width="300" height="72" rx="11" fill="#FFFFFF" stroke="#DB2777" stroke-width="2.5"/>
+<text x="290" y="266" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, monospace" fill="#9D174D">"Friday"[3]</text>
+<text x="290" y="296" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#DB2777">&#8594; 'd'</text>
+<rect x="480" y="240" width="300" height="72" rx="11" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+<text x="630" y="266" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, monospace" fill="#1D4ED8">"Friday"[4]</text>
+<text x="630" y="296" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">&#8594; 'a'</text>
+<rect x="24" y="326" width="892" height="56" rx="11" fill="#0F172A"/>
+<text x="470" y="348" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">Sintaksis: satrdan KEYIN kvadrat qavs va pozitsiya raqami</text>
+<text x="470" y="370" text-anchor="middle" font-size="12" fill="#CBD5E1">Manfiy indeks OXIRIDAN sanaydi: [-1] &#8212; oxirgi belgi, [-2] &#8212; oxirgidan bittasi</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="1000" height="400" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="500" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Arifmetik operatorlar</text>
+<text x="500" y="58" text-anchor="middle" font-size="13" fill="#475569">OPERAND lar &#8212; sonlar &#183; OPERATOR lar &#8212; belgilar orasidagi amal</text>
+<rect x="24" y="82" width="228" height="130" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+<circle cx="68" cy="124" r="26" fill="#2563EB"/>
+<text x="68" y="132" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">+</text>
+<text x="106" y="120" font-size="13.5" font-weight="700" fill="#0F172A">qo&#8216;shish</text>
+<rect x="44" y="162" width="188" height="28" rx="7" fill="#F1F5F9"/>
+<text x="138" y="181" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">1 + 2</text>
+<text x="138" y="204" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">&#8594; 3</text>
+<rect x="268" y="82" width="228" height="130" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+<circle cx="312" cy="124" r="26" fill="#2563EB"/>
+<text x="312" y="132" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">-</text>
+<text x="350" y="120" font-size="13.5" font-weight="700" fill="#0F172A">ayirish</text>
+<rect x="288" y="162" width="188" height="28" rx="7" fill="#F1F5F9"/>
+<text x="382" y="181" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">3 - 5</text>
+<text x="382" y="204" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#2563EB">&#8594; -2</text>
+<rect x="512" y="82" width="228" height="130" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+<circle cx="556" cy="124" r="26" fill="#7C3AED"/>
+<text x="556" y="132" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">*</text>
+<text x="594" y="120" font-size="13.5" font-weight="700" fill="#0F172A">ko&#8216;paytirish</text>
+<rect x="532" y="162" width="188" height="28" rx="7" fill="#F1F5F9"/>
+<text x="626" y="181" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">5 * 3</text>
+<text x="626" y="204" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#7C3AED">&#8594; 15</text>
+<rect x="756" y="82" width="228" height="130" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+<circle cx="800" cy="124" r="26" fill="#7C3AED"/>
+<text x="800" y="132" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">/</text>
+<text x="838" y="120" font-size="13.5" font-weight="700" fill="#0F172A">bo&#8216;lish</text>
+<rect x="776" y="162" width="188" height="28" rx="7" fill="#F1F5F9"/>
+<text x="870" y="181" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">16 / 3</text>
+<text x="870" y="204" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#7C3AED">&#8594; 5.333...</text>
+<rect x="24" y="226" width="228" height="130" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+<circle cx="68" cy="268" r="26" fill="#EA580C"/>
+<text x="68" y="276" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">//</text>
+<text x="106" y="264" font-size="13.5" font-weight="700" fill="#0F172A">butun bo&#8216;lish</text>
+<rect x="44" y="306" width="188" height="28" rx="7" fill="#F1F5F9"/>
+<text x="138" y="325" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">16 // 3</text>
+<text x="138" y="348" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#EA580C">&#8594; 5</text>
+<rect x="268" y="226" width="228" height="130" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+<circle cx="312" cy="268" r="26" fill="#EA580C"/>
+<text x="312" y="276" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">%</text>
+<text x="350" y="264" font-size="13.5" font-weight="700" fill="#0F172A">qoldiq</text>
+<rect x="288" y="306" width="188" height="28" rx="7" fill="#F1F5F9"/>
+<text x="382" y="325" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">16 % 3</text>
+<text x="382" y="348" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#EA580C">&#8594; 1</text>
+<rect x="512" y="226" width="228" height="130" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+<circle cx="556" cy="268" r="26" fill="#059669"/>
+<text x="556" y="276" text-anchor="middle" font-size="20" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">**</text>
+<text x="594" y="264" font-size="13.5" font-weight="700" fill="#0F172A">daraja</text>
+<rect x="532" y="306" width="188" height="28" rx="7" fill="#F1F5F9"/>
+<text x="626" y="325" text-anchor="middle" font-size="13" font-family="Consolas, Menlo, monospace" fill="#334155">5 ** 3</text>
+<text x="626" y="348" text-anchor="middle" font-size="14" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#059669">&#8594; 125</text>
+<rect x="756" y="226" width="220" height="130" rx="12" fill="#0F172A"/>
+<text x="866" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#FBBF24">&#9888; ESLANG</text>
+<text x="866" y="278" text-anchor="middle" font-size="12" font-family="Consolas, Menlo, monospace" fill="#E2E8F0">/  &#8594; doim FLOAT</text>
+<text x="866" y="300" text-anchor="middle" font-size="12" font-family="Consolas, Menlo, monospace" fill="#E2E8F0">// &#8594; butun qism</text>
+<text x="866" y="322" text-anchor="middle" font-size="12" font-family="Consolas, Menlo, monospace" fill="#E2E8F0">%  &#8594; qoldiq</text>
+<text x="866" y="344" text-anchor="middle" font-size="11" fill="#94A3B8">15 / 3 &#8594; 5.0 (5 emas!)</text>
+<rect x="24" y="368" width="952" height="0" fill="none"/>
+</svg>

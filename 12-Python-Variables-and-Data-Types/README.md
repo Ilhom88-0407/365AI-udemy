@@ -116,12 +116,12 @@ Bu yerdan boshlab siz **o'qimaysiz — yozasiz**.
     ↓          int · float · bool · str
     ↓
 13-modul  ─  Asosiy sintaksis
-14-modul  ─  Operatorlar (+, -, *, /, //, %)
+14-modul  ─  Operatorlar haqida ko'proq (<, >, !=, and, or)
 15-modul  ─  Shartlar (if / elif / else)
 ...
 ```
 
-> 💡 **Diqqat qiling:** MASHQLAR.md ning D7 mashqida `//` va `%` belgilarini ko'rdingiz. Ular **14-modulda** to'liq tushuntiriladi. Hozircha shunchaki ishlatib ko'ring.
+> 💡 **Diqqat qiling:** MASHQLAR.md ning D7 mashqida `//` va `%` belgilarini ko'rdingiz. Ular **13-modulda** to'liq tushuntiriladi. Hozircha shunchaki ishlatib ko'ring.
 
 ---
 
@@ -166,4 +166,4 @@ Hammasi ✅ bo'lsa — **13-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**13-modul: Python ning asosiy sintaksisi**
+**[13-modul: Python ning asosiy sintaksisi](../13-Basic-Python-Syntax/README.md)**

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+<rect width="900" height="380" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+<text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A"><tspan font-family='Consolas, Menlo, monospace'>=</tspan> va <tspan font-family='Consolas, Menlo, monospace'>==</tspan> &#8212; ikki butunlay boshqa narsa</text>
+<text x="450" y="58" text-anchor="middle" font-size="13" fill="#475569">Boshlovchilarning eng ko&#8216;p yo&#8216;l qo&#8216;yadigan xatolaridan biri</text>
+<rect x="24" y="80" width="416" height="230" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+<rect x="24" y="80" width="416" height="44" rx="12" fill="#2563EB"/>
+<rect x="24" y="110" width="416" height="14" fill="#2563EB"/>
+<text x="232" y="111" text-anchor="middle" font-size="24" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">=</text>
+<text x="232" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#1D4ED8">BIRIKTIRISH (assign)</text>
+<rect x="52" y="164" width="360" height="34" rx="8" fill="#EFF6FF"/>
+<text x="232" y="187" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, monospace" fill="#1D4ED8">y = 5 ** 3</text>
+<text x="232" y="222" text-anchor="middle" font-size="12.5" fill="#334155">"y ga 125 ni BIRIKTIR"</text>
+<rect x="52" y="236" width="360" height="30" rx="7" fill="#F1F5F9"/>
+<text x="232" y="256" text-anchor="middle" font-size="12" fill="#64748B">Natija: hech narsa ko&#8216;rinmaydi</text>
+<text x="232" y="290" text-anchor="middle" font-size="11.5" font-weight="600" fill="#1D4ED8">BUYRUQ &#8212; bajarish</text>
+<rect x="460" y="80" width="416" height="230" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+<rect x="460" y="80" width="416" height="44" rx="12" fill="#059669"/>
+<rect x="460" y="110" width="416" height="14" fill="#059669"/>
+<text x="668" y="111" text-anchor="middle" font-size="24" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#FFFFFF">==</text>
+<text x="668" y="150" text-anchor="middle" font-size="15" font-weight="700" fill="#047857">TENGLIKNI TEKSHIRISH</text>
+<rect x="488" y="164" width="360" height="34" rx="8" fill="#ECFDF5"/>
+<text x="668" y="187" text-anchor="middle" font-size="15" font-family="Consolas, Menlo, monospace" fill="#047857">y == 125</text>
+<text x="668" y="222" text-anchor="middle" font-size="12.5" fill="#334155">"y ROSTDAN 125 ga tengmi?"</text>
+<rect x="488" y="236" width="174" height="30" rx="7" fill="#D1FAE5"/>
+<text x="575" y="256" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#047857">True</text>
+<rect x="674" y="236" width="174" height="30" rx="7" fill="#FEE2E2"/>
+<text x="761" y="256" text-anchor="middle" font-size="13" font-weight="700" font-family="Consolas, Menlo, monospace" fill="#991B1B">False</text>
+<text x="668" y="290" text-anchor="middle" font-size="11.5" font-weight="600" fill="#047857">SAVOL &#8212; javobi BOOLEAN</text>
+<rect x="24" y="324" width="852" height="42" rx="10" fill="#FEF9C3" stroke="#FDE68A"/>
+<text x="450" y="350" text-anchor="middle" font-size="13" font-weight="700" fill="#854D0E">Qiymatlar TENGLIGINI nazarda tutsangiz &#8212; IKKI marta teng belgisi kerak</text>
+</svg>

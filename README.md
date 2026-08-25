@@ -28,7 +28,8 @@
 | 10 | [Nima uchun Python](10-Why-Python/README.md) | 2 | ✅ Tayyor |
 | 11 | [Muhitni sozlash](11-Setting-Up-the-Environment/README.md) | 7 | ✅ Tayyor |
 | 12 | [O'zgaruvchilar va ma'lumot turlari](12-Python-Variables-and-Data-Types/README.md) | 6 | ✅ Tayyor |
-| 13–19 | Sintaksis, operatorlar, shartlar, funksiyalar, ketma-ketliklar, iteratsiya | 38 | ⏳ Navbatda |
+| 13 | [Asosiy Python sintaksisi](13-Basic-Python-Syntax/README.md) | 7 | ✅ Tayyor |
+| 14–19 | Operatorlar, shartlar, funksiyalar, ketma-ketliklar, iteratsiya | 31 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -191,6 +192,24 @@
 
 ---
 
+## 🧭 Modul 13 — Asosiy Python sintaksisi
+
+**Nimani beradi:** Python tilining grammatikasi — hisoblash, tekshirish, izohlash va **chekinish**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Arifmetik operatorlar](13-Basic-Python-Syntax/01-Arithmetic-Operators.md) ⭐ |
+| 2 | [Ikkilangan tenglik belgisi](13-Basic-Python-Syntax/02-The-Double-Equality-Sign.md) ⭐ |
+| 3 | [Qiymatlarni qayta biriktirish](13-Basic-Python-Syntax/03-Reassign-Values.md) |
+| 4 | [Izohlar qo'shish](13-Basic-Python-Syntax/04-Add-Comments.md) |
+| 5 | [Qator davomi](13-Basic-Python-Syntax/05-Line-Continuation.md) |
+| 6 | [Elementlarni indekslash](13-Basic-Python-Syntax/06-Indexing-Elements.md) ⭐ |
+| 7 | [Chekinish](13-Basic-Python-Syntax/07-Indentation.md) ⭐ |
+
+📝 **[62 ta mashq](13-Basic-Python-Syntax/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](13-Basic-Python-Syntax/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -262,8 +281,11 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 09-Looking-ahead/                           ← 2 dars, 2 SVG
 ├── 10-Why-Python/                              ← 2 dars, 2 SVG
 ├── 11-Setting-Up-the-Environment/              ← 7 dars, 4 SVG
-└── 12-Python-Variables-and-Data-Types/         ← 6 dars, 3 SVG
-    ├── MASHQLAR.md                             ← 60 ta mashq
+├── 12-Python-Variables-and-Data-Types/         ← 6 dars, 3 SVG
+│   ├── MASHQLAR.md                             ← 60 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 13-Basic-Python-Syntax/                     ← 7 dars, 4 SVG
+    ├── MASHQLAR.md                             ← 62 ta mashq
     └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
@@ -272,9 +294,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
-**Python bo'limi boshlandi** — 10, 11 va 12-modullar tayyor.
+**Python bo'limi davom etmoqda** — 10, 11, 12 va 13-modullar tayyor.
 
-Manba kursda keyingi bo'limlar: **Python** (13–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **Python** (14–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 
