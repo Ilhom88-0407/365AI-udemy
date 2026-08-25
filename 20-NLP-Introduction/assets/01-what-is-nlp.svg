@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="480" fill="#0f172a"/>
+  <text x="440" y="38" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">NLP — Tabiiy tilni qayta ishlash</text>
+  <text x="440" y="62" text-anchor="middle" fill="#94a3b8" font-size="14">Natural Language Processing</text>
+
+  <rect x="30" y="84" width="240" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="150" y="114" text-anchor="middle" fill="#38bdf8" font-size="18" font-weight="bold">TUSHUNISH</text>
+  <text x="150" y="140" text-anchor="middle" fill="#94a3b8" font-size="13">understand</text>
+  <text x="150" y="168" text-anchor="middle" fill="#e2e8f0" font-size="14">Matn nima haqida?</text>
+  <text x="150" y="186" text-anchor="middle" fill="#e2e8f0" font-size="14">Kayfiyat qanday?</text>
+
+  <rect x="290" y="84" width="240" height="110" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="410" y="114" text-anchor="middle" fill="#4ade80" font-size="18" font-weight="bold">TALQIN QILISH</text>
+  <text x="410" y="140" text-anchor="middle" fill="#94a3b8" font-size="13">interpret</text>
+  <text x="410" y="168" text-anchor="middle" fill="#e2e8f0" font-size="14">Foydalanuvchi nima</text>
+  <text x="410" y="186" text-anchor="middle" fill="#e2e8f0" font-size="14">so'ramoqchi?</text>
+
+  <rect x="550" y="84" width="300" height="110" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+  <text x="700" y="114" text-anchor="middle" fill="#f472b6" font-size="18" font-weight="bold">YARATISH</text>
+  <text x="700" y="140" text-anchor="middle" fill="#94a3b8" font-size="13">generate</text>
+  <text x="700" y="168" text-anchor="middle" fill="#e2e8f0" font-size="14">Javob yozish, tarjima,</text>
+  <text x="700" y="186" text-anchor="middle" fill="#e2e8f0" font-size="14">xulosa qilish</text>
+
+  <text x="440" y="234" text-anchor="middle" fill="#fbbf24" font-size="18" font-weight="bold">NLP tarixi</text>
+
+  <line x1="60" y1="270" x2="820" y2="270" stroke="#475569" stroke-width="3"/>
+
+  <circle cx="140" cy="270" r="9" fill="#f87171"/>
+  <text x="140" y="298" text-anchor="middle" fill="#f87171" font-size="15" font-weight="bold">1950-yillar</text>
+  <text x="140" y="318" text-anchor="middle" fill="#e2e8f0" font-size="13">QOIDAGA asoslangan</text>
+  <text x="140" y="336" text-anchor="middle" fill="#94a3b8" font-size="12">grammatik qoidalar</text>
+
+  <circle cx="440" cy="270" r="9" fill="#fbbf24"/>
+  <text x="440" y="298" text-anchor="middle" fill="#fbbf24" font-size="15" font-weight="bold">2000-yillar</text>
+  <text x="440" y="318" text-anchor="middle" fill="#e2e8f0" font-size="13">STATISTIKA + ML</text>
+  <text x="440" y="336" text-anchor="middle" fill="#94a3b8" font-size="12">katta ma'lumot to'plamlari</text>
+
+  <circle cx="740" cy="270" r="9" fill="#4ade80"/>
+  <text x="740" y="298" text-anchor="middle" fill="#4ade80" font-size="15" font-weight="bold">Bugun</text>
+  <text x="740" y="318" text-anchor="middle" fill="#e2e8f0" font-size="13">CHUQUR O'RGANISH</text>
+  <text x="740" y="336" text-anchor="middle" fill="#94a3b8" font-size="12">ChatGPT, LLM</text>
+
+  <rect x="30" y="360" width="400" height="102" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="52" y="388" fill="#f87171" font-size="16" font-weight="bold">⚠️  Nima uchun qoidalar YETARLI EMAS?</text>
+  <text x="52" y="414" fill="#fecaca" font-size="14">"Agar siz til o'rgangan bo'lsangiz — bilasiz:</text>
+  <text x="52" y="434" fill="#fecaca" font-size="14">oddiy grammatik qoidalarni bilish TILNI</text>
+  <text x="52" y="454" fill="#fecaca" font-size="14">HAQIQATAN tushunish uchun YETARLI EMAS."</text>
+
+  <rect x="450" y="360" width="400" height="102" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="472" y="388" fill="#4ade80" font-size="16" font-weight="bold">💡 Ma'lumot olimlari uchun NLP</text>
+  <text x="472" y="414" fill="#bbf7d0" font-size="14">Ilgari QO'LDA qilinadigan — yoki umuman</text>
+  <text x="472" y="434" fill="#bbf7d0" font-size="14">qilinmaydigan — ishni avtomatlashtiradi.</text>
+  <text x="472" y="454" fill="#bbf7d0" font-size="14">KATTA vaqt tejaydi va yangi INSAYT beradi.</text>
+</svg>

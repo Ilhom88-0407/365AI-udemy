@@ -256,7 +256,7 @@ Hammasi ✅ bo'lsa — **20-modulga (NLP) tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**20-modul: NLP ga kirish** — tabiiy tilni qayta ishlash
+**[20-modul: NLP ga kirish](../20-NLP-Introduction/README.md)** — tabiiy tilni qayta ishlash
 
 > Endi Python **vosita**, maqsad emas. Undan **AI qurish** uchun foydalanasiz.
 

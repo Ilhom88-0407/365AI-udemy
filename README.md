@@ -38,6 +38,13 @@
 
 > 🎓 **"Python" bo'limi to'liq tugallandi — 10 modul, 53 dars.**
 
+### 🌐 NLP bo'limi
+
+| № | Modul | Darslar | Holati |
+|---|---|---|---|
+| 20 | [NLP ga kirish](20-NLP-Introduction/README.md) | 4 | ✅ Tayyor |
+| 21–28 | Oldindan qayta ishlash, POS/NER, sentiment, vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 39 | ⏳ Navbatda |
+
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
 ---
@@ -314,6 +321,21 @@
 
 ---
 
+## 🧭 Modul 20 — NLP ga kirish
+
+**Nimani beradi:** Python endi VOSITA — undan AI qurish uchun foydalanasiz.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Kursga kirish](20-NLP-Introduction/01-Introduction-to-the-Course.md) |
+| 2 | [NLP ga kirish](20-NLP-Introduction/02-Introduction-to-NLP.md) ⭐ |
+| 3 | [NLP kundalik hayotda](20-NLP-Introduction/03-NLP-in-Everyday-Life.md) ⭐ |
+| 4 | [Nazorat ostida va nazoratsiz](20-NLP-Introduction/04-Supervised-vs-Unsupervised.md) ⭐ |
+
+📝 **[44 ta mashq](20-NLP-Introduction/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](20-NLP-Introduction/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -406,8 +428,11 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 18-Iteration/                               ← 8 dars, 5 SVG
 │   ├── MASHQLAR.md                             ← 76 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 19-Important-Python-Concepts/               ← 5 dars, 3 SVG
-    ├── MASHQLAR.md                             ← 52 ta mashq
+├── 19-Important-Python-Concepts/               ← 5 dars, 3 SVG
+│   ├── MASHQLAR.md                             ← 52 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 20-NLP-Introduction/                        ← 4 dars, 2 SVG
+    ├── MASHQLAR.md                             ← 44 ta mashq
     └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
@@ -418,7 +443,7 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
 **Python bo'limi to'liq tugallandi** (10–19-modullar, 53 dars).
 
-Manba kursda keyingi bo'limlar: **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+**NLP bo'limi boshlandi.** Manba kursda keyingi bo'limlar: **NLP** (21–28 qoldi), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

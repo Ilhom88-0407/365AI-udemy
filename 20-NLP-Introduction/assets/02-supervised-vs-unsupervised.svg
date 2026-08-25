@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="880" height="500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="500" fill="#0f172a"/>
+  <text x="440" y="38" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">Nazorat ostida  va  Nazoratsiz o'rganish</text>
+
+  <rect x="30" y="66" width="400" height="300" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="230" y="98" text-anchor="middle" fill="#38bdf8" font-size="20" font-weight="bold">NAZORAT OSTIDA</text>
+  <text x="230" y="120" text-anchor="middle" fill="#94a3b8" font-size="13">supervised learning</text>
+
+  <text x="52" y="152" fill="#fbbf24" font-size="15" font-weight="bold">Kirish (input)  +  Chiqish (output)</text>
+
+  <rect x="52" y="166" width="170" height="34" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="137" y="188" text-anchor="middle" fill="#e2e8f0" font-size="13">"Juda yaxshi mahsulot"</text>
+  <text x="234" y="188" fill="#94a3b8" font-size="18">→</text>
+  <rect x="256" y="166" width="60" height="34" rx="6" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="286" y="188" text-anchor="middle" fill="#4ade80" font-size="15" font-weight="bold">9</text>
+  <text x="330" y="188" fill="#94a3b8" font-size="12">← YORLIQ</text>
+
+  <rect x="52" y="208" width="170" height="34" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="137" y="230" text-anchor="middle" fill="#e2e8f0" font-size="13">"Yomon sifat"</text>
+  <text x="234" y="230" fill="#94a3b8" font-size="18">→</text>
+  <rect x="256" y="208" width="60" height="34" rx="6" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="286" y="230" text-anchor="middle" fill="#f87171" font-size="15" font-weight="bold">2</text>
+
+  <text x="52" y="272" fill="#e2e8f0" font-size="14">Algoritm KIRISH va CHIQISH orasidagi</text>
+  <text x="52" y="292" fill="#e2e8f0" font-size="14">BOG'LIQLIKNI o'rganadi.</text>
+  <text x="52" y="318" fill="#4ade80" font-size="14">→ YANGI matn uchun ballni BASHORAT qiladi</text>
+  <text x="52" y="346" fill="#fbbf24" font-size="13">Misollar: spam filtri · sentiment tahlili</text>
+
+  <rect x="450" y="66" width="400" height="300" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+  <text x="650" y="98" text-anchor="middle" fill="#f472b6" font-size="20" font-weight="bold">NAZORATSIZ</text>
+  <text x="650" y="120" text-anchor="middle" fill="#94a3b8" font-size="13">unsupervised learning</text>
+
+  <text x="472" y="152" fill="#fbbf24" font-size="15" font-weight="bold">Faqat Kirish  —  YORLIQ YO'Q</text>
+
+  <circle cx="520" cy="196" r="14" fill="#38bdf8"/>
+  <circle cx="552" cy="184" r="14" fill="#38bdf8"/>
+  <circle cx="540" cy="220" r="14" fill="#38bdf8"/>
+  <text x="536" y="252" text-anchor="middle" fill="#38bdf8" font-size="12">1-guruh</text>
+
+  <circle cx="650" cy="190" r="14" fill="#4ade80"/>
+  <circle cx="682" cy="210" r="14" fill="#4ade80"/>
+  <circle cx="654" cy="222" r="14" fill="#4ade80"/>
+  <text x="666" y="252" text-anchor="middle" fill="#4ade80" font-size="12">2-guruh</text>
+
+  <circle cx="780" cy="200" r="14" fill="#fbbf24"/>
+  <circle cx="800" cy="222" r="14" fill="#fbbf24"/>
+  <text x="790" y="252" text-anchor="middle" fill="#fbbf24" font-size="12">3-guruh</text>
+
+  <text x="472" y="282" fill="#e2e8f0" font-size="14">Algoritm ma'lumotdagi NAQSHLARNI</text>
+  <text x="472" y="302" fill="#e2e8f0" font-size="14">O'ZI topadi.</text>
+  <text x="472" y="328" fill="#4ade80" font-size="14">→ O'XSHASH elementlarni GURUHLAYDI</text>
+  <text x="472" y="352" fill="#fbbf24" font-size="13">Misollar: klasterlash · mavzu modellashtirish</text>
+
+  <rect x="30" y="386" width="820" height="86" rx="12" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="414" fill="#38bdf8" font-size="16" font-weight="bold">🔑 Qaysi birini tanlash?</text>
+  <text x="52" y="440" fill="#e2e8f0" font-size="14">Bu IKKI narsaga bog'liq:  (1) YORLIQLANGAN ma'lumot bormi?</text>
+  <text x="52" y="462" fill="#e2e8f0" font-size="14">                          (2) Qanday SAVOLGA javob izlayapsiz?</text>
+</svg>
