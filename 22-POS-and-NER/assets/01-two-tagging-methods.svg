@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" width="860" height="500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="500" fill="#f7f9fc"/>
+  <text x="430" y="36" text-anchor="middle" font-size="23" font-weight="bold" fill="#1a2b4c">Matnni teglashning IKKI usuli</text>
+
+  <rect x="180" y="56" width="500" height="46" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="85" text-anchor="middle" font-size="16" font-style="italic" fill="#334155">"Google was founded by Larry Page in 1998"</text>
+
+  <path d="M 380 102 L 230 132" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#a1)"/>
+  <path d="M 480 102 L 630 132" stroke="#d97706" stroke-width="2.5" fill="none" marker-end="url(#a2)"/>
+  <defs>
+    <marker id="a1" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2563eb"/></marker>
+    <marker id="a2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#d97706"/></marker>
+  </defs>
+
+  <!-- POS -->
+  <rect x="30" y="132" width="380" height="330" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="220" y="162" text-anchor="middle" font-size="18" font-weight="bold" fill="#1d4ed8">POS teglash</text>
+  <text x="220" y="184" text-anchor="middle" font-size="13" fill="#3b82f6">HAR BIR tokenni teglaydi</text>
+
+  <g font-size="13">
+    <rect x="52" y="200" width="82" height="26" rx="5" fill="#ffffff" stroke="#93c5fd"/><text x="93" y="218" text-anchor="middle" fill="#1e293b">Google</text>
+    <text x="150" y="218" fill="#64748b">→</text>
+    <rect x="172" y="200" width="72" height="26" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="208" y="218" text-anchor="middle" font-weight="bold" fill="#1d4ed8">PROPN</text>
+
+    <rect x="52" y="234" width="82" height="26" rx="5" fill="#ffffff" stroke="#93c5fd"/><text x="93" y="252" text-anchor="middle" fill="#1e293b">was</text>
+    <text x="150" y="252" fill="#64748b">→</text>
+    <rect x="172" y="234" width="72" height="26" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="208" y="252" text-anchor="middle" font-weight="bold" fill="#1d4ed8">AUX</text>
+
+    <rect x="52" y="268" width="82" height="26" rx="5" fill="#ffffff" stroke="#93c5fd"/><text x="93" y="286" text-anchor="middle" fill="#1e293b">founded</text>
+    <text x="150" y="286" fill="#64748b">→</text>
+    <rect x="172" y="268" width="72" height="26" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="208" y="286" text-anchor="middle" font-weight="bold" fill="#1d4ed8">VERB</text>
+
+    <rect x="52" y="302" width="82" height="26" rx="5" fill="#ffffff" stroke="#93c5fd"/><text x="93" y="320" text-anchor="middle" fill="#1e293b">by</text>
+    <text x="150" y="320" fill="#64748b">→</text>
+    <rect x="172" y="302" width="72" height="26" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="208" y="320" text-anchor="middle" font-weight="bold" fill="#1d4ed8">ADP</text>
+
+    <rect x="52" y="336" width="82" height="26" rx="5" fill="#ffffff" stroke="#93c5fd"/><text x="93" y="354" text-anchor="middle" fill="#1e293b">Larry</text>
+    <text x="150" y="354" fill="#64748b">→</text>
+    <rect x="172" y="336" width="72" height="26" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="208" y="354" text-anchor="middle" font-weight="bold" fill="#1d4ed8">PROPN</text>
+
+    <rect x="52" y="370" width="82" height="26" rx="5" fill="#ffffff" stroke="#93c5fd"/><text x="93" y="388" text-anchor="middle" fill="#1e293b">Page</text>
+    <text x="150" y="388" fill="#64748b">→</text>
+    <rect x="172" y="370" width="72" height="26" rx="5" fill="#dbeafe" stroke="#2563eb"/><text x="208" y="388" text-anchor="middle" font-weight="bold" fill="#1d4ed8">PROPN</text>
+  </g>
+  <text x="286" y="356" font-size="11" fill="#dc2626">2 ta</text>
+  <text x="286" y="390" font-size="11" fill="#dc2626">alohida!</text>
+
+  <rect x="52" y="410" width="336" height="38" rx="7" fill="#dbeafe" stroke="#60a5fa"/>
+  <text x="220" y="426" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">Savol: "Bu so'z QANDAY so'z?"</text>
+  <text x="220" y="442" text-anchor="middle" font-size="11" fill="#3b82f6">Natija tokenlar soniga TENG</text>
+
+  <!-- NER -->
+  <rect x="450" y="132" width="380" height="330" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="2.5"/>
+  <text x="640" y="162" text-anchor="middle" font-size="18" font-weight="bold" fill="#b45309">NER</text>
+  <text x="640" y="184" text-anchor="middle" font-size="13" fill="#ea580c">faqat NOMLANGAN ob'ektlarni tortadi</text>
+
+  <g font-size="13">
+    <rect x="472" y="206" width="120" height="30" rx="5" fill="#ffffff" stroke="#fdba74"/><text x="532" y="226" text-anchor="middle" fill="#1e293b">Google</text>
+    <text x="606" y="226" fill="#64748b">→</text>
+    <rect x="628" y="206" width="72" height="30" rx="5" fill="#fed7aa" stroke="#d97706"/><text x="664" y="226" text-anchor="middle" font-weight="bold" fill="#b45309">ORG</text>
+
+    <rect x="472" y="252" width="120" height="30" rx="5" fill="#ffffff" stroke="#fdba74"/><text x="532" y="272" text-anchor="middle" font-weight="bold" fill="#1e293b">Larry Page</text>
+    <text x="606" y="272" fill="#64748b">→</text>
+    <rect x="628" y="252" width="88" height="30" rx="5" fill="#fed7aa" stroke="#d97706"/><text x="672" y="272" text-anchor="middle" font-weight="bold" fill="#b45309">PERSON</text>
+
+    <rect x="472" y="298" width="120" height="30" rx="5" fill="#ffffff" stroke="#fdba74"/><text x="532" y="318" text-anchor="middle" fill="#1e293b">1998</text>
+    <text x="606" y="318" fill="#64748b">→</text>
+    <rect x="628" y="298" width="72" height="30" rx="5" fill="#fed7aa" stroke="#d97706"/><text x="664" y="318" text-anchor="middle" font-weight="bold" fill="#b45309">DATE</text>
+  </g>
+
+  <text x="732" y="272" font-size="11" font-weight="bold" fill="#16a34a">1 ta!</text>
+
+  <rect x="472" y="344" width="336" height="52" rx="7" fill="#ffffff" stroke="#fdba74" stroke-dasharray="4 3"/>
+  <text x="640" y="366" text-anchor="middle" font-size="12" fill="#9a3412">"was" · "founded" · "by" · "in"</text>
+  <text x="640" y="386" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">→ E'TIBORSIZ QOLDIRILDI</text>
+
+  <rect x="472" y="410" width="336" height="38" rx="7" fill="#fed7aa" stroke="#fb923c"/>
+  <text x="640" y="426" text-anchor="middle" font-size="12" font-weight="bold" fill="#9a3412">Savol: "Matnda KIM va NIMA bor?"</text>
+  <text x="640" y="442" text-anchor="middle" font-size="11" fill="#c2410c">Natija tokenlardan ANCHA KAM</text>
+
+  <text x="430" y="484" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a2b4c">spaCy IKKALASINI ham bitta nlp(matn) chaqiruvida qiladi</text>
+</svg>

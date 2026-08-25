@@ -175,8 +175,8 @@ Bu modulni tugatgach, siz quyidagilarni **kodsiz** ayta olishingiz kerak:
 
 ## ➡️ Keyingi qadam
 
-**22-modul — Sentiment Analysis**: endi toza matnimiz bor, uni **his-tuyg'u** bo'yicha tahlil qilamiz. Sharh **ijobiymi** yoki **salbiymi** — buni model qanday aniqlaydi?
+**[22-modul — POS teglash va NER](../22-POS-and-NER/README.md)**: endi toza matnimiz bor. Unga **ma'no qatlamini** qo'shamiz — har bir so'z **ot**mi yoki **fe'l**mi, va matnda **KIM** va **NIMA** haqida gapirilyapti?
 
 ---
 
-⬅️ [20-modul — NLP'ga kirish](../20-NLP-Introduction/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [20-modul — NLP'ga kirish](../20-NLP-Introduction/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [22-modul](../22-POS-and-NER/README.md)

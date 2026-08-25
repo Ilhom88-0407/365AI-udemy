@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" width="860" height="520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="520" fill="#f7f9fc"/>
+  <text x="430" y="34" text-anchor="middle" font-size="23" font-weight="bold" fill="#1a2b4c">NER'ni QACHON qilish kerak?</text>
+  <text x="430" y="58" text-anchor="middle" font-size="14" fill="#64748b">Bu modulning eng muhim sabog'i</text>
+
+  <defs>
+    <marker id="g" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0,0 L0,7 L9,3.5 z" fill="#16a34a"/></marker>
+    <marker id="r" markerWidth="10" markerHeight="10" refX="8" refY="3.5" orient="auto"><path d="M0,0 L0,7 L9,3.5 z" fill="#dc2626"/></marker>
+  </defs>
+
+  <!-- correct -->
+  <rect x="24" y="76" width="400" height="330" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="3"/>
+  <text x="224" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#15803d">✅  TO'G'RI TARTIB</text>
+
+  <rect x="124" y="124" width="200" height="38" rx="7" fill="#ffffff" stroke="#86efac" stroke-width="2"/>
+  <text x="224" y="148" text-anchor="middle" font-size="14" fill="#166534">XOM MATN</text>
+  <line x1="224" y1="162" x2="224" y2="186" stroke="#16a34a" stroke-width="2.5" marker-end="url(#g)"/>
+
+  <rect x="124" y="190" width="200" height="42" rx="7" fill="#bbf7d0" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="224" y="209" text-anchor="middle" font-size="15" font-weight="bold" fill="#14532d">NER</text>
+  <text x="224" y="226" text-anchor="middle" font-size="11" fill="#166534">bosh harf + tinish belgi BOR</text>
+  <line x1="224" y1="232" x2="224" y2="256" stroke="#16a34a" stroke-width="2.5" marker-end="url(#g)"/>
+
+  <rect x="94" y="260" width="260" height="38" rx="7" fill="#ffffff" stroke="#86efac" stroke-width="2"/>
+  <text x="224" y="284" text-anchor="middle" font-size="12" fill="#166534">Ob'ektlarni SAQLANG (24 ta)</text>
+  <line x1="224" y1="298" x2="224" y2="322" stroke="#16a34a" stroke-width="2.5" marker-end="url(#g)"/>
+
+  <rect x="124" y="326" width="200" height="38" rx="7" fill="#ffffff" stroke="#86efac" stroke-width="2"/>
+  <text x="224" y="350" text-anchor="middle" font-size="13" fill="#166534">TOZALASH → model</text>
+
+  <rect x="54" y="374" width="340" height="24" rx="6" fill="#16a34a"/>
+  <text x="224" y="391" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Hamma ob'ekt SAQLANDI  ✅</text>
+
+  <!-- wrong -->
+  <rect x="436" y="76" width="400" height="330" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/>
+  <text x="636" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#b91c1c">❌  NOTO'G'RI TARTIB</text>
+
+  <rect x="536" y="124" width="200" height="38" rx="7" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/>
+  <text x="636" y="148" text-anchor="middle" font-size="14" fill="#991b1b">XOM MATN</text>
+  <line x1="636" y1="162" x2="636" y2="186" stroke="#dc2626" stroke-width="2.5" marker-end="url(#r)"/>
+
+  <rect x="536" y="190" width="200" height="42" rx="7" fill="#fecaca" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="636" y="209" text-anchor="middle" font-size="15" font-weight="bold" fill="#7f1d1d">TOZALASH</text>
+  <text x="636" y="226" text-anchor="middle" font-size="11" fill="#991b1b">.lower() + tinish belgilarsiz</text>
+  <line x1="636" y1="232" x2="636" y2="256" stroke="#dc2626" stroke-width="2.5" marker-end="url(#r)"/>
+
+  <rect x="536" y="260" width="200" height="38" rx="7" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/>
+  <text x="636" y="284" text-anchor="middle" font-size="14" fill="#991b1b">NER</text>
+  <line x1="636" y1="298" x2="636" y2="322" stroke="#dc2626" stroke-width="2.5" marker-end="url(#r)"/>
+
+  <rect x="506" y="326" width="260" height="38" rx="7" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/>
+  <text x="636" y="350" text-anchor="middle" font-size="12" fill="#991b1b">Faqat 13 ta ob'ekt qoldi</text>
+
+  <rect x="466" y="374" width="340" height="24" rx="6" fill="#dc2626"/>
+  <text x="636" y="391" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">46% YO'QOLDI  ❌</text>
+
+  <!-- what is lost -->
+  <rect x="24" y="418" width="812" height="88" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="2.5"/>
+  <text x="430" y="442" text-anchor="middle" font-size="15" font-weight="bold" fill="#92400e">Tozalash NIMANI yo'q qiladi?</text>
+
+  <g font-size="12.5">
+    <text x="60" y="468" fill="#78350f"><tspan font-weight="bold">Bosh harf</tspan> = odam ismining ASOSIY belgisi</text>
+    <text x="60" y="490" fill="#dc2626">"Sergey Brin" → "sergey brin"  →  BUTUNLAY YO'QOLDI</text>
+
+    <text x="450" y="468" fill="#78350f"><tspan font-weight="bold">Nuqta</tspan> = jumla chegarasi   ·   <tspan font-weight="bold">%</tspan> = ob'ekt TURI</text>
+    <text x="450" y="490" fill="#dc2626">"Alphabet Inc." + "Google" → BITTA ob'ekt bo'lib qoldi</text>
+  </g>
+</svg>

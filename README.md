@@ -44,7 +44,8 @@
 |---|---|---|---|
 | 20 | [NLP ga kirish](20-NLP-Introduction/README.md) | 4 | ✅ Tayyor |
 | 21 | [Matnni oldindan qayta ishlash](21-Text-Preprocessing/README.md) | 9 | ✅ Tayyor |
-| 22–28 | POS/NER, sentiment, vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 30 | ⏳ Navbatda |
+| 22 | [POS teglash va NER](22-POS-and-NER/README.md) | 4 | ✅ Tayyor |
+| 23–28 | Sentiment, vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 26 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -359,6 +360,23 @@
 
 ---
 
+## 🧭 Modul 22 — POS teglash va NER
+
+**Nimani beradi:** matnga **ma'no qatlamini** qo'shasiz. *"Bu so'z qanday so'z?"* va *"Matnda KIM va NIMA bor?"* Bu yerda `spaCy` bilan tanishasiz.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Matnni teglash](22-POS-and-NER/01-Text-Tagging.md) |
+| 2 | [POS teglash — nutq qismlari](22-POS-and-NER/02-POS-Tagging.md) ⭐ |
+| 3 | [NER — nomlangan ob'ektlar](22-POS-and-NER/03-Named-Entity-Recognition.md) ⭐ |
+| 4 | [🏆 Amaliy vazifa — 1000 ta BBC yangiligi](22-POS-and-NER/04-Practical-Task.md) ⭐ |
+
+📝 **[42 ta mashq](22-POS-and-NER/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](22-POS-and-NER/LOYIHALAR.md)**
+
+> ⚠️ **Bu modulning eng muhim darsi:** matnni tozalash NER'ni **buzadi**. Xom matnda **24 ta** ob'ekt topilgan bo'lsa, tozalangandan keyin faqat **13 ta** qoladi — `Sergey Brin` va `Sundar Pichai` **butunlay yo'qoladi**. Qoida: **NER birinchi, tozalash keyin.**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -457,10 +475,14 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 20-NLP-Introduction/                        ← 4 dars, 2 SVG
 │   ├── MASHQLAR.md                             ← 44 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 21-Text-Preprocessing/                      ← 9 dars, 3 SVG
-    ├── MASHQLAR.md                             ← 48 ta mashq
+├── 21-Text-Preprocessing/                      ← 9 dars, 3 SVG
+│   ├── MASHQLAR.md                             ← 48 ta mashq
+│   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+│   └── data/                                   ← 109 ta mehmonxona sharhi (CSV)
+└── 22-POS-and-NER/                             ← 4 dars, 3 SVG
+    ├── MASHQLAR.md                             ← 42 ta mashq
     ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
-    └── data/                                   ← 109 ta mehmonxona sharhi (CSV)
+    └── data/                                   ← 1000 ta BBC yangiligi + 2 matn
 ```
 
 ---
