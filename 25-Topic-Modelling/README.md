@@ -181,8 +181,8 @@ k=11   -0.9133           k=11   -1.1401
 
 ## ➡️ Keyingi qadam
 
-**26-modul — O'z matn tasniflagichingizni qurish**: mavzu modeli bizga **yorliqlarni topib berdi**. Endi ularni **ishlatamiz** — yangi hujjatni avtomatik to'g'ri turkumga joylaydigan **model quramiz**. Bu — **nazorat ostida** o'qitish.
+**[26-modul — O'z matn tasniflagichingiz](../26-Text-Classifier/README.md)**: mavzu modeli bizga **yorliqlarni topib berdi**. Endi ularni **ishlatamiz** — yangi hujjatni avtomatik to'g'ri turkumga joylaydigan **model quramiz**. Bu — **nazorat ostida** o'qitish.
 
 ---
 
-⬅️ [24-modul — Matnni vektorlashtirish](../24-Vectorizing-Text/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [24-modul — Matnni vektorlashtirish](../24-Vectorizing-Text/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [26-modul](../26-Text-Classifier/README.md)

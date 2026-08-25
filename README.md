@@ -48,7 +48,8 @@
 | 23 | [Sentiment tahlili](23-Sentiment-Analysis/README.md) | 4 | ✅ Tayyor |
 | 24 | [Matnni vektorlashtirish](24-Vectorizing-Text/README.md) | 3 | ✅ Tayyor |
 | 25 | [Mavzu modellashtirish](25-Topic-Modelling/README.md) | 7 | ✅ Tayyor |
-| 26–28 | Tasniflagich, keys, kelajak | 12 | ⏳ Navbatda |
+| 26 | [O'z matn tasniflagichingiz](26-Text-Classifier/README.md) | 4 | ✅ Tayyor |
+| 27–28 | Soxta yangiliklar keysi, NLP kelajagi | 8 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -439,6 +440,25 @@
 
 ---
 
+## 🧭 Modul 26 — O'z matn tasniflagichingiz
+
+**Nimani beradi:** o'z **yorliqlaringiz** bilan ishlaydigan model quriladi. Uchta algoritm: logistik regressiya, Naive Bayes, chiziqli SVM.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Kirish](26-Text-Classifier/01-Building-a-Custom-Classifier.md) |
+| 2 | [Logistik regressiya](26-Text-Classifier/02-Logistic-Regression.md) ⭐ |
+| 3 | [Naive Bayes](26-Text-Classifier/03-Naive-Bayes.md) |
+| 4 | [Chiziqli SVM — va muammoni HAL QILAMIZ](26-Text-Classifier/04-Linear-SVM.md) ⭐⭐ |
+
+📝 **[40 ta mashq](26-Text-Classifier/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](26-Text-Classifier/LOYIHALAR.md)**
+
+> ⚠️ **Kursdagi natija falokat:** 20 ta jumlada aniqlik **33% · 50% · 33%** — tanga tashlash ham 50% beradi! Va aniqlik `random_state` ga qarab **17% dan 83% gacha** sakraydi.
+>
+> 🏆 **Bu darslikda muammo HAL QILINDI:** 20 ta jumla → 83 ta kitob sharhi, va aniqlik **50% dan 87% ga** chiqdi. **Algoritm o'zgarmadi — faqat ma'lumot.** Modulda shuningdek **ma'lumot sizib chiqishi** *(data leakage)*, `DummyClassifier` bilan solishtirish va **xato tahlili** ko'rsatilgan.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -553,10 +573,14 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── MASHQLAR.md                             ← 40 ta mashq
 │   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
 │   └── data/                                   ← 6 ta jumla + 100 ta sharh
-└── 25-Topic-Modelling/                         ← 7 dars, 3 SVG
-    ├── MASHQLAR.md                             ← 42 ta mashq
+├── 25-Topic-Modelling/                         ← 7 dars, 3 SVG
+│   ├── MASHQLAR.md                             ← 42 ta mashq
+│   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+│   └── data/                                   ← 100 ta yangilik maqolasi
+└── 26-Text-Classifier/                         ← 4 dars, 1 SVG
+    ├── MASHQLAR.md                             ← 40 ta mashq
     ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
-    └── data/                                   ← 100 ta yangilik maqolasi
+    └── data/                                   ← 20 ta jumla + 100 ta sharh
 ```
 
 ---
