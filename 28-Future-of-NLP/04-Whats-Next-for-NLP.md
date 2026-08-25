@@ -514,4 +514,4 @@ NLP NING TO'RT YO'NALISHI
 
 ---
 
-⬅️ [Oldingi: Ingliz tilidan boshqa NLP](03-Non-English-NLP.md) · 🏠 [Modul boshiga](README.md) · ➡️ **29-modul: LLM'ga kirish**
+⬅️ [Oldingi: Ingliz tilidan boshqa NLP](03-Non-English-NLP.md) · 🏠 [Modul boshiga](README.md) · ➡️ [29-modul: LLM'ga kirish](../29-Introduction-to-LLMs/README.md)

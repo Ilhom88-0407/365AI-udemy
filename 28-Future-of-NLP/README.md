@@ -213,8 +213,8 @@ Har bir NLP loyihangizda — **model o'qitishdan OLDIN**:
 
 ## ➡️ Keyingi qadam
 
-**29-modul — Katta til modellariga kirish (LLM)**: bu modulda faqat **eshitgan** transformer va LLM'larni endi **ichidan** ko'ramiz — va ular bilan **ishlashni** boshlaymiz.
+**[29-modul — Katta til modellariga kirish (LLM)](../29-Introduction-to-LLMs/README.md)**: bu modulda faqat **eshitgan** transformer va LLM'larni endi **ichidan** ko'ramiz — va ular bilan **ishlashni** boshlaymiz.
 
 ---
 
-⬅️ [27-modul — Soxta yangiliklar keysi](../27-Fake-News-Case-Study/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ **29-modul**
+⬅️ [27-modul — Soxta yangiliklar keysi](../27-Fake-News-Case-Study/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [29-modul](../29-Introduction-to-LLMs/README.md)

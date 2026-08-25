@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="420" fill="#0f172a" rx="14"/>
+  <text x="440" y="38" fill="#f1f5f9" font-size="22" font-weight="700" text-anchor="middle">Oldindan o'qitish → Sozlash</text>
+  <text x="440" y="60" fill="#94a3b8" font-size="13" text-anchor="middle">maktab → kasb tanlash bilan bir xil g'oya</text>
+
+  <!-- school row -->
+  <text x="52" y="96" fill="#fbbf24" font-size="13" font-weight="700">🎓 MAKTAB O'XSHATISHI</text>
+  <rect x="52" y="106" width="300" height="58" rx="10" fill="#1e293b" stroke="#64748b"/>
+  <text x="202" y="130" fill="#e2e8f0" font-size="13" text-anchor="middle">matematika · tarix · til</text>
+  <text x="202" y="150" fill="#94a3b8" font-size="11.5" text-anchor="middle">KENG doira — 11 yil</text>
+  <path d="M360 135 L404 135" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="412" y="106" width="230" height="58" rx="10" fill="#1e293b" stroke="#64748b"/>
+  <text x="527" y="130" fill="#e2e8f0" font-size="13" text-anchor="middle">tibbiyot / huquq / IT</text>
+  <text x="527" y="150" fill="#94a3b8" font-size="11.5" text-anchor="middle">ANIQ soha</text>
+  <text x="660" y="140" fill="#86efac" font-size="11.5">maktab bilimi</text>
+  <text x="660" y="156" fill="#86efac" font-size="11.5">YO'QOLMAYDI</text>
+
+  <line x1="52" y1="184" x2="828" y2="184" stroke="#334155"/>
+
+  <!-- LLM row -->
+  <text x="52" y="212" fill="#38bdf8" font-size="13" font-weight="700">🧠 LLM'DA</text>
+
+  <!-- stage 1 -->
+  <rect x="52" y="224" width="300" height="126" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="202" y="250" fill="#e0f2fe" font-size="15" font-weight="700" text-anchor="middle">① OLDINDAN O'QITISH</text>
+  <text x="202" y="268" fill="#7dd3fc" font-size="11.5" text-anchor="middle">pre-training</text>
+  <line x1="72" y1="280" x2="332" y2="280" stroke="#0369a1"/>
+  <text x="72" y="300" fill="#bae6fd" font-size="12">🌐 butun internet (TB)</text>
+  <text x="72" y="320" fill="#bae6fd" font-size="12">🎯 KEYINGI SO'ZNI bashorat</text>
+  <text x="72" y="340" fill="#fde68a" font-size="12" font-weight="700">❌ YORLIQ KERAK EMAS</text>
+
+  <path d="M360 287 L404 287" stroke="#4ade80" stroke-width="3" marker-end="url(#b)"/>
+
+  <!-- stage 2 -->
+  <rect x="412" y="224" width="230" height="126" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="527" y="250" fill="#dcfce7" font-size="15" font-weight="700" text-anchor="middle">② SOZLASH</text>
+  <text x="527" y="268" fill="#86efac" font-size="11.5" text-anchor="middle">fine-tuning</text>
+  <line x1="432" y1="280" x2="622" y2="280" stroke="#166534"/>
+  <text x="432" y="300" fill="#bbf7d0" font-size="12">📄 kichik to'plam (MB)</text>
+  <text x="432" y="320" fill="#bbf7d0" font-size="12">✅ yorliq kerak</text>
+  <text x="432" y="340" fill="#fde68a" font-size="12" font-weight="700">👤 buni SIZ qilasiz</text>
+
+  <!-- zero-shot branch -->
+  <path d="M527 224 Q527 200 660 200 Q700 200 700 224" stroke="#f59e0b" stroke-width="2" fill="none" stroke-dasharray="5,4"/>
+  <rect x="662" y="224" width="176" height="126" rx="12" fill="#451a03" stroke="#f59e0b" stroke-width="2"/>
+  <text x="750" y="250" fill="#fef3c7" font-size="14" font-weight="700" text-anchor="middle">⚡ ZERO-SHOT</text>
+  <text x="750" y="268" fill="#fcd34d" font-size="11.5" text-anchor="middle">sozlashni O'TKAZIB</text>
+  <line x1="680" y1="280" x2="820" y2="280" stroke="#92400e"/>
+  <text x="680" y="300" fill="#fde68a" font-size="12">0 ta misol</text>
+  <text x="680" y="320" fill="#fde68a" font-size="12">0 ta yorliq</text>
+  <text x="680" y="340" fill="#86efac" font-size="12.5" font-weight="700">→ 0.976 aniqlik!</text>
+
+  <defs>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748b"/></marker>
+    <marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4ade80"/></marker>
+  </defs>
+
+  <!-- footer -->
+  <rect x="52" y="366" width="776" height="42" rx="9" fill="#1e293b" stroke="#ef4444"/>
+  <text x="440" y="384" fill="#fecaca" font-size="13" font-weight="700" text-anchor="middle">⚠️ LEKIN TIL HAL QILUVCHI — bir xil model, teskari natija</text>
+  <text x="440" y="401" fill="#cbd5e1" font-size="12" text-anchor="middle">ingliz kitob sharhlari 0.976 ✅   ·   o'zbek kitob sharhlari 0.500 ❌</text>
+</svg>

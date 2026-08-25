@@ -52,6 +52,17 @@
 | 27 | [Soxta yangiliklar (keys)](27-Fake-News-Case-Study/README.md) | 8 | ✅ Tayyor |
 | 28 | [NLP kelajagi](28-Future-of-NLP/README.md) 🇺🇿 | 4 | ✅ Tayyor |
 
+### 🤖 LLM bo'limi
+
+| № | Modul | Darslar | Holati |
+|---|---|---|---|
+| 29 | [LLM'larga kirish](29-Introduction-to-LLMs/README.md) | 7 | ✅ Tayyor |
+| 30 | Transformer arxitekturasi | — | ⏳ Navbatda |
+| 31 | GPT modellari bilan ishlash | — | ⏳ Navbatda |
+| 32 | Hugging Face Transformers | — | ⏳ Navbatda |
+| 33 | BERT bilan savol-javob | — | ⏳ Navbatda |
+| 34 | XLNet bilan tasniflash | — | ⏳ Navbatda |
+
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
 ---
@@ -510,6 +521,42 @@
 
 ---
 
+## 🧭 Modul 29 — Katta til modellariga kirish (LLM) 🤖
+
+**Nimani beradi:** LLM nima, qanchalik katta, nima qila oladi — va ## **har bir da'vo O'LCHANGAN**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Kursga kirish](29-Introduction-to-LLMs/01-Introduction-to-the-Course.md) |
+| 2 | [Kurs materiallari](29-Introduction-to-LLMs/02-Course-Materials.md) |
+| 3 | [LLM nima?](29-Introduction-to-LLMs/03-What-are-LLMs.md) |
+| 4 | [LLM qanchalik katta?](29-Introduction-to-LLMs/04-How-Large-is-an-LLM.md) ⭐⭐ |
+| 5 | [Umumiy maqsadli modellar](29-Introduction-to-LLMs/05-General-Purpose-Models.md) |
+| 6 | [Oldindan o'qitish va sozlash](29-Introduction-to-LLMs/06-Pre-training-and-Fine-tuning.md) ⭐⭐ |
+| 7 | [LLM nima uchun ishlatiladi?](29-Introduction-to-LLMs/07-What-can-LLMs-be-used-for.md) |
+
+📝 **[40 ta mashq](29-Introduction-to-LLMs/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](29-Introduction-to-LLMs/LOYIHALAR.md)**
+
+> 🔥 **Modulning ikki asosiy topilmasi — bir xil model, teskari natija:**
+>
+> ```
+> ① INGLIZ kitob sharhlari (83 ta)
+>      26-modul SVM (o'qitilgan)     0.869
+>      distilbert ZERO-SHOT          0.976   🏆  +10.7 punkt, 0 ta yorliq
+>
+> ② O'ZBEK jumlalari (16 ta)
+>      sklearn (28-modul)            0.625   🏆  ENG KICHIK
+>      distilbert EN   (66.9M)       0.562
+>      bert KO'P TILLI (167.4M)      0.500   📉  ENG KATTA, bazaviy daraja
+>              "Juda ZERIKARLI kitob" -> 5 YULDUZ (!)
+> ```
+>
+> ⚠️ **"Ko'p tilli" ≠ "sizning tilingiz":** mBERT asosi 104 tilni biladi *(o'zbek ham)*, lekin `nlptown` modeli atigi **6 tilda** sozlangan — o'zbek ular orasida **yo'q**.
+>
+> 💡 **To'g'rilangan qoida:** *"Ko'proq parametr → MODEL O'QITILGAN til va vazifada yaxshiroq."*
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -636,9 +683,12 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── MASHQLAR.md                             ← 36 ta mashq
 │   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
 │   └── data/                                   ← 198 ta yangilik maqolasi
-└── 28-Future-of-NLP/                           ← 4 dars, 3 SVG  🇺🇿 O'ZBEK NLP
-    ├── MASHQLAR.md                             ← 42 ta mashq
-    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (uznlp moduli)
+├── 28-Future-of-NLP/                           ← 4 dars, 3 SVG  🇺🇿 O'ZBEK NLP
+│   ├── MASHQLAR.md                             ← 42 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha (uznlp moduli)
+└── 29-Introduction-to-LLMs/                    ← 7 dars, 5 SVG  🤖 LLM BO'LIMI
+    ├── MASHQLAR.md                             ← 40 ta mashq
+    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (LLM baholash)
 ```
 
 ---

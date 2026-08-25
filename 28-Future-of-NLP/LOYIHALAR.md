@@ -849,4 +849,4 @@ qiziqarli  →  100% ijobiy
 
 ---
 
-⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ **29-modul: LLM'ga kirish**
+⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ [29-modul: LLM'ga kirish](../29-Introduction-to-LLMs/README.md)

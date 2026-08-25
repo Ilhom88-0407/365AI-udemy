@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="400" fill="#0f172a" rx="14"/>
+  <text x="440" y="38" fill="#f1f5f9" font-size="22" font-weight="700" text-anchor="middle">Maxsus modellar vs umumiy maqsadli LLM</text>
+
+  <!-- OLD -->
+  <rect x="30" y="70" width="380" height="250" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+  <text x="220" y="96" fill="#cbd5e1" font-size="14" font-weight="700" text-anchor="middle">❌ ESKI — har vazifaga ALOHIDA model</text>
+
+  <text x="72" y="132" fill="#94a3b8" font-size="12.5">sentiment</text>
+  <path d="M140 128 L182 128" stroke="#64748b" stroke-width="1.5" marker-end="url(#g1)"/>
+  <rect x="188" y="115" width="76" height="26" rx="6" fill="#334155" stroke="#94a3b8"/>
+  <text x="226" y="133" fill="#e2e8f0" font-size="12" text-anchor="middle">model A</text>
+
+  <text x="72" y="176" fill="#94a3b8" font-size="12.5">tarjima</text>
+  <path d="M140 172 L182 172" stroke="#64748b" stroke-width="1.5" marker-end="url(#g1)"/>
+  <rect x="188" y="159" width="76" height="26" rx="6" fill="#334155" stroke="#94a3b8"/>
+  <text x="226" y="177" fill="#e2e8f0" font-size="12" text-anchor="middle">model B</text>
+
+  <text x="72" y="220" fill="#94a3b8" font-size="12.5">xulosalash</text>
+  <path d="M140 216 L182 216" stroke="#64748b" stroke-width="1.5" marker-end="url(#g1)"/>
+  <rect x="188" y="203" width="76" height="26" rx="6" fill="#334155" stroke="#94a3b8"/>
+  <text x="226" y="221" fill="#e2e8f0" font-size="12" text-anchor="middle">model C</text>
+
+  <text x="72" y="264" fill="#94a3b8" font-size="12.5">savol-javob</text>
+  <path d="M140 260 L182 260" stroke="#64748b" stroke-width="1.5" marker-end="url(#g1)"/>
+  <rect x="188" y="247" width="76" height="26" rx="6" fill="#334155" stroke="#94a3b8"/>
+  <text x="226" y="265" fill="#e2e8f0" font-size="12" text-anchor="middle">model D</text>
+
+  <text x="220" y="300" fill="#f87171" font-size="12" text-anchor="middle">4 ta model · 4 ta yorliqli to'plam · 4 marta o'qitish</text>
+
+  <!-- NEW -->
+  <rect x="440" y="70" width="410" height="250" rx="12" fill="#3b0764" stroke="#a78bfa" stroke-width="2"/>
+  <text x="645" y="96" fill="#ddd6fe" font-size="14" font-weight="700" text-anchor="middle">✅ LLM — BITTA model, KO'P vazifa</text>
+
+  <rect x="596" y="140" width="130" height="110" rx="12" fill="#6d28d9" stroke="#ddd6fe" stroke-width="2"/>
+  <text x="661" y="188" fill="#f5f3ff" font-size="15" font-weight="700" text-anchor="middle">BITTA</text>
+  <text x="661" y="208" fill="#f5f3ff" font-size="15" font-weight="700" text-anchor="middle">LLM</text>
+
+  <g stroke="#a78bfa" stroke-width="1.6" fill="none">
+    <path d="M540 132 Q574 132 592 172"/>
+    <path d="M540 176 Q574 176 592 188"/>
+    <path d="M540 220 Q574 220 592 202"/>
+    <path d="M540 264 Q574 264 592 218"/>
+  </g>
+  <text x="472" y="136" fill="#c4b5fd" font-size="12.5">sentiment</text>
+  <text x="472" y="180" fill="#c4b5fd" font-size="12.5">tarjima</text>
+  <text x="472" y="224" fill="#c4b5fd" font-size="12.5">xulosalash</text>
+  <text x="472" y="268" fill="#c4b5fd" font-size="12.5">savol-javob</text>
+
+  <path d="M730 195 L774 195" stroke="#4ade80" stroke-width="2.5" marker-end="url(#g2)"/>
+  <text x="812" y="192" fill="#86efac" font-size="12" text-anchor="middle">javob</text>
+  <text x="645" y="290" fill="#86efac" font-size="12" text-anchor="middle">1 ta model · yorliq ko'pincha KERAK EMAS</text>
+
+  <defs>
+    <marker id="g1" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748b"/></marker>
+    <marker id="g2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4ade80"/></marker>
+  </defs>
+
+  <!-- footer -->
+  <rect x="30" y="338" width="820" height="46" rx="9" fill="#1e293b" stroke="#f59e0b"/>
+  <text x="440" y="357" fill="#fde68a" font-size="13" font-weight="700" text-anchor="middle">⚖️ LEKIN NARXI BOR — "umumiy" ≠ "har doim eng yaxshi"</text>
+  <text x="440" y="375" fill="#cbd5e1" font-size="12" text-anchor="middle">1M sharh: sklearn 10 sek $0  ·  LLM soatlar $$$  ·  o'zbekcha: 0.625 vs 0.500</text>
+</svg>
