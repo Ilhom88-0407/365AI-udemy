@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" width="880" height="540" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="540" fill="#0f172a"/>
+  <text x="440" y="36" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">Modulni import qilishning 4 usuli</text>
+
+  <rect x="30" y="60" width="400" height="106" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="52" y="88" fill="#4ade80" font-size="16" font-weight="bold">1 ·  import math</text>
+  <text x="52" y="114" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">math.sqrt(16)   →  4.0</text>
+  <text x="52" y="138" fill="#94a3b8" font-size="13">Butun modul yuklanadi</text>
+  <text x="52" y="158" fill="#4ade80" font-size="13">✅ Eng XAVFSIZ — nom to'qnashuvi yo'q</text>
+
+  <rect x="450" y="60" width="400" height="106" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="472" y="88" fill="#38bdf8" font-size="16" font-weight="bold">2 ·  from math import sqrt</text>
+  <text x="472" y="114" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">sqrt(25)   →  5.0</text>
+  <text x="472" y="138" fill="#94a3b8" font-size="13">Faqat BITTA funksiya</text>
+  <text x="472" y="158" fill="#38bdf8" font-size="13">✅ Modul nomi va nuqta KERAK EMAS</text>
+
+  <rect x="30" y="182" width="400" height="106" rx="10" fill="#7c2d12" stroke="#fbbf24" stroke-width="2"/>
+  <text x="52" y="210" fill="#fbbf24" font-size="16" font-weight="bold">3 ·  ... as ...  (qayta nomlash)</text>
+  <text x="52" y="236" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">from math import sqrt as s   →  s(36)</text>
+  <text x="52" y="258" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">import math as m             →  m.sqrt(49)</text>
+  <text x="52" y="280" fill="#fbbf24" font-size="13">✅ Ekspertlar ENG YOQTIRADIGAN usul — vaqt tejaydi</text>
+
+  <rect x="450" y="182" width="400" height="106" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="472" y="210" fill="#f87171" font-size="16" font-weight="bold">4 ·  from math import *</text>
+  <text x="472" y="236" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">sqrt(64)   →  8.0</text>
+  <text x="472" y="258" fill="#94a3b8" font-size="13">"math dan HAMMASINI import qil"</text>
+  <text x="472" y="280" fill="#f87171" font-size="13">❌ Mutaxassislar TANQID qiladi</text>
+
+  <rect x="30" y="306" width="820" height="112" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="52" y="334" fill="#f87171" font-size="17" font-weight="bold">⚠️  Nima uchun 4-usul XAVFLI?</text>
+  <text x="52" y="362" fill="#fecaca" font-size="14" font-family="Consolas, monospace">from math import *          ← math dan sqrt keldi</text>
+  <text x="52" y="384" fill="#fecaca" font-size="14" font-family="Consolas, monospace">from boshqa_modul import *  ← BU YERDA HAM sqrt bor!</text>
+  <text x="52" y="408" fill="#fecaca" font-size="14">sqrt(81)  →  QAYSI BIRI ishlaydi? Python bittasini tanlaydi, siz TANLAY OLMAYSIZ.</text>
+
+  <rect x="30" y="434" width="400" height="90" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="52" y="462" fill="#38bdf8" font-size="16" font-weight="bold">📖 Yordam olish</text>
+  <text x="52" y="488" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">help(math)</text>
+  <text x="52" y="512" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">help(math.sqrt)</text>
+
+  <rect x="450" y="434" width="400" height="90" rx="10" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="472" y="462" fill="#38bdf8" font-size="16" font-weight="bold">⌨️  Jupyter hiylalari</text>
+  <text x="472" y="488" fill="#e2e8f0" font-size="14">Tab           — nomni to'ldirish</text>
+  <text x="472" y="512" fill="#e2e8f0" font-size="14">Shift + Tab   — hujjatni ko'rsatish</text>
+</svg>

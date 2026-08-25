@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="480" fill="#0f172a"/>
+  <text x="440" y="36" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">Modul · Paket · Standart kutubxona</text>
+  <text x="440" y="60" text-anchor="middle" fill="#94a3b8" font-size="14">Uchalasi ham — OLDINDAN YOZILGAN kod</text>
+
+  <rect x="30" y="82" width="266" height="200" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="163" y="112" text-anchor="middle" fill="#38bdf8" font-size="19" font-weight="bold">MODUL</text>
+  <text x="163" y="134" text-anchor="middle" fill="#94a3b8" font-size="13">module</text>
+  <text x="50" y="164" fill="#e2e8f0" font-size="14">O'zgaruvchilar, funksiyalar</text>
+  <text x="50" y="184" fill="#e2e8f0" font-size="14">va sinflar ta'riflari</text>
+  <text x="50" y="212" fill="#4ade80" font-size="14">✅ Har safar qayta yozish</text>
+  <text x="50" y="232" fill="#4ade80" font-size="14">   SHART EMAS — import qiling</text>
+  <text x="50" y="262" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">import math</text>
+
+  <rect x="306" y="82" width="266" height="200" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="439" y="112" text-anchor="middle" fill="#4ade80" font-size="19" font-weight="bold">PAKET</text>
+  <text x="439" y="134" text-anchor="middle" fill="#94a3b8" font-size="13">package / library</text>
+  <text x="326" y="164" fill="#e2e8f0" font-size="14">KATTAROQ miqyosdagi kod</text>
+  <text x="326" y="184" fill="#e2e8f0" font-size="14">Bog'liq modullar TO'PLAMI</text>
+  <text x="326" y="212" fill="#94a3b8" font-size="14">"Kutubxona" (library) —</text>
+  <text x="326" y="232" fill="#94a3b8" font-size="14">o'zaro almashtiriladigan atama</text>
+  <text x="326" y="262" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">pandas · numpy</text>
+
+  <rect x="582" y="82" width="268" height="200" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+  <text x="716" y="112" text-anchor="middle" fill="#f472b6" font-size="19" font-weight="bold">STANDART</text>
+  <text x="716" y="134" text-anchor="middle" fill="#f472b6" font-size="19" font-weight="bold">KUTUBXONA</text>
+  <text x="602" y="164" fill="#e2e8f0" font-size="14">Python bilan BIRGA keladi</text>
+  <text x="602" y="184" fill="#e2e8f0" font-size="14">O'rnatish SHART EMAS</text>
+  <text x="602" y="212" fill="#94a3b8" font-size="14">len() · list sinfi · math</text>
+  <text x="602" y="232" fill="#94a3b8" font-size="14">— hammasi shu yerdan</text>
+  <text x="602" y="262" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">math · random · os</text>
+
+  <rect x="30" y="304" width="400" height="70" rx="10" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="330" fill="#38bdf8" font-size="16" font-weight="bold">🐼 pandas tarixi</text>
+  <text x="52" y="354" fill="#e2e8f0" font-size="13">2008 — Wes McKinney kapital boshqaruvda ishlagan.</text>
+  <text x="52" y="370" fill="#e2e8f0" font-size="13">Bugun — eng muvaffaqiyatli tahlil kutubxonasi.</text>
+
+  <rect x="450" y="304" width="400" height="70" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="472" y="330" fill="#4ade80" font-size="16" font-weight="bold">🆓 Python OCHIQ KODLI</text>
+  <text x="472" y="354" fill="#bbf7d0" font-size="13">Ko'p modullar BUTUNLAY BEPUL.</text>
+  <text x="472" y="370" fill="#bbf7d0" font-size="13">Jamoa tomonidan doim yaxshilanadi.</text>
+
+  <rect x="30" y="394" width="820" height="70" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="52" y="420" fill="#fbbf24" font-size="16" font-weight="bold">💡 Nima uchun bu MUHIM?</text>
+  <text x="52" y="446" fill="#e2e8f0" font-size="14">Bir marta yaratilgan modul MILLIONLAB foydalanuvchi ishini yengillashtiradi —</text>
+  <text x="52" y="462" fill="#e2e8f0" font-size="14">bu Python samaradorligidagi KESKIN yaxshilanish.</text>
+</svg>

@@ -175,7 +175,7 @@ def count(numbers):
     ↓          yig'uvchi summa
     ↓          lug'at iteratsiyasi
     ↓
-19-modul  ─  Muhim tushunchalar (list comprehension, lambda...)
+19-modul  ─  Muhim tushunchalar (OOP, modullar, hujjatlar)
     ↓
 20+       ─  NLP · LLM · LangChain · Vector DB
 
@@ -237,7 +237,7 @@ Hammasi ✅ bo'lsa — **19-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**19-modul: Bir necha muhim Python tushunchasi va atamasi**
+**[19-modul: Bir necha muhim Python tushunchasi va atamasi](../19-Important-Python-Concepts/README.md)**
 
 > List comprehension, `lambda`, va boshqa ilg'or vositalar.
 

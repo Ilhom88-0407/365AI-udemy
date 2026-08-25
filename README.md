@@ -34,7 +34,9 @@
 | 16 | [Funksiyalar](16-Functions/README.md) | 7 | ✅ Tayyor |
 | 17 | [Ketma-ketliklar](17-Sequences/README.md) | 5 | ✅ Tayyor |
 | 18 | [Iteratsiya](18-Iteration/README.md) | 8 | ✅ Tayyor |
-| 19 | Muhim tushunchalar va atamalar | 5 | ⏳ Navbatda |
+| 19 | [Muhim tushunchalar va atamalar](19-Important-Python-Concepts/README.md) | 5 | ✅ Tayyor |
+
+> 🎓 **"Python" bo'limi to'liq tugallandi — 10 modul, 53 dars.**
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -296,6 +298,22 @@
 
 ---
 
+## 🧭 Modul 19 — Muhim Python tushunchalari
+
+**Nimani beradi:** dasturchilar tilida gapirishni — OOP, modullar, hujjatlar.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [OOP ga kirish](19-Important-Python-Concepts/01-Introduction-to-OOP.md) ⭐ |
+| 2 | [Modullar va paketlar](19-Important-Python-Concepts/02-Modules-Packages-Standard-Library.md) ⭐ |
+| 3 | [Modullarni import qilish](19-Important-Python-Concepts/03-Importing-Modules.md) ⭐ |
+| 4 | [Dasturiy ta'minot hujjatlari](19-Important-Python-Concepts/04-What-is-Software-Documentation.md) |
+| 5 | [Python hujjatlari](19-Important-Python-Concepts/05-The-Python-Documentation.md) ⭐ |
+
+📝 **[52 ta mashq](19-Important-Python-Concepts/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](19-Important-Python-Concepts/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -385,8 +403,11 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 17-Sequences/                               ← 5 dars, 5 SVG
 │   ├── MASHQLAR.md                             ← 72 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 18-Iteration/                               ← 8 dars, 5 SVG
-    ├── MASHQLAR.md                             ← 76 ta mashq
+├── 18-Iteration/                               ← 8 dars, 5 SVG
+│   ├── MASHQLAR.md                             ← 76 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 19-Important-Python-Concepts/               ← 5 dars, 3 SVG
+    ├── MASHQLAR.md                             ← 52 ta mashq
     └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
@@ -395,9 +416,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
-**Python bo'limi deyarli tugadi** — 10–18-modullar tayyor.
+**Python bo'limi to'liq tugallandi** (10–19-modullar, 53 dars).
 
-Manba kursda keyingi bo'limlar: **Python** (19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

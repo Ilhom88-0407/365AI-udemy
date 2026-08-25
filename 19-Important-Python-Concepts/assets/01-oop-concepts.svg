@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="520" fill="#0f172a"/>
+  <text x="440" y="36" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">OOP: sinf · obyekt · atribut · metod</text>
+  <text x="440" y="60" text-anchor="middle" fill="#94a3b8" font-size="14">Archibald amaki metaforasi</text>
+
+  <rect x="30" y="80" width="200" height="150" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+  <text x="130" y="110" text-anchor="middle" fill="#f472b6" font-size="18" font-weight="bold">SINF (class)</text>
+  <text x="130" y="140" text-anchor="middle" fill="#e2e8f0" font-size="14">Velosiped ustasi</text>
+  <text x="50" y="170" fill="#94a3b8" font-size="13">Obyekt yaratish</text>
+  <text x="50" y="190" fill="#94a3b8" font-size="13">QOIDALARINI belgilaydi</text>
+  <text x="50" y="216" fill="#fbbf24" font-size="13" font-family="Consolas, monospace">Python: list</text>
+
+  <text x="248" y="160" text-anchor="middle" fill="#94a3b8" font-size="26">→</text>
+
+  <rect x="270" y="80" width="200" height="150" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="370" y="110" text-anchor="middle" fill="#38bdf8" font-size="18" font-weight="bold">OBYEKT (object)</text>
+  <text x="370" y="140" text-anchor="middle" fill="#e2e8f0" font-size="14">Yasalgan velosiped</text>
+  <text x="290" y="170" fill="#94a3b8" font-size="13">Sinfning aniq NAMUNASI</text>
+  <text x="290" y="190" fill="#94a3b8" font-size="13">(instance)</text>
+  <text x="290" y="216" fill="#fbbf24" font-size="13" font-family="Consolas, monospace">[1.0, 2.0, 3.0]</text>
+
+  <rect x="500" y="80" width="170" height="150" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="585" y="110" text-anchor="middle" fill="#4ade80" font-size="18" font-weight="bold">ATRIBUT</text>
+  <text x="585" y="132" text-anchor="middle" fill="#94a3b8" font-size="13">obyekt HOLATI</text>
+  <text x="520" y="160" fill="#e2e8f0" font-size="13">rangi</text>
+  <text x="520" y="180" fill="#e2e8f0" font-size="13">o'lchami</text>
+  <text x="520" y="200" fill="#e2e8f0" font-size="13">turi (tog' / yo'l)</text>
+  <text x="520" y="222" fill="#fbbf24" font-size="12">Python: ma'lumot turi</text>
+
+  <rect x="690" y="80" width="160" height="150" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="770" y="110" text-anchor="middle" fill="#fbbf24" font-size="18" font-weight="bold">METOD</text>
+  <text x="770" y="132" text-anchor="middle" fill="#94a3b8" font-size="13">obyektga AMAL</text>
+  <text x="710" y="160" fill="#e2e8f0" font-size="13">chapga burilish</text>
+  <text x="710" y="180" fill="#e2e8f0" font-size="13">sekinlashish</text>
+  <text x="710" y="200" fill="#e2e8f0" font-size="13">tezlashish</text>
+  <text x="710" y="222" fill="#fbbf24" font-size="12" font-family="Consolas, monospace">.extend()  .index()</text>
+
+  <rect x="30" y="252" width="820" height="94" rx="12" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="280" fill="#38bdf8" font-size="17" font-weight="bold">💡 Python'da HAR BIR qiymat — OBYEKT</text>
+  <text x="52" y="308" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">int · float · str · list · tuple · dict — hammasi obyekt</text>
+  <text x="52" y="334" fill="#94a3b8" font-size="14">"Ular haqida MANTIQIY obyektlar deb o'ylang."</text>
+
+  <rect x="30" y="366" width="400" height="140" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="52" y="394" fill="#f87171" font-size="17" font-weight="bold">FUNKSIYA</text>
+  <text x="52" y="422" fill="#fecaca" font-size="14">O'ZICHA mavjud</text>
+  <text x="52" y="446" fill="#fecaca" font-size="14">Sinfga tegishli EMAS</text>
+  <text x="52" y="474" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">len(my_list)</text>
+  <text x="52" y="496" fill="#94a3b8" font-size="12">obyekt QAVS ICHIDA</text>
+
+  <rect x="450" y="366" width="400" height="140" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="472" y="394" fill="#4ade80" font-size="17" font-weight="bold">METOD</text>
+  <text x="472" y="422" fill="#bbf7d0" font-size="14">MA'LUM SINFGA tegishli</text>
+  <text x="472" y="446" fill="#bbf7d0" font-size="14">Parametrlaridan biri — OBYEKTNING O'ZI</text>
+  <text x="472" y="474" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">my_list.extend([4,5])</text>
+  <text x="472" y="496" fill="#94a3b8" font-size="12">obyekt NUQTADAN OLDIN</text>
+</svg>
