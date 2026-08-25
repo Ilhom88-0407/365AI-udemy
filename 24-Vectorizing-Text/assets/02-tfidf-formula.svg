@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="480" fill="#f7f9fc"/>
+  <text x="430" y="34" text-anchor="middle" font-size="23" font-weight="bold" fill="#1a2b4c">TF-IDF formulasi</text>
+
+  <!-- TF -->
+  <rect x="30" y="56" width="380" height="176" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="220" y="84" text-anchor="middle" font-size="17" font-weight="bold" fill="#075985">TF — Term Frequency</text>
+  <text x="220" y="104" text-anchor="middle" font-size="12" fill="#0369a1">"Bu hujjatda qanchalik ko'p?"</text>
+
+  <rect x="60" y="118" width="320" height="58" rx="8" fill="#ffffff" stroke="#7dd3fc"/>
+  <text x="220" y="140" text-anchor="middle" font-size="12.5" fill="#0c4a6e">so'z hujjatda necha marta</text>
+  <line x1="86" y1="148" x2="354" y2="148" stroke="#0284c7" stroke-width="2"/>
+  <text x="220" y="168" text-anchor="middle" font-size="12.5" fill="#0c4a6e">hujjatdagi JAMI so'z</text>
+
+  <text x="220" y="200" text-anchor="middle" font-size="12" fill="#075985">"the cat sat on the mat"  (6 so'z)</text>
+  <text x="220" y="220" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#0284c7">TF("the") = 2 / 6 = 0.333</text>
+
+  <!-- IDF -->
+  <rect x="450" y="56" width="380" height="176" rx="12" fill="#fce7f3" stroke="#db2777" stroke-width="2.5"/>
+  <text x="640" y="84" text-anchor="middle" font-size="17" font-weight="bold" fill="#9d174d">IDF — Inverse Doc Frequency</text>
+  <text x="640" y="104" text-anchor="middle" font-size="12" fill="#be185d">"Boshqa hujjatlarda qanchalik kam?"</text>
+
+  <rect x="480" y="118" width="320" height="58" rx="8" fill="#ffffff" stroke="#f9a8d4"/>
+  <text x="640" y="140" text-anchor="middle" font-size="12.5" fill="#831843">JAMI hujjat soni</text>
+  <line x1="530" y1="148" x2="750" y2="148" stroke="#db2777" stroke-width="2"/>
+  <text x="640" y="168" text-anchor="middle" font-size="12.5" fill="#831843">so'z BOR hujjat soni</text>
+  <text x="504" y="152" font-size="14" font-weight="bold" fill="#db2777">log</text>
+
+  <text x="640" y="200" text-anchor="middle" font-size="12" fill="#9d174d">"the" 6/6 da  ·  "shark" 1/6 da</text>
+  <text x="640" y="220" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#db2777">IDF("the") = 0   ·   IDF("shark") = 1.79</text>
+
+  <!-- multiply -->
+  <text x="430" y="150" text-anchor="middle" font-size="34" font-weight="bold" fill="#475569">×</text>
+
+  <path d="M 220 232 L 220 258 L 640 258 L 640 232" stroke="#475569" stroke-width="2" fill="none"/>
+  <path d="M 430 258 L 430 282" stroke="#475569" stroke-width="2.5" fill="none"/>
+  <path d="M 424 274 L 430 284 L 436 274 z" fill="#475569"/>
+
+  <rect x="230" y="288" width="400" height="46" rx="10" fill="#1e293b"/>
+  <text x="430" y="318" text-anchor="middle" font-size="19" font-weight="bold" fill="#ffffff">TF-IDF  =  TF  ×  IDF</text>
+
+  <!-- four cases -->
+  <text x="430" y="362" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a2b4c">To'rtta holat</text>
+
+  <g font-size="12">
+    <rect x="30" y="374" width="196" height="66" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="128" y="394" text-anchor="middle" font-weight="bold" fill="#166534">TF ⬆   IDF ⬆</text>
+    <text x="128" y="412" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803d">ENG YUQORI ⭐</text>
+    <text x="128" y="430" text-anchor="middle" font-size="11" fill="#166534">"cockroach" 3 marta</text>
+
+    <rect x="234" y="374" width="196" height="66" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+    <text x="332" y="394" text-anchor="middle" font-weight="bold" fill="#854d0e">TF ⬇   IDF ⬆</text>
+    <text x="332" y="412" text-anchor="middle" font-size="13" font-weight="bold" fill="#a16207">O'RTA</text>
+    <text x="332" y="430" text-anchor="middle" font-size="11" fill="#854d0e">"cockroach" 1 marta</text>
+
+    <rect x="438" y="374" width="196" height="66" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="536" y="394" text-anchor="middle" font-weight="bold" fill="#9a3412">TF ⬆   IDF ⬇</text>
+    <text x="536" y="412" text-anchor="middle" font-size="13" font-weight="bold" fill="#c2410c">PAST</text>
+    <text x="536" y="430" text-anchor="middle" font-size="11" fill="#9a3412">"the" 3 marta</text>
+
+    <rect x="642" y="374" width="188" height="66" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="736" y="394" text-anchor="middle" font-weight="bold" fill="#991b1b">TF ⬇   IDF ⬇</text>
+    <text x="736" y="412" text-anchor="middle" font-size="13" font-weight="bold" fill="#b91c1c">ENG PAST</text>
+    <text x="736" y="430" text-anchor="middle" font-size="11" fill="#991b1b">"the" 1 marta</text>
+  </g>
+
+  <text x="430" y="464" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a2b4c">sklearn versiyasi:  IDF = ln( (1+N) / (1+df) ) + 1   →   ball hech qachon 0 bo'lmaydi</text>
+</svg>

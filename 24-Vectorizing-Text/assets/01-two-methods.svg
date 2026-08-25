@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" width="860" height="520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="520" fill="#f7f9fc"/>
+  <text x="430" y="34" text-anchor="middle" font-size="23" font-weight="bold" fill="#1a2b4c">Matnni vektorlashtirishning ikki usuli</text>
+
+  <rect x="270" y="52" width="320" height="40" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="430" y="78" text-anchor="middle" font-size="14" font-style="italic" fill="#334155">"the cat sat"  ·  "the dog sat"  ·  "the cat ran"</text>
+
+  <defs>
+    <marker id="mb" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#2563eb"/></marker>
+    <marker id="mp" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#7c3aed"/></marker>
+  </defs>
+  <path d="M 390 92 L 230 122" stroke="#2563eb" stroke-width="2.5" fill="none" marker-end="url(#mb)"/>
+  <path d="M 470 92 L 630 122" stroke="#7c3aed" stroke-width="2.5" fill="none" marker-end="url(#mp)"/>
+
+  <!-- BOW -->
+  <rect x="30" y="122" width="380" height="336" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="220" y="150" text-anchor="middle" font-size="18" font-weight="bold" fill="#1d4ed8">BAG OF WORDS</text>
+  <text x="220" y="170" text-anchor="middle" font-size="12" fill="#3b82f6">CountVectorizer() — SANAYDI</text>
+
+  <text x="220" y="196" text-anchor="middle" font-size="26">🎒</text>
+
+  <g font-size="12">
+    <rect x="56" y="212" width="328" height="24" fill="#dbeafe"/>
+    <text x="76" y="229" font-weight="bold" fill="#1e40af">        cat   dog   fast   ran   sat   the</text>
+    <text x="66" y="253" fill="#334155">D1        1     0      0     0     1     1</text>
+    <text x="66" y="275" fill="#334155">D2        0     1      0     0     1     1</text>
+    <text x="66" y="297" fill="#334155">D3        1     0      1     1     0     1</text>
+  </g>
+  <rect x="330" y="240" width="46" height="62" rx="4" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="353" y="320" text-anchor="middle" font-size="11" font-weight="bold" fill="#dc2626">hammasi 1</text>
+  <text x="353" y="334" text-anchor="middle" font-size="11" fill="#dc2626">foydasiz!</text>
+
+  <line x1="56" y1="348" x2="384" y2="348" stroke="#93c5fd"/>
+  <g font-size="12.5">
+    <text x="66" y="370" fill="#15803d">✅ juda oddiy, tushunish oson</text>
+    <text x="66" y="392" fill="#15803d">✅ tez</text>
+    <text x="66" y="414" fill="#b91c1c">❌ "the" ni ajratmaydi</text>
+    <text x="66" y="436" fill="#b91c1c">❌ so'z tartibi yo'qoladi</text>
+  </g>
+
+  <!-- TFIDF -->
+  <rect x="450" y="122" width="380" height="336" rx="12" fill="#faf5ff" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="640" y="150" text-anchor="middle" font-size="18" font-weight="bold" fill="#6d28d9">TF-IDF</text>
+  <text x="640" y="170" text-anchor="middle" font-size="12" fill="#8b5cf6">TfidfVectorizer() — MUHIMLIKNI o'lchaydi</text>
+
+  <text x="640" y="196" text-anchor="middle" font-size="26">⚖️</text>
+
+  <g font-size="12">
+    <rect x="476" y="212" width="328" height="24" fill="#ede9fe"/>
+    <text x="492" y="229" font-weight="bold" fill="#5b21b6">       cat    dog   fast   ran    sat    the</text>
+    <text x="484" y="253" fill="#334155">D1    0.62  0.00  0.00  0.00  0.62  0.48</text>
+    <text x="484" y="275" fill="#334155">D2    0.00  0.72  0.00  0.00  0.55  0.43</text>
+    <text x="484" y="297" fill="#334155">D3    0.44  0.00  0.58  0.58  0.00  0.35</text>
+  </g>
+  <rect x="748" y="240" width="52" height="62" rx="4" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="774" y="320" text-anchor="middle" font-size="11" font-weight="bold" fill="#16a34a">ballar PAST</text>
+  <text x="774" y="334" text-anchor="middle" font-size="11" fill="#16a34a">✅ to'g'ri</text>
+
+  <rect x="546" y="240" width="52" height="24" rx="4" fill="none" stroke="#ea580c" stroke-width="2"/>
+  <text x="572" y="228" text-anchor="middle" font-size="10" font-weight="bold" fill="#ea580c">eng yuqori</text>
+
+  <line x1="476" y1="348" x2="804" y2="348" stroke="#c4b5fd"/>
+  <g font-size="12.5">
+    <text x="486" y="370" fill="#15803d">✅ "the" ga PAST ball beradi</text>
+    <text x="486" y="392" fill="#15803d">✅ noyob so'zni mukofotlaydi</text>
+    <text x="486" y="414" fill="#15803d">✅ hujjat uzunligini tenglaydi</text>
+    <text x="486" y="436" fill="#b91c1c">❌ so'z tartibi baribir yo'qoladi</text>
+  </g>
+
+  <rect x="30" y="472" width="800" height="34" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="430" y="494" text-anchor="middle" font-size="13" font-weight="bold" fill="#854d0e">Kod DEYARLI BIR XIL — faqat CountVectorizer() → TfidfVectorizer() almashtiriladi</text>
+</svg>

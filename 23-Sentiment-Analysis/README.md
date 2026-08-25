@@ -161,8 +161,8 @@ Eng yaxshisi                         →   IKKALASI: VADER filtrlaydi,
 
 ## ➡️ Keyingi qadam
 
-**24-modul — Matnni vektorlashtirish**: shu paytgacha biz **tayyor** modellardan foydalandik. Endi **o'z modelimizni** qurishga tayyorlanamiz — buning uchun matnni **raqamlarga** aylantirishni o'rganamiz.
+**[24-modul — Matnni vektorlashtirish](../24-Vectorizing-Text/README.md)**: shu paytgacha biz **tayyor** modellardan foydalandik. Endi **o'z modelimizni** qurishga tayyorlanamiz — buning uchun matnni **raqamlarga** aylantirishni o'rganamiz.
 
 ---
 
-⬅️ [22-modul — POS teglash va NER](../22-POS-and-NER/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [22-modul — POS teglash va NER](../22-POS-and-NER/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [24-modul](../24-Vectorizing-Text/README.md)

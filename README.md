@@ -46,7 +46,8 @@
 | 21 | [Matnni oldindan qayta ishlash](21-Text-Preprocessing/README.md) | 9 | ✅ Tayyor |
 | 22 | [POS teglash va NER](22-POS-and-NER/README.md) | 4 | ✅ Tayyor |
 | 23 | [Sentiment tahlili](23-Sentiment-Analysis/README.md) | 4 | ✅ Tayyor |
-| 24–28 | Vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 22 | ⏳ Navbatda |
+| 24 | [Matnni vektorlashtirish](24-Vectorizing-Text/README.md) | 3 | ✅ Tayyor |
+| 25–28 | Mavzu modeli, tasniflagich, keys, kelajak | 19 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -397,6 +398,24 @@
 
 ---
 
+## 🧭 Modul 24 — Matnni vektorlashtirish
+
+**Nimani beradi:** matnni **raqamga** aylantirasiz — bu mashinali o'qitishga o'tishdan oldingi **oxirgi ko'prik**. `scikit-learn` bilan birinchi marta ishlaysiz.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Matnning raqamli tasviri](24-Vectorizing-Text/01-Numerical-Representation-of-Text.md) |
+| 2 | [Bag of Words](24-Vectorizing-Text/02-Bag-of-Words.md) ⭐ |
+| 3 | [TF-IDF](24-Vectorizing-Text/03-TF-IDF.md) ⭐ |
+
+📝 **[40 ta mashq](24-Vectorizing-Text/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](24-Vectorizing-Text/LOYIHALAR.md)**
+
+> ⚠️ **Kursdagi xato tuzatildi:** o'qituvchi *"CountVectorizer qiymatlari shunchaki 0 va 1"* deydi. **Bu noto'g'ri** — u **SANAYDI**. Bizning ma'lumotda `the` ustuni `[2, 3, 1, 2, 1, 3]`. Faqat 0/1 kerak bo'lsa: `CountVectorizer(binary=True)`.
+>
+> 🎯 **TF-IDF formulasi qo'lda tekshirildi:** `IDF = ln((1+N)/(1+df)) + 1` — sklearn natijasiga **aynan mos**.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -503,10 +522,14 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── MASHQLAR.md                             ← 42 ta mashq
 │   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
 │   └── data/                                   ← 1000 ta BBC yangiligi + 2 matn
-└── 23-Sentiment-Analysis/                      ← 4 dars, 2 SVG
-    ├── MASHQLAR.md                             ← 44 ta mashq
+├── 23-Sentiment-Analysis/                      ← 4 dars, 2 SVG
+│   ├── MASHQLAR.md                             ← 44 ta mashq
+│   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+│   └── data/                                   ← 100 ta kitob sharhi (reytingi bilan)
+└── 24-Vectorizing-Text/                        ← 3 dars, 2 SVG
+    ├── MASHQLAR.md                             ← 40 ta mashq
     ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
-    └── data/                                   ← 100 ta kitob sharhi (reytingi bilan)
+    └── data/                                   ← 6 ta jumla + 100 ta sharh
 ```
 
 ---
