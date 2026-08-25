@@ -182,7 +182,7 @@ Hammasi ✅ bo'lsa — **14-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**14-modul: Operatorlar haqida ko'proq** — `<`, `>`, `!=`, `and`, `or`, `not`
+**[14-modul: Operatorlar haqida ko'proq](../14-More-on-Operators/README.md)** — `<`, `>`, `!=`, `and`, `or`, `not`
 
 ---
 

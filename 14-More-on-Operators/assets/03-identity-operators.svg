@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="440" fill="#0f172a"/>
+  <text x="430" y="40" text-anchor="middle" fill="#f8fafc" font-size="26" font-weight="bold">is / is not — ayniyat operatorlari</text>
+
+  <rect x="30" y="66" width="390" height="150" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="225" y="96" text-anchor="middle" fill="#38bdf8" font-size="22" font-weight="bold" font-family="Consolas, monospace">==  /  !=</text>
+  <text x="225" y="120" text-anchor="middle" fill="#94a3b8" font-size="14">QIYMAT bir xilmi?</text>
+  <text x="54" y="154" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">[1,2,3] == [1,2,3]</text>
+  <text x="330" y="154" fill="#4ade80" font-size="15" font-family="Consolas, monospace">True</text>
+  <text x="54" y="182" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">1000 == int("1000")</text>
+  <text x="330" y="182" fill="#4ade80" font-size="15" font-family="Consolas, monospace">True</text>
+  <text x="54" y="206" fill="#94a3b8" font-size="13">→ mazmuni solishtiriladi</text>
+
+  <rect x="440" y="66" width="390" height="150" rx="12" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+  <text x="635" y="96" text-anchor="middle" fill="#f472b6" font-size="22" font-weight="bold" font-family="Consolas, monospace">is  /  is not</text>
+  <text x="635" y="120" text-anchor="middle" fill="#94a3b8" font-size="14">XOTIRADA bitta obyektmi?</text>
+  <text x="464" y="154" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">[1,2,3] is [1,2,3]</text>
+  <text x="742" y="154" fill="#f87171" font-size="15" font-family="Consolas, monospace">False</text>
+  <text x="464" y="182" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">1000 is int("1000")</text>
+  <text x="742" y="182" fill="#f87171" font-size="15" font-family="Consolas, monospace">False</text>
+  <text x="464" y="206" fill="#94a3b8" font-size="13">→ manzil solishtiriladi</text>
+
+  <rect x="30" y="238" width="800" height="88" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="52" y="266" fill="#f87171" font-size="17" font-weight="bold">⚠️  Ma'ruzada `5 is 6` ishlatilgan — bu ESKIRGAN uslub</text>
+  <text x="52" y="292" fill="#fecaca" font-size="14" font-family="Consolas, monospace">Python 3.8+ da  5 is 6  →  SyntaxWarning: "is" with a literal.</text>
+  <text x="52" y="314" fill="#fecaca" font-size="14" font-family="Consolas, monospace">Sonlar va satrlar uchun DOIM  ==  va  !=  ishlating.</text>
+
+  <rect x="30" y="346" width="800" height="76" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="52" y="374" fill="#4ade80" font-size="17" font-weight="bold">✅  `is` qachon TO'G'RI ishlatiladi</text>
+  <text x="52" y="402" fill="#bbf7d0" font-size="15" font-family="Consolas, monospace">x is None      x is not None      x is True      x is False</text>
+</svg>

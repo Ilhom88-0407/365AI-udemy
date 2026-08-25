@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" width="860" height="470" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="470" fill="#0f172a"/>
+  <text x="430" y="42" text-anchor="middle" fill="#f8fafc" font-size="26" font-weight="bold">Solishtirish operatorlari</text>
+  <text x="430" y="68" text-anchor="middle" fill="#94a3b8" font-size="15">natija DOIM True yoki False</text>
+
+  <g>
+    <rect x="30" y="92" width="255" height="86" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="60" y="130" fill="#38bdf8" font-size="30" font-weight="bold" font-family="Consolas, monospace">==</text>
+    <text x="115" y="122" fill="#f8fafc" font-size="16">teng</text>
+    <text x="115" y="146" fill="#94a3b8" font-size="14" font-family="Consolas, monospace">10 == 20 / 2</text>
+    <text x="115" y="166" fill="#4ade80" font-size="14" font-family="Consolas, monospace">→ True</text>
+  </g>
+
+  <g>
+    <rect x="302" y="92" width="255" height="86" rx="10" fill="#1e293b" stroke="#f472b6" stroke-width="2"/>
+    <text x="332" y="130" fill="#f472b6" font-size="30" font-weight="bold" font-family="Consolas, monospace">!=</text>
+    <text x="387" y="122" fill="#f8fafc" font-size="16">teng emas</text>
+    <text x="387" y="146" fill="#94a3b8" font-size="14" font-family="Consolas, monospace">10 != 15</text>
+    <text x="387" y="166" fill="#4ade80" font-size="14" font-family="Consolas, monospace">→ True</text>
+  </g>
+
+  <g>
+    <rect x="574" y="92" width="255" height="86" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="604" y="130" fill="#fbbf24" font-size="30" font-weight="bold" font-family="Consolas, monospace">&gt;</text>
+    <text x="650" y="122" fill="#f8fafc" font-size="16">katta</text>
+    <text x="650" y="146" fill="#94a3b8" font-size="14" font-family="Consolas, monospace">100 &gt; 50</text>
+    <text x="650" y="166" fill="#4ade80" font-size="14" font-family="Consolas, monospace">→ True</text>
+  </g>
+
+  <g>
+    <rect x="30" y="192" width="255" height="86" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="60" y="230" fill="#fbbf24" font-size="30" font-weight="bold" font-family="Consolas, monospace">&lt;</text>
+    <text x="106" y="222" fill="#f8fafc" font-size="16">kichik</text>
+    <text x="106" y="246" fill="#94a3b8" font-size="14" font-family="Consolas, monospace">100 &lt; 50</text>
+    <text x="106" y="266" fill="#f87171" font-size="14" font-family="Consolas, monospace">→ False</text>
+  </g>
+
+  <g>
+    <rect x="302" y="192" width="255" height="86" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="332" y="230" fill="#a78bfa" font-size="30" font-weight="bold" font-family="Consolas, monospace">&gt;=</text>
+    <text x="392" y="222" fill="#f8fafc" font-size="16">katta yoki teng</text>
+    <text x="392" y="246" fill="#94a3b8" font-size="14" font-family="Consolas, monospace">15 &gt;= 10 + 10</text>
+    <text x="392" y="266" fill="#f87171" font-size="14" font-family="Consolas, monospace">→ False</text>
+  </g>
+
+  <g>
+    <rect x="574" y="192" width="255" height="86" rx="10" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+    <text x="604" y="230" fill="#a78bfa" font-size="30" font-weight="bold" font-family="Consolas, monospace">&lt;=</text>
+    <text x="664" y="222" fill="#f8fafc" font-size="16">kichik yoki teng</text>
+    <text x="664" y="246" fill="#94a3b8" font-size="14" font-family="Consolas, monospace">15 &lt;= 10 + 5</text>
+    <text x="664" y="266" fill="#4ade80" font-size="14" font-family="Consolas, monospace">→ True</text>
+  </g>
+
+  <rect x="30" y="300" width="799" height="70" rx="10" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="328" fill="#38bdf8" font-size="16" font-weight="bold">💡 O'ng tomonda faqat son emas — IFODA ham bo'lishi mumkin</text>
+  <text x="52" y="356" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">15 &gt;= 10 + 10     15 &lt;= 10 + 5     100 == 10 ** 2     5 * 3 &lt;= 5 ** 3</text>
+
+  <rect x="30" y="386" width="799" height="60" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="52" y="412" fill="#f87171" font-size="16" font-weight="bold">⚠️  =  biriktiradi        ==  tekshiradi</text>
+  <text x="52" y="434" fill="#fecaca" font-size="14" font-family="Consolas, monospace">x = 5  →  x ga 5 beriladi        x == 5  →  True yoki False qaytadi</text>
+</svg>
