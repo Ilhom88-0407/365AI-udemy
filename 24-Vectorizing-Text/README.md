@@ -174,8 +174,8 @@ stop_words='english'      377 ustun   98.1% nol
 
 ## ➡️ Keyingi qadam
 
-**25-modul — Mavzu modellashtirish**: endi matnimiz **raqamlarda**. Bu bilan nima qilamiz? Birinchi qadam — **hujjatlar ichidagi yashirin mavzularni** avtomatik topish, hech kim ularni oldindan aytmasdan.
+**[25-modul — Mavzu modellashtirish](../25-Topic-Modelling/README.md)**: endi matnimiz **raqamlarda**. Bu bilan nima qilamiz? Birinchi qadam — **hujjatlar ichidagi yashirin mavzularni** avtomatik topish, hech kim ularni oldindan aytmasdan.
 
 ---
 
-⬅️ [23-modul — Sentiment tahlili](../23-Sentiment-Analysis/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [23-modul — Sentiment tahlili](../23-Sentiment-Analysis/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [25-modul](../25-Topic-Modelling/README.md)

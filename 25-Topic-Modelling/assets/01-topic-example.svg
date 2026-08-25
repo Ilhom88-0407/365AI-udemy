@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" width="860" height="460" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="460" fill="#f7f9fc"/>
+  <text x="430" y="32" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a2b4c">Bitta matn — uchta mavzu</text>
+
+  <rect x="60" y="50" width="740" height="96" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <g font-size="12.5" fill="#334155">
+    <text x="78" y="74">AI is now able to create <tspan fill="#0284c7" font-weight="bold">videos</tspan> and <tspan fill="#0284c7" font-weight="bold">audio</tspan> that are hard to distinguish from the</text>
+    <text x="78" y="94">real thing. Recently, a number of <tspan fill="#d97706" font-weight="bold">celebrities</tspan> have been impersonated and</text>
+    <text x="78" y="114"><tspan fill="#d97706" font-weight="bold">journalists</tspan> need to take extra care verifying sources before going to</text>
+    <text x="78" y="134"><tspan fill="#d97706" font-weight="bold">publication</tspan>. You don't need any special <tspan fill="#0284c7" font-weight="bold">hardware</tspan>... <tspan fill="#16a34a" font-weight="bold">Governments</tspan> are</text>
+  </g>
+  <text x="78" y="152" font-size="12.5" fill="#334155">discussing bringing in <tspan fill="#16a34a" font-weight="bold">regulations</tspan> and <tspan fill="#16a34a" font-weight="bold">policy</tspan>.</text>
+
+  <defs>
+    <marker id="t1" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#0284c7"/></marker>
+    <marker id="t2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#d97706"/></marker>
+    <marker id="t3" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#16a34a"/></marker>
+  </defs>
+  <path d="M 250 160 L 175 196" stroke="#0284c7" stroke-width="2.5" fill="none" marker-end="url(#t1)"/>
+  <path d="M 430 160 L 430 196" stroke="#d97706" stroke-width="2.5" fill="none" marker-end="url(#t2)"/>
+  <path d="M 610 160 L 685 196" stroke="#16a34a" stroke-width="2.5" fill="none" marker-end="url(#t3)"/>
+
+  <!-- topic 1 -->
+  <rect x="30" y="200" width="250" height="140" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+  <text x="155" y="230" text-anchor="middle" font-size="26">🖥️</text>
+  <text x="155" y="256" text-anchor="middle" font-size="16" font-weight="bold" fill="#075985">MAVZU 1 — USKUNA</text>
+  <line x1="56" y1="268" x2="254" y2="268" stroke="#7dd3fc"/>
+  <g font-size="13" fill="#0c4a6e">
+    <text x="155" y="290" text-anchor="middle">video</text>
+    <text x="155" y="310" text-anchor="middle">audio</text>
+    <text x="155" y="330" text-anchor="middle">hardware</text>
+  </g>
+
+  <!-- topic 2 -->
+  <rect x="305" y="200" width="250" height="140" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+  <text x="430" y="230" text-anchor="middle" font-size="26">📰</text>
+  <text x="430" y="256" text-anchor="middle" font-size="16" font-weight="bold" fill="#92400e">MAVZU 2 — MEDIA</text>
+  <line x1="331" y1="268" x2="529" y2="268" stroke="#fcd34d"/>
+  <g font-size="13" fill="#78350f">
+    <text x="430" y="290" text-anchor="middle">celebrities</text>
+    <text x="430" y="310" text-anchor="middle">journalists</text>
+    <text x="430" y="330" text-anchor="middle">publication</text>
+  </g>
+
+  <!-- topic 3 -->
+  <rect x="580" y="200" width="250" height="140" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="705" y="230" text-anchor="middle" font-size="26">🏛️</text>
+  <text x="705" y="256" text-anchor="middle" font-size="16" font-weight="bold" fill="#166534">MAVZU 3 — HUKUMAT</text>
+  <line x1="606" y1="268" x2="804" y2="268" stroke="#86efac"/>
+  <g font-size="13" fill="#14532d">
+    <text x="705" y="290" text-anchor="middle">government</text>
+    <text x="705" y="310" text-anchor="middle">regulations</text>
+    <text x="705" y="330" text-anchor="middle">policy</text>
+  </g>
+
+  <!-- proportions -->
+  <text x="430" y="372" text-anchor="middle" font-size="14" font-weight="bold" fill="#1a2b4c">Hujjatning mavzu ULUSHLARI</text>
+  <rect x="180" y="382" width="150" height="24" fill="#0284c7"/>
+  <rect x="330" y="382" width="200" height="24" fill="#d97706"/>
+  <rect x="530" y="382" width="150" height="24" fill="#16a34a"/>
+  <text x="255" y="399" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">30%</text>
+  <text x="430" y="399" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">40%</text>
+  <text x="605" y="399" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#ffffff">30%</text>
+
+  <rect x="30" y="420" width="800" height="30" rx="7" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="430" y="440" text-anchor="middle" font-size="13" font-weight="bold" fill="#854d0e">BIR hujjat → BIR NECHTA mavzu, turli ULUSHLARDA. Hech kim mavzularni oldindan aytmadi!</text>
+</svg>

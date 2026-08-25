@@ -47,7 +47,8 @@
 | 22 | [POS teglash va NER](22-POS-and-NER/README.md) | 4 | ✅ Tayyor |
 | 23 | [Sentiment tahlili](23-Sentiment-Analysis/README.md) | 4 | ✅ Tayyor |
 | 24 | [Matnni vektorlashtirish](24-Vectorizing-Text/README.md) | 3 | ✅ Tayyor |
-| 25–28 | Mavzu modeli, tasniflagich, keys, kelajak | 19 | ⏳ Navbatda |
+| 25 | [Mavzu modellashtirish](25-Topic-Modelling/README.md) | 7 | ✅ Tayyor |
+| 26–28 | Tasniflagich, keys, kelajak | 12 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -416,6 +417,28 @@
 
 ---
 
+## 🧭 Modul 25 — Mavzu modellashtirish
+
+**Nimani beradi:** hujjatlardagi **yashirin mavzularni** avtomatik topasiz — **yorliqlarsiz**. Bu kursdagi birinchi **nazoratsiz** o'qitish moduli.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Mavzu modellashtirish nima?](25-Topic-Modelling/01-What-is-Topic-Modelling.md) |
+| 2 | [Qachon ishlatiladi](25-Topic-Modelling/02-When-to-Use-Topic-Modelling.md) |
+| 3 | [LDA nazariyasi](25-Topic-Modelling/03-Latent-Dirichlet-Allocation.md) ⭐ |
+| 4 | [LDA Python'da](25-Topic-Modelling/04-LDA-in-Python.md) ⭐ |
+| 5 | [LSA nazariyasi](25-Topic-Modelling/05-Latent-Semantic-Analysis.md) |
+| 6 | [LSA Python'da](25-Topic-Modelling/06-LSA-in-Python.md) |
+| 7 | [Nechta mavzu?](25-Topic-Modelling/07-How-Many-Topics.md) ⭐ |
+
+📝 **[42 ta mashq](25-Topic-Modelling/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](25-Topic-Modelling/LOYIHALAR.md)**
+
+> ⚠️ **Kurs `gensim` ishlatadi**, lekin u Python 3.13+ da o'rnatilmaydi *(C++ kompilyator kerak)*. Bu darslikda **ikkala** yo'l ham berilgan — `gensim` kodi kursni kuzatish uchun, `scikit-learn` kodi esa **ishga tushirilib tekshirilgan**.
+>
+> 🎯 **Modulning asosiy sabog'i:** kursdagi natija **foydasiz** chiqadi *(`mr`, `said`, `one`)*. **Ikki qatorlik** o'zgarish — `max_df=0.5, min_df=5` — va **5 ta aniq mavzu** paydo bo'ladi: madaniyat, biznes, siyosat, jinoyat, hukumat.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -526,10 +549,14 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── MASHQLAR.md                             ← 44 ta mashq
 │   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
 │   └── data/                                   ← 100 ta kitob sharhi (reytingi bilan)
-└── 24-Vectorizing-Text/                        ← 3 dars, 2 SVG
-    ├── MASHQLAR.md                             ← 40 ta mashq
+├── 24-Vectorizing-Text/                        ← 3 dars, 2 SVG
+│   ├── MASHQLAR.md                             ← 40 ta mashq
+│   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+│   └── data/                                   ← 6 ta jumla + 100 ta sharh
+└── 25-Topic-Modelling/                         ← 7 dars, 3 SVG
+    ├── MASHQLAR.md                             ← 42 ta mashq
     ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
-    └── data/                                   ← 6 ta jumla + 100 ta sharh
+    └── data/                                   ← 100 ta yangilik maqolasi
 ```
 
 ---
