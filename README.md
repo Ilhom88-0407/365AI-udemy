@@ -21,6 +21,14 @@
 
 > 🎓 **"Intro to AI" bo'limi to'liq tugallandi — 9 modul, 41 dars.**
 
+### 🐍 Python bo'limi
+
+| № | Modul | Darslar | Holati |
+|---|---|---|---|
+| 10 | [Nima uchun Python](10-Why-Python/README.md) | 2 | ✅ Tayyor |
+| 11 | [Muhitni sozlash](11-Setting-Up-the-Environment/README.md) | 7 | ✅ Tayyor |
+| 12–19 | O'zgaruvchilar, sintaksis, operatorlar, shartlar, funksiyalar, ketma-ketliklar, iteratsiya | 44 | ⏳ Navbatda |
+
 ---
 
 ## 🧭 Modul 01 — AI nima?
@@ -143,6 +151,26 @@
 
 ---
 
+## 🧭 Modul 10–11 — Python asoslari
+
+**Nimani beradi:** kompyuteringizda ishlaydigan Python muhiti va Jupyter'da erkin harakat.
+
+| Dars | Mavzu |
+|---|---|
+| 10-1 | [Dasturlash tushuntirildi](10-Why-Python/01-Programming-explained.md) |
+| 10-2 | [Nima uchun Python](10-Why-Python/02-Why-Python.md) |
+| 11-1 | [Jupyter bilan tanishuv](11-Setting-Up-the-Environment/01-Jupyter-Introduction.md) |
+| 11-2 | [Anaconda o'rnatish](11-Setting-Up-the-Environment/02-Installing-Anaconda.md) 🔧 |
+| 11-3 | [Jupyter'dan foydalanish](11-Setting-Up-the-Environment/03-Introduction-to-Using-Jupyter.md) |
+| 11-4 | [Notebook fayllari](11-Setting-Up-the-Environment/04-Working-with-Notebook-Files.md) ⭐ |
+| 11-5 | [Tezkor tugmalar](11-Setting-Up-the-Environment/05-Using-Shortcuts.md) |
+| 11-6 | [Xato xabarlari](11-Setting-Up-the-Environment/06-Handling-Error-Messages.md) ⭐ |
+| 11-7 | [Kernel'ni qayta ishga tushirish](11-Setting-Up-the-Environment/07-Restarting-the-Kernel.md) |
+
+🔧 = kompyuterda amal bajarish shart
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -211,7 +239,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 06-Practical-challenges-in-Generative-AI/   ← 4 dars, 5 SVG
 ├── 07-The-AI-tech-stack/                       ← 7 dars, 6 SVG
 ├── 08-AI-job-positions/                        ← 3 dars, 1 SVG
-└── 09-Looking-ahead/                           ← 2 dars, 2 SVG
+├── 09-Looking-ahead/                           ← 2 dars, 2 SVG
+├── 10-Why-Python/                              ← 2 dars, 2 SVG
+└── 11-Setting-Up-the-Environment/              ← 7 dars, 4 SVG
 ```
 
 ---
@@ -219,8 +249,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
+**Python bo'limi boshlandi** — 10 va 11-modullar tayyor.
 
-Manba kursda keyingi bo'limlar: **Python** (10–19), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **Python** (12–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

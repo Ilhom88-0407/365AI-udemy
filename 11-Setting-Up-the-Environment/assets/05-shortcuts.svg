@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <rect width="900" height="500" rx="14" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#0F172A">Jupyter tezkor tugmalari</text>
+  <text x="450" y="58" text-anchor="middle" font-size="13" fill="#475569">⚠️ Deyarli hammasi COMMAND MODE da ishlaydi — avval ESC bosing</text>
+
+  <!-- YACHEYKA BOSHQARUVI -->
+  <rect x="24" y="78" width="416" height="188" rx="12" fill="#FFFFFF" stroke="#2563EB" stroke-width="2.5"/>
+  <rect x="24" y="78" width="416" height="36" rx="12" fill="#2563EB"/>
+  <rect x="24" y="102" width="416" height="12" fill="#2563EB"/>
+  <text x="232" y="103" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">YACHEYKA BOSHQARUVI</text>
+  <g font-size="12">
+    <rect x="46" y="126" width="60" height="24" rx="6" fill="#DBEAFE"/><text x="76" y="143" text-anchor="middle" font-weight="700" fill="#1D4ED8">A</text>
+    <text x="120" y="143" fill="#334155">Yuqorida yangi yacheyka</text>
+    <rect x="46" y="156" width="60" height="24" rx="6" fill="#DBEAFE"/><text x="76" y="173" text-anchor="middle" font-weight="700" fill="#1D4ED8">B</text>
+    <text x="120" y="173" fill="#334155">Pastda yangi yacheyka</text>
+    <rect x="46" y="186" width="60" height="24" rx="6" fill="#FEE2E2"/><text x="76" y="203" text-anchor="middle" font-weight="700" fill="#991B1B">D D</text>
+    <text x="120" y="203" fill="#334155">O'chirish (D ni ikki marta)</text>
+    <rect x="46" y="216" width="60" height="24" rx="6" fill="#DBEAFE"/><text x="76" y="233" text-anchor="middle" font-weight="700" fill="#1D4ED8">X</text>
+    <text x="120" y="233" fill="#334155">Kesish</text>
+    <rect x="246" y="216" width="60" height="24" rx="6" fill="#DBEAFE"/><text x="276" y="233" text-anchor="middle" font-weight="700" fill="#1D4ED8">C</text>
+    <text x="316" y="233" fill="#334155">Nusxa</text>
+    <rect x="246" y="186" width="60" height="24" rx="6" fill="#DBEAFE"/><text x="276" y="203" text-anchor="middle" font-weight="700" fill="#1D4ED8">V</text>
+    <text x="316" y="203" fill="#334155">Qo'yish</text>
+  </g>
+  <rect x="46" y="246" width="372" height="0" fill="none"/>
+
+  <!-- REJIM VA TUR -->
+  <rect x="460" y="78" width="416" height="188" rx="12" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2.5"/>
+  <rect x="460" y="78" width="416" height="36" rx="12" fill="#7C3AED"/>
+  <rect x="460" y="102" width="416" height="12" fill="#7C3AED"/>
+  <text x="668" y="103" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">REJIM VA YACHEYKA TURI</text>
+  <g font-size="12">
+    <rect x="482" y="126" width="76" height="24" rx="6" fill="#EDE9FE"/><text x="520" y="143" text-anchor="middle" font-weight="700" fill="#5B21B6">Enter</text>
+    <text x="572" y="143" fill="#334155">Edit mode ga kirish</text>
+    <rect x="482" y="156" width="76" height="24" rx="6" fill="#EDE9FE"/><text x="520" y="173" text-anchor="middle" font-weight="700" fill="#5B21B6">Esc</text>
+    <text x="572" y="173" fill="#334155">Command mode ga chiqish</text>
+    <rect x="482" y="186" width="76" height="24" rx="6" fill="#FEF3C7"/><text x="520" y="203" text-anchor="middle" font-weight="700" fill="#92400E">M</text>
+    <text x="572" y="203" fill="#334155">Markdown yacheykaga aylantirish</text>
+    <rect x="482" y="216" width="76" height="24" rx="6" fill="#D1FAE5"/><text x="520" y="233" text-anchor="middle" font-weight="700" fill="#047857">Y</text>
+    <text x="572" y="233" fill="#334155">Kod yacheykasiga qaytarish</text>
+  </g>
+
+  <!-- KO'RINISH -->
+  <rect x="24" y="278" width="416" height="140" rx="12" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <rect x="24" y="278" width="416" height="36" rx="12" fill="#059669"/>
+  <rect x="24" y="302" width="416" height="12" fill="#059669"/>
+  <text x="232" y="303" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">KO'RINISH VA NAVIGATSIYA</text>
+  <g font-size="12">
+    <rect x="46" y="326" width="90" height="24" rx="6" fill="#D1FAE5"/><text x="91" y="343" text-anchor="middle" font-weight="700" fill="#047857">Shift + L</text>
+    <text x="150" y="343" fill="#334155">Qator raqamlarini ko'rsatish</text>
+    <rect x="46" y="356" width="90" height="24" rx="6" fill="#D1FAE5"/><text x="91" y="373" text-anchor="middle" font-weight="700" fill="#047857">↑ ↓</text>
+    <text x="150" y="373" fill="#334155">Yacheykalar bo'ylab harakat</text>
+    <rect x="46" y="386" width="150" height="24" rx="6" fill="#D1FAE5"/><text x="121" y="403" text-anchor="middle" font-size="11" font-weight="700" fill="#047857">Ctrl+Shift + ↑ ↓</text>
+    <text x="210" y="403" fill="#334155">Yacheykani ko'chirish</text>
+  </g>
+
+  <!-- YORDAM -->
+  <rect x="460" y="278" width="416" height="140" rx="12" fill="#FFFFFF" stroke="#EA580C" stroke-width="2.5"/>
+  <rect x="460" y="278" width="416" height="36" rx="12" fill="#EA580C"/>
+  <rect x="460" y="302" width="416" height="12" fill="#EA580C"/>
+  <text x="668" y="303" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">YORDAM VA BOSHQA</text>
+  <g font-size="12">
+    <rect x="482" y="326" width="110" height="24" rx="6" fill="#FFEDD5"/><text x="537" y="343" text-anchor="middle" font-size="11" font-weight="700" fill="#9A3412">Ctrl+Shift+H</text>
+    <text x="606" y="343" fill="#334155">Barcha tugmalar ro'yxati</text>
+    <text x="482" y="374" font-size="11.5" fill="#64748B">Yoki: Help menyusi →</text>
+    <text x="482" y="392" font-size="11.5" fill="#64748B">"Show Keyboard Shortcuts"</text>
+    <text x="482" y="410" font-size="11" font-style="italic" fill="#94A3B8">Kodlashda asosan klaviaturadan foydalanasiz —</text>
+  </g>
+
+  <rect x="24" y="432" width="852" height="52" rx="11" fill="#0F172A"/>
+  <text x="450" y="452" text-anchor="middle" font-size="12.5" font-weight="700" fill="#FBBF24">MARKDOWN yacheykasi — bajarilmaydigan hujjat matni</text>
+  <text x="450" y="471" text-anchor="middle" font-size="11.5" fill="#CBD5E1">Kod uzayganda izoh qoldirish uchun ajralmas · View menyusidan kodni yig'ib (collapse) qo'yish ham mumkin</text>
+</svg>
