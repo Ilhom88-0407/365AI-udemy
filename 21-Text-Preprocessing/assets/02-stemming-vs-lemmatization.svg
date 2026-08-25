@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="520" fill="#0f172a"/>
+  <text x="440" y="36" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">Stemming  va  Lemmatization</text>
+  <text x="440" y="60" text-anchor="middle" fill="#94a3b8" font-size="14">Ikkalasi ham so'zni ASOS shakliga keltiradi — lekin BOSHQACHA</text>
+
+  <rect x="30" y="82" width="400" height="176" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="230" y="112" text-anchor="middle" fill="#fbbf24" font-size="20" font-weight="bold">STEMMING</text>
+  <text x="230" y="134" text-anchor="middle" fill="#94a3b8" font-size="13">o'zak topish</text>
+  <text x="52" y="164" fill="#e2e8f0" font-size="14">Qo'shimchani KESIB TASHLAYDI</text>
+  <text x="52" y="188" fill="#4ade80" font-size="14">✅ Tez · sodda</text>
+  <text x="52" y="210" fill="#4ade80" font-size="14">✅ Lug'at hajmini KUCHLI kamaytiradi</text>
+  <text x="52" y="234" fill="#f87171" font-size="14">❌ Natija HAQIQIY so'z bo'lmasligi mumkin</text>
+  <text x="52" y="252" fill="#94a3b8" font-size="12">PorterStemmer()</text>
+
+  <rect x="450" y="82" width="400" height="176" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="650" y="112" text-anchor="middle" fill="#4ade80" font-size="20" font-weight="bold">LEMMATIZATION</text>
+  <text x="650" y="134" text-anchor="middle" fill="#94a3b8" font-size="13">lug'at shakliga keltirish</text>
+  <text x="472" y="164" fill="#e2e8f0" font-size="14">LUG'ATGA murojaat qiladi</text>
+  <text x="472" y="188" fill="#4ade80" font-size="14">✅ Natija DOIM haqiqiy so'z</text>
+  <text x="472" y="210" fill="#4ade80" font-size="14">✅ MA'NO saqlanadi</text>
+  <text x="472" y="234" fill="#f87171" font-size="14">❌ Sekinroq · lug'at KATTA qoladi</text>
+  <text x="472" y="252" fill="#94a3b8" font-size="12">WordNetLemmatizer()</text>
+
+  <text x="440" y="292" text-anchor="middle" fill="#fbbf24" font-size="17" font-weight="bold">Yonma-yon solishtirish</text>
+
+  <rect x="30" y="306" width="820" height="160" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="60" y="332" fill="#94a3b8" font-size="14" font-weight="bold">SO'Z</text>
+  <text x="330" y="332" fill="#fbbf24" font-size="14" font-weight="bold">STEMMING</text>
+  <text x="600" y="332" fill="#4ade80" font-size="14" font-weight="bold">LEMMATIZATION</text>
+  <line x1="50" y1="342" x2="830" y2="342" stroke="#334155" stroke-width="1"/>
+
+  <text x="60" y="366" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">connecting</text>
+  <text x="330" y="366" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">connect</text>
+  <text x="600" y="366" fill="#4ade80" font-size="14" font-family="Consolas, monospace">connecting</text>
+
+  <text x="60" y="390" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">connected</text>
+  <text x="330" y="390" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">connect</text>
+  <text x="600" y="390" fill="#4ade80" font-size="14" font-family="Consolas, monospace">connected</text>
+
+  <text x="60" y="414" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">learners</text>
+  <text x="330" y="414" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">learner</text>
+  <text x="600" y="414" fill="#4ade80" font-size="14" font-family="Consolas, monospace">learner</text>
+
+  <text x="60" y="438" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">worse</text>
+  <text x="330" y="438" fill="#f87171" font-size="14" font-weight="bold" font-family="Consolas, monospace">wors  ⚠️ so'z EMAS</text>
+  <text x="600" y="438" fill="#4ade80" font-size="14" font-family="Consolas, monospace">worse  ✅</text>
+
+  <text x="60" y="460" fill="#94a3b8" font-size="12">connect tokenlari:  5 ta so'z → 1 ta (stemming)  ·  5 ta so'z → 5 ta (lemmatization)</text>
+
+  <rect x="30" y="476" width="820" height="36" rx="8" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="500" fill="#38bdf8" font-size="14" font-weight="bold">🔑 Qaysi birini tanlash?  Lug'at KICHIK bo'lsin → stemming.  MA'NO muhim → lemmatization.</text>
+</svg>

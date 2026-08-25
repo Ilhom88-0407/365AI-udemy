@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" width="880" height="540" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="540" fill="#0f172a"/>
+  <text x="440" y="36" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">Regex — tez ma'lumotnoma</text>
+  <text x="440" y="60" text-anchor="middle" fill="#94a3b8" font-size="14">Regular expressions — naqsh bo'yicha matn qidirish</text>
+
+  <rect x="30" y="80" width="400" height="150" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="108" fill="#38bdf8" font-size="16" font-weight="bold">UCHTA ASOSIY FUNKSIYA</text>
+  <text x="52" y="136" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">re.search(naqsh, matn)</text>
+  <text x="52" y="154" fill="#94a3b8" font-size="12">→ topilsa Match, topilmasa None</text>
+  <text x="52" y="180" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">re.sub(naqsh, yangi, matn)</text>
+  <text x="52" y="198" fill="#94a3b8" font-size="12">→ topib ALMASHTIRADI</text>
+  <text x="52" y="222" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">re.findall(naqsh, matn)</text>
+
+  <rect x="450" y="80" width="400" height="150" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="472" y="108" fill="#f87171" font-size="16" font-weight="bold">XOM SATR  (raw string)</text>
+  <text x="472" y="136" fill="#fecaca" font-size="14" font-family="Consolas, monospace">"c:\desktop\notes"</text>
+  <text x="472" y="156" fill="#94a3b8" font-size="12">→ \n YANGI QATOR deb o'qiladi ❌</text>
+  <text x="472" y="184" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">r"c:\desktop\notes"</text>
+  <text x="472" y="204" fill="#94a3b8" font-size="12">→ \n oddiy belgi ✅</text>
+  <text x="472" y="224" fill="#fbbf24" font-size="12">Regex da DOIM r"..." ishlating</text>
+
+  <text x="440" y="258" text-anchor="middle" fill="#fbbf24" font-size="17" font-weight="bold">Eng ko'p ishlatiladigan belgilar</text>
+
+  <rect x="30" y="272" width="820" height="196" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+
+  <text x="60" y="300" fill="#4ade80" font-size="17" font-weight="bold" font-family="Consolas, monospace">^</text>
+  <text x="110" y="300" fill="#e2e8f0" font-size="14">satr BOSHI</text>
+  <text x="300" y="300" fill="#94a3b8" font-size="13" font-family="Consolas, monospace">r"^A"</text>
+  <text x="420" y="300" fill="#94a3b8" font-size="13">A harfi bilan boshlanadi</text>
+
+  <text x="60" y="326" fill="#4ade80" font-size="17" font-weight="bold" font-family="Consolas, monospace">$</text>
+  <text x="110" y="326" fill="#e2e8f0" font-size="14">satr OXIRI</text>
+  <text x="300" y="326" fill="#94a3b8" font-size="13" font-family="Consolas, monospace">r"y$"</text>
+  <text x="420" y="326" fill="#94a3b8" font-size="13">y harfi bilan tugaydi</text>
+
+  <text x="60" y="352" fill="#4ade80" font-size="17" font-weight="bold" font-family="Consolas, monospace">?</text>
+  <text x="110" y="352" fill="#e2e8f0" font-size="14">IXTIYORIY belgi</text>
+  <text x="300" y="352" fill="#94a3b8" font-size="13" font-family="Consolas, monospace">"Sarah?"</text>
+  <text x="420" y="352" fill="#94a3b8" font-size="13">Sara VA Sarah — ikkalasi</text>
+
+  <text x="60" y="378" fill="#4ade80" font-size="17" font-weight="bold" font-family="Consolas, monospace">|</text>
+  <text x="110" y="378" fill="#e2e8f0" font-size="14">YOKI</text>
+  <text x="300" y="378" fill="#94a3b8" font-size="13" font-family="Consolas, monospace">r"(need|want)ed"</text>
+  <text x="420" y="378" fill="#94a3b8" font-size="13">needed YOKI wanted</text>
+
+  <text x="60" y="404" fill="#4ade80" font-size="17" font-weight="bold" font-family="Consolas, monospace">\w</text>
+  <text x="110" y="404" fill="#e2e8f0" font-size="14">so'z belgisi</text>
+  <text x="300" y="404" fill="#94a3b8" font-size="13">harf, raqam, _</text>
+
+  <text x="60" y="430" fill="#4ade80" font-size="17" font-weight="bold" font-family="Consolas, monospace">\s</text>
+  <text x="110" y="430" fill="#e2e8f0" font-size="14">bo'sh joy</text>
+  <text x="300" y="430" fill="#94a3b8" font-size="13">probel, tab, yangi qator</text>
+
+  <text x="60" y="456" fill="#4ade80" font-size="17" font-weight="bold" font-family="Consolas, monospace">[^...]</text>
+  <text x="130" y="456" fill="#e2e8f0" font-size="14">INKOR</text>
+  <text x="300" y="456" fill="#94a3b8" font-size="13" font-family="Consolas, monospace">r"[^\w\s]"</text>
+  <text x="420" y="456" fill="#94a3b8" font-size="13">so'z HAM, bo'sh joy HAM emas</text>
+
+  <rect x="30" y="480" width="820" height="48" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="52" y="502" fill="#4ade80" font-size="15" font-weight="bold">⭐ NLP dagi ENG MUHIM regex — tinish belgilarni olib tashlash:</text>
+  <text x="52" y="522" fill="#bbf7d0" font-size="15" font-family="Consolas, monospace">re.sub(r"[^\w\s]", "", matn)</text>
+</svg>

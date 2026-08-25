@@ -43,7 +43,8 @@
 | № | Modul | Darslar | Holati |
 |---|---|---|---|
 | 20 | [NLP ga kirish](20-NLP-Introduction/README.md) | 4 | ✅ Tayyor |
-| 21–28 | Oldindan qayta ishlash, POS/NER, sentiment, vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 39 | ⏳ Navbatda |
+| 21 | [Matnni oldindan qayta ishlash](21-Text-Preprocessing/README.md) | 9 | ✅ Tayyor |
+| 22–28 | POS/NER, sentiment, vektorlashtirish, mavzu modeli, tasniflagich, keys, kelajak | 30 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -336,6 +337,28 @@
 
 ---
 
+## 🧭 Modul 21 — Matnni oldindan qayta ishlash
+
+**Nimani beradi:** NLP'ning **eng muhim** moduli. Iflos matnni modelga tayyor toza tokenlarga aylantirasiz. 109 ta **haqiqiy** mehmonxona sharhi bilan ishlaysiz.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Ma'lumotni tayyorlashning ahamiyati](21-Text-Preprocessing/01-The-Importance-of-Data-Preparation.md) |
+| 2 | [Kichik harf](21-Text-Preprocessing/02-Lowercase.md) |
+| 3 | [To'xtatish so'zlari](21-Text-Preprocessing/03-Removing-Stop-Words.md) ⭐ |
+| 4 | [Regular expressions](21-Text-Preprocessing/04-Regular-Expressions.md) ⭐ |
+| 5 | [Tokenizatsiya](21-Text-Preprocessing/05-Tokenization.md) |
+| 6 | [Stemming](21-Text-Preprocessing/06-Stemming.md) ⭐ |
+| 7 | [Lemmatization](21-Text-Preprocessing/07-Lemmatization.md) ⭐ |
+| 8 | [N-grammalar](21-Text-Preprocessing/08-N-grams.md) |
+| 9 | [🏆 Amaliy vazifa — to'liq quvur](21-Text-Preprocessing/09-Practical-Task.md) ⭐ |
+
+📝 **[48 ta mashq](21-Text-Preprocessing/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](21-Text-Preprocessing/LOYIHALAR.md)**
+
+> ⚠️ **Bu modulning eng muhim darsi:** `not` so'zi to'xtatish so'zlari ro'yxatida — uni o'chirsangiz `"not clean"` → `"clean"` bo'lib **ma'no teskari** aylanadi. Ma'lumotimizda `not` bor sharhlar o'rtacha **3.42** ball, yo'q sharhlar **4.05** ball.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -431,9 +454,13 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 19-Important-Python-Concepts/               ← 5 dars, 3 SVG
 │   ├── MASHQLAR.md                             ← 52 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 20-NLP-Introduction/                        ← 4 dars, 2 SVG
-    ├── MASHQLAR.md                             ← 44 ta mashq
-    └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+├── 20-NLP-Introduction/                        ← 4 dars, 2 SVG
+│   ├── MASHQLAR.md                             ← 44 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 21-Text-Preprocessing/                      ← 9 dars, 3 SVG
+    ├── MASHQLAR.md                             ← 48 ta mashq
+    ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+    └── data/                                   ← 109 ta mehmonxona sharhi (CSV)
 ```
 
 ---

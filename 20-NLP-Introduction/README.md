@@ -208,7 +208,7 @@ Hammasi ✅ bo'lsa — **21-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**21-modul: Matnni oldindan qayta ishlash**
+**[21-modul: Matnni oldindan qayta ishlash](../21-Text-Preprocessing/README.md)**
 
 > Ma'ruzachidan: *"Bu — tabiiy tilni qayta ishlashning ENG FUNDAMENTAL jihatlaridan biri."*
 >
@@ -216,4 +216,4 @@ Hammasi ✅ bo'lsa — **21-modulga tayyorsiz**.
 
 ---
 
-⬅️ [19-modul](../19-Important-Python-Concepts/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [19-modul](../19-Important-Python-Concepts/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [21-modul](../21-Text-Preprocessing/README.md)
