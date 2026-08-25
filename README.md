@@ -49,7 +49,8 @@
 | 24 | [Matnni vektorlashtirish](24-Vectorizing-Text/README.md) | 3 | ✅ Tayyor |
 | 25 | [Mavzu modellashtirish](25-Topic-Modelling/README.md) | 7 | ✅ Tayyor |
 | 26 | [O'z matn tasniflagichingiz](26-Text-Classifier/README.md) | 4 | ✅ Tayyor |
-| 27–28 | Soxta yangiliklar keysi, NLP kelajagi | 8 | ⏳ Navbatda |
+| 27 | [Soxta yangiliklar (keys)](27-Fake-News-Case-Study/README.md) | 8 | ✅ Tayyor |
+| 28 | NLP kelajagi | 1 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -459,6 +460,29 @@
 
 ---
 
+## 🧭 Modul 27 — Soxta yangiliklarni aniqlash (KEYS)
+
+**Nimani beradi:** ## **21–26-modullarning HAMMASI bitta haqiqiy loyihada.** Bu — sizning **portfolio loyihangiz**.
+
+| Dars | Mavzu | Modul |
+|---|---|---|
+| 1 | [Loyihani tanishtirish](27-Fake-News-Case-Study/01-Introducing-the-Project.md) | — |
+| 2 | [POS teglar bilan o'rganish](27-Fake-News-Case-Study/02-Exploring-with-POS-Tags.md) | 22 |
+| 3 | [Nomlangan ob'ektlar](27-Fake-News-Case-Study/03-Extracting-Named-Entities.md) ⭐ | 22 |
+| 4 | [Matnni qayta ishlash](27-Fake-News-Case-Study/04-Processing-the-Text.md) ⭐ | 21 |
+| 5 | [Sentiment farq qiladimi?](27-Fake-News-Case-Study/05-Sentiment-by-News-Type.md) | 23 |
+| 6 | [Mavzular — LDA](27-Fake-News-Case-Study/06-Topics-LDA.md) | 24, 25 |
+| 7 | [Mavzular — LSA](27-Fake-News-Case-Study/07-Topics-LSA.md) ⭐ | 25 |
+| 8 | [Tasniflagich](27-Fake-News-Case-Study/08-Fake-News-Classifier.md) ⭐⭐ | 26 |
+
+📝 **[36 ta mashq](27-Fake-News-Case-Study/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](27-Fake-News-Case-Study/LOYIHALAR.md)**
+
+> 💥 **Modulning eng muhim topilmasi — "SHIPCHA":** ma'lumotda `Reuters` so'zi **100% haqiqiy** va atigi **1% soxta** yangiliklarda uchraydi. Bitta qatorlik qoida **99.5% aniqlik** beradi — bu **mashinali o'qitish emas**, ma'lumot **nuqsoni**. Shipcha detektori jami **39 ta** bunday so'zni topdi *(`getty`, `via`, `featured` — hammasi rasm izohidan)*.
+>
+> 🏆 **Natijalar:** til **farq qiladi** *(ravishlar +32%, PERSON 6/10 vs 1/10)* · sentiment **farq qilmaydi** *(p = 0.83)* · **6 ta aniq mavzu** topildi · model **90.4%** aniqlik.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -577,10 +601,14 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 │   ├── MASHQLAR.md                             ← 42 ta mashq
 │   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
 │   └── data/                                   ← 100 ta yangilik maqolasi
-└── 26-Text-Classifier/                         ← 4 dars, 1 SVG
-    ├── MASHQLAR.md                             ← 40 ta mashq
+├── 26-Text-Classifier/                         ← 4 dars, 1 SVG
+│   ├── MASHQLAR.md                             ← 40 ta mashq
+│   ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
+│   └── data/                                   ← 20 ta jumla + 100 ta sharh
+└── 27-Fake-News-Case-Study/                    ← 8 dars, 2 SVG  ⭐ KEYS
+    ├── MASHQLAR.md                             ← 36 ta mashq
     ├── LOYIHALAR.md                            ← 6 ta mini-loyiha
-    └── data/                                   ← 20 ta jumla + 100 ta sharh
+    └── data/                                   ← 198 ta yangilik maqolasi
 ```
 
 ---

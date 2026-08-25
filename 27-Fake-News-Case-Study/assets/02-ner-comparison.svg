@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="480" fill="#f7f9fc"/>
+  <text x="430" y="32" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a2b4c">Nomlangan ob'ektlar — soxta va haqiqiy yangiliklar</text>
+
+  <rect x="30" y="52" width="390" height="330" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="2.5"/>
+  <text x="225" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#991b1b">SOXTA YANGILIKLAR</text>
+  <text x="225" y="98" text-anchor="middle" font-size="12" fill="#b91c1c">top-10 ob'ektning 6 tasi — ODAM</text>
+  <g font-size="12.5" font-family="Consolas, monospace">
+    <rect x="52" y="110" width="346" height="24" fill="#fecaca"/>
+    <text x="66" y="127" fill="#7f1d1d">Trump     PERSON   154</text>
+    <rect x="52" y="136" width="346" height="24" fill="#ffffff"/>
+    <text x="66" y="153" fill="#334155">Trump     ORG      152</text>
+    <rect x="52" y="162" width="346" height="24" fill="#ffffff"/>
+    <text x="66" y="179" fill="#334155">the       ORG      121</text>
+    <rect x="52" y="188" width="346" height="24" fill="#fecaca"/>
+    <text x="66" y="205" fill="#7f1d1d">Clinton   PERSON   118</text>
+    <rect x="52" y="214" width="346" height="24" fill="#fecaca"/>
+    <text x="66" y="231" fill="#7f1d1d">Donald    PERSON    75</text>
+    <rect x="52" y="240" width="346" height="24" fill="#fecaca"/>
+    <text x="66" y="257" fill="#7f1d1d">Hillary   PERSON    64</text>
+    <rect x="52" y="266" width="346" height="24" fill="#fecaca"/>
+    <text x="66" y="283" fill="#7f1d1d">Obama     PERSON    59</text>
+    <rect x="52" y="292" width="346" height="24" fill="#fecaca"/>
+    <text x="66" y="309" fill="#7f1d1d">McCain    PERSON    53</text>
+  </g>
+  <rect x="52" y="326" width="346" height="42" rx="7" fill="#dc2626"/>
+  <text x="225" y="343" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">PERSON: 6 / 10</text>
+  <text x="225" y="361" text-anchor="middle" font-size="11.5" fill="#fecaca">"KIM nima qildi" — shaxsga qarshi</text>
+
+  <rect x="440" y="52" width="390" height="330" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="635" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#166534">HAQIQIY YANGILIKLAR</text>
+  <text x="635" y="98" text-anchor="middle" font-size="12" fill="#15803d">top-10 ob'ektning ATIGI 1 tasi — ODAM</text>
+  <g font-size="12.5" font-family="Consolas, monospace">
+    <rect x="462" y="110" width="346" height="24" fill="#ffffff"/>
+    <text x="476" y="127" fill="#334155">the       ORG      159</text>
+    <rect x="462" y="136" width="346" height="24" fill="#bbf7d0"/>
+    <text x="476" y="153" fill="#14532d">U.S.      GPE      138</text>
+    <rect x="462" y="162" width="346" height="24" fill="#ffffff"/>
+    <text x="476" y="179" fill="#334155">Reuters   ORG      131</text>
+    <rect x="462" y="188" width="346" height="24" fill="#fecaca"/>
+    <text x="476" y="205" fill="#7f1d1d">Trump     PERSON   125</text>
+    <rect x="462" y="214" width="346" height="24" fill="#ffffff"/>
+    <text x="476" y="231" fill="#334155">Trump     ORG      124</text>
+    <rect x="462" y="240" width="346" height="24" fill="#ffffff"/>
+    <text x="476" y="257" fill="#334155">House     ORG       67</text>
+    <rect x="462" y="266" width="346" height="24" fill="#bbf7d0"/>
+    <text x="476" y="283" fill="#14532d">United    GPE       59</text>
+    <rect x="462" y="292" width="346" height="24" fill="#bbf7d0"/>
+    <text x="476" y="309" fill="#14532d">States    GPE       55</text>
+  </g>
+  <rect x="462" y="326" width="346" height="42" rx="7" fill="#16a34a"/>
+  <text x="635" y="343" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">PERSON: 1 / 10</text>
+  <text x="635" y="361" text-anchor="middle" font-size="11.5" fill="#bbf7d0">"QAYERDA nima bo'ldi" — institutsional</text>
+
+  <rect x="30" y="394" width="800" height="30" rx="7" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/>
+  <text x="430" y="414" text-anchor="middle" font-size="13" font-weight="bold" fill="#854d0e">XULOSA: soxta yangiliklar ODAMLAR ismini ANCHA KO'P ishlatadi</text>
+
+  <rect x="30" y="432" width="800" height="36" rx="7" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="430" y="447" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#991b1b">OGOHLANTIRISH: "Reuters" 100% haqiqiy va atigi 1% soxta yangiliklarda</text>
+  <text x="430" y="462" text-anchor="middle" font-size="12" fill="#b91c1c">Bitta qatorlik qoida 99.5% aniqlik beradi — bu SHIPCHA, o'rganish emas!</text>
+</svg>

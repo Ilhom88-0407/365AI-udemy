@@ -177,8 +177,8 @@ SALBIY: not · short · waste                    ✅
 
 ## ➡️ Keyingi qadam
 
-**27-modul — Soxta yangiliklarni aniqlash (keys)**: endi bizda **ishlaydigan** tasniflagich bor. Uni **haqiqiy va katta** masalaga qo'llaymiz — soxta yangiliklarni aniqlash.
+**[27-modul — Soxta yangiliklarni aniqlash (keys)](../27-Fake-News-Case-Study/README.md)**: endi bizda **ishlaydigan** tasniflagich bor. Uni **haqiqiy va katta** masalaga qo'llaymiz — soxta yangiliklarni aniqlash.
 
 ---
 
-⬅️ [25-modul — Mavzu modellashtirish](../25-Topic-Modelling/README.md) · 🏠 [Bosh sahifa](../README.md)
+⬅️ [25-modul — Mavzu modellashtirish](../25-Topic-Modelling/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [27-modul](../27-Fake-News-Case-Study/README.md)
