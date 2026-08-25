@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="880" height="500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="500" fill="#0f172a"/>
+  <text x="440" y="38" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">range() funksiyasi</text>
+
+  <text x="440" y="76" text-anchor="middle" fill="#e2e8f0" font-size="22" font-family="Consolas, monospace">range( start , stop , step )</text>
+
+  <rect x="30" y="96" width="266" height="128" rx="10" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="163" y="126" text-anchor="middle" fill="#4ade80" font-size="18" font-weight="bold" font-family="Consolas, monospace">start</text>
+  <text x="163" y="150" text-anchor="middle" fill="#94a3b8" font-size="14">boshlanish</text>
+  <text x="52" y="178" fill="#e2e8f0" font-size="14">Ro'yxatdagi BIRINCHI son</text>
+  <text x="52" y="202" fill="#fbbf24" font-size="14">Ixtiyoriy — standart: 0</text>
+  <text x="52" y="218" fill="#64748b" font-size="12">MUHIMLIK: o'rtacha</text>
+
+  <rect x="306" y="96" width="266" height="128" rx="10" fill="#1e293b" stroke="#f87171" stroke-width="2"/>
+  <text x="439" y="126" text-anchor="middle" fill="#f87171" font-size="18" font-weight="bold" font-family="Consolas, monospace">stop</text>
+  <text x="439" y="150" text-anchor="middle" fill="#94a3b8" font-size="14">tugash</text>
+  <text x="328" y="178" fill="#e2e8f0" font-size="14">OXIRGI sondan BITTA KATTA</text>
+  <text x="328" y="202" fill="#f87171" font-size="14" font-weight="bold">MAJBURIY</text>
+  <text x="328" y="218" fill="#64748b" font-size="12">MUHIMLIK: eng yuqori</text>
+
+  <rect x="582" y="96" width="268" height="128" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="716" y="126" text-anchor="middle" fill="#38bdf8" font-size="18" font-weight="bold" font-family="Consolas, monospace">step</text>
+  <text x="716" y="150" text-anchor="middle" fill="#94a3b8" font-size="14">qadam</text>
+  <text x="604" y="178" fill="#e2e8f0" font-size="14">Ikki son ORASIDAGI masofa</text>
+  <text x="604" y="202" fill="#fbbf24" font-size="14">Ixtiyoriy — standart: 1</text>
+  <text x="604" y="218" fill="#64748b" font-size="12">MUHIMLIK: eng past</text>
+
+  <rect x="30" y="244" width="820" height="140" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="52" y="272" fill="#fbbf24" font-size="16" font-weight="bold">MISOLLAR</text>
+
+  <text x="52" y="302" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">range(10)</text>
+  <text x="240" y="302" fill="#94a3b8" font-size="14">start=0, step=1</text>
+  <text x="440" y="302" fill="#4ade80" font-size="14" font-family="Consolas, monospace">[0, 1, 2, ..., 9]</text>
+
+  <text x="52" y="330" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">range(3, 7)</text>
+  <text x="240" y="330" fill="#94a3b8" font-size="14">start=3, stop=7</text>
+  <text x="440" y="330" fill="#4ade80" font-size="14" font-family="Consolas, monospace">[3, 4, 5, 6]</text>
+
+  <text x="52" y="358" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">range(1, 20, 2)</text>
+  <text x="240" y="358" fill="#94a3b8" font-size="14">toq sonlar</text>
+  <text x="440" y="358" fill="#4ade80" font-size="14" font-family="Consolas, monospace">[1, 3, 5, ..., 19]</text>
+
+  <rect x="30" y="400" width="400" height="86" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="52" y="428" fill="#f87171" font-size="16" font-weight="bold">⚠️  range OBYEKT, ro'yxat EMAS</text>
+  <text x="52" y="454" fill="#fecaca" font-size="14" font-family="Consolas, monospace">range(10)  →  range(0, 10)</text>
+  <text x="52" y="478" fill="#fecaca" font-size="13">Python 2 da esa TO'G'RIDAN-TO'G'RI ro'yxat edi</text>
+
+  <rect x="450" y="400" width="400" height="86" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="472" y="428" fill="#4ade80" font-size="16" font-weight="bold">✅  Ko'rish uchun list() ishlating</text>
+  <text x="472" y="454" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">list(range(10))</text>
+  <text x="472" y="478" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">→ [0,1,2,3,4,5,6,7,8,9]</text>
+</svg>

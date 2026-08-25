@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="520" fill="#0f172a"/>
+  <text x="440" y="36" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">while sikli va inkrement</text>
+
+  <rect x="30" y="60" width="390" height="150" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="52" y="88" fill="#4ade80" font-size="16" font-weight="bold">✅ TO'G'RI</text>
+  <text x="52" y="118" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">x = 0</text>
+  <text x="52" y="142" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">while x &lt;= 20:</text>
+  <text x="52" y="166" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">    print(x, end=" ")</text>
+  <text x="52" y="190" fill="#fbbf24" font-size="15" font-family="Consolas, monospace">    x += 2</text>
+  <text x="250" y="190" fill="#fbbf24" font-size="12">← INKREMENT</text>
+
+  <rect x="450" y="60" width="400" height="150" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="472" y="88" fill="#f87171" font-size="16" font-weight="bold">❌ CHEKSIZ SIKL</text>
+  <text x="472" y="118" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">x = 0</text>
+  <text x="472" y="142" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">while x &lt;= 20:</text>
+  <text x="472" y="166" fill="#e2e8f0" font-size="15" font-family="Consolas, monospace">    print(x, end=" ")</text>
+  <text x="472" y="192" fill="#f87171" font-size="14">x HECH QACHON o'zgarmaydi → sikl TO'XTAMAYDI</text>
+
+  <text x="440" y="248" text-anchor="middle" fill="#fbbf24" font-size="18" font-weight="bold">while ning oqimi</text>
+
+  <circle cx="120" cy="290" r="12" fill="#94a3b8"/>
+  <text x="120" y="322" text-anchor="middle" fill="#94a3b8" font-size="13">x = 0</text>
+  <line x1="140" y1="290" x2="196" y2="290" stroke="#94a3b8" stroke-width="2"/>
+  <polygon points="204,290 192,284 192,296" fill="#94a3b8"/>
+
+  <polygon points="290,254 400,290 290,326 180,290" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="290" y="286" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="bold">x &lt;= 20 ?</text>
+  <text x="290" y="306" text-anchor="middle" fill="#94a3b8" font-size="12">shart</text>
+
+  <line x1="400" y1="290" x2="470" y2="290" stroke="#4ade80" stroke-width="2"/>
+  <polygon points="478,290 466,284 466,296" fill="#4ade80"/>
+  <text x="412" y="282" fill="#4ade80" font-size="13" font-weight="bold">True</text>
+
+  <rect x="484" y="264" width="180" height="52" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="574" y="286" text-anchor="middle" fill="#bbf7d0" font-size="13" font-family="Consolas, monospace">print(x)</text>
+  <text x="574" y="306" text-anchor="middle" fill="#fbbf24" font-size="13" font-family="Consolas, monospace">x += 2</text>
+
+  <line x1="664" y1="290" x2="704" y2="290" stroke="#4ade80" stroke-width="2"/>
+  <line x1="704" y1="290" x2="704" y2="356" stroke="#4ade80" stroke-width="2"/>
+  <line x1="704" y1="356" x2="290" y2="356" stroke="#4ade80" stroke-width="2"/>
+  <line x1="290" y1="356" x2="290" y2="334" stroke="#4ade80" stroke-width="2"/>
+  <polygon points="290,326 284,338 296,338" fill="#4ade80"/>
+  <text x="500" y="350" fill="#4ade80" font-size="12">shartga QAYTADI</text>
+
+  <line x1="290" y1="254" x2="290" y2="222" stroke="#f87171" stroke-width="2"/>
+  <polygon points="290,214 284,226 296,226" fill="#f87171"/>
+  <text x="304" y="228" fill="#f87171" font-size="13" font-weight="bold">False → TUGADI</text>
+
+  <rect x="30" y="378" width="400" height="128" rx="10" fill="#020617" stroke="#334155" stroke-width="2"/>
+  <text x="52" y="406" fill="#38bdf8" font-size="16" font-weight="bold">INKREMENT</text>
+  <text x="52" y="434" fill="#e2e8f0" font-size="14">Sikl davomida mavjud o'zgaruvchi ustiga</text>
+  <text x="52" y="454" fill="#e2e8f0" font-size="14">bir xil sonni qo'shish — INKREMENTLASH.</text>
+  <text x="52" y="480" fill="#fbbf24" font-size="15" font-family="Consolas, monospace">x = x + 2      ≡      x += 2</text>
+  <text x="52" y="500" fill="#94a3b8" font-size="13">Qo'shilayotgan miqdor — INKREMENT (bu yerda 2)</text>
+
+  <rect x="450" y="378" width="400" height="128" rx="10" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="472" y="406" fill="#38bdf8" font-size="16" font-weight="bold">for  yoki  while ?</text>
+  <text x="472" y="434" fill="#e2e8f0" font-size="14">for   →  ELEMENTLAR soni MA'LUM</text>
+  <text x="472" y="456" fill="#e2e8f0" font-size="14">while →  SHART bajarilguncha</text>
+  <text x="472" y="484" fill="#94a3b8" font-size="13">Ma'ruzachidan: "qaysi biri — asosan shaxsiy</text>
+  <text x="472" y="502" fill="#94a3b8" font-size="13">tanlovingizga bog'liq."</text>
+</svg>

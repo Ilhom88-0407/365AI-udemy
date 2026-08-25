@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="480" fill="#0f172a"/>
+  <text x="440" y="36" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">Lug'at bo'ylab iteratsiya</text>
+  <text x="440" y="60" text-anchor="middle" fill="#94a3b8" font-size="14">Ikki lug'atda BIR XIL kalitlar — buni ishlatamiz</text>
+
+  <rect x="30" y="80" width="380" height="140" rx="10" fill="#020617" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="108" fill="#38bdf8" font-size="15" font-weight="bold">prices</text>
+  <text x="52" y="136" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">"box_of_spaghetti" : 4</text>
+  <text x="52" y="160" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">"lasagna"          : 5</text>
+  <text x="52" y="184" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">"hamburger"        : 2</text>
+  <text x="52" y="210" fill="#94a3b8" font-size="12">narxlar</text>
+
+  <rect x="440" y="80" width="410" height="140" rx="10" fill="#020617" stroke="#4ade80" stroke-width="2"/>
+  <text x="462" y="108" fill="#4ade80" font-size="15" font-weight="bold">quantity</text>
+  <text x="462" y="136" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">"box_of_spaghetti" : 6</text>
+  <text x="462" y="160" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">"lasagna"          : 10</text>
+  <text x="462" y="184" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">"hamburger"        : 0</text>
+  <text x="462" y="210" fill="#94a3b8" font-size="12">miqdorlar — AYNAN SHU KALITLAR</text>
+
+  <rect x="30" y="238" width="400" height="132" rx="10" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="52" y="266" fill="#fbbf24" font-size="15" font-weight="bold">YECHIM — 4 QATOR</text>
+  <text x="52" y="294" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">money_spent = 0</text>
+  <text x="52" y="318" fill="#38bdf8" font-size="14" font-family="Consolas, monospace">for i in prices:</text>
+  <text x="52" y="342" fill="#e2e8f0" font-size="13" font-family="Consolas, monospace">    money_spent += prices[i]*quantity[i]</text>
+  <text x="52" y="364" fill="#4ade80" font-size="14" font-family="Consolas, monospace">print(money_spent)   →  74</text>
+
+  <rect x="450" y="238" width="400" height="132" rx="10" fill="#082f49" stroke="#38bdf8" stroke-width="2"/>
+  <text x="472" y="266" fill="#38bdf8" font-size="15" font-weight="bold">HISOB</text>
+  <text x="472" y="294" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">4 × 6  = 24     spaghetti</text>
+  <text x="472" y="318" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">5 × 10 = 50     lasagna</text>
+  <text x="472" y="342" fill="#e2e8f0" font-size="14" font-family="Consolas, monospace">2 × 0  =  0     hamburger</text>
+  <text x="472" y="364" fill="#4ade80" font-size="15" font-weight="bold" font-family="Consolas, monospace">JAMI    = 74</text>
+
+  <rect x="30" y="388" width="820" height="76" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="52" y="416" fill="#f87171" font-size="16" font-weight="bold">⚠️  for i in prices  —  `i` QIYMAT emas, KALIT!</text>
+  <text x="52" y="442" fill="#fecaca" font-size="14" font-family="Consolas, monospace">i = "box_of_spaghetti"  →  prices[i] = 4  ·  quantity[i] = 6</text>
+  <text x="52" y="460" fill="#fecaca" font-size="13">Kalitlar bir xil bo'lgani uchun `for i in quantity` yozsak ham NATIJA O'ZGARMAYDI.</text>
+</svg>

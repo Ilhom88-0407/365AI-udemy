@@ -33,7 +33,8 @@
 | 15 | [Shart operatorlari](15-Conditional-Statements/README.md) | 4 | ✅ Tayyor |
 | 16 | [Funksiyalar](16-Functions/README.md) | 7 | ✅ Tayyor |
 | 17 | [Ketma-ketliklar](17-Sequences/README.md) | 5 | ✅ Tayyor |
-| 18–19 | Iteratsiya, muhim tushunchalar | 13 | ⏳ Navbatda |
+| 18 | [Iteratsiya](18-Iteration/README.md) | 8 | ✅ Tayyor |
+| 19 | Muhim tushunchalar va atamalar | 5 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -276,6 +277,25 @@
 
 ---
 
+## 🧭 Modul 18 — Iteratsiya
+
+**Nimani beradi:** kodni qayta-qayta bajarish — 10 ta element uchun ham, 10 million uchun ham.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [`for` sikllari](18-Iteration/01-For-Loops.md) ⭐ |
+| 2 | [`while` sikllari va inkrement](18-Iteration/02-While-Loops.md) ⭐ |
+| 3 | [`range()` funksiyasi](18-Iteration/03-The-range-Function.md) ⭐ |
+| 4 | [Shartlar va sikllar](18-Iteration/04-Conditionals-and-Loops.md) ⭐ |
+| 5 | [Shartlar, funksiyalar va sikllar](18-Iteration/05-Conditionals-Functions-and-Loops.md) ⭐ |
+| 6 | [Anaconda Assistant — Python vositalari](18-Iteration/06-Anaconda-Assistant-Python-Tools.md) |
+| 7 | [Lug'atlar bo'ylab iteratsiya](18-Iteration/07-Iterating-over-Dictionaries.md) ⭐ |
+| 8 | [Anaconda Assistant — lug'atlar](18-Iteration/08-Anaconda-Assistant-Dictionaries.md) |
+
+📝 **[76 ta mashq](18-Iteration/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](18-Iteration/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -362,8 +382,11 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 16-Functions/                               ← 7 dars, 4 SVG
 │   ├── MASHQLAR.md                             ← 68 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 17-Sequences/                               ← 5 dars, 5 SVG
-    ├── MASHQLAR.md                             ← 72 ta mashq
+├── 17-Sequences/                               ← 5 dars, 5 SVG
+│   ├── MASHQLAR.md                             ← 72 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 18-Iteration/                               ← 8 dars, 5 SVG
+    ├── MASHQLAR.md                             ← 76 ta mashq
     └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
@@ -372,9 +395,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
-**Python bo'limi davom etmoqda** — 10–17-modullar tayyor.
+**Python bo'limi deyarli tugadi** — 10–18-modullar tayyor.
 
-Manba kursda keyingi bo'limlar: **Python** (18–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **Python** (19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

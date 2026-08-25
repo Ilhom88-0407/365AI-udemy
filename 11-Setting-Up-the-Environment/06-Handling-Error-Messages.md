@@ -145,7 +145,7 @@ print(x)    →  8                                        ← nihoyat
 
 ### 1. Jupyter har doim ham aniq aytmaydi
 
-> **Biz Jupyter aniq bir paytda so'rovimizni nima uchun bajara olmaganining ANIQ SABABINI doim aytishiga tayanа olmaymiz.**
+> **Biz Jupyter aniq bir paytda so'rovimizni nima uchun bajara olmaganining ANIQ SABABINI doim aytishiga tayana olmaymiz.**
 >
 > **Uning takliflarida qanchalik aniq va to'g'ri bo'lishi hayratlanarli, lekin ajablanmang.**
 >
@@ -339,7 +339,7 @@ Xatolar: (1) yopilmagan `]`; (2) `lenn` → `len` **va** `o'rtacha` → `ortacha
 
 ### 🔴 Qiyin — amaliyot · **Savol berish shablonini to'ldiring**
 
-Farazan siz Q&A forumiga savol berасiz. Ma'ruzadagi **5 punktli** shablonni to'ldiring:
+Farazan siz Q&A forumiga savol berasiz. Ma'ruzadagi **5 punktli** shablonni to'ldiring:
 
 ```
 ━━━ 1. VAZIFA VA KUTILGAN NATIJA ━━━

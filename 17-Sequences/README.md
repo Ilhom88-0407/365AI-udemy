@@ -228,7 +228,7 @@ Hammasi ✅ bo'lsa — **18-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**18-modul: Iteratsiya** — `for`, `while`, `range()`
+**[18-modul: Iteratsiya](../18-Iteration/README.md)** — `for`, `while`, `range()`
 
 > Endi ro'yxat bo'ylab **avtomatik** aylanasiz — qo'lda indeks yozish tugaydi.
 
