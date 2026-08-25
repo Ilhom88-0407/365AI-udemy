@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 500" width="860" height="500" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="860" height="500" fill="#0f172a"/>
+  <text x="430" y="38" text-anchor="middle" fill="#f8fafc" font-size="25" font-weight="bold">print  va  return  —  bir xil EMAS</text>
+
+  <rect x="30" y="66" width="390" height="200" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="225" y="98" text-anchor="middle" fill="#fbbf24" font-size="22" font-weight="bold" font-family="Consolas, monospace">print</text>
+  <text x="225" y="122" text-anchor="middle" fill="#94a3b8" font-size="14">DASTURCHIGA ko'rsatadi</text>
+  <text x="54" y="156" fill="#e2e8f0" font-size="14">• Ekranda matn chiqaradi</text>
+  <text x="54" y="182" fill="#e2e8f0" font-size="14">• Hisobga TA'SIR QILMAYDI</text>
+  <text x="54" y="208" fill="#e2e8f0" font-size="14">• Bir funksiyada KO'P MARTA</text>
+  <text x="54" y="234" fill="#e2e8f0" font-size="14">• Qiymatni SAQLAB BO'LMAYDI</text>
+  <text x="54" y="258" fill="#64748b" font-size="13">→ oraliq qadamlarni kuzatish uchun</text>
+
+  <rect x="440" y="66" width="390" height="200" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+  <text x="635" y="98" text-anchor="middle" fill="#a78bfa" font-size="22" font-weight="bold" font-family="Consolas, monospace">return</text>
+  <text x="635" y="122" text-anchor="middle" fill="#94a3b8" font-size="14">DASTURGA qaytaradi</text>
+  <text x="464" y="156" fill="#e2e8f0" font-size="14">• Hech narsa chiqarmaydi</text>
+  <text x="464" y="182" fill="#e2e8f0" font-size="14">• Funksiyani DARROV TUGATADI</text>
+  <text x="464" y="208" fill="#e2e8f0" font-size="14">• FAQAT BIR MARTA ishlaydi</text>
+  <text x="464" y="234" fill="#e2e8f0" font-size="14">• Qiymatni SAQLASH mumkin</text>
+  <text x="464" y="258" fill="#64748b" font-size="13">→ natijani boshqa kodga uzatish uchun</text>
+
+  <rect x="30" y="286" width="390" height="188" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="54" y="314" fill="#f87171" font-size="16" font-weight="bold">❌ IKKI return</text>
+  <text x="54" y="342" fill="#fecaca" font-size="14" font-family="Consolas, monospace">def plus_ten(a):</text>
+  <text x="54" y="364" fill="#fecaca" font-size="14" font-family="Consolas, monospace">    result = a + 10</text>
+  <text x="54" y="386" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">    return "Outcome:"</text>
+  <text x="54" y="408" fill="#64748b" font-size="14" font-family="Consolas, monospace">    return result</text>
+  <text x="54" y="432" fill="#94a3b8" font-size="13">plus_ten(2)  →  'Outcome:'</text>
+  <text x="54" y="456" fill="#f87171" font-size="13">2-return HECH QACHON bajarilmaydi</text>
+
+  <rect x="440" y="286" width="390" height="188" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="464" y="314" fill="#4ade80" font-size="16" font-weight="bold">✅ print + return</text>
+  <text x="464" y="342" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">def plus_ten(a):</text>
+  <text x="464" y="364" fill="#bbf7d0" font-size="14" font-family="Consolas, monospace">    result = a + 10</text>
+  <text x="464" y="386" fill="#fbbf24" font-size="14" font-family="Consolas, monospace">    print("Outcome:")</text>
+  <text x="464" y="408" fill="#a78bfa" font-size="14" font-family="Consolas, monospace">    return result</text>
+  <text x="464" y="432" fill="#94a3b8" font-size="13">plus_ten(2)  →  Outcome:</text>
+  <text x="464" y="456" fill="#94a3b8" font-size="13">                12</text>
+</svg>

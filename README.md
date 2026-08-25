@@ -31,7 +31,8 @@
 | 13 | [Asosiy Python sintaksisi](13-Basic-Python-Syntax/README.md) | 7 | ✅ Tayyor |
 | 14 | [Operatorlar haqida ko'proq](14-More-on-Operators/README.md) | 2 | ✅ Tayyor |
 | 15 | [Shart operatorlari](15-Conditional-Statements/README.md) | 4 | ✅ Tayyor |
-| 16–19 | Funksiyalar, ketma-ketliklar, iteratsiya, muhim tushunchalar | 25 | ⏳ Navbatda |
+| 16 | [Funksiyalar](16-Functions/README.md) | 7 | ✅ Tayyor |
+| 17–19 | Ketma-ketliklar, iteratsiya, muhim tushunchalar | 18 | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -240,6 +241,24 @@
 
 ---
 
+## 🧭 Modul 16 — Funksiyalar
+
+**Nimani beradi:** bir marta yozib, cheksiz marta ishlatiladigan vositalar.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Funksiya e'lon qilish](16-Functions/01-Defining-a-Function.md) ⭐ |
+| 2 | [Parametrli funksiya](16-Functions/02-Function-with-a-Parameter.md) ⭐ |
+| 3 | [Boshqa usul — print va return](16-Functions/03-Another-Way-to-Define-a-Function.md) ⭐ |
+| 4 | [Funksiya ichida funksiya](16-Functions/04-Using-a-Function-in-Another-Function.md) |
+| 5 | [Shartlar va funksiyalar](16-Functions/05-Combining-Conditionals-and-Functions.md) ⭐ |
+| 6 | [Bir necha argument](16-Functions/06-Functions-with-a-Few-Arguments.md) |
+| 7 | [Ichki funksiyalar](16-Functions/07-Notable-Built-in-Functions.md) ⭐ |
+
+📝 **[68 ta mashq](16-Functions/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](16-Functions/LOYIHALAR.md)**
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -320,8 +339,11 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 14-More-on-Operators/                       ← 2 dars, 3 SVG
 │   ├── MASHQLAR.md                             ← 58 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
-└── 15-Conditional-Statements/                  ← 4 dars, 4 SVG
-    ├── MASHQLAR.md                             ← 64 ta mashq
+├── 15-Conditional-Statements/                  ← 4 dars, 4 SVG
+│   ├── MASHQLAR.md                             ← 64 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha
+└── 16-Functions/                               ← 7 dars, 4 SVG
+    ├── MASHQLAR.md                             ← 68 ta mashq
     └── LOYIHALAR.md                            ← 6 ta mini-loyiha
 ```
 
@@ -330,9 +352,9 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ## ⏭ Keyingi modullar
 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
-**Python bo'limi davom etmoqda** — 10–15-modullar tayyor.
+**Python bo'limi davom etmoqda** — 10–16-modullar tayyor.
 
-Manba kursda keyingi bo'limlar: **Python** (16–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+Manba kursda keyingi bo'limlar: **Python** (17–19 qoldi), **NLP** (20–28), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

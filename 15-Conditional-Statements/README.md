@@ -196,7 +196,7 @@ Hammasi ✅ bo'lsa — **16-modulga tayyorsiz**.
 
 ## ➡️ Keyingi qadam
 
-**16-modul: Funksiyalar** — `def`, `return`, argumentlar
+**[16-modul: Funksiyalar](../16-Functions/README.md)** — `def`, `return`, argumentlar
 
 > Ma'ruzachidan: *"Ajoyib! Keyingi bo'limimizda biz **Python funksiyalari** olamiga sho'ng'iymiz."*
 
