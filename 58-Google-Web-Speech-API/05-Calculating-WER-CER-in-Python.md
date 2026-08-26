@@ -35,7 +35,7 @@ Character Error Rate (CER): 0.0801     ← kurs: 0.0884  ⚠️ farq bor
 
 ---
 
-## 2. 💥 Kursning transkripti bizникidan **boshqacha** edi
+## 2. 💥 Kursning transkripti biznikidan **boshqacha** edi
 
 Kurs videosi transkriptni tahlil qiladi va aytadi:
 

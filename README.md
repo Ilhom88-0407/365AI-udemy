@@ -92,7 +92,8 @@
 | 57 | [Muhitni sozlash](57-Setting-Up-the-Environment/README.md) ⚙️ | 4 | ✅ Tayyor |
 | 58 | [Google Web Speech API](58-Google-Web-Speech-API/README.md) 🎙️ | 5 | ✅ Tayyor |
 | 59 | [Shovqin va spektrogrammalar](59-Background-Noise-and-Spectrograms/README.md) 🌊 | 3 | ✅ Tayyor |
-| 60 | Speech Recognition (davomi) | — | ⏳ Navbatda |
+| 60 | [Whisper bilan transkripsiya](60-Transcribing-with-Whisper/README.md) 🤖 | 5 | ✅ Tayyor |
+| 61 | Speech Recognition (yakuniy) | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
