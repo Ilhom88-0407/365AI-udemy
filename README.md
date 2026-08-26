@@ -89,7 +89,8 @@
 | 54 | [Analogdan raqamliga](54-Analog-to-Digital-Conversion/README.md) 💻 | 2 | ✅ Tayyor |
 | 55 | [Audio xususiyatlarini ajratish](55-Audio-Feature-Extraction/README.md) 🎚️ | 4 | ✅ Tayyor |
 | 56 | [Texnologiya mexanikasi](56-Technology-Mechanics/README.md) 🧠 | 6 | ✅ Tayyor |
-| 57 | Speech Recognition (davomi) | — | ⏳ Navbatda |
+| 57 | [Muhitni sozlash](57-Setting-Up-the-Environment/README.md) ⚙️ | 4 | ✅ Tayyor |
+| 58 | Speech Recognition (davomi) | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 

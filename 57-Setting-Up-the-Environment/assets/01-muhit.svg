@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600" width="940" height="600" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="940" height="600" fill="#0f172a" rx="14"/>
+  <text x="470" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Kursning eng qiyin qadami — umuman kerak emas</text>
+  <text x="470" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: Python 3.14.2 · Windows 11 · ffmpeg O'RNATILMAGAN</text>
+
+  <!-- course vs ours -->
+  <rect x="24" y="74" width="440" height="228" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="244" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">KURSNING YO'LI</text>
+  <g font-family="Consolas, monospace" font-size="11.5" fill="#fca5a5">
+    <text x="44" y="124">① Anaconda yuklab olish (3-5 GB)</text>
+    <text x="44" y="146">② conda create python=3.9</text>
+    <text x="44" y="168">③ pip install librosa jiwer ...</text>
+    <text x="44" y="190">④ PyTorch (pytorch.org dan)</text>
+    <text x="44" y="212" fill="#f87171">⑤ Chocolatey (ADMIN huquqi!)</text>
+    <text x="44" y="234" fill="#f87171">⑥ choco install ffmpeg</text>
+    <text x="44" y="256">⑦ pip install -U openai-whisper</text>
+  </g>
+  <text x="44" y="284" fill="#fbbf24" font-size="12" font-weight="700">~6 GB · admin huquqi · Python 3.9 (EOL)</text>
+
+  <rect x="480" y="74" width="436" height="228" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="698" y="98" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">BIZNING YO'L</text>
+  <g font-family="Consolas, monospace" font-size="11.5" fill="#86efac">
+    <text x="500" y="124">① python -m venv speech_env</text>
+    <text x="500" y="146">② speech_env\Scripts\activate</text>
+    <text x="500" y="168">③ pip install numpy scipy pandas</text>
+    <text x="500" y="190">④ pip install soundfile librosa</text>
+    <text x="500" y="212">⑤ pip install torch --index-url .../cpu</text>
+    <text x="500" y="234">⑥ pip install transformers jiwer</text>
+    <text x="500" y="256">⑦ pip install jupyter ipykernel</text>
+  </g>
+  <text x="500" y="284" fill="#4ade80" font-size="12" font-weight="700">~0.9 GB · admin huquqi YO'Q · Python 3.12</text>
+
+  <!-- ffmpeg -->
+  <rect x="24" y="318" width="440" height="152" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="244" y="342" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">ffmpeg SIZ nima ishlaydi?</text>
+  <text x="44" y="366" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">format   yozish  o'qish     hajm</text>
+  <line x1="44" y1="374" x2="444" y2="374" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="394" fill="#4ade80">WAV        OK      OK    258.4 KB</text>
+    <text x="44" y="414" fill="#4ade80">FLAC       OK      OK    136.0 KB</text>
+    <text x="44" y="434" fill="#4ade80">MP3        OK      OK     32.4 KB</text>
+    <text x="44" y="454" fill="#4ade80">OGG        OK      OK     29.5 KB</text>
+  </g>
+
+  <!-- audioop -->
+  <rect x="480" y="318" width="436" height="152" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="698" y="342" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">audioop — men xato qilgan joyim</text>
+  <text x="500" y="368" fill="#f87171" font-size="11.5" font-family="Consolas, monospace">MEN: "3.13+ da yo'q -> SR ishlamaydi"</text>
+  <text x="500" y="392" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">HAQIQAT: audioop-lts (PyPI) qaytaradi</text>
+  <text x="500" y="414" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">SpeechRecognition 3.17 uni O'ZI o'rnatadi</text>
+  <text x="500" y="438" fill="#7dd3fc" font-size="11" font-family="Consolas, monospace">Requires: audioop-lts, standard-aifc, ...</text>
+  <text x="500" y="460" fill="#fbbf24" font-size="11.5" font-weight="700">"olib tashlandi" != "ishlamaydi"</text>
+
+  <!-- import times -->
+  <rect x="24" y="486" width="892" height="110" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="470" y="510" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">"Import vaqti" — aldamchi ko'rsatkich (librosa lazy_loader ishlatadi)</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="536" fill="#4ade80">import librosa                37.3 ms</text>
+    <text x="380" y="536" fill="#f87171">import librosa + load()     1155.1 ms   31x</text>
+    <text x="44" y="558" fill="#94a3b8">import transformers         4067.2 ms</text>
+    <text x="380" y="558" fill="#f87171">transformers + pipeline     9525.3 ms   2.3x</text>
+  </g>
+  <text x="44" y="582" fill="#fbbf24" font-size="11.5" font-weight="700">Haqiqiy narx — birinchi FUNKSIYA CHAQIRUVIDA. CLI da kechiktirilgan import ishlating.</text>
+</svg>

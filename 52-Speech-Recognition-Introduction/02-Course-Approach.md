@@ -108,18 +108,32 @@ pip install transformers torch jiwer
 pip install SpeechRecognition
 ```
 
-> ## 💥 **PYTHON 3.13+ DA MUHIM O'ZGARISH:**
+> ## ⚠️ **PYTHON 3.13+ DA MUHIM O'ZGARISH:**
 > ```
 > audioop moduli STANDART KUTUBXONADAN OLIB TASHLANDI (PEP 594)
->    →  💥 pydub ISHLAMAYDI
->    →  💥 SpeechRecognition ning ba'zi funksiyalari ISHLAMAYDI
 > ```
-> ## ⭐ **YECHIM — 57-MODULDA.** Biz `soundfile` + `librosa` ishlatamiz — ## ular `audioop` ga **bog'liq emas**.
 >
-> ## 🔬 **BU — O'LCHANGAN, TAXMIN EMAS:**
+> ## ⚠⚠ **MEN DASTLAB "DEMAK `pydub` VA `SpeechRecognition` ISHLAMAYDI" DEB YOZGAN EDIM — VA BU XATO.**
+>
+> ## 🔬 **O'LCHOV:**
 > ```python
-> import audioop      # 💥 ModuleNotFoundError (Python 3.14.2)
+> import audioop
+> print(audioop.__file__)
 > ```
+> ```
+> ① Toza Python 3.14 da     →  💥 ModuleNotFoundError
+> ② pip install SpeechRecognition dan KEYIN:
+>    →  ✅ ...\site-packages\audioop\__init__.py
+> ```
+>
+> ## 🔑 **SABAB — PyPI DAGI `audioop-lts` PAKETI** *(0.2.2)*: ## u standart kutubxonadan olib tashlangan modulni **qaytaradi**, ## va `SpeechRecognition 3.17` uni **avtomatik o'rnatadi**:
+> ```
+> Requires: audioop-lts, standard-aifc, typing-extensions
+> ```
+>
+> ## 🏆 **YA'NI MUAMMO O'Z-O'ZIDAN HAL BO'LGAN.** ## Lekin **bilib qo'ying**: agar biror paket ## `audioop` ni **bevosita** ishlatsa va `audioop-lts` ni ## **bog'liqlikka qo'shmagan** bo'lsa — 💥 **u sinadi**.
+>
+> ## ⭐ **BIZ BARIBIR `soundfile` + `librosa` ISHLATAMIZ** — ## ular `audioop` ga **umuman bog'liq emas** *(57-modul)*.
 
 ---
 
@@ -140,7 +154,7 @@ pip install SpeechRecognition
 
 **M2.** ## ⭐ **Mahalliy** *(internet kerak emas)* · **bepul** · ## 🔒 **audio hech qayerga yuborilmaydi** · **99 til**.
 
-**M3.** ## `audioop` *(PEP 594)*. ## 💥 `pydub` va `SpeechRecognition` ning bir qismi **ishlamaydi**.
+**M3.** ## `audioop` *(PEP 594)*. ## ⚠️ Lekin PyPI dagi **`audioop-lts`** uni **qaytaradi**, ## va `SpeechRecognition` uni **avtomatik o'rnatadi** — ## ya'ni amalda **ishlaydi**.
 
 </details>
 
@@ -165,8 +179,8 @@ KERAK = {
 }
 IXTIYORIY = {
     "speech_recognition": "Google API (kursnikidek)",
-    "audioop": "💥 Python 3.13+ da YO'Q",
-    "pydub": "💥 audioop ga bog'liq",
+    "audioop": "⚠️ 3.13+ da olib tashlangan — audioop-lts qaytaradi",
+    "pydub": "⚠️ audioop ga bog'liq",
 }
 
 for d, izoh in [(KERAK, "KERAK"), (IXTIYORIY, "IXTIYORIY")]:
@@ -193,8 +207,8 @@ Python 3.14.2 · Windows AMD64
   ✅ torch                2.12.0+cpu   Whisper
   ...
 ── IXTIYORIY ──
-  ⚠️ audioop             YO'Q         💥 Python 3.13+ da YO'Q
-  ⚠️ pydub               YO'Q         💥 audioop ga bog'liq
+  ✅ audioop             0.2.2        ⭐ audioop-lts (PyPI backport)
+  ⚠️ pydub               YO'Q         audioop ga bog'liq
 ```
 
 ## 🏆 **BU SKRIPTNI SAQLANG** — ## har yangi muhitda **birinchi** ishga tushiring.
@@ -216,8 +230,9 @@ Blok xaritasi:
    57-60  🏆 amaliyot (Whisper)
    61     cheklovlar va kelajak
 
-💥 Python 3.13+ da audioop YO'Q  →  pydub va SpeechRecognition qisman buzilgan
-⭐ Yechim: soundfile + librosa
+⚠️ Python 3.13+ da audioop standart kutubxonadan OLIB TASHLANDI
+✅ lekin `audioop-lts` (PyPI) uni qaytaradi — SpeechRecognition o'zi o'rnatadi
+⭐ baribir soundfile + librosa ishlating — ular unga bog'liq EMAS
 🇺🇿 Kurs faqat inglizcha ishlaydi — biz o'zbekchani ham O'LCHAYMIZ
 ```
 
