@@ -70,7 +70,7 @@
 | 35 | [LangChain'ga kirish](35-LangChain-Introduction/README.md) 🔗 | 4 | ✅ Tayyor |
 | 36 | [Tokenlar, modellar, narxlar](36-LangChain-Tokens-Models-Prices/README.md) 💰 | 2 | ✅ Tayyor |
 | 37 | [Muhitni sozlash](37-LangChain-Setting-Up-Environment/README.md) ⚙️ | 3 | ✅ Tayyor |
-| 38 | OpenAI API | — | ⏳ Navbatda |
+| 38 | [OpenAI API](38-LangChain-OpenAI-API/README.md) 🤖 | 4 | ✅ Tayyor |
 | 39 | Model kirishlari | — | ⏳ Navbatda |
 | 40 | Chiqish parserlari | — | ⏳ Navbatda |
 | 41 | LCEL | — | ⏳ Navbatda |
@@ -989,6 +989,65 @@
 > `requirements.txt` da versiyani **qotiring**.
 >
 > 🇺🇿 **Windows uchun uchta tuzoq:** `.env` faylini Explorer yarata olmaydi · `cp1251` o'zbekchani buzadi · noto'g'ri kernel.
+
+---
+
+## 🧭 Modul 38 — OpenAI API 🤖
+
+**Nimani beradi:** LangChain **shu API ustiga** qurilgan. U buzilganda siz **pastki qatlamga** tushib muammoni hal qila olasiz.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Birinchi qadamlar](38-LangChain-OpenAI-API/01-First-Steps.md) ⭐ |
+| 2 | [System, user, assistant rollari](38-LangChain-OpenAI-API/02-System-User-Assistant-Roles.md) ⭐⭐ |
+| 3 | [Sarkastik chatbot](38-LangChain-OpenAI-API/03-Creating-a-Sarcastic-Chatbot.md) ⭐ |
+| 4 | [Temperature, max tokens, streaming](38-LangChain-OpenAI-API/04-Temperature-Max-Tokens-Streaming.md) ⭐⭐ |
+
+📝 **[32 ta mashq](38-LangChain-OpenAI-API/MASHQLAR.md)** · 🚀 **[5 ta mini-loyiha](38-LangChain-OpenAI-API/LOYIHALAR.md)**
+
+> ## 💥 **KURSNING BIRINCHI KOD SATRI HECH NARSA QILMAYDI** *(o'lchandi, openai 3.3.1)*:
+> ```python
+> openai.api_key = os.getenv("OPENAI_API_KEY")   # ← OpenAI() buni O'QIMAYDI
+> OpenAI()  →  OpenAIError: Missing credentials...
+> ```
+> Kursda u "ishlagan" — chunki `%dotenv` allaqachon **muhit o'zgaruvchisini** o'rnatgan edi.
+>
+> ⭐⭐ **VA ENG FOYDALI TOPILMA — `base_url`:**
+> ```python
+> client = OpenAI(api_key="ollama", base_url="http://localhost:11434/v1")
+> ```
+> **`openai` paketi har qanday OpenAI-mos serverga ulanadi** — ya'ni butun modul **KALITSIZ** o'tiladi.
+>
+> 🔬 **ROLLAR ASLIDA NIMA? — ochib berdik:**
+> ```
+> <|im_start|>system
+> You are Marv, a chatbot that reluctantly answers...<|im_end|>
+> <|im_start|>user
+> I've recently adopted a dog...<|im_end|>
+> <|im_start|>assistant
+> ```
+> **Rollar — shunchaki maxsus tokenli MATN.** Va sistem xabarini bermasangiz — model **o'zinikini qo'yadi** *("You are Qwen, created by Alibaba Cloud...")*. *"Sistem xabari yo'q"* holati **mavjud emas**.
+>
+> 💥💥 **FEW-SHOT NI O'LCHADIK** *(Qwen2.5-0.5B-Instruct, 494M parametr)*:
+> ```
+> few-shot BILAN : 'positive'
+> few-shot SIZ   : "I'm sorry, but I can't assist with that request..."
+> ```
+> Uchta `assistant` misoli modelni **butunlay boshqacha** ishlatdi.
+>
+> ⚠ **LEKIN SARKASTIK PERSONA ISHLAMADI** — `0.5B` model sistem xabarini **e'tiborsiz qoldirdi**. **Ko'rsatmaga bo'ysunish model O'LCHAMIGA bog'liq**: Ollama'da kamida **7B** tanlang.
+>
+> ⚠ **`temperature=2` bizda BUZILMADI** — kurs *"ma'nosiz matn"* deydi. Sabab: biz `top_p=0.95` ishlatdik *(ehtimolsiz tokenlarni kesadi)* va `0.5B` lug'ati cheklangan. **Kursning da'vosi GPT-4 uchun to'g'ri.**
+>
+> ✅ **`seed` — uchala da'vo tasdiqlandi:** `temperature=0` → bir xil; bir xil `seed` → bir xil; boshqa `seed` → boshqa.
+>
+> 💥 **KURSDA YO'Q, LEKIN MAJBURIY — `finish_reason`:**
+> ```
+> 'length'  →  javob KESILGAN. Tekshirmasangiz — yarim JSON ni to'liq deb qabul qilasiz.
+> ```
+> Va oqimda **`usage` YO'Q** — `stream_options={"include_usage": True}` **shart**, aks holda **narxni bilmaysiz**.
+>
+> 🇺🇿 **O'zbekcha — halol natija:** `0.5B` modelda **ikkala** sistem prompt tili bilan ham javob **ma'nosiz** chiqdi. Biz o'z *"inglizcha yozing"* tavsiyamizni bu sinov bilan **isbotlay olmadik** — va buni **ochiq aytdik**.
 
 ---
 

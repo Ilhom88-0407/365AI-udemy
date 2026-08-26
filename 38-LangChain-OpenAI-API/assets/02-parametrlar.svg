@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="880" height="460" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="460" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Javobni boshqaruvchi to'rtta parametr</text>
+
+  <!-- max_tokens -->
+  <rect x="26" y="58" width="410" height="164" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="231" y="84" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">max_completion_tokens</text>
+  <text x="231" y="102" fill="#7dd3fc" font-size="11" text-anchor="middle">(eski nomi: max_tokens)</text>
+  <rect x="46" y="112" width="370" height="26" rx="5" fill="#14532d"/>
+  <text x="60" y="130" fill="#86efac" font-size="11" font-family="Consolas, monospace">250 → to'liq, mazmunli javob</text>
+  <rect x="46" y="142" width="200" height="26" rx="5" fill="#422006"/>
+  <text x="60" y="160" fill="#fde68a" font-size="11" font-family="Consolas, monospace">50 → qisqa, KESILGAN</text>
+  <rect x="46" y="172" width="90" height="26" rx="5" fill="#7f1d1d"/>
+  <text x="60" y="190" fill="#fecaca" font-size="11" font-family="Consolas, monospace">15 → yaroqsiz</text>
+  <text x="46" y="212" fill="#fbbf24" font-size="11">⚠️ chiqish 4× QIMMAT — lekin juda kesmang</text>
+
+  <!-- temperature -->
+  <rect x="446" y="58" width="408" height="164" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
+  <text x="650" y="84" fill="#f3e8ff" font-size="15" font-weight="700" text-anchor="middle">temperature   (0 … 2)</text>
+  <text x="650" y="102" fill="#d8b4fe" font-size="11" text-anchor="middle">tasodifiylik darajasi</text>
+  <line x1="470" y1="126" x2="830" y2="126" stroke="#475569" stroke-width="2"/>
+  <circle cx="470" cy="126" r="6" fill="#4ade80"/>
+  <circle cx="650" cy="126" r="6" fill="#fbbf24"/>
+  <circle cx="830" cy="126" r="6" fill="#f87171"/>
+  <text x="470" y="148" fill="#4ade80" font-size="11.5" text-anchor="middle" font-weight="700">0</text>
+  <text x="650" y="148" fill="#fbbf24" font-size="11.5" text-anchor="middle" font-weight="700">1 (standart)</text>
+  <text x="830" y="148" fill="#f87171" font-size="11.5" text-anchor="middle" font-weight="700">2</text>
+  <text x="470" y="168" fill="#86efac" font-size="10.5" text-anchor="start">aniq</text>
+  <text x="650" y="168" fill="#fde68a" font-size="10.5" text-anchor="middle">ijodiy</text>
+  <text x="830" y="168" fill="#fca5a5" font-size="10.5" text-anchor="end">ma'nosiz</text>
+  <text x="466" y="192" fill="#d8b4fe" font-size="11">✅ 0 — faktlar, tasnif, RAG, kod</text>
+  <text x="466" y="210" fill="#fca5a5" font-size="11">❌ 2 — mavzudan chetga chiqadi, so'zlar buziladi</text>
+
+  <!-- seed -->
+  <rect x="26" y="238" width="410" height="118" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
+  <text x="231" y="264" fill="#ffedd5" font-size="15" font-weight="700" text-anchor="middle">seed</text>
+  <text x="231" y="284" fill="#fdba74" font-size="11.5" text-anchor="middle">takrorlanuvchanlik uchun</text>
+  <text x="46" y="308" fill="#fdba74" font-size="11" font-family="Consolas, monospace">temperature=0  →  seed KERAK EMAS (u allaqachon aniq)</text>
+  <text x="46" y="326" fill="#fdba74" font-size="11" font-family="Consolas, monospace">temperature&gt;0  →  seed AYNAN BIR XIL javob beradi</text>
+  <text x="46" y="346" fill="#fbbf24" font-size="11">⚠️ OpenAI'da kafolat YO'Q — "iloji boricha o'xshash"</text>
+
+  <!-- stream -->
+  <rect x="446" y="238" width="408" height="118" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="650" y="264" fill="#dcfce7" font-size="15" font-weight="700" text-anchor="middle">stream=True</text>
+  <text x="650" y="284" fill="#86efac" font-size="11.5" text-anchor="middle">javobni BO'LAK-BO'LAK chiqarish</text>
+  <text x="466" y="308" fill="#86efac" font-size="11" font-family="Consolas, monospace">for chunk in completion:</text>
+  <text x="466" y="324" fill="#86efac" font-size="11" font-family="Consolas, monospace">    print(chunk.choices[0].delta.content, end="")</text>
+  <text x="466" y="346" fill="#fbbf24" font-size="11">⚠️ usage (token soni) OXIRIDA keladi yoki YO'Q</text>
+
+  <rect x="26" y="372" width="828" height="70" rx="10" fill="#1e293b" stroke="#facc15" stroke-width="2"/>
+  <text x="440" y="394" fill="#fde68a" font-size="13" font-weight="700" text-anchor="middle">🏆 AMALIY STANDART SOZLAMA</text>
+  <text x="440" y="416" fill="#facc15" font-size="12" text-anchor="middle" font-family="Consolas, monospace">model="gpt-4o-mini" · temperature=0 · max_completion_tokens=300 · stream=True</text>
+  <text x="440" y="434" fill="#94a3b8" font-size="11" text-anchor="middle">temperature ni faqat IJODIY vazifada (0.7–1.0) oshiring</text>
+</svg>
