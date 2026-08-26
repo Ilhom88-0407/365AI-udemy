@@ -60,7 +60,7 @@
 | 30 | [Transformer arxitekturasi](30-Transformer-Architecture/README.md) ⚡ | 9 | ✅ Tayyor |
 | 31 | [GPT modellari bilan ishlash](31-GPT-Models/README.md) 🤖 | 10 | ✅ Tayyor |
 | 32 | [Hugging Face Transformers](32-HuggingFace-Transformers/README.md) 🤗 | 6 | ✅ Tayyor |
-| 33 | BERT bilan savol-javob | — | ⏳ Navbatda |
+| 33 | [BERT bilan savol-javob](33-BERT-Question-Answering/README.md) 🔍 | 7 | ✅ Tayyor |
 | 34 | XLNet bilan tasniflash | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
@@ -696,6 +696,54 @@
 > Tokenizator→  ✅ ko'p tilli 28% KAMROQ token ('Toshkent' — BUTUN so'z)
 > ```
 > **Qoida:** SHAKLGA tayanadigan vazifalar qisman ishlaydi, MA'NOGA tayanadiganlar — yo'q.
+
+---
+
+## 🧭 Modul 33 — BERT bilan savol-javob 🔍
+
+**Nimani beradi:** matndan **kesib olinadigan** javob — ya'ni ## **gallyutsinatsiya QILA OLMAYDIGAN** QA tizimi.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [GPT va BERT](33-BERT-Question-Answering/01-GPT-vs-BERT.md) |
+| 2 | [BERT arxitekturasi](33-BERT-Question-Answering/02-BERT-Architecture.md) ⭐ |
+| 3 | [Model va tokenizatorni yuklash](33-BERT-Question-Answering/03-Loading-Model-and-Tokenizer.md) |
+| 4 | [BERT embeddinglari](33-BERT-Question-Answering/04-BERT-Embeddings.md) ⭐ |
+| 5 | [Javobni hisoblash](33-BERT-Question-Answering/05-Calculating-the-Response.md) ⭐⭐ |
+| 6 | [QA-bot yaratamiz](33-BERT-Question-Answering/06-Creating-a-QA-Bot.md) ⭐⭐ |
+| 7 | [BERT, RoBERTa, DistilBERT](33-BERT-Question-Answering/07-BERT-RoBERTa-DistilBERT.md) ⭐ |
+
+📝 **[42 ta mashq](33-BERT-Question-Answering/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](33-BERT-Question-Answering/LOYIHALAR.md)**
+
+> ## ⭐⭐ **BU MODULDA HAM HAMMA NARSA BEPUL** — API kaliti kerak emas.
+>
+> ⚠⚠ **KURSDAN UCHTA FARQ TOPILDI — hammasi ishga tushirib tekshirilgan:**
+>
+> ```
+> ① tokenizer.encode_plus()  →  transformers 5.x da OLIB TASHLANGAN
+>                               AttributeError; to'g'risi: tokenizer(a, b)
+>
+> ② Kurs javobi:  "March 24th, 1997"
+>    Bizda chiqdi: "november 1 , 1996"    ← IKKALA modelda ham
+>       bert-large (334M)  0.9431
+>       distilbert (65M)   0.7879
+>    💥 Bu model xatosi EMAS — SAVOL noaniq (format vs pleyer sanasi)
+>
+> ③ Kurs: "DistilBERT 60% tezroq"   →  biz o'lchadik: 69.9% tezroq
+>    Kurs: "40% kam parametr"       →  biz o'lchadik: 39.4% ✅ aynan
+> ```
+>
+> 🛡 **Kursda YO'Q, biz qo'shgan ISHONCH CHEGARASI** — kursdagi bot *"What is the capital of France?"* savoliga `'what'` deb javob beradi:
+> ```
+> to'g'ri javoblar  :  0.6044 – 0.9969
+> xato javoblar     :  0.1143 – 0.1842      →  chegara 0.30 XAVFSIZ
+> ```
+>
+> 💥 **DistilBERT'ning JIM XATOSI:** tokenizator `token_type_ids` **beradi**, model esa uni **umuman ishlatmaydi** — xato ham, ogohlantirish ham **chiqmaydi**.
+>
+> 🤯 **RoBERTa'da parametr KO'P (124.6M vs 109.5M), lekin 2× TEZROQ** (63.2 ms vs 115.6 ms) — chunki farq **lug'at embeddingida**, hisobda emas.
+>
+> 🇺🇿 **O'zbekcha uchun GIBRID tavsiya etiladi:** kontekstni bir marta inglizchaga tarjima qiling → `bert-large-squad` (ishonch 0.90+) → javobni qaytaring. To'g'ridan-to'g'ri `xlm-roberta-squad2` sana va atoqli otda ishlaydi, murakkab savolda **xato qiladi**.
 
 ---
 

@@ -438,4 +438,4 @@ NIMA UCHUN SAQLASH?
 
 ---
 
-⬅️ [Oldingi: PyTorch va TensorFlow](05-PyTorch-TensorFlow.md) · 🏠 [Modul boshiga](README.md) · ➡️ **33-modul: BERT bilan savol-javob**
+⬅️ [Oldingi: PyTorch va TensorFlow](05-PyTorch-TensorFlow.md) · 🏠 [Modul boshiga](README.md) · ➡️ [33-modul: BERT bilan savol-javob](../33-BERT-Question-Answering/README.md)

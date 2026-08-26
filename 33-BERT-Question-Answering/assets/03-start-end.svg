@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="c1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4ade80"/></marker>
+  </defs>
+  <rect width="880" height="400" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">BERT javobni YARATMAYDI — ikkita RAQAM topadi</text>
+
+  <!-- tokens row -->
+  <text x="40" y="72" fill="#94a3b8" font-size="12" font-weight="700">KONTEKST TOKENLARI</text>
+  <g font-family="Consolas, monospace" font-size="12">
+    <rect x="40"  y="82" width="66" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="73"  y="104" fill="#cbd5e1" text-anchor="middle">first</text>
+    <rect x="112" y="82" width="66" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="145" y="104" fill="#cbd5e1" text-anchor="middle">released</text>
+    <rect x="184" y="82" width="52" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="210" y="104" fill="#cbd5e1" text-anchor="middle">on</text>
+    <rect x="242" y="82" width="86" height="34" rx="6" fill="#14532d" stroke="#4ade80" stroke-width="2"/><text x="285" y="104" fill="#bbf7d0" text-anchor="middle">november</text>
+    <rect x="334" y="82" width="40" height="34" rx="6" fill="#14532d" stroke="#4ade80" stroke-width="2"/><text x="354" y="104" fill="#bbf7d0" text-anchor="middle">1</text>
+    <rect x="380" y="82" width="34" height="34" rx="6" fill="#14532d" stroke="#4ade80" stroke-width="2"/><text x="397" y="104" fill="#bbf7d0" text-anchor="middle">,</text>
+    <rect x="420" y="82" width="58" height="34" rx="6" fill="#14532d" stroke="#4ade80" stroke-width="2"/><text x="449" y="104" fill="#bbf7d0" text-anchor="middle">1996</text>
+    <rect x="484" y="82" width="46" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="507" y="104" fill="#cbd5e1" text-anchor="middle">in</text>
+    <rect x="536" y="82" width="66" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="569" y="104" fill="#cbd5e1" text-anchor="middle">japan</text>
+    <rect x="608" y="82" width="34" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="625" y="104" fill="#cbd5e1" text-anchor="middle">.</text>
+    <rect x="648" y="82" width="60" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="678" y="104" fill="#cbd5e1" text-anchor="middle">the</text>
+    <rect x="714" y="82" width="126" height="34" rx="6" fill="#1e293b" stroke="#334155"/><text x="777" y="104" fill="#64748b" text-anchor="middle">... march 24 ...</text>
+  </g>
+  <text x="285" y="132" fill="#4ade80" font-size="11" text-anchor="middle" font-family="Consolas, monospace">indeks 43</text>
+  <text x="449" y="132" fill="#4ade80" font-size="11" text-anchor="middle" font-family="Consolas, monospace">indeks 46</text>
+
+  <!-- start/end vectors -->
+  <rect x="40" y="150" width="390" height="98" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="235" y="174" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">START VEKTORI</text>
+  <text x="235" y="196" fill="#7dd3fc" font-size="11.5" text-anchor="middle">"javob SHU tokendan boshlanadimi?"</text>
+  <text x="235" y="220" fill="#e0f2fe" font-size="12" text-anchor="middle" font-family="Consolas, monospace">argmax(start_logits) = 43</text>
+  <text x="235" y="238" fill="#7dd3fc" font-size="11" text-anchor="middle">ball 7.89 · ehtimol 0.96</text>
+
+  <rect x="450" y="150" width="390" height="98" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="645" y="174" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">END VEKTORI</text>
+  <text x="645" y="196" fill="#86efac" font-size="11.5" text-anchor="middle">"javob SHU tokenda tugaydimi?"</text>
+  <text x="645" y="220" fill="#dcfce7" font-size="12" text-anchor="middle" font-family="Consolas, monospace">argmax(end_logits) = 46</text>
+  <text x="645" y="238" fill="#86efac" font-size="11" text-anchor="middle">ehtimol 0.98</text>
+
+  <path d="M440 254 L440 280" stroke="#4ade80" stroke-width="2.5" marker-end="url(#c1)"/>
+
+  <rect x="200" y="290" width="480" height="46" rx="9" fill="#1e293b" stroke="#facc15" stroke-width="2"/>
+  <text x="440" y="319" fill="#fde68a" font-size="14" text-anchor="middle" font-family="Consolas, monospace">tokenlar[43 : 46 + 1]  →  'november 1 , 1996'</text>
+
+  <text x="440" y="366" fill="#f87171" font-size="12.5" font-weight="700" text-anchor="middle">⚠️ +1 SHART — Python kesmasi oxirgi elementni QO'SHMAYDI</text>
+  <text x="440" y="386" fill="#94a3b8" font-size="11.5" text-anchor="middle">ishonch = softmax(start)[43] × softmax(end)[46] = 0.9431</text>
+</svg>

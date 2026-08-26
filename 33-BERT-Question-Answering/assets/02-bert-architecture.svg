@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="b1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="880" height="520" fill="#0f172a" rx="14"/>
+  <text x="440" y="36" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">BERT arxitekturasi — kirishdan javobgacha</text>
+
+  <!-- input -->
+  <rect x="40" y="58" width="800" height="52" rx="9" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="60" y="80" fill="#dcfce7" font-size="12.5" font-weight="700">KIRISH</text>
+  <text x="60" y="99" fill="#86efac" font-size="12" font-family="Consolas, monospace">[CLS] when was the first dvd released ? [SEP] the dvd ... [SEP]</text>
+
+  <path d="M440 114 L440 134" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#b1)"/>
+
+  <!-- three embeddings -->
+  <text x="440" y="152" fill="#94a3b8" font-size="12" text-anchor="middle">UCHTA EMBEDDING QO'SHILADI</text>
+  <rect x="40" y="162" width="250" height="62" rx="9" fill="#1e3a8a" stroke="#60a5fa"/>
+  <text x="165" y="185" fill="#dbeafe" font-size="13" font-weight="700" text-anchor="middle">① TOKEN</text>
+  <text x="165" y="205" fill="#93c5fd" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">input_ids</text>
+  <text x="165" y="219" fill="#93c5fd" font-size="10.5" text-anchor="middle">qaysi SO'Z</text>
+
+  <rect x="315" y="162" width="250" height="62" rx="9" fill="#581c87" stroke="#c084fc"/>
+  <text x="440" y="185" fill="#f3e8ff" font-size="13" font-weight="700" text-anchor="middle">② SEGMENT</text>
+  <text x="440" y="205" fill="#d8b4fe" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">token_type_ids</text>
+  <text x="440" y="219" fill="#d8b4fe" font-size="10.5" text-anchor="middle">savol=0 · kontekst=1</text>
+
+  <rect x="590" y="162" width="250" height="62" rx="9" fill="#7c2d12" stroke="#fb923c"/>
+  <text x="715" y="185" fill="#ffedd5" font-size="13" font-weight="700" text-anchor="middle">③ POZITSION</text>
+  <text x="715" y="205" fill="#fdba74" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">avtomatik</text>
+  <text x="715" y="219" fill="#fdba74" font-size="10.5" text-anchor="middle">nechanchi O'RIN</text>
+
+  <path d="M440 228 L440 248" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#b1)"/>
+
+  <!-- encoder stack -->
+  <rect x="150" y="256" width="580" height="140" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="440" y="280" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">TRANSFORMER ENKODERI × 24 qatlam</text>
+  <rect x="180" y="294" width="240" height="34" rx="7" fill="#075985"/>
+  <text x="300" y="316" fill="#e0f2fe" font-size="12" text-anchor="middle">ko'p boshli E'TIBOR (16 bosh)</text>
+  <rect x="460" y="294" width="240" height="34" rx="7" fill="#075985"/>
+  <text x="580" y="316" fill="#e0f2fe" font-size="12" text-anchor="middle">LayerNorm + qoldiq</text>
+  <rect x="180" y="338" width="240" height="34" rx="7" fill="#075985"/>
+  <text x="300" y="360" fill="#e0f2fe" font-size="12" text-anchor="middle">FFN 1024 → 4096 → 1024</text>
+  <rect x="460" y="338" width="240" height="34" rx="7" fill="#075985"/>
+  <text x="580" y="360" fill="#e0f2fe" font-size="12" text-anchor="middle">GELU aktivatsiya</text>
+  <text x="440" y="388" fill="#7dd3fc" font-size="11.5" text-anchor="middle">chiqish: har token uchun 1024 o'lchamli vektor</text>
+
+  <path d="M440 400 L440 420" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#b1)"/>
+
+  <!-- qa head -->
+  <rect x="220" y="428" width="440" height="52" rx="9" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
+  <text x="440" y="450" fill="#fee2e2" font-size="13" font-weight="700" text-anchor="middle">QA BOSHI — qa_outputs: Linear(1024 → 2)</text>
+  <text x="440" y="470" fill="#fca5a5" font-size="12" text-anchor="middle" font-family="Consolas, monospace">start_logits · end_logits</text>
+
+  <text x="440" y="504" fill="#facc15" font-size="12.5" font-weight="700" text-anchor="middle">334 million parametr — shundan 2050 tasi QA boshida</text>
+</svg>

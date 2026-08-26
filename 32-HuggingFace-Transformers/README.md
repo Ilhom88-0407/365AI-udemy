@@ -205,8 +205,8 @@ print(p("I am so excited to be learning about large language models"))
 
 ## ➡️ Keyingi qadam
 
-**33-modul — BERT bilan savol-javob**: `token_type_ids` va `[SEP]` nima uchun kerakligini **amalda** ko'rasiz — savol va kontekst aynan shular bilan ajratiladi.
+**[33-modul — BERT bilan savol-javob](../33-BERT-Question-Answering/README.md)**: `token_type_ids` va `[SEP]` nima uchun kerakligini **amalda** ko'rasiz — savol va kontekst aynan shular bilan ajratiladi.
 
 ---
 
-⬅️ [31-modul — GPT modellari](../31-GPT-Models/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ **33-modul**
+⬅️ [31-modul — GPT modellari](../31-GPT-Models/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [33-modul — BERT savol-javob](../33-BERT-Question-Answering/README.md)

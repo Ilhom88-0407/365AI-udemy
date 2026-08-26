@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#94a3b8"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="880" height="440" fill="#0f172a" rx="14"/>
+  <text x="440" y="36" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">GPT va BERT — ikki xil O'QISH usuli</text>
+  <text x="440" y="57" fill="#94a3b8" font-size="12.5" text-anchor="middle">bir xil transformer — turli YO'NALISH</text>
+
+  <!-- GPT -->
+  <rect x="26" y="80" width="400" height="330" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+  <text x="226" y="110" fill="#c7d2fe" font-size="17" font-weight="700" text-anchor="middle">GPT — DEKODER</text>
+  <text x="226" y="132" fill="#a5b4fc" font-size="12" text-anchor="middle">faqat CHAPDAN O'NGGA o'qiydi</text>
+
+  <rect x="52" y="150" width="348" height="46" rx="8" fill="#312e81"/>
+  <text x="70" y="171" fill="#e0e7ff" font-size="13" font-family="Consolas, monospace">Mushuk gilam ustida ____</text>
+  <text x="70" y="189" fill="#818cf8" font-size="11">← keyingi so'zni TAXMIN qiladi</text>
+
+  <path d="M70 214 L120 214" stroke="#818cf8" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M140 214 L190 214" stroke="#818cf8" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M210 214 L260 214" stroke="#818cf8" stroke-width="2" marker-end="url(#a1)"/>
+  <path d="M280 214 L330 214" stroke="#818cf8" stroke-width="2" marker-end="url(#a1)"/>
+  <text x="226" y="240" fill="#a5b4fc" font-size="12" text-anchor="middle">bir yo'nalishli (kauzal maska)</text>
+
+  <rect x="52" y="256" width="348" height="132" rx="8" fill="#0f172a" stroke="#4c1d95"/>
+  <text x="70" y="280" fill="#c7d2fe" font-size="12.5" font-weight="700">KUCHLI TOMONI</text>
+  <text x="70" y="302" fill="#e0e7ff" font-size="12">✅ matn YOZADI</text>
+  <text x="70" y="322" fill="#e0e7ff" font-size="12">✅ suhbat, tarjima, kod</text>
+  <text x="70" y="348" fill="#c7d2fe" font-size="12.5" font-weight="700">ZAIF TOMONI</text>
+  <text x="70" y="370" fill="#fca5a5" font-size="12">❌ o'ngdagi kontekstni KO'RMAYDI</text>
+
+  <!-- BERT -->
+  <rect x="454" y="80" width="400" height="330" rx="12" fill="#083344" stroke="#38bdf8" stroke-width="2"/>
+  <text x="654" y="110" fill="#bae6fd" font-size="17" font-weight="700" text-anchor="middle">BERT — ENKODER</text>
+  <text x="654" y="132" fill="#7dd3fc" font-size="12" text-anchor="middle">IKKI TOMONGA birdan qaraydi</text>
+
+  <rect x="480" y="150" width="348" height="46" rx="8" fill="#0c4a6e"/>
+  <text x="498" y="171" fill="#e0f2fe" font-size="13" font-family="Consolas, monospace">Mushuk ____ ustida uxlaydi</text>
+  <text x="498" y="189" fill="#38bdf8" font-size="11">← MASKALANGAN so'zni tiklaydi</text>
+
+  <path d="M560 214 L510 214" stroke="#38bdf8" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M600 214 L650 214" stroke="#38bdf8" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M740 214 L690 214" stroke="#38bdf8" stroke-width="2" marker-end="url(#a2)"/>
+  <path d="M770 214 L820 214" stroke="#38bdf8" stroke-width="2" marker-end="url(#a2)"/>
+  <text x="654" y="240" fill="#7dd3fc" font-size="12" text-anchor="middle">ikki yo'nalishli (maskasiz)</text>
+
+  <rect x="480" y="256" width="348" height="132" rx="8" fill="#0f172a" stroke="#155e75"/>
+  <text x="498" y="280" fill="#bae6fd" font-size="12.5" font-weight="700">KUCHLI TOMONI</text>
+  <text x="498" y="302" fill="#e0f2fe" font-size="12">✅ matnni TUSHUNADI</text>
+  <text x="498" y="322" fill="#e0f2fe" font-size="12">✅ tasnif, NER, SAVOL-JAVOB</text>
+  <text x="498" y="348" fill="#bae6fd" font-size="12.5" font-weight="700">ZAIF TOMONI</text>
+  <text x="498" y="370" fill="#fca5a5" font-size="12">❌ yangi matn YOZA OLMAYDI</text>
+
+  <text x="440" y="428" fill="#facc15" font-size="12.5" font-weight="700" text-anchor="middle">Savol-javob = TUSHUNISH vazifasi → BERT</text>
+</svg>
