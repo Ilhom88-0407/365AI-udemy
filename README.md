@@ -58,7 +58,7 @@
 |---|---|---|---|
 | 29 | [LLM'larga kirish](29-Introduction-to-LLMs/README.md) | 7 | ✅ Tayyor |
 | 30 | [Transformer arxitekturasi](30-Transformer-Architecture/README.md) ⚡ | 9 | ✅ Tayyor |
-| 31 | GPT modellari bilan ishlash | — | ⏳ Navbatda |
+| 31 | [GPT modellari bilan ishlash](31-GPT-Models/README.md) 🤖 | 10 | ✅ Tayyor |
 | 32 | Hugging Face Transformers | — | ⏳ Navbatda |
 | 33 | BERT bilan savol-javob | — | ⏳ Navbatda |
 | 34 | XLNet bilan tasniflash | — | ⏳ Navbatda |
@@ -604,6 +604,50 @@
 
 ---
 
+## 🧭 Modul 31 — GPT modellari bilan ishlash 🤖
+
+**Nimani beradi:** GPT'ni **amalda** ishlatish — prompt, temperature, rollar va ## **RAG'ni NOLDAN qurish**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [GPT nima degani?](31-GPT-Models/01-What-does-GPT-mean.md) |
+| 2 | [ChatGPT rivojlanishi](31-GPT-Models/02-The-Development-of-ChatGPT.md) |
+| 3 | [OpenAI API](31-GPT-Models/03-OpenAI-API.md) ⚠️ |
+| 4 | [Matn yaratish](31-GPT-Models/04-Generating-Text.md) |
+| 5 | [Natijani sozlash](31-GPT-Models/05-Customizing-GPT-Output.md) ⭐ |
+| 6 | [Kalit so'zlar bilan xulosalash](31-GPT-Models/06-Keyword-Text-Summarization.md) ⭐⭐ |
+| 7 | [Oddiy chatbot](31-GPT-Models/07-Coding-a-Simple-Chatbot.md) |
+| 8 | [LangChain'ga kirish](31-GPT-Models/08-Introduction-to-LangChain.md) |
+| 9 | [LangChain nima?](31-GPT-Models/09-LangChain.md) |
+| 10 | [O'z ma'lumotingizni qo'shish](31-GPT-Models/10-Adding-Custom-Data.md) ⭐⭐⭐ |
+
+📝 **[42 ta mashq](31-GPT-Models/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](31-GPT-Models/LOYIHALAR.md)**
+
+> ## ⭐⭐ **BU MODULDA HAMMA NARSA API KALITISIZ, BEPUL ishlaydi.**
+>
+> ⚠️ **Ikki muammo:** kursdagi `openai.Completion.create` **v1.0 da olib tashlangan**, `text-davinci-002` esa **2024-yanvarda yopilgan**. Har bir dars uchun **uchta variant** berilgan: kursdagi kod · zamonaviy OpenAI kodi · **bepul mahalliy muqobil**.
+>
+> 🔥 **Bosh natija — RAG noldan qurildi *(20 qator kod, LangChain'siz)*:**
+>
+> ```
+> SAVOL                          ❌ RAGSIZ     ✅ RAG BILAN
+> ─────────────────────────────────────────────────────────────
+> Which course in March 2024?    'physics'     'Introduction to LLM'
+> When is the LangChain course?  '1890'        'April 2024'
+> How many courses are there?    '58'          'more than 60'
+>
+>                    RAGSIZ: 0%      RAG: 100%
+> ```
+> Model **o'zgarmadi** — faqat **ma'lumot berildi**. `OpenAIEmbeddings` o'rniga — **24-moduldagi `TfidfVectorizer`**.
+>
+> ⚠️ **Va eng muhim topilma — RAG SEHRLI TAYOQCHA EMAS.** Birinchi versiya *"What is the weather in Tashkent?"* savoliga **0.487 ball** bilan aloqasiz bo'lak topib, `'rainy'` deb **to'qib** chiqardi. Sabab — **to'xtatish so'zlari** *("is", "the", "in")*. Yechim: `stop_words='english'` → **0.000**, `min_ball=0.15`, va **"NOT FOUND" ko'rsatmasi**.
+>
+> 💥 **Va bu 26-modulga ZID:** o'sha yerda `stop_words` sentimentni **buzgan** *(0.869→0.784)*, bu yerda esa qidiruvni **tuzatdi** *(0.487→0.000)*. **Bir xil sozlama, teskari natija — har vazifada o'lchash kerak.**
+>
+> 🇺🇿 **O'zbekcha RAG BUGUN ishlaydi:** qidiruv aniqligi **80%** *(`sklearn` tildan mustaqil)*. Ishlamagan savol — *"Ofis qayerda?"* *(`ofis` ≠ `ofisimiz`)*, yechimi **28-moduldagi stemming**.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -736,9 +780,12 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 29-Introduction-to-LLMs/                    ← 7 dars, 5 SVG  🤖 LLM BO'LIMI
 │   ├── MASHQLAR.md                             ← 40 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha (LLM baholash)
-└── 30-Transformer-Architecture/                ← 9 dars, 8 SVG  ⚡ TRANSFORMER
-    ├── MASHQLAR.md                             ← 44 ta mashq
-    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (e'tibor tahlili)
+├── 30-Transformer-Architecture/                ← 9 dars, 8 SVG  ⚡ TRANSFORMER
+│   ├── MASHQLAR.md                             ← 44 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha (e'tibor tahlili)
+└── 31-GPT-Models/                              ← 10 dars, 4 SVG  🤖 GPT + RAG
+    ├── MASHQLAR.md                             ← 42 ta mashq
+    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (RAG noldan)
 ```
 
 ---

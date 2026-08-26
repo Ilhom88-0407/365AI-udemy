@@ -477,4 +477,4 @@ AVTOREGRESSIV GENERATSIYA
 
 ---
 
-⬅️ [Oldingi: Niqoblangan e'tibor](08-Masked-Multihead-Attention.md) · 🏠 [Modul boshiga](README.md) · ➡️ **31-modul: GPT modellari bilan ishlash**
+⬅️ [Oldingi: Niqoblangan e'tibor](08-Masked-Multihead-Attention.md) · 🏠 [Modul boshiga](README.md) · ➡️ [31-modul: GPT modellari](../31-GPT-Models/README.md)

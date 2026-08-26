@@ -674,4 +674,4 @@ parametr  : 299904
 
 ---
 
-⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ **31-modul: GPT modellari**
+⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ [31-modul: GPT modellari](../31-GPT-Models/README.md)

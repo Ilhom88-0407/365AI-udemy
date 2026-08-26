@@ -252,8 +252,8 @@ O'lchangan:
 
 ## ➡️ Keyingi qadam
 
-**31-modul — GPT modellari bilan ishlash**: nazariya tugadi. Endi **amaliy** ishlaymiz — GPT modellarini chaqirish, prompt yozish, natijani boshqarish.
+**[31-modul — GPT modellari bilan ishlash](../31-GPT-Models/README.md)**: nazariya tugadi. Endi **amaliy** ishlaymiz — GPT modellarini chaqirish, prompt yozish, natijani boshqarish.
 
 ---
 
-⬅️ [29-modul — LLM'larga kirish](../29-Introduction-to-LLMs/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ **31-modul**
+⬅️ [29-modul — LLM'larga kirish](../29-Introduction-to-LLMs/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [31-modul](../31-GPT-Models/README.md)
