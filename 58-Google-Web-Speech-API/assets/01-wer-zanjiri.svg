@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="660" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">WER 0.3390 dan 0.0328 gacha — model bir harfni ham boshqacha tanimadi</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: speech_01.wav 23.5 s · Google Web Speech API · jiwer</text>
+
+  <!-- normalization chain -->
+  <rect x="24" y="74" width="912" height="212" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="480" y="98" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">NORMALLASHTIRISH ZANJIRI</text>
+
+  <g font-family="Consolas, monospace" font-size="12">
+    <text x="44" y="126" fill="#f87171">0. xom (kurs)              WER 0.3390</text>
+    <rect x="360" y="114" width="440" height="15" rx="3" fill="#f87171"/>
+    <text x="812" y="126" fill="#fca5a5">20 xato</text>
+
+    <text x="44" y="152" fill="#fb923c">1. + probel/\n tekislandi  WER 0.2951</text>
+    <rect x="360" y="140" width="383" height="15" rx="3" fill="#fb923c"/>
+    <text x="812" y="152" fill="#fdba74">17 xato</text>
+
+    <text x="44" y="178" fill="#fbbf24">2. + apostrof birxil       WER 0.2623</text>
+    <rect x="360" y="166" width="340" height="15" rx="3" fill="#fbbf24"/>
+    <text x="812" y="178" fill="#fde68a">15 xato</text>
+
+    <text x="44" y="204" fill="#a3e635">3. + kichik harf           WER 0.1639</text>
+    <rect x="360" y="192" width="213" height="15" rx="3" fill="#a3e635"/>
+    <text x="812" y="204" fill="#d9f99d">10 xato</text>
+
+    <text x="44" y="230" fill="#4ade80">4. + tinish belgilari      WER 0.0328</text>
+    <rect x="360" y="218" width="43" height="15" rx="3" fill="#4ade80"/>
+    <text x="812" y="230" fill="#bbf7d0">2 xato</text>
+  </g>
+  <text x="44" y="262" fill="#4ade80" font-size="13" font-weight="700">10.3x yaxshilanish — bitta ham harf o'zgarmagan. Xatolarning 90.3% i FORMAT edi.</text>
+  <text x="44" y="278" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">qolgan 2 xato:  ivan -> yvonne  ·  turned -> turn</text>
+
+  <!-- ground truth wrong -->
+  <rect x="24" y="302" width="450" height="164" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="326" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">HAVOLANING O'ZI XATO</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="352" fill="#f87171">ground_truth.txt  :  "My name is Ivan"</text>
+    <text x="44" y="374" fill="#4ade80">kurs muallifi     :  "Yvonne - mening ismim"</text>
+    <text x="44" y="394" fill="#4ade80">Google API        :  "Yvonne"</text>
+    <text x="44" y="414" fill="#4ade80">Whisper pipeline  :  "Yvonne"</text>
+    <text x="44" y="434" fill="#fbbf24">Whisper generate  :  "Ivan" (aksent bilan)</text>
+  </g>
+  <text x="44" y="456" fill="#fbbf24" font-size="12" font-weight="700">Haqiqiy aniqlik: 60/61 = 98.4%, 66.1% emas</text>
+
+  <!-- truncation -->
+  <rect x="490" y="302" width="446" height="164" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="713" y="326" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">GOOGLE UZUN FAYLNI JIMGINA KESADI</text>
+  <text x="510" y="350" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">davomiylik   kutilgan   olingan   ulush</text>
+  <line x1="510" y1="357" x2="916" y2="357" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="376" fill="#4ade80"> 23.5 s          61        61   100.0%</text>
+    <text x="510" y="396" fill="#f87171"> 47.0 s         122        62    50.8%</text>
+    <text x="510" y="416" fill="#f87171"> 70.5 s         183        62    33.9%</text>
+    <text x="510" y="436" fill="#f87171">141.1 s         366        62    16.9%</text>
+  </g>
+  <text x="510" y="458" fill="#fbbf24" font-size="12" font-weight="700">Xato yo'q. Ogohlantirish yo'q. Yechim: 30 s bo'laklab.</text>
+
+  <!-- sample rate -->
+  <rect x="24" y="482" width="450" height="154" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="249" y="506" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">CHASTOTA NATIJAGA TA'SIR QILMAYDI</text>
+  <text x="44" y="530" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">chastota      hajm       WER</text>
+  <line x1="44" y1="537" x2="454" y2="537" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5" fill="#86efac">
+    <text x="44" y="556"> 8 000 Hz    367 KB    0.3390</text>
+    <text x="44" y="576">16 000 Hz    735 KB    0.3390</text>
+    <text x="44" y="596">22 050 Hz   1013 KB    0.3390</text>
+    <text x="44" y="616">44 100 Hz   2025 KB    0.3390</text>
+  </g>
+  <text x="300" y="596" fill="#4ade80" font-size="11.5" font-weight="700">5.5x kichik</text>
+  <text x="300" y="616" fill="#f87171" font-size="11.5" font-weight="700">bekorga</text>
+
+  <!-- formats -->
+  <rect x="490" y="482" width="446" height="154" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="713" y="506" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">SIQISH TRANSKRIPSIYANI BUZMAYDI</text>
+  <text x="510" y="530" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">format     SNR      natija</text>
+  <line x1="510" y1="537" x2="916" y2="537" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="556" fill="#86efac">WAV     279.72 dB   WER 0.4754</text>
+    <text x="510" y="576" fill="#86efac">MP3      19.86 dB   WER 0.4754</text>
+    <text x="510" y="596" fill="#86efac">OGG      15.28 dB   WER 0.4754</text>
+  </g>
+  <text x="510" y="620" fill="#fbbf24" font-size="12" font-weight="700">AYNAN bir xil matn. SNR 279 -> 15 dB tushganda ham.</text>
+</svg>

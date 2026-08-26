@@ -51,7 +51,9 @@
 | WAV | ✅ | ✅ | 258.4 KB |
 | FLAC | ✅ | ✅ | ## ⭐ **136.0 KB** *(yo'qotishsiz)* |
 | MP3 | ✅ | ✅ | 32.4 KB |
-| OGG | ✅ | ✅ | ## 🏆 **29.5 KB** |
+| OGG | ⚠️ | ✅ | ## 🏆 **29.5 KB** |
+
+> ## ⚠️ **OGG UCHUN TUZATISH** *(58-modulda topilgan)*: ## `sf.write()` bilan **~750 000 namunadan** katta OGG yozish ## `soundfile 0.14` da **jarayonni o'ldiradi** *(stack overflow)*. ## Bu yerdagi sinov fayli **3 soniyalik** edi. ## ## ✅ Uzun OGG uchun `sf.SoundFile` bilan **bloklab** yozing — ## [58-modul, 1-dars](../58-Google-Web-Speech-API/01-Audio-File-Formats.md).
 
 ```
 soundfile 0.14  →  27 ta format

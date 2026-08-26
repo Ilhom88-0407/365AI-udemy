@@ -90,7 +90,8 @@
 | 55 | [Audio xususiyatlarini ajratish](55-Audio-Feature-Extraction/README.md) 🎚️ | 4 | ✅ Tayyor |
 | 56 | [Texnologiya mexanikasi](56-Technology-Mechanics/README.md) 🧠 | 6 | ✅ Tayyor |
 | 57 | [Muhitni sozlash](57-Setting-Up-the-Environment/README.md) ⚙️ | 4 | ✅ Tayyor |
-| 58 | Speech Recognition (davomi) | — | ⏳ Navbatda |
+| 58 | [Google Web Speech API](58-Google-Web-Speech-API/README.md) 🎙️ | 5 | ✅ Tayyor |
+| 59 | Speech Recognition (davomi) | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
