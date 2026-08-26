@@ -714,4 +714,4 @@ maks_ball=0.000  →  'NOT FOUND'        ✅✅
 
 ---
 
-⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ **32-modul: Hugging Face**
+⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ [32-modul: Hugging Face](../32-HuggingFace-Transformers/README.md)

@@ -800,4 +800,4 @@ RAG'NI NOLDAN QURDIK — 20 QATOR KODDA
 
 ---
 
-⬅️ [Oldingi: LangChain nima?](09-LangChain.md) · 🏠 [Modul boshiga](README.md) · ➡️ **32-modul: Hugging Face Transformers**
+⬅️ [Oldingi: LangChain nima?](09-LangChain.md) · 🏠 [Modul boshiga](README.md) · ➡️ [32-modul: Hugging Face](../32-HuggingFace-Transformers/README.md)

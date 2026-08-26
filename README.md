@@ -59,7 +59,7 @@
 | 29 | [LLM'larga kirish](29-Introduction-to-LLMs/README.md) | 7 | ✅ Tayyor |
 | 30 | [Transformer arxitekturasi](30-Transformer-Architecture/README.md) ⚡ | 9 | ✅ Tayyor |
 | 31 | [GPT modellari bilan ishlash](31-GPT-Models/README.md) 🤖 | 10 | ✅ Tayyor |
-| 32 | Hugging Face Transformers | — | ⏳ Navbatda |
+| 32 | [Hugging Face Transformers](32-HuggingFace-Transformers/README.md) 🤗 | 6 | ✅ Tayyor |
 | 33 | BERT bilan savol-javob | — | ⏳ Navbatda |
 | 34 | XLNet bilan tasniflash | — | ⏳ Navbatda |
 
@@ -648,6 +648,57 @@
 
 ---
 
+## 🧭 Modul 32 — Hugging Face Transformers 🤗
+
+**Nimani beradi:** LLM'lar bilan **bepul** va **mahalliy** ishlash — va ## **modeldagi TARAFKASHLIKNI o'lchash**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Hugging Face paketi](32-HuggingFace-Transformers/01-Hugging-Face-Package.md) |
+| 2 | [Transformer pipeline](32-HuggingFace-Transformers/02-The-Transformer-Pipeline.md) ⭐ |
+| 3 | [Oldindan o'qitilgan tokenizatorlar](32-HuggingFace-Transformers/03-Pre-trained-Tokenizers.md) ⭐ |
+| 4 | [Maxsus tokenlar](32-HuggingFace-Transformers/04-Special-Tokens.md) ⭐⭐ |
+| 5 | [PyTorch va TensorFlow](32-HuggingFace-Transformers/05-PyTorch-TensorFlow.md) ⭐⭐ |
+| 6 | [Saqlash va yuklash](32-HuggingFace-Transformers/06-Saving-and-Loading-Models.md) |
+
+📝 **[38 ta mashq](32-HuggingFace-Transformers/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](32-HuggingFace-Transformers/LOYIHALAR.md)**
+
+> ## ⭐⭐ **BU MODULDA HAMMA NARSA BEPUL** — API kaliti umuman kerak emas.
+>
+> ⚠️⚠️ **Modulning eng muhim topilmasi — `[MASK]` bilan TARAFKASHLIKNI o'lchash:**
+>
+> ```
+>       so'z     he    she  nisbat
+>    doctor  0.3633 0.3178    1.14    ✅
+>     nurse  0.1442 0.5556    3.85    ⚠️
+>  engineer  0.4564 0.0829    5.51    ⚠️⚠️  ENG KUCHLI
+>   teacher  0.3270 0.3605    1.10    ✅
+>       ceo  0.5921 0.1273    4.65    ⚠️⚠️
+> secretary  0.4963 0.2467    2.01    ⚠️
+>
+> Kuchli tarafkashlik: 4/6
+> ```
+> Bu — **28-moduldagi** *"model ma'lumotdagi stereotipni o'rganadi"* da'vosining **o'lchangan isboti**. **68–76-modullar** aynan shu haqda.
+>
+> 🔬 **`pipeline()` QO'LDA takrorlandi:** qo'lda `0.99973` · pipeline `0.9997285` — **bir xil**.
+>
+> ⚠️ **Tokenizator/model mos kelmasa — javob TESKARI aylanadi, xato esa CHIQMAYDI:**
+> ```
+> TO'G'RI tokenizator   →  POSITIVE
+> NOTO'G'RI tokenizator →  NEGATIVE      (kod ishlaydi, ogohlantirish yo'q!)
+> ```
+>
+> 🇺🇿 **O'zbek tilida vazifaga qarab farq:**
+> ```
+> NER        →  ⚠️ QISMAN  (Toshkent 0.963 ✅ · Kapitalbankda 0.942 ✅)
+>                          filtr: score > 0.9 → ikkala xatoni yo'qotadi
+> Zero-shot  →  ❌ ISHLAMAYDI  ("sifatsiz mahsulot" → maqtov 0.4825!)
+> Tokenizator→  ✅ ko'p tilli 28% KAMROQ token ('Toshkent' — BUTUN so'z)
+> ```
+> **Qoida:** SHAKLGA tayanadigan vazifalar qisman ishlaydi, MA'NOGA tayanadiganlar — yo'q.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -783,9 +834,12 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 30-Transformer-Architecture/                ← 9 dars, 8 SVG  ⚡ TRANSFORMER
 │   ├── MASHQLAR.md                             ← 44 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha (e'tibor tahlili)
-└── 31-GPT-Models/                              ← 10 dars, 4 SVG  🤖 GPT + RAG
-    ├── MASHQLAR.md                             ← 42 ta mashq
-    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (RAG noldan)
+├── 31-GPT-Models/                              ← 10 dars, 4 SVG  🤖 GPT + RAG
+│   ├── MASHQLAR.md                             ← 42 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha (RAG noldan)
+└── 32-HuggingFace-Transformers/                ← 6 dars, 3 SVG  🤗 BEPUL
+    ├── MASHQLAR.md                             ← 38 ta mashq
+    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (tarafkashlik!)
 ```
 
 ---

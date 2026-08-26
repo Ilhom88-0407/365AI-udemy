@@ -271,8 +271,8 @@ NOT FOUND
 
 ## ➡️ Keyingi qadam
 
-**32-modul — Hugging Face Transformers**: siz bu modulda `transformers` paketidan **allaqachon** foydalandingiz. Endi uni **tizimli** o'rganamiz.
+**[32-modul — Hugging Face Transformers](../32-HuggingFace-Transformers/README.md)**: siz bu modulda `transformers` paketidan **allaqachon** foydalandingiz. Endi uni **tizimli** o'rganamiz.
 
 ---
 
-⬅️ [30-modul — Transformer arxitekturasi](../30-Transformer-Architecture/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ **32-modul**
+⬅️ [30-modul — Transformer arxitekturasi](../30-Transformer-Architecture/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [32-modul](../32-HuggingFace-Transformers/README.md)

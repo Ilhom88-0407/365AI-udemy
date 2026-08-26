@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="400" fill="#0f172a" rx="14"/>
+  <text x="440" y="36" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Maxsus tokenlar — matn tuzilishining markerlari</text>
+
+  <!-- two sentence example -->
+  <rect x="26" y="60" width="828" height="88" rx="11" fill="#1e293b" stroke="#64748b" stroke-width="1.6"/>
+  <text x="440" y="82" fill="#cbd5e1" font-size="13" font-weight="700" text-anchor="middle">IKKI JUMLA — [SEP] va token_type_ids</text>
+
+  <g font-size="11.5" font-family="Consolas, monospace">
+    <rect x="52" y="94" width="58" height="22" rx="4" fill="#7c2d12" stroke="#fb923c"/>
+    <text x="81" y="109" fill="#fed7aa" text-anchor="middle">[CLS]</text>
+    <rect x="114" y="94" width="40" height="22" rx="4" fill="#334155"/><text x="134" y="109" fill="#e2e8f0" text-anchor="middle">the</text>
+    <rect x="158" y="94" width="40" height="22" rx="4" fill="#334155"/><text x="178" y="109" fill="#e2e8f0" text-anchor="middle">cat</text>
+    <rect x="202" y="94" width="40" height="22" rx="4" fill="#334155"/><text x="222" y="109" fill="#e2e8f0" text-anchor="middle">sat</text>
+    <rect x="246" y="94" width="26" height="22" rx="4" fill="#334155"/><text x="259" y="109" fill="#e2e8f0" text-anchor="middle">.</text>
+    <rect x="276" y="94" width="58" height="22" rx="4" fill="#7c2d12" stroke="#fb923c"/>
+    <text x="305" y="109" fill="#fed7aa" text-anchor="middle">[SEP]</text>
+    <rect x="338" y="94" width="34" height="22" rx="4" fill="#1e3a8a"/><text x="355" y="109" fill="#dbeafe" text-anchor="middle">it</text>
+    <rect x="376" y="94" width="44" height="22" rx="4" fill="#1e3a8a"/><text x="398" y="109" fill="#dbeafe" text-anchor="middle">was</text>
+    <rect x="424" y="94" width="64" height="22" rx="4" fill="#1e3a8a"/><text x="456" y="109" fill="#dbeafe" text-anchor="middle">sleepy</text>
+    <rect x="492" y="94" width="26" height="22" rx="4" fill="#1e3a8a"/><text x="505" y="109" fill="#dbeafe" text-anchor="middle">.</text>
+    <rect x="522" y="94" width="58" height="22" rx="4" fill="#7c2d12" stroke="#fb923c"/>
+    <text x="551" y="109" fill="#fed7aa" text-anchor="middle">[SEP]</text>
+  </g>
+  <text x="52" y="136" fill="#64748b" font-size="11" font-family="Consolas, monospace">type_ids:  0    0    0    0   0    0     1    1    1     1    1</text>
+  <text x="612" y="106" fill="#94a3b8" font-size="11">└ 1-JUMLA ┘ └ 2-JUMLA ┘</text>
+
+  <!-- table -->
+  <rect x="26" y="162" width="500" height="150" rx="11" fill="#1e293b" stroke="#94a3b8" stroke-width="1.4"/>
+  <text x="276" y="184" fill="#e2e8f0" font-size="13" font-weight="700" text-anchor="middle">MODELGA QARAB FARQ QILADI</text>
+  <text x="48" y="208" fill="#64748b" font-size="11" font-family="Consolas, monospace">                BERT      XLNet      GPT-2</text>
+  <text x="48" y="228" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">tasniflash      [CLS]     &lt;cls&gt;       —</text>
+  <text x="48" y="246" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">ajratuvchi      [SEP]     &lt;sep&gt;       —</text>
+  <text x="48" y="264" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">to'ldirish      [PAD]     &lt;pad&gt;      eos</text>
+  <text x="48" y="282" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">niqob           [MASK]    &lt;mask&gt;      —</text>
+  <text x="48" y="302" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">JAMI              5         9         1</text>
+
+  <!-- arch link -->
+  <rect x="538" y="162" width="316" height="150" rx="11" fill="#172554" stroke="#60a5fa" stroke-width="1.6"/>
+  <text x="696" y="184" fill="#dbeafe" font-size="13" font-weight="700" text-anchor="middle">🔑 ARXITEKTURA BOG'LIQLIGI</text>
+  <text x="558" y="210" fill="#93c5fd" font-size="11.5">🔵 ENCODER (BERT)</text>
+  <text x="572" y="228" fill="#64748b" font-size="10.5">tushunish → TUZILMA kerak</text>
+  <text x="572" y="244" fill="#64748b" font-size="10.5">→ ko'p maxsus token</text>
+  <text x="558" y="270" fill="#86efac" font-size="11.5">🟢 DECODER (GPT)</text>
+  <text x="572" y="288" fill="#64748b" font-size="10.5">faqat matn davom ettiradi</text>
+  <text x="572" y="304" fill="#64748b" font-size="10.5">→ bitta token (&lt;|endoftext|&gt;)</text>
+
+  <!-- MASK bias -->
+  <rect x="26" y="326" width="828" height="62" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="1.8"/>
+  <text x="440" y="348" fill="#fecaca" font-size="13" font-weight="700" text-anchor="middle">⚠️ [MASK] — TARAFKASHLIKNI topishning eng sodda usuli (o'lchangan)</text>
+  <text x="60" y="368" fill="#cbd5e1" font-size="11.5" font-family="Consolas, monospace">"The doctor said [MASK]..."   he 0.3633  ·  she 0.3178      (deyarli teng)</text>
+  <text x="60" y="384" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">"The nurse  said [MASK]..."   she 0.5556 ·  he  0.1442      3.85× FARQ!</text>
+</svg>
