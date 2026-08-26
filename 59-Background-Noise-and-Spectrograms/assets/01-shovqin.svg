@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" width="960" height="680" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="680" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">25 ta o'lchov. Yaxshilanish: NOL. Yomonlashuv: 20 ta.</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">speech_01.wav · 16 kHz · Google Web Speech API · WER normallashtirilgan</text>
+
+  <!-- SNR curve -->
+  <rect x="24" y="74" width="450" height="228" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="249" y="98" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">SHOVQIN VA NUTQ QAYERDA TO'QNASHADI</text>
+  <text x="44" y="122" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">chastota      shovqin      nutq       SNR</text>
+  <line x1="44" y1="129" x2="454" y2="129" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="148" fill="#4ade80">   108 Hz       9.90     22.38    +12.48</text>
+    <text x="44" y="168" fill="#a3e635">   495 Hz       4.03     12.88     +8.85</text>
+    <text x="44" y="188" fill="#fbbf24">   991 Hz       2.20      6.29     +4.09</text>
+    <text x="44" y="208" fill="#f87171">  2003 Hz       3.15      3.18     +0.03</text>
+    <text x="44" y="228" fill="#a3e635">  4005 Hz     -12.99     -6.66     +6.33</text>
+    <text x="44" y="248" fill="#4ade80">  8010 Hz     -24.02     -1.64    +22.38</text>
+    <text x="44" y="268" fill="#4ade80"> 15999 Hz     -84.14    -22.95    +61.20</text>
+  </g>
+  <text x="44" y="292" fill="#f87171" font-size="12" font-weight="700">Eng yomon: 2260 Hz -> -4.56 dB. Va bu — UNDOSHLAR zonasi.</text>
+
+  <!-- preemphasis on original -->
+  <rect x="490" y="74" width="446" height="228" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="713" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">PRE-EMPHASIS: WER O'ZGARMADI</text>
+  <text x="510" y="122" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">coef        WER    toza WER    ishonch</text>
+  <line x1="510" y1="129" x2="916" y2="129" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="148" fill="#4ade80">0.00     0.3390      0.0328     0.9077</text>
+    <text x="510" y="168" fill="#94a3b8">0.50     0.3390      0.0328     0.8673</text>
+    <text x="510" y="188" fill="#94a3b8">0.90     0.3390      0.0328     0.7201</text>
+    <text x="510" y="208" fill="#94a3b8">0.95     0.3390      0.0328     0.7416</text>
+    <text x="510" y="228" fill="#fbbf24">0.97     0.3390      0.0328     0.7595  &lt;- kurs</text>
+    <text x="510" y="248" fill="#94a3b8">0.99     0.3390      0.0328     0.7775</text>
+    <text x="510" y="268" fill="#94a3b8">1.00     0.3390      0.0328     0.7574</text>
+  </g>
+  <text x="510" y="292" fill="#fbbf24" font-size="12" font-weight="700">Transkript BIR HARFGA ham o'zgarmadi. Ishonch -16.3%.</text>
+
+  <!-- fair test -->
+  <rect x="24" y="318" width="912" height="196" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="480" y="342" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">ADOLATLI SINOV: sun'iy shovqin qo'shib (WER, past = yaxshi)</text>
+  <text x="44" y="368" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">  SNR |  hech narsa | pre-emph .97 |    bandpass | spektral a=2 | spektral a=3</text>
+  <line x1="44" y1="375" x2="916" y2="375" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="394" fill="#94a3b8">30 dB |</text><text x="140" y="394" fill="#4ade80">      0.0328</text><text x="290" y="394" fill="#f87171">       0.4098</text><text x="450" y="394" fill="#4ade80">      0.0328</text><text x="600" y="394" fill="#f87171">       0.4098</text><text x="760" y="394" fill="#f87171">       0.5082</text>
+    <text x="44" y="414" fill="#94a3b8">20 dB |</text><text x="140" y="414" fill="#4ade80">      0.0328</text><text x="290" y="414" fill="#f87171">       0.4098</text><text x="450" y="414" fill="#4ade80">      0.0328</text><text x="600" y="414" fill="#f87171">       0.5082</text><text x="760" y="414" fill="#f87171">       1.0000</text>
+    <text x="44" y="434" fill="#94a3b8">10 dB |</text><text x="140" y="434" fill="#4ade80">      0.0328</text><text x="290" y="434" fill="#f87171">       0.2623</text><text x="450" y="434" fill="#4ade80">      0.0328</text><text x="600" y="434" fill="#f87171">       1.0000</text><text x="760" y="434" fill="#f87171">       1.0000</text>
+    <text x="44" y="454" fill="#94a3b8"> 5 dB |</text><text x="140" y="454" fill="#4ade80">      0.0492</text><text x="290" y="454" fill="#f87171">       0.3115</text><text x="450" y="454" fill="#4ade80">      0.0492</text><text x="600" y="454" fill="#f87171">       1.0000</text><text x="760" y="454" fill="#f87171">       1.0000</text>
+    <text x="44" y="474" fill="#94a3b8"> 0 dB |</text><text x="140" y="474" fill="#4ade80">      0.1967</text><text x="290" y="474" fill="#f87171">       0.4098</text><text x="450" y="474" fill="#4ade80">      0.1967</text><text x="600" y="474" fill="#f87171">       1.0000</text><text x="760" y="474" fill="#f87171">       1.0000</text>
+  </g>
+  <text x="44" y="502" fill="#4ade80" font-size="13" font-weight="700">0 dB SNR da ham "hech narsa" 61 so'zdan 49 tasini to'g'ri tanidi.</text>
+
+  <!-- sample rate trap -->
+  <rect x="24" y="530" width="450" height="132" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="554" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">coef=0.97 CHASTOTAGA BOG'LIQ</text>
+  <text x="44" y="578" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">chastota    coef=0    coef=0.97    so'z</text>
+  <line x1="44" y1="585" x2="454" y2="585" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="604" fill="#4ade80">44100 Hz    0.0328     0.0328       61</text>
+    <text x="44" y="622" fill="#4ade80">22050 Hz    0.0328     0.0328       61</text>
+    <text x="44" y="640" fill="#f87171">16000 Hz    0.0328     0.4098       37</text>
+    <text x="44" y="658" fill="#4ade80"> 8000 Hz    0.0492     0.0492       61</text>
+  </g>
+
+  <!-- top_db trap -->
+  <rect x="490" y="530" width="446" height="132" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="713" y="554" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">amplitude_to_db NING YASHIRIN top_db=80</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="580" fill="#94a3b8">top_db=80   (standart) : min  -80.00 dB</text>
+    <text x="510" y="600" fill="#4ade80">top_db=None            : min -142.03 dB</text>
+    <text x="510" y="622" fill="#f87171">JIMGINA KESILGAN HUJAYRALAR: 32.40%</text>
+  </g>
+  <text x="510" y="648" fill="#fbbf24" font-size="11.5" font-weight="700">Rasm chizsangiz — mayli. Raqam hisoblasangiz — top_db=None.</text>
+</svg>
