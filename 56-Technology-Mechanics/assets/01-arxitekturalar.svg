@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 640" width="940" height="640" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="940" height="640" fill="#0f172a" rx="14"/>
+  <text x="470" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Arxitekturani MA'LUMOT tanlaydi, moda emas</text>
+  <text x="470" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: 2352 freym · 58 o'qitish ketma-ketligi · ovozli/ovozsiz tasnifi</text>
+
+  <!-- arch comparison -->
+  <rect x="24" y="74" width="440" height="212" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="244" y="98" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">Bir xil masala · bir xil ma'lumot</text>
+  <text x="44" y="122" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">model         parametr   aniqlik</text>
+  <line x1="44" y1="130" x2="444" y2="130" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="152" fill="#94a3b8">MLP             1,793    81.0%</text><rect x="300" y="142" width="20" height="12" rx="2" fill="#38bdf8" opacity=".5"/>
+    <text x="44" y="176" fill="#94a3b8">CNN            28,993    83.1%</text><rect x="300" y="166" width="80" height="12" rx="2" fill="#38bdf8" opacity=".6"/>
+    <text x="44" y="200" fill="#4ade80">RNN             5,953    84.6%</text><rect x="300" y="190" width="30" height="12" rx="2" fill="#4ade80"/>
+    <text x="44" y="224" fill="#94a3b8">LSTM           23,617    82.5%</text><rect x="300" y="214" width="68" height="12" rx="2" fill="#38bdf8" opacity=".6"/>
+    <text x="44" y="248" fill="#f87171">Transformer    68,737    80.4%</text><rect x="300" y="238" width="140" height="12" rx="2" fill="#f87171"/>
+  </g>
+  <text x="44" y="274" fill="#fbbf24" font-size="11.5" font-weight="700">1 793 parametrli MLP — 68 737 li Transformerdan YAXSHIROQ</text>
+
+  <!-- data scaling -->
+  <rect x="480" y="74" width="436" height="212" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="698" y="98" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">Ma'lumot ko'paysa — kim ko'proq yutadi?</text>
+  <text x="500" y="122" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">o'qitish        MLP    Transformer</text>
+  <line x1="500" y1="130" x2="896" y2="130" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="500" y="152" fill="#94a3b8">11/58 ket.    75.0%      57.9%</text>
+    <text x="500" y="176" fill="#94a3b8">23/58         77.1%      64.8%</text>
+    <text x="500" y="200" fill="#94a3b8">34/58         78.8%      72.1%</text>
+    <text x="500" y="224" fill="#94a3b8">46/58         79.4%      74.2%</text>
+    <text x="500" y="248" fill="#4ade80">58/58         81.0%      80.4%</text>
+  </g>
+  <text x="500" y="274" fill="#fbbf24" font-size="11.5" font-weight="700">MLP +6.0 punkt  ·  Transformer +22.5 punkt  → tenglashdi</text>
+
+  <!-- gradient -->
+  <rect x="24" y="300" width="440" height="180" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="244" y="324" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">Gradient yo'qolishi — LSTM ning sababi</text>
+  <text x="44" y="348" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">SEQ    RNN          LSTM</text>
+  <line x1="44" y1="356" x2="444" y2="356" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="378" fill="#94a3b8"> 10   3.52e-05     4.58e-05</text>
+    <text x="44" y="400" fill="#94a3b8"> 50   1.62e-17     8.19e-13</text>
+    <text x="44" y="422" fill="#fca5a5">100   1.04e-32     2.35e-23</text>
+    <text x="44" y="444" fill="#f87171">200   0.00e+00     1.91e-43</text>
+  </g>
+  <text x="44" y="468" fill="#fbbf24" font-size="11.5" font-weight="700">RNN: h=tanh(W·h) KO'PAYTIRISH  ·  LSTM: c=f·c+i·g QO'SHISH</text>
+
+  <!-- whisper -->
+  <rect x="480" y="300" width="436" height="180" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="698" y="324" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">Whisper ichida nima bor?</text>
+  <text x="500" y="348" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">model      encoder   decoder   nisbat</text>
+  <line x1="500" y1="356" x2="896" y2="356" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="500" y="378" fill="#94a3b8">tiny        8.2M     29.6M     3.61x</text>
+    <text x="500" y="400" fill="#94a3b8">base       20.6M     52.0M     2.53x</text>
+    <text x="500" y="422" fill="#94a3b8">small      88.2M    153.6M     1.74x</text>
+  </g>
+  <text x="500" y="446" fill="#4ade80" font-size="11.5" font-weight="700">encoder = akustik model · decoder = TIL modeli</text>
+  <text x="500" y="466" fill="#fbbf24" font-size="11.5" font-weight="700">parametrlarning ~70% i — TIL modeli</text>
+
+  <!-- leakage -->
+  <rect x="24" y="494" width="892" height="126" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="470" y="518" fill="#fecaca" font-size="15" font-weight="700" text-anchor="middle">Ma'lumot sizib chiqishi — sinov natijangiz YOLG'ON bo'lishi mumkin</text>
+  <text x="44" y="542" fill="#fca5a5" font-size="12" font-family="Consolas, monospace">gapiruvchi "izi"    tasodifiy bo'lish    gapiruvchi bo'yicha    farq</text>
+  <line x1="44" y1="550" x2="896" y2="550" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="12">
+    <text x="44" y="572" fill="#4ade80">iz = 0.0                 98.8%                 97.5%          +1.3 punkt</text>
+    <text x="44" y="592" fill="#f87171">iz = 2.0                 98.8%                 53.8%         +45.0 punkt</text>
+  </g>
+  <text x="44" y="614" fill="#fbbf24" font-size="12" font-weight="700">Bir gapiruvchi FAQAT bitta to'plamda bo'lsin — GroupShuffleSplit</text>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 640" width="940" height="640" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="940" height="640" fill="#0f172a" rx="14"/>
+  <text x="470" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">MFCC quvuri — oltita aniq qadam, sehr emas</text>
+  <text x="470" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: speech_01.wav · 16 kHz · 25/10 ms freym · 2352 freym</text>
+
+  <!-- pipeline -->
+  <g font-family="Consolas, monospace" font-size="11">
+    <rect x="20" y="76" width="128" height="62" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="84" y="98" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">① FREYM</text>
+    <text x="84" y="116" fill="#94a3b8" text-anchor="middle">25 ms / 10 ms</text>
+    <text x="84" y="131" fill="#fbbf24" text-anchor="middle">100 freym/s</text>
+
+    <rect x="164" y="76" width="118" height="62" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="223" y="98" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">② OYNA + FFT</text>
+    <text x="223" y="116" fill="#94a3b8" text-anchor="middle">hann · n_fft 512</text>
+    <text x="223" y="131" fill="#fbbf24" text-anchor="middle">257 bin</text>
+
+    <rect x="298" y="76" width="108" height="62" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="352" y="98" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">③ |·|²</text>
+    <text x="352" y="118" fill="#94a3b8" text-anchor="middle">quvvat spektri</text>
+    <text x="352" y="133" fill="#f87171" text-anchor="middle">faza TASHLANADI</text>
+
+    <rect x="422" y="76" width="128" height="62" rx="10" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+    <text x="486" y="98" fill="#bbf7d0" font-size="12.5" font-weight="700" text-anchor="middle">④ MEL FILTR</text>
+    <text x="486" y="116" fill="#86efac" text-anchor="middle">40 filtr</text>
+    <text x="486" y="131" fill="#4ade80" text-anchor="middle">koxlea modeli</text>
+
+    <rect x="566" y="76" width="98" height="62" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="615" y="98" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">⑤ log</text>
+    <text x="615" y="118" fill="#94a3b8" text-anchor="middle">quloq logarifmik</text>
+    <text x="615" y="133" fill="#fbbf24" text-anchor="middle">1e-10 himoyasi</text>
+
+    <rect x="680" y="76" width="118" height="62" rx="10" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+    <text x="739" y="98" fill="#bbf7d0" font-size="12.5" font-weight="700" text-anchor="middle">⑥ DCT</text>
+    <text x="739" y="116" fill="#86efac" text-anchor="middle">dekorrelyatsiya</text>
+    <text x="739" y="131" fill="#f87171" text-anchor="middle">KURSDA YO'Q</text>
+
+    <rect x="814" y="76" width="106" height="62" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+    <text x="867" y="98" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">MFCC</text>
+    <text x="867" y="118" fill="#7dd3fc" text-anchor="middle">13 koeffitsient</text>
+    <text x="867" y="133" fill="#fbbf24" text-anchor="middle">+ delta + delta²</text>
+  </g>
+  <g stroke="#38bdf8" stroke-width="2" marker-end="url(#m1)">
+    <line x1="150" y1="107" x2="160" y2="107"/><line x1="284" y1="107" x2="294" y2="107"/>
+    <line x1="408" y1="107" x2="418" y2="107"/><line x1="552" y1="107" x2="562" y2="107"/>
+    <line x1="666" y1="107" x2="676" y2="107"/><line x1="800" y1="107" x2="810" y2="107"/>
+  </g>
+
+  <!-- Cohen's d -->
+  <rect x="24" y="158" width="440" height="238" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="244" y="182" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">Ovozli ↔ Ovozsiz: qaysi xususiyat ajratadi?</text>
+  <text x="44" y="206" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">xususiyat    Cohen's d</text>
+  <line x1="44" y1="214" x2="444" y2="214" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="234" fill="#4ade80">RMS         1.705</text><rect x="200" y="224" width="238" height="12" rx="2" fill="#4ade80"/>
+    <text x="44" y="256" fill="#86efac">ZCR         0.935</text><rect x="200" y="246" width="130" height="12" rx="2" fill="#4ade80" opacity=".8"/>
+    <text x="44" y="278" fill="#86efac">centroid    0.717</text><rect x="200" y="268" width="100" height="12" rx="2" fill="#4ade80" opacity=".7"/>
+    <text x="44" y="300" fill="#94a3b8">MFCC c1     0.583</text><rect x="200" y="290" width="81" height="12" rx="2" fill="#38bdf8" opacity=".7"/>
+    <text x="44" y="322" fill="#94a3b8">flatness    0.514</text><rect x="200" y="312" width="72" height="12" rx="2" fill="#38bdf8" opacity=".6"/>
+    <text x="44" y="344" fill="#94a3b8">rolloff     0.482</text><rect x="200" y="334" width="67" height="12" rx="2" fill="#38bdf8" opacity=".5"/>
+    <text x="44" y="366" fill="#f87171">delta c1    0.096</text><rect x="200" y="356" width="13" height="12" rx="2" fill="#f87171"/>
+    <text x="44" y="388" fill="#f87171">bandwidth   0.079</text><rect x="200" y="378" width="11" height="12" rx="2" fill="#f87171"/>
+  </g>
+
+  <!-- MFCC variance -->
+  <rect x="480" y="158" width="436" height="238" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="698" y="182" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">Nima uchun aynan 13 koeffitsient?</text>
+  <text x="500" y="206" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">birinchi N ta   dispersiya ulushi</text>
+  <line x1="500" y1="214" x2="896" y2="214" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="500" y="236" fill="#94a3b8"> 1            57.56%</text><rect x="690" y="226" width="115" height="12" rx="2" fill="#38bdf8" opacity=".6"/>
+    <text x="500" y="260" fill="#94a3b8"> 5            83.15%</text><rect x="690" y="250" width="166" height="12" rx="2" fill="#38bdf8" opacity=".7"/>
+    <text x="500" y="284" fill="#4ade80">13            89.40%</text><rect x="690" y="274" width="179" height="12" rx="2" fill="#4ade80"/>
+    <text x="500" y="308" fill="#94a3b8">20            92.98%</text><rect x="690" y="298" width="186" height="12" rx="2" fill="#38bdf8" opacity=".5"/>
+    <text x="500" y="332" fill="#94a3b8">40           100.00%</text><rect x="690" y="322" width="200" height="12" rx="2" fill="#38bdf8" opacity=".4"/>
+  </g>
+  <text x="500" y="360" fill="#fbbf24" font-size="11.5" font-weight="700">13 -&gt; 40: atigi +10.6%, lekin o'lcham 3x oshadi</text>
+  <text x="500" y="380" fill="#4ade80" font-size="11.5" font-weight="700">"13" — tasodifiy son emas, dispersiya tahlili</text>
+
+  <!-- windows -->
+  <rect x="24" y="412" width="892" height="208" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="470" y="436" fill="#fecaca" font-size="15" font-weight="700" text-anchor="middle">Oyna funksiyalari — kursda YO'Q, lekin HAL QILUVCHI</text>
+  <text x="44" y="462" fill="#fca5a5" font-size="12" font-family="Consolas, monospace">1000.0 Hz (bin 32.000 — AYNAN markazda)      1015.6 Hz (bin 32.499 — HAQIQIY holat)</text>
+  <line x1="44" y1="470" x2="896" y2="470" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="492" fill="#94a3b8">boxcar    -290.22 dB</text><text x="480" y="492" fill="#f87171">boxcar     -25.06 dB   sizib chiqish JUDA KO'P</text>
+    <text x="44" y="514" fill="#94a3b8">hamming   -292.83 dB</text><text x="480" y="514" fill="#fca5a5">hamming    -44.15 dB</text>
+    <text x="44" y="536" fill="#94a3b8">hann      -293.12 dB</text><text x="480" y="536" fill="#4ade80">hann       -69.65 dB   librosa sukut</text>
+    <text x="44" y="558" fill="#94a3b8">blackman  -294.37 dB</text><text x="480" y="558" fill="#86efac">blackman   -77.78 dB</text>
+    <text x="44" y="580" fill="#94a3b8">flattop   -292.75 dB</text><text x="480" y="580" fill="#86efac">flattop    -89.23 dB   amplituda uchun</text>
+  </g>
+  <text x="44" y="606" fill="#fbbf24" font-size="12" font-weight="700">Chapda oyna FARQ QILMAYDI — signal bin markazida. Haqiqiy signallar esa HECH QACHON markazda emas.</text>
+</svg>
