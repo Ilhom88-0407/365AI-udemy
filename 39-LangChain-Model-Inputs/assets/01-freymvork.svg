@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 450" width="880" height="450" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="450" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">LangChain freymvorki — uchta modul, bitta protokol</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">ishonchlilik baholari 35-modulda muhokama qilingan</text>
+
+  <!-- 1 -->
+  <rect x="26" y="76" width="270" height="230" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="161" y="104" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">① MODEL I/O</text>
+  <text x="161" y="124" fill="#7dd3fc" font-size="11" text-anchor="middle">39–41-modul</text>
+  <g font-size="11.5">
+    <rect x="46" y="138" width="230" height="26" rx="5" fill="#075985"/><text x="60" y="156" fill="#e0f2fe">prompt template</text>
+    <rect x="46" y="170" width="230" height="26" rx="5" fill="#075985"/><text x="60" y="188" fill="#e0f2fe">chat model</text>
+    <rect x="46" y="202" width="230" height="26" rx="5" fill="#075985"/><text x="60" y="220" fill="#e0f2fe">output parser</text>
+    <rect x="46" y="234" width="230" height="26" rx="5" fill="#1e293b" stroke="#334155"/><text x="60" y="252" fill="#64748b">example selector</text>
+  </g>
+  <rect x="46" y="268" width="230" height="26" rx="5" fill="#14532d" stroke="#4ade80"/>
+  <text x="161" y="286" fill="#4ade80" font-size="12" text-anchor="middle" font-weight="700">✅ 95% ishonchli</text>
+
+  <!-- 2 -->
+  <rect x="306" y="76" width="270" height="230" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
+  <text x="441" y="104" fill="#ffedd5" font-size="15" font-weight="700" text-anchor="middle">② RETRIEVAL</text>
+  <text x="441" y="124" fill="#fdba74" font-size="11" text-anchor="middle">42-modul (RAG)</text>
+  <g font-size="11.5">
+    <rect x="326" y="138" width="230" height="26" rx="5" fill="#9a3412"/><text x="340" y="156" fill="#ffedd5">document loader</text>
+    <rect x="326" y="170" width="230" height="26" rx="5" fill="#9a3412"/><text x="340" y="188" fill="#ffedd5">text splitter</text>
+    <rect x="326" y="202" width="230" height="26" rx="5" fill="#9a3412"/><text x="340" y="220" fill="#ffedd5">embedding + vector store</text>
+    <rect x="326" y="234" width="230" height="26" rx="5" fill="#9a3412"/><text x="340" y="252" fill="#ffedd5">retriever</text>
+  </g>
+  <rect x="326" y="268" width="230" height="26" rx="5" fill="#422006" stroke="#fbbf24"/>
+  <text x="441" y="286" fill="#fbbf24" font-size="12" text-anchor="middle" font-weight="700">⚠️ 75% — qidiruv xato qiladi</text>
+
+  <!-- 3 -->
+  <rect x="586" y="76" width="268" height="230" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="720" y="104" fill="#fecaca" font-size="15" font-weight="700" text-anchor="middle">③ AGENT TOOLING</text>
+  <text x="720" y="124" fill="#fca5a5" font-size="11" text-anchor="middle">LangGraph (43–47-modul)</text>
+  <g font-size="11.5">
+    <rect x="606" y="138" width="228" height="26" rx="5" fill="#7f1d1d"/><text x="620" y="156" fill="#fecaca">tools</text>
+    <rect x="606" y="170" width="228" height="26" rx="5" fill="#7f1d1d"/><text x="620" y="188" fill="#fecaca">agent</text>
+    <rect x="606" y="202" width="228" height="26" rx="5" fill="#1e293b" stroke="#334155"/><text x="620" y="220" fill="#64748b">toolkit</text>
+  </g>
+  <text x="606" y="252" fill="#fca5a5" font-size="10.5">⚠️ AgentExecutor YO'Q → create_agent</text>
+  <rect x="606" y="268" width="228" height="26" rx="5" fill="#7f1d1d" stroke="#f87171"/>
+  <text x="720" y="286" fill="#f87171" font-size="12" text-anchor="middle" font-weight="700">⚠️ 50% — tajribaviy</text>
+
+  <rect x="26" y="320" width="828" height="52" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="440" y="342" fill="#dcfce7" font-size="15" font-weight="700" text-anchor="middle">⭐ LCEL — hammasini bog'laydigan protokol (41-modul)</text>
+  <text x="440" y="362" fill="#86efac" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">zanjir = prompt | model | parser</text>
+
+  <rect x="26" y="386" width="828" height="48" rx="10" fill="#1e293b" stroke="#facc15" stroke-width="2"/>
+  <text x="440" y="408" fill="#fde68a" font-size="12.5" font-weight="700" text-anchor="middle">🔑 HAR KOMPONENT BIR XIL invoke() INTERFEYSIGA EGA — shuning uchun | bilan ulanadi</text>
+  <text x="440" y="426" fill="#facc15" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">prompt.invoke(dict) → PromptValue → chat.invoke(PromptValue) → AIMessage</text>
+</svg>

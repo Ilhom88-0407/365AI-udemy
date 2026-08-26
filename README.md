@@ -71,7 +71,7 @@
 | 36 | [Tokenlar, modellar, narxlar](36-LangChain-Tokens-Models-Prices/README.md) 💰 | 2 | ✅ Tayyor |
 | 37 | [Muhitni sozlash](37-LangChain-Setting-Up-Environment/README.md) ⚙️ | 3 | ✅ Tayyor |
 | 38 | [OpenAI API](38-LangChain-OpenAI-API/README.md) 🤖 | 4 | ✅ Tayyor |
-| 39 | Model kirishlari | — | ⏳ Navbatda |
+| 39 | [Model kirishlari](39-LangChain-Model-Inputs/README.md) 💬 | 7 | ✅ Tayyor |
 | 40 | Chiqish parserlari | — | ⏳ Navbatda |
 | 41 | LCEL | — | ⏳ Navbatda |
 | 42 | RAG | — | ⏳ Navbatda |
@@ -1048,6 +1048,60 @@
 > Va oqimda **`usage` YO'Q** — `stream_options={"include_usage": True}` **shart**, aks holda **narxni bilmaysiz**.
 >
 > 🇺🇿 **O'zbekcha — halol natija:** `0.5B` modelda **ikkala** sistem prompt tili bilan ham javob **ma'nosiz** chiqdi. Biz o'z *"inglizcha yozing"* tavsiyamizni bu sinov bilan **isbotlay olmadik** — va buni **ochiq aytdik**.
+
+---
+
+## 🧭 Modul 39 — Model kirishlari 💬
+
+**Nimani beradi:** prompt shablonlari, xabar rollari va few-shot — ## **hammasi bugun ham ishlaydi**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [LangChain freymvorki](39-LangChain-Model-Inputs/01-The-LangChain-Framework.md) |
+| 2 | [ChatOpenAI](39-LangChain-Model-Inputs/02-ChatOpenAI.md) ⭐ |
+| 3 | [System va human xabarlar](39-LangChain-Model-Inputs/03-System-and-Human-Messages.md) |
+| 4 | [AI xabarlar](39-LangChain-Model-Inputs/04-AI-Messages.md) ⭐ |
+| 5 | [Prompt shablonlari](39-LangChain-Model-Inputs/05-Prompt-Templates-and-Prompt-Values.md) ⭐ |
+| 6 | [Chat prompt shablonlari](39-LangChain-Model-Inputs/06-Chat-Prompt-Templates.md) ⭐⭐ |
+| 7 | [Few-shot chat shablonlari](39-LangChain-Model-Inputs/07-Few-Shot-Chat-Message-Prompt-Templates.md) ⭐⭐ |
+
+📝 **[34 ta mashq](39-LangChain-Model-Inputs/MASHQLAR.md)** · 🚀 **[4 ta mini-loyiha](39-LangChain-Model-Inputs/LOYIHALAR.md)**
+
+> ## ✅ **AVVAL YAXSHI XABAR — BU MODULNING HAMMA IMPORTI ISHLAYDI** *(langchain-core 1.6.0 da tekshirildi)*. 35-modulda buzilgan `chains` / `memory` / `output_parsers` — bu yerda **ishlatilmaydi**.
+>
+> 💥 **TOPILMA № 1 — `seed` ENDI BEVOSITA PARAMETR:**
+> ```
+> ChatOpenAI(model_kwargs={"seed": 365})
+>   → model_kwargs: {}   seed: 365
+>   → UserWarning: Parameters {'seed'} should be specified explicitly.
+> ```
+> LangChain kursning kodini **avtomatik tuzatadi** va **ogohlantiradi**. To'g'risi: `ChatOpenAI(model=..., seed=365)`.
+>
+> 💥💥 **TOPILMA № 2 — FIGURALI QAVS TUZOG'I** *(kursda umuman yo'q)*:
+> ```python
+> ChatPromptTemplate.from_messages([("human", 'JSON: {"a": 1} va {savol}')])
+>   → input_variables: ['"a"', 'savol']       ← "a" O'ZGARUVCHI deb qabul qilindi!
+>   → KeyError: missing variables {'"a"'}
+> ```
+> Bu **deyarli har loyihada** uchraydi, chunki siz **JSON namunasini** promptga qo'yasiz. Yechim: `{{"a": 1}}`.
+>
+> 💥 **TOPILMA № 3 — ANIQ SISTEM PROMPT BO'LGANDA FEW-SHOT ORTIQCHA:**
+> ```
+> few-shot BILAN (3 misol) : 'positive'
+> few-shot SIZ             : 'positive'      ← BIR XIL!
+> ```
+> **38-modul bilan zid emas, uni to'ldiradi:** u yerda sistem xabari **yo'q** edi va few-shot **shart** bo'lgan. Amaliy qoida — **arzondan qimmatga**: aniq sistem prompt → 2–3 misol → ko'proq misol → fine-tuning.
+>
+> ⭐ **KURSDA YO'Q, LEKIN ZARUR — `MessagesPlaceholder`:**
+> ```python
+> ChatPromptTemplate.from_messages([
+>     ("system", "..."), MessagesPlaceholder("tarix"), ("human", "{savol}")])
+> ```
+> `langchain.memory` olib tashlangandan keyin **xotiraning to'g'ri o'rnini bosuvchisi** aynan shu.
+>
+> ⭐ **SODDA MUQOBIL — KORTEJLAR:** kurs 5 ta sinf import qiladi; `[("system","{d}"), ("human","{q}")]` **aynan bir xil** natija beradi *(biz `==` bilan tekshirdik: `True`)*.
+>
+> 🇺🇿 **O'zbekcha qiymatlar muammosiz**, lekin **o'zgaruvchi nomlarida apostrof ishlatmang**: `{so'rov}` ❌ → `{sorov}` ✅.
 
 ---
 
