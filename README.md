@@ -80,7 +80,11 @@
 | 45 | [Graf komponentlari](45-LangGraph-Graph-Components/README.md) 🧩 | 6 | ✅ Tayyor |
 | 46 | [Xabarlarni boshqarish](46-LangGraph-Message-Management/README.md) 💬 | 6 | ✅ Tayyor |
 | 47 | [Thread-level persistence](47-LangGraph-Thread-Level-Persistence/README.md) 💾 | 4 | ✅ Tayyor |
-| 48 | Vector Databases | — | ⏳ Navbatda |
+| 48 | [Vektor bazalari — kirish](48-Vector-Databases-Introduction/README.md) 🗃️ | 3 | ✅ Tayyor |
+| 49 | [Vektor fazo asoslari](49-Vector-Space-Basics/README.md) 📐 | 3 | ✅ Tayyor |
+| 50 | [Pinecone bilan tanishuv](50-Pinecone-Introduction/README.md) 🌲 | 6 | ✅ Tayyor |
+| 51 | [Semantik qidiruv — amaliy loyiha](51-Semantic-Search-Case-Study/README.md) 🔎 | 11 | ✅ Tayyor |
+| 52 | Speech Recognition | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -1363,6 +1367,64 @@
 
 ---
 
+## 🗃️ Vektor bazalari bo'limi (48–51-modullar)
+
+> ## 🏆 **23 dars · 104 mashq · 12 mini-loyiha.** ## ⭐⭐ **HAMMASI API KALITISIZ** — Pinecone o'rniga mahalliy Chroma, va **ikkala kod ham** ko'rsatiladi.
+
+| Modul | Mavzu | Darslar |
+|---|---|---|
+| [48](48-Vector-Databases-Introduction/README.md) 🗃️ | Nima uchun vektor bazasi · turlari · indekslar | 3 |
+| [49](49-Vector-Space-Basics/README.md) 📐 | Evklid · manhetten · skalyar · ⭐ **kosinus** | 3 |
+| [50](50-Pinecone-Introduction/README.md) 🌲 | Indeks · `upsert` · batch · ⭐ **universal adapter** | 6 |
+| [51](51-Semantic-Search-Case-Study/README.md) 🔎 | ## 🏆 **Haqiqiy 365 katalogi** — 106 kurs, 680 bo'lim | 11 |
+
+> 🔑 **BUTUN BO'LIM BITTA JUMLADA:**
+> ```
+> obyekt  →  vektor  →  baza  →  eng yaqin qo'shnilar  →  ⭐ CHEGARA
+> ```
+> Chegarasiz tizim **hech qachon "topilmadi" demaydi** — u eng yaqin axlatni qaytaradi.
+
+> 🔬 **O'LCHANGAN NATIJALAR** *(haqiqiy 365 ma'lumotida)*:
+> ```
+> chegara            0.3758   (oraliq 0.3136)  →  kursning 0.4 si TASDIQLANDI
+> javob BOR ballar   0.5326 – 0.7941   o'rt 0.6552
+> javob YO'Q ballar  0.1208 – 0.2190   o'rt 0.1757
+> "how to cook pasta" → 0.1743 VA NATIJA QAYTARDI  💥
+> xeshli sinxronlash → 103× tejam · ikkinchi ishga tushirish 0 vektor
+> ```
+>
+> 💥 **MENING TAXMINLARIM — O'LCHOV RAD ETDI:**
+> ```
+> "qisqaroq matn = aniqroq"   →  52% kesilgan 7/8 · 0% kesilgan 6/8
+> "batch 10× tezroq"          →  CPU'da 1.5× · 8 dan keyin foyda YO'Q
+> "bo'lim darajasi aniqroq"   →  7/8 va 7/8 — DURANG (yutuq: granulyarlik)
+> "HNSW 1000× tez"            →  50k vektorda 2× tez, aniqlik 3/10
+> "clustering xatosi model aybi" → sinov to'plami tor edi — MODEL HAQ
+> ```
+>
+> 🇺🇿 **O'ZBEK TILI UCHUN HAL QILUVCHI O'LCHOV:**
+> ```
+> all-MiniLM-L6-v2         UZ 0.2371 / EN 0.6141  →  UZ/EN = 0.39  💥
+> paraphrase-multilingual  UZ 0.5541 / EN 0.6938  →  UZ/EN = 0.80  🏆
+> ```
+> 💥 Birinchi modelda o'zbekcha so'rovlar **chegaradan pastda** qoladi — ya'ni tizim **hammasiga "topilmadi"** deydi.
+> ⚠️ Lekin ko'p tilli modelning kontekst oynasi atigi **128 token** (matnlarning **83%** kesiladi) va normasi **5.083** — normallashtirish **shart**.
+
+> ⭐ **KURSDA YO'Q — LEKIN ISHLAB CHIQARISHDA SHART:**
+> ```
+> ① o'chirish to'plami   →  upsert ARVOH yozuvlarni ko'rmaydi
+> ② xesh sinxronlash     →  103× tejam, cron bilan ishlaydi
+> ③ barqaror ID          →  course_id-section_id (course_name EMAS)
+> ④ metadata'da _model   →  model almashsa jim xato o'rniga OCHIQ xato
+> ⑤ max() bilan guruhlash →  += da 40 bo'limli kurs DOIM yutadi
+> ⑥ topilmadi.log        →  katalogda nima yetishmayotgani — bepul tadqiqot
+> ⑦ gibrid qidiruv (RRF) →  "SQLAlchemy" + ma'no savollari — ikkalasi ham
+> ```
+
+> 🏆 **48–51 + 42 = TO'LIQ RAG QUVURI.** 42-modul generatsiyani, bu bo'lim esa **uning ostidagi qidiruvni** beradi.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -1513,7 +1575,7 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 **"Intro to AI" bo'limi to'liq tugallandi** (01–09 modullar, 41 dars).
 **Python bo'limi to'liq tugallandi** (10–19-modullar, 53 dars).
 
-**NLP bo'limi boshlandi.** Manba kursda keyingi bo'limlar: **NLP** (21–28 qoldi), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
+**NLP bo'limi boshlandi.** Manba kursda keyingi bo'limlar: **NLP** (21–28 qoldi), **LLM** (29–34), **LangChain** (35–42), **LangGraph** (43–47), **Vector Databases** (48–51 ✅), **Speech Recognition** (52–61), **LLM Engineering** (62–67), **AI Ethics** (68–76).
 
 ---
 

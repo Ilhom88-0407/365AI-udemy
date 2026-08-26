@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 620" width="940" height="620" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4ade80"/></marker>
+  </defs>
+  <rect width="940" height="620" fill="#0f172a" rx="14"/>
+  <text x="470" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Semantik qidiruv quvuri — 365 katalogi (106 kurs · 680 bo'lim)</text>
+  <text x="470" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">hammasi HAQIQIY ma'lumotda o'lchangan · all-MiniLM-L6-v2 · 384 o'lcham</text>
+
+  <!-- pipeline -->
+  <rect x="24" y="74" width="168" height="86" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="108" y="98" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">① CSV</text>
+  <text x="108" y="118" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">cp1252 · 3848 \r</text>
+  <text x="108" y="136" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">680 x 11</text>
+  <text x="108" y="153" fill="#fbbf24" font-size="10.5" text-anchor="middle">tozala() BIRINCHI</text>
+
+  <rect x="212" y="74" width="168" height="86" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="296" y="98" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">② Matn</text>
+  <text x="296" y="118" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">name+tech+desc</text>
+  <text x="296" y="136" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">+section</text>
+  <text x="296" y="153" fill="#f87171" font-size="10.5" text-anchor="middle">52% kesiladi (313 tok)</text>
+
+  <rect x="400" y="74" width="168" height="86" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="484" y="98" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">③ Embedding</text>
+  <text x="484" y="118" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">batch_size=32</text>
+  <text x="484" y="136" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">680 vektor / 6.0s</text>
+  <text x="484" y="153" fill="#fbbf24" font-size="10.5" text-anchor="middle">norma 1.0000</text>
+
+  <rect x="588" y="74" width="164" height="86" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="670" y="98" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">④ Baza</text>
+  <text x="670" y="118" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">id = 37-369</text>
+  <text x="670" y="136" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">680/680 noyob</text>
+  <text x="670" y="153" fill="#fbbf24" font-size="10.5" text-anchor="middle">metadata: _model</text>
+
+  <rect x="772" y="74" width="144" height="86" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="844" y="98" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">⑤ Qidiruv</text>
+  <text x="844" y="118" fill="#94a3b8" font-size="11" text-anchor="middle" font-family="Consolas, monospace">top_k=12</text>
+  <text x="844" y="136" fill="#4ade80" font-size="11" text-anchor="middle" font-family="Consolas, monospace">chegara 0.3758</text>
+  <text x="844" y="153" fill="#fbbf24" font-size="10.5" text-anchor="middle">kursga guruhla</text>
+
+  <line x1="192" y1="117" x2="208" y2="117" stroke="#38bdf8" stroke-width="2" marker-end="url(#a1)"/>
+  <line x1="380" y1="117" x2="396" y2="117" stroke="#38bdf8" stroke-width="2" marker-end="url(#a1)"/>
+  <line x1="568" y1="117" x2="584" y2="117" stroke="#38bdf8" stroke-width="2" marker-end="url(#a1)"/>
+  <line x1="752" y1="117" x2="768" y2="117" stroke="#38bdf8" stroke-width="2" marker-end="url(#a1)"/>
+
+  <!-- threshold -->
+  <rect x="24" y="180" width="892" height="146" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="470" y="204" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">CHEGARA — "javob yo'q" deyishning yagona yo'li</text>
+
+  <line x1="70" y1="292" x2="880" y2="292" stroke="#475569" stroke-width="2"/>
+  <text x="70" y="312" fill="#64748b" font-size="11" font-family="Consolas, monospace">0.0</text>
+  <text x="874" y="312" fill="#64748b" font-size="11" font-family="Consolas, monospace">1.0</text>
+
+  <rect x="168" y="272" width="80" height="20" rx="4" fill="#7f1d1d" stroke="#f87171" stroke-width="1.5"/>
+  <text x="208" y="266" fill="#fca5a5" font-size="11" text-anchor="middle" font-family="Consolas, monospace">javob YO'Q</text>
+  <text x="208" y="286" fill="#fecaca" font-size="10" text-anchor="middle" font-family="Consolas, monospace">0.12-0.22</text>
+
+  <rect x="502" y="272" width="212" height="20" rx="4" fill="#14532d" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="608" y="266" fill="#86efac" font-size="11" text-anchor="middle" font-family="Consolas, monospace">javob BOR</text>
+  <text x="608" y="286" fill="#bbf7d0" font-size="10" text-anchor="middle" font-family="Consolas, monospace">0.53-0.79</text>
+
+  <line x1="375" y1="238" x2="375" y2="306" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="5 4"/>
+  <text x="375" y="232" fill="#fbbf24" font-size="12.5" font-weight="700" text-anchor="middle">CHEGARA 0.3758</text>
+  <text x="375" y="322" fill="#fbbf24" font-size="10.5" text-anchor="middle">oraliq 0.3136 — kursning 0.4 si TASDIQLANDI</text>
+
+  <text x="760" y="240" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">"how to cook pasta"</text>
+  <text x="760" y="256" fill="#f87171" font-size="11" font-family="Consolas, monospace">-&gt; 0.1743 va NATIJA QAYTARDI</text>
+
+  <!-- measured findings -->
+  <rect x="24" y="342" width="440" height="254" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="244" y="366" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">✅ TASDIQLANGAN (kurs to'g'ri aytgan)</text>
+  <text x="44" y="392" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">chegara 0.4          -&gt; o'lchandi 0.3758  ✅</text>
+  <text x="44" y="414" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">og'irlik foyda bermaydi -&gt; 8 tajriba, hammasi 7/8</text>
+  <text x="44" y="436" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">jumla tuzish         -&gt; model tabiiy matnni afzal</text>
+  <text x="44" y="458" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">upsert = insert+update -&gt; to'g'ri</text>
+  <text x="44" y="486" fill="#fbbf24" font-size="12.5" font-weight="700">⭐ KURSDA YO'Q — LEKIN SHART</text>
+  <text x="44" y="510" fill="#fde68a" font-size="11.5" font-family="Consolas, monospace">o'chirish to'plami   -&gt; arvoh yozuvlar</text>
+  <text x="44" y="532" fill="#fde68a" font-size="11.5" font-family="Consolas, monospace">xesh sinxronlash     -&gt; 103x tejam</text>
+  <text x="44" y="554" fill="#fde68a" font-size="11.5" font-family="Consolas, monospace">barqaror ID          -&gt; course_id-section_id</text>
+  <text x="44" y="576" fill="#fde68a" font-size="11.5" font-family="Consolas, monospace">metadata _model      -&gt; jim xatoni ochadi</text>
+
+  <rect x="480" y="342" width="436" height="254" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="698" y="366" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">💥 MENING TAXMINLARIM — O'LCHOV RAD ETDI</text>
+  <text x="500" y="392" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">"qisqaroq matn = aniqroq"</text>
+  <text x="512" y="410" fill="#f87171" font-size="11" font-family="Consolas, monospace">52% kesilgan 7/8  ·  0% kesilgan 6/8</text>
+  <text x="500" y="436" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">"batch = 10x tezroq"</text>
+  <text x="512" y="454" fill="#f87171" font-size="11" font-family="Consolas, monospace">CPU'da 1.5x · 8 dan keyin foyda YO'Q</text>
+  <text x="500" y="480" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">"bo'lim darajasi aniqroq"</text>
+  <text x="512" y="498" fill="#f87171" font-size="11" font-family="Consolas, monospace">kurs 7/8  ·  bo'lim 7/8  -&gt; DURANG</text>
+  <text x="500" y="524" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">"clustering xatosi = model aybi"</text>
+  <text x="512" y="542" fill="#f87171" font-size="11" font-family="Consolas, monospace">sinov to'plami tor edi — model haq</text>
+  <text x="500" y="572" fill="#fbbf24" font-size="12" font-weight="700">🇺🇿 all-MiniLM UZ/EN = 0.39 · ko'p tilli 0.80</text>
+</svg>
