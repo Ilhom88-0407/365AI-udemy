@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="o1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="880" height="480" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Chiqish parserlari — ishonchlilik darajasi bo'yicha</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">pastdan yuqoriga: ishonchlilik oshadi</text>
+
+  <!-- level 4 best -->
+  <rect x="26" y="76" width="828" height="76" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="48" y="102" fill="#bbf7d0" font-size="15" font-weight="700">🏆 with_structured_output(PydanticModel)</text>
+  <text x="48" y="124" fill="#86efac" font-size="12" font-family="Consolas, monospace">strukturali = chat.with_structured_output(Hayvon)</text>
+  <text x="48" y="142" fill="#4ade80" font-size="11.5">✅ PROVAYDER sxemani KAFOLATLAYDI · ⚠️ faqat yangi modellarda (gpt-4o-mini+)</text>
+
+  <!-- level 3 -->
+  <rect x="26" y="162" width="828" height="76" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="48" y="188" fill="#bae6fd" font-size="15" font-weight="700">⭐ PydanticOutputParser</text>
+  <text x="48" y="210" fill="#7dd3fc" font-size="12" font-family="Consolas, monospace">class Hayvon(BaseModel): ism: str; yosh: int</text>
+  <text x="48" y="228" fill="#7dd3fc" font-size="11.5">✅ TUR + MAJBURIY maydon tekshiruvi · ⚠️ model format buzsa — xato (lekin KO'RINADI)</text>
+
+  <!-- level 2 -->
+  <rect x="26" y="248" width="404" height="98" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
+  <text x="48" y="274" fill="#ffedd5" font-size="14" font-weight="700">JsonOutputParser</text>
+  <text x="48" y="296" fill="#fdba74" font-size="11.5">✅ ```json fence'ni TOZALAYDI</text>
+  <text x="48" y="314" fill="#fca5a5" font-size="11.5">❌ muqaddima → xato</text>
+  <text x="48" y="332" fill="#fca5a5" font-size="11.5">❌ ortiqcha vergul → xato</text>
+
+  <rect x="450" y="248" width="404" height="98" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
+  <text x="472" y="274" fill="#ffedd5" font-size="14" font-weight="700">DatetimeOutputParser</text>
+  <text x="472" y="296" fill="#fdba74" font-size="11.5">✅ XATO BERADI (jim ishlamaydi)</text>
+  <text x="472" y="314" fill="#fca5a5" font-size="11.5">💥 '1905-12-16' ham RAD ETILADI</text>
+  <text x="472" y="332" fill="#fbbf24" font-size="11.5">⚠️ langchain_classic da (modul ko'chgan)</text>
+
+  <!-- level 1 worst -->
+  <rect x="26" y="356" width="828" height="92" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="48" y="382" fill="#fecaca" font-size="15" font-weight="700">💥 CommaSeparatedListOutputParser — ENG XAVFLISI</text>
+  <text x="48" y="404" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">'Here are some names: a, b.'  →  ['Here are some names: a', 'b.']</text>
+  <text x="48" y="422" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">'a, b, and c'                 →  ['a', 'b', 'and c']</text>
+  <text x="48" y="440" fill="#f87171" font-size="12" font-weight="700">💥 XATO BERMAYDI — jim noto'g'ri natija qaytaradi</text>
+
+  <text x="440" y="470" fill="#facc15" font-size="12.5" font-weight="700" text-anchor="middle">🔑 QOIDA: xato BERADIGAN parser — xato BERMAYDIGANIDAN yaxshiroq</text>
+</svg>

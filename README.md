@@ -72,7 +72,7 @@
 | 37 | [Muhitni sozlash](37-LangChain-Setting-Up-Environment/README.md) ⚙️ | 3 | ✅ Tayyor |
 | 38 | [OpenAI API](38-LangChain-OpenAI-API/README.md) 🤖 | 4 | ✅ Tayyor |
 | 39 | [Model kirishlari](39-LangChain-Model-Inputs/README.md) 💬 | 7 | ✅ Tayyor |
-| 40 | Chiqish parserlari | — | ⏳ Navbatda |
+| 40 | [Chiqish parserlari](40-LangChain-Output-Parsers/README.md) 🔄 | 3 | ✅ Tayyor |
 | 41 | LCEL | — | ⏳ Navbatda |
 | 42 | RAG | — | ⏳ Navbatda |
 
@@ -1102,6 +1102,60 @@
 > ⭐ **SODDA MUQOBIL — KORTEJLAR:** kurs 5 ta sinf import qiladi; `[("system","{d}"), ("human","{q}")]` **aynan bir xil** natija beradi *(biz `==` bilan tekshirdik: `True`)*.
 >
 > 🇺🇿 **O'zbekcha qiymatlar muammosiz**, lekin **o'zgaruvchi nomlarida apostrof ishlatmang**: `{so'rov}` ❌ → `{sorov}` ✅.
+
+---
+
+## 🧭 Modul 40 — Chiqish parserlari 🔄
+
+**Nimani beradi:** LLM **matn** qaytaradi, dasturingiz **struktura** kutadi. Bu — o'sha ko'prik, va u yerda ## **eng xavfli turdagi xato** yashiringan.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [String output parser](40-LangChain-Output-Parsers/01-String-Output-Parser.md) |
+| 2 | [Ro'yxat parseri](40-LangChain-Output-Parsers/02-Comma-Separated-List-Output-Parser.md) ⭐⭐ |
+| 3 | [Datetime parser va zamonaviy muqobillar](40-LangChain-Output-Parsers/03-Datetime-Output-Parser.md) ⭐⭐ |
+
+📝 **[26 ta mashq](40-LangChain-Output-Parsers/MASHQLAR.md)** · 🚀 **[3 ta mini-loyiha](40-LangChain-Output-Parsers/LOYIHALAR.md)**
+
+> ## 💥💥 **ENG MUHIM TOPILMA — PARSER JIM NOTO'G'RI NATIJA QAYTARADI.**
+>
+> Kurs `CommaSeparatedListOutputParser` ning **muvaffaqiyatli** holatini ko'rsatadi. Biz beshta kirishda sinadik:
+> ```
+> 'a, b, c'                            → ['a', 'b', 'c']                       ✅
+> '1. Bark Twain
+2. Sir Waggington'   → ['1. Bark Twain', '2. Sir Waggington'] ❌
+> 'Here are some names: a, b.'         → ['Here are some names: a', 'b.']       ❌
+> 'a, b, and c'                        → ['a', 'b', 'and c']                   ❌
+> ```
+> 💥 **U shunchaki vergul bo'yicha bo'ladi — VA XATO BERMAYDI.**
+>
+> 🔑 **BUTUN MODULNING SABOG'I:**
+> ```
+> XATO BERADIGAN parser  →  siz BILASIZ      ✅ arzon
+> XATO BERMAYDIGANI      →  siz BILMAYSIZ    💥 qimmat
+> ```
+>
+> 💥 **TOPILMA № 2 — kursning importi ishlamaydi:**
+> ```
+> YO'Q langchain.output_parsers
+> OK   langchain_classic.output_parsers.DatetimeOutputParser
+> ```
+> Va `DatetimeOutputParser` **juda qattiq**: hattoki `'1905-12-16'` **rad etiladi** — faqat `%Y-%m-%dT%H:%M:%S.%fZ`.
+>
+> ⭐⭐ **KURSDA YO'Q — `PydanticOutputParser`** *(uchta narsani birdaniga qiladi)*:
+> ```
+> ① modelga SXEMANI aytadi   ② JSON parse qiladi   ③ ⭐ TUR va MAJBURIY maydonni TEKSHIRADI
+> ```
+> Va `Literal["karta","depozit","kredit","boshqa"]` — **oq ro'yxatni sxemaga o'rnatadi**.
+>
+> 🏆 **ENG ISHONCHLI YECHIM — PARSER EMAS:**
+> ```python
+> strukturali = chat.with_structured_output(Hayvon)     # PROVAYDER kafolatlaydi
+> ```
+>
+> ⚠ **`StrOutputParser` NIMANI YO'QOTADI:** `finish_reason` *(javob kesilganmi?)* va `usage_metadata` *(narx)*. Metadatani parserdan **oldin** oling.
+>
+> 🇺🇿 **O'zbekcha ro'yxatlarda ikki tuzoq:** `"va"` bog'lovchisi element bo'lib qoladi, va **vergul jumla ichida** bo'lishi mumkin *("Amir Temur maydoni, shahar markazida" → ikkita element!)*. Yechim — vergul o'rniga `' | '`.
 
 ---
 
