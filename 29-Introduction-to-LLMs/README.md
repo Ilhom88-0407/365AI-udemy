@@ -199,8 +199,8 @@ Vazifangiz INGLIZ tilidami?
 
 ## ➡️ Keyingi qadam
 
-**30-modul — Transformer arxitekturasi**: bu modulda faqat **nomini eshitgan** transformerni endi **ichidan** ko'ramiz. Nima uchun `"The food was not good"` ni to'g'ri tushunadi, `CountVectorizer` esa yo'q — javob **shu yerda**.
+**[30-modul — Transformer arxitekturasi](../30-Transformer-Architecture/README.md)**: bu modulda faqat **nomini eshitgan** transformerni endi **ichidan** ko'ramiz. Nima uchun `"The food was not good"` ni to'g'ri tushunadi, `CountVectorizer` esa yo'q — javob **shu yerda**.
 
 ---
 
-⬅️ [28-modul — NLP kelajagi](../28-Future-of-NLP/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ **30-modul**
+⬅️ [28-modul — NLP kelajagi](../28-Future-of-NLP/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [30-modul](../30-Transformer-Architecture/README.md)

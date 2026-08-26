@@ -398,4 +398,4 @@ SIZ ALLAQACHON BOSHQA YO'L BILAN QILGANSIZ
 
 ---
 
-⬅️ [Oldingi: Oldindan o'qitish va sozlash](06-Pre-training-and-Fine-tuning.md) · 🏠 [Modul boshiga](README.md) · ➡️ **30-modul: Transformer arxitekturasi**
+⬅️ [Oldingi: Oldindan o'qitish va sozlash](06-Pre-training-and-Fine-tuning.md) · 🏠 [Modul boshiga](README.md) · ➡️ [30-modul: Transformer arxitekturasi](../30-Transformer-Architecture/README.md)

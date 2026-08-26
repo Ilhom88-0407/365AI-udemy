@@ -610,4 +610,4 @@ b.hisobot(X_uz, y_uz)
 
 ---
 
-⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ **30-modul: Transformer arxitekturasi**
+⬅️ [Mashqlar](MASHQLAR.md) · 🏠 [Modul boshiga](README.md) · ➡️ [30-modul: Transformer arxitekturasi](../30-Transformer-Architecture/README.md)

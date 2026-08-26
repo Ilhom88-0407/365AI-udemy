@@ -57,7 +57,7 @@
 | № | Modul | Darslar | Holati |
 |---|---|---|---|
 | 29 | [LLM'larga kirish](29-Introduction-to-LLMs/README.md) | 7 | ✅ Tayyor |
-| 30 | Transformer arxitekturasi | — | ⏳ Navbatda |
+| 30 | [Transformer arxitekturasi](30-Transformer-Architecture/README.md) ⚡ | 9 | ✅ Tayyor |
 | 31 | GPT modellari bilan ishlash | — | ⏳ Navbatda |
 | 32 | Hugging Face Transformers | — | ⏳ Navbatda |
 | 33 | BERT bilan savol-javob | — | ⏳ Navbatda |
@@ -557,6 +557,53 @@
 
 ---
 
+## 🧭 Modul 30 — Transformer arxitekturasi ⚡
+
+**Nimani beradi:** LLM'larning **ichini** ochamiz — va ## **har bir nazariy da'vo haqiqiy modelda O'LCHANADI**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Chuqur o'qitishni takrorlash](30-Transformer-Architecture/01-Deep-Learning-Recap.md) |
+| 2 | [RNN muammosi](30-Transformer-Architecture/02-The-Problem-with-RNNs.md) |
+| 3 | [Attention is All You Need](30-Transformer-Architecture/03-Attention-is-All-You-Need.md) |
+| 4 | [Transformer arxitekturasi](30-Transformer-Architecture/04-The-Transformer-Architecture.md) |
+| 5 | [Kirish embeddinglari](30-Transformer-Architecture/05-Input-Embeddings.md) ⭐ |
+| 6 | [Ko'p boshli e'tibor](30-Transformer-Architecture/06-Multi-Headed-Attention.md) ⭐⭐⭐ |
+| 7 | [Feed-forward qatlam](30-Transformer-Architecture/07-Feed-Forward-Layer.md) |
+| 8 | [Niqoblangan e'tibor](30-Transformer-Architecture/08-Masked-Multihead-Attention.md) |
+| 9 | [Yakuniy bashorat](30-Transformer-Architecture/09-Predicting-the-Final-Outputs.md) |
+
+📝 **[44 ta mashq](30-Transformer-Architecture/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](30-Transformer-Architecture/LOYIHALAR.md)**
+
+> 💥 **Modulning bosh natijasi — kontekst so'z ma'nosini QANDAY o'zgartiradi:**
+>
+> ```
+> "very good" dagi "good"   vs   "not good" dagi "good"
+>
+>    qatlam 0:  cos =  1.0000    ← MUTLAQO BIR XIL vektor
+>    qatlam 4:  cos =  0.5182
+>    qatlam 6:  cos = -0.1150    ← DEYARLI QARAMA-QARSHI
+> ```
+>
+> Bir xil so'z, bir xil ID — model `"not"` ni ko'rdi va ma'noni **ag'dardi**.
+> Bu **26-modul** *(`stop_words` 0.869→0.784)* va **29-modul** *("It wasn't terrible" → POSITIVE)* ni bog'laydi.
+>
+> 🎯 **Ikkinchi natija — koreferensiya HAL QILINDI:**
+> ```
+> "The New York Times ... It was first issued in 1851"
+>
+>   RNN'da        :  "Times" xotira kuchi = 0.0138   ❌ unutilgan
+>   72 bosh O'RTACHASI:  it → times = 0.081          ❌ top-5 da yo'q
+>   qatlam 5, BOSH 5 :  it → times = 0.584           ✅ birinchi o'rinda
+> ```
+> ⚠️ **Boshlarni o'rtacha qilmang** — 72 boshning 37 tasi `[SEP]` ga qaraydi *(NO-OP)*.
+>
+> 🧮 **E'tibor formulasi qo'lda hisoblandi:** `72 ta bosh · eng katta farq = 0.0` — bit-darajada bir xil.
+>
+> 🇺🇿 **29-moduldagi 0.500 natijaning SABABI topildi:** muammo e'tiborda emas *(u tildan mustaqil)*, balki **tokenizatsiyada**. `o'zbekiston` → **6 token** *(`uzbekistan` → 1)*, o'rtacha **3.1×**; 512 chegarasida ingliz **433 so'z**, o'zbek atigi **204 so'z**.
+
+---
+
 ## 🎓 Bu darslikdan qanday foydalanish
 
 ### 1. Tartib bilan o'qing
@@ -686,9 +733,12 @@ Agar chiqmasa: [python.org](https://www.python.org/downloads/) dan yuklab oling 
 ├── 28-Future-of-NLP/                           ← 4 dars, 3 SVG  🇺🇿 O'ZBEK NLP
 │   ├── MASHQLAR.md                             ← 42 ta mashq
 │   └── LOYIHALAR.md                            ← 6 ta mini-loyiha (uznlp moduli)
-└── 29-Introduction-to-LLMs/                    ← 7 dars, 5 SVG  🤖 LLM BO'LIMI
-    ├── MASHQLAR.md                             ← 40 ta mashq
-    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (LLM baholash)
+├── 29-Introduction-to-LLMs/                    ← 7 dars, 5 SVG  🤖 LLM BO'LIMI
+│   ├── MASHQLAR.md                             ← 40 ta mashq
+│   └── LOYIHALAR.md                            ← 6 ta mini-loyiha (LLM baholash)
+└── 30-Transformer-Architecture/                ← 9 dars, 8 SVG  ⚡ TRANSFORMER
+    ├── MASHQLAR.md                             ← 44 ta mashq
+    └── LOYIHALAR.md                            ← 6 ta mini-loyiha (e'tibor tahlili)
 ```
 
 ---
