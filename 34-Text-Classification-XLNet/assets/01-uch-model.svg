@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="p1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a5b4fc"/></marker>
+    <marker id="p2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#7dd3fc"/></marker>
+    <marker id="p3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#86efac"/></marker>
+  </defs>
+  <rect width="880" height="440" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Uchta o'qitish vazifasi — bitta jumlada</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">"Mushuk  gilam  ustida  uxlaydi"</text>
+
+  <!-- GPT -->
+  <rect x="26" y="76" width="272" height="330" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="2"/>
+  <text x="162" y="104" fill="#c7d2fe" font-size="16" font-weight="700" text-anchor="middle">GPT (2018)</text>
+  <text x="162" y="124" fill="#a5b4fc" font-size="11.5" text-anchor="middle">avtoregressiv · 117M</text>
+  <rect x="46" y="138" width="232" height="30" rx="6" fill="#312e81"/>
+  <text x="162" y="158" fill="#e0e7ff" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">Mushuk gilam ustida ___</text>
+  <text x="162" y="190" fill="#a5b4fc" font-size="12" text-anchor="middle">bashorat tartibi:</text>
+  <text x="162" y="212" fill="#e0e7ff" font-size="13" text-anchor="middle" font-family="Consolas, monospace">1 → 2 → 3 → 4</text>
+  <path d="M60 232 L110 232" stroke="#a5b4fc" stroke-width="2" marker-end="url(#p1)"/>
+  <path d="M130 232 L180 232" stroke="#a5b4fc" stroke-width="2" marker-end="url(#p1)"/>
+  <path d="M200 232 L250 232" stroke="#a5b4fc" stroke-width="2" marker-end="url(#p1)"/>
+  <text x="162" y="260" fill="#a5b4fc" font-size="11.5" text-anchor="middle">HAR DOIM bitta tartib</text>
+  <rect x="46" y="276" width="232" height="112" rx="8" fill="#0f172a" stroke="#4c1d95"/>
+  <text x="60" y="298" fill="#e0e7ff" font-size="11.5">✅ matn YOZADI</text>
+  <text x="60" y="320" fill="#e0e7ff" font-size="11.5">✅ [MASK] tokeni YO'Q</text>
+  <text x="60" y="346" fill="#fca5a5" font-size="11.5">❌ o'ngni KO'RMAYDI</text>
+  <text x="60" y="368" fill="#fca5a5" font-size="11.5">❌ bir tomonlama</text>
+
+  <!-- BERT -->
+  <rect x="304" y="76" width="272" height="330" rx="12" fill="#083344" stroke="#38bdf8" stroke-width="2"/>
+  <text x="440" y="104" fill="#bae6fd" font-size="16" font-weight="700" text-anchor="middle">BERT (2018)</text>
+  <text x="440" y="124" fill="#7dd3fc" font-size="11.5" text-anchor="middle">avtokodlovchi · 110M</text>
+  <rect x="324" y="138" width="232" height="30" rx="6" fill="#0c4a6e"/>
+  <text x="440" y="158" fill="#e0f2fe" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">Mushuk [MASK] ustida uxlaydi</text>
+  <text x="440" y="190" fill="#7dd3fc" font-size="12" text-anchor="middle">maskani tiklaydi:</text>
+  <text x="440" y="212" fill="#e0f2fe" font-size="13" text-anchor="middle" font-family="Consolas, monospace">1 ← [?] → 3, 4</text>
+  <path d="M400 232 L350 232" stroke="#7dd3fc" stroke-width="2" marker-end="url(#p2)"/>
+  <path d="M480 232 L530 232" stroke="#7dd3fc" stroke-width="2" marker-end="url(#p2)"/>
+  <text x="440" y="260" fill="#7dd3fc" font-size="11.5" text-anchor="middle">ikki tomonga qaraydi</text>
+  <rect x="324" y="276" width="232" height="112" rx="8" fill="#0f172a" stroke="#155e75"/>
+  <text x="338" y="298" fill="#e0f2fe" font-size="11.5">✅ ikki tomonlama</text>
+  <text x="338" y="320" fill="#e0f2fe" font-size="11.5">✅ tushunish vazifalari</text>
+  <text x="338" y="346" fill="#fca5a5" font-size="11.5">❌ [MASK] SUN'IY</text>
+  <text x="338" y="368" fill="#fca5a5" font-size="11.5">❌ mustaqillik farazi</text>
+
+  <!-- XLNet -->
+  <rect x="582" y="76" width="272" height="330" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="718" y="104" fill="#bbf7d0" font-size="16" font-weight="700" text-anchor="middle">XLNet (2019)</text>
+  <text x="718" y="124" fill="#86efac" font-size="11.5" text-anchor="middle">permutatsiya · 110M</text>
+  <rect x="602" y="138" width="232" height="30" rx="6" fill="#14532d"/>
+  <text x="718" y="158" fill="#dcfce7" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">Mushuk gilam ustida uxlaydi</text>
+  <text x="718" y="190" fill="#86efac" font-size="12" text-anchor="middle">tartib HAR SAFAR boshqa:</text>
+  <text x="718" y="210" fill="#dcfce7" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">4 → 1 → 3 → 2</text>
+  <text x="718" y="228" fill="#dcfce7" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">2 → 4 → 3 → 1</text>
+  <path d="M640 244 L690 244" stroke="#86efac" stroke-width="2" marker-end="url(#p3)"/>
+  <path d="M790 244 L740 244" stroke="#86efac" stroke-width="2" marker-end="url(#p3)"/>
+  <text x="718" y="266" fill="#86efac" font-size="11.5" text-anchor="middle">so'zlar JOYIDA — tartib o'zgaradi</text>
+  <rect x="602" y="276" width="232" height="112" rx="8" fill="#0f172a" stroke="#166534"/>
+  <text x="616" y="298" fill="#dcfce7" font-size="11.5">✅ ikki tomonlama</text>
+  <text x="616" y="320" fill="#dcfce7" font-size="11.5">✅ [MASK] tokeni YO'Q</text>
+  <text x="616" y="342" fill="#dcfce7" font-size="11.5">✅ mustaqillik farazi YO'Q</text>
+  <text x="616" y="368" fill="#fbbf24" font-size="11.5">⚠️ o'qitish QIMMAT</text>
+
+  <text x="440" y="428" fill="#facc15" font-size="12.5" font-weight="700" text-anchor="middle">Bu modulning maqsadi XLNet emas — FINE-TUNING oqimi (u har qanday modelga bir xil)</text>
+</svg>

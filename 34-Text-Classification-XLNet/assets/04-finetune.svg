@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="r1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="880" height="470" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Fine-tuning — eski bosh ketadi, yangisi tug'iladi</text>
+
+  <!-- before -->
+  <rect x="40" y="58" width="360" height="230" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="220" y="84" fill="#cbd5e1" font-size="15" font-weight="700" text-anchor="middle">OLDIN — xlnet-base-cased</text>
+  <rect x="70" y="98" width="300" height="120" rx="8" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="220" y="124" fill="#bbf7d0" font-size="13" font-weight="700" text-anchor="middle">TANA — 12 dekoder qatlami</text>
+  <text x="220" y="146" fill="#86efac" font-size="11.5" text-anchor="middle">permutatsiya bilan o'qitilgan</text>
+  <text x="220" y="166" fill="#86efac" font-size="11.5" text-anchor="middle">TIL bilimi shu yerda</text>
+  <text x="220" y="192" fill="#dcfce7" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">~110 000 000 parametr</text>
+  <text x="220" y="210" fill="#4ade80" font-size="11" text-anchor="middle" font-weight="700">✅ SAQLANADI</text>
+  <rect x="70" y="228" width="300" height="44" rx="8" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
+  <text x="220" y="248" fill="#fecaca" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">lm_loss  (til modeli boshi)</text>
+  <text x="220" y="264" fill="#fca5a5" font-size="11" text-anchor="middle" font-weight="700">❌ UNEXPECTED → TASHLANADI</text>
+
+  <path d="M410 176 L470 176" stroke="#38bdf8" stroke-width="3" marker-end="url(#r1)"/>
+  <text x="440" y="164" fill="#7dd3fc" font-size="11" text-anchor="middle" font-weight="700">num_labels=4</text>
+
+  <!-- after -->
+  <rect x="480" y="58" width="360" height="230" rx="12" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="660" y="84" fill="#cbd5e1" font-size="15" font-weight="700" text-anchor="middle">KEYIN — XLNetForSequenceClassification</text>
+  <rect x="510" y="98" width="300" height="120" rx="8" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="660" y="124" fill="#bbf7d0" font-size="13" font-weight="700" text-anchor="middle">TANA — O'ZGARMAGAN</text>
+  <text x="660" y="146" fill="#86efac" font-size="11.5" text-anchor="middle">o'qitishda SEKIN moslashadi</text>
+  <text x="660" y="192" fill="#dcfce7" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">~110 000 000 parametr</text>
+  <text x="660" y="210" fill="#4ade80" font-size="11" text-anchor="middle" font-weight="700">✅ oldindan o'qitilgan bilim</text>
+  <rect x="510" y="228" width="300" height="44" rx="8" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="660" y="248" fill="#fde68a" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">logits_proj → 4 chiqish</text>
+  <text x="660" y="264" fill="#fbbf24" font-size="11" text-anchor="middle" font-weight="700">⭐ MISSING → TASODIFIY yaratildi</text>
+
+  <path d="M440 296 L440 314" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#r1)"/>
+
+  <rect x="120" y="322" width="640" height="66" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="440" y="344" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">Trainer(model, args, train_dataset, eval_dataset, compute_metrics, processing_class)</text>
+  <text x="440" y="366" fill="#fca5a5" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">⚠️ eval_strategy (evaluation_strategy EMAS) · processing_class (tokenizer EMAS)</text>
+  <text x="440" y="382" fill="#7dd3fc" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">trainer.train()</text>
+
+  <rect x="120" y="400" width="310" height="52" rx="9" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
+  <text x="275" y="420" fill="#fecaca" font-size="12" font-weight="700" text-anchor="middle">KURS RETSEPTI — 100 namuna</text>
+  <text x="275" y="440" fill="#fca5a5" font-size="12" text-anchor="middle" font-family="Consolas, monospace">aniqlik 0.18  &lt;  tasodifiy 0.25 💥</text>
+
+  <rect x="450" y="400" width="310" height="52" rx="9" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="605" y="420" fill="#bbf7d0" font-size="12" font-weight="700" text-anchor="middle">TUZATILGAN — 1200 namuna, len 64</text>
+  <text x="605" y="440" fill="#86efac" font-size="12" text-anchor="middle" font-family="Consolas, monospace">5-darsga qarang</text>
+</svg>

@@ -61,7 +61,7 @@
 | 31 | [GPT modellari bilan ishlash](31-GPT-Models/README.md) 🤖 | 10 | ✅ Tayyor |
 | 32 | [Hugging Face Transformers](32-HuggingFace-Transformers/README.md) 🤗 | 6 | ✅ Tayyor |
 | 33 | [BERT bilan savol-javob](33-BERT-Question-Answering/README.md) 🔍 | 7 | ✅ Tayyor |
-| 34 | XLNet bilan tasniflash | — | ⏳ Navbatda |
+| 34 | [XLNet bilan matn tasnifi](34-Text-Classification-XLNet/README.md) 🎯 | 5 | ✅ Tayyor |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -744,6 +744,69 @@
 > 🤯 **RoBERTa'da parametr KO'P (124.6M vs 109.5M), lekin 2× TEZROQ** (63.2 ms vs 115.6 ms) — chunki farq **lug'at embeddingida**, hisobda emas.
 >
 > 🇺🇿 **O'zbekcha uchun GIBRID tavsiya etiladi:** kontekstni bir marta inglizchaga tarjima qiling → `bert-large-squad` (ishonch 0.90+) → javobni qaytaring. To'g'ridan-to'g'ri `xlm-roberta-squad2` sana va atoqli otda ishlaydi, murakkab savolda **xato qiladi**.
+
+---
+
+## 🧭 Modul 34 — XLNet bilan matn tasnifi 🎯
+
+**Nimani beradi:** ## **O'Z modelingizni yaratish** — kursdagi eng qimmatli mahorat.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [GPT, BERT va XLNet](34-Text-Classification-XLNet/01-GPT-vs-BERT-vs-XLNet.md) |
+| 2 | [Ma'lumotni tayyorlash](34-Text-Classification-XLNet/02-Preprocessing-Our-Data.md) ⭐⭐ |
+| 3 | [XLNet embeddinglari](34-Text-Classification-XLNet/03-XLNet-Embeddings.md) ⭐ |
+| 4 | [XLNet'ni fine-tune qilamiz](34-Text-Classification-XLNet/04-Fine-Tuning-XLNet.md) ⭐⭐⭐ |
+| 5 | [Modelni baholaymiz](34-Text-Classification-XLNet/05-Evaluating-Our-Model.md) ⭐⭐⭐ |
+
+📝 **[40 ta mashq](34-Text-Classification-XLNet/MASHQLAR.md)** · 🚀 **[6 ta mini-loyiha](34-Text-Classification-XLNet/LOYIHALAR.md)**
+
+> ## 💥💥 **MODULNING ENG MUHIM TOPILMASI — KURS RETSEPTI TASODIFDAN YOMONROQ ISHLAYDI.**
+>
+> Kursning aynan sozlamalarini ishga tushirib **o'lchadik**:
+>
+> ```
+> KURS (100 namuna, len 128)          TUZATILGAN (1200 namuna, len 64)
+> ───────────────────────          ────────────────────────────────
+> epoxa 1:  0.2100  loss 1.424        epoxa 1:  0.2900  loss 1.377
+> epoxa 2:  0.1800  loss 1.437        epoxa 2:  0.5475  loss 1.102
+> epoxa 3:  0.1800  loss 1.460        epoxa 3:  0.6450  loss 0.928
+>           ↓            ↑                      ↑            ↓
+>        TUSHDI       O'SDI                  O'SDI       TUSHDI
+>
+> bazaviy chiziq 0.25   →   kurs 0.72×  💥      tuzatilgan 2.58×  ✅
+> ```
+>
+> 🔑 **SABOQ:** `aniqlik ↑ va loss ↓` → model **o'rganmoqda**. `aniqlik ↓ va loss ↑` → model **yomonlashmoqda**. Kurs *"muvaffaqiyatli"* deydi va **raqamni ko'rsatmaydi**.
+>
+> ⚠⚠ **KURSDAN BESHTA FARQ TOPILDI:**
+> ```
+> ① evaluation_strategy → eval_strategy          (TypeError)
+> ② Trainer(tokenizer=) → processing_class=      (TypeError)
+> ③ pandas 3: kursning groupby.apply kodi JIM sinadi — 'label' ustuni yo'qoladi
+> ④ token_type_ids endi qaytarilmaydi (kurs 4-darsning katta qismi shu haqda)
+> ⑤ cleaner() KATTA HARFNI ham o'chiradi — cased model ustunligi yo'qoladi
+> ```
+>
+> 🔬 **CHALKASHLIK MATRITSASI o'rtacha aytmagan narsani ko'rsatdi:**
+> ```
+>          anger  fear  joy  sadness   to'g'ri_%
+> anger       53    10   16       23      52.0  ⚠
+> fear        14    54   12       21      53.5  ⚠
+> joy          6     4   73        6      82.0  ✅
+> sadness     10    11    9       78      72.2  ✅
+> ```
+> 💥 **Model "ijobiy vs salbiy" ni o'rgandi, salbiylarni ajrata olmadi.** `joy` — yagona ijobiy sinf.
+>
+> 🛡 **Ishonch chegarasi ikkala xatoni ushladi:** to'g'ri javoblar **0.73–0.84**, xatolar **0.32–0.42** *(shu jumladan `"The train leaves at 7pm"` — neytral matn 4 sinfdan biriga majburan tiqildi)*.
+>
+> 🇺🇿 **O'zbekcha — halol o'lchandi: 2/4, ya'ni TASODIF.** Sabab tokenizatorda:
+> ```
+> "Bugun juda xursandman"
+>    → ['▁Bug','un','▁','ju','da','▁x','ur','s','and','man']
+>      3 so'z → 10 ta ma'nosiz bo'lak
+> ```
+> ✅ **Yechim — BITTA SATR:** `MODEL = "xlm-roberta-base"`. `Trainer` oqimi **modeldan mustaqil** — mana shu modulning asosiy qiymati.
 
 ---
 

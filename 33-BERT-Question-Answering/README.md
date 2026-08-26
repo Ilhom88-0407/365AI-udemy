@@ -212,7 +212,7 @@ BERT-SQuAD **faqat inglizcha**. Ikkita yo'l bor va **ikkalasi ham** modulda ko'r
 | [30-modul](../30-Transformer-Architecture/README.md) | E'tibor mexanizmi, enkoder ichki tuzilishi |
 | [31-modul](../31-GPT-Models/README.md) | ⚖️ **Generativ** javob vs **kesma** javob |
 | [32-modul](../32-HuggingFace-Transformers/README.md) | `pipeline`, `Auto` sinflari, maxsus tokenlar |
-| [34-modul](../34-Text-Classification-XLNet/README.md) | ➡️ **Keyingi:** XLNet bilan tasnif |
+| [34-modul](../34-Text-Classification-XLNet/README.md) | ➡️ **Keyingi:** XLNet bilan **fine-tuning** |
 
 ---
 

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="420" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">BERT va XLNet — to'ldirish teskari tomonda</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">bir xil matn, ikki xil joylashuv</text>
+
+  <!-- BERT -->
+  <rect x="26" y="74" width="828" height="140" rx="12" fill="#083344" stroke="#38bdf8" stroke-width="2"/>
+  <text x="52" y="100" fill="#bae6fd" font-size="15" font-weight="700">BERT — to'ldirish O'NGGA · [CLS] BOSHIDA</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <rect x="52" y="114" width="66" height="32" rx="5" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/><text x="85" y="135" fill="#fecaca" text-anchor="middle">[CLS]</text>
+    <rect x="124" y="114" width="150" height="32" rx="5" fill="#0c4a6e"/><text x="199" y="135" fill="#e0f2fe" text-anchor="middle">its possible ...</text>
+    <rect x="280" y="114" width="62" height="32" rx="5" fill="#155e75"/><text x="311" y="135" fill="#e0f2fe" text-anchor="middle">[SEP]</text>
+    <rect x="348" y="114" width="500" height="32" rx="5" fill="#1e293b" stroke="#334155"/><text x="598" y="135" fill="#64748b" text-anchor="middle">[PAD] [PAD] [PAD] ... [PAD]</text>
+  </g>
+  <text x="52" y="166" fill="#94a3b8" font-size="11.5">attention_mask:</text>
+  <text x="160" y="166" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">1 1 1 1 1 1 1</text>
+  <text x="348" y="166" fill="#f87171" font-size="11.5" font-family="Consolas, monospace">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</text>
+  <text x="52" y="192" fill="#7dd3fc" font-size="12">tasnif vektori:  <tspan font-family="Consolas, monospace" fill="#fecaca">hidden[0]</tspan>  ← BIRINCHI pozitsiya</text>
+  <text x="600" y="192" fill="#7dd3fc" font-size="12" font-family="Consolas, monospace">pad_token_id = 0</text>
+
+  <!-- XLNet -->
+  <rect x="26" y="230" width="828" height="140" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="52" y="256" fill="#bbf7d0" font-size="15" font-weight="700">XLNet — to'ldirish CHAPGA · &lt;cls&gt; OXIRIDA</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <rect x="52" y="270" width="500" height="32" rx="5" fill="#1e293b" stroke="#334155"/><text x="302" y="291" fill="#64748b" text-anchor="middle">&lt;pad&gt; &lt;pad&gt; &lt;pad&gt; ... &lt;pad&gt;   (98 ta, id = 5)</text>
+    <rect x="558" y="270" width="150" height="32" rx="5" fill="#14532d"/><text x="633" y="291" fill="#dcfce7" text-anchor="middle">its possible ...</text>
+    <rect x="714" y="270" width="62" height="32" rx="5" fill="#166534"/><text x="745" y="291" fill="#dcfce7" text-anchor="middle">&lt;sep&gt;</text>
+    <rect x="782" y="270" width="66" height="32" rx="5" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/><text x="815" y="291" fill="#fecaca" text-anchor="middle">&lt;cls&gt;</text>
+  </g>
+  <text x="52" y="322" fill="#94a3b8" font-size="11.5">attention_mask:</text>
+  <text x="160" y="322" fill="#f87171" font-size="11.5" font-family="Consolas, monospace">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</text>
+  <text x="558" y="322" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">1 1 1 1 1 1 1</text>
+  <text x="52" y="348" fill="#86efac" font-size="12">tasnif vektori:  <tspan font-family="Consolas, monospace" fill="#fecaca">hidden[-1]</tspan>  ← OXIRGI pozitsiya (doim 127)</text>
+  <text x="600" y="348" fill="#86efac" font-size="12" font-family="Consolas, monospace">pad_token_id = 5</text>
+
+  <text x="440" y="400" fill="#facc15" font-size="12.5" font-weight="700" text-anchor="middle">💥 BERT'dan ko'chirilgan input_ids[0] kodi XLNet'da &lt;pad&gt; ni oladi — xato CHIQMAYDI</text>
+</svg>
