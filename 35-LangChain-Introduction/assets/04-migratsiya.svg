@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#facc15"/></marker>
+  </defs>
+  <rect width="880" height="480" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">LangChain 1.0 — kursning qaysi kodi buzildi</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">kurs: langchain 0.1/0.2  ·  bugun: langchain 1.3.17 (o'lchandi)</text>
+
+  <!-- broken -->
+  <rect x="26" y="76" width="400" height="242" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="226" y="102" fill="#fecaca" font-size="15" font-weight="700" text-anchor="middle">❌ MODUL UMUMAN YO'Q</text>
+  <text x="226" y="122" fill="#fca5a5" font-size="11" text-anchor="middle">ModuleNotFoundError — "eskirgan" emas, O'CHIRILGAN</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="50" y="150" fill="#fecaca">langchain.chains</text>
+    <text x="70" y="168" fill="#fca5a5">├─ LLMChain</text>
+    <text x="70" y="184" fill="#fca5a5">├─ ConversationChain</text>
+    <text x="70" y="200" fill="#fca5a5">└─ ConversationalRetrievalChain</text>
+    <text x="50" y="224" fill="#fecaca">langchain.memory</text>
+    <text x="70" y="242" fill="#fca5a5">├─ ConversationBufferMemory</text>
+    <text x="70" y="258" fill="#fca5a5">├─ ConversationBufferWindowMemory</text>
+    <text x="70" y="274" fill="#fca5a5">└─ ConversationSummaryMemory</text>
+    <text x="50" y="298" fill="#fecaca">langchain.output_parsers · langchain.agents.AgentExecutor</text>
+  </g>
+
+  <!-- working -->
+  <rect x="454" y="76" width="400" height="242" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="654" y="102" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">✅ JOYIDA — HECH NARSA BUZILMAGAN</text>
+  <text x="654" y="122" fill="#86efac" font-size="11" text-anchor="middle">kursdagi bu bilim BUGUN HAM to'g'ri</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="478" y="150" fill="#dcfce7">langchain_core.prompts</text>
+    <text x="498" y="168" fill="#86efac">ChatPromptTemplate · PromptTemplate</text>
+    <text x="478" y="192" fill="#dcfce7">langchain_core.runnables</text>
+    <text x="498" y="210" fill="#86efac">RunnablePassthrough · RunnableParallel</text>
+    <text x="478" y="234" fill="#dcfce7">langchain_core.output_parsers</text>
+    <text x="498" y="252" fill="#86efac">StrOutputParser · PydanticOutputParser</text>
+    <text x="478" y="276" fill="#dcfce7">langchain_text_splitters · langchain_chroma</text>
+    <text x="478" y="300" fill="#4ade80" font-weight="700">⭐ LCEL:   prompt | model | parser</text>
+  </g>
+
+  <path d="M226 326 L226 350" stroke="#facc15" stroke-width="2.5" marker-end="url(#m1)"/>
+
+  <!-- two paths -->
+  <rect x="26" y="358" width="400" height="104" rx="10" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="226" y="382" fill="#fde68a" font-size="13.5" font-weight="700" text-anchor="middle">① TEZ YO'L — langchain-classic</text>
+  <text x="226" y="404" fill="#fbbf24" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">pip install langchain-classic  (v1.0.8)</text>
+  <text x="226" y="424" fill="#fde68a" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">from langchain_classic.chains import LLMChain</text>
+  <text x="226" y="448" fill="#fca5a5" font-size="11" text-anchor="middle">⚠️ ARXIV paket — yangi loyihada ISHLATMANG</text>
+
+  <rect x="454" y="358" width="400" height="104" rx="10" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="654" y="382" fill="#dcfce7" font-size="13.5" font-weight="700" text-anchor="middle">② TO'G'RI YO'L — LCEL</text>
+  <text x="654" y="404" fill="#86efac" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">zanjir = prompt | model | parser</text>
+  <text x="654" y="424" fill="#86efac" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">RunnableWithMessageHistory · create_agent</text>
+  <text x="654" y="448" fill="#4ade80" font-size="11" text-anchor="middle" font-weight="700">⭐ 41-modul — kursning eng qimmatli qismi</text>
+</svg>

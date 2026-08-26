@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="440" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">To'rtta komponent — va ularning ISHONCHLILIGI</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">hammasi teng emas — biri sof muhandislik, biri tajribaviy</text>
+
+  <!-- 1 -->
+  <rect x="26" y="76" width="200" height="300" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="126" y="104" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">① MODEL</text>
+  <text x="126" y="124" fill="#7dd3fc" font-size="11" text-anchor="middle">38-modul</text>
+  <rect x="46" y="138" width="160" height="30" rx="6" fill="#075985"/>
+  <text x="126" y="158" fill="#e0f2fe" font-size="11" text-anchor="middle">OpenAI · Claude</text>
+  <rect x="46" y="176" width="160" height="30" rx="6" fill="#075985"/>
+  <text x="126" y="196" fill="#e0f2fe" font-size="11" text-anchor="middle">Gemini · Ollama</text>
+  <text x="126" y="238" fill="#7dd3fc" font-size="11.5" text-anchor="middle">provayderni almashtirish</text>
+  <text x="126" y="256" fill="#7dd3fc" font-size="11.5" text-anchor="middle">= IKKI SATR</text>
+  <rect x="46" y="300" width="160" height="56" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="126" y="322" fill="#4ade80" font-size="18" font-weight="700" text-anchor="middle">✅ 95%</text>
+  <text x="126" y="342" fill="#86efac" font-size="10.5" text-anchor="middle">ishonchli</text>
+
+  <!-- 2 -->
+  <rect x="240" y="76" width="200" height="300" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
+  <text x="340" y="104" fill="#f3e8ff" font-size="15" font-weight="700" text-anchor="middle">② XOTIRA</text>
+  <text x="340" y="124" fill="#d8b4fe" font-size="11" text-anchor="middle">39-modul</text>
+  <rect x="260" y="138" width="160" height="30" rx="6" fill="#6b21a8"/>
+  <text x="340" y="158" fill="#f3e8ff" font-size="11" text-anchor="middle">buffer · window</text>
+  <rect x="260" y="176" width="160" height="30" rx="6" fill="#6b21a8"/>
+  <text x="340" y="196" fill="#f3e8ff" font-size="11" text-anchor="middle">summary · token</text>
+  <text x="340" y="238" fill="#fbbf24" font-size="11.5" text-anchor="middle" font-weight="700">💥 "eslash" = tarixni</text>
+  <text x="340" y="256" fill="#fbbf24" font-size="11.5" text-anchor="middle" font-weight="700">QAYTA YUBORISH</text>
+  <text x="340" y="278" fill="#fca5a5" font-size="11" text-anchor="middle" font-family="Consolas, monospace">narx = O(n²)</text>
+  <rect x="260" y="300" width="160" height="56" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="340" y="322" fill="#4ade80" font-size="18" font-weight="700" text-anchor="middle">✅ 95%</text>
+  <text x="340" y="342" fill="#86efac" font-size="10.5" text-anchor="middle">sof muhandislik</text>
+
+  <!-- 3 -->
+  <rect x="454" y="76" width="200" height="300" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
+  <text x="554" y="104" fill="#ffedd5" font-size="15" font-weight="700" text-anchor="middle">③ MA'LUMOT</text>
+  <text x="554" y="124" fill="#fdba74" font-size="11" text-anchor="middle">42-modul (RAG)</text>
+  <rect x="474" y="138" width="160" height="30" rx="6" fill="#9a3412"/>
+  <text x="554" y="158" fill="#ffedd5" font-size="11" text-anchor="middle">loader → Document</text>
+  <rect x="474" y="176" width="160" height="30" rx="6" fill="#9a3412"/>
+  <text x="554" y="196" fill="#ffedd5" font-size="11" text-anchor="middle">splitter → vektor</text>
+  <text x="554" y="238" fill="#fdba74" font-size="11.5" text-anchor="middle">har format → BITTA</text>
+  <text x="554" y="256" fill="#fdba74" font-size="11.5" text-anchor="middle">Document obyekti</text>
+  <text x="554" y="278" fill="#fca5a5" font-size="10.5" text-anchor="middle">⚠️ PDF eng qiyin format</text>
+  <rect x="474" y="300" width="160" height="56" rx="8" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="554" y="322" fill="#fbbf24" font-size="18" font-weight="700" text-anchor="middle">⚠️ 75%</text>
+  <text x="554" y="342" fill="#fde68a" font-size="10.5" text-anchor="middle">qidiruv xato qilishi mumkin</text>
+
+  <!-- 4 -->
+  <rect x="668" y="76" width="186" height="300" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="761" y="104" fill="#fecaca" font-size="15" font-weight="700" text-anchor="middle">④ VOSITALAR</text>
+  <text x="761" y="124" fill="#fca5a5" font-size="11" text-anchor="middle">agentlar</text>
+  <rect x="688" y="138" width="146" height="30" rx="6" fill="#7f1d1d"/>
+  <text x="761" y="158" fill="#fecaca" font-size="11" text-anchor="middle">qidiruv · Wikipedia</text>
+  <rect x="688" y="176" width="146" height="30" rx="6" fill="#7f1d1d"/>
+  <text x="761" y="196" fill="#fecaca" font-size="11" text-anchor="middle">kalkulyator · kod</text>
+  <text x="761" y="234" fill="#fca5a5" font-size="10.5" text-anchor="middle">❌ noto'g'ri vosita</text>
+  <text x="761" y="252" fill="#fca5a5" font-size="10.5" text-anchor="middle">❌ cheksiz sikl</text>
+  <text x="761" y="270" fill="#fca5a5" font-size="10.5" text-anchor="middle">❌ har qadam = PUL</text>
+  <rect x="688" y="300" width="146" height="56" rx="8" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
+  <text x="761" y="322" fill="#f87171" font-size="18" font-weight="700" text-anchor="middle">⚠️ 50%</text>
+  <text x="761" y="342" fill="#fca5a5" font-size="10.5" text-anchor="middle">tajribaviy</text>
+
+  <text x="440" y="404" fill="#facc15" font-size="12.5" font-weight="700" text-anchor="middle">QOIDA: oqim oldindan MA'LUM bo'lsa — zanjir yozing, agent emas</text>
+  <text x="440" y="426" fill="#94a3b8" font-size="11" text-anchor="middle">agent faqat oqim HAQIQATAN noma'lum bo'lganda — va max_iterations chegarasi bilan</text>
+</svg>

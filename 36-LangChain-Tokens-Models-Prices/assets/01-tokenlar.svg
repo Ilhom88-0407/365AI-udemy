@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="420" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Bir xil so'z — UCHTA turli token</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">BPE'da bo'shliq va katta harf TOKENNING QISMI (o'lchandi: tiktoken cl100k_base)</text>
+
+  <g font-family="Consolas, monospace">
+    <rect x="30" y="76" width="820" height="62" rx="9" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
+    <text x="50" y="100" fill="#dbeafe" font-size="12.5">"What would you like to have for dinner?"</text>
+    <rect x="50" y="108" width="86" height="22" rx="4" fill="#7f1d1d" stroke="#f87171"/>
+    <text x="93" y="124" fill="#fecaca" font-size="11.5" text-anchor="middle">'What'</text>
+    <text x="150" y="124" fill="#93c5fd" font-size="11.5">ID 3923</text>
+    <text x="250" y="124" fill="#dbeafe" font-size="11.5" font-family="Segoe UI">bo'shliq YO'Q + katta harf  →  JUMLA BOSHI</text>
+
+    <rect x="30" y="148" width="820" height="62" rx="9" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
+    <text x="50" y="172" fill="#f3e8ff" font-size="12.5">"I don't mind what we have for dinner."</text>
+    <rect x="50" y="180" width="86" height="22" rx="4" fill="#7f1d1d" stroke="#f87171"/>
+    <text x="93" y="196" fill="#fecaca" font-size="11.5" text-anchor="middle">' what'</text>
+    <text x="150" y="196" fill="#d8b4fe" font-size="11.5">ID 1148</text>
+    <text x="250" y="196" fill="#f3e8ff" font-size="11.5" font-family="Segoe UI">bo'shliq BOR + kichik harf  →  ODDIY SO'Z</text>
+
+    <rect x="30" y="220" width="820" height="62" rx="9" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+    <text x="50" y="244" fill="#dcfce7" font-size="12.5">"Have you listened to What a Wonderful World..."</text>
+    <rect x="50" y="252" width="86" height="22" rx="4" fill="#7f1d1d" stroke="#f87171"/>
+    <text x="93" y="268" fill="#fecaca" font-size="11.5" text-anchor="middle">' What'</text>
+    <text x="150" y="268" fill="#86efac" font-size="11.5">ID 3639</text>
+    <text x="250" y="268" fill="#dcfce7" font-size="11.5" font-family="Segoe UI">bo'shliq BOR + katta harf  →  NOM / SARLAVHA</text>
+  </g>
+
+  <rect x="30" y="296" width="400" height="52" rx="9" fill="#1e293b" stroke="#475569"/>
+  <text x="230" y="318" fill="#cbd5e1" font-size="12.5" font-weight="700" text-anchor="middle">PAST ID = TEZ-TEZ UCHRAYDI</text>
+  <text x="230" y="338" fill="#94a3b8" font-size="12" text-anchor="middle" font-family="Consolas, monospace">'?' → [30]      ✅ o'lchandi</text>
+
+  <rect x="450" y="296" width="400" height="52" rx="9" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="650" y="318" fill="#fde68a" font-size="12.5" font-weight="700" text-anchor="middle">⚠️ PROMPTDA ORTIQCHA BO'SHLIQ QO'YMANG</text>
+  <text x="650" y="338" fill="#fbbf24" font-size="12" text-anchor="middle" font-family="Consolas, monospace">"salom" ≠ " salom"  — turli tokenlar</text>
+
+  <rect x="30" y="360" width="820" height="46" rx="9" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="440" y="380" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">100 TOKEN ≈ ?  — o'lchandi</text>
+  <text x="440" y="399" fill="#7dd3fc" font-size="12" text-anchor="middle" font-family="Consolas, monospace">inglizcha ilmiy: 90 so'z  (kurs: 75, ehtiyotkor)      🇺🇿 o'zbekcha: 48 so'z</text>
+</svg>

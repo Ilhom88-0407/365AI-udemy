@@ -63,6 +63,19 @@
 | 33 | [BERT bilan savol-javob](33-BERT-Question-Answering/README.md) 🔍 | 7 | ✅ Tayyor |
 | 34 | [XLNet bilan matn tasnifi](34-Text-Classification-XLNet/README.md) 🎯 | 5 | ✅ Tayyor |
 
+### 🔗 LangChain bo'limi
+
+| № | Modul | Darslar | Holati |
+|---|---|---|---|
+| 35 | [LangChain'ga kirish](35-LangChain-Introduction/README.md) 🔗 | 4 | ✅ Tayyor |
+| 36 | [Tokenlar, modellar, narxlar](36-LangChain-Tokens-Models-Prices/README.md) 💰 | 2 | ✅ Tayyor |
+| 37 | Muhitni sozlash | — | ⏳ Navbatda |
+| 38 | OpenAI API | — | ⏳ Navbatda |
+| 39 | Model kirishlari | — | ⏳ Navbatda |
+| 40 | Chiqish parserlari | — | ⏳ Navbatda |
+| 41 | LCEL | — | ⏳ Navbatda |
+| 42 | RAG | — | ⏳ Navbatda |
+
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
 ---
@@ -807,6 +820,121 @@
 >      3 so'z → 10 ta ma'nosiz bo'lak
 > ```
 > ✅ **Yechim — BITTA SATR:** `MODEL = "xlm-roberta-base"`. `Trainer` oqimi **modeldan mustaqil** — mana shu modulning asosiy qiymati.
+
+---
+
+## 🧭 Modul 35 — LangChain'ga kirish 🔗
+
+**Nimani beradi:** LangChain nima *(va NIMA EMAS)*, va — eng muhimi — ## **kursning qaysi kodi bugun ISHLAMASLIGI**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Kursga kirish](35-LangChain-Introduction/01-Introduction-to-the-Course.md) |
+| 2 | [Biznes qo'llanmalari](35-LangChain-Introduction/02-Business-Applications.md) ⭐ |
+| 3 | [LangChain'ni nima kuchli qiladi](35-LangChain-Introduction/03-What-Makes-LangChain-Powerful.md) ⭐ |
+| 4 | [Kurs nimalarni qamraydi](35-LangChain-Introduction/04-What-Does-the-Course-Cover.md) ⭐⭐ |
+
+📝 **[34 ta mashq](35-LangChain-Introduction/MASHQLAR.md)** · 🚀 **[5 ta mini-loyiha](35-LangChain-Introduction/LOYIHALAR.md)**
+
+> ## ⚠⚠⚠ **BU MODULNI O'QIMASDAN 36–42-MODULLARGA O'TMANG.**
+>
+> **LangChain 1.0 chiqdi** va kursning ko'p kodi **endi ishlamaydi**. Biz buni **o'lchadik**:
+>
+> ```python
+> for mod in ["langchain.chains", "langchain.memory", "langchain.output_parsers"]:
+>     importlib.import_module(mod)
+> ```
+> ```
+> YO'Q langchain.chains          ← LLMChain, ConversationChain, ...
+> YO'Q langchain.memory          ← ConversationBufferMemory, ...
+> YO'Q langchain.output_parsers  ← DatetimeOutputParser
+> ```
+>
+> 💥 **Bu "eskirgan" emas — MODULLAR BUTUNLAY O'CHIRILGAN** *(langchain 1.3.17 da o'lchandi)*.
+>
+> ✅ **IKKI YECHIM:**
+> ```
+> ① TEZ    →  pip install langchain-classic   (arxiv paket, v1.0.8)
+>              from langchain_classic.chains import LLMChain
+>
+> ② TO'G'RI →  LCEL:  zanjir = prompt | model | parser
+>              ⭐ 41-modul — va bu bilim ESKIRMAGAN
+> ```
+>
+> 💰 **API KALITI BO'LMASA?** Kurs bunga javob bermaydi — biz beramiz:
+> ```
+> ollama pull qwen2.5  +  pip install langchain-ollama
+> model = ChatOllama(model="qwen2.5")
+> ✅ bepul · maxfiy · kurs kodining 95% i O'ZGARISHSIZ ishlaydi
+> ```
+>
+> ⚖️ **TO'RTTA KOMPONENT — ISHONCHLILIGI TENG EMAS:**
+> ```
+> model integratsiyasi  ✅ 95%     xotira  ✅ 95%  (lekin narx O(n²)!)
+> RAG                   ⚠ 75%     agentlar ⚠ 50%  ← tajribaviy
+> ```
+>
+> 🛡 **PII MASKALASHNI YOZDIK VA IKKITA XATO TOPDIK:**
+> ```
+> ① "Alisher Karimov" MASKALANMADI  →  ismlar uchun NER SHART
+> ② INN telefon deb topildi         →  naqshlarni ANIQDAN KENGGA tartiblang
+> ```
+>
+> 🇺🇿 **O'zbekistonda OpenAI API'da ma'lumot AQSh serverlariga chiqadi** — bank/tibbiy loyihada bu ko'pincha **qonuniy muammo**. [5-loyiha](35-LangChain-Introduction/LOYIHALAR.md) har so'rovni avtomatik baholab, **mahalliy** yoki **bulut** modelga yo'naltiradi.
+
+---
+
+## 🧭 Modul 36 — Tokenlar, modellar va narxlar 💰
+
+**Nimani beradi:** LLM narxi qanday hisoblanishi — va ## 🇺🇿 **o'zbekcha necha baravar qimmat**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Tokenlar](36-LangChain-Tokens-Models-Prices/01-Tokens.md) ⭐⭐ |
+| 2 | [Modellar va narxlar](36-LangChain-Tokens-Models-Prices/02-Models-and-Prices.md) ⭐⭐ |
+
+📝 **[30 ta mashq](36-LangChain-Tokens-Models-Prices/MASHQLAR.md)** · 🚀 **[4 ta mini-loyiha](36-LangChain-Tokens-Models-Prices/LOYIHALAR.md)**
+
+> ## 🇺🇿💥 **MODULNING ENG MUHIM TOPILMASI — O'ZBEKCHA USTAMA O'LCHANDI.**
+>
+> ```
+>                 cl100k_base        o200k_base
+>                 (gpt-4)            (gpt-4o oilasi)
+> O'zbekcha       1.88×  (+88%)      1.66×  (+66%)   ⭐
+> ```
+>
+> 🏆 **XULOSA: o'zbekcha loyihada `gpt-4o` oilasini tanlang** — sifatliroq **va** tokenda **12% arzonroq**.
+>
+> 🔬 **UCHTA SABAB (o'lchandi):**
+> ```
+> ① apostrof ALOHIDA token    "sun'iy" → ['sun', "'", 'iy']
+> ② agglutinatsiya            "Toshkentda" → ['T','osh','k','ent','da']
+> ③ lug'atda o'zbekcha YO'Q
+>
+> ⭐ o200k'da 'kent' BUTUN token → ['T','osh','kent','da']  = 4, 5 emas
+> ```
+>
+> 💥 **KONTEKST OYNASI HAM YARIM:**
+> ```
+> 128k token  →  115 200 inglizcha so'z
+>             →   61 211 o'zbekcha so'z      ← IKKI BARAVAR KAM
+> ```
+>
+> ✅ **KURSNING `what` MISOLI TO'LIQ TASDIQLANDI:**
+> ```
+> 'What'  ID 3923   ·  ' what' ID 1148  ·  ' What' ID 3639  ·  '?' ID 30
+> ```
+> Bo'shliq va katta harf — **tokenning qismi**.
+>
+> 📏 **"100 token ≈ 75 so'z" — biz 90 o'lchadik** *(inglizcha ilmiy matn)*. Kurs **ehtiyotkorlik** qilgan, va bu **to'g'ri**.
+>
+> ⚠⚠ **KURS `gpt-4` NI TAVSIYA QILADI — BUGUN BU NOTO'G'RI:**
+> ```
+> gpt-4         →  oyna 8k · sekin · 56× QIMMAT · o'zbekcha uchun yomon tokenizator
+> gpt-4o-mini   →  oyna 128k · tez · $0.15/$0.60 · o200k  ⭐
+> ```
+>
+> 💡 **CHIQISH 3–4× QIMMAT** — shuning uchun `max_tokens` ni **doim** belgilang. **Embedding esa 7.5× arzon**: RAG'da indekslash deyarli **bepul**, xarajat **javob yaratishda**.
 
 ---
 

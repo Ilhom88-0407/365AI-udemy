@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="l1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="880" height="420" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">LangChain — model emas, ADAPTER</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">u hech narsa hisoblamaydi — u bog'laydi</text>
+
+  <rect x="200" y="76" width="480" height="52" rx="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
+  <text x="440" y="100" fill="#dbeafe" font-size="15" font-weight="700" text-anchor="middle">SIZNING ILOVANGIZ</text>
+  <text x="440" y="119" fill="#93c5fd" font-size="11.5" text-anchor="middle">chatbot · savol-javob · xulosalash</text>
+
+  <path d="M440 130 L440 150" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#l1)"/>
+
+  <rect x="60" y="158" width="760" height="96" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="440" y="184" fill="#bae6fd" font-size="17" font-weight="700" text-anchor="middle">🔗 LANGCHAIN</text>
+  <g font-size="11.5">
+    <rect x="86" y="196" width="166" height="42" rx="7" fill="#075985"/>
+    <text x="169" y="214" fill="#e0f2fe" text-anchor="middle" font-weight="700">① MODEL</text>
+    <text x="169" y="230" fill="#7dd3fc" text-anchor="middle">provayder adapteri</text>
+    <rect x="266" y="196" width="166" height="42" rx="7" fill="#075985"/>
+    <text x="349" y="214" fill="#e0f2fe" text-anchor="middle" font-weight="700">② XOTIRA</text>
+    <text x="349" y="230" fill="#7dd3fc" text-anchor="middle">suhbat tarixi</text>
+    <rect x="446" y="196" width="166" height="42" rx="7" fill="#075985"/>
+    <text x="529" y="214" fill="#e0f2fe" text-anchor="middle" font-weight="700">③ MA'LUMOT</text>
+    <text x="529" y="230" fill="#7dd3fc" text-anchor="middle">loader + vektor bazasi</text>
+    <rect x="626" y="196" width="166" height="42" rx="7" fill="#075985"/>
+    <text x="709" y="214" fill="#e0f2fe" text-anchor="middle" font-weight="700">④ VOSITALAR</text>
+    <text x="709" y="230" fill="#7dd3fc" text-anchor="middle">agentlar</text>
+  </g>
+
+  <path d="M440 256 L440 276" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#l1)"/>
+
+  <g font-size="12">
+    <rect x="60" y="284" width="176" height="52" rx="9" fill="#312e81" stroke="#818cf8"/>
+    <text x="148" y="306" fill="#c7d2fe" text-anchor="middle" font-weight="700">OpenAI</text>
+    <text x="148" y="324" fill="#a5b4fc" text-anchor="middle" font-size="11">GPT-4o · 💰 pullik</text>
+
+    <rect x="248" y="284" width="176" height="52" rx="9" fill="#581c87" stroke="#c084fc"/>
+    <text x="336" y="306" fill="#f3e8ff" text-anchor="middle" font-weight="700">Anthropic</text>
+    <text x="336" y="324" fill="#d8b4fe" text-anchor="middle" font-size="11">Claude · 💰 pullik</text>
+
+    <rect x="436" y="284" width="176" height="52" rx="9" fill="#7c2d12" stroke="#fb923c"/>
+    <text x="524" y="306" fill="#ffedd5" text-anchor="middle" font-weight="700">Google</text>
+    <text x="524" y="324" fill="#fdba74" text-anchor="middle" font-size="11">Gemini · bepul kvota</text>
+
+    <rect x="624" y="284" width="196" height="52" rx="9" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+    <text x="722" y="306" fill="#dcfce7" text-anchor="middle" font-weight="700">MAHALLIY (Ollama)</text>
+    <text x="722" y="324" fill="#86efac" text-anchor="middle" font-size="11">⭐ BEPUL · maxfiy</text>
+  </g>
+
+  <rect x="120" y="352" width="640" height="52" rx="9" fill="#1e293b" stroke="#facc15"/>
+  <text x="440" y="373" fill="#fde68a" font-size="12.5" font-weight="700" text-anchor="middle">Provayderni almashtirish = IKKI SATR</text>
+  <text x="440" y="393" fill="#facc15" font-size="12" text-anchor="middle" font-family="Consolas, monospace">import · model = ...    →  zanjir, prompt, RAG BIR XIL qoladi</text>
+</svg>
