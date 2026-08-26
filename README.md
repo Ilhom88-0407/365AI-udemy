@@ -73,7 +73,7 @@
 | 38 | [OpenAI API](38-LangChain-OpenAI-API/README.md) 🤖 | 4 | ✅ Tayyor |
 | 39 | [Model kirishlari](39-LangChain-Model-Inputs/README.md) 💬 | 7 | ✅ Tayyor |
 | 40 | [Chiqish parserlari](40-LangChain-Output-Parsers/README.md) 🔄 | 3 | ✅ Tayyor |
-| 41 | LCEL | — | ⏳ Navbatda |
+| 41 | [LCEL](41-LangChain-LCEL/README.md) ⛓️ | 10 | ✅ Tayyor |
 | 42 | RAG | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
@@ -1156,6 +1156,72 @@
 > ⚠ **`StrOutputParser` NIMANI YO'QOTADI:** `finish_reason` *(javob kesilganmi?)* va `usage_metadata` *(narx)*. Metadatani parserdan **oldin** oling.
 >
 > 🇺🇿 **O'zbekcha ro'yxatlarda ikki tuzoq:** `"va"` bog'lovchisi element bo'lib qoladi, va **vergul jumla ichida** bo'lishi mumkin *("Amir Temur maydoni, shahar markazida" → ikkita element!)*. Yechim — vergul o'rniga `' | '`.
+
+---
+
+## 🧭 Modul 41 — LangChain Expression Language (LCEL) ⛓️
+
+> ## 🏆🏆 **BU — BUTUN LANGCHAIN BO'LIMINING ENG QIMMATLI MODULI.**
+>
+> 35-modulda ko'rgan edik: `chains`, `memory`, `output_parsers` — **hammasi olib tashlangan**. **LCEL esa — joyida.** ## **Bu bilim eskirmadi.**
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Prompt, model, parserni ulash](41-LangChain-LCEL/01-Piping-Prompt-Model-Parser.md) ⭐⭐ |
+| 2 | [Batching](41-LangChain-LCEL/02-Batching.md) ⭐ |
+| 3 | [Streaming](41-LangChain-LCEL/03-Streaming.md) |
+| 4 | [Runnable sinflari](41-LangChain-LCEL/04-Runnable-and-RunnableSequence.md) ⭐⭐ |
+| 5 | [Zanjirlarni ulash · RunnablePassthrough](41-LangChain-LCEL/05-Piping-Chains-RunnablePassthrough.md) ⭐⭐ |
+| 6 | [Grafda ko'rish](41-LangChain-LCEL/06-Graphing-Runnables.md) |
+| 7 | [RunnableParallel](41-LangChain-LCEL/07-RunnableParallel.md) ⭐⭐ |
+| 8 | [RunnableParallel'ni ulash](41-LangChain-LCEL/08-Piping-RunnableParallel.md) ⭐ |
+| 9 | [RunnableLambda](41-LangChain-LCEL/09-RunnableLambda.md) ⭐⭐ |
+| 10 | [`@chain` dekoratori](41-LangChain-LCEL/10-The-Chain-Decorator.md) ⭐ |
+
+📝 **[36 ta mashq](41-LangChain-LCEL/MASHQLAR.md)** · 🚀 **[4 ta mini-loyiha](41-LangChain-LCEL/LOYIHALAR.md)**
+
+> ⭐⭐ **DEYARLI HAMMASI API KALITISIZ** — LCEL `RunnableLambda` bilan **to'liq** o'rganiladi:
+> ```python
+> chain = RunnableLambda(lambda x: sum(x)) | RunnableLambda(lambda x: x ** 2)
+> chain.invoke([1, 2, 5])          # 64
+> ```
+>
+> 🔑 **`|` — SEHR EMAS, `__or__`.** Butun LCEL'ning asosi — **o'n satr**:
+> ```python
+> class MeningRunnable:
+>     def invoke(self, x): return self.f(x)
+>     def __or__(self, b): return MeningRunnable(lambda x: b.invoke(self.invoke(x)))
+> ```
+>
+> 🔬 **O'LCHANGAN NATIJALAR:**
+> ```
+> batch            :  ketma-ket 1.20s  →  batch 0.30s      ⭐ 4× tez
+> RunnableParallel :  3 ta 0.4s shox   →  0.40s            ✅ haqiqatan parallel
+> with_retry       :  muvaffaqiyat (3 urinish)
+> with_fallbacks   :  zaxira javob
+> @chain           :  turi = RunnableLambda
+> ```
+>
+> 💥 **KURSDA YO'Q, LEKIN ISHLAB CHIQARISHDA MAJBURIY:**
+> ```
+> with_retry(stop_after_attempt=3, wait_exponential_jitter=True)
+> with_fallbacks([zaxira_zanjir])
+> batch(..., return_exceptions=True)      ← bitta xato butun batchni buzmasin
+> batch(..., config={"max_concurrency": 5})
+> RunnablePassthrough.assign(...)         ← RAG uchun HAL QILUVCHI
+> astream_events(..., version="v2")       ← zanjir ICHINI ko'rish
+> ```
+>
+> ⚠ **`RunnableParallel` NARXNI OSHIRADI:** `n` shox = `n` chaqiruv = `n×` narx, `1×` vaqt. **Siz pulga vaqt sotib olasiz.**
+>
+> ⚠ **`print_ascii()` uchun `pip install grandalf` kerak** — kursda aytilmagan.
+>
+> 💥💥 **`assign` VS `{"x": Passthrough()}` — RAG UCHUN HAL QILUVCHI FARQ** *(o'lchandi)*:
+> ```
+> lug'at :  {'kontekst': 'hujjat matni'}                        ← savol YO'QOLDI 💥
+> assign :  {'savol': '...', 'til': 'uz', 'kontekst': '...'}    ✅
+> ```
+> Usiz prompt savolni **ko'ra olmaydi** va javob **noto'g'ri** bo'ladi.
 
 ---
 

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="q1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="880" height="440" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">RunnableParallel — vaqtni tejaydi, narxni OSHIRADI</text>
+
+  <rect x="330" y="60" width="220" height="42" rx="9" fill="#1e3a8a" stroke="#60a5fa" stroke-width="2"/>
+  <text x="440" y="86" fill="#dbeafe" font-size="12" text-anchor="middle" font-family="Consolas, monospace">{"language": "Python"}</text>
+
+  <path d="M400 104 L250 132" stroke="#38bdf8" stroke-width="2" marker-end="url(#q1)"/>
+  <path d="M480 104 L630 132" stroke="#38bdf8" stroke-width="2" marker-end="url(#q1)"/>
+
+  <rect x="60" y="140" width="330" height="76" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="225" y="164" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">chain_books</text>
+  <text x="225" y="184" fill="#7dd3fc" font-size="11" text-anchor="middle" font-family="Consolas, monospace">prompt | chat | parser</text>
+  <text x="225" y="204" fill="#4ade80" font-size="11" text-anchor="middle">⏱ 0.4s   💰 1 chaqiruv</text>
+
+  <rect x="490" y="140" width="330" height="76" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="655" y="164" fill="#bae6fd" font-size="13" font-weight="700" text-anchor="middle">chain_projects</text>
+  <text x="655" y="184" fill="#7dd3fc" font-size="11" text-anchor="middle" font-family="Consolas, monospace">prompt | chat | parser</text>
+  <text x="655" y="204" fill="#4ade80" font-size="11" text-anchor="middle">⏱ 0.4s   💰 1 chaqiruv</text>
+
+  <path d="M250 220 L400 248" stroke="#38bdf8" stroke-width="2" marker-end="url(#q1)"/>
+  <path d="M630 220 L480 248" stroke="#38bdf8" stroke-width="2" marker-end="url(#q1)"/>
+
+  <rect x="250" y="256" width="380" height="42" rx="9" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
+  <text x="440" y="282" fill="#f3e8ff" font-size="12" text-anchor="middle" font-family="Consolas, monospace">{"books": "...", "projects": "..."}</text>
+  <path d="M440 300 L440 318" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#q1)"/>
+
+  <rect x="250" y="326" width="380" height="42" rx="9" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="440" y="352" fill="#dcfce7" font-size="12" text-anchor="middle" font-family="Consolas, monospace">chat_template_time | chat | parser</text>
+
+  <rect x="26" y="384" width="404" height="46" rx="9" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="228" y="404" fill="#bbf7d0" font-size="12.5" font-weight="700" text-anchor="middle">✅ VAQT: 3 ta 0.4s shox → 0.40s</text>
+  <text x="228" y="422" fill="#86efac" font-size="11" text-anchor="middle">o'lchandi · 3× tezlanish</text>
+
+  <rect x="450" y="384" width="404" height="46" rx="9" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="652" y="404" fill="#fecaca" font-size="12.5" font-weight="700" text-anchor="middle">❌ NARX: n shox = n chaqiruv</text>
+  <text x="652" y="422" fill="#fca5a5" font-size="11" text-anchor="middle">siz PULGA vaqt sotib olasiz</text>
+</svg>
