@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" width="960" height="640" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="640" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">O'zbekcha matn 2.30x ko'proq token oladi — ya'ni 2.30x qimmatroq</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: tiktoken 0.14 · o200k_base va cl100k_base · Qwen2.5-0.5B-Instruct</text>
+
+  <!-- token cost by language -->
+  <rect x="24" y="74" width="450" height="216" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">TIL = NARX</text>
+  <text x="44" y="122" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">til        belgi  o200k  cl100k   b/t  nisbat</text>
+  <line x1="44" y1="129" x2="454" y2="129" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="148" fill="#4ade80">ingliz        63     10      10  6.30   1.00x</text>
+    <text x="44" y="168" fill="#a3e635">nemis         73     14      20  5.21   1.40x</text>
+    <text x="44" y="188" fill="#a3e635">fransuz       84     15      20  5.60   1.50x</text>
+    <text x="44" y="208" fill="#fbbf24">rus           67     15      28  4.47   1.50x</text>
+    <text x="44" y="228" fill="#fbbf24">turk          67     16      27  4.19   1.60x</text>
+    <text x="44" y="248" fill="#f87171">o'zbek        79     23      33  3.43   2.30x</text>
+  </g>
+  <text x="44" y="276" fill="#fbbf24" font-size="12" font-weight="700">o200k tokenizatori o'zbekchani 1.43x tejamliroq kodlaydi (33 -&gt; 23)</text>
+
+  <!-- market forecast -->
+  <rect x="490" y="74" width="446" height="216" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="713" y="98" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">KURSNING BOZOR PROGNOZI</text>
+  <text x="510" y="124" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">$6.4 mlrd (2024) -&gt; $140.8 mlrd (2033)</text>
+  <text x="510" y="146" fill="#f87171" font-size="13" font-weight="700" font-family="Consolas, monospace">= 22.0x = CAGR 41.0% yiliga</text>
+  <line x1="510" y1="158" x2="916" y2="158" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="178" fill="#94a3b8">S&amp;P 500 uzoq muddat          10.0%</text>
+    <text x="510" y="198" fill="#94a3b8">Internet reklama 2000-2010   19.0%</text>
+    <text x="510" y="218" fill="#94a3b8">Bulut hisoblash 2010-2020    20.0%</text>
+    <text x="510" y="238" fill="#a3e635">Smartfon 2007-2015           35.0%</text>
+    <text x="510" y="258" fill="#f87171">LLM (kurs prognozi)          41.0%</text>
+  </g>
+  <text x="510" y="282" fill="#fbbf24" font-size="11.5" font-weight="700">20% da natija $33 mlrd bo'lardi — 4.3x kam.</text>
+
+  <!-- prompt matters -->
+  <rect x="24" y="306" width="912" height="180" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="480" y="330" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">BIR XIL MODEL (494 M) — BOSHQA PROMPT — BOSHQA NATIJA</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="358" fill="#94a3b8">prompt: "Ask exactly one question"</text>
+    <text x="44" y="378" fill="#f87171">  -&gt; "What specific aspect of data science would you like to discuss?"   SAVOL EMAS</text>
+    <text x="44" y="406" fill="#94a3b8">prompt: rol + kompaniya + lavozim + savol turi + cheklovlar   (51 token)</text>
+    <text x="44" y="426" fill="#4ade80">  -&gt; "What specific challenges have you faced while working on data</text>
+    <text x="44" y="444" fill="#4ade80">      analysis projects and how did you overcome them?"                HAQIQIY SAVOL</text>
+  </g>
+  <text x="44" y="472" fill="#fbbf24" font-size="12" font-weight="700">LEKIN HALOL BO'LAYLIK: 4 ta kategoriyadan faqat 1 tasi to'g'ri chiqdi.</text>
+
+  <!-- requirements -->
+  <rect x="24" y="502" width="912" height="122" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="480" y="526" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">TALAB SON BILAN TUGASHI KERAK</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="552" fill="#f87171">YOMON : "real bo'lsin"</text>
+    <text x="44" y="572" fill="#4ade80">YAXSHI: "10 ta sinov foydalanuvchidan &gt;=8 tasi 5 balldan &gt;=4 beradi"</text>
+    <text x="44" y="596" fill="#f87171">YOMON : "tez ishlasin"        </text>
+    <text x="380" y="596" fill="#4ade80">YAXSHI: "95-protsentil &lt; 3 s"</text>
+  </g>
+  <text x="44" y="616" fill="#fbbf24" font-size="12" font-weight="700">Son bo'lmasa — bu talab emas, ORZU. MoSCoW: Must &lt;= 60%.</text>
+</svg>
