@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" width="960" height="660" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="660" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">"Kelajak trendlari" — uchtasi bugun, oddiy noutbukda ishlaydi</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: whisper-base · CPU · gTTS · ffmpeg SIZ</text>
+
+  <!-- edge computing -->
+  <rect x="24" y="74" width="450" height="176" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="249" y="98" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">EDGE COMPUTING — BUGUN</text>
+  <text x="44" y="122" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">usul                kechikish   yuborilgan</text>
+  <line x1="44" y1="129" x2="454" y2="129" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="150" fill="#4ade80">mahalliy Whisper       2.89 s     0 bayt</text>
+    <text x="44" y="172" fill="#f87171">Google bulut API       6.24 s    0.72 MB</text>
+  </g>
+  <text x="44" y="200" fill="#4ade80" font-size="13" font-weight="700">Mahalliy 2.16x TEZ va 0 bayt yuboradi.</text>
+  <text x="44" y="222" fill="#fbbf24" font-size="12" font-weight="700">Maxfiylik — narx emas, BONUS.</text>
+  <text x="44" y="242" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">tiny 148 MB / RTF 0.078 — telefonda ham ishlaydi</text>
+
+  <!-- translation -->
+  <rect x="490" y="74" width="446" height="176" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="713" y="98" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">REAL VAQTDA TARJIMA — BUGUN</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="124" fill="#4ade80">fr  0.80s  "Hello, my name is Marie..."</text>
+    <text x="510" y="146" fill="#4ade80">es  0.82s  "Hello, I'm Carlos and I work..."</text>
+    <text x="510" y="168" fill="#4ade80">de  0.79s  "Good day. I work as a data..."</text>
+    <text x="510" y="190" fill="#4ade80">ru  0.81s  "Hello, my name is Anna..."</text>
+    <text x="510" y="212" fill="#f87171">tr  0.90s  "I am a voice teacher..."  XATO</text>
+  </g>
+  <text x="510" y="240" fill="#fbbf24" font-size="12" font-weight="700">Kam resursli tillarda — hali yo'l uzoq.</text>
+
+  <!-- jargon -->
+  <rect x="24" y="266" width="450" height="196" rx="12" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+  <text x="249" y="290" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">YANGI SO'ZLAR: QISMAN MUAMMO</text>
+  <text x="44" y="314" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">turkum                       WER</text>
+  <line x1="44" y1="321" x2="454" y2="321" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="340" fill="#4ade80">2024 jargon (RAG, RLHF)   0.0000</text>
+    <text x="44" y="360" fill="#4ade80">2020 atamalar             0.0000</text>
+    <text x="44" y="380" fill="#a3e635">AI jargon (LoRA)          0.0833</text>
+    <text x="44" y="400" fill="#fbbf24">qisqartmalar (VRAM)       0.2727</text>
+    <text x="44" y="420" fill="#f87171">brendlar (PyTorch)        0.4444</text>
+  </g>
+  <text x="44" y="444" fill="#f87171" font-size="11.5" font-family="Consolas, monospace">LoRA-&gt;Laura · PyTorch-&gt;pie torch · VRAM-&gt;RAM</text>
+  <text x="44" y="458" fill="#fbbf24" font-size="11" font-weight="700">Muammo "yangi so'zlar"da emas — LUG'ATDA YO'Q so'zlarda.</text>
+
+  <!-- hallucination -->
+  <rect x="490" y="266" width="446" height="196" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="713" y="290" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">KURS AYTMAGAN MUAMMO</text>
+  <text x="713" y="312" fill="#f87171" font-size="15" font-weight="700" text-anchor="middle">GALLYUTSINATSIYA</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="338" fill="#94a3b8">-5 dB SNR da Whisper qaytardi:</text>
+    <text x="510" y="358" fill="#f87171">"a sound engineer" x 103</text>
+    <text x="510" y="380" fill="#94a3b8">so'zlar     : 338  (kutilgan 61)</text>
+    <text x="510" y="398" fill="#94a3b8">noyob       : 24   (7.1%)</text>
+    <text x="510" y="416" fill="#94a3b8">nutq tezligi: 14.38 so'z/s (odam 2.5)</text>
+  </g>
+  <text x="510" y="442" fill="#fbbf24" font-size="11.5" font-weight="700">Natija TO'G'RI KO'RINADI. Xato xabari YO'Q.</text>
+  <text x="510" y="457" fill="#f87171" font-size="11" font-weight="700">Tibbiy/yuridik kontekstda — jiddiy xavf.</text>
+
+  <!-- code switching -->
+  <rect x="24" y="478" width="912" height="164" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="480" y="502" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">TIL ALMASHINUVI — KURS HAQ</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="530" fill="#94a3b8">asl    : Hello everyone. Bonjour tout le monde. Welcome to the course.</text>
+    <text x="44" y="550" fill="#fbbf24">tanildi: Hello, everyone. Bonjour, Toute La Monde. Welcome to the course.</text>
+    <text x="44" y="578" fill="#94a3b8">asl    : The meeting is at nine. La reunion es a las nueve. Thank you.</text>
+    <text x="44" y="598" fill="#f87171">tanildi: The meeting is at 9. La reunion is a last-new eve. Thank you.</text>
+  </g>
+  <text x="44" y="626" fill="#fbbf24" font-size="12" font-weight="700">Whisper BUTUN FAYL uchun bitta til tanlaydi. Yechim — jimlik bo'yicha bo'laklash.</text>
+</svg>
