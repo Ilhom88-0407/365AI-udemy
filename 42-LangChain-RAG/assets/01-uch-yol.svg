@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="900" height="480" fill="#0f172a" rx="14"/>
+  <text x="450" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Modelga o'z ma'lumotingizni berishning UCH YO'LI</text>
+  <text x="450" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">Savol: "Model QANDAY javob bersin?" yoki "Model NIMANI bilsin?"</text>
+
+  <!-- prompting -->
+  <rect x="24" y="76" width="276" height="188" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="162" y="102" fill="#e2e8f0" font-size="15" font-weight="700" text-anchor="middle">1. PROMPT MUHANDISLIGI</text>
+  <text x="162" y="122" fill="#94a3b8" font-size="11" text-anchor="middle">few-shot · ko'rsatma · misollar</text>
+  <text x="44" y="150" fill="#4ade80" font-size="11.5">✅ eng arzon, bir zumda</text>
+  <text x="44" y="170" fill="#4ade80" font-size="11.5">✅ hech qanday tayyorgarlik yo'q</text>
+  <text x="44" y="192" fill="#f87171" font-size="11.5">❌ kontekst oynasi CHEKLI</text>
+  <text x="44" y="212" fill="#f87171" font-size="11.5">❌ har chaqiruvda TAKROR to'lanadi</text>
+  <text x="162" y="244" fill="#fbbf24" font-size="11.5" font-weight="700" text-anchor="middle">→ USLUB va FORMAT uchun</text>
+
+  <!-- finetune -->
+  <rect x="312" y="76" width="276" height="188" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="450" y="102" fill="#fde68a" font-size="15" font-weight="700" text-anchor="middle">2. FINE-TUNING</text>
+  <text x="450" y="122" fill="#fcd34d" font-size="11" text-anchor="middle">model VAZNLARINI o'zgartirish</text>
+  <text x="332" y="150" fill="#4ade80" font-size="11.5">✅ uslubni CHUQUR o'rgatadi</text>
+  <text x="332" y="170" fill="#4ade80" font-size="11.5">✅ promptni qisqartiradi</text>
+  <text x="332" y="192" fill="#f87171" font-size="11.5">❌ QIMMAT · ma'lumot to'plash kerak</text>
+  <text x="332" y="212" fill="#f87171" font-size="11.5">❌ yangilash = QAYTA o'qitish</text>
+  <text x="450" y="244" fill="#fbbf24" font-size="11.5" font-weight="700" text-anchor="middle">→ XULQ-ATVOR uchun</text>
+
+  <!-- rag -->
+  <rect x="600" y="76" width="276" height="188" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="3"/>
+  <text x="738" y="102" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">3. ⭐ RAG</text>
+  <text x="738" y="122" fill="#86efac" font-size="11" text-anchor="middle">kerakli qismni TOPIB promptga qo'yish</text>
+  <text x="620" y="150" fill="#4ade80" font-size="11.5">✅ ma'lumot ONI YANGILANADI</text>
+  <text x="620" y="170" fill="#4ade80" font-size="11.5">✅ MANBA ko'rsatish mumkin</text>
+  <text x="620" y="190" fill="#4ade80" font-size="11.5">✅ cheksiz hajm (baza)</text>
+  <text x="620" y="212" fill="#f87171" font-size="11.5">❌ retriever ZAIF HALQA</text>
+  <text x="738" y="244" fill="#4ade80" font-size="11.5" font-weight="700" text-anchor="middle">→ BILIM uchun</text>
+
+  <!-- decision -->
+  <rect x="24" y="282" width="852" height="58" rx="11" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="450" y="306" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">🔑 QAROR QOIDASI</text>
+  <text x="240" y="328" fill="#7dd3fc" font-size="12" text-anchor="middle">"Model QANDAY javob bersin?" → prompt / fine-tuning</text>
+  <text x="660" y="328" fill="#86efac" font-size="12" font-weight="700" text-anchor="middle">"Model NIMANI bilsin?" → ⭐ RAG</text>
+
+  <!-- flow -->
+  <rect x="24" y="356" width="150" height="44" rx="9" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
+  <text x="99" y="383" fill="#f3e8ff" font-size="12.5" font-weight="700" text-anchor="middle">Hujjatlaringiz</text>
+  <path d="M178 378 L212 378" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#a1)"/>
+
+  <rect x="220" y="356" width="150" height="44" rx="9" fill="#581c87" stroke="#c084fc" stroke-width="2"/>
+  <text x="295" y="376" fill="#f3e8ff" font-size="12.5" font-weight="700" text-anchor="middle">Bo'laklash</text>
+  <text x="295" y="392" fill="#d8b4fe" font-size="10.5" text-anchor="middle">500 belgi · 50 ustma-ust</text>
+  <path d="M374 378 L408 378" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#a1)"/>
+
+  <rect x="416" y="356" width="150" height="44" rx="9" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="491" y="376" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">Embedding</text>
+  <text x="491" y="392" fill="#7dd3fc" font-size="10.5" text-anchor="middle">384 o'lchamli vektor</text>
+  <path d="M570 378 L604 378" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#a1)"/>
+
+  <rect x="612" y="356" width="150" height="44" rx="9" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="687" y="376" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">Chroma</text>
+  <text x="687" y="392" fill="#7dd3fc" font-size="10.5" text-anchor="middle">1.1s / 20 bo'lak</text>
+  <path d="M766 378 L796 378" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#a1)"/>
+
+  <rect x="804" y="356" width="72" height="44" rx="9" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="840" y="383" fill="#dcfce7" font-size="12.5" font-weight="700" text-anchor="middle">JAVOB</text>
+
+  <rect x="24" y="414" width="852" height="52" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="450" y="436" fill="#fecaca" font-size="12.5" font-weight="700" text-anchor="middle">💥 RAG MODELNI EMAS, KONTEKSTNI TUZATADI — noto'g'ri bo'lak topilsa, model YOLG'ON TO'QIYDI</text>
+  <text x="450" y="456" fill="#fca5a5" font-size="11.5" text-anchor="middle">31-modulda o'lchangan: ball 0.487 — past, lekin chegara yo'qligi uchun o'tib ketdi va model "rainy" deb to'qidi</text>
+</svg>

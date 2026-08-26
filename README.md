@@ -74,7 +74,8 @@
 | 39 | [Model kirishlari](39-LangChain-Model-Inputs/README.md) 💬 | 7 | ✅ Tayyor |
 | 40 | [Chiqish parserlari](40-LangChain-Output-Parsers/README.md) 🔄 | 3 | ✅ Tayyor |
 | 41 | [LCEL](41-LangChain-LCEL/README.md) ⛓️ | 10 | ✅ Tayyor |
-| 42 | RAG | — | ⏳ Navbatda |
+| 42 | [RAG](42-LangChain-RAG/README.md) 📚 | 18 | ✅ Tayyor |
+| 43 | LangGraph | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -1222,6 +1223,81 @@
 > assign :  {'savol': '...', 'til': 'uz', 'kontekst': '...'}    ✅
 > ```
 > Usiz prompt savolni **ko'ra olmaydi** va javob **noto'g'ri** bo'ladi.
+
+---
+
+## 🧭 Modul 42 — RAG (Retrieval Augmented Generation) 📚
+
+> ## 🏆 **LANGCHAIN BO'LIMINING ENG KATTA VA ENG AMALIY MODULI** *(18 dars)*.
+>
+> ## ⭐⭐ **BUTUN QUVUR API KALITISIZ** — mahalliy embedding + mahalliy Chroma.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [O'z ma'lumotingizni ulash](42-LangChain-RAG/01-How-to-Integrate-Custom-Data.md) ⭐⭐ |
+| 2 | [RAG bilan tanishuv](42-LangChain-RAG/02-Introduction-to-RAG.md) ⭐⭐ |
+| 3 | [Yuklash va bo'laklash](42-LangChain-RAG/03-Document-Loading-and-Splitting.md) |
+| 4 | [Hujjat embeddingi](42-LangChain-RAG/04-Document-Embedding.md) ⭐⭐ |
+| 5 | [Saqlash, topish, javob](42-LangChain-RAG/05-Storing-Retrieval-Generation.md) ⭐ |
+| 6 | [PyPDFLoader](42-LangChain-RAG/06-Loading-PyPDFLoader.md) ⭐ |
+| 7 | [Docx2txtLoader](42-LangChain-RAG/07-Loading-Docx2txtLoader.md) ⭐ |
+| 8 | [CharacterTextSplitter — nazariya](42-LangChain-RAG/08-Character-Text-Splitter-Theory.md) ⭐ |
+| 9 | [CharacterTextSplitter — kod](42-LangChain-RAG/09-Character-Text-Splitter-Code.md) ⭐⭐ |
+| 10 | [MarkdownHeaderTextSplitter](42-LangChain-RAG/10-Markdown-Header-Text-Splitter.md) ⭐⭐ |
+| 11 | [Matn embeddingi](42-LangChain-RAG/11-Text-Embedding.md) ⭐⭐ |
+| 12 | [Chroma yaratish](42-LangChain-RAG/12-Creating-Chroma-Vectorstore.md) ⭐ |
+| 13 | [Hujjatlarni boshqarish](42-LangChain-RAG/13-Managing-Documents.md) |
+| 14 | [Similarity search](42-LangChain-RAG/14-Similarity-Search.md) ⭐⭐ |
+| 15 | [MMR qidiruv](42-LangChain-RAG/15-MMR-Search.md) ⭐⭐ |
+| 16 | [Retriever](42-LangChain-RAG/16-Vectorstore-Backed-Retriever.md) ⭐⭐ |
+| 17 | [Stuffing](42-LangChain-RAG/17-Stuffing-Documents.md) ⭐⭐⭐ |
+| 18 | [Javob generatsiyasi](42-LangChain-RAG/18-Generating-Response.md) ⭐⭐⭐ |
+
+📝 **[44 ta mashq](42-LangChain-RAG/MASHQLAR.md)** · 🚀 **[5 ta mini-loyiha](42-LangChain-RAG/LOYIHALAR.md)**
+
+> 🔑 **QAROR QOIDASI:**
+> ```
+> "Model QANDAY javob bersin?"  →  prompt muhandisligi / fine-tuning
+> "Model NIMANI bilsin?"        →  ⭐ RAG
+> ```
+>
+> 🔬 **O'LCHANGAN NATIJALAR:**
+> ```
+> CharacterTextSplitter(".", 500)  :  21 bo'lak  (16.5 KUTILGAN EMAS!)
+> Recursive                        :  19 bo'lak · max 500 · oshgan 0
+> Mahalliy embedding               :  384 o'lcham · norma 5.8556
+> Chroma indekslash                :  1.1s / 20 hujjat
+> Qidiruv                          :  similarity 19 ms · mmr 11 ms
+> similarity_search_with_score     :  12.4015 · 15.2941 · 15.5754
+> Stuffing xom → format_docs       :  417 → 223 token
+> ```
+>
+> 💥💥 **CHROMA BALLARI — L2 MASOFA, KOSINUS EMAS.** Kichik = yaxshi. `if ball > 0.7` deb chegara qo'ysangiz — **hammasi o'tib ketadi** *(ballar 12–15)*.
+> ```python
+> Chroma.from_documents(..., collection_metadata={"hnsw:space": "cosine"})
+> ```
+>
+> 💰 **`{context}` GA RETRIEVER'NI TO'G'RIDAN-TO'G'RI ULAMANG — 46.5% TOKEN ISROFI:**
+> ```python
+> {"context": retriever, ...}                              # 417 token ❌
+> {"context": retriever | RunnableLambda(format_docs), ...}  # 223 token ✅
+> ```
+> Promptga `Document(id='cd48166d-...', metadata={...})` repr'i tushadi.
+>
+> 💥💥 **"USE ONLY THE FOLLOWING CONTEXT" YOLG'ON TO'QISHNI TO'XTATMAYDI** *(o'lchandi)*:
+> ```
+> Savol : "What is the weather in Tashkent today?"   ← hujjatlarda javob YO'Q
+> Javob : "qualitative analytics..."                 ← MODEL TO'QIDI
+> ```
+> 31-moduldagi `0.487` ballli holat **aynan takrorlandi**. ## ⭐ **BALL CHEGARASI — modelga bog'liq bo'lmagan yagona himoya.**
+>
+> 🇺🇿 **O'ZBEKCHA:**
+> ```
+> bank↔kredit 0.6898 · bank↔osmon 0.2180   →  ✅ o'zbekcha ichida ISHLAYDI
+> cat↔mushuk  0.2829                        →  💥 tillar orasi ZAIF
+> token 1.88× qimmat                        →  chunk 400, k ni kamaytiring
+> Mahalliy embedding + Chroma               →  🏆 hujjat KOMPYUTERDAN CHIQMAYDI
+> ```
 
 ---
 
