@@ -69,7 +69,7 @@
 |---|---|---|---|
 | 35 | [LangChain'ga kirish](35-LangChain-Introduction/README.md) 🔗 | 4 | ✅ Tayyor |
 | 36 | [Tokenlar, modellar, narxlar](36-LangChain-Tokens-Models-Prices/README.md) 💰 | 2 | ✅ Tayyor |
-| 37 | Muhitni sozlash | — | ⏳ Navbatda |
+| 37 | [Muhitni sozlash](37-LangChain-Setting-Up-Environment/README.md) ⚙️ | 3 | ✅ Tayyor |
 | 38 | OpenAI API | — | ⏳ Navbatda |
 | 39 | Model kirishlari | — | ⏳ Navbatda |
 | 40 | Chiqish parserlari | — | ⏳ Navbatda |
@@ -935,6 +935,60 @@
 > ```
 >
 > 💡 **CHIQISH 3–4× QIMMAT** — shuning uchun `max_tokens` ni **doim** belgilang. **Embedding esa 7.5× arzon**: RAG'da indekslash deyarli **bepul**, xarajat **javob yaratishda**.
+
+---
+
+## 🧭 Modul 37 — Muhitni sozlash ⚙️
+
+**Nimani beradi:** kodsizdek ko'rinadigan, lekin **eng ko'p vaqt yo'qotadigan** modul — va kurs bu yerda ## **eng muhim narsani aytmaydi**.
+
+| Dars | Mavzu |
+|---|---|
+| 1 | [Anaconda muhitini sozlash](37-LangChain-Setting-Up-Environment/01-Setting-Up-Anaconda-Environment.md) |
+| 2 | [OpenAI API kalitini olish](37-LangChain-Setting-Up-Environment/02-Obtaining-an-OpenAI-API-Key.md) ⭐ |
+| 3 | [Kalitni muhit o'zgaruvchisi qilish](37-LangChain-Setting-Up-Environment/03-Setting-the-API-Key-as-Environment-Variable.md) ⭐⭐ |
+
+📝 **[28 ta mashq](37-LangChain-Setting-Up-Environment/MASHQLAR.md)** · 🚀 **[4 ta mini-loyiha](37-LangChain-Setting-Up-Environment/LOYIHALAR.md)**
+
+> ## 💥💥 **KURS `.gitignore` NI UMUMAN ESLATMAYDI — BU ENG KO'P UCHRAYDIGAN KALIT SIZIB CHIQISH SABABI.**
+>
+> ```gitignore
+> .env
+> .env.*
+> !.env.example
+> *.key
+> ```
+> 💥 **GitHub botlari kalitingizni SONIYALAR ichida topadi.** Va `git rm .env` **yetarli emas** — fayl **tarixda qoladi**:
+> ```
+> git filter-repo --path .env --invert-paths --force
+> ```
+>
+> 💥💥 **IKKINCHI TOPILMA — `override` JIM XATOSI** *(o'lchandi)*:
+> ```
+> os.environ["MENING_KALITIM"] = "QO'LDA"
+> load_dotenv()               →  QO'LDA          ← .env E'TIBORSIZ qoldirildi!
+> load_dotenv(override=True)  →  oddiy_qiymat    ✅
+> ```
+> **Siz `.env` ni tahrirlaysiz, `load_dotenv()` chaqirasiz, "ishladi" deb o'ylaysiz — aslida ESKI qiymat ishlatilmoqda.** Xato ham, ogohlantirish ham **chiqmaydi**.
+>
+> 💰 **API KALITI BO'LMASA — UCHTA ISHLAYDIGAN YO'L** *(kurs bunga javob bermaydi)*:
+> ```
+> ① Ollama            ✅ bepul, cheksiz, MAXFIY   ⭐⭐  🇺🇿 qwen2.5 tanlang
+> ② Google AI Studio  ✅ KARTASIZ bepul kvota
+> ③ HuggingFace       ✅ mahalliy (32-moduldan tanish)
+> ```
+> ⚠ **ChatGPT Plus ($20/oy) ≠ API kirish** — ko'p odam adashib pul sarflaydi.
+>
+> 🛠 **`conda` (3 GB) shart emas:** `venv` (0 MB, Python bilan birga) yoki ## **`uv`** (10–100× tez).
+>
+> ⚠⚠ **KURS VERSIYANI KO'RSATMAYDI:**
+> ```
+> 2024-da o'rnatgan  →  langchain 0.1   ✅ kod ishlaydi
+> 2026-da o'rnatgan  →  langchain 1.3   ❌ kod ISHLAMAYDI
+> ```
+> `requirements.txt` da versiyani **qotiring**.
+>
+> 🇺🇿 **Windows uchun uchta tuzoq:** `.env` faylini Explorer yarata olmaydi · `cp1251` o'zbekchani buzadi · noto'g'ri kernel.
 
 ---
 

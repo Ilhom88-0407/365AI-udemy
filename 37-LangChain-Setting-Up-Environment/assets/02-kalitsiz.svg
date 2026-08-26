@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="880" height="430" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">API kaliti bo'lmasa — uchta ishlaydigan yo'l</text>
+  <text x="440" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">kurs bunga javob bermaydi · kurs kodining 95% i o'zgarishsiz ishlaydi</text>
+
+  <!-- blocked -->
+  <rect x="26" y="76" width="828" height="58" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="48" y="100" fill="#fecaca" font-size="13" font-weight="700">💰 TO'SIQ — O'zbekistondan OpenAI API</text>
+  <text x="48" y="122" fill="#fca5a5" font-size="11.5">xalqaro karta kerak · $5 minimal · bepul kvota YO'Q · ⚠️ ChatGPT Plus ≠ API</text>
+
+  <!-- 1 -->
+  <rect x="26" y="150" width="270" height="200" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="161" y="178" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">① OLLAMA  ⭐⭐</text>
+  <rect x="46" y="192" width="230" height="52" rx="7" fill="#14532d"/>
+  <text x="161" y="212" fill="#dcfce7" font-size="10.5" text-anchor="middle" font-family="Consolas, monospace">ollama pull qwen2.5</text>
+  <text x="161" y="230" fill="#dcfce7" font-size="10.5" text-anchor="middle" font-family="Consolas, monospace">ChatOllama(model="qwen2.5")</text>
+  <text x="46" y="268" fill="#86efac" font-size="11.5">✅ BEPUL — cheksiz</text>
+  <text x="46" y="288" fill="#86efac" font-size="11.5">✅ MAXFIY — chiqmaydi</text>
+  <text x="46" y="308" fill="#86efac" font-size="11.5">✅ internetsiz ishlaydi</text>
+  <text x="46" y="330" fill="#fbbf24" font-size="11">⚠️ ~8 GB RAM · sifat pastroq</text>
+
+  <!-- 2 -->
+  <rect x="306" y="150" width="270" height="200" rx="12" fill="#7c2d12" stroke="#fb923c" stroke-width="2"/>
+  <text x="441" y="178" fill="#ffedd5" font-size="15" font-weight="700" text-anchor="middle">② GOOGLE AI STUDIO</text>
+  <rect x="326" y="192" width="230" height="52" rx="7" fill="#9a3412"/>
+  <text x="441" y="212" fill="#ffedd5" font-size="10.5" text-anchor="middle" font-family="Consolas, monospace">aistudio.google.com</text>
+  <text x="441" y="230" fill="#ffedd5" font-size="10.5" text-anchor="middle" font-family="Consolas, monospace">ChatGoogleGenerativeAI(...)</text>
+  <text x="326" y="268" fill="#fdba74" font-size="11.5">✅ KARTA kerak emas</text>
+  <text x="326" y="288" fill="#fdba74" font-size="11.5">✅ kunlik bepul kvota</text>
+  <text x="326" y="310" fill="#fbbf24" font-size="11">⚠️ ma'lumot Google'ga chiqadi</text>
+  <text x="326" y="330" fill="#fbbf24" font-size="11">⚠️ kvota tugasa — kutish</text>
+
+  <!-- 3 -->
+  <rect x="586" y="150" width="268" height="200" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="720" y="178" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">③ HUGGING FACE</text>
+  <rect x="606" y="192" width="228" height="52" rx="7" fill="#075985"/>
+  <text x="720" y="212" fill="#e0f2fe" font-size="10.5" text-anchor="middle" font-family="Consolas, monospace">HuggingFacePipeline</text>
+  <text x="720" y="230" fill="#e0f2fe" font-size="10.5" text-anchor="middle" font-family="Consolas, monospace">.from_model_id(...)</text>
+  <text x="606" y="268" fill="#7dd3fc" font-size="11.5">✅ BEPUL · mahalliy</text>
+  <text x="606" y="288" fill="#7dd3fc" font-size="11.5">✅ 32-modul bilimi</text>
+  <text x="606" y="310" fill="#fbbf24" font-size="11">⚠️ kichik modellar sifati</text>
+  <text x="606" y="326" fill="#fbbf24" font-size="11">   SEZILARLI past</text>
+
+  <rect x="26" y="362" width="828" height="52" rx="10" fill="#1e293b" stroke="#facc15" stroke-width="2"/>
+  <text x="440" y="384" fill="#fde68a" font-size="13" font-weight="700" text-anchor="middle">🇺🇿 O'zbekcha uchun qwen2.5 ni tanlang — llama3.2 ni EMAS</text>
+  <text x="440" y="404" fill="#facc15" font-size="11.5" text-anchor="middle">u ko'p tilli ma'lumotda ko'proq o'qitilgan</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="880" height="440" fill="#0f172a" rx="14"/>
+  <text x="440" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Kalit qayerda turishi kerak — to'rtta yo'l</text>
+
+  <!-- 1 bad -->
+  <rect x="26" y="60" width="828" height="66" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="48" y="84" fill="#fecaca" font-size="13" font-weight="700">❌❌ QATTIQ KODLANGAN</text>
+  <text x="48" y="106" fill="#fca5a5" font-size="12" font-family="Consolas, monospace">client = OpenAI(api_key="sk-proj-abc123...")</text>
+  <text x="560" y="106" fill="#f87171" font-size="11.5">GitHub botlari SONIYALARDA topadi</text>
+
+  <!-- 2 meh -->
+  <rect x="26" y="136" width="828" height="66" rx="10" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="48" y="160" fill="#fde68a" font-size="13" font-weight="700">⚠️ KODDA os.environ</text>
+  <text x="48" y="182" fill="#fbbf24" font-size="12" font-family="Consolas, monospace">os.environ["OPENAI_API_KEY"] = "sk-..."</text>
+  <text x="560" y="182" fill="#fbbf24" font-size="11.5">kernel qayta ishga tushsa — YO'QOLADI</text>
+
+  <!-- 3 ok -->
+  <rect x="26" y="212" width="828" height="66" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="48" y="236" fill="#bae6fd" font-size="13" font-weight="700">✅ JUPYTER SEHRLI BUYRUG'I</text>
+  <text x="48" y="258" fill="#7dd3fc" font-size="12" font-family="Consolas, monospace">%load_ext dotenv   %dotenv</text>
+  <text x="560" y="258" fill="#7dd3fc" font-size="11.5">faqat Jupyter'da — .py da XATO</text>
+
+  <!-- 4 best -->
+  <rect x="26" y="288" width="828" height="76" rx="10" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="48" y="312" fill="#bbf7d0" font-size="13" font-weight="700">⭐ TO'G'RI YO'L — har joyda ishlaydi</text>
+  <text x="48" y="334" fill="#86efac" font-size="12" font-family="Consolas, monospace">from dotenv import load_dotenv</text>
+  <text x="48" y="352" fill="#86efac" font-size="12" font-family="Consolas, monospace">load_dotenv(override=True)      ← override MUHIM!</text>
+  <text x="560" y="334" fill="#4ade80" font-size="11.5">.py · .ipynb · skript · server</text>
+  <text x="560" y="352" fill="#fbbf24" font-size="11">standart override=False → eski qiymat USTUN (jim xato)</text>
+
+  <rect x="26" y="376" width="828" height="48" rx="10" fill="#7f1d1d" stroke="#f87171" stroke-width="2"/>
+  <text x="440" y="398" fill="#fecaca" font-size="13.5" font-weight="700" text-anchor="middle">💥 VA ENG MUHIMI — KURS BUNI AYTMAYDI:</text>
+  <text x="440" y="416" fill="#fca5a5" font-size="12.5" text-anchor="middle" font-family="Consolas, monospace">.gitignore  →  .env        usiz kalit GIT TARIXIGA tushadi</text>
+</svg>
