@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="g1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+    <marker id="g2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#4ade80"/></marker>
+  </defs>
+  <rect width="900" height="500" fill="#0f172a" rx="14"/>
+  <text x="450" y="34" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">LCEL va LangGraph — farqi bitta so'zda: SIKL</text>
+  <text x="450" y="56" fill="#94a3b8" font-size="12" text-anchor="middle">LLM stateless — u hech narsa eslamaydi. LangGraph state'ni boshqaradi.</text>
+
+  <!-- LCEL -->
+  <rect x="24" y="76" width="410" height="152" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="229" y="102" fill="#e2e8f0" font-size="15" font-weight="700" text-anchor="middle">LCEL (41-modul) — DAG</text>
+
+  <rect x="46" y="118" width="86" height="34" rx="8" fill="#581c87" stroke="#c084fc"/>
+  <text x="89" y="140" fill="#f3e8ff" font-size="11.5" text-anchor="middle">prompt</text>
+  <path d="M136 135 L162 135" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#g1)"/>
+  <rect x="170" y="118" width="86" height="34" rx="8" fill="#0c4a6e" stroke="#38bdf8"/>
+  <text x="213" y="140" fill="#bae6fd" font-size="11.5" text-anchor="middle">model</text>
+  <path d="M260 135 L286 135" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#g1)"/>
+  <rect x="294" y="118" width="86" height="34" rx="8" fill="#7c2d12" stroke="#fb923c"/>
+  <text x="337" y="140" fill="#ffedd5" font-size="11.5" text-anchor="middle">parser</text>
+
+  <text x="229" y="180" fill="#94a3b8" font-size="11.5" text-anchor="middle" font-family="Consolas, monospace">chain = prompt | model | parser</text>
+  <text x="229" y="202" fill="#f87171" font-size="12" font-weight="700" text-anchor="middle">❌ ORQAGA QAYTISH YO'Q</text>
+  <text x="229" y="219" fill="#fca5a5" font-size="11" text-anchor="middle">"Yana savolingiz bormi?" — yozib bo'lmaydi</text>
+
+  <!-- LangGraph -->
+  <rect x="466" y="76" width="410" height="152" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="3"/>
+  <text x="671" y="102" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">⭐ LangGraph — GRAF</text>
+
+  <rect x="488" y="118" width="104" height="34" rx="8" fill="#14532d" stroke="#4ade80"/>
+  <text x="540" y="140" fill="#dcfce7" font-size="11.5" text-anchor="middle">ask_question</text>
+  <path d="M596 135 L620 135" stroke="#4ade80" stroke-width="2.5" marker-end="url(#g2)"/>
+  <rect x="628" y="118" width="80" height="34" rx="8" fill="#14532d" stroke="#4ade80"/>
+  <text x="668" y="140" fill="#dcfce7" font-size="11.5" text-anchor="middle">chatbot</text>
+  <path d="M712 135 L736 135" stroke="#4ade80" stroke-width="2.5" marker-end="url(#g2)"/>
+  <rect x="744" y="118" width="110" height="34" rx="8" fill="#14532d" stroke="#4ade80"/>
+  <text x="799" y="140" fill="#dcfce7" font-size="11.5" text-anchor="middle">yana savolmi?</text>
+
+  <path d="M799 156 L799 176 L540 176 L540 156" stroke="#fbbf24" stroke-width="2.5" fill="none" marker-end="url(#g2)" stroke-dasharray="5 3"/>
+  <text x="671" y="192" fill="#fbbf24" font-size="12" font-weight="700" text-anchor="middle">⭐ SIKL — "ha" bo'lsa ORQAGA</text>
+  <text x="671" y="215" fill="#86efac" font-size="11" text-anchor="middle" font-family="Consolas, monospace">graph.add_conditional_edges("yana", routing_function)</text>
+
+  <!-- state -->
+  <rect x="24" y="248" width="852" height="94" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="450" y="272" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">STATE — tugundan tugunga o'tuvchi va yangilanuvchi ma'lumot</text>
+
+  <rect x="46" y="284" width="180" height="42" rx="9" fill="#082f49" stroke="#38bdf8"/>
+  <text x="136" y="302" fill="#7dd3fc" font-size="11" text-anchor="middle" font-family="Consolas, monospace">class State(TypedDict):</text>
+  <text x="136" y="318" fill="#7dd3fc" font-size="11" text-anchor="middle" font-family="Consolas, monospace">  messages: ...</text>
+
+  <path d="M232 305 L262 305" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#g1)"/>
+  <rect x="270" y="284" width="150" height="42" rx="9" fill="#082f49" stroke="#38bdf8"/>
+  <text x="345" y="310" fill="#7dd3fc" font-size="11.5" text-anchor="middle">tugun O'QIYDI</text>
+
+  <path d="M424 305 L454 305" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#g1)"/>
+  <rect x="462" y="284" width="150" height="42" rx="9" fill="#082f49" stroke="#38bdf8"/>
+  <text x="537" y="310" fill="#7dd3fc" font-size="11.5" text-anchor="middle">tugun YANGILAYDI</text>
+
+  <path d="M616 305 L646 305" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#g1)"/>
+  <rect x="654" y="284" width="200" height="42" rx="9" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="754" y="302" fill="#dcfce7" font-size="11.5" font-weight="700" text-anchor="middle">⭐ REDUCER birlashtiradi</text>
+  <text x="754" y="318" fill="#86efac" font-size="10" text-anchor="middle">Annotated[..., add_messages]</text>
+
+  <!-- danger -->
+  <rect x="24" y="358" width="418" height="126" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="233" y="382" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">💥 Annotated YO'Q bo'lsa</text>
+  <text x="44" y="404" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">messages: Sequence[BaseMessage]</text>
+  <text x="44" y="426" fill="#fca5a5" font-size="11.5">→ yangi qiymat ESKISINI ALMASHTIRADI</text>
+  <text x="44" y="446" fill="#fca5a5" font-size="11.5">→ o'lchandi: 1 xabar ['ikkinchi']</text>
+  <text x="44" y="468" fill="#f87171" font-size="12" font-weight="700">💥 FOYDALANUVCHI SAVOLI YO'QOLADI</text>
+
+  <rect x="458" y="358" width="418" height="126" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="667" y="382" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">✅ Annotated BOR bo'lsa</text>
+  <text x="478" y="404" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">Annotated[Sequence[...], add_messages]</text>
+  <text x="478" y="426" fill="#86efac" font-size="11.5">→ yangi qiymat QO'SHILADI</text>
+  <text x="478" y="446" fill="#86efac" font-size="11.5">→ o'lchandi: 3 xabar</text>
+  <text x="478" y="468" fill="#4ade80" font-size="11" font-family="Consolas, monospace">["boshlang'ich", 'birinchi', 'ikkinchi']</text>
+</svg>

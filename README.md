@@ -75,7 +75,12 @@
 | 40 | [Chiqish parserlari](40-LangChain-Output-Parsers/README.md) 🔄 | 3 | ✅ Tayyor |
 | 41 | [LCEL](41-LangChain-LCEL/README.md) ⛓️ | 10 | ✅ Tayyor |
 | 42 | [RAG](42-LangChain-RAG/README.md) 📚 | 18 | ✅ Tayyor |
-| 43 | LangGraph | — | ⏳ Navbatda |
+| 43 | [LangGraph — kirish](43-LangGraph-Introduction/README.md) 🕸️ | 3 | ✅ Tayyor |
+| 44 | [LangGraph — muhitni sozlash](44-LangGraph-Setting-Up-Environment/README.md) ⚙️ | 1 | ✅ Tayyor |
+| 45 | [Graf komponentlari](45-LangGraph-Graph-Components/README.md) 🧩 | 6 | ✅ Tayyor |
+| 46 | [Xabarlarni boshqarish](46-LangGraph-Message-Management/README.md) 💬 | 6 | ✅ Tayyor |
+| 47 | [Thread-level persistence](47-LangGraph-Thread-Level-Persistence/README.md) 💾 | 4 | ✅ Tayyor |
+| 48 | Vector Databases | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
@@ -1298,6 +1303,63 @@
 > token 1.88× qimmat                        →  chunk 400, k ni kamaytiring
 > Mahalliy embedding + Chroma               →  🏆 hujjat KOMPYUTERDAN CHIQMAYDI
 > ```
+
+---
+
+## 🕸️ LangGraph bo'limi (43–47-modullar)
+
+> ## 🏆 **20 dars · 112 mashq · 15 mini-loyiha.** ## ⭐⭐ **HAMMASI API KALITISIZ** — LangGraph modelsiz ham to'liq ishlaydi.
+
+| Modul | Mavzu | Darslar |
+|---|---|---|
+| [43](43-LangGraph-Introduction/README.md) 🕸️ | Kirish — LangGraph nima va nima uchun | 3 |
+| [44](44-LangGraph-Setting-Up-Environment/README.md) ⚙️ | Muhitni sozlash · ⭐ uchta model varianti | 1 |
+| [45](45-LangGraph-Graph-Components/README.md) 🧩 | State · Node · Edge · shartli qirra | 6 |
+| [46](46-LangGraph-Message-Management/README.md) 💬 | Reducer · trim · xulosalash | 6 |
+| [47](47-LangGraph-Thread-Level-Persistence/README.md) 💾 | Checkpointer · thread · SQLite | 4 |
+
+> 🔑 **LCEL va LangGraph farqi — BITTA SO'ZDA: SIKL.**
+> ```
+> LCEL       →  chiziqli: prompt | model | parser     (orqaga qaytish YO'Q)
+> LangGraph  →  graf: savol → javob → yana savolmi?   ⭐ SIKL BOR
+> ```
+>
+> 🔬 **O'LCHANGAN NATIJALAR:**
+> ```
+> langgraph 1.2.11 · START='__start__' · END='__end__'  (oddiy satrlar)
+> Annotated YO'Q  →  1 xabar   💥 foydalanuvchi savoli YO'QOLADI
+> Annotated BOR   →  3 xabar   ✅
+> Rekursiya chegarasi 10 007   →  sikl ~5000 marta aylandi
+> Parallel 3 tugun  →  33 ms   (90 ms emas)
+> checkpointersiz  2 · 2 · 2 xabar   →   checkpointerli  2 · 4 · 6 xabar
+> SQLite: yangi ulanish → holat TIKLANDI · 5 checkpoint · 28 KB
+> ```
+>
+> 💥💥 **KURSNING BIRINCHI GRAFI FOYDALANUVCHI SAVOLINI YO'QOTADI** *(o'lchandi)*:
+> ```
+> kirish : [('human', 'Could you tell me a grook by Piet ...')]
+> chiqish: [('ai',    'Piet Hein (1905-1996) was a Danish...')]
+> ```
+> Kurs buni **fakt** deb aytadi: *"human message endi AI message bilan ALMASHTIRILGAN"*.
+> ✅ **Yechim bitta so'z:** `Annotated[Sequence[BaseMessage], add_messages]`
+>
+> 💰 **XOTIRA STRATEGIYASINING NARXI** *(20 burilish · 1000 suhbat/kun · gpt-4o-mini)*:
+> ```
+> qo'shish     13 440 token · 20 chaqiruv  →  $736/yil   🇺🇿 $1 384
+> trim=5        3 252 token · 20 chaqiruv  →  $178/yil   🇺🇿 $335
+> xulosalash      520 token · 40 chaqiruv  →  ⭐ $28/yil  🇺🇿 $53
+> ```
+>
+> 💥 **KURSDA AYTILMAGAN 5 TA XAVF:**
+> ```
+> ① recursion_limit 10 007  →  gpt-4o bilan ≈ $6.25 va 83 daqiqa BITTA so'rov
+> ② input() tugun ichida    →  veb, bot, testda ISHLAMAYDI → ⭐ interrupt
+> ③ [:-5] bilan trim        →  SystemMessage o'chadi → 🇺🇿 model tilni UNUTADI
+> ④ thread_id foydalanuvchidan  →  u BOSHQANING suhbatini o'qiy oladi
+> ⑤ 10 000 foydalanuvchi ≈ 2 GB  →  VACUUM bilan tozalang
+> ```
+>
+> 🏆 **42 + 43–47 = HUJJATLARINGIZ BO'YICHA XOTIRALI SUHBAT** — amaliy AI ilovalarining eng ko'p uchraydigan shakli.
 
 ---
 
