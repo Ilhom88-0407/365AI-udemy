@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 620" width="940" height="620" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="t1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="940" height="620" fill="#0f172a" rx="14"/>
+  <text x="470" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Energiya ≠ Ma'lumot — nutq spektrining haqiqati</text>
+  <text x="470" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: speech_01.wav · 16 kHz · FFT · 23.5 s</text>
+
+  <!-- energy bars -->
+  <rect x="24" y="74" width="892" height="222" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="470" y="98" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">Energiyaning 59% i fonemani UMUMAN belgilamaydi</text>
+
+  <g font-family="Consolas, monospace" font-size="12">
+    <text x="44" y="128" fill="#94a3b8">0–300 Hz</text>
+    <rect x="180" y="116" width="443" height="18" rx="3" fill="#f87171"/>
+    <text x="633" y="129" fill="#fca5a5">59.12%  f0 — KIM gapiryapti</text>
+
+    <text x="44" y="158" fill="#94a3b8">300–800 Hz</text>
+    <rect x="180" y="146" width="150" height="18" rx="3" fill="#4ade80"/>
+    <text x="340" y="159" fill="#86efac">19.95%  F1 — og'iz ochiqligi</text>
+
+    <text x="44" y="188" fill="#94a3b8">800–2500 Hz</text>
+    <rect x="180" y="176" width="71" height="18" rx="3" fill="#4ade80"/>
+    <text x="261" y="189" fill="#86efac">9.43%  F2 — til oldinda-orqada</text>
+
+    <text x="44" y="218" fill="#94a3b8">2500–4000 Hz</text>
+    <rect x="180" y="206" width="17" height="18" rx="3" fill="#38bdf8"/>
+    <text x="207" y="219" fill="#7dd3fc">2.19%  F3/F4 — tembr</text>
+
+    <text x="44" y="248" fill="#94a3b8">4000–8000 Hz</text>
+    <rect x="180" y="236" width="70" height="18" rx="3" fill="#fbbf24"/>
+    <text x="260" y="249" fill="#fde68a">9.30%  s, sh, f, t — telefon KESADI</text>
+  </g>
+
+  <rect x="180" y="266" width="221" height="18" rx="3" fill="none" stroke="#4ade80" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="411" y="280" fill="#4ade80" font-size="12" font-weight="700" font-family="Consolas, monospace">29.39% — MA'NONI tashiydigan yagona qism</text>
+
+  <!-- phase -->
+  <rect x="24" y="312" width="440" height="150" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="244" y="336" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">Faza — ANC ning butun printsipi</text>
+  <text x="44" y="360" fill="#7dd3fc" font-size="12" font-family="Consolas, monospace">faza    amplituda   quvvat</text>
+  <line x1="44" y1="368" x2="444" y2="368" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="388" fill="#4ade80" font-size="12" font-family="Consolas, monospace">  0°      2.0000    4.00x   kuchaydi</text>
+  <text x="44" y="408" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">120°      1.0000    0.99x   quvvat OSHMADI</text>
+  <text x="44" y="428" fill="#f87171" font-size="12" font-family="Consolas, monospace">180°      0.0000    0.00x   TO'LIQ BEKOR</text>
+  <text x="44" y="452" fill="#fbbf24" font-size="11.5" font-weight="700">"2x tovush = 2x baland" — NOTO'G'RI</text>
+
+  <!-- comb -->
+  <rect x="480" y="312" width="436" height="150" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="698" y="336" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">Grebenka filtri — xona aks-sadosi</text>
+  <text x="500" y="360" fill="#fca5a5" font-size="12" font-family="Consolas, monospace">kechikish  masofa   yo'qolgan Hz</text>
+  <line x1="500" y1="368" x2="896" y2="368" stroke="#475569" stroke-width="1"/>
+  <text x="500" y="388" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">0.5 ms   17.2 sm   990, 2991, 4993</text>
+  <text x="500" y="408" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">1.0 ms   34.3 sm   495, 1496, 2497, 3498</text>
+  <text x="500" y="428" fill="#f87171" font-size="11.5" font-family="Consolas, monospace">2.0 ms   68.6 sm   247, 748, 1248, 1749, 2250</text>
+  <text x="500" y="452" fill="#fbbf24" font-size="11.5" font-weight="700">ASR xonada yomon — SHOVQINDAN emas, INTERFERENSIYADAN</text>
+
+  <!-- attenuation -->
+  <rect x="24" y="478" width="892" height="122" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="470" y="502" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">So'nishning IKKI mexanizmi — ular butunlay boshqacha</text>
+  <text x="44" y="528" fill="#86efac" font-size="12" font-family="Consolas, monospace">① GEOMETRIK  masofa 2x -> -6.02 dB      chastotaga BOG'LIQ EMAS</text>
+  <text x="44" y="550" fill="#86efac" font-size="12" font-family="Consolas, monospace">② YUTILISH    125 Hz 0.4 dB/km  ·  8 kHz 117 dB/km   -> 292x FARQ</text>
+  <text x="44" y="574" fill="#fbbf24" font-size="12" font-family="Consolas, monospace">200 m da:  125 Hz -46.10 dB  ·  8 kHz -69.42 dB   (23 dB farq)</text>
+  <text x="44" y="594" fill="#4ade80" font-size="11.5" font-weight="700">AMALIY: mikrofonni og'izga yaqin qo'ying — har 2x yaqinlashish +6 dB</text>
+</svg>

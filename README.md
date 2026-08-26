@@ -84,7 +84,10 @@
 | 49 | [Vektor fazo asoslari](49-Vector-Space-Basics/README.md) 📐 | 3 | ✅ Tayyor |
 | 50 | [Pinecone bilan tanishuv](50-Pinecone-Introduction/README.md) 🌲 | 6 | ✅ Tayyor |
 | 51 | [Semantik qidiruv — amaliy loyiha](51-Semantic-Search-Case-Study/README.md) 🔎 | 11 | ✅ Tayyor |
-| 52 | Speech Recognition | — | ⏳ Navbatda |
+| 52 | [Nutqni tanish — kirish](52-Speech-Recognition-Introduction/README.md) 🗣️ | 4 | ✅ Tayyor |
+| 53 | [Tovush va nutq asoslari](53-Sound-and-Speech-Basics/README.md) 🔊 | 3 | ✅ Tayyor |
+| 54 | [Analogdan raqamliga](54-Analog-to-Digital-Conversion/README.md) 💻 | 2 | ✅ Tayyor |
+| 55 | Speech Recognition (davomi) | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 

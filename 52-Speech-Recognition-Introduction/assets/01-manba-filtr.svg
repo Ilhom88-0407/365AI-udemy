@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 600" width="940" height="600" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="940" height="600" fill="#0f172a" rx="14"/>
+  <text x="470" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Manba-filtr modeli — nutq qanday hosil bo'ladi</text>
+  <text x="470" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: kursning speech_01.wav fayli · 23.5 s · 44.1 kHz · 24 bit</text>
+
+  <!-- source -->
+  <rect x="24" y="76" width="270" height="150" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="159" y="100" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">MANBA — ovoz paychalari</text>
+  <text x="44" y="126" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">f0 median  138.2 Hz</text>
+  <text x="44" y="146" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">garmonikalar:</text>
+  <text x="56" y="166" fill="#7dd3fc" font-size="12" font-family="Consolas, monospace">138 276 415 553 691 Hz</text>
+  <text x="44" y="190" fill="#fbbf24" font-size="11.5">belgilaydi: ohang, pitch, jarangdorlik</text>
+  <text x="44" y="210" fill="#f87171" font-size="11.5">ovozsiz tovushlarda YO'Q (35%)</text>
+
+  <text x="316" y="140" fill="#38bdf8" font-size="13" text-anchor="middle" font-weight="700">filtr</text>
+  <line x1="298" y1="152" x2="336" y2="152" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#s1)"/>
+
+  <!-- filter -->
+  <rect x="348" y="76" width="270" height="150" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="483" y="100" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">FILTR — og'iz bo'shlig'i</text>
+  <text x="368" y="126" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">FORMANTLAR (o'lchangan):</text>
+  <text x="380" y="146" fill="#86efac" font-size="12" font-family="Consolas, monospace">F1  192 - 416 Hz</text>
+  <text x="380" y="166" fill="#86efac" font-size="12" font-family="Consolas, monospace">F2 1024 - 1804 Hz</text>
+  <text x="368" y="190" fill="#fbbf24" font-size="11.5">belgilaydi: FONEMA, ma'no</text>
+  <text x="368" y="210" fill="#4ade80" font-size="11.5">f0 ga BOG'LIQ EMAS</text>
+
+  <line x1="622" y1="152" x2="660" y2="152" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#s1)"/>
+
+  <!-- output -->
+  <rect x="672" y="76" width="244" height="150" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="794" y="100" fill="#bae6fd" font-size="15" font-weight="700" text-anchor="middle">NUTQ</text>
+  <text x="692" y="128" fill="#7dd3fc" font-size="12" font-family="Consolas, monospace">FONEMA  -&gt;  SO'Z</text>
+  <text x="692" y="154" fill="#94a3b8" font-size="11.5">o'zbek  ~30 fonema</text>
+  <text x="692" y="174" fill="#94a3b8" font-size="11.5">ingliz  ~44 fonema</text>
+  <text x="692" y="200" fill="#fbbf24" font-size="11.5">aksent muammosining</text>
+  <text x="692" y="216" fill="#fbbf24" font-size="11.5">ILDIZI shu yerda</text>
+
+  <!-- vowel chart -->
+  <rect x="24" y="244" width="440" height="176" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="244" y="268" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">F1 va F2 unlini TO'LIQ aniqlaydi</text>
+  <text x="44" y="292" fill="#86efac" font-size="12" font-family="Consolas, monospace">unli     F1     F2      og'iz holati</text>
+  <line x1="44" y1="300" x2="444" y2="300" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="320" fill="#bbf7d0" font-size="12" font-family="Consolas, monospace">/i/     270   2290    til OLDINDA, yopiq</text>
+  <text x="44" y="340" fill="#bbf7d0" font-size="12" font-family="Consolas, monospace">/e/     530   1840</text>
+  <text x="44" y="360" fill="#bbf7d0" font-size="12" font-family="Consolas, monospace">/a/     730   1090    til PASTDA, ochiq</text>
+  <text x="44" y="380" fill="#bbf7d0" font-size="12" font-family="Consolas, monospace">/u/     300    870    til ORQADA, dumaloq</text>
+  <text x="44" y="406" fill="#fbbf24" font-size="11.5" font-weight="700">F1 = ochiqlik  ·  F2 = oldinda-orqada</text>
+
+  <!-- pyin findings -->
+  <rect x="480" y="244" width="436" height="176" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="698" y="268" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">O'LCHOVDA UCHRAGAN TUZOQLAR</text>
+  <text x="500" y="292" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">pyin NaN qaytardi  -&gt; XATO EMAS</text>
+  <text x="512" y="310" fill="#f87171" font-size="11" >freymlarning 35% i ovozsiz (s, t, k, f)</text>
+  <text x="500" y="334" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">f0 o'rtacha 148.9  vs  median 138.2</text>
+  <text x="512" y="352" fill="#f87171" font-size="11">oktava xatolari O'RTACHANI buzadi -&gt; median oling</text>
+  <text x="500" y="376" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">pre-emphasis SIZ  -&gt; F3, F4 topilmaydi</text>
+  <text x="512" y="394" fill="#f87171" font-size="11">energiyaning 59% i 300 Hz dan past</text>
+  <text x="500" y="412" fill="#fbbf24" font-size="11.5" font-weight="700">f0 dan JINSNI aniqlab bo'lmaydi</text>
+
+  <!-- history -->
+  <rect x="24" y="438" width="892" height="146" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="470" y="462" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">Har avlod oldingisining muammosini yechdi</text>
+
+  <line x1="70" y1="512" x2="880" y2="512" stroke="#475569" stroke-width="2"/>
+  <g font-family="Consolas, monospace" font-size="11" fill="#94a3b8" text-anchor="middle">
+    <text x="110" y="504">1952</text><circle cx="110" cy="512" r="5" fill="#64748b"/><text x="110" y="532" fill="#7dd3fc">Audrey</text><text x="110" y="548" fill="#f87171">bitta ovoz</text>
+    <text x="250" y="504">1971</text><circle cx="250" cy="512" r="5" fill="#64748b"/><text x="250" y="532" fill="#7dd3fc">DTW</text><text x="250" y="548" fill="#f87171">O(n*m) sekin</text>
+    <text x="400" y="504">1980</text><circle cx="400" cy="512" r="6" fill="#4ade80"/><text x="400" y="532" fill="#4ade80">HMM</text><text x="400" y="548" fill="#f87171">lug'at kerak</text>
+    <text x="560" y="504">2012</text><circle cx="560" cy="512" r="5" fill="#64748b"/><text x="560" y="532" fill="#7dd3fc">DNN-HMM</text><text x="560" y="548" fill="#f87171">ko'p bosqich</text>
+    <text x="710" y="504">2016</text><circle cx="710" cy="512" r="6" fill="#4ade80"/><text x="710" y="532" fill="#4ade80">end-to-end</text><text x="710" y="548" fill="#f87171">ko'p ma'lumot</text>
+    <text x="850" y="504">2022</text><circle cx="850" cy="512" r="6" fill="#fbbf24"/><text x="850" y="532" fill="#fbbf24">Whisper</text><text x="850" y="548" fill="#f87171">qora quti</text>
+  </g>
+  <text x="470" y="574" fill="#fbbf24" font-size="12" font-weight="700" text-anchor="middle">O'ZGARMAGAN: audio -&gt; freym -&gt; spektrogramma -&gt; model</text>
+</svg>

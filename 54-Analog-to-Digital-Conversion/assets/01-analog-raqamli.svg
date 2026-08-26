@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 620" width="940" height="620" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="d1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#38bdf8"/></marker>
+  </defs>
+  <rect width="940" height="620" fill="#0f172a" rx="14"/>
+  <text x="470" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Analog → Raqamli: ikki qadam, ikki turli yo'qotish</text>
+  <text x="470" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: speech_01.wav · 44 100 Hz · 24 bit · mono · 1058 kbps</text>
+
+  <!-- pipeline -->
+  <rect x="24" y="74" width="276" height="112" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="162" y="98" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">① SAMPLING — vaqt bo'yicha</text>
+  <text x="44" y="122" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">Nayqvist = sr / 2</text>
+  <text x="44" y="142" fill="#f87171" font-size="12" font-family="Consolas, monospace">undan yuqorisi -&gt; ALIASING</text>
+  <text x="44" y="164" fill="#fca5a5" font-size="11.5" font-family="Consolas, monospace">8 kHz da: 7500 Hz -&gt; 500 Hz</text>
+  <text x="44" y="180" fill="#fbbf24" font-size="11">yo'qotish EMAS — BUZILISH</text>
+
+  <line x1="308" y1="130" x2="336" y2="130" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#d1)"/>
+
+  <rect x="348" y="74" width="276" height="112" rx="12" fill="#1e293b" stroke="#4ade80" stroke-width="2"/>
+  <text x="486" y="98" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">② QUANTIZATION — amplituda</text>
+  <text x="368" y="122" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">2^bit daraja</text>
+  <text x="368" y="142" fill="#86efac" font-size="12" font-family="Consolas, monospace">16 bit -&gt; 65 536</text>
+  <text x="368" y="164" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">24 bit -&gt; 16 777 216</text>
+  <text x="368" y="180" fill="#fbbf24" font-size="11">kvantlash shovqini</text>
+
+  <line x1="632" y1="130" x2="660" y2="130" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#d1)"/>
+
+  <rect x="672" y="74" width="244" height="112" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="794" y="98" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">bitrate</text>
+  <text x="692" y="124" fill="#7dd3fc" font-size="12" font-family="Consolas, monospace">sr x bit x kanal</text>
+  <text x="692" y="146" fill="#94a3b8" font-size="11.5" font-family="Consolas, monospace">44.1k/24/mono = 1058 kbps</text>
+  <text x="692" y="164" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">16k/16/mono  =  256 kbps</text>
+  <text x="692" y="180" fill="#fbbf24" font-size="11">4.1x kichik · ASR aniqligi BIR XIL</text>
+
+  <!-- SNR table -->
+  <rect x="24" y="204" width="892" height="192" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="470" y="228" fill="#fecaca" font-size="15" font-weight="700" text-anchor="middle">Darslik formulasi 6.02·b + 1.76 — nutq uchun ~16 dB XATO</text>
+  <text x="44" y="254" fill="#fca5a5" font-size="12.5" font-family="Consolas, monospace">bit    o'lchangan SNR    darslik formulasi    krest bilan tuzatilgan</text>
+  <line x1="44" y1="262" x2="896" y2="262" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="282" fill="#94a3b8" font-size="12" font-family="Consolas, monospace"> 8         33.87              49.92                  33.81</text>
+  <text x="44" y="302" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">12         58.00              74.00                  57.89</text>
+  <text x="44" y="322" fill="#4ade80" font-size="12" font-family="Consolas, monospace">16         82.06              98.08                  81.97</text>
+  <text x="44" y="342" fill="#94a3b8" font-size="12" font-family="Consolas, monospace">24        130.22             146.24                 130.13</text>
+  <text x="44" y="368" fill="#fbbf24" font-size="12.5" font-weight="700" font-family="Consolas, monospace">SNR = 6.02·b + 1.76 − krest_faktor + 3      (krest = 19.11 dB)</text>
+  <text x="44" y="388" fill="#f87171" font-size="11.5">sabab: formula TO'LIQ SHKALALI SINUS uchun · nutq shkalaning bir qismidan foydalanadi</text>
+
+  <!-- resample -->
+  <rect x="24" y="412" width="440" height="188" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="244" y="436" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">Qayta namunalash 44.1k → 16k</text>
+  <text x="44" y="460" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">usul                 vaqt    xato</text>
+  <line x1="44" y1="468" x2="444" y2="468" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="488" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">librosa soxr_hq     4.2 ms  0.000000</text>
+  <text x="44" y="508" fill="#86efac" font-size="11.5" font-family="Consolas, monospace">librosa soxr_mq     4.1 ms  0.000337</text>
+  <text x="44" y="528" fill="#94a3b8" font-size="11.5" font-family="Consolas, monospace">scipy resample_poly 8.0 ms  0.007574</text>
+  <text x="44" y="548" fill="#f87171" font-size="11.5" font-family="Consolas, monospace">y[::k]              0.0 ms  0.131524</text>
+  <text x="44" y="572" fill="#f87171" font-size="11.5">y[::k] uzunligi 518436 (kerakli 376190) — fayl SEKINLASHADI</text>
+  <text x="44" y="590" fill="#fbbf24" font-size="11.5" font-weight="700">librosa 2x TEZ va aniqroq — kutilganning teskarisi</text>
+
+  <!-- normalize -->
+  <rect x="480" y="412" width="436" height="188" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="698" y="436" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">Normallashtirish — qaysi biri?</text>
+  <text x="500" y="460" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">usul        RMS      cho'qqi   clipping</text>
+  <line x1="500" y1="468" x2="896" y2="468" stroke="#475569" stroke-width="1"/>
+  <text x="500" y="488" fill="#94a3b8" font-size="11.5" font-family="Consolas, monospace">asl       -20.87     0.594        0</text>
+  <text x="500" y="508" fill="#94a3b8" font-size="11.5" font-family="Consolas, monospace">cho'qqi   -16.44     0.990        0</text>
+  <text x="500" y="528" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">RMS -20   -20.00     0.657        0</text>
+  <text x="500" y="548" fill="#f87171" font-size="11.5" font-family="Consolas, monospace">z-norm     +0.00     6.570    97958</text>
+  <text x="500" y="572" fill="#4ade80" font-size="11.5" font-weight="700">ASR uchun -&gt; RMS normallashtirish</text>
+  <text x="500" y="590" fill="#f87171" font-size="11.5">z-norm faqat XUSUSIYATLAR uchun, to'lqin uchun EMAS</text>
+</svg>
