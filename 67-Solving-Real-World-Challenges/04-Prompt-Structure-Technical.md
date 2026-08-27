@@ -248,7 +248,7 @@ sozlash
 [3] BAHOLOVCHI  <-- tarix + MB xulosasi + kod misollari
 ```
 
-> ## 💡 **E'TIBOR BERING — MB XULOSASI IKKI JOYGA BORADI:** ## generatorга *(savol yaratish uchun)* ## va baholovchiga *(javobni tekshirish uchun)*. ## ## 🔑 Shuning uchun 4-bo'limda **×2** hisobladik.
+> ## 💡 **E'TIBOR BERING — MB XULOSASI IKKI JOYGA BORADI:** ## generatorga *(savol yaratish uchun)* ## va baholovchiga *(javobni tekshirish uchun)*. ## ## 🔑 Shuning uchun 4-bo'limda **×2** hisobladik.
 
 ---
 

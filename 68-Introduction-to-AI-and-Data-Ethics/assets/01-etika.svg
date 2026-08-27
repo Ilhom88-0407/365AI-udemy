@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" width="960" height="700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="700" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Texnik ishonchlilik = 67-modul. Etik tayyorlik = 18.8%</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">Bizning Ace Interview ilovasi, AI hayot sikli bo'yicha audit</text>
+
+  <!-- hayot sikli -->
+  <rect x="24" y="74" width="912" height="150" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="480" y="98" fill="#f1f5f9" font-size="14" font-weight="700" text-anchor="middle">AI HAYOT SIKLI — 6 BOSQICH, 3 ETIK TOIFA</text>
+
+  <rect x="44" y="112" width="270" height="92" rx="10" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="179" y="132" fill="#bae6fd" font-size="12.5" font-weight="700" text-anchor="middle">ETIK MA'LUMOT TO'PLASH</text>
+  <text x="179" y="152" fill="#e2e8f0" font-size="11.5" text-anchor="middle">1. to'plash + 2. tayyorlash</text>
+  <text x="179" y="172" fill="#94a3b8" font-size="11" text-anchor="middle">Ma'lumot QAYERDAN?</text>
+  <text x="179" y="194" fill="#fbbf24" font-size="12" font-weight="700" text-anchor="middle">2/6 ✓   (70-modul)</text>
+
+  <rect x="345" y="112" width="270" height="92" rx="10" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="480" y="132" fill="#fde68a" font-size="12.5" font-weight="700" text-anchor="middle">ETIK ISHLAB CHIQISH</text>
+  <text x="480" y="152" fill="#e2e8f0" font-size="11.5" text-anchor="middle">3. o'qitish + 4. baholash</text>
+  <text x="480" y="172" fill="#94a3b8" font-size="11" text-anchor="middle">Kimga ZARAR?</text>
+  <text x="480" y="194" fill="#f87171" font-size="12" font-weight="700" text-anchor="middle">0/4 ✓   (71-modul)</text>
+
+  <rect x="646" y="112" width="270" height="92" rx="10" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="781" y="132" fill="#fecaca" font-size="12.5" font-weight="700" text-anchor="middle">ETIK JOYLASHTIRISH</text>
+  <text x="781" y="152" fill="#e2e8f0" font-size="11.5" text-anchor="middle">5. joylashtirish + 6. monitoring</text>
+  <text x="781" y="172" fill="#94a3b8" font-size="11" text-anchor="middle">Kim JAVOBGAR?</text>
+  <text x="781" y="194" fill="#f87171" font-size="12" font-weight="700" text-anchor="middle">1/6 ✓   (72-modul)</text>
+
+  <!-- audit natijasi -->
+  <rect x="24" y="240" width="450" height="200" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="264" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">16 TA SAVOL — 3 TASIGA "HA"</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="292" fill="#4ade80">OK  3   javob berildi va TO'G'RI</text>
+    <text x="44" y="314" fill="#f87171">BAD 9   javob berildi va YO'Q</text>
+    <text x="44" y="336" fill="#fbbf24">??  4   BILMAYMIZ</text>
+  </g>
+  <line x1="44" y1="350" x2="454" y2="350" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="374" fill="#f87171" font-size="14" font-weight="700" font-family="Consolas, monospace">tayyorlik: 18.8%</text>
+  <text x="44" y="400" fill="#fbbf24" font-size="11.5" font-weight="700">"??" — "BAD" dan YOMONROQ:</text>
+  <text x="44" y="420" fill="#94a3b8" font-size="11">BAD da muammoni bilasiz, ?? da bor-yo'qligini ham bilmaysiz</text>
+
+  <!-- regulyatsiya bo'shlig'i -->
+  <rect x="490" y="240" width="446" height="200" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="713" y="264" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">QONUN TEXNOLOGIYADAN 7.5 YIL ORQADA</text>
+  <text x="510" y="290" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">texnologiya          paydo   bo'shliq</text>
+  <line x1="510" y1="298" x2="916" y2="298" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="318" fill="#94a3b8">Ijtimoiy tarmoq       2007    11 yil</text>
+    <text x="510" y="336" fill="#94a3b8">Yuz tanish            2014    10 yil</text>
+    <text x="510" y="354" fill="#94a3b8">Avtomatik yollash     2016     7 yil</text>
+    <text x="510" y="372" fill="#f87171">Deepfake              2018   HALI YO'Q</text>
+    <text x="510" y="390" fill="#f87171">Ovoz klonlash         2019   HALI YO'Q</text>
+    <text x="510" y="408" fill="#4ade80">LLM                   2022     2 yil</text>
+  </g>
+  <text x="510" y="432" fill="#fbbf24" font-size="11" font-weight="700">Greg Marston: 2003 shartnoma, 2019 texnologiya, qonun — yo'q</text>
+
+  <!-- risk registri -->
+  <rect x="24" y="456" width="912" height="140" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="480" y="480" fill="#f1f5f9" font-size="14" font-weight="700" text-anchor="middle">ETIK RISK REGISTRI — 4 TA KRITIK</text>
+  <text x="44" y="506" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">daraja  ball  bosqich          prinsip       tavsif</text>
+  <line x1="44" y1="514" x2="916" y2="514" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="534" fill="#f87171">KRITIK   25   monitoring       adolat        Ball haqiqiy sifatni aks ettirmaydi</text>
+    <text x="44" y="552" fill="#f87171">KRITIK   20   to'plash         maxfiylik     Nomzod javoblari saqlanadi</text>
+    <text x="44" y="570" fill="#f87171">KRITIK   20   joylashtirish    javobgarlik   Prompt injection</text>
+    <text x="44" y="588" fill="#f87171">KRITIK   16   ishlab chiqish   adolat        Model o'zbekchani yomon biladi</text>
+  </g>
+
+  <!-- xulosa -->
+  <rect x="24" y="612" width="912" height="66" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="480" y="640" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">TEXNIK ISHONCHLILIK ≠ ETIK TAYYORLIK</text>
+  <text x="480" y="664" fill="#94a3b8" font-size="12" text-anchor="middle">JSON tuzatildi, injection bloklandi, zaxira qo'yildi — lekin "qaror ustidan shikoyat" haqida o'ylanmagan</text>
+</svg>

@@ -100,7 +100,8 @@
 | 65 | [LLM Engineering: Streamlit](65-Getting-to-Know-Streamlit/README.md) 🖥️ | 6 | ✅ Tayyor |
 | 66 | [LLM Engineering: prototip](66-Developing-the-Prototype/README.md) 🛠️ | 9 | ✅ Tayyor |
 | 67 | [LLM Engineering: real muammolar](67-Solving-Real-World-Challenges/README.md) 🔥 | 11 | ✅ Tayyor |
-| 68 | AI etikasi: kirish | — | ⏳ Navbatda |
+| 68 | [AI etikasi: kirish](68-Introduction-to-AI-and-Data-Ethics/README.md) ⚖️ | 4 | ✅ Tayyor |
+| 69 | AI etikasi: asosiy prinsiplar | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
