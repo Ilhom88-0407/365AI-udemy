@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" width="960" height="700" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="700" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">"1 token = 4 belgi" — 68% xato. Va PRAGMA foreign_keys jimgina o'chib qoladi.</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">o'lchangan: tiktoken 0.14 · sqlite 3.50.4 · Qwen2.5-0.5B-Instruct</text>
+
+  <!-- token rules -->
+  <rect x="24" y="74" width="450" height="206" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">KURSNING TOKEN QOIDALARI</text>
+  <text x="44" y="122" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">qoida                kutilgan  o'lchangan  farq</text>
+  <line x1="44" y1="129" x2="454" y2="129" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="148" fill="#f87171">1 token ~ 4 belgi        4.00     6.72   68%</text>
+    <text x="44" y="168" fill="#fbbf24">1 token ~ 0.75 so'z      0.75     0.88   17%</text>
+    <text x="44" y="188" fill="#f87171">1-2 jumla ~ 30 token    30.00    37.00   23%</text>
+    <text x="44" y="208" fill="#fbbf24">paragraf ~ 100 token   100.00   114.29   14%</text>
+    <text x="44" y="228" fill="#4ade80">1900 so'z ~ 2048 tok  2048.00  2171.43    6%</text>
+  </g>
+  <text x="44" y="256" fill="#fbbf24" font-size="11.5" font-weight="700">Sabab: qoida GPT-3 davridan (50k lug'at). Bugun o200k = 200k.</text>
+  <text x="44" y="272" fill="#94a3b8" font-size="11">Matn turiga qarab: nasr 6.72 · kod 3.73 · JSON 2.48 · raqam 2.00</text>
+
+  <!-- sqlite trap -->
+  <rect x="490" y="74" width="446" height="206" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="713" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">SQLite FK TUZOG'I</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="124" fill="#94a3b8">db.execute("INSERT INTO positions ...")</text>
+    <text x="510" y="144" fill="#fbbf24">db.execute("PRAGMA foreign_keys = ON")</text>
+    <text x="510" y="164" fill="#f87171">db.execute("PRAGMA foreign_keys")  -&gt; 0</text>
+    <text x="510" y="192" fill="#f87171">INSERT INTO qp VALUES (999, 1)  -&gt; O'TDI</text>
+  </g>
+  <line x1="510" y1="206" x2="916" y2="206" stroke="#475569" stroke-width="1"/>
+  <text x="510" y="226" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">PRAGMA ni INSERT dan OLDIN qo'ysangiz -&gt; 1</text>
+  <text x="510" y="246" fill="#4ade80" font-size="11.5" font-family="Consolas, monospace">FK to'xtatadi: IntegrityError</text>
+  <text x="510" y="270" fill="#fbbf24" font-size="12" font-weight="700">Ochiq tranzaksiya ichida PRAGMA JIMGINA e'tiborsiz.</text>
+
+  <!-- cost -->
+  <rect x="24" y="296" width="450" height="188" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="249" y="320" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">NARX: 10 000 SUHBAT</text>
+  <text x="44" y="344" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">model              narx     nisbat</text>
+  <line x1="44" y1="351" x2="454" y2="351" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="370" fill="#4ade80">mahalliy         $  0.00      0x</text>
+    <text x="44" y="390" fill="#4ade80">gpt-4o-mini      $ 15.61      1x</text>
+    <text x="44" y="410" fill="#fbbf24">gpt-3.5-turbo    $ 45.22    2.9x</text>
+    <text x="44" y="430" fill="#f87171">gpt-4o           $260.10   16.7x</text>
+  </g>
+  <text x="44" y="456" fill="#fbbf24" font-size="12" font-weight="700">Suhbatda 4 964 kirish, 1 360 chiqish token.</text>
+  <text x="44" y="474" fill="#94a3b8" font-size="11">Tarix har navbatda qayta yuboriladi -&gt; kirish 3.6x ko'p.</text>
+
+  <!-- prompt -->
+  <rect x="490" y="296" width="446" height="188" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="713" y="320" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">PROMPT SIFATGA TA'SIRI (0.5B model)</text>
+  <g font-family="Consolas, monospace" font-size="11">
+    <text x="510" y="344" fill="#f87171">A  5 tok  "Sure! What's your question?"</text>
+    <text x="510" y="368" fill="#fbbf24">B 17 tok  "Great! What's your background..."</text>
+    <text x="510" y="392" fill="#4ade80">C 33 tok  "What is your experience with data</text>
+    <text x="510" y="408" fill="#4ade80">          analysis and machine learning..."</text>
+    <text x="510" y="432" fill="#f87171">D 44 tok  "Q: " prefiksi BAJARILMADI</text>
+  </g>
+  <text x="510" y="458" fill="#4ade80" font-size="11.5" font-weight="700">A -&gt; C: 28 ta token qo'shildi, sifat sezilarli oshdi.</text>
+  <text x="510" y="475" fill="#f87171" font-size="11.5" font-weight="700">D -&gt; ko'proq ko'rsatma YAXSHIROQ EMAS.</text>
+
+  <!-- breakeven -->
+  <rect x="24" y="500" width="912" height="180" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="480" y="524" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">HOSTING vs API — TENG NUQTA</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="550" fill="#94a3b8">hosting (6 x A100, 24/7)          $2 520 / hafta = $131 040 / yil</text>
+    <text x="44" y="574" fill="#4ade80">300 suhbat/kun    -&gt; API      $14.05/oy      (hosting 179x qimmat)</text>
+    <text x="44" y="598" fill="#f87171">500 000 suhbat/kun -&gt; HOSTING  $23 409/oy API vs ~$10 800 hosting</text>
+    <text x="44" y="626" fill="#fbbf24">TENG NUQTA: 230 681 suhbat/kun (6 navbatli suhbat uchun)</text>
+  </g>
+  <text x="44" y="654" fill="#94a3b8" font-size="11.5">1-darsda 147 000 chiqqan edi — chunki u yerda BITTA so'rov hisoblangan.</text>
+  <text x="44" y="670" fill="#fbbf24" font-size="11.5" font-weight="700">Teng nuqta — SUHBAT SHAKLIGA bog'liq. Bitta raqam yetarli emas.</text>
+</svg>
