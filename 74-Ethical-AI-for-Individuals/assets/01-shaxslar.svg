@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" width="960" height="760" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="760" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Filtr pufagi 30-qadamda emas — BIRINCHI qadamda yopildi</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">til jarimasi · tavsiya halqasi · deepfake · AI matnini aniqlash</text>
+
+  <!-- 1. pufak -->
+  <rect x="24" y="74" width="450" height="228" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">10 MAVZUDAN 5 TASI HECH KO'RSATILMADI</text>
+  <text x="44" y="122" fill="#94a3b8" font-size="11">30 qadam, 10 urug', hammasi teng (1.0) boshlaydi:</text>
+  <line x1="44" y1="130" x2="454" y2="130" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="152" fill="#94a3b8">pufak qotgan qadam</text>
+    <text x="330" y="152" fill="#f87171">0</text>
+    <text x="44" y="172" fill="#94a3b8">jami ko'rilgan mavzu</text>
+    <text x="330" y="172" fill="#f87171">5/10</text>
+  </g>
+  <line x1="44" y1="186" x2="454" y2="186" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="208" fill="#fbbf24" font-size="11.5" font-weight="700">Nima YORDAM BERMADI:</text>
+  <g font-family="Consolas, monospace" font-size="11">
+    <text x="44" y="228" fill="#94a3b8">so'nishni O'CHIRISH (x1.00)</text>
+    <text x="330" y="228" fill="#f87171">5.0</text>
+    <text x="44" y="246" fill="#94a3b8">boshlang'ich tarqoqlik 0.50</text>
+    <text x="330" y="246" fill="#f87171">5.0</text>
+  </g>
+  <text x="44" y="270" fill="#86efac" font-size="11.5" font-weight="700">Nima YORDAM BERDI:</text>
+  <g font-family="Consolas, monospace" font-size="11">
+    <text x="44" y="290" fill="#94a3b8">5% tasodifiy aralashtirish</text>
+    <text x="330" y="290" fill="#4ade80">8.3</text>
+  </g>
+
+  <!-- 2. til -->
+  <rect x="486" y="74" width="450" height="228" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="711" y="98" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">O'ZBEK FOYDALANUVCHISI UCH MARTA JAZOLANADI</text>
+  <text x="506" y="122" fill="#94a3b8" font-size="11">Bir xil savol, uch til (o200k_base):</text>
+  <line x1="506" y1="130" x2="916" y2="130" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="506" y="152" fill="#94a3b8">token: EN 14 / RU 18 / UZ 25</text>
+    <text x="830" y="152" fill="#f87171">1.79x</text>
+    <text x="506" y="174" fill="#94a3b8">8000 oynaga sig'adi</text>
+    <text x="760" y="174" fill="#cbd5e1">571 / 444 /</text>
+    <text x="880" y="174" fill="#f87171">320</text>
+    <text x="506" y="196" fill="#94a3b8">idioma testi (71-modul)</text>
+    <text x="760" y="196" fill="#fbbf24">EN 3/5</text>
+    <text x="860" y="196" fill="#f87171">UZ 0/5</text>
+  </g>
+  <line x1="506" y1="210" x2="916" y2="210" stroke="#475569" stroke-width="1"/>
+  <text x="506" y="232" fill="#fde68a" font-size="11.5" font-weight="700">(1) ko'proq to'laydi  (2) kamroq kontekst</text>
+  <text x="506" y="250" fill="#fde68a" font-size="11.5" font-weight="700">(3) yomonroq javob — bitta sababdan.</text>
+  <text x="506" y="274" fill="#94a3b8" font-size="11">Yangi tokenizator ruschani 54%, o'zbekchani 19% arzonlashtirdi:</text>
+  <text x="506" y="292" fill="#f87171" font-size="11">yaxshilanish allaqachon yaxshi ta'minlanganlarga ko'proq tegdi.</text>
+
+  <!-- 3. detektor -->
+  <rect x="24" y="314" width="450" height="216" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+  <text x="249" y="338" fill="#bfdbfe" font-size="14" font-weight="700" text-anchor="middle">AI MATNINI ANIQLASH — UCH SINOV</text>
+  <line x1="44" y1="350" x2="454" y2="350" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="372" fill="#94a3b8">men to'qigan namunalar</text>
+    <text x="360" y="372" fill="#4ade80">100%</text>
+    <text x="44" y="392" fill="#94a3b8">HAQIQIY model matni</text>
+    <text x="360" y="392" fill="#fbbf24">67%</text>
+    <text x="44" y="412" fill="#94a3b8">qisqartirilgan ko'chirma</text>
+    <text x="360" y="412" fill="#f87171">50%</text>
+    <text x="44" y="436" fill="#94a3b8">6 so'z almashtirilgach</text>
+    <text x="360" y="436" fill="#f87171">5/5 -&gt; 1/5</text>
+  </g>
+  <line x1="44" y1="450" x2="454" y2="450" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="472" fill="#bfdbfe" font-size="11.5" font-weight="700">Birinchi 100% — DOIRAVIY SINOV edi:</text>
+  <text x="44" y="490" fill="#94a3b8" font-size="11">namunalarni detektorning O'Z kalit so'zlari bilan yozgandim.</text>
+  <text x="44" y="514" fill="#fca5a5" font-size="11.5" font-weight="700">Detektor muallifni emas, USLUBNI o'lchaydi.</text>
+
+  <!-- 4. deepfake -->
+  <rect x="486" y="314" width="450" height="216" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="711" y="338" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">PAROL SO'ZI — TEXNOLOGIYASIZ HIMOYA</text>
+  <text x="506" y="360" fill="#94a3b8" font-size="11">McAfee: 25% duch keldi, ulardan 70% ajrata olmaydi</text>
+  <line x1="506" y1="368" x2="916" y2="368" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="506" y="390" fill="#94a3b8">himoyasiz ulush</text>
+    <text x="800" y="390" fill="#f87171">17.5%</text>
+    <text x="506" y="410" fill="#94a3b8">(har 6 kishidan 1 tasi)</text>
+    <text x="506" y="434" fill="#94a3b8">parol so'zi 90% samarali</text>
+    <text x="800" y="434" fill="#4ade80">1.75%</text>
+    <text x="506" y="454" fill="#94a3b8">lekin qamrov 10% bo'lsa</text>
+    <text x="800" y="454" fill="#fbbf24">15.9%</text>
+  </g>
+  <line x1="506" y1="468" x2="916" y2="468" stroke="#475569" stroke-width="1"/>
+  <text x="506" y="490" fill="#bbf7d0" font-size="11.5" font-weight="700">"Men bilaman" yetarli emas — BUTUN OILA bilsin.</text>
+  <text x="506" y="514" fill="#94a3b8" font-size="11">Va u deepfake SIFATIGA umuman bog'liq emas.</text>
+
+  <!-- 5. rule -->
+  <rect x="24" y="546" width="912" height="90" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="480" y="572" fill="#f1f5f9" font-size="14" font-weight="700" text-anchor="middle">"AI YOZGANMI?" — NOTO'G'RI SAVOL</text>
+  <line x1="44" y1="582" x2="916" y2="582" stroke="#475569" stroke-width="1"/>
+  <g font-size="11.5">
+    <text x="60" y="604" fill="#f87171">"Buni AI yozganmi?"</text>
+    <text x="300" y="604" fill="#64748b">-&gt;</text>
+    <text x="340" y="604" fill="#4ade80">"Bu da'vo to'g'rimi?"</text>
+    <text x="60" y="626" fill="#f87171">"Bu ovoz haqiqiymi?"</text>
+    <text x="300" y="626" fill="#64748b">-&gt;</text>
+    <text x="340" y="626" fill="#4ade80">"Parol so'zini biladimi?"</text>
+    <text x="600" y="604" fill="#f87171">"Bu sharh haqiqiymi?"</text>
+    <text x="790" y="604" fill="#64748b">-&gt;</text>
+    <text x="820" y="604" fill="#4ade80">"Xarid bormi?"</text>
+    <text x="600" y="626" fill="#f87171">"Bu rasm haqiqiymi?"</text>
+    <text x="790" y="626" fill="#64748b">-&gt;</text>
+    <text x="820" y="626" fill="#4ade80">"Manbasi bormi?"</text>
+  </g>
+
+  <!-- 6. final -->
+  <rect x="24" y="652" width="912" height="82" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="480" y="680" fill="#fde68a" font-size="15" font-weight="700" text-anchor="middle">SHAFFOFLIK SINOVI: "Agar AI ishlatganimni aytsam, natija o'zgaradimi?"</text>
+  <text x="480" y="704" fill="#94a3b8" font-size="12" text-anchor="middle">Yo'q -&gt; muammo yo'q, ayting va davom eting.    Ha -&gt; aytishingiz SHART.</text>
+  <text x="480" y="724" fill="#86efac" font-size="11" text-anchor="middle">U "qancha AI ko'p?" degan javobsiz savolni chetlab o'tadi.</text>
+</svg>
