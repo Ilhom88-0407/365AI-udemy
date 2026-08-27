@@ -108,7 +108,7 @@
 | 73 | [AI etikasi: biznes foydalanuvchilar](73-Ethical-AI-for-Businesses/README.md) 📦 | 4 | ✅ Tayyor |
 | 74 | [AI etikasi: shaxsiy foydalanuvchilar](74-Ethical-AI-for-Individuals/README.md) 📦 | 3 | ✅ Tayyor |
 | 75 | [AI etikasi: ChatGPT etikasi](75-ChatGPT-Ethics/README.md) 📦 | 6 | ✅ Tayyor |
-| 76 | AI etikasi: regulyatsiya asoslari | — | ⏳ Navbatda |
+| 76 | [AI etikasi: regulyatsiya asoslari](76-Data-and-AI-Regulatory-Frameworks/README.md) 📦 | 5 | ✅ Tayyor |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
