@@ -97,7 +97,8 @@
 | 62 | [LLM Engineering: kirish](62-LLM-Engineering-Introduction/README.md) 🧠 | 3 | ✅ Tayyor |
 | 63 | [LLM Engineering: rejalashtirish](63-LLM-Planning-Stage/README.md) 🗺️ | 10 | ✅ Tayyor |
 | 64 | [LLM Engineering: promptlar](64-Crafting-and-Testing-Prompts/README.md) ✍️ | 5 | ✅ Tayyor |
-| 65 | LLM Engineering: Streamlit | — | ⏳ Navbatda |
+| 65 | [LLM Engineering: Streamlit](65-Getting-to-Know-Streamlit/README.md) 🖥️ | 6 | ✅ Tayyor |
+| 66 | LLM Engineering: prototip | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
