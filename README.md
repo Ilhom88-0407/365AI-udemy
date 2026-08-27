@@ -103,7 +103,8 @@
 | 68 | [AI etikasi: kirish](68-Introduction-to-AI-and-Data-Ethics/README.md) ⚖️ | 4 | ✅ Tayyor |
 | 69 | [AI etikasi: asosiy prinsiplar](69-Core-Principles-of-AI-Ethics/README.md) 🧭 | 4 | ✅ Tayyor |
 | 70 | [AI etikasi: etik ma'lumot to'plash](70-Ethical-Data-Collection/README.md) 📦 | 6 | ✅ Tayyor |
-| 71 | AI etikasi: etik ishlab chiqish | — | ⏳ Navbatda |
+| 71 | [AI etikasi: etik ishlab chiqish](71-Ethical-AI-Development/README.md) 📦 | 6 | ✅ Tayyor |
+| 72 | AI etikasi: etik joylashtirish | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 

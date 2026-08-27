@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" width="960" height="780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="780" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Metrika &quot;xato javob yo'q&quot; ni &quot;to'g'ri javob bor&quot; bilan chalkashtirdi</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">belgilash · proksi · Tay · SFT · RLHF · chetki holatlar — hammasi o'lchandi</text>
+
+  <!-- 1. metrika aldadi -->
+  <rect x="24" y="74" width="450" height="212" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">METRIKA BIZNI ALDADI</text>
+  <text x="44" y="124" fill="#94a3b8" font-size="11.5">Beshta o'zbek idiomasi, Qwen2.5-0.5B:</text>
+  <line x1="44" y1="132" x2="454" y2="132" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="154" fill="#94a3b8">metrika 1 (taqiqlangan so'z)</text>
+    <text x="330" y="154" fill="#4ade80">4/5</text>
+    <text x="44" y="176" fill="#94a3b8">metrika 2 (uch holatli)</text>
+    <text x="330" y="176" fill="#f87171">0/5</text>
+  </g>
+  <line x1="44" y1="190" x2="454" y2="190" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="212" fill="#fbbf24" font-size="11.5">Model javobi:</text>
+  <text x="44" y="232" fill="#cbd5e1" font-size="11" font-family="Consolas, monospace">&quot;I apologize, but I'm not sure what you</text>
+  <text x="44" y="248" fill="#cbd5e1" font-size="11" font-family="Consolas, monospace"> mean by &quot;Qo'lim kalta.&quot;&quot;</text>
+  <text x="44" y="272" fill="#fca5a5" font-size="11.5" font-weight="700">Hech narsa tushunmadi — lekin &quot;o'tdi&quot; sanaldi.</text>
+
+  <!-- 2. inglizcha vs o'zbekcha -->
+  <rect x="486" y="74" width="450" height="212" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="711" y="98" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">INGLIZCHA 3/5 — O'ZBEKCHA 0/5</text>
+  <text x="506" y="124" fill="#94a3b8" font-size="11.5">Chetki holatlar (idiomalar):</text>
+  <line x1="506" y1="132" x2="916" y2="132" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="506" y="154" fill="#94a3b8">tushundi</text>
+    <text x="700" y="154" fill="#4ade80">3</text>
+    <text x="800" y="154" fill="#f87171">0</text>
+    <text x="506" y="174" fill="#94a3b8">so'zma-so'z</text>
+    <text x="700" y="174" fill="#fbbf24">1</text>
+    <text x="800" y="174" fill="#94a3b8">0</text>
+    <text x="506" y="194" fill="#94a3b8">chalkashdi</text>
+    <text x="700" y="194" fill="#fbbf24">1</text>
+    <text x="800" y="194" fill="#f87171">5</text>
+    <text x="700" y="136" fill="#cbd5e1" font-size="10">EN</text>
+    <text x="800" y="136" fill="#cbd5e1" font-size="10">UZ</text>
+  </g>
+  <line x1="506" y1="208" x2="916" y2="208" stroke="#475569" stroke-width="1"/>
+  <text x="506" y="232" fill="#fde68a" font-size="11.5" font-weight="700">Bu — kursning &quot;aksent&quot; muammosining</text>
+  <text x="506" y="250" fill="#fde68a" font-size="11.5" font-weight="700">matn versiyasi (Alexa / Siri).</text>
+  <text x="506" y="272" fill="#94a3b8" font-size="11">Ingliz tilidagi test o'zbek foydalanuvchisini himoya qilmaydi.</text>
+
+  <!-- 3. ko'p taqqoslash -->
+  <rect x="24" y="298" width="450" height="206" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+  <text x="249" y="322" fill="#bfdbfe" font-size="14" font-weight="700" text-anchor="middle">&quot;STAR WARS&quot; NAQSHI — SONI</text>
+  <text x="44" y="346" fill="#94a3b8" font-size="11.5">300 nomzod, HAMMA belgi tasodifiy (haqiqiy naqsh: 0):</text>
+  <line x1="44" y1="354" x2="454" y2="354" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="376" fill="#94a3b8">  10 belgi</text>
+    <text x="200" y="376" fill="#4ade80">0.3 ta soxta naqsh</text>
+    <text x="44" y="396" fill="#94a3b8">  50 belgi</text>
+    <text x="200" y="396" fill="#4ade80">0.7</text>
+    <text x="44" y="416" fill="#94a3b8"> 200 belgi</text>
+    <text x="200" y="416" fill="#fbbf24">3.6</text>
+    <text x="44" y="436" fill="#94a3b8">1000 belgi</text>
+    <text x="200" y="436" fill="#f87171">17.6</text>
+  </g>
+  <rect x="200" y="368" width="12" height="10" fill="#4ade80" opacity="0.5"/>
+  <rect x="200" y="408" width="60" height="10" fill="#fbbf24" opacity="0.5"/>
+  <rect x="200" y="428" width="240" height="10" fill="#f87171" opacity="0.5"/>
+  <line x1="44" y1="452" x2="454" y2="452" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="474" fill="#bfdbfe" font-size="11.5" font-weight="700">Model &quot;aqlli&quot; emas — u juda ko'p belgini ko'rgan.</text>
+  <text x="44" y="492" fill="#94a3b8" font-size="11">Ko'p taqqoslash muammosi (multiple comparisons).</text>
+
+  <!-- 4. RLHF -->
+  <rect x="486" y="298" width="450" height="206" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="711" y="322" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">REWARD HACKING — 13x</text>
+  <text x="506" y="346" fill="#94a3b8" font-size="11.5">mukofot = min(10, so'zlar / 10):</text>
+  <line x1="506" y1="354" x2="916" y2="354" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="506" y="376" fill="#94a3b8">boshlang'ich  (3 so'z)</text>
+    <text x="800" y="376" fill="#4ade80">0.30</text>
+    <text x="506" y="398" fill="#94a3b8">+6 marta takror (39 so'z)</text>
+    <text x="800" y="398" fill="#f87171">3.90</text>
+  </g>
+  <line x1="506" y1="412" x2="916" y2="412" stroke="#475569" stroke-width="1"/>
+  <text x="506" y="434" fill="#fca5a5" font-size="11.5" font-weight="700">Yangi ma'lumot: 0. Mukofot: 13 barobar.</text>
+  <text x="506" y="458" fill="#94a3b8" font-size="11">Baholovchi profili: C = +1.61 (tizimli siljish),</text>
+  <text x="506" y="476" fill="#94a3b8" font-size="11">D = tarqoqlik 2.18 (barqaror emas).</text>
+  <text x="506" y="494" fill="#fbbf24" font-size="11">C kalibrlanadi. D — yo'q.</text>
+
+  <!-- 5. lower strip -->
+  <rect x="24" y="516" width="912" height="150" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="480" y="540" fill="#f1f5f9" font-size="14" font-weight="700" text-anchor="middle">MODULDA O'LCHANGAN BOSHQA NARSALAR</text>
+  <line x1="44" y1="550" x2="916" y2="550" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="574" fill="#94a3b8">Cohen's kappa (xom kelishuv 75%)</text>
+    <text x="400" y="574" fill="#f87171">0.529 — talabdan past</text>
+    <text x="44" y="596" fill="#94a3b8">Annotator charchashi (4 chorak)</text>
+    <text x="400" y="596" fill="#f87171">0.819 -&gt; 0.572</text>
+    <text x="44" y="618" fill="#94a3b8">Proksi: pochta indeksi</text>
+    <text x="400" y="618" fill="#f87171">bazadan +28.0% aniqroq</text>
+    <text x="44" y="640" fill="#94a3b8">Tay: 90% kirish filtri</text>
+    <text x="400" y="640" fill="#f87171">to'xtatmadi (179 -&gt; 306 qadam)</text>
+    <text x="640" y="574" fill="#94a3b8">SFT drift</text>
+    <text x="750" y="574" fill="#f87171">0.808 -&gt; 0.487</text>
+    <text x="640" y="596" fill="#94a3b8">Nozik test</text>
+    <text x="750" y="596" fill="#fbbf24">3/4 &quot;o'tdi&quot; — 2 tasi shablon</text>
+    <text x="640" y="618" fill="#94a3b8">Kappa paradoksi</text>
+    <text x="750" y="618" fill="#f87171">93% kelishuv -&gt; -0.029</text>
+    <text x="640" y="640" fill="#94a3b8">Uchinchi annotator</text>
+    <text x="750" y="640" fill="#4ade80">84% tejash</text>
+  </g>
+
+  <!-- 6. rule -->
+  <rect x="24" y="682" width="912" height="76" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="480" y="710" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">QOIDA: HAR AVTOMATIK TESTGA &quot;I DON'T KNOW.&quot; NAZORATINI QO'SHING</text>
+  <text x="480" y="734" fill="#86efac" font-size="12" text-anchor="middle">Agar bo'sh javob testdan o'tib ketsa — test buzuq, natijalari esa ma'nosiz.</text>
+  <text x="480" y="752" fill="#94a3b8" font-size="11" text-anchor="middle">69-modulning &quot;sezgirlik nazoratisiz audit yaroqsiz&quot; qoidasining davomi.</text>
+</svg>
