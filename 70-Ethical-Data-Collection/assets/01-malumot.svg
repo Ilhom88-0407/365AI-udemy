@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 760" width="960" height="760" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="760" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Ismni o'chirdik — 200 odamdan 159 tasi baribir aniqlandi</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">k-anonimlik, l-xilma-xillik, kesishma vakilligi · sun'iy ma'lumotda o'lchandi</text>
+
+  <!-- k-anonimlik -->
+  <rect x="24" y="74" width="450" height="210" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">ANONIMLASHTIRISH ISHLAMADI</text>
+  <text x="44" y="124" fill="#94a3b8" font-size="11.5">200 nomzod, ism o'chirilgan:</text>
+  <line x1="44" y1="132" x2="454" y2="132" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="152" fill="#f87171">yosh+shahar+lavozim   k= 1   yolg'iz 159/200</text>
+    <text x="44" y="170" fill="#fbbf24">shahar+lavozim        k= 4   yolg'iz   0/200</text>
+    <text x="44" y="188" fill="#4ade80">lavozim               k=44   yolg'iz   0/200</text>
+  </g>
+  <line x1="44" y1="200" x2="454" y2="200" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="220" fill="#94a3b8" font-size="11.5">Umumlashtirish yordam berdimi?</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="240" fill="#f87171">yosh qadami  5  -> k=1  yolg'iz 54</text>
+    <text x="44" y="258" fill="#f87171">yosh qadami 20  -> k=1  yolg'iz  1</text>
+  </g>
+  <text x="44" y="278" fill="#fbbf24" font-size="11" font-weight="700">YO'Q. k hali ham 1.</text>
+
+  <!-- anonimlik = miqdor -->
+  <rect x="490" y="74" width="446" height="210" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="713" y="98" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">ANONIMLIK — MIQDOR MASALASI</text>
+  <text x="510" y="124" fill="#94a3b8" font-size="11.5">k&gt;=5 va l&gt;=3 talab bilan quvur:</text>
+  <line x1="510" y1="132" x2="916" y2="132" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="154" fill="#f87171">  200 yozuv  ->  saqlandi   43   21.5%</text>
+    <text x="510" y="176" fill="#fbbf24">  500 yozuv  ->  saqlandi  437   87.4%</text>
+    <text x="510" y="198" fill="#4ade80"> 1000 yozuv  ->  saqlandi  992   99.2%</text>
+    <text x="510" y="220" fill="#4ade80"> 2000 yozuv  ->  saqlandi 2000  100.0%</text>
+  </g>
+  <line x1="510" y1="234" x2="916" y2="234" stroke="#475569" stroke-width="1"/>
+  <text x="510" y="256" fill="#fbbf24" font-size="11.5" font-weight="700">Kichik to'plamda anonimlashtirish</text>
+  <text x="510" y="274" fill="#fbbf24" font-size="11.5" font-weight="700">ma'lumotni deyarli yo'q qiladi</text>
+
+  <!-- kesishma -->
+  <rect x="24" y="300" width="450" height="216" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="249" y="324" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">MARGINAL O'TDI, KESISHMA YIQILDI</text>
+  <text x="44" y="350" fill="#94a3b8" font-size="11.5">1500 savollik baza, 80% qoidasi:</text>
+  <line x1="44" y1="358" x2="454" y2="358" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="378" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">--- marginal ---</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="396" fill="#4ade80">lavozim              0.886  OK</text>
+    <text x="44" y="414" fill="#4ade80">daraja               0.924  OK</text>
+    <text x="44" y="432" fill="#4ade80">intervyu             0.995  OK</text>
+  </g>
+  <text x="44" y="452" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">--- kesishma ---</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="470" fill="#f87171">daraja x lavozim     0.713  BAD</text>
+    <text x="44" y="488" fill="#f87171">lavozim x intervyu   0.764  BAD</text>
+    <text x="44" y="506" fill="#f87171">uch o'lchov          0.529  BAD</text>
+  </g>
+
+  <!-- bo'sh qiymatlar -->
+  <rect x="490" y="300" width="446" height="216" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="713" y="324" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">BO'SH QIYMATLAR TASODIFIY EMAS</text>
+  <text x="510" y="350" fill="#94a3b8" font-size="11.5">"daromad" savoliga javob bermaganlar:</text>
+  <line x1="510" y1="358" x2="916" y2="358" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="378" fill="#4ade80">20-29   219 dan  32   14.6%</text>
+    <text x="510" y="396" fill="#4ade80">30-39   212 dan  48   22.6%</text>
+    <text x="510" y="414" fill="#fbbf24">40-49   238 dan  80   33.6%</text>
+    <text x="510" y="432" fill="#f87171">50-59   201 dan  94   46.8%</text>
+    <text x="510" y="450" fill="#f87171">60-69   130 dan  67   51.5%</text>
+  </g>
+  <line x1="510" y1="464" x2="916" y2="464" stroke="#475569" stroke-width="1"/>
+  <text x="510" y="486" fill="#fbbf24" font-size="11.5" font-weight="700">dropna() keksalarning yarmini yo'qotadi,</text>
+  <text x="510" y="504" fill="#fbbf24" font-size="11.5" font-weight="700">model yosh odamlarga moslashadi</text>
+
+  <!-- ma'lumot auditi -->
+  <rect x="24" y="532" width="912" height="150" rx="12" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+  <text x="480" y="556" fill="#f1f5f9" font-size="14" font-weight="700" text-anchor="middle">MA'LUMOT AUDITI: bizning intervyu savollari bazasi</text>
+  <line x1="44" y1="566" x2="916" y2="566" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="60" y="588" fill="#f87171">manba                 ko'rsatilmagan</text>
+    <text x="500" y="588" fill="#fbbf24">PII                   tekshirilmagan</text>
+    <text x="60" y="608" fill="#f87171">litsenziya            noma'lum</text>
+    <text x="500" y="608" fill="#fbbf24">anonimlik (k)         qo'llanilmagan</text>
+    <text x="60" y="628" fill="#f87171">yosh                  909 kun (2.5 yil)</text>
+    <text x="500" y="628" fill="#4ade80">vakillik (marginal)   3/3</text>
+    <text x="60" y="648" fill="#f87171">vakillik (kesishma)   1/3</text>
+  </g>
+  <line x1="44" y1="660" x2="916" y2="660" stroke="#475569" stroke-width="1"/>
+  <text x="480" y="676" fill="#f87171" font-size="13" font-weight="700" text-anchor="middle" font-family="Consolas, monospace">4 KRITIK, 2 OGOHLANTIRISH, 1 O'TDI</text>
+
+  <!-- xulosa -->
+  <rect x="24" y="696" width="912" height="50" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="480" y="727" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">BIAS MODELDA EMAS — MA'LUMOTDA BOSHLANADI</text>
+</svg>
