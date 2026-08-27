@@ -52,6 +52,8 @@ chiqish uzunligi: 215
 
 > ## 💰 **VA LLM ILOVASIDA BU — PUL:** ## 200 000 belgi ≈ 50 000 token ≈ ## 💥 **$0.50+ bitta so'rov uchun**.
 
+> ## ⚠️ **ANIQLIK (66-modulda o'lchandi):** ## bu — **faqat `chat_input`** uchun. ## `text_input` va `text_area` da `max_chars` ## ⭐ **serverda ham kesadi** (200 → 50).
+
 ### ✅ Yechim — **ikki qavat**
 
 ```python
@@ -226,7 +228,7 @@ Kurs: *"2-tugmaga ham session state qo'shish mumkin — buni sizga topshiriq qil
 
 | Kurs aytadi | ## O'lchov |
 |---|---|
-| `max_chars` — belgi chegarasi | ## 💥 **faqat brauzerda; 200 belgi o'tdi** |
+| `max_chars` — belgi chegarasi | ## 💥 **`chat_input` da faqat brauzerda; 200 belgi o'tdi** |
 | "Katta ma'lumotlarda sekin" | ## 💥 **1k va 500k — 457 vs 524 ms** |
 | `:blue[...]` sintaksisi | ## 💥 **noto'g'ri rang jimgina o'tadi** |
 | *"istalgan qo'llab-quvvatlanadigan satr"* rol | ## 💥 **`avatar=''` bo'lib qoladi** |

@@ -206,6 +206,21 @@ if prompt:
 
 > ## 🏆 **UMUMIY QOIDA:** ## **brauzerdagi hech qanday cheklovga ishonmang.** ## ## 🔑 67-modulda buni `prompt injection` ## kontekstida yana ko'ramiz.
 
+### ⚠️ Muhim aniqlik — 66-modulda o'lchandi
+
+Bu xulosa **faqat `chat_input`** uchun to'g'ri. Boshqa widgetlarda `max_chars` **serverda ham ishlaydi**:
+
+```
+hammasi 200 belgi yuborildi, max_chars=50:
+  text_input=50  text_area=50  chat_input=200
+```
+
+> ## 💥 **`text_input` VA `text_area` — KESADI.** ## ## 💥 **`chat_input` — KESMAYDI.**
+>
+> ## ## 🔧 **YA'NI "max_chars serverda ishlamaydi" — ## juda keng xulosa bo'lardi.** ## ⭐ To'g'risi: **`chat_input` istisno**.
+>
+> ## ## 🔑 **VA AYNAN U — ENG XAVFLI JOY:** ## `chat_input` **har xabarda** ishlatiladi, ## sozlash maydonlari esa — **bir marta**.
+
 ---
 
 ## 5. ⭐⭐ `st.write_stream` — **harf-harf** effekti
