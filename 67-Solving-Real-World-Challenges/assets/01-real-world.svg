@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 860" width="960" height="860" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="860" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Ishlab chiqarish: kursning 12 da'vosi tasdiqlandi, 8 tasi tasdiqlanmadi</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">Qwen2.5-0.5B-Instruct · tiktoken o200k_base · do_sample=False · N=5..12</text>
+
+  <!-- 1. JSON zanjiri -->
+  <rect x="24" y="74" width="912" height="176" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="480" y="98" fill="#bbf7d0" font-size="15" font-weight="700" text-anchor="middle">JSON MASSIV: 0/12 -&gt; 10/10 (ikki qatorli tuzatish bilan)</text>
+  <text x="44" y="124" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">yondashuv                                          natija    izoh</text>
+  <line x1="44" y1="132" x2="916" y2="132" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="152" fill="#f87171">oddiy prompt (massiv so'raymiz)                    0/12      "JSON massiv topilmadi"</text>
+    <text x="44" y="172" fill="#f87171">+ kursning qattiq ko'rsatmalari                    0/12      farq yo'q</text>
+    <text x="44" y="192" fill="#4ade80">+ YUMSHOQ PARSER (qavs sanash)                    10/10      model JSONL yozgan ekan</text>
+    <text x="44" y="212" fill="#4ade80">yoki: bittadan savol so'rash                        6/6      massivni Python yig'adi</text>
+  </g>
+  <text x="44" y="238" fill="#fbbf24" font-size="11.5" font-weight="700">"Buzuq JSON" — noto'g'ri tashxis edi. Obyektlar to'g'ri, faqat [ ] qavslari yo'q.</text>
+
+  <!-- 2. himoya -->
+  <rect x="24" y="266" width="450" height="196" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="249" y="290" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">HIMOYA: PROMPTDA EMAS, KODDA</text>
+  <text x="44" y="316" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">himoya                        qayerda   natija</text>
+  <line x1="44" y1="324" x2="454" y2="324" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="344" fill="#f87171">ajratgich &lt;transcript&gt;         prompt     0/3</text>
+    <text x="44" y="364" fill="#fbbf24">kursning himoya qatori        prompt     2/4</text>
+    <text x="44" y="384" fill="#4ade80">regex filtri                  KOD        3/3</text>
+    <text x="44" y="404" fill="#4ade80">+ ko'p tilli naqshlar         KOD        5/5</text>
+  </g>
+  <text x="44" y="430" fill="#f87171" font-size="11.5" font-weight="700">O'zbekcha hujum promptli himoyadan O'TDI</text>
+  <text x="44" y="450" fill="#94a3b8" font-size="11">himoya ingliz tilida, hujum o'zbekcha — model bog'lamadi</text>
+
+  <!-- 3. chain of thought -->
+  <rect x="490" y="266" width="446" height="196" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="713" y="290" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">CHAIN OF THOUGHT NATIJANI BUZDI</text>
+  <text x="510" y="316" fill="#94a3b8" font-size="11.5" font-family="Consolas, monospace">so'raldi: ball 1-10 orasida, JSON da</text>
+  <line x1="510" y1="326" x2="916" y2="326" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="346" fill="#4ade80">bevosita         6/6   ballar [9,10,9,9,7,9]</text>
+    <text x="510" y="366" fill="#f87171">chain of thought 2/6   ballar [95,9,9,95,95,95]</text>
+  </g>
+  <text x="510" y="392" fill="#94a3b8" font-size="11" font-family="Consolas, monospace">xom chiqish: {"score": 95}</text>
+  <text x="510" y="412" fill="#fbbf24" font-size="11.5" font-weight="700">Model &lt;think&gt; blokini UMUMAN yozmadi</text>
+  <text x="510" y="434" fill="#94a3b8" font-size="11">CoT — katta modellar usuli. 0.5B da u qo'shimcha yuk.</text>
+  <text x="510" y="452" fill="#94a3b8" font-size="11">Xulosa: "eng yaxshi amaliyot"ni o'z modelingizda o'lchang.</text>
+
+  <!-- 4. SQLite -->
+  <rect x="24" y="478" width="450" height="176" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="249" y="502" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">SQLite: 596x KICHIKROQ</text>
+  <text x="44" y="528" fill="#94a3b8" font-size="11.5">3 jadval, 4 550 yozuv:</text>
+  <line x1="44" y1="536" x2="454" y2="536" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="556" fill="#f87171">butun dump    128,791 tok  $6,439/10k</text>
+    <text x="44" y="576" fill="#94a3b8">faqat sxema        86 tok  $4.30/10k</text>
+    <text x="44" y="596" fill="#4ade80">QISQA XULOSA      216 tok  $10.80/10k</text>
+  </g>
+  <text x="44" y="622" fill="#fbbf24" font-size="11" font-weight="700">128,791 &gt; gpt-4o oynasi (128,000) — dump UMUMAN sig'maydi</text>
+  <text x="44" y="642" fill="#94a3b8" font-size="11">xulosada: jadval, tur, yozuv soni, SANA DIAPAZONI, bog'lanish</text>
+
+  <!-- 5. narx -->
+  <rect x="490" y="478" width="446" height="176" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="713" y="502" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">NARXNING 78% i CHIQISHDAN</text>
+  <text x="510" y="528" fill="#94a3b8" font-size="11.5">6 savolli intervyu, gpt-4o:</text>
+  <line x1="510" y1="536" x2="916" y2="536" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="556" fill="#94a3b8">kirish  1,998 tok x $2.50  = $0.0050  22%</text>
+    <text x="510" y="576" fill="#f87171">chiqish 1,800 tok x $10.0  = $0.0180  78%</text>
+  </g>
+  <line x1="510" y1="588" x2="916" y2="588" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="608" fill="#94a3b8">prompt qisqartirish (-38% tok)    1.0x</text>
+    <text x="510" y="626" fill="#94a3b8">xotira oynasi (-66% tok)          1.2x</text>
+    <text x="510" y="644" fill="#4ade80">gpt-4o -&gt; gpt-4o-mini            16.7x</text>
+  </g>
+
+  <!-- 6. temperature -->
+  <rect x="24" y="670" width="450" height="176" rx="12" fill="#0c4a6e" stroke="#38bdf8" stroke-width="2"/>
+  <text x="249" y="694" fill="#bae6fd" font-size="14" font-weight="700" text-anchor="middle">TEMPERATURE — ENG KUCHLI TUTQICH</text>
+  <text x="44" y="720" fill="#7dd3fc" font-size="11.5" font-family="Consolas, monospace">temp   JSON    ballar</text>
+  <line x1="44" y1="728" x2="454" y2="728" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="748" fill="#4ade80">0.0    6/6     [8,8,8,8,8,8]</text>
+    <text x="44" y="766" fill="#4ade80">0.3    6/6     [8,8,8,8,8,8]</text>
+    <text x="44" y="784" fill="#4ade80">0.5    6/6     [8,8,8,8,8,8]</text>
+    <text x="44" y="802" fill="#fbbf24">1.0    5/6     [9,8,4,4,8]  &lt;- bir xil javob!</text>
+    <text x="44" y="820" fill="#f87171">1.5    0/6     []</text>
+  </g>
+  <text x="44" y="840" fill="#fbbf24" font-size="11" font-weight="700">QOIDA: JSON va baholash uchun temperature &lt;= 0.5</text>
+
+  <!-- 7. fallback -->
+  <rect x="490" y="670" width="446" height="176" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="713" y="694" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">ZAXIRA: XIZMAT HECH QACHON TO'XTAMADI</text>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="510" y="722" fill="#f87171">intervyu 1: X -&gt; X -&gt; X ==&gt; MB fallback</text>
+    <text x="510" y="740" fill="#f87171">intervyu 2: X -&gt; X -&gt; X ==&gt; MB fallback</text>
+    <text x="510" y="758" fill="#94a3b8">...</text>
+    <text x="510" y="776" fill="#f87171">intervyu 6: X -&gt; X -&gt; X ==&gt; MB fallback</text>
+  </g>
+  <line x1="510" y1="788" x2="916" y2="788" stroke="#475569" stroke-width="1"/>
+  <text x="510" y="808" fill="#f87171" font-size="12" font-weight="700" font-family="Consolas, monospace">LLM: 0/6 muvaffaqiyat</text>
+  <text x="510" y="828" fill="#4ade80" font-size="12" font-weight="700" font-family="Consolas, monospace">Foydalanuvchi: 6/6 intervyudan o'tdi</text>
+</svg>

@@ -99,7 +99,8 @@
 | 64 | [LLM Engineering: promptlar](64-Crafting-and-Testing-Prompts/README.md) ✍️ | 5 | ✅ Tayyor |
 | 65 | [LLM Engineering: Streamlit](65-Getting-to-Know-Streamlit/README.md) 🖥️ | 6 | ✅ Tayyor |
 | 66 | [LLM Engineering: prototip](66-Developing-the-Prototype/README.md) 🛠️ | 9 | ✅ Tayyor |
-| 67 | LLM Engineering: real muammolar | — | ⏳ Navbatda |
+| 67 | [LLM Engineering: real muammolar](67-Solving-Real-World-Challenges/README.md) 🔥 | 11 | ✅ Tayyor |
+| 68 | AI etikasi: kirish | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
