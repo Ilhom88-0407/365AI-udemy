@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 780" width="960" height="780" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="960" height="780" fill="#0f172a" rx="14"/>
+  <text x="480" y="32" fill="#f1f5f9" font-size="21" font-weight="700" text-anchor="middle">Beshta XAI o'lchovidan uchtasi proksini yashirdi — hammasi QARORNI tushuntirgan</text>
+  <text x="480" y="54" fill="#94a3b8" font-size="12" text-anchor="middle">narx · LIME · SHAP · permutatsiya · asosiy stavka · xavf reyestri</text>
+
+  <!-- 1. XAI -->
+  <rect x="24" y="74" width="560" height="234" rx="12" fill="#450a0a" stroke="#f87171" stroke-width="2"/>
+  <text x="304" y="98" fill="#fecaca" font-size="14" font-weight="700" text-anchor="middle">PROKSI ('indeks', haqiqiy og'irlik 2.5) FOSH BO'LDIMI?</text>
+  <line x1="44" y1="110" x2="564" y2="110" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="132" fill="#cbd5e1">usul</text>
+    <text x="300" y="132" fill="#cbd5e1">natija</text>
+    <text x="450" y="132" fill="#cbd5e1">hukm</text>
+    <text x="44" y="156" fill="#94a3b8">Permutatsiya (qaror)</text>
+    <text x="300" y="156" fill="#f87171">0.180  3-o'rin</text>
+    <text x="450" y="156" fill="#f87171">YASHIRDI</text>
+    <text x="44" y="178" fill="#94a3b8">SHAP (qaror)</text>
+    <text x="300" y="178" fill="#f87171">0.500  tajriba=teng</text>
+    <text x="450" y="178" fill="#f87171">YASHIRDI</text>
+    <text x="44" y="200" fill="#94a3b8">LIME (qaror)</text>
+    <text x="300" y="200" fill="#f87171">0.354  portfolio&lt;</text>
+    <text x="450" y="200" fill="#f87171">YASHIRDI</text>
+    <text x="44" y="224" fill="#94a3b8">Permutatsiya (BALL)</text>
+    <text x="300" y="224" fill="#4ade80">1.240  2-o'rin</text>
+    <text x="450" y="224" fill="#4ade80">FOSH QILDI</text>
+    <text x="44" y="246" fill="#94a3b8">SHAP (BALL)</text>
+    <text x="300" y="246" fill="#4ade80">2.500  aniq</text>
+    <text x="450" y="246" fill="#4ade80">FOSH QILDI</text>
+  </g>
+  <line x1="44" y1="260" x2="564" y2="260" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="282" fill="#fca5a5" font-size="12.5" font-weight="700">XAI VOSITASINI TANLASH MUHIM EMAS — NIMANI tushuntirish muhim.</text>
+  <text x="44" y="300" fill="#94a3b8" font-size="11">Chegara (0/1) auditga kerakli ma'lumotni o'chiradi.</text>
+
+  <!-- 2. LIME tuzogi -->
+  <rect x="596" y="74" width="340" height="234" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="766" y="98" fill="#fde68a" font-size="14" font-weight="700" text-anchor="middle">LIME TUZOG'I</text>
+  <text x="616" y="122" fill="#94a3b8" font-size="11">Nomzodda portfolio = 0. LIME:</text>
+  <text x="616" y="148" fill="#f87171" font-size="15" font-family="Consolas, monospace" font-weight="700">portfolio: -0.398</text>
+  <line x1="616" y1="162" x2="916" y2="162" stroke="#475569" stroke-width="1"/>
+  <text x="616" y="184" fill="#fca5a5" font-size="11">NOTO'G'RI o'qish:</text>
+  <text x="616" y="202" fill="#94a3b8" font-size="11">"portfolio nomzodga zarar qildi"</text>
+  <text x="616" y="228" fill="#86efac" font-size="11">TO'G'RI o'qish:</text>
+  <text x="616" y="246" fill="#94a3b8" font-size="11">"portfolio BO'LMAGANI zarar qildi"</text>
+  <line x1="616" y1="260" x2="916" y2="260" stroke="#475569" stroke-width="1"/>
+  <text x="616" y="282" fill="#fde68a" font-size="11.5" font-weight="700">Haqiqiy og'irligi: +1.5 (IJOBIY)</text>
+  <text x="616" y="300" fill="#94a3b8" font-size="10.5">Koeffitsientni belgi qiymatisiz ko'rsatmang.</text>
+
+  <!-- 3. asosiy stavka -->
+  <rect x="24" y="320" width="450" height="212" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+  <text x="249" y="344" fill="#bfdbfe" font-size="14" font-weight="700" text-anchor="middle">"85% ANIQ" MODEL — ASOSIY STAVKA XATOSI</text>
+  <text x="44" y="366" fill="#94a3b8" font-size="11">1000 hisob, 2% firibgarlik, 85% sezgirlik, 6% yolg'on:</text>
+  <line x1="44" y1="374" x2="454" y2="374" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="396" fill="#94a3b8">haqiqiy firibgar</text>
+    <text x="300" y="396" fill="#cbd5e1">24</text>
+    <text x="44" y="416" fill="#94a3b8">model bayroq qo'ydi</text>
+    <text x="300" y="416" fill="#fbbf24">68</text>
+    <text x="44" y="436" fill="#94a3b8">ulardan HAQIQIY</text>
+    <text x="300" y="436" fill="#4ade80">19</text>
+    <text x="44" y="456" fill="#94a3b8">AYBSIZ bayroqlangan</text>
+    <text x="300" y="456" fill="#f87171">49</text>
+  </g>
+  <line x1="44" y1="470" x2="454" y2="470" stroke="#475569" stroke-width="1"/>
+  <text x="44" y="492" fill="#fca5a5" font-size="12" font-weight="700">976 x 6% = 49   &gt;   24 x 85% = 19</text>
+  <text x="44" y="512" fill="#94a3b8" font-size="11">Model sifati emas — hodisaning NODIRLIGI aybdor.</text>
+
+  <!-- 4. narx -->
+  <rect x="486" y="320" width="450" height="212" rx="12" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="711" y="344" fill="#bbf7d0" font-size="14" font-weight="700" text-anchor="middle">NARX TO'SIQ EMAS — BILIM TO'SIQ</text>
+  <text x="506" y="366" fill="#94a3b8" font-size="11">Kichik do'kon: kuniga 200 savol, gpt-4o narxi:</text>
+  <line x1="506" y1="374" x2="916" y2="374" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="506" y="396" fill="#94a3b8">yillik narx</text>
+    <text x="760" y="396" fill="#4ade80">$162.43</text>
+    <text x="506" y="416" fill="#94a3b8">RAG qo'shilsa (o'zbekcha)</text>
+    <text x="760" y="416" fill="#fbbf24">$216.99</text>
+    <text x="506" y="440" fill="#94a3b8">shablon bilan hal bo'ladi</text>
+    <text x="760" y="440" fill="#4ade80">70%</text>
+    <text x="506" y="460" fill="#94a3b8">insonga qoladi</text>
+    <text x="760" y="460" fill="#cbd5e1">14%</text>
+  </g>
+  <line x1="506" y1="474" x2="916" y2="474" stroke="#475569" stroke-width="1"/>
+  <text x="506" y="496" fill="#bbf7d0" font-size="11.5" font-weight="700">Eng arzon AI strategiyasi — AI ISHLATMASLIK</text>
+  <text x="506" y="514" fill="#94a3b8" font-size="11">kerak bo'lgan joyni topish. Shablon gallyutsinatsiya qilmaydi.</text>
+
+  <!-- 5. strip -->
+  <rect x="24" y="544" width="912" height="136" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="480" y="568" fill="#f1f5f9" font-size="14" font-weight="700" text-anchor="middle">MODULDA O'LCHANGAN BOSHQA NARSALAR</text>
+  <line x1="44" y1="578" x2="916" y2="578" stroke="#475569" stroke-width="1"/>
+  <g font-family="Consolas, monospace" font-size="11.5">
+    <text x="44" y="602" fill="#94a3b8">Nazorat belgisi (og'irlik 0)</text>
+    <text x="400" y="602" fill="#4ade80">0.0000 — sog'lom</text>
+    <text x="44" y="624" fill="#94a3b8">Og'irlik ikkiga bo'linsa</text>
+    <text x="400" y="624" fill="#f87171">proksi 1.250 ko'rinadi</text>
+    <text x="44" y="646" fill="#94a3b8">Aniqlik (stavka 0.5% -&gt; 50%)</text>
+    <text x="400" y="646" fill="#f87171">6.5% -&gt; 93.9%</text>
+    <text x="620" y="602" fill="#94a3b8">Xavf reyestri</text>
+    <text x="810" y="602" fill="#f87171">4/7 chorasiz</text>
+    <text x="620" y="624" fill="#94a3b8">Kursning 4 savoli</text>
+    <text x="810" y="624" fill="#f87171">2/4</text>
+    <text x="620" y="646" fill="#94a3b8">Biznes tayyorligi</text>
+    <text x="810" y="646" fill="#f87171">1/7</text>
+  </g>
+
+  <!-- 6. rule -->
+  <rect x="24" y="696" width="912" height="66" rx="12" fill="#422006" stroke="#fbbf24" stroke-width="2"/>
+  <text x="480" y="724" fill="#fde68a" font-size="15" font-weight="700" text-anchor="middle">QOIDA: QARORNI EMAS, BALLNI TUSHUNTIRING</text>
+  <text x="480" y="748" fill="#94a3b8" font-size="12" text-anchor="middle">Va tushuntiruvchiga og'irligi NOL bo'lgan nazorat belgisini qo'shing — u nol bermasa, tushuntiruvchi buzuq.</text>
+</svg>

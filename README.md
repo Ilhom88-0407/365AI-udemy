@@ -105,7 +105,8 @@
 | 70 | [AI etikasi: etik ma'lumot to'plash](70-Ethical-Data-Collection/README.md) 📦 | 6 | ✅ Tayyor |
 | 71 | [AI etikasi: etik ishlab chiqish](71-Ethical-AI-Development/README.md) 📦 | 6 | ✅ Tayyor |
 | 72 | [AI etikasi: etik joylashtirish](72-Ethical-AI-Deployment/README.md) 📦 | 6 | ✅ Tayyor |
-| 73 | AI etikasi: biznes foydalanuvchilar | — | ⏳ Navbatda |
+| 73 | [AI etikasi: biznes foydalanuvchilar](73-Ethical-AI-for-Businesses/README.md) 📦 | 4 | ✅ Tayyor |
+| 74 | AI etikasi: shaxsiy foydalanuvchilar | — | ⏳ Navbatda |
 
 > 📝 12-moduldan boshlab har bir modulda **MASHQLAR.md** (yechimli topshiriqlar) va **LOYIHALAR.md** (mini-loyihalar) fayllari bor.
 
