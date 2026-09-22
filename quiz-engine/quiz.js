@@ -236,6 +236,22 @@
     }
   });
 
+  // GitHub Pages'da .md fayllar render qilinmaydi (.nojekyll) — ularni GitHub'dagi ko'rinishiga yo'naltiramiz.
+  function fixMdLinks() {
+    var host = location.hostname;
+    if (!/\.github\.io$/.test(host)) return;
+    var owner = host.split(".")[0];
+    var repo = location.pathname.split("/")[1];
+    var base = "/" + repo + "/";
+    document.querySelectorAll("a[href$='.md']").forEach(function (a) {
+      var path = new URL(a.getAttribute("href"), location.href).pathname;
+      if (path.indexOf(base) !== 0) return;
+      a.href = "https://github.com/" + owner + "/" + repo + "/blob/main/" + path.slice(base.length);
+    });
+  }
+  new MutationObserver(fixMdLinks).observe(document.body, { childList: true, subtree: true });
+
   document.title = QUIZ.id + "-modul quizi";
   start();
+  fixMdLinks();
 })();
