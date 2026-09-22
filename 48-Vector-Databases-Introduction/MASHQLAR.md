@@ -83,7 +83,7 @@ print(bolimlar.course_technology.value_counts().to_string())
 ```
 kurslar : (106, 6)
 bo'limlar: (680, 11)
-noyob kurs: 105          ← ⚠️ 106 kurs, LEKIN 105 tasida bo'lim bor
+noyob kurs: 105          ← ⚠️ 106 qator, LEKIN 105 noyob kurs (bittasi ikki marta yozilgan)
 
 course_instructor_quote    20
 ```
@@ -327,10 +327,10 @@ class BazaTanlovchi:
             sabab.append("ACID tranzaksiya kerak → SQL SHART")
 
         if oxshashlik_kerak:
-            if yozuvlar < 1_000:
+            if yozuvlar < 100_000:
                 tavsiyalar.append("⭐ numpy (E @ q)")
                 sabab.append(f"{yozuvlar:,} yozuv — vektor DB ORTIQCHA, "
-                             f"numpy tezroq va 100% aniq")
+                             f"numpy yetarli va 100% aniq")
             elif yozuvlar < 1_000_000:
                 tavsiyalar.append("⭐ Chroma / FAISS (mahalliy)")
                 sabab.append(f"{yozuvlar:,} yozuv — mahalliy baza YETARLI")

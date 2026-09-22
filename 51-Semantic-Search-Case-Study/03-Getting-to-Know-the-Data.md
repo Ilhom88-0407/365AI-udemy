@@ -403,7 +403,7 @@ def tozala(s):
 ```
 
 ```
-📊 106 kurs · 680 bo'lim · 105 noyob kurs (bittasida bo'lim yo'q)
+📊 106 kurs · 680 bo'lim · 105 noyob kurs (bittasi ikki marta yozilgan)
 💥 encoding="cp1252" — UTF-8 bilan UnicodeDecodeError
 💥 3848 ta \r belgisi — tokenlarni behuda yeydi
 ⚠️ course_instructor_quote — 20 ta bo'sh (metadata'da NaN muammosi)

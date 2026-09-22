@@ -235,11 +235,14 @@ theory     192
 excel       90
 tableau     43
 sql         41
+chatgpt     16
+powerbi     15
+r           11
 ```
 
 ## 💥 **`encoding="cp1252"` SHART** — UTF-8 bilan `UnicodeDecodeError` chiqadi.
 
-## ⚠️ **106 kurs, LEKIN bo'limlar faylida 105 noyob kurs** — bittasi **bo'limsiz**.
+## ⚠️ **106 kurs, LEKIN bo'limlar faylida 105 noyob kurs** — `course_descriptions.csv` da bitta kurs *(The Machine Learning Process A-Z)* **ikki marta** yozilgan.
 
 </details>
 
@@ -260,19 +263,19 @@ for ustun in ["course_description", "section_description"]:
     print(f"  {ustun:22s} {n}/{len(bolimlar)} qatorda · jami {cr} ta \\r")
 
 print("\n── namuna ──")
-print(repr(bolimlar.section_description.iloc[0][-50:]))
+print(repr(bolimlar.section_description.iloc[0][-57:]))
 ```
 
 ```
 course_instructor_quote    20
 
-  course_description     199/680 qatorda · jami 1592 ta \r
+  course_description     199/680 qatorda · jami 3009 ta \r
   section_description    108/680 qatorda · jami 839 ta \r
 
 'install Tableau Public (Tableau’s free version).\r\r\r\r\r\r\r\r\n'
 ```
 
-## 💥 **839 TA `\r` BELGI** — bular embedding sifatiga **ta'sir qiladi** va **tokenlarni behuda yeydi**.
+## 💥 **JAMI 3848 TA `\r` BELGI** *(3009 + 839)* — bular embedding sifatiga **ta'sir qiladi** va **tokenlarni behuda yeydi**.
 
 ## ✅ **TOZALASH:**
 ```python

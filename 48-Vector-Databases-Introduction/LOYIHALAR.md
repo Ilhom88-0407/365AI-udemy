@@ -197,7 +197,7 @@ class VektorYechimTanlovchi:
         print("\n" + "═" * 62)
         print("🎯 TAVSIYA")
         N = kelajakdagi_hajm or len(self.E)
-        if N < 1_000:
+        if N < 100_000:
             print(f"   ⭐ numpy (E @ q) — {N:,} yozuv uchun vektor DB ORTIQCHA")
             print(f"      brute force {n['tezlik']['brute_ms']} ms · "
                   f"100% ANIQ · hech qanday bog'liqlik yo'q")

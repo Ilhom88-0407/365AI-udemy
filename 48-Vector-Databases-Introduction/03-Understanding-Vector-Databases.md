@@ -36,7 +36,7 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 v = model.encode("Machine Learning in Python")
 
 print("o'lcham:", len(v))
-print("norma  :", np.linalg.norm(v))
+print(f"norma  : {np.linalg.norm(v):.4f}")
 print("birinchi 8:", v[:8].round(4))
 ```
 
@@ -107,8 +107,8 @@ birinchi 8: [-0.0559 -0.0155  0.0206  0.014   0.0159 -0.0824  0.0108 -0.0445]
 | Indeks | Qanday ishlaydi | Xususiyat |
 |---|---|---|
 | ## **Flat** | Hammasini tekshiradi | ## ✅ **100% aniq** · ❌ sekin |
-| ## ⭐ **HNSW** | Ko'p qavatli graf | ## ⭐ **Tez va aniq** *(standart)* |
-| **IVF** | Klasterlarga bo'ladi | Xotira tejaydi |
+| ## ⭐ **HNSW** | Ko'p qavatli graf | ## ⭐ **Tez, lekin taxminiy** *(standart)* |
+| **IVF** | Klasterlarga bo'ladi | Tez *(faqat yaqin klasterlar)* · PQ bilan xotira tejaydi |
 | **PQ** | Vektorni siqadi | ## 💰 **4–32× xotira tejaydi** |
 
 > ## 💥💥 **VA BU — KURSDA AYTILMAGAN ENG MUHIM NARSA:**
@@ -134,6 +134,8 @@ brute force    2.05 ms
 HNSW           1.30 ms   (atigi 2× tez)
 ⭐ top-10 mos: 3/10
 ```
+
+> 💡 Tasodifiy vektorlar va HNSW grafi har safar boshqacha bo'lgani uchun bu raqamlar **o'lchovdan o'lchovga o'zgaradi** *(qayta o'lchaganda 4/10 va 7/10, ~1–2× chiqdi)*. Xulosa esa o'zgarmaydi.
 
 > ## 💥💥 **IKKI KUTILMAGAN NATIJA:**
 >
@@ -200,8 +202,8 @@ qidiruv   : 1–2 ms
 ## 6. ⚠️ Vektor bazasini qachon ISHLATMASLIK kerak
 
 ```
-❌ Ma'lumot 1000 qatordan kam
-   → oddiy numpy massivi YETADI (va TEZROQ)
+❌ Ma'lumot 100 000 qatordan kam
+   → oddiy numpy massivi YETADI (va 100% aniq)
 
 ❌ Faqat aniq moslik kerak
    → SQL LIKE yoki to'liq matnli qidiruv (Elasticsearch)
@@ -216,7 +218,7 @@ qidiruv   : 1–2 ms
    → mahalliy Chroma/FAISS bepul, lekin server kerak
 ```
 
-> ## 🏆 **1000 QATORGACHA — SHUNCHAKI NUMPY:**
+> ## 🏆 **100 000 QATORGACHA — SHUNCHAKI NUMPY:**
 > ```python
 > import numpy as np
 >
@@ -237,8 +239,8 @@ qidiruv   : 1–2 ms
 
 ```
 📊 MA'LUMOT HAJMI:
-   < 1 000 yozuv       →  numpy (eng sodda, eng tez)
-   1 000 – 1 000 000   →  ⭐ Chroma / FAISS (mahalliy, bepul)
+   < 100 000 yozuv     →  numpy (eng sodda, 100% aniq)
+   100 000 – 1 000 000 →  ⭐ Chroma / FAISS (mahalliy, bepul)
    > 1 000 000         →  Qdrant / Milvus / Pinecone
 
 🔒 MAXFIYLIK (🏦 bank, 🏥 tibbiyot):
@@ -371,7 +373,7 @@ bf_ms = (time.perf_counter() - t0) / 10 * 1000
 # ── ② ⭐ HNSW (Chroma) ──
 shutil.rmtree("./bench", ignore_errors=True)
 c = chromadb.PersistentClient(path="./bench")
-coll = c.create_collection("b", metadata={"hnsw:space": "cosine"})
+coll = c.create_collection("bench", metadata={"hnsw:space": "cosine"})
 t0 = time.perf_counter()
 for i in range(0, N, 5000):
     coll.add(ids=[str(x) for x in range(i, min(i + 5000, N))],
