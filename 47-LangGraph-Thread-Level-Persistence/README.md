@@ -186,3 +186,9 @@ json.dump(data, f, ensure_ascii=False, indent=1)
 ---
 
 ⬅️ [46-modul. Xabarlarni boshqarish](../46-LangGraph-Message-Management/README.md) · 🏠 [Kurs boshiga](../README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

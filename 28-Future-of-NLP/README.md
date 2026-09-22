@@ -218,3 +218,9 @@ Har bir NLP loyihangizda — **model o'qitishdan OLDIN**:
 ---
 
 ⬅️ [27-modul — Soxta yangiliklar keysi](../27-Fake-News-Case-Study/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [29-modul](../29-Introduction-to-LLMs/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

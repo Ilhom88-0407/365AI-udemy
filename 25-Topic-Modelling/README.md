@@ -186,3 +186,9 @@ k=11   -0.9133           k=11   -1.1401
 ---
 
 ⬅️ [24-modul — Matnni vektorlashtirish](../24-Vectorizing-Text/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [26-modul](../26-Text-Classifier/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

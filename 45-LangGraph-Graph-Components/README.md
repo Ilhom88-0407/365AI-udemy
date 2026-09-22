@@ -182,3 +182,9 @@ def bolim_aniqla(s) -> Literal["kredit", "karta", "depozit", "operator"]:
 ---
 
 ⬅️ [44-modul. Muhitni sozlash](../44-LangGraph-Setting-Up-Environment/README.md) · 🏠 [Kurs boshiga](../README.md) · ➡️ [46-modul. Xabarlarni boshqarish](../46-LangGraph-Message-Management/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

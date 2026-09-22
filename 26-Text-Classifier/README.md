@@ -182,3 +182,9 @@ SALBIY: not · short · waste                    ✅
 ---
 
 ⬅️ [25-modul — Mavzu modellashtirish](../25-Topic-Modelling/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [27-modul](../27-Fake-News-Case-Study/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

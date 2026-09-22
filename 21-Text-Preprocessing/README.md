@@ -180,3 +180,9 @@ Bu modulni tugatgach, siz quyidagilarni **kodsiz** ayta olishingiz kerak:
 ---
 
 ⬅️ [20-modul — NLP'ga kirish](../20-NLP-Introduction/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [22-modul](../22-POS-and-NER/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

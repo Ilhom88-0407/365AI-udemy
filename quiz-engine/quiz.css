@@ -53,6 +53,12 @@ header p { color: var(--muted); margin: 0; }
   padding: 24px;
 }
 .q { font-size: 19px; font-weight: 600; margin: 0 0 6px; }
+pre.code {
+  margin: 10px 0 14px; padding: 12px 14px; overflow-x: auto;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+  font: 14px/1.5 ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+.opt span:last-child { white-space: pre-wrap; }
 .hint { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
 
 .options { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }

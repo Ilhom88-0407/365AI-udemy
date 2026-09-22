@@ -220,3 +220,9 @@ gpt-4            8,192 token ≈    7,373 inglizcha so'z ≈    3,918 o'zbekcha 
 ---
 
 ⬅️ [35-modul. LangChain'ga kirish](../35-LangChain-Introduction/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [37-modul. Muhitni sozlash](../37-LangChain-Setting-Up-Environment/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

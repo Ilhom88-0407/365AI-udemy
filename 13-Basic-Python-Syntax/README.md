@@ -187,3 +187,9 @@ Hammasi ✅ bo'lsa — **14-modulga tayyorsiz**.
 ---
 
 ⬅️ [12-modul](../12-Python-Variables-and-Data-Types/README.md) · 🏠 [Bosh sahifa](../README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

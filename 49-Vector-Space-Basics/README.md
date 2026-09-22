@@ -140,3 +140,9 @@ pip install sentence-transformers numpy pandas
 ---
 
 ⬅️ [48-modul. Kirish](../48-Vector-Databases-Introduction/README.md) · 🏠 [Kurs boshiga](../README.md) · ➡️ [50-modul. Pinecone](../50-Pinecone-Introduction/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

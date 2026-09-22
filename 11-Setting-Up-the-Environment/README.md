@@ -167,3 +167,9 @@ Hammasi ✅ bo'lsa — **12-modulga tayyorsiz**.
 **12-modul: Python o'zgaruvchilari va ma'lumot turlari**
 
 Nazariya va sozlash tugadi. **Endi kod yozamiz.**
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

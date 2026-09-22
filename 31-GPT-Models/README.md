@@ -276,3 +276,9 @@ NOT FOUND
 ---
 
 ⬅️ [30-modul — Transformer arxitekturasi](../30-Transformer-Architecture/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [32-modul](../32-HuggingFace-Transformers/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

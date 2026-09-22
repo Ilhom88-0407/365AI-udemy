@@ -177,3 +177,9 @@ England (47 sarlavha) →  win · lead      ⚽  SPORT
 ---
 
 ⬅️ [21-modul — Matnni oldindan qayta ishlash](../21-Text-Preprocessing/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [23-modul](../23-Sentiment-Analysis/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

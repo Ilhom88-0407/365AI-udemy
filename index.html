@@ -6,43 +6,434 @@
   <title>AI Engineer quizlari</title>
   <link rel="stylesheet" href="quiz-engine/quiz.css" />
   <style>
-    .list { display: grid; gap: 12px; margin-top: 24px; }
-    .item { display: block; text-decoration: none; color: inherit; }
+    .list { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    main h2 { font-size: 18px; margin: 32px 0 12px; }
+    main h2 span { color: var(--muted); font-weight: 400; font-size: 14px; }
+    .item { display: block; text-decoration: none; color: inherit; padding: 16px 18px; }
     .item:hover { border-color: var(--accent); }
-    .item .num { color: var(--muted); font-size: 14px; margin: 0 0 2px; }
-    .item h2 { font-size: 18px; margin: 0 0 4px; }
-    .item p { margin: 0; color: var(--muted); font-size: 15px; }
+    .item .num { color: var(--muted); font-size: 13px; margin: 0 0 2px; }
+    .item h3 { font-size: 16px; margin: 0 0 4px; }
+    .item p { margin: 0; color: var(--muted); font-size: 14px; }
+    .wrap.wide { max-width: 960px; }
   </style>
 </head>
 <body>
-  <main class="wrap">
+  <main class="wrap wide">
     <header>
       <p class="kicker">365 AI Engineer Bootcamp — o'zbekcha darslik</p>
       <h1>Modul quizlari</h1>
-      <p>Har bir quizda 15 savol bor. Javobdan so'ng izoh va tegishli darsga havola chiqadi.</p>
+      <p>76 modul, 1140 savol. Har bir javobdan so'ng izoh va tegishli darsga havola chiqadi.</p>
     </header>
-    <div class="list">
-      <a class="card item" href="01-Intro-to-AI-Getting-Started/quiz.html">
-        <p class="num">Quiz 1 · 01-modul</p>
-        <h2>Intro to AI — Getting Started</h2>
-        <p>Intellekt ta'rifi, AI tarixi, AI / ML / DL / DS, Narrow va Strong AI</p>
-      </a>
-      <a class="card item" href="02-Data-is-essential-for-building-AI/quiz.html">
-        <p class="num">Quiz 2 · 02-modul</p>
-        <h2>Ma'lumot — AI ning asosiy ingredienti</h2>
-        <p>Strukturali va strukturasiz ma'lumot, yig'ish usullari, labelling, metadata</p>
-      </a>
-      <a class="card item" href="03-Key-AI-techniques/quiz.html">
-        <p class="num">Quiz 3 · 03-modul</p>
-        <h2>AI ning asosiy texnikalari</h2>
-        <p>Machine learning, supervised / unsupervised / reinforcement, deep learning</p>
-      </a>
-      <a class="card item" href="04-Important-AI-branches/quiz.html">
-        <p class="num">Quiz 4 · 04-modul</p>
-        <h2>AI ning muhim tarmoqlari</h2>
-        <p>Robototexnika, computer vision, an'anaviy ML, generativ AI</p>
-      </a>
-    </div>
+      <h2>🎓 Intro to AI <span>01–09</span></h2>
+      <div class="list">
+        <a class="card item" href="01-Intro-to-AI-Getting-Started/quiz.html">
+          <p class="num">01-modul · 15 savol</p>
+          <h3>Intro to AI — Getting Started</h3>
+          <p>AI nima: intellekt ta'rifi, qisqacha tarix, AI/ML/DL/DS farqi va narrow AI dan AGI gacha</p>
+        </a>
+        <a class="card item" href="02-Data-is-essential-for-building-AI/quiz.html">
+          <p class="num">02-modul · 15 savol</p>
+          <h3>Ma'lumot — AI ning asosiy ingredienti</h3>
+          <p>Ma'lumot turlari, to'planishi, belgilanishi va metadata bo'yicha bilimingizni sinang</p>
+        </a>
+        <a class="card item" href="03-Key-AI-techniques/quiz.html">
+          <p class="num">03-modul · 15 savol</p>
+          <h3>AI ning asosiy texnikalari</h3>
+          <p>Machine learning, uchta o'rganish turi va neyron tarmoqlar qanday ishlashi</p>
+        </a>
+        <a class="card item" href="04-Important-AI-branches/quiz.html">
+          <p class="num">04-modul · 15 savol</p>
+          <h3>AI ning muhim tarmoqlari</h3>
+          <p>Robototexnika, computer vision, an'anaviy ML va generativ AI — qaysi tarmoq qaysi muammoni yechadi</p>
+        </a>
+        <a class="card item" href="05-Understanding-Generative-AI/quiz.html">
+          <p class="num">05-modul · 15 savol</p>
+          <h3>Generativ AI ni tushunish</h3>
+          <p>ChatGPT dan LLM gacha: NLP tarixi, embeddings, self-supervised learning, Transformer, LLM qurish bosqichlari va buy vs make</p>
+        </a>
+        <a class="card item" href="06-Practical-challenges-in-Generative-AI/quiz.html">
+          <p class="num">06-modul · 15 savol</p>
+          <h3>Generativ AI dagi amaliy qiyinchiliklar</h3>
+          <p>Gallyutsinatsiya va izchilsizlik, budjet va API narxlari, latency hamda ma'lumot tugab qolishi muammosi</p>
+        </a>
+        <a class="card item" href="07-The-AI-tech-stack/quiz.html">
+          <p class="num">07-modul · 15 savol</p>
+          <h3>AI tech stack</h3>
+          <p>Python, API lar, vector database lar, open source va closed source, Hugging Face, LangChain hamda AI baholash vositalari</p>
+        </a>
+        <a class="card item" href="08-AI-job-positions/quiz.html">
+          <p class="num">08-modul · 15 savol</p>
+          <h3>AI sohasidagi lavozimlar</h3>
+          <p>AI strategist, AI developer va AI engineer: vazifalari, ko'nikmalari va farqlari</p>
+        </a>
+        <a class="card item" href="09-Looking-ahead/quiz.html">
+          <p class="num">09-modul · 15 savol</p>
+          <h3>Kelajakka nazar</h3>
+          <p>AI etikasi, moral hazard, EU AI Act va AI o'sishini belgilovchi uchta resurs</p>
+        </a>
+      </div>
+      <h2>🐍 Python <span>10–19</span></h2>
+      <div class="list">
+        <a class="card item" href="10-Why-Python/quiz.html">
+          <p class="num">10-modul · 15 savol</p>
+          <h3>Nima uchun Python</h3>
+          <p>Dasturlash nima, source code, ikki asosiy ko'nikma va Python ning open source, general purpose, high level xususiyatlari</p>
+        </a>
+        <a class="card item" href="11-Setting-Up-the-Environment/quiz.html">
+          <p class="num">11-modul · 15 savol</p>
+          <h3>Muhitni sozlash</h3>
+          <p>Jupyter arxitekturasi, Anaconda o'rnatish, dashboard, yacheyka rejimlari, tezkor tugmalar, xato xabarlari va kernel'ni qayta ishga tushirish</p>
+        </a>
+        <a class="card item" href="12-Python-Variables-and-Data-Types/quiz.html">
+          <p class="num">12-modul · 15 savol</p>
+          <h3>Python o'zgaruvchilari va ma'lumot turlari</h3>
+          <p>O'zgaruvchilar va biriktirish, kodlash mashqlari, int, float, bool, satrlar va Anaconda Assistant bilan ishlash</p>
+        </a>
+        <a class="card item" href="13-Basic-Python-Syntax/quiz.html">
+          <p class="num">13-modul · 15 savol</p>
+          <h3>Python ning asosiy sintaksisi</h3>
+          <p>Arifmetik operatorlar, = va == farqi, qayta biriktirish, izohlar, qator davomi, indekslash va chekinish</p>
+        </a>
+        <a class="card item" href="14-More-on-Operators/quiz.html">
+          <p class="num">14-modul · 15 savol</p>
+          <h3>Operatorlar haqida ko'proq</h3>
+          <p>Solishtirish operatorlari, mantiqiy operatorlar (not, and, or), muhimlik tartibi va ayniyat operatorlari (is, is not)</p>
+        </a>
+        <a class="card item" href="15-Conditional-Statements/quiz.html">
+          <p class="num">15-modul · 15 savol</p>
+          <h3>Shart operatorlari</h3>
+          <p>if, else va elif operatorlari, boshqaruv oqimi, shartlar tartibi va boolean qiymatlar</p>
+        </a>
+        <a class="card item" href="16-Functions/quiz.html">
+          <p class="num">16-modul · 15 savol</p>
+          <h3>Funksiyalar</h3>
+          <p>def bilan funksiya e'lon qilish, parametr va argument, print va return farqi, funksiya ichida funksiya, shartlar va ichki funksiyalar</p>
+        </a>
+        <a class="card item" href="17-Sequences/quiz.html">
+          <p class="num">17-modul · 15 savol</p>
+          <h3>Ketma-ketliklar</h3>
+          <p>Ro'yxatlar, metodlar, kesish (slicing), tuple lar va lug'atlar</p>
+        </a>
+        <a class="card item" href="18-Iteration/quiz.html">
+          <p class="num">18-modul · 15 savol</p>
+          <h3>Iteratsiya</h3>
+          <p>for va while sikllari, range(), sikl ichida shartlar, yig'uvchi o'zgaruvchi, lug'atlar bo'ylab aylanish va Anaconda Assistant</p>
+        </a>
+        <a class="card item" href="19-Important-Python-Concepts/quiz.html">
+          <p class="num">19-modul · 15 savol</p>
+          <h3>Bir necha muhim Python tushunchasi va atamasi</h3>
+          <p>OOP asoslari, modullar va paketlar, import qilishning to'rt usuli, dasturiy hujjatlar va Python hujjatlari</p>
+        </a>
+      </div>
+      <h2>🌐 NLP <span>20–28</span></h2>
+      <div class="list">
+        <a class="card item" href="20-NLP-Introduction/quiz.html">
+          <p class="num">20-modul · 15 savol</p>
+          <h3>NLP ga kirish</h3>
+          <p>NLP nima, uning tarixi, kundalik hayotdagi qo'llanishlari va nazorat ostida/nazoratsiz yondashuvlar</p>
+        </a>
+        <a class="card item" href="21-Text-Preprocessing/quiz.html">
+          <p class="num">21-modul · 15 savol</p>
+          <h3>Matnni oldindan qayta ishlash</h3>
+          <p>Kichik harf, to'xtatish so'zlari, regex, tokenizatsiya, stemming, lemmatization va n-grammalar</p>
+        </a>
+        <a class="card item" href="22-POS-and-NER/quiz.html">
+          <p class="num">22-modul · 15 savol</p>
+          <h3>POS teglash va NER</h3>
+          <p>spaCy bilan nutq qismlarini teglash, nomlangan ob'ektlarni tanib olish va tozalashni qachon qilish</p>
+        </a>
+        <a class="card item" href="23-Sentiment-Analysis/quiz.html">
+          <p class="num">23-modul · 15 savol</p>
+          <h3>Sentiment tahlili</h3>
+          <p>Uchta sentiment, TextBlob va VADER, transformer modellari va 100 ta kitob sharhida aniqlikni o'lchash</p>
+        </a>
+        <a class="card item" href="24-Vectorizing-Text/quiz.html">
+          <p class="num">24-modul · 15 savol</p>
+          <h3>Matnni vektorlashtirish</h3>
+          <p>Nima uchun matn raqamga aylanadi, Bag of Words (CountVectorizer) va TF-IDF (TfidfVectorizer)</p>
+        </a>
+        <a class="card item" href="25-Topic-Modelling/quiz.html">
+          <p class="num">25-modul · 15 savol</p>
+          <h3>Mavzu modellashtirish</h3>
+          <p>Nazoratsiz o'qitish, LDA va LSA nazariyasi va Python'da, max_df/min_df bilan tozalash va koherentlik orqali mavzular sonini tanlash</p>
+        </a>
+        <a class="card item" href="26-Text-Classifier/quiz.html">
+          <p class="num">26-modul · 15 savol</p>
+          <h3>O'z matn tasniflagichingiz</h3>
+          <p>Nazorat ostida o'qitish: logistik regressiya, Naive Bayes, chiziqli SVM va ko'proq ma'lumot saboqi</p>
+        </a>
+        <a class="card item" href="27-Fake-News-Case-Study/quiz.html">
+          <p class="num">27-modul · 15 savol</p>
+          <h3>Soxta yangiliklarni aniqlash (keys)</h3>
+          <p>POS, NER, tozalash, sentiment, LDA/LSA mavzular va tasniflagich — bitta haqiqiy loyihada</p>
+        </a>
+        <a class="card item" href="28-Future-of-NLP/quiz.html">
+          <p class="num">28-modul · 15 savol</p>
+          <h3>NLP ning kelajagi</h3>
+          <p>Chuqur o'qitish, transformer va LLM'lar, o'zbek tilida NLP va sohaning to'rt yo'nalishi</p>
+        </a>
+      </div>
+      <h2>🤖 LLM va Transformerlar <span>29–34</span></h2>
+      <div class="list">
+        <a class="card item" href="29-Introduction-to-LLMs/quiz.html">
+          <p class="num">29-modul · 15 savol</p>
+          <h3>Katta til modellariga kirish</h3>
+          <p>LLM nima, qanchalik katta, umumiy maqsadlilik, pre-training va fine-tuning, zero-shot va qo'llanishlar</p>
+        </a>
+        <a class="card item" href="30-Transformer-Architecture/quiz.html">
+          <p class="num">30-modul · 15 savol</p>
+          <h3>Transformer arxitekturasi</h3>
+          <p>RNN muammosi, e'tibor mexanizmi, embeddinglar, ko'p boshli va niqoblangan e'tibor, feed-forward va keyingi so'z bashorati</p>
+        </a>
+        <a class="card item" href="31-GPT-Models/quiz.html">
+          <p class="num">31-modul · 15 savol</p>
+          <h3>GPT modellari bilan ishlash</h3>
+          <p>GPT ma'nosi va tarixi, zamonaviy OpenAI API, max_tokens va temperature, uchta rol, chatbot va RAG'ni noldan qurish</p>
+        </a>
+        <a class="card item" href="32-HuggingFace-Transformers/quiz.html">
+          <p class="num">32-modul · 15 savol</p>
+          <h3>Hugging Face Transformers</h3>
+          <p>pipeline, tokenizatorlar, maxsus tokenlar, PyTorch bilan qo'lda inferens va modellarni saqlash</p>
+        </a>
+        <a class="card item" href="33-BERT-Question-Answering/quiz.html">
+          <p class="num">33-modul · 15 savol</p>
+          <h3>BERT bilan savol-javob modellari</h3>
+          <p>BERT arxitekturasi, segment embeddinglari, start/end logitlar, FAQ-bot va BERT oilasi</p>
+        </a>
+        <a class="card item" href="34-Text-Classification-XLNet/quiz.html">
+          <p class="num">34-modul · 15 savol</p>
+          <h3>XLNet bilan matn tasnifi</h3>
+          <p>Permutatsiya g'oyasi, ma'lumotni tayyorlash, XLNet tokenlash, Trainer bilan fine-tuning va baholash</p>
+        </a>
+      </div>
+      <h2>🔗 LangChain <span>35–42</span></h2>
+      <div class="list">
+        <a class="card item" href="35-LangChain-Introduction/quiz.html">
+          <p class="num">35-modul · 15 savol</p>
+          <h3>LangChain'ga kirish</h3>
+          <p>LangChain adapter sifatida, biznes holatlari va PII maskalash, to'rtta komponent va LangChain 1.0 migratsiyasi</p>
+        </a>
+        <a class="card item" href="36-LangChain-Tokens-Models-Prices/quiz.html">
+          <p class="num">36-modul · 15 savol</p>
+          <h3>Tokenlar, modellar va narxlar</h3>
+          <p>BPE tokenlar va tiktoken, o'zbekcha token ustamasi, kirish/chiqish narxi, kontekst oynasi va embedding</p>
+        </a>
+        <a class="card item" href="37-LangChain-Setting-Up-Environment/quiz.html">
+          <p class="num">37-modul · 15 savol</p>
+          <h3>Muhitni sozlash</h3>
+          <p>conda, venv va uv muhitlari, kernel va versiya qotirish, API kaliti xavfsizligi va python-dotenv</p>
+        </a>
+        <a class="card item" href="38-LangChain-OpenAI-API/quiz.html">
+          <p class="num">38-modul · 15 savol</p>
+          <h3>OpenAI API</h3>
+          <p>openai paketi LangChain'siz: klient va base_url, rollar va few-shot, javob anatomiyasi, temperature, seed va streaming</p>
+        </a>
+        <a class="card item" href="39-LangChain-Model-Inputs/quiz.html">
+          <p class="num">39-modul · 15 savol</p>
+          <h3>Model kirishlari</h3>
+          <p>LangChain Model I/O: ChatOpenAI va seed, xabar sinflari, few-shot, prompt va chat shablonlari, MessagesPlaceholder</p>
+        </a>
+        <a class="card item" href="40-LangChain-Output-Parsers/quiz.html">
+          <p class="num">40-modul · 15 savol</p>
+          <h3>Chiqish parserlari</h3>
+          <p>StrOutputParser, vergulli ro'yxat parserining jim xatosi, DatetimeOutputParser, Pydantic va with_structured_output</p>
+        </a>
+        <a class="card item" href="41-LangChain-LCEL/quiz.html">
+          <p class="num">41-modul · 15 savol</p>
+          <h3>LangChain Expression Language (LCEL)</h3>
+          <p>| operatori, batch va stream, Runnable metodlari, RunnablePassthrough, RunnableParallel, RunnableLambda va @chain</p>
+        </a>
+        <a class="card item" href="42-LangChain-RAG/quiz.html">
+          <p class="num">42-modul · 15 savol</p>
+          <h3>LangChain — RAG (Retrieval Augmented Generation)</h3>
+          <p>Yuklash, bo'laklash, embedding, Chroma, similarity va MMR qidiruv, retriever, stuffing va himoyalangan javob</p>
+        </a>
+      </div>
+      <h2>🕸️ LangGraph <span>43–47</span></h2>
+      <div class="list">
+        <a class="card item" href="43-LangGraph-Introduction/quiz.html">
+          <p class="num">43-modul · 15 savol</p>
+          <h3>LangGraph — kirish</h3>
+          <p>Stateless LLM muammosi, State, tugun va qirralar, sikl, xabarlarni boshqarish usullari va Python talablari</p>
+        </a>
+        <a class="card item" href="44-LangGraph-Setting-Up-Environment/quiz.html">
+          <p class="num">44-modul · 15 savol</p>
+          <h3>LangGraph — muhitni sozlash</h3>
+          <p>venv, paketlar, uchta model varianti (OpenAI, Ollama, FakeListChatModel), grandalf, requirements.txt va Windows'da UTF-8</p>
+        </a>
+        <a class="card item" href="45-LangGraph-Graph-Components/quiz.html">
+          <p class="num">45-modul · 15 savol</p>
+          <h3>Graf komponentlari va amalga oshirish</h3>
+          <p>State, node, edge, reducer, compile(), stream, shartli qirralar, interrupt va recursion_limit</p>
+        </a>
+        <a class="card item" href="46-LangGraph-Message-Management/quiz.html">
+          <p class="num">46-modul · 15 savol</p>
+          <h3>Xabarlarni boshqarish</h3>
+          <p>Annotated va reducerlar, add_messages, MessagesState, RemoveMessage, qirqish (trim) va xulosalash</p>
+        </a>
+        <a class="card item" href="47-LangGraph-Thread-Level-Persistence/quiz.html">
+          <p class="num">47-modul · 15 savol</p>
+          <h3>Thread-level persistence</h3>
+          <p>Checkpointer, thread_id, InMemorySaver, StateSnapshot tarixi va SqliteSaver bilan davomiy xotira</p>
+        </a>
+      </div>
+      <h2>🧭 Vektor bazalar <span>48–51</span></h2>
+      <div class="list">
+        <a class="card item" href="48-Vector-Databases-Introduction/quiz.html">
+          <p class="num">48-modul · 15 savol</p>
+          <h3>Vektor bazalari — kirish</h3>
+          <p>Semantik qidiruv, SQL vs NoSQL vs vektor bazasi, embedding normasi, indeks va HNSW</p>
+        </a>
+        <a class="card item" href="49-Vector-Space-Basics/quiz.html">
+          <p class="num">49-modul · 15 savol</p>
+          <h3>Vektor fazosi va yuqori o'lchamli ma'lumot</h3>
+          <p>Vektor amallari, o'lchamlar la'nati, to'rt masofa metrikasi va embedding cheklovlari</p>
+        </a>
+        <a class="card item" href="50-Pinecone-Introduction/quiz.html">
+          <p class="num">50-modul · 15 savol</p>
+          <h3>Pinecone bilan tanishuv</h3>
+          <p>Vektor bazalarini taqqoslash, indeks yaratish, .env bilan ulanish, upsert va katta ma'lumotni oqimli indekslash</p>
+        </a>
+        <a class="card item" href="51-Semantic-Search-Case-Study/quiz.html">
+          <p class="num">51-modul · 15 savol</p>
+          <h3>Semantik qidiruv — amaliy loyiha</h3>
+          <p>365 kurslari uchun semantik qidiruv: ma'lumotni tayyorlash, model tanlash, chegara, sinxronlash, bo'lim darajasi va qo'llanishlar</p>
+        </a>
+      </div>
+      <h2>🎙️ Nutqni tanish <span>52–61</span></h2>
+      <div class="list">
+        <a class="card item" href="52-Speech-Recognition-Introduction/quiz.html">
+          <p class="num">52-modul · 15 savol</p>
+          <h3>Nutqni tanish — kirish</h3>
+          <p>ASR nima, blok xaritasi, garmonika, formant va fonema, manba-filtr modeli hamda Audrey'dan Whisper'gacha: DTW, HMM, end-to-end</p>
+        </a>
+        <a class="card item" href="53-Sound-and-Speech-Basics/quiz.html">
+          <p class="num">53-modul · 15 savol</p>
+          <h3>Tovush va nutq asoslari</h3>
+          <p>Koxlea va mel shkalasi, tovush to'lqini va so'nish, dB, faza, grebenka filtri va nutq energiyasi taqsimoti</p>
+        </a>
+        <a class="card item" href="54-Analog-to-Digital-Conversion/quiz.html">
+          <p class="num">54-modul · 15 savol</p>
+          <h3>Analogdan raqamliga</h3>
+          <p>Sample rate va Nayqvist, aliasing, bit chuqurligi va SNR, bitrate, normallashtirish, qayta namunalash, augmentatsiya va segmentatsiya</p>
+        </a>
+        <a class="card item" href="55-Audio-Feature-Extraction/quiz.html">
+          <p class="num">55-modul · 15 savol</p>
+          <h3>Audio xususiyatlarini ajratish</h3>
+          <p>ZCR, RMS va arzon VAD, spektral xususiyatlar, MFCC quvuri va Cohen's d, freymlash va agregatsiya, DFT, FFT, STFT va oyna funksiyalari</p>
+        </a>
+        <a class="card item" href="56-Technology-Mechanics/quiz.html">
+          <p class="num">56-modul · 15 savol</p>
+          <h3>Texnologiya mexanikasi</h3>
+          <p>Akustik va til modeli, HMM, CNN/RNN/LSTM, Transformer va Whisper ichi, model qurish va vosita tanlash</p>
+        </a>
+        <a class="card item" href="57-Setting-Up-the-Environment/quiz.html">
+          <p class="num">57-modul · 15 savol</p>
+          <h3>Muhitni sozlash</h3>
+          <p>Python versiyasi, venv/conda/uv, Jupyter yadrosi, ffmpeg'siz o'rnatish va importlarning haqiqiy narxi</p>
+        </a>
+        <a class="card item" href="58-Google-Web-Speech-API/quiz.html">
+          <p class="num">58-modul · 15 savol</p>
+          <h3>Google Web Speech API bilan transkripsiya</h3>
+          <p>Audio formatlar, Jupyter'da yuklash, SpeechRecognition tuzoqlari, WER/CER va halol normallashtirish</p>
+        </a>
+        <a class="card item" href="59-Background-Noise-and-Spectrograms/quiz.html">
+          <p class="num">59-modul · 15 savol</p>
+          <h3>Fon shovqini va spektrogrammalar</h3>
+          <p>Shovqin qayerda, spektrogramma qanday quriladi va nega shovqin kamaytirish ko'pincha zarar qiladi</p>
+        </a>
+        <a class="card item" href="60-Transcribing-with-Whisper/quiz.html">
+          <p class="num">60-modul · 15 savol</p>
+          <h3>OpenAI Whisper bilan transkripsiya</h3>
+          <p>Whisper transformers orqali, dekodlash va "stoxastiklik", ko'p faylni transkripsiya qilish, CSV va matndan nutqqa</p>
+        </a>
+        <a class="card item" href="61-Final-Discussion/quiz.html">
+          <p class="num">61-modul · 15 savol</p>
+          <h3>Yakuniy muhokama va kelajak yo'nalishlari</h3>
+          <p>Real vaqt va tarjima, ASR ning cheklovlari, gallyutsinatsiya, maxfiylik va nutqni tanishning kelajagi</p>
+        </a>
+      </div>
+      <h2>🛠️ LLM Engineering <span>62–67</span></h2>
+      <div class="list">
+        <a class="card item" href="62-LLM-Engineering-Introduction/quiz.html">
+          <p class="num">62-modul · 15 savol</p>
+          <h3>LLM Engineering — kirish</h3>
+          <p>Ace Interview loyihasi, til va token narxi, kalitsiz mahalliy model, LLMAdapter va o'lchanadigan talablar</p>
+        </a>
+        <a class="card item" href="63-LLM-Planning-Stage/quiz.html">
+          <p class="num">63-modul · 15 savol</p>
+          <h3>LLM Engineering — rejalashtirish bosqichi</h3>
+          <p>Hosting vs API, model xotirasi, tokenlar va narx, tizim prompti, JSON baholash, MB sxemasi va faoliyat diagrammalari</p>
+        </a>
+        <a class="card item" href="64-Crafting-and-Testing-Prompts/quiz.html">
+          <p class="num">64-modul · 15 savol</p>
+          <h3>AI promptlarini yaratish va sinash</h3>
+          <p>API kaliti va byudjet, temperature va top_p o'lchovlari, vazifaga mos sozlamalar, few-shot va qadamli promptlar, avtomatik prompt sinovi</p>
+        </a>
+        <a class="card item" href="65-Getting-to-Know-Streamlit/quiz.html">
+          <p class="num">65-modul · 15 savol</p>
+          <h3>Streamlit bilan tanishuv</h3>
+          <p>venv va AppTest, Streamlit afzallik-kamchiliklari, formatlash, st.write, chat elementlari va session_state</p>
+        </a>
+        <a class="card item" href="66-Developing-the-Prototype/quiz.html">
+          <p class="num">66-modul · 15 savol</p>
+          <h3>Prototipni ishlab chiqish</h3>
+          <p>Ace Interview: kalitsiz mijoz, chat, sozlash sahifasi, xabar chegarasi, fikr-mulohaza, prompt injection, GitHub va deploy</p>
+        </a>
+        <a class="card item" href="67-Solving-Real-World-Challenges/quiz.html">
+          <p class="num">67-modul · 15 savol</p>
+          <h3>Real dunyo muammolarini yechish</h3>
+          <p>Ace Interview ishlab chiqarishda: uch LLM, xotira, MB xulosasi, JSON himoyasi, gallyutsinatsiya, prompt injection, tokenlar, narx va masshtab</p>
+        </a>
+      </div>
+      <h2>⚖️ AI etikasi <span>68–76</span></h2>
+      <div class="list">
+        <a class="card item" href="68-Introduction-to-AI-and-Data-Ethics/quiz.html">
+          <p class="num">68-modul · 15 savol</p>
+          <h3>AI va ma'lumot etikasiga kirish</h3>
+          <p>Kurs rejasi, AI hayot sikli va etik audit, nega etika muhim, etika va qonun farqi</p>
+        </a>
+        <a class="card item" href="69-Core-Principles-of-AI-Ethics/quiz.html">
+          <p class="num">69-modul · 15 savol</p>
+          <h3>AI etikasining asosiy prinsiplari</h3>
+          <p>Maxfiylik, shaffoflik, javobgarlik va adolat: PII, saqlash siyosati, RACI, adolat metrikalari va bias auditi</p>
+        </a>
+        <a class="card item" href="70-Ethical-Data-Collection/quiz.html">
+          <p class="num">70-modul · 15 savol</p>
+          <h3>Etik ma'lumot to'plash</h3>
+          <p>Manba jurnali, xususiy, ommaviy va skreyp qilingan ma'lumot, k-anonimlik va vakillik auditi</p>
+        </a>
+        <a class="card item" href="71-Ethical-AI-Development/quiz.html">
+          <p class="num">71-modul · 15 savol</p>
+          <h3>Etik AI ishlab chiqish</h3>
+          <p>Annotator kelishuvi va kappa, proksi o'zgaruvchilar, Tay va kritik nuqta, SFT sinovlari, RLHF baholovchi biasi va inklyuziv sinov</p>
+        </a>
+        <a class="card item" href="72-Ethical-AI-Deployment/quiz.html">
+          <p class="num">72-modul · 15 savol</p>
+          <h3>Etik AI joylashtirish</h3>
+          <p>Rozilik va litsenziya, model karta, guruh bo'yicha kalibrlash, nomuvofiqlik, gallyutsinatsiya va AI sudya monitoringi</p>
+        </a>
+        <a class="card item" href="73-Ethical-AI-for-Businesses/quiz.html">
+          <p class="num">73-modul · 15 savol</p>
+          <h3>Biznes foydalanuvchilar uchun etik AI</h3>
+          <p>Kichik biznes uchun AI narxi va shablonlar, LIME, SHAP va permutatsiya, firibgarlik bayrog'i va inson nazorati, xavf reyestri</p>
+        </a>
+        <a class="card item" href="74-Ethical-AI-for-Individuals/quiz.html">
+          <p class="num">74-modul · 15 savol</p>
+          <h3>Shaxsiy foydalanuvchilar uchun etik AI</h3>
+          <p>Til jarimasi va teng kirish, filtr pufagi mexanizmi, AI detektorlari cheklovi va deepfake'dan arzon himoya</p>
+        </a>
+        <a class="card item" href="75-ChatGPT-Ethics/quiz.html">
+          <p class="num">75-modul · 15 savol</p>
+          <h3>ChatGPT etikasi</h3>
+          <p>Tokenlar, maxfiylik va tahrirlovchi, OpenAI sozlamalari, soxta manbalar, plagiat detektorlari va energiya iste'moli</p>
+        </a>
+        <a class="card item" href="76-Data-and-AI-Regulatory-Frameworks/quiz.html">
+          <p class="num">76-modul · 15 savol</p>
+          <h3>Ma'lumot va AI regulyatsiyasi asoslari</h3>
+          <p>Global yondashuvlar, GDPR va EU AI Act, AQSh shtatlari yamog'i, Xitoy PIPL/DSL va Afrikadagi bias muammosi</p>
+        </a>
+      </div>
     <footer><a href="https://github.com/Ilhom88-0407/365AI-udemy">📘 Darslikni GitHub'da o'qish</a></footer>
   </main>
 </body>

@@ -206,3 +206,9 @@ def malumot_auditi(yozuvlar, kvazi, nozik, maydonlar, k_min=5):
 ---
 
 🏠 [Kurs boshiga](../README.md) · 📝 [Mashqlar](MASHQLAR.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

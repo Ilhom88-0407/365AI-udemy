@@ -162,3 +162,9 @@ chat = FakeListChatModel(responses=["Birinchi javob.", "Ikkinchi javob."])
 ---
 
 ⬅️ [42-modul. RAG](../42-LangChain-RAG/README.md) · 🏠 [Kurs boshiga](../README.md) · ➡️ [44-modul. Muhitni sozlash](../44-LangGraph-Setting-Up-Environment/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

@@ -258,3 +258,9 @@ sistem O'ZBEKCHA: 'Iltimos qorab, "Qora tuynuk" ishni yordamga olib beradi. Qof:
 ---
 
 ⬅️ [37-modul. Muhitni sozlash](../37-LangChain-Setting-Up-Environment/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [39-modul. Model kirishlari](../39-LangChain-Model-Inputs/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

@@ -217,3 +217,9 @@ Hammasi ✅ bo'lsa — **21-modulga tayyorsiz**.
 ---
 
 ⬅️ [19-modul](../19-Important-Python-Concepts/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [21-modul](../21-Text-Preprocessing/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

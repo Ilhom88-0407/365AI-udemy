@@ -132,3 +132,9 @@ json.dump(data, f, ensure_ascii=False)          # ⭐ o'zbekcha o'qilsin
 ---
 
 ⬅️ [43-modul. Kirish](../43-LangGraph-Introduction/README.md) · 🏠 [Kurs boshiga](../README.md) · ➡️ [45-modul. Graf komponentlari](../45-LangGraph-Graph-Components/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

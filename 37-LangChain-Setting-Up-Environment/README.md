@@ -222,3 +222,9 @@ uv venv langchain_env
 ---
 
 ⬅️ [36-modul. Tokenlar va narxlar](../36-LangChain-Tokens-Models-Prices/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [38-modul. OpenAI API](../38-LangChain-OpenAI-API/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

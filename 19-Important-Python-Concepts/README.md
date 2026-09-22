@@ -263,3 +263,9 @@ Hammasi ✅ bo'lsa — **20-modulga (NLP) tayyorsiz**.
 ---
 
 ⬅️ [18-modul](../18-Iteration/README.md) · 🏠 [Bosh sahifa](../README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

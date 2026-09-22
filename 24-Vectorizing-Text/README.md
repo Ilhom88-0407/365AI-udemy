@@ -179,3 +179,9 @@ stop_words='english'      377 ustun   98.1% nol
 ---
 
 ⬅️ [23-modul — Sentiment tahlili](../23-Sentiment-Analysis/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [25-modul](../25-Topic-Modelling/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

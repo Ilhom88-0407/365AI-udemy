@@ -204,3 +204,9 @@ Vazifangiz INGLIZ tilidami?
 ---
 
 ⬅️ [28-modul — NLP kelajagi](../28-Future-of-NLP/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [30-modul](../30-Transformer-Architecture/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

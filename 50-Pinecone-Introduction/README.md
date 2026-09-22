@@ -147,3 +147,9 @@ def vektor_baza(nom="my-index", olcham=384, metrika="cosine"):
 ---
 
 ⬅️ [49-modul. Vektor fazosi](../49-Vector-Space-Basics/README.md) · 🏠 [Kurs boshiga](../README.md) · ➡️ [51-modul. Case study](../51-Semantic-Search-Case-Study/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

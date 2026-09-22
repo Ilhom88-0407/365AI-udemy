@@ -188,3 +188,9 @@ python -m spacy download en_core_web_sm
 ---
 
 ⬅️ [26-modul — O'z matn tasniflagichingiz](../26-Text-Classifier/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [28-modul — NLP kelajagi](../28-Future-of-NLP/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

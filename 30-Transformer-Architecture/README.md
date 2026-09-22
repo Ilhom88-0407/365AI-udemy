@@ -257,3 +257,9 @@ O'lchangan:
 ---
 
 ⬅️ [29-modul — LLM'larga kirish](../29-Introduction-to-LLMs/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [31-modul](../31-GPT-Models/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

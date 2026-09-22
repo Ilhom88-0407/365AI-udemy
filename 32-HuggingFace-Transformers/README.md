@@ -210,3 +210,9 @@ print(p("I am so excited to be learning about large language models"))
 ---
 
 ⬅️ [31-modul — GPT modellari](../31-GPT-Models/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [33-modul — BERT savol-javob](../33-BERT-Question-Answering/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

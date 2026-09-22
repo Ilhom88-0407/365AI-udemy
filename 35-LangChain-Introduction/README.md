@@ -267,3 +267,9 @@ MASKALANGAN: Mijoz: Alisher Karimov, pochta <EMAIL_0>, karta <KARTA_0>,
 ---
 
 ⬅️ [34-modul. XLNet fine-tuning](../34-Text-Classification-XLNet/README.md) · 🏠 [Bosh sahifa](../README.md) · ➡️ [36-modul. Tokenlar, modellar, narxlar](../36-LangChain-Tokens-Models-Prices/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

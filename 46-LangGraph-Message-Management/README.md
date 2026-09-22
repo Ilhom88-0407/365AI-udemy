@@ -164,3 +164,9 @@ from langchain_core.messages import RemoveMessage, trim_messages as lc_trim
 ---
 
 ⬅️ [45-modul. Graf komponentlari](../45-LangGraph-Graph-Components/README.md) · 🏠 [Kurs boshiga](../README.md) · ➡️ [47-modul. Thread-level persistence](../47-LangGraph-Thread-Level-Persistence/README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

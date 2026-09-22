@@ -133,3 +133,9 @@ Har bir darsdagi **"O'zini tekshirish savollari"** — jami **39 ta savol**.
 ## ➡️ Keyingi qadam
 
 **07-modul: AI tech stack** ga o'ting
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

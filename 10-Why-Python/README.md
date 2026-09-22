@@ -95,3 +95,9 @@ Oldingi 9 modul AI **nima ekanini** o'rgatdi. Endi biz uni **qurishni** boshlaym
 ## ➡️ Keyingi qadam
 
 **11-modul: Muhitni sozlash** — Anaconda va Jupyter o'rnatamiz.
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

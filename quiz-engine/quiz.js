@@ -158,6 +158,7 @@
       ]),
       el("section", { class: "card" }, [
         el("p", { class: "q", text: q.q }),
+        q.code ? el("pre", { class: "code" }, [el("code", { text: q.code })]) : null,
         el("p", { class: "hint", text: multi ? "Bir nechta to'g'ri javob bor — hammasini belgilang." : "Bitta javobni tanlang." }),
         list,
         feedback,
@@ -201,6 +202,7 @@
         var pick = function (arr) { return arr.map(function (p) { return it.options[p]; }).join("; "); };
         review.appendChild(el("div", { class: "review-item" }, [
           el("p", { text: it.src.q }),
+          it.src.code ? el("pre", { class: "code" }, [el("code", { text: it.src.code })]) : null,
           el("p", { class: "your", text: "Sizning javobingiz: " + pick(it.picked) }),
           el("p", { class: "right", text: "To'g'ri javob: " + pick(it.answer) }),
           lessonLink(it.src)

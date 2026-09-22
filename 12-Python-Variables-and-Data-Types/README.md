@@ -167,3 +167,9 @@ Hammasi ✅ bo'lsa — **13-modulga tayyorsiz**.
 ## ➡️ Keyingi qadam
 
 **[13-modul: Python ning asosiy sintaksisi](../13-Basic-Python-Syntax/README.md)**
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

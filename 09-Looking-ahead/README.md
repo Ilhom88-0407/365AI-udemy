@@ -125,3 +125,9 @@ Ma'ruzachining yakuniy so'zi:
 Manba kursda keyingi bo'lim — **Python moduli** (10–19-bo'limlar).
 
 Nazariya tugadi. **Endi kod yozish boshlanadi.**
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)

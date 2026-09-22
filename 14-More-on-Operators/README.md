@@ -191,3 +191,9 @@ Hammasi ✅ bo'lsa — **15-modulga tayyorsiz**.
 ---
 
 ⬅️ [13-modul](../13-Basic-Python-Syntax/README.md) · 🏠 [Bosh sahifa](../README.md)
+
+---
+
+## 📝 Modul quizi
+
+Bilimingizni sinang: **[quiz.html](quiz.html)** — 15 savol, har biriga izoh va darsga havola. Onlayn: [ilhom88-0407.github.io/365AI-udemy](https://ilhom88-0407.github.io/365AI-udemy/)
