@@ -115,7 +115,7 @@ class KursQidiruvXizmati:
 
     @staticmethod
     def _xesh(s):
-        return hashlib.md5(s.encode("utf-8")).hexdigest()[:16]
+        return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
 
     def _vektor(self, matnlar, hajm=32):
         A = self.model.encode(list(matnlar), batch_size=hajm,

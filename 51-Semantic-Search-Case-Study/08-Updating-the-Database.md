@@ -41,7 +41,7 @@ import hashlib
 
 def matn_xesh(s):
     """⭐ Matn o'zgarganini ANIQLASH uchun."""
-    return hashlib.md5(s.encode("utf-8")).hexdigest()[:16]
+    return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
 
 
 def sinxronla(qidiruv, ids, matnlar, metadatalar, hajm=100):
