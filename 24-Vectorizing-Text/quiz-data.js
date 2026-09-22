@@ -34,10 +34,10 @@ window.QUIZ = {
       q: "6 ta mehmonxona sharhida \"the\" hamma sharhda, \"parking\" 2 tasida, \"cockroach\" faqat 1 tasida bor. TF-IDF qaysi so'zga eng yuqori ball beradi?",
       type: "single",
       options: [
-        "\"cockroach\" — u hujjatni boshqalardan ajratib turadi",
-        "\"the\" — u eng ko'p uchraydi",
-        "\"parking\" — u o'rtacha tez-tez uchraydi",
-        "Uchalasi ham bir xil ball oladi"
+        "\"cockroach\" — u hujjatni boshqalardan ajratadi",
+        "\"the\" — u eng ko'p uchraydi, TF'i eng katta",
+        "\"parking\" — TF va IDF orasida eng yaxshi muvozanat",
+        "Uchalasi bir xil — TF-IDF faqat chastotani sanaydi"
       ],
       answer: [0],
       explain: "TF-IDF noyoblikni mukofotlaydi: hamma joyda uchraydigan so'z hech narsa aytmaydi, faqat bitta hujjatda uchraydigan so'z esa aynan shu hujjatni ajratib turadi.",
@@ -103,9 +103,9 @@ window.QUIZ = {
       q: "sklearn fit_transform natijasini siyrak matritsa (sparse matrix) sifatida saqlaydi. Buning sababi nima?",
       type: "single",
       options: [
-        "Hujjat-so'z jadvalining katta qismi noldan iborat, faqat nolmas qiymatlarni saqlash xotirani tejaydi",
-        "Siyrak matritsa so'zlar tartibini saqlab qolish uchun kerak",
-        "Siyrak matritsada qiymatlar avtomatik ravishda 0 va 1 ga aylanadi",
+        "Jadvalning ko'p qismi nol, faqat nolmas qiymatlarni saqlash xotirani tejaydi",
+        "Siyrak matritsa so'zlar tartibini saqlab, bigrammalarni tiklash uchun kerak",
+        "Siyrak matritsada qiymatlar avtomatik ravishda 0 va 1 ga aylanib ixchamlashadi",
         "pd.DataFrame siyrak matritsani .toarray() siz ham to'g'ridan-to'g'ri qabul qiladi"
       ],
       answer: [0],
@@ -145,8 +145,8 @@ window.QUIZ = {
       options: [
         "Hamma joyda uchraydigan so'z butunlay lug'atdan o'chiriladi",
         "Noyob so'zlarning IDF'i klassikdagidan ikki baravar kichik bo'ladi",
-        "IDF manfiy qiymat ham olishi mumkin bo'ladi",
-        "Hamma joyda uchraydigan so'zning balli kichik bo'ladi, lekin nol bo'lmaydi"
+        "Kam uchraydigan so'zlarda IDF manfiy qiymat ham olishi mumkin",
+        "Keng tarqalgan so'zning balli kichik bo'ladi, lekin nol bo'lmaydi"
       ],
       answer: [3],
       explain: "Silliqlash (+1) tufayli \"the\" ning IDF'i ln(7/7) + 1 = 1.0 bo'ldi — kichik, lekin nol emas, so'z butunlay yo'qolmaydi.",
@@ -159,7 +159,7 @@ window.QUIZ = {
       options: [
         "\"the\" uchun 0.0, qolgan uchta so'z uchun 1.0986",
         "\"the\" uchun 1.0, qolgan uchta so'z uchun 1.6931",
-        "To'rttala so'z uchun ham 1.0",
+        "\"the\" uchun 0.0, qolgan uchta so'z uchun 1.6931",
         "\"the\" uchun 1.6931, qolgan uchta so'z uchun 1.0"
       ],
       answer: [1],
@@ -170,10 +170,10 @@ window.QUIZ = {
       q: "1-hujjatda ham, 5-hujjatda ham \"the\" 3 martadan uchraydi, lekin TF-IDF ballari 0.391 va 0.290. Bunga nima sabab?",
       type: "single",
       options: [
-        "5-hujjat uzunroq (22 so'z), shuning uchun \"the\" ning ulushi kichikroq",
+        "5-hujjat uzunroq (22 so'z), shuning uchun \"the\" ulushi kichik",
         "5-hujjatda \"the\" boshqa hujjatlarga qaraganda kamroq uchraydi",
-        "IDF har bir hujjat uchun alohida hisoblangani uchun",
-        "1-hujjatda to'xtatish so'zlar olib tashlangani uchun"
+        "IDF har bir hujjat uchun alohida, uzunligiga qarab hisoblanadi",
+        "1-hujjatdan boshqa to'xtatish so'zlar olib tashlangani uchun"
       ],
       answer: [0],
       explain: "BOW ikkalasiga ham 3 deydi. TF-IDF esa hujjat uzunligini hisobga oladi: qisqa (14 so'zli) 1-hujjatda \"the\" ulushi kattaroq. IDF esa so'z uchun butun korpusda bitta.",

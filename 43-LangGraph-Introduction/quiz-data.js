@@ -21,10 +21,10 @@ window.QUIZ = {
       q: "Oddiy chatbotda \"xotira\" qanday hosil qilinadi va buning asosiy muammosi nima?",
       type: "single",
       options: [
-        "Model har javobdan keyin og'irliklarini yangilaydi — muammo sekinlikda",
-        "LangChain xabarlarni serverda o'zi saqlaydi — muammo maxfiylikda",
-        "Butun xabarlar ro'yxati har safar qayta yuboriladi — ro'yxat cheksiz o'sadi va har token pul",
-        "Faqat oxirgi xabar yuboriladi — muammo kontekst yetishmasligida"
+        "Model har javobdan keyin og'irliklarini yangilaydi — muammo sekinlik va narxda",
+        "LangChain xabarlarni serverda o'zi saqlab turadi — muammo maxfiylikda",
+        "Butun xabarlar ro'yxati har safar qayta yuboriladi — ro'yxat va narx o'sib boradi",
+        "Faqat oxirgi xabar yuboriladi — muammo oldingi kontekst yetishmasligida"
       ],
       answer: [2],
       explain: "\"Xotira\" — bu HumanMessage va AIMessage'lar ro'yxatini qayta yuborish. Lekin ro'yxat o'sgan sari har chaqiruvda butun tarix uchun to'laysiz.",
@@ -36,8 +36,8 @@ window.QUIZ = {
       options: [
         "Sikl: LCEL chiziqli (a | b | c), LangGraph'da orqaga qaytish mumkin",
         "Tezlik: LangGraph zanjirlarni LCEL'dan bir necha barobar tez bajaradi",
-        "Model: LangGraph faqat OpenAI modellari bilan ishlaydi",
-        "Parallellik: LCEL'da parallel qadamlar umuman yo'q"
+        "Model: LangGraph faqat OpenAI modellari bilan ishlaydi, LCEL esa har qanday",
+        "Parallellik: LCEL'da parallel qadamlar yo'q, LangGraph'da esa bor"
       ],
       answer: [0],
       explain: "LCEL — DAG, orqaga qaytish yo'q. Suhbat esa tabiatan sikl (savol → javob → yana savolmi? → ...), buni LangGraph shartli qirralar bilan yozadi. LCEL'da RunnableParallel bor, shuning uchun parallellik farq emas.",
@@ -61,10 +61,10 @@ window.QUIZ = {
       q: "Bank kredit yordamchisi summa, muddat va daromadni ketma-ket so'rashi, tasdiqlanmasa esa summa so'rashga qaytishi kerak. Nima uchun bu LangGraph uchun tipik vazifa?",
       type: "single",
       options: [
-        "Chunki LangGraph'siz modelga bir nechta savol berib bo'lmaydi",
-        "Chunki unda ko'p qadam, qaror va orqaga qaytish (sikl) hamda xotira bor",
+        "Chunki LangGraph'siz modelga bir nechta ketma-ket savol berib bo'lmaydi",
+        "Chunki unda ko'p qadam, qaror, orqaga qaytish (sikl) va xotira bor",
         "Chunki LangGraph kredit foizini o'zi hisoblaydigan tayyor tugunga ega",
-        "Chunki bunday vazifa uchun LLM umuman kerak emas"
+        "Chunki bunday vazifa uchun LLM kerak emas, oddiy if-else yetarli"
       ],
       answer: [1],
       explain: "Darsdagi barcha misollarda (bank, klinika, call-markaz) umumiy narsa — ko'p qadam, qaror va xotira. \"Tasdiqlanmasa qaytish\" — shartli qirra bilan qurilgan sikl.",
@@ -74,10 +74,10 @@ window.QUIZ = {
       q: "Suhbatni boshqarishning uch usuli bo'yicha qaysi baho darsdagi o'lchovlarga mos?",
       type: "single",
       options: [
-        "Qo'shish — eng arzon, chunki tarix bir marta yuboriladi",
-        "Qirqish — kontekst to'liq saqlanadi, faqat narx oshadi",
+        "Qo'shish — eng arzon, chunki tarix faqat bir marta yuboriladi",
+        "Qirqish — kontekst to'liq saqlanadi, faqat narx biroz oshadi",
         "Xulosalash — ham token, ham chaqiruvlar sonini kamaytiradi",
-        "Xulosalash — tokenni tejaydi, lekin har burilishda 2× LLM chaqiruvi"
+        "Xulosalash — tokenni tejaydi, lekin burilishda 2× LLM chaqiruvi"
       ],
       answer: [3],
       explain: "O'lchovda 5 burilish xulosalash bilan 10 ta LLM chaqiruvi bo'ldi. Bu bepul yaxshilanish emas, savdo: kontekst siqiladi, lekin chaqiruv ikkilanadi.",
@@ -143,8 +143,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "TypeError: notogri_kalit kutilmagan argument",
-        "{'ism': 'Oybek', 'yosh': 30}",
-        "Foydalanuvchi(ism='Oybek', yosh=30)",
+        "{'ism': 'Oybek', 'yosh': 30} — ortiqcha kalit tashlanadi",
+        "Foydalanuvchi(ism='Oybek', yosh=30, notogri_kalit='!')",
         "{'ism': 'Oybek', 'yosh': 30, 'notogri_kalit': '!'}"
       ],
       answer: [3],
@@ -170,9 +170,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Hech narsa o'zgarmaydi — LangGraph xabarlarni baribir qo'shib boradi",
-        "Graf kompilyatsiyada xato beradi va ishga tushmaydi",
+        "Graf kompilyatsiyada xato beradi, chunki reducer topilmaydi",
         "Yangi qiymat eskisini almashtiradi — faqat oxirgi xabar qoladi",
-        "Xabarlar ikki marta takrorlanib qo'shiladi"
+        "Xabarlar ikki marta takrorlanib qo'shiladi — tarix tez o'sadi"
       ],
       answer: [2],
       explain: "Annotated maydonga reducer biriktiradi va LangGraph'ga \"almashtirma, add_messages bilan birlashtir\" deydi. Usiz o'lchovda 3 xabar o'rniga faqat ['ikkinchi'] qoldi — foydalanuvchi savoli yo'qoladi.",

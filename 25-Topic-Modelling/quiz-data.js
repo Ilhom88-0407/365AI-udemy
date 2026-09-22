@@ -30,9 +30,9 @@ window.QUIZ = {
       type: "multi",
       options: [
         "10 000 ta shikoyatda qanday muammolar borligini bilish",
-        "Emailning spam yoki spam emasligini aniqlash",
-        "500 ta ilmiy maqolada qanday yo'nalishlar borligini topish",
-        "Sharhning ijobiy yoki salbiy ekanini aniqlash"
+        "Kelgan emailning spam yoki spam emasligini avtomatik aniqlash",
+        "500 ta ilmiy maqoladagi yo'nalishlarni topish",
+        "Mahsulot sharhining ijobiy yoki salbiy ekanini aniqlash"
       ],
       answer: [0, 2],
       explain: "Kalit savol: \"Men turkumlarni bilamanmi?\" Yo'q bo'lsa — mavzu modeli (kashfiyot). Spam va sentiment kabi ma'lum turkumlar uchun esa tasniflagich kerak.",
@@ -55,10 +55,10 @@ window.QUIZ = {
       q: "LDA'dagi Dirichlet taqsimoti farazi nimani bildiradi?",
       type: "single",
       options: [
-        "Hujjatda barcha mavzular teng ulushda uchraydi",
+        "Hujjatda barcha mavzular taxminan teng ulushda uchraydi",
         "Har bir so'z faqat bitta mavzuga tegishli bo'la oladi",
-        "Mavzular soni ma'lumotdan avtomatik aniqlanadi",
-        "Hujjat asosan bitta mavzu haqida, ozgina so'zlar boshqa mavzulardan"
+        "Mavzular soni ma'lumotning o'zidan avtomatik aniqlanadi",
+        "Hujjat asosan bitta mavzu haqida, boshqalari ozgina"
       ],
       answer: [3],
       explain: "Ulushlar teng bo'lmaydi, biri ustun keladi (masalan, sport 85%, siyosat 8%...). Haqiqiy matnlar ham shunday yoziladi. So'zlar esa bir nechta mavzuga tegishli bo'lishi mumkin (crash, bank).",
@@ -69,9 +69,9 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Shu hujjatdagi boshqa so'zlar qaysi mavzularga tayinlangani",
-        "Shu so'z boshqa hujjatlarda qaysi mavzuga necha marta tayinlangani",
-        "So'zning jumladagi o'rni va undan oldingi so'z",
-        "So'zning sentiment balli (ijobiy yoki salbiy)"
+        "Shu so'z boshqa hujjatlarda qaysi mavzuga tayinlangani",
+        "So'zning jumladagi o'rni va undan oldingi so'z qaysi ekani",
+        "So'zning sentiment balli, ya'ni ijobiy yoki salbiy ekani"
       ],
       answer: [0, 1],
       explain: "LDA boshqa so'zlar to'g'ri tayinlangan deb faraz qiladi va ikki savolga qaraydi: bu hujjatdagi mavzu ulushlari va bu so'zning boshqa hujjatlardagi mavzusi. Jarayon barqaror holatgacha takrorlanadi.",
@@ -119,9 +119,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Taqsimot gipotezasi (distributional hypothesis)",
-        "Dirichlet taqsimoti farazi",
-        "TF-IDF'ning teskari hujjat chastotasi",
-        "Stemming orqali so'z o'zagini topish"
+        "Dirichlet taqsimoti farazi (Dirichlet prior)",
+        "TF-IDF'ning teskari hujjat chastotasi (IDF)",
+        "Stemming orqali so'zlarning umumiy o'zagini topish"
       ],
       answer: [0],
       explain: "Taqsimot gipotezasiga ko'ra o'xshash ma'noli so'zlar tez-tez birga uchraydi. Algoritm ma'noni bilmaydi — faqat bir xil qo'shnilarni ko'radi.",
@@ -171,7 +171,7 @@ window.QUIZ = {
       q: "Tozalashsiz ma'lumotda UMass koherentligi LDA uchun ham, LSA uchun ham k=2 ni eng yaxshi deb ko'rsatdi, lekin mavzular foydasiz edi. Nega?",
       type: "single",
       options: [
-        "mr va said deyarli har bir hujjatda birga uchragani uchun koherentlik yuqori chiqdi",
+        "mr va said deyarli har hujjatda birga uchrab, koherentlikni oshirgan",
         "UMass ballari musbat bo'lgani uchun ularni noto'g'ri talqin qildik",
         "k=2 da model yetarli iteratsiya qilmagani uchun natija tasodifiy chiqdi",
         "Koherentlik faqat LSA uchun ishlaydi, LDA uchun esa noto'g'ri natija beradi"
@@ -184,10 +184,10 @@ window.QUIZ = {
       q: "Koherentlik bo'yicha k=11 ham yaxshi ball oldi, lekin manfaatdor tomonlar 11 ta mavzuni tushunishga qiynaladi. k=5 da esa har bir mavzuga 2-3 so'zda nom berish mumkin. Darsga ko'ra nima qilinadi?",
       type: "single",
       options: [
-        "Faqat eng yuqori koherentlik ballini beradigan k tanlanadi",
-        "k=11 tanlanadi, chunki mavzular qancha ko'p bo'lsa shuncha aniq",
+        "Koherentlik balli eng yuqori bo'lgan k tanlanadi, qolgani ikkinchi darajali",
+        "k=11 tanlanadi, chunki mavzular qancha ko'p bo'lsa, tahlil shuncha aniq",
         "k=5 tanlanadi — biznes uchun mantiqiy bo'lsa, optimal bo'lmagan k normal",
-        "k ni tanlashdan voz kechib, model o'zi aniqlashini kutiladi"
+        "k ni tanlashdan voz kechib, mavzular sonini model o'zi aniqlashi kutiladi"
       ],
       answer: [2],
       explain: "Matematik eng aniq son har doim biznes uchun eng qimmatli emas. Koherentlik bilan birga intuitsiya va biznes bilimini hisobga olish kerak; oltin qoida — mavzuga nom bera olmasangiz, u mavzu emas.",

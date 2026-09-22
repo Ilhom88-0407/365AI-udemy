@@ -63,7 +63,7 @@ enc = tiktoken.get_encoding("cl100k_base")
 NARX = {"gpt-4o-mini": (0.15, 0.60),
         "gpt-4o":      (2.50, 10.00),
         "gpt-4-turbo": (10.00, 30.00)}
-UZ_USTAMA = 1.88                     # 1-darsda O'LCHANGAN
+UZ_USTAMA = 1.882                    # 1-darsda O'LCHANGAN (o'rtacha 1.882 ≈ 1.88×)
 
 for m, (ki, ch) in NARX.items():
     en_narx = 1000 * (500*ki + 200*ch) / 1e6       # 1000 so'rov
@@ -74,7 +74,7 @@ for m, (ki, ch) in NARX.items():
 
 ```
 gpt-4o-mini    1000 so'rov: ingliz $ 0.195  o'zbek $ 0.367  (+88%)
-gpt-4o         1000 so'rov: ingliz $ 3.250  o'zbek $ 6.117  (+88%)
+gpt-4o         1000 so'rov: ingliz $ 3.250  o'zbek $ 6.116  (+88%)
 gpt-4-turbo    1000 so'rov: ingliz $11.000  o'zbek $20.702  (+88%)
 ```
 
@@ -97,7 +97,7 @@ gpt-4-turbo    1000 so'rov: ingliz $11.000  o'zbek $20.702  (+88%)
 
 ```python
 n_w_per_token = 0.90          # 1-darsda o'lchangan (inglizcha)
-UZ_USTAMA = 1.88
+UZ_USTAMA = 1.882             # 1.88× ning aniq qiymati (1-dars o'rtachasi)
 
 for m, n in [("gpt-4o", 128000), ("gpt-4o-mini", 128000), ("gpt-4", 8192)]:
     en = n * n_w_per_token

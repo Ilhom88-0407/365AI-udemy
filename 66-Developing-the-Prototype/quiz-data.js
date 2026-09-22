@@ -10,7 +10,7 @@ window.QUIZ = {
       options: [
         "OpenAI kutubxonasiga soxta sk- kalit berib, xatolarni try/except bilan yashirish orqali",
         "Kursning barcha chaqiruvlarini transformers pipeline() chaqiruvlariga qayta yozish orqali",
-        "OpenAI mijozining interfeysini takrorlovchi MahalliyMijoz adapterini mahalliy model ustiga qurish orqali",
+        "Mahalliy model ustiga OpenAI mijozi interfeysini takrorlovchi adapter qurish orqali",
         "Streamlit ning st.secrets funksiyasi kalitsiz rejimda javoblarni o'zi yaratishi orqali"
       ],
       answer: [2],
@@ -22,7 +22,7 @@ window.QUIZ = {
       code: "if prompt := st.chat_input(\"Your answer.\"):\n    st.session_state.messages.append({\"role\": \"user\", \"content\": prompt})",
       type: "single",
       options: [
-        "prompt ga qiymat beradi va tekshiradi, lekin faqat probellardan iborat \"   \" ham o'tib ketadi",
+        "prompt ga qiymat beradi va tekshiradi, lekin probellardan iborat \"   \" ham o'tadi",
         "prompt ga qiymat beradi va bo'sh yoki faqat probelli matnni avtomatik rad etadi",
         "Faqat tekshiradi; prompt o'zgaruvchisi if blokidan tashqarida mavjud bo'lmaydi",
         "chat_input qiymatini session_state ga avtomatik yozadi, append esa ortiqcha"
@@ -49,10 +49,10 @@ window.QUIZ = {
       code: "name = st.text_input(label=\"Name\")\nif \"messages\" not in st.session_state:\n    st.session_state.messages = [{\"role\": \"system\",\n        \"content\": f\"You are an HR executive that interviews {name}...\"}]",
       type: "single",
       options: [
-        "st.text_input qiymati f-string ichida ishlatilishi mumkin emas",
-        "system xabari ekranda ko'rinmagani uchun model uni ham o'qimaydi",
+        "st.text_input qiymatini f-string ichida ishlatib bo'lmaydi, u str emas",
+        "system xabari ekranda ko'rsatilmagani uchun model uni ham umuman o'qimaydi",
         "Model kichik bo'lgani uchun promptdagi ismni har doim e'tiborsiz qoldiradi",
-        "Prompt faqat birinchi rerunda, maydonlar hali bo'sh paytida quriladi va muzlab qoladi"
+        "Prompt faqat birinchi rerunda, maydonlar bo'sh paytida quriladi va muzlab qoladi"
       ],
       answer: [3],
       explain: "if \"messages\" not in st.session_state faqat birinchi rerunda bajariladi — o'sha paytda name bo'sh satr. Yechim — bosqichlarni ajratib, promptni sozlash tugagandan keyin qurish.",
@@ -102,9 +102,9 @@ window.QUIZ = {
       q: "Tuzatilgan mantiqda chegaraga yetgach chat_input ga disabled=True berildi. O'lchovga ko'ra nima bo'ladi?",
       type: "single",
       options: [
-        "Widget ekrandan butunlay yo'qoladi va foydalanuvchi uni ko'rmaydi",
-        "Widget ko'rinib turadi, lekin yozilgan qiymat o'tmaydi va sanagich o'zgarmaydi",
-        "Widget ko'rinadi va qiymat o'tadi, faqat model javob bermaydi",
+        "Widget ekrandan butunlay yo'qoladi va foydalanuvchi uni umuman ko'rmaydi",
+        "Widget ko'rinadi, lekin yozilgan qiymat o'tmaydi va sanagich o'zgarmaydi",
+        "Widget ko'rinadi va qiymat o'tadi, faqat model unga javob qaytarmaydi",
         "Streamlit StreamlitAPIException beradi, chunki chat_input da disabled yo'q"
       ],
       answer: [1],
@@ -189,8 +189,8 @@ window.QUIZ = {
       q: "Kalitsiz mahalliy model (Qwen2.5-0.5B) bilan ilovani Streamlit Community Cloud ga deploy qilish rejalashtirildi. Darsga ko'ra nima bo'ladi va qanday muqobil bor?",
       type: "single",
       options: [
-        "Ishlamaydi: model ~1 GB va torch ~800 MB, bepul 1 GB chegaraga sig'maydi; Hugging Face Spaces 16 GB beradi",
-        "Ishlaydi, faqat birinchi yuklash 12.9 s davom etadi; @st.cache_resource buni hal qiladi",
+        "Ishlamaydi: model ~1 GB va torch ~800 MB bepul 1 GB chegaraga sig'maydi; Spaces 16 GB beradi",
+        "Ishlaydi, faqat birinchi yuklash 12.9 s davom etadi; buni @st.cache_resource bilan hal qilsa bo'ladi",
         "Ishlamaydi, chunki Streamlit Cloud transformers kutubxonasini umuman o'rnatmaydi; Render yagona yo'l",
         "Ishlaydi, agar requirements.txt pip freeze bilan yaratilsa va barcha versiyalar qotirilsa"
       ],

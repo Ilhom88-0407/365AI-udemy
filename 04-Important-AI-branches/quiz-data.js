@@ -29,10 +29,10 @@ window.QUIZ = {
       q: "Nima uchun avtonom robot uchun hammasini bajaradigan bitta model o'rniga ko'p modelli tizim ko'rib chiqiladi?",
       type: "single",
       options: [
-        "Robot ko'rish, joyini aniqlash, qaror qabul qilish va muloqot kabi turli vazifalarni bajaradi — har biriga alohida model mos keladi",
-        "Bitta katta model robotning elektr tizimini tez ishdan chiqaradi, shuning uchun uni bo'laklarga bo'lish shart",
-        "Ko'p model har doim bir-birining javobini ovozga qo'yib, xatolarni avtomatik tuzatib turadi",
-        "Bitta model robot sensorlaridan keladigan ma'lumotni texnik jihatdan umuman qabul qila olmaydi"
+        "Ko'rish, joyni aniqlash, qaror qabul qilish va muloqot — turli vazifalar, har biriga alohida model mos",
+        "Bitta katta model robotning elektr tizimini tez ishdan chiqaradi, shuning uchun bo'lish shart",
+        "Ko'p model har doim bir-birining javobini ovozga qo'yib, xatolarni avtomatik ravishda tuzatib turadi",
+        "Bitta model robot sensorlaridan keladigan xom ma'lumotni texnik jihatdan umuman qabul qila olmaydi"
       ],
       answer: [0],
       explain: "CV, SLAM, RL va NLP modellarini birlashtirish robotga atrofni idrok etish, qaror qabul qilish, odamlar bilan muloqot qilish va mos harakat qilish imkonini beradi. Bu butun AI muhandisligining asosiy tamoyili.",
@@ -57,7 +57,7 @@ window.QUIZ = {
       options: [
         "Tasvirlar labelled bo'lmagani uchun ularni umuman o'rgatib bo'lmasdi",
         "Neyron tarmoqlar o'sha paytda faqat matnli ma'lumot qabul qila olardi",
-        "Har bir piksel har bir tugunga bog'lanib, parametrlar soni haddan tashqari ko'payardi",
+        "Har bir piksel har bir tugunga bog'lanib, parametrlar juda ko'payardi",
         "Rangli rasmlarni sonlarga aylantirishning hech qanday usuli yo'q edi"
       ],
       answer: [2],
@@ -112,9 +112,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "ChatGPT kabi sarlavhalarga chiqqan generativ AI mahsulotlaridan",
-        "Firibgarlikni aniqlash, talab prognozi kabi kamroq yaltiroq biznes holatlaridan",
-        "Tesla Bot kabi umumiy maqsadli humanoid robotlardan",
-        "O'zi yuruvchi mashinalar va kosmik robotlar loyihalaridan"
+        "Firibgarlikni aniqlash kabi kamroq yaltiroq biznes holatlaridan",
+        "Tesla Bot kabi umumiy maqsadli humanoid robotlar loyihalaridan",
+        "O'zi yuruvchi mashinalar va kosmik tadqiqot robotlari loyihalaridan"
       ],
       answer: [1],
       explain: "ChatGPT, o'zi yuruvchi mashinalar va robotlar sarlavhalarga chiqadi, lekin qiymatning kattaroq qismi an'anaviy ML ning biznes qo'llanishlari bilan bog'liq — ular o'n yildan ortiq vaqtdan beri ishlab turibdi.",
@@ -125,9 +125,9 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Sug'urta paketlari uchun aniqroq narx belgilash",
-        "Tavsif bo'yicha noyob rasm yaratish",
-        "Riteylda talabni bashorat qilish va buyurtmalarni optimallashtirish",
-        "Omborda robot uchun navigatsiya xaritasini tuzish",
+        "Tavsif bo'yicha noyob rasm yoki reklama banneri yaratish",
+        "Riteylda talabni bashorat qilib, buyurtmalarni optimallashtirish",
+        "Omborda robot uchun navigatsiya xaritasini real vaqtda tuzish",
         "Xarid tarixiga qarab keyingi xaridni bashorat qilish"
       ],
       answer: [0, 2, 4],
@@ -150,7 +150,7 @@ window.QUIZ = {
     {
       q: "Arxitektor bino ichini 3D ko'rinishda qayta tiklamoqchi. Generativ AI ning qaysi texnikasi aynan 3D modellashtirishga ixtisoslashgan?",
       type: "single",
-      options: ["Neural Radiance Fields (NeRF)", "Diffusion model", "Large Language Model", "LLM va GAN gibridi"],
+      options: ["Neural Radiance Fields (NeRF)", "Diffusion model (shovqindan rasm)", "Large Language Model (LLM)", "LLM va GAN gibrid arxitekturasi"],
       answer: [0],
       explain: "NeRF — taxminan 2020-yilda paydo bo'lgan, 3D modellashtirish uchun ixtisoslashgan AI. Diffusion asosan rasm va video, LLM esa matn uchun ishlatiladi.",
       lesson: { title: "Generativ AI", href: "04-Generative-AI.md" }
@@ -160,9 +160,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Tasodifiy shovqindan boshlab, uni bosqichma-bosqich batafsil rasmga aylantiradi",
-        "Ulkan matnda o'rganib, jumladagi keyingi ehtimoliy so'zni bashorat qiladi",
-        "Biri kontent yaratadigan, ikkinchisi realligini baholaydigan ikki algoritm bir-birini kuchaytiradi",
-        "Bir necha kamera suratidan sahnaning 3D modelini qurib chiqadi"
+        "Ulkan matnda o'rganib, jumladagi keyingi ehtimoliy so'zni bashorat qilib boradi",
+        "Biri yaratadi, ikkinchisi realligini baholaydi — ikki algoritm bir-birini kuchaytiradi",
+        "Bir necha kamera suratidan sahnaning 3D modelini nuqtama-nuqta qurib chiqadi"
       ],
       answer: [2],
       explain: "GAN (2014) ikki algoritmni raqobatlashtiradi: generator kontent yaratadi, baholovchi uning realligini tekshiradi va o'zaro ta'sir natijasida ikkalasi ham yaxshilanadi. Shovqindan rasm yaratish esa diffusion modelning ishlash usuli.",

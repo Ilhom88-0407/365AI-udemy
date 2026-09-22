@@ -10,7 +10,7 @@ window.QUIZ = {
       options: [
         "Funksiyani darrov bajaradigan buyruq",
         "Python'ning ichki funksiyasi",
-        "Kalit so'z — u buyruq ham, funksiya ham emas",
+        "Kalit so'z: na buyruq, na funksiya",
         "Funksiya natijasini qaytaradigan operator"
       ],
       answer: [2],
@@ -49,10 +49,10 @@ window.QUIZ = {
       code: "def salom(ism):\n    print(\"Salom,\", ism)\n\na = salom(\"Ali\")\nprint(a)",
       type: "single",
       options: [
-        "Salom, Ali va keyin None",
+        "Salom, Ali va keyingi qatorda None",
         "Salom, Ali va keyin yana Salom, Ali",
-        "Faqat None",
-        "Faqat Salom, Ali"
+        "Faqat None, print esa ishlamaydi",
+        "Faqat Salom, Ali — None chop etilmaydi"
       ],
       answer: [0],
       explain: "salom(\"Ali\") chaqirilganda print matnni darrov chiqaradi, lekin funksiyada return yo'q, shuning uchun u None qaytaradi va a ga None tushadi.",
@@ -62,7 +62,7 @@ window.QUIZ = {
       q: "Bu kod nima chiqaradi?",
       code: "def plus_ten(a):\n    result = a + 10\n    return \"Outcome:\"\n    return result\n\nprint(plus_ten(2))",
       type: "single",
-      options: ["12", "Outcome: 12", "Outcome:", "None"],
+      options: ["12", "Outcome: 12", "Outcome:", "SyntaxError"],
       answer: [2],
       explain: "return funksiyani darrov tugatadi, shuning uchun faqat birinchi return bajariladi, ikkinchisi o'lik kod. Ikkalasini ham ko'rish uchun print(\"Outcome:\") va keyin return result yozish kerak.",
       lesson: { title: "Funksiyani e'lon qilishning boshqa usuli", href: "03-Another-Way-to-Define-a-Function.md" }
@@ -95,9 +95,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Funksiyalar avtomatik ravishda yangi stavkani internetdan oladi",
-        "Faqat wage funksiyasini tuzatish yetarli — mantiq bir joyda saqlanadi",
+        "Faqat wage funksiyasini tuzatish kifoya — mantiq bir joyda",
         "Har bir funksiyada stavkani alohida o'zgartirish osonroq bo'ladi",
-        "Stavka o'zgarsa ham natijalar o'zgarmaydi"
+        "Stavka o'zgarsa ham natijalar o'zgarmaydi, ular saqlab qo'yilgan"
       ],
       answer: [1],
       explain: "Bu DRY (O'zingizni takrorlamang) tamoyili: har bir funksiyada w_hours * 25 ni takrorlasangiz, uchta joyni tuzatishga to'g'ri kelardi.",
@@ -118,7 +118,7 @@ window.QUIZ = {
         "Bu tenglama, shuning uchun uning yechimi yo'q va xato chiqadi",
         "Bu solishtirish: m va m + 10 teng ekanini tekshiradi",
         "Bu biriktirish: o'ng tomon hisoblanib, natija m ga yoziladi",
-        "Bu faqat funksiyadan tashqarida ishlaydi"
+        "Bu faqat funksiyadan tashqarida ishlaydi, ichkarida xato beradi"
       ],
       answer: [2],
       explain: "Tenglik belgisi o'ng tomondagi ifodani chap tomonga biriktiradi: m = 110 bo'lsa, avval 110 + 10 = 120 hisoblanadi, keyin m = 120 bo'ladi.",
@@ -160,10 +160,10 @@ window.QUIZ = {
       code: "def distance_from_zero(x):\n    if type(x) == int or type(x) == float:\n        return abs(x)\n    else:\n        print(\"Not possible\")\n\nprint(distance_from_zero(\"cat\"))",
       type: "single",
       options: [
-        "Not possible",
+        "Faqat Not possible",
         "Not possible va keyin None",
         "TypeError, chunki abs satr bilan ishlamaydi",
-        "cat"
+        "cat, chunki x o'zgarmay qaytadi"
       ],
       answer: [1],
       explain: "\"cat\" son emas, shuning uchun else bloki Not possible ni chop etadi. Lekin bu shoxda return yo'q, funksiya None qaytaradi va tashqi print uni ham chiqaradi.",

@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "Kurs \"transformer modellari (Whisper) murakkab va shovqinli audio muammosini hal qiladi\" deydi. O'lchovlarimiz nimani ko'rsatdi?",
       type: "single",
       options: [
-        "Whisper barcha SNR darajalarida Google dan kamida 2× yaxshi natija berdi",
-        "Toza audioda Whisper yaxshiroq, lekin 0 dB va undan pastda Google yutdi, Whisper gallyutsinatsiya qildi",
-        "Ikkala model shovqinda bir xil yiqildi, farq faqat tinish belgilarida qoldi",
-        "Toza audioda Google yaxshiroq, shovqinda esa Whisper aniq ustun keldi"
+        "Whisper barcha SNR darajalarida Google dan kamida 2× yaxshi natija berdi, ayniqsa −5 dB da",
+        "Toza audioda Whisper yaxshi, 0 dB va pastda esa Google yutdi, Whisper gallyutsinatsiya qildi",
+        "Ikkala model shovqinda bir xil yiqildi, farq faqat tinish belgilari va katta harflarda qoldi",
+        "Toza audioda Google yaxshiroq, shovqinda esa Whisper kontekst tufayli aniq ustun keldi"
       ],
       answer: [1],
       explain: "0 dB da Google 0.0656, Whisper 0.2623; −5 dB da esa 0.4262 va 5.3279. Transformerlar kontekst bilan yaxshiroq ishlaydi, lekin shovqinga chidamlilik har doim ham kafolatlanmaydi.",
@@ -69,10 +69,10 @@ window.QUIZ = {
       q: "gTTS ning oltita mintaqaviy \"aksent\"ida Whisper xato qilmadi (faqat river bank → riverbank). Nega bu \"aksentlar muammo emas\" degan xulosaga asos bo'lmaydi?",
       type: "single",
       options: [
-        "Chunki riverbank xatosi aslida aksent tufayli yuzaga kelgan jiddiy tanish xatosi",
-        "Chunki gTTS aksentlari bitta sintez modelining sun'iy variantlari, haqiqiy mintaqaviy so'zlovchilar emas",
+        "Chunki riverbank xatosi aslida aksent tufayli yuzaga kelgan jiddiy tanish xatosi bo'lib chiqdi",
+        "Chunki gTTS aksentlari bitta sintez modelining sun'iy variantlari, haqiqiy so'zlovchilar emas",
         "Chunki sinov faqat 4.63 soniyalik audioda o'tkazilgan, 30 soniyadan kam audio hisobga olinmaydi",
-        "Chunki Whisper aksentni sezsa, avtomatik ravishda ingliz tilidan boshqa tilga o'tadi"
+        "Chunki Whisper aksentni sezsa, avtomatik ravishda ingliz tilidan boshqa tilga o'tib ketadi"
       ],
       answer: [1],
       explain: "riverbank — tanish xatosi emas, qo'shib yozish qarori. Haqiqiy sinov uchun Common Voice yoki L2-ARCTIC kabi haqiqiy odamlar yozuvlari kerak; aytish mumkin bo'lgani faqat: sintetik aksent variatsiyasi ta'sir qilmadi.",
@@ -96,10 +96,10 @@ window.QUIZ = {
       q: "\"The meeting is at nine. La reunión es a las nueve. Thank you.\" audiosi \"La reunion is a last-new eve\" kabi bema'nilikka aylandi. Sababi va darsdagi yechim qaysi?",
       type: "single",
       options: [
-        "Whisper ispan tilini bilmaydi — yechim: faqat inglizcha audio yozish",
-        "gTTS ispancha qismni noto'g'ri o'qigan — yechim: boshqa TTS dan foydalanish",
-        "Model butun fayl uchun bitta til tanlaydi — yechim: jimlik bo'yicha bo'laklab, har bo'lak tilini alohida aniqlash",
-        "Audio juda qisqa — yechim: task=\"translate\" bilan hammasini ingliz tiliga o'tkazish"
+        "Whisper ispan tilini bilmaydi — yechim: ispancha qismni kesib, faqat inglizcha audio yozish",
+        "gTTS ispancha qismni noto'g'ri o'qigan — yechim: boshqa TTS bilan audioni qayta yaratish",
+        "Model butun faylga bitta til tanlaydi — yechim: jimlik bo'yicha bo'laklab, tilni alohida aniqlash",
+        "Audio juda qisqa — yechim: task=\"translate\" bilan hammasini bitta ingliz tiliga o'tkazish"
       ],
       answer: [2],
       explain: "Til ingliz deb tanlangach, ispancha qism ham ingliz tokenlari bilan dekodlanadi. Bo'laklab, har bir bo'lak uchun tilni alohida aniqlash bu muammoni chetlab o'tadi.",
@@ -177,10 +177,10 @@ window.QUIZ = {
       q: "Ovozli multimodal yordamchi (ASR 0.8 s + LLM 1.5 s + TTS 1.0 s) yig'ildi. Uning asosiy texnik to'sig'i va yechimi nima?",
       type: "single",
       options: [
-        "Jami ~3.3 s kechikish (odam pauzasi ~0.2 s) — bosqichlar bir vaqtda ishlaydigan oqim (streaming)",
-        "LLM nutqni tushunmaydi — ASR o'rniga to'g'ridan-to'g'ri audio berish kerak",
-        "TTS sifati past — faqat gTTS ning slow=True rejimini ishlatish kerak",
-        "Xotira yetmaydi — barcha modellarni bulutga ko'chirish kerak"
+        "Jami ~3.3 s kechikish (odam pauzasi ~0.2 s) — yechim: bosqichlarni oqim (streaming) qilish",
+        "LLM nutqni tushunmaydi — ASR ni olib tashlab, LLM ga to'g'ridan-to'g'ri audio berish kerak",
+        "TTS sifati past — gTTS ning slow=True rejimini yoqib, ovozni tabiiyroq qilish kerak",
+        "Xotira yetmaydi — uchala modelni ham bulutga ko'chirib, noutbukni bo'shatish kerak"
       ],
       answer: [0],
       explain: "3.3 soniya suhbat uchun juda uzoq va noqulay. Yechim — oqim: ASR va TTS ketma-ket emas, bir vaqtda ishlashi kerak.",
@@ -190,10 +190,10 @@ window.QUIZ = {
       q: "Kurs \"tizim ovozingizdan stressni tanib, tinchlantiruvchi takliflar berishi mumkin\" deydi. Darsdagi baho qanday?",
       type: "single",
       options: [
-        "To'liq to'g'ri — bu bugun ishonchli ishlaydigan mahsulot",
-        "Noto'g'ri — ovozdan hatto gapiruvchini ham tanib bo'lmaydi",
-        "Ehtiyot kerak — stress/sog'liq tashxisi ilmiy tasdiqlanmagan va kamsitish xavfi bor",
-        "To'g'ri, lekin faqat bulut API orqali ishlaydi"
+        "To'liq to'g'ri — bu bugun laboratoriyadan chiqqan, ishonchli ishlaydigan mahsulot",
+        "Noto'g'ri — ovozdan hatto kim gapirayotganini ham ishonchli tanib bo'lmaydi",
+        "Ehtiyot kerak — stress tashxisi ilmiy tasdiqlanmagan, kamsitish xavfi ham bor",
+        "To'g'ri, lekin faqat bulut API orqali, mahalliy modellarda ishlamaydi"
       ],
       answer: [2],
       explain: "Diarizatsiya (kim gapiryapti) ishlaydi, hissiyot tanish laboratoriyada ~70%, stress yoki sog'liq tashxisi esa hali tadqiqot. Ish suhbati yoki sug'urtada qo'llash kamsitishga olib keladi.",

@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "Kurs GPT-3.5 uchun 39.6% va GPT-4 uchun 28.6% gallyutsinatsiya darajasini keltiradi. Darsga ko'ra bu raqamlarni qanday o'qish kerak?",
       type: "single",
       options: [
-        "Bu barcha vazifalar uchun umumiy daraja, HR ilovasida ham xuddi shunday bo'ladi",
-        "Bu tibbiy kontekstdagi o'lchov, uni HR vazifasiga ko'chirib bo'lmaydi — o'z vazifangizda o'lchang",
+        "Bu barcha vazifalar uchun umumiy daraja, HR ilovasida ham xuddi shunday bo'lishi kutiladi",
+        "Bu tibbiy kontekstdagi o'lchov, HR ga ko'chirib bo'lmaydi — o'z vazifangizda o'lchang",
         "Bu raqamlar faqat 0.5B kabi kichik modellar uchun, katta modellarda gallyutsinatsiya yo'q",
-        "Bu raqamlar eskirgan, shuning uchun gallyutsinatsiya endi amaliy muammo emas"
+        "Bu raqamlar eskirgan, zamonaviy modellarda gallyutsinatsiya endi amaliy muammo emas"
       ],
       answer: [1],
       explain: "Tadqiqot tibbiy kontekstda (odatda manbalarni tekshirishda) o'tkazilgan. Manba o'ylab topish darajasi HR savol berish darajasi bilan bir xil emas — to'g'ri yo'l o'z vazifangizda o'lchash.",
@@ -21,10 +21,10 @@ window.QUIZ = {
       q: "Foydalanuvchi 'Junior Data Engineer at NOMA'LUM KOMPANIYA' ni tanladi, MB da bu kompaniya uchun savol yo'q. Darsdagi savol_tanla funksiyasi nima qiladi?",
       type: "single",
       options: [
-        "Bo'sh ro'yxat qaytaradi va intervyu xato bilan to'xtaydi",
+        "Bo'sh ro'yxat qaytaradi va intervyu birinchi savoldayoq xato bilan to'xtaydi",
         "Barcha 6 ta savolni LLM ga yaratishni topshiradi, MB umuman ishlatilmaydi",
-        "Shartlarni bosqichma-bosqich yumshatib, kompaniyasiz savollardan 2 tasini oladi",
-        "Foydalanuvchidan boshqa kompaniya tanlashni so'raydi"
+        "Shartlarni asta yumshatib, kompaniyasiz savollardan 2 tasini oladi",
+        "Foydalanuvchidan MB da savoli bor boshqa kompaniyani tanlashni so'raydi"
       ],
       answer: [2],
       explain: "Qidiruv aniqdan umumiyga yumshatiladi: kompaniya bilan → kompaniyasiz → darajasiz → faqat tur. O'lchovda to'rtinchi holat 'kompaniyasiz' bosqichda 2 savol topdi; qidiruv hech qachon bo'sh qaytmasligi kerak.",
@@ -48,10 +48,10 @@ window.QUIZ = {
       q: "Kurs 'butun tarixni yubormaslik intervyuga 5 000 tokengacha tejadi' deydi, darsdagi namunada esa 1 260 token chiqdi. Qanday xulosa qilindi?",
       type: "single",
       options: [
-        "Kursning raqami noto'g'ri, chunki oyna-2 usuli aslida token tejamaydi",
-        "Da'vo shartli, lekin asosli: ~225 so'zlik uzun javoblarda tejash ~5 000 tokenga yetadi",
+        "Kursning raqami noto'g'ri: oyna-2 usuli token tejamaydi, faqat kechikishni kamaytiradi",
+        "Da'vo shartli: ~225 so'zlik uzun javoblarda tejash haqiqatan ~5 000 tokenga yetadi",
         "Farq tokenizer tufayli: cl100k_base bilan sanalganda ham 5 000 chiqadi",
-        "Farq savollar sonida: 6 emas, 20 savolda aynan 5 000 token tejaladi"
+        "Farq savollar sonida: 6 emas, 20 savolli intervyuda aynan 5 000 token tejaladi"
       ],
       answer: [1],
       explain: "Tejash javob uzunligiga bog'liq: 53 tokenlik javobda 1 260, ~300 tokenlik (~225 so'z) javobda ~4 965. Dars: 'X token tejaydi' degan raqam kirish o'lchamiga bog'liq, o'z ma'lumotingizda qayta o'lchang.",
@@ -61,10 +61,10 @@ window.QUIZ = {
       q: "Texnik intervyuda 4 550 yozuvli SQLite bazasini LLM ga ko'rsatish kerak. Darsdagi o'lchovga ko'ra qaysi yondashuv to'g'ri?",
       type: "single",
       options: [
-        "Butun iterdump() natijasini yuborish — model bazani to'liq ko'rgani ma'qul",
-        "Faqat sxemani (86 token) yuborish — yozuvlar soni va sanalar kerak emas",
-        "Jadvallar, turlar, yozuvlar soni, sana diapazoni va bog'lanishlardan iborat qisqa xulosa (216 token)",
-        "LLM ning o'ziga namunaviy MB yaratishni topshirish — bu eng arzon yo'l"
+        "Butun iterdump() natijasini yuborish — model bazani to'liq ko'rsa, SQL aniqroq bo'ladi",
+        "Faqat sxemani (86 token) yuborish — yozuvlar soni va sanalar SQL yozishga kerak emas",
+        "Jadvallar, turlar, yozuvlar soni, sanalar va bog'lanishlardan qisqa xulosa (216 token)",
+        "LLM ning o'ziga namunaviy MB yaratishni topshirish — bu eng arzon va tez yo'l"
       ],
       answer: [2],
       explain: "Dump 128 791 token — gpt-4o ning 128 000 lik oynasiga sig'maydi. Sxemada sana diapazoni yo'q, usiz LLM mavjud bo'lmagan 2021 yilni so'rashi mumkin; xulosa esa 596× kichik.",
@@ -101,9 +101,9 @@ window.QUIZ = {
       q: "Kurs 'chain of thought gallyutsinatsiyalarni sezilarli kamaytiradi' deydi. 0.5B modeldagi o'lchov nimani ko'rsatdi?",
       type: "single",
       options: [
-        "To'g'ri ballar 2/6 dan 6/6 ga ko'tarildi, ya'ni kurs haq",
-        "Natija o'zgarmadi: ikkala promptda ham 6/6 to'g'ri ball",
-        "To'g'ri ballar 6/6 dan 2/6 ga tushdi: model <think> yozmay, 95 kabi ball qaytardi",
+        "To'g'ri ballar 2/6 dan 6/6 ga ko'tarildi, ya'ni kursning maslahati haq",
+        "Natija o'zgarmadi: ikkala promptda ham 6/6 to'g'ri ball, faqat javob uzaydi",
+        "Ballar 6/6 dan 2/6 ga tushdi: model <think> yozmay, 95 kabi ball qaytardi",
         "Model <think> blokini to'g'ri yozdi, lekin JSON ni umuman chiqarmadi"
       ],
       answer: [2],
@@ -115,9 +115,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Modelga 'Start at 3, +3 raqam uchun...' kabi ballash qoidalarini promptda berish",
-        "Raqam, tradeoff va validatsiya belgilarini kodda regex bilan tekshirib, ballni hisoblash",
-        "temperature ni 1.0 ga ko'tarib, ballarning xilma-xilligini oshirish",
-        "Chain of thought qo'shib, modelni har mezonni izohlashga majburlash"
+        "Ballni kodda hisoblash: raqam, tradeoff va validatsiyani regex bilan tekshirish",
+        "temperature ni 1.0 ga ko'tarib, bir xil ballar o'rniga xilma-xil ballar olish",
+        "Chain of thought qo'shib, modelni har bir mezonni alohida izohlashga majburlash"
       ],
       answer: [1],
       explain: "Promptdagi mezonlar ishlamadi: model bo'sh javobga ham has_number=True deb yolg'on yozdi. Koddagi tekshiruv esa bo'sh javobga 3, mukammaliga 10 berdi — o'lchash mumkin bo'lgan narsani modelga bermang.",
@@ -154,11 +154,11 @@ window.QUIZ = {
       q: "Token sanash darsidagi o'lchovlarga ko'ra qaysi gaplar to'g'ri? (bir nechta javob)",
       type: "multi",
       options: [
-        "Humanizer bitta chaqiruvda eng arzon (132), lekin 6 marta chaqirilib jami 792 token (51%) bilan eng qimmat bosqich",
+        "Humanizer bir chaqiruvda eng arzon (132), lekin 6 marta chaqirilib jami 792 token (51%) bilan eng qimmat",
         "O'zbekcha matnda cl100k_base o200k_base ga qaraganda ~36% ko'p token beradi",
-        "gpt-4o uchun kursda tavsiya etilgan cl100k_base mos kodlash hisoblanadi",
+        "gpt-4o uchun kursda tavsiya etilgan cl100k_base mos kodlash, o200k_base esa eskirgan",
         "tiktoken taxminan ~95% aniq; haqiqiy hisob uchun javobdagi r.usage ishlatiladi",
-        "Jami tokenni intervyu soniga bo'lish anomal foydalanuvchilarni yaxshi ko'rsatadi"
+        "Jami tokenni intervyu soniga bo'lgan o'rtacha qiymat anomal foydalanuvchilarni yaxshi ko'rsatadi"
       ],
       answer: [0, 1, 3],
       explain: "gpt-4o uchun o200k_base kerak, cl100k_base — gpt-4 uchun. O'rtacha qiymat esa anomaliyalarni yashiradi: 200 000 belgi yuborgan foydalanuvchi unda ko'rinmaydi, shuning uchun bosqich va intervyu bo'yicha hisob yuritiladi.",
@@ -169,9 +169,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "tiktoken kirish tokenlarini ~95% aniqlikda sanagani uchun tejash ko'rinmay qoldi",
-        "gpt-4o da chiqish tokeni kirishdan 4× qimmat va boshlang'ich narxning 78% i chiqishdan keladi",
+        "Chiqish tokeni kirishdan 4× qimmat va boshlang'ich narxning 78% i chiqishdan keladi",
         "Xotira oynasi javob sifatini pasaytirib, model uzunroq javob yoza boshladi",
-        "Kesh ishlatilmagani uchun har savol ikki marta hisoblandi"
+        "Kesh ishlatilmagani uchun har savol API da ikki marta hisoblanib, narx oshdi"
       ],
       answer: [1],
       explain: "Kirish $2.50/1M, chiqish $10.00/1M: kirishni optimallashtirish narxning faqat ~22% iga ta'sir qiladi. Eng katta tutqich — model tanlovi (gpt-4o → gpt-4o-mini, 16.7×).",
@@ -184,7 +184,7 @@ window.QUIZ = {
       options: [
         "(True, 'ok') 4000",
         "(False, 'TPM chegarasi') 5000",
-        "(False, 'RPM chegarasi') 0",
+        "(False, 'RPM chegarasi') 4000",
         "(False, 'RPM chegarasi') 5000"
       ],
       answer: [3],

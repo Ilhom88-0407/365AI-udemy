@@ -24,7 +24,7 @@ window.QUIZ = {
       options: [
         "Graf ishlaydi, holat esa avtomatik yaratilgan \"default\" threadga saqlanadi",
         "Graf ishlaydi, lekin checkpointer bu chaqiruvda hech narsa saqlamaydi",
-        "ValueError: checkpointer configurable ichida thread_id kabi kalitni talab qiladi",
+        "ValueError: checkpointer configurable'da thread_id kabi kalitni kutadi",
         "KeyError: 'messages' — chunki bo'sh ro'yxat reducer'dan o'tmaydi"
       ],
       answer: [2],
@@ -98,9 +98,9 @@ window.QUIZ = {
       q: "graph_states = list(gc.get_state_history(config1)) bajarildi. graph_states[0] nimani bildiradi?",
       type: "single",
       options: [
-        "Eng oxirgi olingan snapshot — ro'yxat teskari tartibda keladi",
-        "Eng birinchi, step -1 dagi kirish holati",
-        "START tugunidan keyingi step 0 holati",
+        "Eng oxirgi snapshot, chunki ro'yxat teskari tartibda keladi",
+        "Eng birinchi, step -1 dagi kirish holati (ro'yxat xronologik)",
+        "START tugunidan keyingi step 0 holati, ya'ni birinchi tugun",
         "Faqat summary maydoni bor checkpointlardan birinchisi"
       ],
       answer: [0],
@@ -125,9 +125,9 @@ window.QUIZ = {
       q: "Operator paneli tarixdagi snapshotlarni ko'rib chiqyapti. Qaysi talqin to'g'ri?",
       type: "single",
       options: [
-        "next=() — graf hali boshlanmagan, step -1 esa graf tugaganini bildiradi",
-        "next=() — graf tugagan; metadata source == \"update\" esa holat qo'lda o'zgartirilganini bildiradi",
-        "next=() — xato yuz bergan; source == \"loop\" operator aralashuvini bildiradi",
+        "next=() — graf hali boshlanmagan; metadata step -1 esa graf tugaganini bildiradi",
+        "next=() — graf tugagan; source == \"update\" holat qo'lda o'zgartirilganini bildiradi",
+        "next=() — xato yuz bergan; metadata source == \"loop\" operator aralashuvini bildiradi",
         "next=() — interrupt kutilmoqda; source == \"input\" tugun bajarilganini bildiradi"
       ],
       answer: [1],
@@ -139,10 +139,10 @@ window.QUIZ = {
       code: "tarix = list(gc.get_state_history(cfg))\neski = tarix[3]\ngc.invoke(None, eski.config)",
       type: "single",
       options: [
-        "Threadning butun tarixini o'chirib, uni 3-qadamdan qayta yozadi",
+        "Threadning butun tarixini o'chirib, uni 3-qadamdan boshlab qayta yozadi",
         "Hech narsa qilmaydi, chunki kirish None bo'lsa invoke() darhol qaytadi",
-        "Yangi thread yaratib, unga eski holatning nusxasini ko'chiradi",
-        "Grafni o'sha eski checkpointdan davom ettiradi, chunki eski.config ichida checkpoint_id bor"
+        "Yangi thread yaratib, unga eski holatning nusxasini ko'chirib qo'yadi",
+        "O'sha eski checkpointdan davom etadi, chunki eski.config'da checkpoint_id bor"
       ],
       answer: [3],
       explain: "eski.config tarkibida checkpoint_id bor, shuning uchun LangGraph aynan o'sha nuqtadan davom etadi. Bu \"bekor qilish\" tugmasi va A/B sinovining asosi.",
@@ -152,9 +152,9 @@ window.QUIZ = {
       q: "FastAPI'da SqliteSaver uchun sqlite3.connect(..., check_same_thread=False) yozildi. Bu parametr haqida qaysi gap to'g'ri?",
       type: "single",
       options: [
-        "U ulanishga bir necha threaddan murojaat qilishga ruxsat beradi, lekin sinxronlashni o'zingiz ta'minlashingiz kerak",
+        "U bir necha threaddan murojaatga ruxsat beradi, sinxronlashni esa o'zingiz ta'minlaysiz",
         "U bir vaqtda bir necha yozuvchini to'liq xavfsiz qiladi va \"database is locked\" xatosini yo'qotadi",
-        "U SQLite faylini RAMda saqlab, ishni InMemorySaver kabi tezlashtiradi",
+        "U SQLite faylini RAMda saqlab, ishni InMemorySaver kabi tezlashtiradi va diskka yozmaydi",
         "U har bir thread uchun alohida .db fayl yaratib, yozuvlar to'qnashuvining oldini oladi"
       ],
       answer: [0],
@@ -192,9 +192,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Faqat SqliteSaver — u barcha threadlardagi faktlarni avtomatik birlashtiradi",
-        "Store (masalan, InMemoryStore / PostgresStore) — threadlar orasidagi faktlar uchun",
+        "Store (masalan, InMemoryStore / PostgresStore) — threadlararo faktlar uchun",
         "InMemorySaver — u RAMda bo'lgani uchun threadlar orasida tezroq ulashadi",
-        "get_state_history — u boshqa threadlarning tarixini ham qaytaradi"
+        "get_state_history — u boshqa threadlarning tarixini ham birga qaytaradi"
       ],
       answer: [1],
       explain: "Checkpointer \"bu suhbatda nima bo'ldi?\" degan savolga javob beradi va bitta thread_id bilan cheklanadi. \"Bu odam haqida nima bilaman?\" uchun esa threadlar orasida ishlaydigan Store kerak.",

@@ -37,7 +37,7 @@ window.QUIZ = {
       options: [
         "IP xavfi yo'q: model o'quv matnini hech qachon yodlab qolmaydi",
         "Yodlash faqat eski asarlarda uchraydi, yangi matnlarda emas",
-        "Model hajmi IP xavfiga hech qanday ta'sir qilmaydi",
+        "Model hajmi IP xavfiga ta'sir qilmaydi, faqat matn turi muhim",
         "Kichik model to'qiydi, katta model esa so'zma-so'z qaytarishi mumkin"
       ],
       answer: [3],
@@ -149,10 +149,10 @@ window.QUIZ = {
       q: "\"Asosni tekshir\" tizim ko'rsatmasi bilan model: \"Uzbekistan does have the largest ocean coastline... but this information is incorrect\" deb javob berdi. Bu nimani ko'rsatadi?",
       type: "single",
       options: [
-        "Tizim ko'rsatmasi modelning fikrlashini to'liq o'zgartirdi",
+        "Tizim ko'rsatmasi modelning fikrlashini to'liq va izchil o'zgartirdi",
         "Model soxta asosni aniqlab, uni to'g'ri va izchil ravishda tuzatib berdi",
         "Ko'rsatma \"rad et\" so'zlarini qo'shtirdi, lekin fikrlashni o'zgartirmadi",
-        "Model savolni tushunmadi, chunki u o'zbekcha berilgan edi"
+        "Model savolni tushunmadi, chunki u o'zbek tilida berilgan edi"
       ],
       answer: [2],
       explain: "Model bir jumlada ham tasdiqladi, ham rad etdi. Tizim ko'rsatmasi rad etish ulushini 12% dan 62% ga oshirdi, lekin 8 tadan 3 tasi baribir o'tib ketdi.",

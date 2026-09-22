@@ -84,7 +84,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "['fan', 'iqtisod', \"san'at\"] — alifbo tartibida",
-        "['sport', 'siyosat', 'fan'] — ro'yxatdagi tartib bo'yicha",
+        "['sport', 'siyosat', 'fan'] — asl ro'yxat tartibida",
         "Har ishga tushirishda boshqa uchta mavzu",
         "[\"san'at\", 'iqtisod', \"sog'liq\"] — oxirgi uchtasi"
       ],
@@ -97,9 +97,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Foydalanuvchiga bu mavzular yoqmagani uchun tizim ularni chiqarib tashladi",
-        "Bu mavzular boshidanoq pastroq qiziqish bilan boshlangan edi",
-        "Ular hech qachon ko'rsatilmadi, shuning uchun kuchayish imkoniyatini olmadi",
-        "Tizim bu mavzular bo'yicha yetarli kontent topa olmadi"
+        "Bu mavzular boshidanoq pastroq qiziqish qiymati bilan boshlangan edi",
+        "Ular ko'rsatilmagani uchun kuchayish imkoniyatini hech qachon olmadi",
+        "Tizim bu mavzular bo'yicha yetarli kontent topa olmay, ularni o'tkazib yubordi"
       ],
       answer: [2],
       explain: "Ular \"yoqmadi\" degani emas — hammasi 1.0 dan teng boshlagan edi. Faqat ko'rsatilgan mavzular kuchayadi, ko'rsatilmaganlar esa hech qachon imkoniyat olmaydi.",
@@ -137,9 +137,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Chunki namunalar soni juda kam — 100 tadan kam matn statistik ahamiyatga ega emas",
-        "Chunki \"AI namunalari\" aynan detektorning o'z kalit so'zlari bilan yozilgan edi",
-        "Chunki inson matnlari ham AI yordamida tahrirlangan edi",
-        "Chunki detektor faqat ruscha matnlarda sinab ko'rilgan edi"
+        "Chunki \"AI namunalari\" aynan detektorning o'z kalit so'zlari bilan yozilgan",
+        "Chunki inson matnlari ham AI yordamida tahrirlangan, farq qolmagan edi",
+        "Chunki detektor faqat ruscha matnlarda sinab ko'rilgan, o'zbekchada emas"
       ],
       answer: [1],
       explain: "Bu doiraviy sinov: detektor o'zi qidiradigan iboralarni topdi. Haqiqiy model matnida aniqlik 67% ga tushdi (2/6 topildi).",

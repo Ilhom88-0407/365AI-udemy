@@ -36,10 +36,10 @@ window.QUIZ = {
       q: "Darsga ko'ra nutqni tanish bozori rivojining bozor prognozlaridan ko'ra ishonchliroq signali nima?",
       type: "single",
       options: [
-        "Bozor 2023-yilda $17.2 mlrd bo'lgani",
-        "Yiliga ~17.8% o'sish (CAGR) prognozi",
-        "Narxning tushishi: 2018-yilda ~$1.44/soat, 2025-yilda ~$0.36/soat",
-        "2030-yilga $54.3 mlrd prognozi"
+        "Bozor hajmi 2023-yilda $17.2 mlrd ga yetgani haqidagi hisobot",
+        "Yiliga ~17.8% o'sish (CAGR) haqidagi tahlilchilar prognozi",
+        "Narxning tushishi: ~$1.44/soat (2018) → ~$0.36/soat (2025)",
+        "2030-yilga bozor $54.3 mlrd bo'lishi haqidagi prognoz"
       ],
       answer: [2],
       explain: "Bozor prognozlari marketing tadqiqotlaridan olinadi va ko'pincha haddan tashqari optimistik bo'ladi. Narxning real tushishi (mahalliy Whisper esa $0) ishonchliroq ko'rsatkich.",
@@ -49,10 +49,10 @@ window.QUIZ = {
       q: "Whisper transkripsiyasi yomon chiqdi. Darsda nazariyaning amaliy qiymati misolida birinchi tekshiriladigan narsa qaysi?",
       type: "single",
       options: [
-        "Audio 16 kHz sample rate'dami — Whisper aynan shuni kutadi",
+        "Audio 16 kHz sample rate'dami — Whisper shuni kutadi",
         "Boshqa modelni sinab ko'rish — biri albatta yaxshiroq ishlaydi",
-        "Audio stereo qilib qayta yozilganmi",
-        "Fayl hajmi 3 MB dan kichikmi"
+        "Audio stereo qilib qayta yozilganmi — Whisper ikki kanal kutadi",
+        "Fayl hajmi 3 MB dan kichikmi — katta fayl sifatni tushiradi"
       ],
       answer: [0],
       explain: "Nazariya taxminni tekshirishga aylantiradi: sample rate 16 kHz mi, SNR qancha, audio kesilganmi (clipping), til to'g'ri ko'rsatilganmi. Modelni birma-bir almashtirish — nazariyasiz yondashuv.",
@@ -91,10 +91,10 @@ window.QUIZ = {
       code: "import numpy as np\nf0 = np.array([130., 135., 138., 140., 276.])\nprint(np.median(f0), np.mean(f0))",
       type: "single",
       options: [
-        "138.0 163.8 — o'rtacha tavsiya qilinadi, chunki hamma qiymatni hisobga oladi",
-        "163.8 138.0 — median tavsiya qilinadi",
-        "138.0 163.8 — median tavsiya qilinadi, chunki oktava xatosi uni deyarli buzmaydi",
-        "138.0 138.0 — ikkalasi bir xil, farqi yo'q"
+        "138.0 163.8 — o'rtacha, chunki u hamma qiymatni hisobga oladi",
+        "163.8 138.0 — median, chunki u chetdagi qiymatga chidamli",
+        "138.0 163.8 — median, chunki oktava xatosi uni deyarli buzmaydi",
+        "138.0 138.0 — ikkalasi bir xil, qaysi birini olish farqsiz"
       ],
       answer: [2],
       explain: "Median 138.0, o'rtacha 819 / 5 = 163.8. Bitta oktava xatosi o'rtachani yuqoriga tortadi, medianni esa deyarli o'zgartirmaydi — real faylda ham median 138.2, o'rtacha 148.9 chiqqan.",
@@ -138,10 +138,10 @@ window.QUIZ = {
       q: "LPC bilan formant topishdan oldin pre-emphasis filtri qo'llanadi. Buning sababi nima?",
       type: "single",
       options: [
-        "Nutq energiyasi past chastotalarda to'plangan, pre-emphasis yuqori chastotalarni ko'tarib F2, F3 ni aniqroq ko'rsatadi",
-        "Pre-emphasis f0 ni olib tashlab, faqat garmonikalarni qoldiradi",
-        "Pre-emphasis sample rate'ni 16 kHz ga tushirib, hisobni tezlashtiradi",
-        "Pre-emphasis oktava xatolarini tuzatib, median va o'rtachani tenglashtiradi"
+        "Energiya pastda to'plangan; pre-emphasis yuqori chastotani ko'tarib F2, F3 ni ochadi",
+        "Pre-emphasis f0 ni olib tashlab, formantlar o'rniga faqat garmonikalarni qoldiradi",
+        "Pre-emphasis sample rate'ni 16 kHz ga tushirib, LPC hisobini tezlashtiradi",
+        "Pre-emphasis oktava xatolarini tuzatib, f0 median va o'rtachasini tenglashtiradi"
       ],
       answer: [0],
       explain: "Energiyaning 59% qismi 300 Hz dan past, shuning uchun yuqori formantlar \"ko'rinmaydi\". Pre-emphasis siz F3 va F4 ko'pincha topilmaydi.",
@@ -165,10 +165,10 @@ window.QUIZ = {
       q: "HMM misolida to'g'ri, lekin sekin aytilgan BBBBIIIIRRRR ning xom ehtimoli (8.8e-04) noto'g'ri RIB nikidan (6.3e-03) past chiqdi. Sababi va yechimi qanday?",
       type: "single",
       options: [
-        "O'tish ehtimollari noto'g'ri; ularni 0.6 dan 0.9 ga oshirish kerak",
-        "Forward algoritmi uzun ketma-ketlikda ishlamaydi; DTW'ga qaytish kerak",
-        "Chiqish ehtimollari juda kichik; 1e-9 o'rniga 0 qo'yish kerak",
-        "Har qadam ehtimolni kamaytiradi va uzunlik hal qiladi; log/freym bilan normallash yoki modellarni raqobatlashtirish kerak"
+        "O'tish ehtimollari noto'g'ri; o'z-o'ziga o'tishni 0.6 dan 0.9 ga oshirish kerak",
+        "Forward algoritmi uzun ketma-ketlikda to'g'ri ishlamaydi; DTW'ga qaytish kerak",
+        "Chiqish ehtimollari juda kichik; 1e-9 o'rniga 0 qo'yib qayta hisoblash kerak",
+        "Uzun ketma-ketlik pastroq chiqadi; log/freym normallash yoki modellar raqobati kerak"
       ],
       answer: [3],
       explain: "Har qadamda 1 dan kichik songa ko'paytirilgani uchun uzun ketma-ketlik doim past chiqadi. log/freym bilan to'g'ri variantlar −0.59…−0.76, noto'g'rilari −1.12…−1.75; modellar raqobatida esa 4/4.",
@@ -192,10 +192,10 @@ window.QUIZ = {
       q: "1952-yilgi Audrey'ning qaysi cheklovini 1970-yillarda DTW yechdi?",
       type: "single",
       options: [
-        "Faqat 0–9 raqamlarini tanishi",
-        "So'zni tez yoki sekin aytganda signal cho'zilib, shablonga mos kelmasligi",
+        "Faqat 0–9 raqamlarini tanishi, ya'ni lug'ati juda kichikligi",
+        "So'z tez/sekin aytilganda signal cho'zilib, shablonga mos kelmasligi",
         "Talaffuz lug'ati bo'lmagani uchun yangi so'z qo'shib bo'lmasligi",
-        "Faqat ingliz tilida ishlashi"
+        "Faqat ingliz tilida, bitta so'zlovchining ovozida ishlashi"
       ],
       answer: [1],
       explain: "Audrey shablon moslashga asoslangan edi va vaqt cho'zilishida mos kelmasdi. DTW ikki turli uzunlikdagi ketma-ketlikni \"cho'zib\" moslashtiradi. Yangi so'z uchun shablon kerak bo'lmasligi esa HMM'ning yutug'i.",

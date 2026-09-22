@@ -401,7 +401,7 @@ for n in range(1, 2001):
    2000 qadam: log-ehtimol =  -1386.29   ✅ ishlaydi
 ```
 
-## 💥 **`float64` 1074-QADAMDA NOLGA TUSHDI.** ## 🏆 **10 soniyalik audio = ~1000 freym** — ## ya'ni bu **haqiqiy** muammo, nazariy emas.
+## 💥 **`float64` 1075-QADAMDA NOLGA TUSHDI.** ## 🏆 **10 soniyalik audio = ~1000 freym** — ## ya'ni bu **haqiqiy** muammo, nazariy emas.
 
 </details>
 
@@ -419,9 +419,9 @@ for n in range(1, 2001):
 
 ```
 🔬 O'LCHANGAN:
-   DTW:  "sekin" 0.111 · "tez" 0.417 · "boshqa so'z" 1.286  ✅ ajratdi
-   HMM:  "BIR" 8.2e-02 · "BBIIRR" 3.1e-02 · "RIB" 1.0e-05  ✅ tartibni bildi
-   float64 underflow → 1074-qadamda NOL  →  ⭐ log ehtimol SHART
+   DTW:  "sekin" 0.000 · "tez" 0.417 · "boshqa so'z" 1.714  ✅ ajratdi
+   HMM:  xom "BBBBIIIIRRRR" 8.8e-04 < "RIB" 6.3e-03  💥 · log/freym -0.59 vs -1.69  ✅ ajratdi
+   float64 underflow → 1075-qadamda NOL  →  ⭐ log ehtimol SHART
 
 ⭐ O'ZGARMAGAN: audio → freym → spektrogramma → model
 🇺🇿 end-to-end tufayli o'zbekcha ASR UMUMAN mavjud bo'ldi

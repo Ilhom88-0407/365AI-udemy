@@ -9,9 +9,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "True — chunki Python avval 15 >= 10 ni tekshiradi, keyin 10 qo'shadi",
-        "False — chunki avval 10 + 10 = 20 hisoblanadi, 15 >= 20 esa yolg'on",
-        "TypeError — chunki o'ng tomonda son emas, ifoda turibdi",
-        "20 — chunki Python arifmetik natijani qaytaradi"
+        "False — chunki avval 10 + 10 = 20, 15 >= 20 esa yolg'on",
+        "TypeError — chunki o'ng tomonda son emas, qavssiz ifoda turibdi",
+        "20 — chunki Python avval arifmetik natijani hisoblab qaytaradi"
       ],
       answer: [1],
       explain: "Arifmetika har doim solishtirishdan oldin bajariladi: 10 + 10 = 20, keyin 15 >= 20 tekshiriladi va False chiqadi. O'ng tomonda ifoda bo'lishi mutlaqo normal, qavs shart emas.",
@@ -44,10 +44,10 @@ window.QUIZ = {
       code: "print(\"5\" == 5)\nprint(\"5\" > 5)",
       type: "single",
       options: [
-        "Avval True chiqadi, keyin False chiqadi",
-        "Ikkala qator ham TypeError beradi",
-        "Avval False chiqadi, keyin ikkinchi qator TypeError beradi",
-        "Avval False, keyin True chiqadi"
+        "Avval True chiqadi, keyin False — satr songa aylantiriladi",
+        "Ikkala qator ham TypeError beradi — turlar mos emas",
+        "Avval False, keyin ikkinchi qator TypeError beradi",
+        "Avval False, keyin True — satr doim sondan katta"
       ],
       answer: [2],
       explain: "Turlar mos kelmaganda == va != shunchaki False/True qaytaradi: satr va son teng emas. >, <, >=, <= esa str va int orasida TypeError beradi.",
@@ -66,9 +66,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "False — Python buni (10 < 20) and (20 < 5) deb o'qiydi",
-        "True — chunki birinchi solishtirish 10 < 20 rost",
+        "True — Python faqat birinchi solishtirishni (10 < 20) tekshiradi",
         "SyntaxError — bir ifodada ikkita < yozib bo'lmaydi",
-        "True — chunki True < 5, ya'ni 1 < 5 rost"
+        "True — avval 10 < 20 → True, keyin True < 5, ya'ni 1 < 5"
       ],
       answer: [0],
       explain: "Python zanjirli solishtirishni and bilan bog'langan ikki solishtirish deb o'qiydi: 10 < 20 rost, lekin 20 < 5 yolg'on, shuning uchun natija False.",
@@ -176,9 +176,9 @@ window.QUIZ = {
       q: "Darsdagi qoidaga ko'ra, is operatorini qaysi holatda ishlatish to'g'ri?",
       type: "single",
       options: [
-        "soni is 5 — sonni tekshirishda",
+        "soni is 5 — butun son qiymatini tekshirishda",
         "x is None — qiymat None ekanini tekshirishda",
-        "ism is \"Ali\" — satrni tekshirishda",
+        "ism is \"Ali\" — satr qiymatini tekshirishda",
         "l1 is [1, 2, 3] — ro'yxat mazmunini tekshirishda"
       ],
       answer: [1],

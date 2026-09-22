@@ -334,7 +334,7 @@ print(len(word_tokenize(m)))    # 8
 # 30
 print(word_tokenize("I don't like it"))
 # ['I', 'do', "n't", 'like', 'it']
-# ⚠️ "don't" → "do" + "n't"  — bu keyinchalik "nt" muammosini keltirib chiqaradi!
+# ⚠️ "don't" → "do" + "n't"  — "n't" dan apostrof o'chirilsa, "nt" muammosi paydo bo'ladi!
 ```
 
 </details>

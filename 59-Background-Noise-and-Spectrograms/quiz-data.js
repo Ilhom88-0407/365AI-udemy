@@ -34,10 +34,10 @@ window.QUIZ = {
       q: "Chastotalar bo'yicha SNR o'lchanganda eng yomon nuqta ≈ 2261 Hz chiqdi (−4.71 dB). Nega aynan shu joy eng katta muammo?",
       type: "single",
       options: [
-        "Bu undoshlar (s, sh, t, k) zonasi — uni o'chirsangiz nutq buziladi, qoldirsangiz shovqin qoladi",
+        "Bu undoshlar (s, sh, t, k) zonasi — o'chirsangiz nutq buziladi, qoldirsangiz shovqin",
         "Bu chastotada energiya juda kam, shuning uchun uni bemalol kesib tashlash mumkin",
         "Bu elektr tarmog'ining garmonikasi, uni notch filtr bilan osongina olib tashlash mumkin",
-        "Bu asosiy ton (f0) zonasi, u yo'qolsa model gapiruvchini aniqlay olmaydi"
+        "Bu asosiy ton (f0) zonasi, u yo'qolsa model gapiruvchini va urg'uni aniqlay olmaydi"
       ],
       answer: [0],
       explain: "2 kHz atrofi undoshlar zonasi, ma'noning katta qismi shu yerda. Shovqin va nutq eng muhim zonada ustma-ust tushgani uchun filtr bilan ajratib bo'lmaydi.",
@@ -48,9 +48,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "split() pauzalarni ham nutq deb hisoblaydi, chunki u so'zlarni ma'no bo'yicha ajratadi",
-        "top_db juda katta tanlangan — 60 qilinsa, pauzalar to'g'ri ajraladi",
-        "Fayl diskretlash chastotasi noto'g'ri o'qilgan, sr=16000 berish kerak edi",
-        "split() energiya bo'yicha ishlaydi va shovqin shunchalik balandki, pauzalar ham chegaradan oshadi"
+        "top_db noto'g'ri tanlangan — 60 qilinsa, pauzalar jimlik sifatida to'g'ri ajraladi",
+        "Fayl diskretlash chastotasi noto'g'ri o'qilgan, load() da sr=16000 berish kerak edi",
+        "split() energiya bo'yicha ishlaydi: shovqin tufayli pauzalar ham chegaradan oshadi"
       ],
       answer: [3],
       explain: "split() energiyaga qaraydi: doimiy fon shovqini pauzalarni ham \"baland\" qiladi. Jimlik ulushi qanchalik kam bo'lsa, fayl shunchalik shovqinli — bu eng yaxshi belgi. top_db ni oshirish ham deyarli farq qilmadi.",
@@ -74,10 +74,10 @@ window.QUIZ = {
       q: "Nutq tahlili uchun n_fft ni 2048 dan 4096 ga oshirdingiz. Nima o'zgaradi?",
       type: "single",
       options: [
-        "Ikkala aniqlik ham yaxshilanadi, faqat xotira 2× oshadi",
-        "Chastota aniqligi yaxshilanadi (21.53 → 10.77 Hz), vaqt aniqligi yomonlashadi (46.44 → 92.88 ms)",
+        "Ikkala aniqlik ham yaxshilanadi, faqat xotira va hisoblash 2× oshadi",
+        "Chastota aniqligi yaxshilanadi (21.53 → 10.77 Hz), vaqt aniqligi yomonlashadi",
         "Vaqt aniqligi yaxshilanadi (46.44 → 23.22 ms), chastota aniqligi yomonlashadi",
-        "Hech narsa o'zgarmaydi, faqat spektrogramma rasmi kattaroq chiqadi"
+        "Hech narsa o'zgarmaydi, faqat spektrogramma rasmi kattaroq va silliqroq chiqadi"
       ],
       answer: [1],
       explain: "Bu Geyzenberg noaniqligi: chastotani aniq bilsangiz, vaqtni aniq bilmaysiz. Xotira esa deyarli o'zgarmaydi — binlar ko'payadi, freymlar kamayadi. Qisqa fonemali nutq uchun 512–1024 tavsiya qilinadi.",
@@ -141,8 +141,8 @@ window.QUIZ = {
       q: "Nega Google modeli uchun \"tozalangan\" audio asl shovqinli audiodan yomonroq tanildi?",
       type: "single",
       options: [
-        "Tozalangan audio baland bo'lib qoladi va model uni clipping deb rad etadi",
-        "Model millionlab soat shovqinli audioda o'qitilgan; tozalash nutqning bir qismini olib, model ko'rmagan artefaktlar qo'shadi",
+        "Tozalangan audio haddan tashqari baland bo'lib qoladi va model uni clipping deb rad etadi",
+        "Model shovqinli audioda o'qitilgan; tozalash nutqni qisman buzib, notanish artefaktlar qo'shadi",
         "Google API faqat 44.1 kHz faylni qabul qiladi, tozalash esa chastotani o'zgartiradi",
         "Tozalash usullari faylni stereo qilib qo'yadi, model esa faqat mono bilan ishlaydi"
       ],
@@ -176,10 +176,10 @@ window.QUIZ = {
       q: "Bandpass 80–7500 Hz yagona \"zararsiz\" usul bo'ldi (Δ WER = +0.0000). Buning sababi nima?",
       type: "single",
       options: [
-        "U undoshlar zonasini kuchaytirib, yo'qolgan so'zlarni qaytaradi",
+        "U undoshlar zonasini kuchaytirib, shovqinda yo'qolgan so'zlarni qaytaradi",
         "U shovqinni to'liq olib tashlaydi, lekin Google baribir o'z filtrini qo'llaydi",
         "U faqat 16 kHz fayllarda ishlaydi, sinov esa 44.1 kHz da o'tkazilgan",
-        "U nutq zonasidan tashqarini kesadi va nutqning o'ziga tegmaydi — shuning uchun foydasi ham yo'q"
+        "U faqat nutq zonasidan tashqarini kesadi, nutqqa tegmaydi — foydasi ham yo'q"
       ],
       answer: [3],
       explain: "Bandpass deyarli hech qanday artefakt qo'shmaydi, chunki nutq chastotalariga tegmaydi. Aynan shu sababli u hech narsani yaxshilamaydi ham.",
@@ -189,11 +189,11 @@ window.QUIZ = {
       q: "Darsdagi \"muammo → ishlaydigan yechim\" jadvaliga ko'ra qaysi juftliklar to'g'ri? (bir nechta javob)",
       type: "multi",
       options: [
-        "Doimiy 50/60 Hz elektr g'uvillashi — aynan shu chastotadagi notch filtr",
-        "Reverberatsiya — spektral ayirish α=3",
-        "Juda jim yozuv — normallash",
-        "Umumiy fon shovqini — hech narsa qilmaslik yoki modelni almashtirish",
-        "Kesilgan uzun fayl — pre-emphasis 0.97"
+        "Doimiy 50/60 Hz g'uvillash — shu chastotadagi notch filtr",
+        "Reverberatsiya (aks sado) — spektral ayirish α=3",
+        "Juda jim yozuv — amplitudani normallash",
+        "Umumiy fon shovqini — tegmaslik yoki modelni almashtirish",
+        "Kesilgan uzun fayl — pre-emphasis 0.97 qo'llash"
       ],
       answer: [0, 2, 3],
       explain: "Aniq muammoga aniq yechim: notch filtr, normallash, umumiy shovqinda esa tegmaslik yoki yaxshiroq model. Reverberatsiyaga filtr yordam bermaydi, uzun fayl esa bo'laklash bilan hal qilinadi.",

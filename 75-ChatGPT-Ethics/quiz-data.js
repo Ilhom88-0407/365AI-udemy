@@ -10,7 +10,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "1 [\"o'zbekcha\"]",
-        "2 [\"o'zbek\", 'cha']",
+        "5 ['o', \"'\", 'z', 'bek', 'cha']",
         "4 ['o', \"'z\", 'bek', 'cha']",
         "3 [\"o'z\", 'bek', 'cha']"
       ],
@@ -43,10 +43,10 @@ window.QUIZ = {
       q: "Xodim ChatGPT ga mijoz ma'lumoti bor matnni yubordi, so'ng suhbatni o'chirib tashladi. Darsga ko'ra bu yetarlimi?",
       type: "single",
       options: [
-        "Ha, suhbat o'chirilgach barcha promptlar ham darhol o'chadi",
-        "Ha, agar keyin model o'qitishga ruxsat ham o'chirilsa",
-        "Yo'q, lekin xotira o'chirilsa, masala to'liq hal bo'ladi",
-        "Yo'q — aniq promptlarni o'chirib bo'lmaydi; himoya Enter'dan oldin bo'lishi kerak"
+        "Ha, suhbat o'chirilgach unga tegishli barcha promptlar ham darhol o'chadi",
+        "Ha, agar keyin model o'qitishga ruxsat ham sozlamalardan o'chirilsa",
+        "Yo'q, lekin xotira ham tozalansa, prompt izi to'liq yo'qoladi",
+        "Yo'q — yuborilgan promptni o'chirib bo'lmaydi, himoya Enter'dan oldin"
       ],
       answer: [3],
       explain: "OpenAI FAQ: tarixdan aniq promptlarni o'chira olmaymiz. Yuborilgan narsa yuborilgan, shuning uchun yagona ishonchli nazorat nuqtasi — Enter tugmasidan oldin.",
@@ -56,9 +56,9 @@ window.QUIZ = {
       q: "Nega darsda nozik so'rovni bloklash o'rniga tahrirlash (redaction) yaxshiroq yo'l deb hisoblanadi?",
       type: "single",
       options: [
-        "Bloklansa foydalanuvchi baribir boshqa vositada yuboradi, tahrirlangan savolga esa hamon javob berish mumkin",
-        "Tahrirlash nozik ma'lumotni shifrlaydi va OpenAI uni o'qiy olmaydi",
-        "Bloklash qonun bilan taqiqlangan, tahrirlash esa GDPR talabi",
+        "Bloklansa odam boshqa vositaga o'tadi, tahrirlangan savolga esa hamon javob bor",
+        "Tahrirlash nozik ma'lumotni shifrlaydi, shuning uchun OpenAI uni o'qiy olmaydi",
+        "Bloklash qonun bilan taqiqlangan, tahrirlash esa GDPR ning bevosita talabi",
         "Tahrirlash regex ishlatmaydi, shuning uchun hech narsani o'tkazib yubormaydi"
       ],
       answer: [0],
@@ -96,9 +96,9 @@ window.QUIZ = {
       q: "Foydalanuvchi \"model o'qitishga ruxsat\"ni o'chirdi va endi suhbatlarim hech qayerda qolmaydi, deb o'ylaydi. Dars bo'yicha haqiqatda nima bo'ladi?",
       type: "single",
       options: [
-        "Tarix o'chadi, lekin xotira va serverdagi nusxa qoladi",
-        "Hamma narsa o'chadi, faqat xotira saqlanib qoladi",
-        "Faqat o'qitish to'xtaydi; tarix, xotira va serverdagi nusxa qoladi",
+        "Tarix darhol o'chadi, lekin xotira va serverdagi nusxa qoladi",
+        "Hamma narsa o'chadi, faqat xotira funksiyasi saqlanib qoladi",
+        "Faqat o'qitish to'xtaydi; tarix, xotira va server nusxasi qoladi",
         "Suhbatlar vaqtinchalik suhbat rejimiga o'tadi va saqlanmaydi"
       ],
       answer: [2],
@@ -111,8 +111,8 @@ window.QUIZ = {
       options: [
         "Chunki xotira suhbatlar orasida ishlaydi va alohida o'chirilishi kerak",
         "Chunki o'chirilgan suhbatlar avtomatik vaqtinchalik suhbatga ko'chadi",
-        "Chunki AES shifrlash o'chirilgan ma'lumotni qayta tiklaydi",
-        "Chunki suhbat faqat 30 kundan keyin o'chirilishi mumkin"
+        "Chunki AES shifrlash o'chirilgan ma'lumotni zaxiradan qayta tiklaydi",
+        "Chunki o'chirish tugmasi faqat mobil ilovada to'liq ishlaydi"
       ],
       answer: [0],
       explain: "Suhbatni o'chirsangiz ham xotira qoladi. Xotira auditida eng muhim qadam — boshqa odam haqidagi ma'lumotni tekshirish, chunki ular rozilik bermagan.",
@@ -122,10 +122,10 @@ window.QUIZ = {
       q: "Kurs maslahatiga amal qilib, modeldan manba so'raldi va u muallif, yil, sarlavha bilan 8 ta manba berdi. Darsning asosiy xulosasi nima?",
       type: "single",
       options: [
-        "Formati mukammal bo'lgani uchun manbalarga ishonish mumkin",
-        "Maslahat muammoni hal qilmaydi, uni ko'chiradi: endi 8 ta tekshirilmagan da'vo bor",
-        "Model manbalarni to'qiy olmaydi, faqat yillarda adashadi",
-        "Manba so'rash va tekshirish taxminan bir xil vaqt oladi"
+        "Formati mukammal bo'lgani uchun bu 8 ta manbaga bemalol ishonish mumkin",
+        "Maslahat muammoni hal qilmaydi, ko'chiradi: endi 8 ta tekshirilmagan da'vo",
+        "Model manbalarni to'qiy olmaydi, faqat nashr yillarida ba'zan adashadi",
+        "Manba so'rash ham, har birini tekshirish ham taxminan bir xil vaqt oladi"
       ],
       answer: [1],
       explain: "So'rash 5 soniya, yaratish model uchun bepul, tekshirish esa har biri uchun bir necha daqiqa. Tekshirilmasa ahvol yomonlashadi, chunki manbali matn ishonchliroq ko'rinadi.",
@@ -136,9 +136,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Model mavjud bo'lmagan ismlarni to'qiydi; faqat yilni tekshirish kifoya",
-        "Model faqat mashhur olimlarni tilga oladi; demak manba haqiqiy",
-        "Haqiqiy ism + mavjud bo'lmagan ish; muallif va mavzu mosligini tekshirish kerak",
-        "Blei haqiqatda shu mavzuda yozgan; sarlavhani qidirish ortiqcha"
+        "Model faqat mashhur olimlarni tilga oladi; demak manbaning o'zi haqiqiy",
+        "Haqiqiy ism + mavjud bo'lmagan ish; muallif–mavzu mosligini tekshirish kerak",
+        "Blei haqiqatda shu mavzuda yozgan; sarlavhani alohida qidirish ortiqcha"
       ],
       answer: [2],
       explain: "Blei — mavzuli modellashtirish (LDA) olimi, yollash algoritmlari uning sohasi emas. Ismni qidirsangiz topasiz, shuning uchun bunday gallyutsinatsiya eng ishonchli ko'rinadi.",
@@ -175,10 +175,10 @@ window.QUIZ = {
       q: "0.3 Wh/so'rov — taxmin. Shunga qaramay, nega \"yillik ishlatish o'qitishdan katta\" degan xulosaga ishonish mumkin?",
       type: "single",
       options: [
-        "Chunki 0.3 Wh qiymati OpenAI tomonidan rasman tasdiqlangan",
-        "Chunki eng past taxminda (0.1 Wh) ham ishlatish o'qitishdan 29.2 barobar katta",
-        "Chunki kurs ham aynan 87.6 barobar raqamini keltiradi",
-        "Chunki o'qitish emissiyasi aslida 500 t emas, ancha kam"
+        "Chunki 0.3 Wh qiymati OpenAI tomonidan rasman o'lchanib tasdiqlangan",
+        "Chunki eng past taxminda (0.1 Wh) ham ishlatish 29.2 barobar katta",
+        "Chunki kurs ham aynan shu 87.6 barobar raqamini o'z hisobida keltiradi",
+        "Chunki o'qitish emissiyasi aslida 500 t emas, bir necha barobar kam"
       ],
       answer: [1],
       explain: "Sezgirlik tahlilida 0.1 Wh da 29.2x, 3.0 Wh da 876x chiqdi — har taxminda ishlatish g'olib. Kurs bu taqqoslashni umuman qilmaydi, u faqat o'qitishga urg'u beradi.",

@@ -9,7 +9,7 @@ window.QUIZ = {
       code: "from langgraph.graph import add_messages\nfrom langchain_core.messages import HumanMessage\n\na = HumanMessage(\"asl matn\", id=\"x1\")\nb = HumanMessage(\"YANGILANGAN matn\", id=\"x1\")\nr = add_messages([a], [b])\nprint(len(r), r[0].content)",
       type: "single",
       options: [
-        "2 asl matn",
+        "ValueError: takroriy id",
         "1 asl matn",
         "1 YANGILANGAN matn",
         "2 YANGILANGAN matn"
@@ -50,13 +50,13 @@ window.QUIZ = {
       q: "Reducerli siklli grafda har burilishda: ask_question AI savol + Human javob, chatbot bitta AI javob, ask_another_question AI savol + Human \"yes\"/\"no\" qaytaradi. 3 burilishdan keyin state'da nechta xabar bo'ladi?",
       type: "single",
       options: [
-        "3",
+        "10",
         "15",
-        "9",
-        "1"
+        "12",
+        "18"
       ],
       answer: [1],
-      explain: "Har burilishda 2 + 1 + 2 = 5 ta xabar qo'shiladi: 3 × 5 = 15. Reducersiz 45-moduldagi grafda esa faqat 1 ta xabar qolardi.",
+      explain: "Har burilishda 2 + 1 + 2 = 5 ta xabar qo'shiladi: 3 × 5 = 15. Chatbot javobini unutsangiz 12, har tugunni 2 ta deb hisoblasangiz 18 chiqadi; reducersiz 45-moduldagi grafda esa faqat 1 ta xabar qolardi.",
       lesson: { title: "Reducerlar amalda", href: "02-Reducer-Functions-in-Action.md" }
     },
     {
@@ -151,11 +151,11 @@ window.QUIZ = {
       q: "O'zbekcha bank botida kursdagi [:-5] trim o'rniga lc_trim(..., strategy=\"last\", include_system=True, start_on=\"human\") ishlatildi. Bu nima beradi? (bir nechta javob)",
       type: "multi",
       options: [
-        "Xabar soni emas, token bo'yicha qirqiladi, shuning uchun uzun xabar chegarani buzmaydi",
+        "Xabar soni emas, token bo'yicha qirqiladi: uzun xabar chegarani buzmaydi",
         "\"O'zbek tilida javob bering\" yozilgan SystemMessage o'chmaydi",
-        "Eski xabarlar LLM yordamida avtomatik xulosalanadi",
-        "Saqlangan qism HumanMessage'dan boshlanadi, savol-javob juftligi buzilmaydi",
-        "include_system strategy=\"first\" bilan ham xuddi shunday ishlaydi"
+        "Qirqilgan eski xabarlar LLM yordamida avtomatik xulosalanadi",
+        "Saqlangan qism HumanMessage'dan boshlanadi, juftlik buzilmaydi",
+        "include_system strategy=\"first\" bilan ham tizim xabarini saqlaydi"
       ],
       answer: [0, 1, 3],
       explain: "trim_messages token bo'yicha qirqadi, include_system tizim ko'rsatmasini saqlaydi, start_on=\"human\" juftlikni buzmaydi. include_system faqat strategy=\"last\" bilan ishlaydi (\"first\" bilan ValueError), xulosalash esa alohida usul.",
@@ -178,10 +178,10 @@ window.QUIZ = {
       q: "O'lchovlarga ko'ra xulosalash qo'shishdan 26× kam kirish tokeni ishlatadi. Uning asosiy kamchiligi nima?",
       type: "single",
       options: [
-        "LLM chaqiruvlari ikki barobar ko'payadi (20 → 40), kechikish ham taxminan 2×",
+        "LLM chaqiruvlari 2× ko'payadi (20 → 40), kechikish ham oshadi",
         "Xulosalash faqat gpt-4o bilan ishlaydi, gpt-4o-mini bilan emas",
         "Xulosalashda summary maydoni reducersiz bo'lgani uchun xulosa yo'qoladi",
-        "Xulosalash har doim trim=5 dan qimmatroq tushadi"
+        "Xulosa har burilishda eskisiga ulanib, cheksiz uzayib boradi"
       ],
       answer: [0],
       explain: "Xulosalash token narxini keskin kamaytiradi, lekin har burilishda qo'shimcha chaqiruv qo'shadi: 20 o'rniga 40 ta chaqiruv, foydalanuvchi ikki marta kutadi. summary ning reducersizligi esa to'g'ri — xulosa yangilanishi kerak.",
@@ -192,8 +192,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Xulosalashni butunlay o'chirib, barcha xabarlarni so'zma-so'z saqlash",
-        "Har burilishda xulosani ikki marta qayta yaratish",
-        "trim=5 ni trim=2 ga kamaytirish",
+        "Har burilishda xulosani ikki marta yaratib, natijalarni solishtirish",
+        "trim=5 ni trim=2 ga kamaytirib, xulosani tez-tez yangilash",
         "Muhim faktlarni summa, muddat kabi alohida state maydonlarida saqlash"
       ],
       answer: [3],

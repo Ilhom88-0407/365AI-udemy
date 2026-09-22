@@ -66,9 +66,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "chunk_size tokenlarni sanaydi, belgilarni emas, shuning uchun bo'laklar qisqaroq",
-        "Splitter nuqtalarni ham alohida bo'lak deb hisoblaydi",
-        "chunk_size — maksimum: overlap qadamni 450 ga tushiradi, bo'linish faqat nuqtada bo'ladi",
-        "Docx2txtLoader matnni oldindan 21 ta sahifaga bo'lib bergan"
+        "Splitter nuqtalarni ham alohida bo'lak deb sanaydi, shuning uchun soni oshadi",
+        "chunk_size — maksimum: overlap qadamni 450 ga qisqartiradi, kesish esa nuqtada",
+        "Docx2txtLoader matnni oldindan 21 ta sahifaga bo'lgan, splitter ularni saqlaydi"
       ],
       answer: [2],
       explain: "chunk_size maqsad emas, maksimum. Overlap har bo'lakda 50 belgini takrorlaydi, separator=\".\" esa bo'lakni 500 ga yetmasdan nuqtada kesadi. chunk_size belgilarni sanaydi, tokenlarni emas.",
@@ -79,10 +79,10 @@ window.QUIZ = {
       code: "from langchain_text_splitters.markdown import MarkdownHeaderTextSplitter\n\nMATN = \"\"\"# Bank\n\n## Depozitlar\nFoiz 18%.\n\n## Kartalar\nKarta 3 kunda.\"\"\"\n\nmd = MarkdownHeaderTextSplitter(\n    headers_to_split_on=[(\"#\", \"Hujjat\"), (\"##\", \"Bolim\")])\nb = md.split_text(MATN)\nprint(len(b), b[0].metadata)",
       type: "single",
       options: [
-        "3 {'Hujjat': 'Bank'}",
+        "3 {'Hujjat': 'Bank', 'Bolim': 'Depozitlar'}",
         "2 {'Hujjat': 'Bank', 'Bolim': 'Depozitlar'}",
-        "2 {'Bolim': 'Depozitlar'}",
-        "1 {'source': 'Bank'}"
+        "2 {'Bolim': 'Depozitlar', 'source': 'Bank'}",
+        "1 {'Hujjat': 'Bank', 'Bolim': 'Kartalar'}"
       ],
       answer: [1],
       explain: "Splitter sarlavhalar bo'yicha bo'ladi va ularni metadata'ga yozadi: har bo'lakda ham # (Hujjat), ham ## (Bolim) qiymati bo'ladi. \"# Bank\" ostida matn yo'q, shuning uchun 2 ta bo'lak chiqadi.",
@@ -135,9 +135,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "0 — ballar 0..1 oralig'idan tashqarida, shuning uchun hammasi rad etiladi",
-        "3 — bu L2 masofa (kichigi yaxshi), shuning uchun chegara hammasini o'tkazadi",
-        "1 — faqat eng yaqin hujjat chegaradan o'tadi",
-        "ValueError — ball 1 dan katta bo'lishi mumkin emas"
+        "3 — bu L2 masofa (kichigi yaxshi), hammasi 0.7 chegarasidan katta",
+        "1 — faqat eng yaqin hujjat chegaradan o'tadi, qolganlari rad etiladi",
+        "ValueError — ball 1 dan katta bo'lishi mumkin emas, tekshiruv to'xtaydi"
       ],
       answer: [1],
       explain: "Chroma standart holda L2 masofani qaytaradi, kosinusni emas: ballar 12–15 va hammasi 0.7 dan katta. Bu jim xato; 0..1 o'xshashlik uchun similarity_search_with_relevance_scores yoki hnsw:space=\"cosine\" kerak.",
@@ -147,7 +147,7 @@ window.QUIZ = {
       q: "max_marginal_relevance_search da lambda_mult qiymatlari haqida darsda o'lchangan natijalarga qaysi tavsif mos?",
       type: "single",
       options: [
-        "1.0 — similarity_search bilan aynan bir xil; 0.0 — natijalar juda xilma-xil va aloqasiz",
+        "1.0 — similarity_search bilan bir xil; 0.0 — xilma-xil, hatto aloqasiz",
         "1.0 — faqat xilma-xillik; 0.0 — faqat moslik, dublikatlar ham qaytadi",
         "Qiymat natijaga ta'sir qilmaydi, faqat fetch_k natijalar sonini belgilaydi",
         "0.7 — similarity_search bilan bir xil; 1.0 — birinchi natija ham o'zgaradi"
@@ -160,10 +160,10 @@ window.QUIZ = {
       q: "vs.as_retriever(search_type=\"similarity_score_threshold\", search_kwargs={\"k\": 3, \"score_threshold\": 0.3}) mos savolga ham 0 ta hujjat qaytardi va faqat ogohlantirish chiqdi. Sabab va yechim?",
       type: "single",
       options: [
-        "k juda kichik — uni 10 ga oshirish kerak",
+        "k juda kichik — chegaradan o'tadigan hujjat bo'lishi uchun k ni 10 ga oshirish kerak",
         "score_threshold faqat mmr bilan ishlaydi — search_type=\"mmr\" qo'yish kerak",
-        "Baza L2 fazoda — uni collection_metadata={\"hnsw:space\": \"cosine\"} bilan qayta yaratish kerak",
-        "Retriever Runnable emas — similarity_search ga qaytish kerak"
+        "Baza L2 fazoda — collection_metadata={\"hnsw:space\": \"cosine\"} bilan qayta yaratish",
+        "Retriever Runnable emas — invoke o'rniga to'g'ridan-to'g'ri similarity_search ga qaytish kerak"
       ],
       answer: [2],
       explain: "score_threshold 0..1 dagi o'xshashlikni kutadi, L2 masofaning aylantirilishi esa noto'g'ri chiqib, hammasi rad etiladi. Bu xato emas, ogohlantirish — zanjirda bo'sh kontekst bo'lib, model hech narsasiz javob to'qiydi.",
@@ -176,7 +176,7 @@ window.QUIZ = {
         "Retriever'ni to'g'ridan-to'g'ri ulaganda k avtomatik ikki barobar oshadi",
         "Ro'yxat str() qilinib, promptga Document(id=..., metadata={...}) repr'i ham tushadi",
         "format_docs bo'laklarning yarmini tashlab yuboradi, shuning uchun token kamayadi",
-        "RunnablePassthrough savolni ikki marta promptga qo'yadi"
+        "RunnablePassthrough savolni ham kontekstga, ham question ga — ikki marta qo'yadi"
       ],
       answer: [1],
       explain: "{context} ga ro'yxat berilsa, UUID, metadata va qavslar ham promptga tushadi — 46.5% token bekorga ketadi va model shovqin ichida ishlaydi. format_docs faqat page_content larni \"\\n\\n\" bilan birlashtiradi.",

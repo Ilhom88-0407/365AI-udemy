@@ -10,8 +10,8 @@ window.QUIZ = {
       options: [
         "Ma'lumotni ML algoritmi kutgan formatga, masalan, vektorga aylantirishni",
         "Xato beradigan qatorlar va noto'g'ri belgilarni topib tuzatishni",
-        "Qiymat qo'shmaydigan, faqat xotirada joy egallaydigan qismlarni olib tashlashni",
-        "Barcha so'zlarni lug'atdagi asos shakliga keltirishni"
+        "Ma'no qo'shmaydigan, faqat joy egallaydigan qismlarni olib tashlashni",
+        "Barcha so'zlarni lug'atdagi asos shakliga keltirib, birlashtirishni"
       ],
       answer: [2],
       explain: "Shovqinni olib tashlash — ma'no qo'shmaydigan va faqat joy egallaydigan qismlarni olib tashlab, kichikroq va tozaroq ma'lumot to'plamiga ega bo'lish. Xatolarni tuzatish birinchi, formatga keltirish esa uchinchi bosqich.",
@@ -37,9 +37,9 @@ window.QUIZ = {
     {
       q: "Sentiment tahlili uchun to'xtatish so'zlari ro'yxatini moslashtiryapsiz. Qaysi so'zlarni ro'yxatdan olib tashlab, matnda saqlash kerak? (bir nechta javob)",
       type: "multi",
-      options: ["the", "not", "of", "but", "very"],
+      options: ["the", "not", "from", "but", "very"],
       answer: [1, 3, 4],
-      explain: "\"not\" inkorni bildiradi, \"very\" kuchaytiradi (\"very bad\"), \"but\" qarama-qarshilikni ko'rsatadi (\"good but expensive\"). \"the\" va \"of\" esa haqiqatan ma'no tashimaydi.",
+      explain: "\"not\" inkorni bildiradi, \"very\" kuchaytiradi (\"very bad\"), \"but\" qarama-qarshilikni ko'rsatadi (\"good but expensive\"). \"the\" va \"from\" esa haqiqatan ma'no tashimaydi.",
       lesson: { title: "To'xtatish so'zlarini olib tashlash", href: "03-Removing-Stop-Words.md" }
     },
     {
@@ -49,7 +49,7 @@ window.QUIZ = {
       options: [
         "['Apple is good', 'Good apple', 'Bad apple']",
         "['Good apple', 'Bad apple']",
-        "['Apple is good']",
+        "['Apple is good', 'Good apple', 'Great service', 'Bad apple']",
         "['Good apple', 'Great service', 'Bad apple']"
       ],
       answer: [3],
@@ -60,9 +60,9 @@ window.QUIZ = {
       q: "re.sub(r\"[^\\w\\s]\", \"\", matn) chaqiruvi matndan nimani olib tashlaydi?",
       type: "single",
       options: [
-        "So'z belgisi ham, bo'sh joy ham bo'lmagan hamma narsani — ya'ni tinish belgilarni",
+        "So'z belgisi ham, bo'sh joy ham bo'lmagan belgilarni (tinish belgilar)",
         "Satr boshidagi barcha harf va raqamlarni, bo'sh joylarni qoldirib",
-        "Faqat bo'sh joylarni, so'zlarni bir-biriga yopishtirib",
+        "Faqat bo'sh joy va tablarni, so'zlarni bir-biriga yopishtirib",
         "Barcha so'zlarni, faqat tinish belgilar va bo'sh joylarni qoldirib"
       ],
       answer: [0],
@@ -97,8 +97,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Stemmer ikkala so'zni WordNet lug'atida sinonim deb topadi",
-        "Stemmer lug'atga murojaat qilmaydi, faqat qoidalar bo'yicha oxirini kesadi",
-        "Stemmer standart holatda har bir so'zni ot deb hisoblaydi",
+        "Stemmer lug'atga qaramaydi, faqat qoidalar bo'yicha oxirini kesadi",
+        "Stemmer standart holatda har bir so'zni ot deb hisoblab kesadi",
         "Stemmer so'zlarni kontekstga qarab bir ma'noga birlashtiradi"
       ],
       answer: [1],
@@ -118,10 +118,10 @@ window.QUIZ = {
       q: "WordNetLemmatizer 'connecting', 'connected', 'connects' so'zlarini deyarli o'zgartirmadi, stemming esa hammasini 'connect' ga keltirgan edi. Buning asosiy sababi nima?",
       type: "single",
       options: [
-        "Lemmatizer standart holatda so'zni ot deb qabul qiladi, bular esa fe'l shakllari",
+        "Standart holatda so'z ot deb olinadi, bular esa fe'l shakllari",
         "WordNet lug'atida \"connect\" so'zi umuman mavjud emas",
-        "Lemmatizer faqat ko'plikdagi so'zlarni qayta ishlay oladi",
-        "Lemmatizer faqat oldin stemlangan so'zlar bilan ishlaydi"
+        "Lemmatizer faqat -s qo'shimchali ko'plik shakllarini qayta ishlaydi",
+        "Lemmatizer faqat oldin stemlangan so'zlar bilan to'g'ri ishlaydi"
       ],
       answer: [0],
       explain: "WordNetLemmatizer standart pos=\"n\" bilan ishlaydi. lemmatize(\"connecting\", pos=\"v\") esa \"connect\" beradi. Natijada lemmatization ma'noni saqlaydi, lekin lug'at kattaroq qoladi.",
@@ -140,10 +140,10 @@ window.QUIZ = {
       q: "Darsga ko'ra, n-grammalarni hisoblash qaysi maqsadlarga xizmat qiladi? (bir nechta javob)",
       type: "multi",
       options: [
-        "Oldindan qayta ishlash to'g'ri bajarilganini tekshirish",
-        "So'zlarni lug'aviy asos shakliga keltirish",
+        "Qayta ishlash to'g'ri bajarilganini tekshirish",
+        "So'zlarni lug'aviy asos shakliga keltirib, lug'atni kichraytirish",
         "Ma'lumot mazmuni va undagi mavzularni o'rganish",
-        "Tinish belgilarni matndan olib tashlash",
+        "Tinish belgilar va ortiqcha bo'sh joylarni matndan tozalash",
         "Mashinali o'rganish uchun yangi xususiyatlar yaratish"
       ],
       answer: [0, 2, 4],
@@ -157,7 +157,7 @@ window.QUIZ = {
         "Bu \"not\" so'zining stemlangan shakli — uni shunday qoldirish kerak",
         "Bu Sietldagi joy nomining qisqartmasi — uni alohida tahlil qilish kerak",
         "Bu lemmatizer xatosi — lemmatization o'rniga stemming ishlatish kerak",
-        "Bu \"don't\" dan qolgan ma'nosiz bo'lak — uni to'xtatish so'zlariga qo'shish kerak"
+        "Bu \"don't\" qoldig'i — uni to'xtatish so'zlariga qo'shish kerak"
       ],
       answer: [3],
       explain: "\"n't\" dagi apostrof o'chirilgach, ma'nosiz \"nt\" qoladi. Bu quvurdagi xato bo'lib, \"nt\" ni to'xtatish so'zlariga qo'shib tuzatiladi. N-grammalarga qarash aynan shunday xatolarni topishga yordam beradi.",

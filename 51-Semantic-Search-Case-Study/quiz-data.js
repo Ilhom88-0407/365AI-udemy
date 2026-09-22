@@ -9,9 +9,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Generativ model qidiruvdan ancha tez ishlagani uchun uni keyinga qoldirish mumkin",
-        "Qidiruv haqiqiy kurs nomlarini qaytaradi, generativ xulosa esa yolg'on to'qishi mumkin",
-        "Vektor bazasi generativ model bilan texnik jihatdan birga ishlay olmaydi",
-        "Generativ qism faqat o'zbekcha so'rovlar uchun kerak bo'ladi"
+        "Qidiruv haqiqiy kurs nomlarini beradi, generativ xulosa esa yolg'on to'qishi mumkin",
+        "Vektor bazasi generativ model bilan texnik jihatdan birga ishlay olmaydi, API mos emas",
+        "Generativ qism faqat o'zbekcha so'rovlarni inglizchaga tarjima qilish uchun kerak"
       ],
       answer: [1],
       explain: "Qidiruv natijasini tekshirish mumkin — bu real kurs nomlari. Generativ xulosa esa \"faqat kontekstdan foydalan\" deyilsa ham yolg'on to'qishi mumkin.",
@@ -21,10 +21,10 @@ window.QUIZ = {
       q: "\"clustering\" so'rovi natija beradi, lekin \"clustering in Python\" 0 natija beradi, garchi Machine Learning in Python kursida clustering bo'limi bo'lsa ham. Sababi nima?",
       type: "single",
       options: [
-        "CSV fayl cp1252 kodlashda bo'lgani uchun Python so'zi o'qilmaydi",
-        "Machine Learning in Python kursida aslida clustering bo'limi yo'q",
-        "An'anaviy qidiruv aynan shu iborani izlaydi va kurs nomi bilan bo'lim nomini birga ko'rmaydi",
-        "Qidiruv katta-kichik harfni farqlagani uchun \"Python\" topilmaydi"
+        "CSV fayl cp1252 kodlashda bo'lgani uchun \"Python\" so'zi to'g'ri o'qilmaydi",
+        "Machine Learning in Python kursida aslida clustering degan bo'lim umuman yo'q",
+        "An'anaviy qidiruv butun iborani izlaydi, kurs va bo'lim nomini birga ko'rmaydi",
+        "Qidiruv katta-kichik harfni farqlagani uchun \"Python\" so'zi topilmaydi"
       ],
       answer: [2],
       explain: "LIKE '%clustering in Python%' butun iborani talab qiladi: Python kurs nomida, clustering bo'lim nomida, lekin birga hech qayerda yo'q. Semantik qidiruvda ikkalasi bitta vektorda birlashadi.",
@@ -36,8 +36,8 @@ window.QUIZ = {
       options: [
         "encoding=\"cp1252\" berish, chunki faylda Windows'ga xos belgilar bor",
         "encoding=\"ascii\" berish, chunki fayl faqat lotin harflaridan iborat",
-        "errors=\"ignore\" bilan 0x92 baytini o'chirib yuborish",
-        "Faylni Excel'da ochib, qayta saqlamasdan o'qish"
+        "errors=\"ignore\" bilan 0x92 baytini o'chirib, UTF-8 da o'qish",
+        "Faylni Excel'da ochib, qayta saqlamasdan pandas bilan o'qish"
       ],
       answer: [0],
       explain: "0x92 — Windows'ning qiyshiq apostrofi. Kurs uni \"ANSI\" deb ataydi, bu Windows-1252, pandas'da encoding=\"cp1252\".",
@@ -63,7 +63,7 @@ window.QUIZ = {
       options: [
         "7/8 dan 8/8 ga oshdi — kesilish yo'qolgani uchun",
         "7/8 dan 6/8 ga tushdi — qisqaroq matn aniqlikni oshirmadi",
-        "O'zgarmadi — ikkalasi ham 7/8",
+        "O'zgarmadi — ikkala tartibda ham 7/8 bo'lib qoldi",
         "6/8 dan 7/8 ga oshdi — bo'lim nomi eng muhim signal ekan"
       ],
       answer: [1],
@@ -74,10 +74,10 @@ window.QUIZ = {
       q: "Darsda ajratish (ajratish = mos_o'rt − nomos_o'rt) eng muhim ko'rsatkich deyiladi. Katta ajratish nimani bildiradi?",
       type: "single",
       options: [
-        "Model vektorlari kattaroq o'lchamli ekanini",
-        "Model matnni tezroq embedding qilishini",
-        "Javobi bor va javobi yo'q savollar ballari yaxshi ajralib, chegara qo'yish oson ekanini",
-        "Model ko'proq tokenni kesmasdan qabul qilishini"
+        "Model vektorlari kattaroq o'lchamli bo'lib, ko'proq ma'no sig'dirishini",
+        "Model matnni tezroq embedding qilib, so'rovga tez javob berishini",
+        "Mos va nomos savollar ballari yaxshi ajralib, chegara qo'yish osonligini",
+        "Model uzun matnda ham ko'proq tokenni kesmasdan qabul qilishini"
       ],
       answer: [2],
       explain: "Ajratish katta bo'lsa mos va nomos ballar aralashmaydi, chegara ishonchli bo'ladi. Masalan, all-mpnet-base-v2 da ajratish 0.4988 — uch modelning eng yaxshisi.",
@@ -87,11 +87,11 @@ window.QUIZ = {
       q: "paraphrase-multilingual-MiniLM-L12-v2 modeli haqida darsda qaysi o'lchovlar keltirilgan? (bir nechta javob)",
       type: "multi",
       options: [
-        "O'zbekcha so'rovlarda UZ/EN nisbati 0.80 — all-MiniLM-L6-v2 dagi 0.39 dan ancha yuqori",
+        "O'zbekcha so'rovlarda UZ/EN nisbati 0.80 (all-MiniLM-L6-v2 da 0.39)",
         "Maksimal kontekst atigi 128 token",
         "Vektor normasi 5.083 — ya'ni normallashtirish kerak",
-        "Uchala model ichida eng katta ajratishga ega (0.4988)",
-        "Vektor o'lchami 768"
+        "Uchala model ichida eng katta ajratishga ega — 0.4988, shuning uchun tanlangan",
+        "Vektor o'lchami 768, ya'ni all-mpnet-base-v2 bilan bir xil"
       ],
       answer: [0, 1, 2],
       explain: "Ko'p tilli modelda UZ/EN 0.80, kontekst 128 token, norma 5.083. Eng katta ajratish (0.4988) va 768 o'lcham esa all-mpnet-base-v2 ga tegishli.",
@@ -102,13 +102,13 @@ window.QUIZ = {
       code: "for b in range(0, len(ids), 100):\n    s = slice(b, b + 100)\n    indeks.upsert(vectors=[\n        {\"id\": i, \"values\": ???, \"metadata\": m}\n        for i, v, m in zip(ids[s], E[s], M[s])])",
       type: "single",
       options: [
-        "v",
+        "np.asarray(v)",
         "list(map(float, v))",
         "v.astype(\"float32\")",
-        "np.linalg.norm(v)"
+        "v / np.linalg.norm(v)"
       ],
       answer: [1],
-      explain: "numpy.float32 JSON'ga serializatsiya bo'lmaydi, shuning uchun har qiymatni oddiy Python float'ga o'tkazish kerak: list(map(float, v)). norm(v) esa bitta son qaytaradi, vektor emas.",
+      explain: "numpy.float32 JSON'ga serializatsiya bo'lmaydi, shuning uchun har qiymatni oddiy Python float'ga o'tkazish kerak: list(map(float, v)). np.asarray(v) va v / norm(v) esa baribir numpy float32 massiv bo'lib qoladi.",
       lesson: { title: "Vektorlash va bazaga yuklash", href: "06-Embedding-and-Upserting.md" }
     },
     {
@@ -129,10 +129,10 @@ window.QUIZ = {
       q: "\"how to cook pasta\" so'roviga 0.1743 ball bilan baribir kurs qaytdi. Darsga ko'ra buning sababi va yechimi qanday?",
       type: "single",
       options: [
-        "Vektor bazasi doim eng yaqin k ta vektorni qaytaradi; \"topilmadi\" deyishni chegara orqali siz qilasiz",
-        "Model pasta haqidagi kurslarni noto'g'ri indekslagan; qayta indekslash kerak",
-        "top_k juda kichik; top_k=100 qilinsa baza natija qaytarmaydi",
-        "Chroma masofa qaytargani uchun; 1 − masofa qilinsa natija yo'qoladi"
+        "Baza doim eng yaqin k ta vektorni qaytaradi; \"topilmadi\"ni chegara bilan siz hal qilasiz",
+        "Model pasta haqidagi kurslarni noto'g'ri indekslagan; bazani qayta indekslash kerak",
+        "top_k juda kichik tanlangan; top_k=100 qilinsa baza bo'sh natija qaytaradi",
+        "Chroma ball emas, masofa qaytaradi; 1 − masofa qilinsa bu natija yo'qoladi"
       ],
       answer: [0],
       explain: "Vektor baza hech qachon \"topilmadi\" demaydi — u qanchalik uzoq bo'lsa ham eng yaqinlarini beradi. O'lchangan 0.3758 chegarasi bu natijani kesadi.",
@@ -156,10 +156,10 @@ window.QUIZ = {
       q: "Kurs bazani yangi CSV'dan oddiy upsert bilan yangilaydi. Darsga ko'ra bu usulda qaysi holatlar qoplanmagan? (bir nechta javob)",
       type: "multi",
       options: [
-        "Yangi qo'shilgan kurs bazaga umuman yozilmaydi",
+        "Yangi qo'shilgan kurs bazaga umuman yozilmaydi va qidiruvda chiqmaydi",
         "Katalogdan o'chirilgan kurs bazada arvoh yozuv bo'lib qoladi",
         "O'zgarmagan kurslar ham behuda qayta vektorlanadi",
-        "Mavjud kursning matni o'zgarsa, u yangilanmaydi",
+        "Mavjud kursning matni o'zgarsa, bazadagi vektori yangilanmaydi",
         "Yangilash yarim yo'lda uzilsa, baza nomuvofiq holatda qoladi"
       ],
       answer: [1, 2, 4],
@@ -192,10 +192,10 @@ window.QUIZ = {
       q: "Qidiruv tizimiga \"shunga o'xshash kurslar\" tavsiyasini qo'shish kerak. Darsga ko'ra nimani o'zgartirish yetarli?",
       type: "single",
       options: [
-        "Yangi tavsiya modelini o'qitib, alohida baza qurish kerak",
+        "Yangi tavsiya modelini o'qitib, kurslar uchun alohida vektor baza qurish kerak",
         "E @ E.T matritsasini hisoblab, eng past ballli kurslarni tavsiya qilish kerak",
         "BM25 bilan kalit so'zlarni solishtirib, RRF bilan birlashtirish kerak",
-        "So'rov vektori sifatida mavjud kursning o'z vektori E[i] olinadi, qolgan kod o'zgarmaydi"
+        "Mavjud kursning o'z vektori E[i] so'rov vektori qilinadi, qolgan kod o'zgarmaydi"
       ],
       answer: [3],
       explain: "Tavsiya — qidiruvning o'zi: q = model.encode(savol) o'rniga q = E[i]. Eng past eng yaqin ball esa anomaliya aniqlashga tegishli.",

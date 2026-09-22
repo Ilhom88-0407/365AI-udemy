@@ -37,9 +37,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "{'seed': 365} None — seed faqat model_kwargs ichida qoladi",
-        "{} 365 — va seed ni bevosita berish haqida UserWarning chiqadi",
-        "TypeError — model_kwargs parametri endi mavjud emas",
-        "{'seed': 365} 365 — seed ikkala joyda ham saqlanadi"
+        "{} 365 — seed ni bevosita berish haqida ogohlantirish bilan",
+        "TypeError — model_kwargs parametri yangi versiyada mavjud emas",
+        "{'seed': 365} 365 — seed ikkala joyda ham saqlanib qoladi"
       ],
       answer: [1],
       explain: "LangChain seed ni model_kwargs dan chiqarib oladi (model_kwargs bo'sh qoladi) va ogohlantiradi. Zamonaviy yozuv: ChatOpenAI(model=\"gpt-4o-mini\", seed=365).",
@@ -50,10 +50,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Oddiy satr, masalan \"Salom\"",
-        "pandas DataFrame obyekti",
-        "Xabarlar ro'yxati: [SystemMessage(...), HumanMessage(...)]",
+        "pandas DataFrame yoki numpy massiv obyekti",
+        "Xabarlar ro'yxati: [SystemMessage, HumanMessage]",
         "Shablon natijasi bo'lgan PromptValue obyekti",
-        "Prompt yozilgan .txt faylning yo'li"
+        "Prompt yozilgan .txt faylning diskdagi yo'li"
       ],
       answer: [0, 2, 3],
       explain: "invoke satr, xabarlar ro'yxati va PromptValue ni qabul qiladi. PromptValue eng muhimi: shablon invoke'ining chiqishi model invoke'ining kirishi bo'lib, zanjir g'oyasini yaratadi.",
@@ -112,9 +112,9 @@ window.QUIZ = {
       code: "from langchain_core.prompts import ChatPromptTemplate\n\nct = ChatPromptTemplate.from_messages([\n    (\"human\", 'JSON qaytaring: {\"a\": 1} va {savol}')])\nct.invoke({\"savol\": \"test\"})",
       type: "single",
       options: [
-        "KeyError: shablon \"a\" ni o'zgaruvchi deb hisoblab, uni topa olmaydi",
+        "KeyError: shablon \"a\" ni o'zgaruvchi deb oladi va topa olmaydi",
         "Matn to'g'ri to'ldiriladi: JSON qaytaring: {\"a\": 1} va test",
-        "ValueError: human roli JSON matnini qabul qilmaydi",
+        "ValueError: human roli JSON ko'rinishidagi matnni qabul qilmaydi",
         "Xato yo'q, lekin {\"a\": 1} qismi matndan jimgina o'chiriladi"
       ],
       answer: [0],

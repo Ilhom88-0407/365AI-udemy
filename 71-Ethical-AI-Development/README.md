@@ -4,7 +4,7 @@
 >
 > ## 💥 **METRIKAMIZ 0/5 NI 4/5 QILIB KO'RSATDI — VA BIZ DEYARLI ISHONDIK.**
 >
-> ## 💥 **1 000 TA TASODIFIY BELGI ICHIDAN 17.6 TA "SEZILARLI NAQSH" TOPILDI.**
+> ## 💥 **1 000 TA TASODIFIY BELGI ICHIDAN 52.4 TA "SEZILARLI NAQSH" TOPILDI.**
 
 ![Ishlab chiqish](assets/01-ishlab-chiqish.svg)
 
@@ -69,16 +69,17 @@ A: I apologize, but I'm not sure what you mean by "Qo'lim kalta."
 
 Kurs aytadi: *"AI o'quv ma'lumotida `Star Wars` naqshini sezishi mumkin."*
 Biz **butunlay tasodifiy** belgilar bilan sinadik — haqiqiy naqsh **0**.
+*(6-darsdagi tajriba: 200 nomzod, 30 urug'ning o'rtachasi; bu yerda — `0.15` dan katta farqli belgilar **soni**, 15-mashq. 6-darsda esa **eng kuchli** naqsh: `0.128 → 0.260`.)*
 
 ```
     belgilar    "sezilarli" naqsh   (haqiqiy: 0)
-          10                  0.3
-          50                  0.7
-         200                  3.6
-        1000                 17.6
+          10                  0.4
+          50                  3.0
+         200                 10.2
+        1000                 52.4
 ```
 
-> ## 💥 **1 000 TA BELGIDA — 17.6 TA SOXTA "QOIDA".**
+> ## 💥 **1 000 TA BELGIDA — 52.4 TA SOXTA "QOIDA".**
 >
 > ## ## 🔑 **BU — KO'P TAQQOSLASH MUAMMOSI.** ## Model *"aqlli"* emas — ## u shunchaki ## ⭐ **juda ko'p belgini ko'rgan**.
 
@@ -140,7 +141,7 @@ to'xtatgan** edi. Mashqda **kirish filtrini** sinadik:
 | Tay — 4× sekin o'qitish | ## 🏆 **Buzilmadi** |
 | ## **Tay — 90% kirish filtri** | ## 💥 **To'xtatmadi** *(179 → 306)* |
 | Tarixiy biasni takrorlash | 💥 nisbat 0.404 — aynan |
-| SFT sifat auditi | 💥 6 misol → 8 muammo |
+| SFT sifat auditi | 💥 5 misol → 7 muammo *(10-mashq: 6 → 8)* |
 | ## **Nozik sinov** | ## ⚠️ **3/4 "o'tdi" — 2 tasi shablon** |
 | ## **Chiqish drifti** | ## 💥 **0.808 → 0.487** |
 | Baholovchi C | 💥 +1.61 *(tizimli siljish)* |
@@ -152,7 +153,7 @@ to'xtatgan** edi. Mashqda **kirish filtrini** sinadik:
 | ## **Idiomalar — inglizcha** | ## ⚠️ **3/5** |
 | ## **Idiomalar — o'zbekcha** | ## 💥💥 **0/5** |
 | ## **Buzuq metrika** | ## 💥 **0/5 ni 4/5 ko'rsatdi** |
-| ## **Soxta naqshlar** *(1 000 belgi)* | ## 💥 **17.6 ta** |
+| ## **Soxta naqshlar** *(1 000 belgi)* | ## 💥 **52.4 ta** *(eng kuchlisi 0.260)* |
 
 ---
 
@@ -169,7 +170,7 @@ to'xtatgan** edi. Mashqda **kirish filtrini** sinadik:
 | SFT xulqni tuzatadi | ## ⚠️ **Faqat sinov to'plami bo'lsa** |
 | RLHF baholovchi biasini o'zlashtiradi | ## 💥 **C: +1.61** |
 | Chetki holatlarni sinang | ## 🏆 **Va bu — modulning eng muhim darsi** |
-| *"Star Wars"* naqshi | ## 💥 **1 000 belgi → 17.6 ta soxta naqsh** |
+| *"Star Wars"* naqshi | ## 💥 **1 000 belgi → 52.4 ta soxta naqsh** |
 | Muntazam yangilash kerak | ✅ CI/CD ga qo'ying |
 
 ---

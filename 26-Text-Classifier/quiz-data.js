@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "Kompaniya murojaatlarni \"to'lov muammosi / yetkazib berish / texnik nosozlik\" deb ajratmoqchi. Nega bu yerda tayyor sentiment modeli (masalan VADER) o'rniga o'z tasniflagichingiz kerak?",
       type: "single",
       options: [
-        "Tayyor modellar ingliz matnini umuman o'qiy olmaydi",
-        "Tayyor model faqat ijobiy/salbiy biladi, bu yerda esa maxsus yorliqlar kerak",
-        "O'z modeli har doim tayyor modeldan aniqroq bo'ladi",
-        "Tayyor modellar nazoratsiz o'qitish bilan ishlaydi"
+        "Tayyor modellar murojaat kabi qisqa matnlarni umuman o'qiy olmaydi",
+        "Tayyor model faqat ijobiy/salbiy qo'yadi, bizga o'z toifalarimiz kerak",
+        "O'z modeli aniqroq, chunki u kompaniyaning o'z matnlarida o'qiydi",
+        "Tayyor modellar nazoratsiz o'qitilgani uchun yorliq qo'ya olmaydi"
       ],
       answer: [1],
       explain: "Darsda eng kuchli sabab sifatida maxsus yorliqlar ko'rsatilgan: tayyor sentiment modeli faqat ijobiy/salbiy qo'yadi, sizga esa o'z toifalaringiz kerak.",
@@ -36,10 +36,10 @@ window.QUIZ = {
       code: "data = data.sample(frac=1, random_state=42)\ndata = data.reset_index(drop=True)",
       type: "single",
       options: [
-        "Ma'lumotning 100% ini tasodifiy tartibda oladi, toki test to'plamiga ikkala sinf tushsin",
+        "Qatorlarni aralashtiradi, toki test to'plamiga ikkala sinf ham tushsin",
         "Ma'lumotning faqat birinchi yarmini tanlab, qolganini test uchun ajratadi",
-        "Takroriy jumlalarni o'chirib, faqat noyob qatorlarni qoldiradi",
-        "Har bir sinfdan bittadan misol olib, ma'lumotni muvozanatlaydi"
+        "Takroriy jumlalarni o'chirib, faqat noyob qatorlarni tartib bilan qoldiradi",
+        "Har bir sinfdan teng miqdorda misol olib, ma'lumotni muvozanatlaydi"
       ],
       answer: [0],
       explain: "frac=1 hammasini, lekin tasodifiy tartibda tanlaydi. Aralashtirmasangiz, oxirgi 30% test faqat negative jumlalardan iborat bo'lib qolishi mumkin.",
@@ -63,10 +63,10 @@ window.QUIZ = {
       q: "Sinov to'plami atigi 6 ta misol. Bu natijalarni baholashda qanday muammo tug'diradi?",
       type: "single",
       options: [
-        "Aniqlikni hisoblab bo'lmaydi, chunki accuracy_score kamida 10 ta misol talab qiladi",
-        "Har bir javob 16.7% ga teng, shuning uchun aniqlik juda qo'pol va tasodifga bog'liq",
-        "Model sinov misollarini o'qitishda ham ko'rgan bo'ladi",
-        "classification_report faqat bitta sinf uchun natija chiqaradi"
+        "accuracy_score kamida 10 ta misol talab qiladi, shuning uchun xato beradi",
+        "Har bir javob 16.7% ga teng, shuning uchun aniqlik qo'pol va tasodifiy",
+        "6 ta misolda model sinov jumlalarini o'qitishda ham ko'rib qoladi",
+        "classification_report kam misolda faqat bitta sinf uchun natija chiqaradi"
       ],
       answer: [1],
       explain: "6 ta misolda har bir to'g'ri javob 1/6 = 16.7%. Aniqlik faqat 0%, 16.7%, 33.3%... kabi qiymatlarni oladi va bitta xato natijani keskin o'zgartiradi.",
@@ -89,10 +89,10 @@ window.QUIZ = {
       q: "Bir xil model va bir xil 20 ta jumla, faqat random_state har xil bo'lgan 20 ta bo'linishda aniqlik 0.17 dan 0.83 gacha o'zgardi. Bundan qanday xulosa chiqadi?",
       type: "single",
       options: [
-        "random_state=6 eng yaxshisi, uni doim ishlatish kerak",
-        "Logistik regressiya bu vazifa uchun noto'g'ri algoritm",
+        "random_state=6 eng yaxshisi, uni keyingi tajribalarda ham ishlatish kerak",
+        "Logistik regressiya bu vazifa uchun noto'g'ri, Naive Bayes kerak",
         "Natija model sifatini emas, tasodifni ko'rsatadi — ma'lumot juda kam",
-        "Modelni ko'proq iteratsiya bilan o'qitish kerak"
+        "Modelni ko'proq iteratsiya bilan o'qitib, barqarorlashtirish kerak"
       ],
       answer: [2],
       explain: "Faqat bo'linish o'zgarganda 66 foizlik farq chiqishi — sof tasodif. O'rtacha 48.3% tanga tashlashdan ham past, ya'ni muammo ma'lumot kamligida.",
@@ -118,8 +118,8 @@ window.QUIZ = {
       options: [
         "0.6666666666666666",
         "0.3333333333333333",
-        "0.5",
-        "0.0"
+        "0.8333333333333334",
+        "0.16666666666666666"
       ],
       answer: [1],
       explain: "Dummy o'rgatuvchida eng ko'p uchragan sinfni — positive ni hamma uchun aytadi. Sinovda faqat 2 ta positive bor, ya'ni 2/6 = 0.333.",
@@ -172,9 +172,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Yo'q, chunki matn vektorlashtirishdan oldin bo'lingan — kod to'g'ri",
-        "Ha, test'da ham fit qilingan; oxirgi qator cv4.transform(t_test) bo'lishi kerak",
+        "Ha, test'da ham fit qilingan; cv4.transform(t_test) bo'lishi kerak",
         "Ha, train_test_split vektorlashtirishdan keyin chaqirilishi kerak",
-        "Yo'q, lekin CountVectorizer(min_df=2) ishlatish shart"
+        "Yo'q, lekin lug'atni kichraytirish uchun min_df=2 ishlatish shart"
       ],
       answer: [1],
       explain: "Yangi (test) ma'lumotda faqat transform ishlatiladi. Test'da qayta fit qilish vektorlashtirgichga test so'zlarini ko'rsatadi va ustunlar train bilan mos kelmay qoladi.",
@@ -184,9 +184,9 @@ window.QUIZ = {
       q: "Sentiment tasniflagichida CountVectorizer(stop_words='english') qo'shilganda SVM aniqligi 0.869 dan 0.784 ga tushdi. Buning sababi nima?",
       type: "single",
       options: [
-        "To'xtatish so'zlari ro'yxatida not, no, never bor — ular sentiment uchun hal qiluvchi",
+        "Ro'yxatda not, no, never ham bor — ular esa sentimentni hal qiladi",
         "stop_words ustunlar sonini oshirib, overfitting'ga olib keladi",
-        "stop_words faqat TfidfVectorizer bilan to'g'ri ishlaydi",
+        "stop_words parametri faqat TfidfVectorizer bilan to'g'ri ishlaydi",
         "Kitob sharhlari ingliz tilida emas, shuning uchun ro'yxat mos kelmadi"
       ],
       answer: [0],

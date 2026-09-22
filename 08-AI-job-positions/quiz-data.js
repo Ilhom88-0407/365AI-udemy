@@ -34,11 +34,11 @@ window.QUIZ = {
       q: "Quyidagilardan qaysilari darsda AI strategistning amaliy vazifalari sifatida sanalgan? (bir nechta javob)",
       type: "multi",
       options: [
-        "Unumdorlik va narxni hisobga olib optimal AI model turini tanlashda yo'l ko'rsatish",
-        "Foundation modelni pre-training uchun ulkan korpusni shaxsan tozalash",
-        "Joylashtirilgan modellarni baholash va optimallashtirish protseduralarini o'rnatish",
+        "Unumdorlik va narxga qarab optimal AI model turini tanlashda yo'l ko'rsatish",
+        "Foundation modelni pre-training qilish uchun ulkan korpusni shaxsan yig'ib tozalash",
+        "Joylashtirilgan modellarni baholash va optimallashtirish tartibini o'rnatish",
         "Kompaniya bo'ylab AI ni qabul qilishni targ'ib qilish (AI evangelizm)",
-        "Neyron tarmoq necha qatlamdan iborat bo'lishini belgilash"
+        "Neyron tarmoq necha qatlam va neyrondan iborat bo'lishini o'zi belgilash"
       ],
       answer: [0, 2, 3],
       explain: "To'rtta amaliy vazifa: model turini tanlashda yo'l ko'rsatish, production'ga joylashtirish va integratsiyani tasavvur qilish, baholash protseduralarini o'rnatish va AI evangelizm. Korpusni tozalash va qatlamlar sonini belgilash AI developer ishi.",
@@ -56,10 +56,10 @@ window.QUIZ = {
       q: "Firma AI strategistni to'liq stavkali xodim emas, konsultant sifatida yolladi. Darsga ko'ra bu yondashuvning xavfi nimada?",
       type: "single",
       options: [
-        "Konsultant biznesni chuqur tushunishga ulgurmasligi va strategiya bir martalik loyihaga aylanishi mumkin",
-        "Konsultant to'liq stavkali xodimdan doim qimmatroq tushadi va budjetni oshiradi",
+        "Konsultant biznesni chuqur bilmasligi va strategiya bir martalik ish bo'lib qolishi mumkin",
+        "Konsultant to'liq stavkali xodimdan doim qimmatroq tushadi va budjetni oshirib yuboradi",
         "Konsultant boshqa kompaniyalar tajribasidan foydalana olmaydi va yangi amaliyot keltirmaydi",
-        "Konsultant C-suite bilan muloqot qilish huquqiga ega bo'lmaydi"
+        "Konsultant C-suite rahbarlari bilan bevosita muloqot qilish huquqiga ega bo'lmaydi"
       ],
       answer: [0],
       explain: "Konsultant arzonroq va sohaning eng yaxshi amaliyotlarini ulasha oladi, lekin biznesni chuqur tushunishga vaqti yetmasligi va AI strategiyasi bir martalik loyihaga aylanishi mumkin.",
@@ -96,9 +96,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Chunki tadqiqot natijalari bevosita mijozlarga sotiladi va daromad keltiradi",
-        "Chunki R&D soha yangiliklaridan xabardor bo'lish va optimal arxitektura tanlashga yordam beradi",
-        "Chunki tadqiqot pre-training bosqichini butunlay keraksiz qilib qo'yadi",
-        "Chunki R&D bilan shug'ullanish AI evangelizmning asosiy qismi hisoblanadi"
+        "Chunki R&D yangiliklardan xabardor bo'lib, optimal arxitektura tanlashga yordam beradi",
+        "Chunki tadqiqot pre-training bosqichini butunlay keraksiz va ortiqcha qilib qo'yadi",
+        "Chunki R&D bilan shug'ullanish AI evangelizm vazifasining asosiy qismi hisoblanadi"
       ],
       answer: [1],
       explain: "R&D developerga soha rivojlanishlaridan xabardor bo'lish, yangi g'oyalarni sinash hamda optimal arxitektura va model design (neyron tarmoq turi, qatlamlar chuqurligi) ga qaror qilish imkonini beradi.",
@@ -121,9 +121,9 @@ window.QUIZ = {
       q: "Darsga ko'ra AI developerga statistika, chiziqli algebra, matematik analiz va ehtimollik bo'yicha a'lo bilim asosan nima uchun kerak?",
       type: "single",
       options: [
-        "AI tadqiqotini hamda deep learning va transformers kabi murakkab mavzularni tushunish uchun",
-        "Docker konteynerlarini sozlash va DevOps jarayonlarini boshqarish uchun",
-        "Biznes manfaatdorlariga loyiha ta'sirini raqamlar bilan tushuntirish uchun",
+        "AI tadqiqotlari, deep learning va transformers kabi murakkab mavzularni tushunish uchun",
+        "Docker konteynerlarini sozlash, CI/CD va DevOps jarayonlarini boshqarish uchun",
+        "Biznes manfaatdorlariga loyiha ta'sirini aniq raqamlar bilan tushuntirib berish uchun",
         "Kompaniyaning moliyaviy hisobotlarini tayyorlash va budjetni rejalashtirish uchun"
       ],
       answer: [0],
@@ -148,10 +148,10 @@ window.QUIZ = {
       q: "Dars AI engineer ning asosiy vazifasini qaysi metafora bilan tasvirlaydi?",
       type: "single",
       options: [
-        "Foundation modelni noldan quradigan me'mor",
+        "Foundation modelni noldan loyihalaydigan me'mor",
         "Kompaniya ichida AI ni targ'ib qiluvchi voiz",
         "Ma'lumotlarni to'plab tozalaydigan omborchi",
-        "Foundation model va mahsulot o'rtasidagi ko'prik quruvchi"
+        "Model bilan mahsulot orasida ko'prik quruvchi"
       ],
       answer: [3],
       explain: "AI engineer OpenAI va Google kabi tashkilotlar yaratgan foundation modellar bilan AI dan foyda ko'radigan mahsulot o'rtasida ko'prik quradi. Targ'ibot (evangelizm) esa strategist vazifasi.",
@@ -161,10 +161,10 @@ window.QUIZ = {
       q: "AI engineer ilovasi embeddings bilan ishlaydi va foydalanuvchilar soni tez o'smoqda. Darsga ko'ra Pinecone kabi vector database unga qanday yordam beradi?",
       type: "single",
       options: [
-        "Foundation modelni kompaniya ma'lumotlarida qayta pre-training qiladi",
-        "Ma'lumotni samarali saqlab, tez topadi, shunda muhandis latency o'rniga UX va javob sifatiga e'tibor beradi",
-        "Turli LLM lar orasidan tanlash va ularni almashtirish imkonini beradi",
-        "Promptlarni avtomatik yozib, prompt engineering zaruratini yo'qotadi"
+        "Foundation modelni kompaniya ma'lumotlarida qayta pre-training qilib, aniqligini oshiradi",
+        "Ma'lumotni samarali saqlab tez topadi, muhandis esa latency o'rniga UX ga e'tibor beradi",
+        "Turli LLM lar orasidan tanlash va ularni kodni o'zgartirmasdan almashtirish imkonini beradi",
+        "Promptlarni avtomatik yozib, prompt engineering zaruratini butunlay yo'qotadi"
       ],
       answer: [1],
       explain: "Vector database embeddings kabi murakkab tuzilmalarni samarali saqlaydi va tez topadi, bu esa latency va masshtablilik tashvishini kamaytiradi. LLM larni almashtirish moslashuvchanligi LangChain ga tegishli.",
@@ -175,9 +175,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Barcha kerakli ko'nikmalarni allaqachon to'liq egallagan mukammal mutaxassisni",
-        "Faqat foundation model qurish tajribasi bor AI developerni",
-        "ML yoki kompyuter fanlari poydevori bor va yetishmayotgan ko'nikmalarni o'rganishga tayyor odamni",
-        "Texnik bilimi bo'lmasa ham kuchli biznes zukkoligiga ega rahbarni"
+        "Faqat foundation modelni noldan qurish tajribasiga ega AI developerni",
+        "ML yoki CS poydevori bor, yetishmagan ko'nikmalarni o'rganishga tayyor odamni",
+        "Texnik bilimi bo'lmasa ham kuchli biznes zukkoligiga ega tajribali rahbarni"
       ],
       answer: [2],
       explain: "Full-stack ma'lumot nodir bo'lgani uchun kompaniyalar ML yoki kompyuter fanlari poydevoriga ega va o'zida yetishmayotgan sohada ko'nikmasini oshirishga vaqt sarflashga tayyor iste'dodli shaxsni qidiradi.",

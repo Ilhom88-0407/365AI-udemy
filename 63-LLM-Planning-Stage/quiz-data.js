@@ -80,7 +80,7 @@ window.QUIZ = {
       q: "Byudjet nazoratida bitta so'rov chegarasi $0.01 qilib qo'yilgan. 60 000 kirish tokenli so'rov bilan kod nimani chiqaradi?",
       code: "NARX = {\"gpt-4o-mini\": (0.150, 0.600)}\n\ndef narx(kir, chiq, model=\"gpt-4o-mini\"):\n    ki, ch = NARX[model]\n    return (kir * ki + chiq * ch) / 1e6\n\nn = narx(60000, 500)\nprint(\"rad\" if n > 0.01 else \"ruxsat\", round(n, 4))",
       type: "single",
-      options: ["rad 0.0093", "ruxsat 0.0093", "rad 0.093", "ruxsat 0.93"],
+      options: ["rad 0.0093", "ruxsat 0.0093", "rad 0.093", "ruxsat 0.093"],
       answer: [1],
       explain: "(60000 × 0.15 + 500 × 0.6) / 1e6 = 0.0093 — chegaradan past, so'rov o'tib ketadi va kunlik byudjetning katta qismini yeydi. Dars: chegarani model narxiga qarab qo'ying; gpt-4o-mini uchun $0.01 deyarli cheksiz.",
       lesson: { title: "Narx: hosting vs token bo'yicha to'lov", href: "04-Pricing.md" }
@@ -147,8 +147,8 @@ window.QUIZ = {
       options: [
         "4 ta — tsikl bir marta aylanadi, qaror esa har bir yo'lni yana ikkiga bo'ladi",
         "2 ta — har bir tugunga faqat bir marta kiriladi, tsikl umuman aylanmaydi",
-        "6 ta — har bir daraja 2 tadan yo'l qo'shadi",
-        "Cheksiz — tsikl bo'lgani uchun yo'llarni sanab bo'lmaydi"
+        "6 ta — har bir daraja (qaror va tsikl) yo'llar soniga 2 tadan qo'shadi",
+        "Cheksiz — tsikl bo'lgani uchun yo'llarni max_tsikl bilan ham sanab bo'lmaydi"
       ],
       answer: [1],
       explain: "max_tsikl=1 \"har bir tugunga bir marta kirish\" degani, shuning uchun faqat qarorning ikki shoxi qoladi — 2 yo'l. Tsikl bir marta aylanishi uchun max_tsikl=2 kerak (4 yo'l = 4 ta test).",

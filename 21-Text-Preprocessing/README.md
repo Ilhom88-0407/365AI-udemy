@@ -127,7 +127,7 @@ tokens = [WordNetLemmatizer().lemmatize(t) for t in tokens]
 |---|---|---|---|
 | 1 | **`not` ni o'chirish** | `"not clean"` → `"clean"` — **ma'no teskari!** | `en_stopwords.remove("not")` |
 | 2 | **Yulduzchani o'chirish** | `4*` → `4` — reyting **yo'qoladi** | `re.sub(r"\*","star",m)` |
-| 3 | **`don't` → `nt`** | Ma'nosiz token, **81 marta!** | `"nt"` ni to'xtatish so'zlariga qo'shing |
+| 3 | **`n't` → `nt`** | Ma'nosiz token, **81 marta!** | `"nt"` ni to'xtatish so'zlariga qo'shing |
 | 4 | **Stemming yolg'on birlashtiradi** | `universe` va `university` → `univers` | Kerak bo'lsa lemmatization |
 | 5 | **Ma'lumotga qaramaslik** | Tozalash **noto'g'ri** bo'ladi | **Har qadamda yangi ustun** yarating |
 

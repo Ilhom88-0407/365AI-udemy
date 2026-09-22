@@ -111,8 +111,8 @@ window.QUIZ = {
       options: [
         "LSTM tartibni hisobga olmaydi, Transformer esa faqat so'zlar chastotasiga tayanadi",
         "LSTM faqat bitta oldingi so'zga qaraydi, Transformer esa butun korpusni yodlaydi",
-        "LSTM gate'lari axborotni tashlamaydi, Transformer esa hamma narsani unutadi",
-        "LSTM qimmat va sekin o'qitiladi, attention esa kalit so'zlarga e'tibor berib masshtablanadi"
+        "LSTM gate'lari axborotni hech tashlamaydi, Transformer esa uzoq kontekstni unutadi",
+        "LSTM qimmat va sekin o'qitiladi, attention esa muhim so'zlarga tayanib masshtablanadi"
       ],
       answer: [3],
       explain: "LSTM ning kamchiligi — yuqori hisoblash narxi va sekin o'qitish, ya'ni masshtablanmaydi. Attention har bir tokenga ball berib, muhim so'zlarga kuchliroq e'tibor qaratadi: bu narxni pasaytiradi va uzoq masofali bog'liqliklarni boshqaradi.",
@@ -122,11 +122,11 @@ window.QUIZ = {
       q: "Quyidagi ishlardan qaysilari LLM qurishning dataset engineering bosqichiga tegishli? (bir nechta javob)",
       type: "multi",
       options: [
-        "Neyron tarmoqdagi qatlamlar soni va umumiy parametrlarni belgilash",
-        "Internetdan ochiq ma'lumotni scraping qilib, uni tozalash va strukturalash",
-        "Modelning weights larini tezlik va sifat uchun yangilash",
-        "Oxirgi foydalanuvchi nigohidan modelning etik xulqini sinash",
-        "Ma'lumot xilma-xilligi va turli bias'larni hisobga olgan datasetlar qurish"
+        "Neyron tarmoqdagi qatlamlar soni va umumiy parametrlar hajmini belgilash",
+        "Internetdan ochiq ma'lumotni scraping qilib, tozalash va strukturalash",
+        "Modelning weights larini tezlik va sifat uchun qayta yangilab chiqish",
+        "Oxirgi foydalanuvchi nigohidan modelning etik xulqini sinab ko'rish",
+        "Xilma-xillik va turli bias'larni hisobga olgan datasetlar qurish"
       ],
       answer: [1, 4],
       explain: "Dataset engineering — ma'lumotni to'plash, tozalash va strukturalash, shuningdek xilma-xillik va bias kabi etik masalalar. Qatlamlar soni model design'ga, weights ni yangilash fine-tuning'ga, etik xulqni sinash final testing'ga tegishli.",
@@ -136,10 +136,10 @@ window.QUIZ = {
       q: "Internet forumlarida pre-train qilingan model dastlabki baholashda haqoratli til ishlatayotgani aniqlandi. Darsga ko'ra bu keyin qaysi bosqichda va qanday tuzatiladi?",
       type: "single",
       options: [
-        "Model design'da — arxitekturani Transformer'dan CNN ga almashtirish orqali",
+        "Model design'da — arxitekturani Transformer'dan CNN ga almashtirib, qayta qurish orqali",
         "Pre-training'da — xuddi shu forum ma'lumotida ikki barobar uzoqroq o'qitish orqali",
         "Final testing'da — testni o'tkazib yuborib, modelni darhol foydalanuvchilarga berish orqali",
-        "Post-training'da — sifatli ma'lumot bilan supervised fine-tuning va inson fikr-mulohazasi orqali"
+        "Post-training'da — sifatli ma'lumotda supervised fine-tuning va inson fikri orqali"
       ],
       answer: [3],
       explain: "Preliminary evaluation nimani yaxshilash kerakligini ko'rsatadi, bu masalalar esa post-training'da hal qilinadi: yuqori sifatli ma'lumot bilan supervised fine-tuning va annotatsiya kabi inson fikr-mulohazasi.",
@@ -162,10 +162,10 @@ window.QUIZ = {
       q: "365 jamoasi GPT asosidagi intervyu simulyatorida nega fine-tuning ishlatmadi? (bir nechta javob)",
       type: "multi",
       options: [
-        "Fine-tuning modelning weights lariga umuman ta'sir qilmaydi",
-        "O'sha paytda OpenAI fine-tuning'i hamma uchun ochiq bo'lmagan eksperimental dastur edi",
-        "RAG va fine-tuning'ni bitta loyihada birga ishlatib bo'lmaydi",
-        "Ularga yaxshi umumlashtiradigan va o'zgaruvchan sharoitga moslashadigan bot kerak edi",
+        "Fine-tuning modelning weights lariga umuman ta'sir qilmaydi, natija o'zgarmaydi",
+        "O'sha paytda OpenAI fine-tuning'i ochiq bo'lmagan eksperimental dastur edi",
+        "RAG va fine-tuning'ni bitta loyihada birga ishlatib bo'lmaydi, ular to'qnashadi",
+        "Ularga yaxshi umumlashtiradigan, sharoitga moslashadigan bot kerak edi",
         "Prompt engineering fine-tuning'dan qimmatroq va sekinroq bo'lib chiqdi"
       ],
       answer: [1, 3],

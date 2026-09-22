@@ -36,9 +36,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Platforma 365 serverlarining ichki kodini to'liq ko'ra va o'zgartira oladi",
-        "Ma'lumot bir marta yuboriladi va keyin hech qachon yangilanmaydi",
-        "Platforma so'rov yuboradi va eng so'nggi ma'lumotni to'g'ridan-to'g'ri 365 serverlaridan oladi",
-        "API ishlashi uchun klient ham, server ham bitta kompyuterda turishi kerak"
+        "Ma'lumot bir marta to'liq yuboriladi, keyin esa qayta so'rash shart bo'lmaydi",
+        "Platforma so'rov yuboradi va eng so'nggi ma'lumotni bevosita 365 serveridan oladi",
+        "API to'g'ri ishlashi uchun klient ham, server ham bitta kompyuterda turishi shart"
       ],
       answer: [2],
       explain: "API klient va server o'rtasidagi ko'prik: klient request yuboradi, server response qaytaradi. Shuning uchun ma'lumot doim yangi; klient esa server ichida nima borligini bilmaydi, faqat so'rov va javob formatini biladi.",
@@ -63,8 +63,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Oldingi suhbatlarni satr va ustunli jadvalga yozib, ularni SQL bilan tartiblaydi",
-        "O'tmish muloqotlarni vektor sifatida saqlaydi, model kontekst uchun ularga murojaat qiladi",
-        "Modelning weights larini har bir suhbatdan keyin avtomatik qayta o'qitadi",
+        "O'tmish suhbatlarni vektor ko'rinishida saqlaydi, model kontekst uchun ularni topadi",
+        "Modelning weights larini har bir suhbatdan keyin avtomatik ravishda qayta o'qitadi",
         "Har bir yangi savolda barcha eski suhbatlarni to'liq promptga qo'shib yuboradi"
       ],
       answer: [1],
@@ -136,10 +136,10 @@ window.QUIZ = {
       q: "Kichik startapda LLM ni noldan o'qitishga mablag' yo'q. Hugging Face ular uchun muammoni qanday hal qiladi?",
       type: "single",
       options: [
-        "Bepul pre-trained modellar va ularga Transformers kutubxonasi orqali oson kirish beradi",
-        "Startaplarga LLM ni noldan o'qitish uchun bepul GPU grantlari ajratadi",
-        "OpenAI ning yopiq modellarini arzonroq narxda qayta sotadi",
-        "Faqat model baholash xizmatini ko'rsatadi, modellarni esa ulashmaydi"
+        "Transformers orqali bepul pre-trained modellardan oson foydalanish imkonini beradi",
+        "Startaplarga LLM ni noldan o'qitish uchun bepul GPU va bulut grantlari ajratadi",
+        "OpenAI ning yopiq modellarini litsenziya asosida arzonroq narxda qayta sotadi",
+        "Faqat modellarni baholash xizmatini ko'rsatadi, modellarning o'zini esa ulashmaydi"
       ],
       answer: [0],
       explain: "Hugging Face jarayonni demokratlashtiradi: platformadagi pre-trained modellar bepul, Transformers kutubxonasi esa ularga API orqali oson kirish va ML pipeline lar yaratish imkonini beradi. Platformada modellarni ulashish, fine-tune, hosting va baholash ham mumkin.",
@@ -149,8 +149,8 @@ window.QUIZ = {
       q: "Ilovangiz GPT bilan qurilgan, endi arzonroq va tezroq boshqa modelga o'tmoqchisiz. LangChain bu vaziyatda nima uchun qulay?",
       type: "single",
       options: [
-        "U modelni avtomatik fine-tune qilib, weights larini yangilaydi",
-        "Modular komponentlari tufayli modelni Lego bloki kabi kodni qayta yozmasdan almashtirish mumkin",
+        "U yangi modelni avtomatik fine-tune qilib, uning weights larini ilovaga moslab yangilaydi",
+        "Modullari tufayli modelni kodni qayta yozmasdan, Lego bloki kabi almashtirish mumkin",
         "U faqat bitta foundation model bilan ishlaydi, shuning uchun tanlov muammosi bo'lmaydi",
         "U API chaqiruvlarini butunlay olib tashlab, modelni lokal kompyuterda o'qitadi"
       ],
@@ -162,10 +162,10 @@ window.QUIZ = {
       q: "Darsga ko'ra LangChain ishlatishning asosiy \"narxi\" (kamchiligi) nima?",
       type: "single",
       options: [
-        "U faqat JavaScript'da mavjud, Python'da ishlamaydi",
-        "U ilovaga uzoq muddatli xotira qo'shishni imkonsiz qiladi",
-        "Integratsiyalarni qo'lda yozishga qaraganda kamroq moslashtirish imkonini beradi",
-        "U kod hajmini oshirib, ishlab chiqish vaqtini uzaytiradi"
+        "U faqat JavaScript'da mavjud, Python loyihalarida esa ishlamaydi",
+        "U ilovaga uzoq muddatli xotira qo'shishni amalda imkonsiz qiladi",
+        "Qo'lda yozilgan integratsiyaga nisbatan moslashuvchanligi kamroq",
+        "U kod hajmini oshirib, prototip ishlab chiqish vaqtini uzaytiradi"
       ],
       answer: [2],
       explain: "Klassik trade-off: framework LLM ni tez va qulay integratsiya qilish yo'lini beradi, lekin qo'lda yozishga nisbatan moslashtirish erkinligini cheklaydi. Kod hajmi aksincha kamayadi, uzoq muddatli xotira esa uning tez-tez uchraydigan qo'llanishi.",

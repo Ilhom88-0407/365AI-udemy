@@ -72,8 +72,8 @@ window.QUIZ = {
       q: "len(Participants) va Participants.append(\"Dwayne\") yozuvlarida funksiya va metodni sintaksis bo'yicha qanday farqlaysiz?",
       type: "single",
       options: [
-        "Funksiya obyektni qavs ichida argument sifatida oladi, metod esa obyektga nuqta operatori orqali qo'llanadi",
-        "Metod obyektni qavs ichida argument sifatida oladi, funksiya esa obyektga nuqta operatori orqali qo'llanadi",
+        "Funksiya obyektni qavs ichida oladi, metod esa nuqta orqali qo'llanadi",
+        "Metod obyektni qavs ichida oladi, funksiya esa nuqta orqali qo'llanadi",
         "Farq yo'q: ikkalasi ham faqat ro'yxatlar bilan ishlaydi va bir xil yoziladi",
         "Funksiya faqat satrlarga, metod esa faqat ro'yxatlarga qo'llanadi"
       ],
@@ -127,7 +127,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "list — chunki qiymatlar vergul bilan ajratilgan",
-        "tuple — chunki u Python'dagi standart ketma-ketlik turi",
+        "tuple — Python'ning standart ketma-ketlik turi",
         "Hech qaysi: qavssiz yozuv SyntaxError beradi",
         "str — chunki qiymatlar bitta satrga birlashadi"
       ],
@@ -154,13 +154,13 @@ window.QUIZ = {
       type: "multi",
       options: [
         "x.append(43)",
-        "x[0:2]",
+        "y = x[0:2]",
         "x[0] = 99",
-        "len(x)",
+        "x.count(40)",
         "del x[0]"
       ],
       answer: [0, 2, 4],
-      explain: "Tuple o'zgarmas: element qo'shib, almashtirib yoki o'chirib bo'lmaydi. Indekslash, kesish (x[0:2] → (40, 41)) va len() esa ishlaydi.",
+      explain: "Tuple o'zgarmas: element qo'shib, almashtirib yoki o'chirib bo'lmaydi. Indekslash, kesish (y = x[0:2] → (40, 41)), count() va len() esa ishlaydi.",
       lesson: { title: "Tuple lar", href: "04-Tuples.md" }
     },
     {
@@ -184,7 +184,7 @@ window.QUIZ = {
         "3 squirrel",
         "4 squirrel",
         "3 dog",
-        "4 dog"
+        "KeyError: 'k3'"
       ],
       answer: [0],
       explain: "Bitta sintaksis ikki ma'noda ishlaydi: kalit bor bo'lsa ('k2') qiymat almashtiriladi, yo'q bo'lsa ('k3') yangi juftlik qo'shiladi. Natijada 3 juftlik va 'k2' ning qiymati squirrel.",

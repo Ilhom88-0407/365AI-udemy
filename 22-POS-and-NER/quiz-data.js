@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "Jumlada \"the\" so'zi va \"Larry Page\" ismi bor. POS teglash va NER ularni qanday qayta ishlaydi?",
       type: "single",
       options: [
-        "POS \"the\" ni e'tiborsiz qoldiradi; NER \"Larry\" va \"Page\" ni ikkita PERSON qiladi",
-        "POS \"the\" ni DET, \"Larry\" va \"Page\" ni ikkita PROPN deb teglaydi; NER \"the\" ni o'tkazib, \"Larry Page\" ni bitta PERSON qiladi",
-        "Ikkalasi ham har bir tokenni teglaydi, faqat yorliq nomlari farq qiladi",
-        "NER \"the\" ni DET deb teglaydi; POS esa \"Larry Page\" ni bitta PERSON qiladi"
+        "POS \"the\" ni e'tiborsiz qoldiradi; NER \"Larry\" va \"Page\" ni ikkita alohida PERSON ob'ekti qiladi",
+        "POS \"the\" ni DET, ikki ismni PROPN deb teglaydi; NER faqat \"Larry Page\" ni bitta PERSON qiladi",
+        "Ikkalasi ham har bir tokenni, jumladan \"the\" ni ham teglaydi, faqat yorliq nomlari farq qiladi",
+        "NER \"the\" ni DET deb teglaydi; POS esa \"Larry Page\" ni ikki so'zli bitta PERSON qiladi"
       ],
       answer: [1],
       explain: "POS teglash har bir tokenga nutq qismini qo'yadi. NER esa matndan faqat nomlangan ob'ektlarni tortib oladi va bir necha so'zni bitta ob'ektga birlashtiradi.",
@@ -23,8 +23,8 @@ window.QUIZ = {
       options: [
         "Rezyumedan nomzodning ismi va ishlagan kompaniyasini ajratib olish",
         "Chatbotda \"Toshkentga chipta\" so'rovidan shahar nomini topish",
-        "Grammatik tekshirgichda fe'l va ot mosligini tekshirish",
-        "Matndagi faqat otlarni ajratib, mavzuni aniqlash"
+        "Grammatik tekshirgichda gapdagi fe'l va ot mosligini tekshirish",
+        "Matndagi faqat otlarni ajratib, uning asosiy mavzusini aniqlash"
       ],
       answer: [0, 1],
       explain: "Ism, kompaniya (PERSON, ORG) va shahar (GPE) — nomlangan ob'ektlar, ya'ni NER vazifasi. Fe'l–ot mosligi va otlarni ajratish esa POS teglash ishi.",
@@ -67,7 +67,7 @@ window.QUIZ = {
       options: [
         "Matnni qayta yuklab, to'xtatish so'zlarini o'chirib, qaytadan teglash",
         "Kattaroq en_core_web_lg modeliga o'tib, xuddi shu ro'yxatni olish",
-        "pos_df_counts[pos_df_counts.pos_tag == \"NOUN\"][:10] bilan teg bo'yicha filtrlash",
+        "pos_df_counts[pos_df_counts.pos_tag == \"NOUN\"][:10] bilan filtrlash",
         "pos_df_counts.sort_values(by=\"counts\") bilan o'sish tartibida saralash"
       ],
       answer: [2],
@@ -78,8 +78,8 @@ window.QUIZ = {
       q: "Kichik harfdagi \"Emma\" matnida \"emma\" 3 marta uchradi, lekin spaCy uni faqat 1 marta PROPN deb tegladi. Buning sababi nima?",
       type: "single",
       options: [
-        "Bosh harf — atoqli otning eng kuchli belgisi yo'qolgan, spaCy faqat kontekstga tayanadi",
-        "en_core_web_sm modeli ayol ismlarini umuman tanimaydi",
+        "Bosh harf yo'qolgan, spaCy faqat kontekstga tayanishga majbur",
+        "en_core_web_sm modeli ayol ismlarini umuman PROPN deb tanimaydi",
         "Matndan to'xtatish so'zlari olib tashlangani uchun grammatika buzilgan",
         "spaCy har bir so'zni faqat birinchi uchraganida to'g'ri teglaydi"
       ],
@@ -144,10 +144,10 @@ window.QUIZ = {
       q: "BBC amaliyotida nega sarlavhalardan ikki xil token ro'yxati — tokens_raw va tokens_clean_lemmatized — yaratildi?",
       type: "single",
       options: [
-        "Xom tokenlar NER uchun kerak (bosh harf, tinish belgi saqlanadi), tozasi esa ML va solishtirish uchun",
+        "Xomi NER uchun (bosh harf, tinish saqlanadi), tozasi esa ML uchun",
         "Xom tokenlar lemmatizatsiya uchun, tozasi esa faqat displacy vizuali uchun",
         "spaCy bir vaqtda faqat 1000 tadan kam tokenni qayta ishlay olgani uchun",
-        "Ikkalasi bir xil, faqat biri zaxira nusxa sifatida saqlanadi"
+        "Ikkalasi bir xil, faqat biri xatolikdan zaxira nusxa sifatida saqlanadi"
       ],
       answer: [0],
       explain: "NER bosh harf va tinish belgiga tayanadi, shuning uchun xom tokenlar saqlanadi. Tozalangan, lemmatizatsiya qilingan tokenlar esa mashinali o'qitish uchun yaxshi va ikkalasini solishtirish mumkin.",
@@ -166,10 +166,10 @@ window.QUIZ = {
       q: "token.ent_type_ o'rniga doc.ents ishlatilganda BBC natijalaridagi qaysi muammolar hal bo'ldi? (bir nechta javob)",
       type: "multi",
       options: [
-        "\"World\", \"Cup\", \"2022\" bitta \"World Cup 2022\" ob'ektiga birlashdi",
+        "\"World\", \"Cup\", \"2022\" bitta \"World Cup 2022\" ga birlashdi",
         "\"'s\" va \"-\" belgilar endi PERSON deb chiqmaydi",
-        "\"Covid\" endi PERSON deb teglanmaydi",
-        "\"Liz Truss\", \"Boris Johnson\" kabi to'liq ismlar bitta ob'ekt bo'lib chiqdi"
+        "\"Covid\" va \"Quiz\" endi xato bilan PERSON deb teglanmaydi",
+        "\"Liz Truss\", \"Boris Johnson\" kabi ismlar bitta ob'ekt bo'ldi"
       ],
       answer: [0, 1, 3],
       explain: "doc.ents ob'ekt darajasida ishlaydi: ko'p so'zli nomlarni birlashtiradi va bo'lak tokenlarni chiqarmaydi. Lekin Covid va Quiz baribir PERSON bo'lib qoldi — bu spaCy xatosi, uni qo'lda filtrlash kerak.",

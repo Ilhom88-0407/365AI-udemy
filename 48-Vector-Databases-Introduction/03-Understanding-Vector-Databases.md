@@ -269,9 +269,9 @@ qidiruv   : 1–2 ms
 
 **M1.** ## **ID** · **vektor** · **metadata** *(+ indeks)*.
 
-**M2.** ## Har so'rovda **hamma vektor bilan taqqoslamaslik** uchun — ~1000× tezlik.
+**M2.** ## Har so'rovda **hamma vektor bilan taqqoslamaslik** uchun. Bizning 50 000 vektorli sinovimizda — atigi **~2× tez** *(2.05 → 1.30 ms)*; katta farq faqat **millionlab** vektorda sezilarli bo'ladi.
 
-**M3.** ## ❌ **Taxminiy** *(ANN)* — ~98% aniq, lekin **1000× tez**.
+**M3.** ## ❌ **Taxminiy** *(ANN)*. Bizning o'lchovimizda *(tasodifiy vektorlar)* — top-10 mos **3/10**, tezlik **~2×**. 💡 Umumiy holda: katta, haqiqiy *(klasterlangan)* ma'lumotda va sozlangan parametrlarda HNSW odatda **yuqori aniqlikka** *(recall)* erishadi — lekin bu bizning o'lchovimiz emas.
 
 </details>
 
@@ -428,8 +428,8 @@ Vektor DB = ID + VEKTOR + METADATA + ⭐ INDEKS
 ⚡ 680 vektor:  indekslash 0.2s · embedding 6.0s · qidiruv 1–2 ms
    → INDEKSLASH TEZ, EMBEDDING SEKIN
 
-⚠️ HNSW — TAXMINIY (~98% aniq, 1000× tez)
-🏆 < 1000 yozuv → shunchaki numpy: E @ q
+⚠️ HNSW — TAXMINIY (bizda 50k tasodifiy vektor: 3/10 aniq, ~2× tez)
+🏆 < 100 000 vektor → shunchaki numpy: E @ q
 🇺🇿 maxfiylik kerak → MAHALLIY Chroma/FAISS/Qdrant
 ```
 

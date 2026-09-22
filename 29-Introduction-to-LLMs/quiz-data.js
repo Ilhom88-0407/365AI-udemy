@@ -101,9 +101,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Ko'p tilli model juda katta bo'lgani uchun o'zbekchada overfitting bo'ldi",
-        "sklearn modeli har doim transformerlardan aniqroq ishlaydi",
-        "Ko'p tilli model sentimentni faqat 6 tilda o'rgangan, o'zbek ular orasida yo'q",
-        "Sinovda cross-validation ishlatilmagani uchun natija buzildi"
+        "sklearn modeli kichik ma'lumotda har doim transformerlardan aniqroq",
+        "Model sentimentni faqat 6 tilda o'rgangan, o'zbek ular orasida yo'q",
+        "Sinovda cross-validation ishlatilmagani uchun natija tasodifan buzildi"
       ],
       answer: [2],
       explain: "mBERT asosi 104 tilni biladi, lekin nlptown modeli atigi 6 tilda sozlangan. Model o'zbek so'zlarini ko'radi, lekin ularning sentimentini hech qachon o'rganmagan.",
@@ -113,10 +113,10 @@ window.QUIZ = {
       q: "Nima uchun nlptown/bert-base-multilingual modeli ingliz distilbert modelidan kattaroq?",
       type: "single",
       options: [
-        "Unda qatlamlar soni ikki baravar ko'p bo'lgani uchun",
-        "U ko'proq sentiment misollarida o'qitilgani uchun",
+        "Unda transformer qatlamlari soni ikki baravar ko'p bo'lgani uchun",
+        "U ko'proq sentiment misollarida va uzoqroq vaqt o'qitilgani uchun",
         "U 5 yulduzli baho chiqargani uchun qo'shimcha qatlam talab qiladi",
-        "104 tilning lug'ati sig'ishi uchun embedding qatlami kattalashgani uchun"
+        "104 tilning lug'ati sig'ishi uchun embedding qatlami kattaroq"
       ],
       answer: [3],
       explain: "Qo'shimcha parametrlar aql uchun emas, lug'at uchun ketgan: ko'p tilli lug'at ~105 000 token, bu esa embedding qatlamini kattalashtiradi.",
@@ -138,10 +138,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Tezlik — 1M sharhni tasniflash ancha sekin",
-        "Bir nechta turli vazifani bajara olish",
+        "Bir nechta turli vazifani bitta model bilan bajarish",
         "Qarorni tushuntirish — coef_ kabi vosita yo'q",
-        "Xotira va narx — 250 MB dan 100 GB gacha joy, qimmatroq",
-        "Yorliqli ma'lumotsiz ishlay olish"
+        "Xotira va narx — 250 MB–100 GB joy, qimmatroq",
+        "Yorliqli ma'lumotsiz (zero-shot) ishlay olish"
       ],
       answer: [0, 2, 3],
       explain: "Umumiy model sekin, qimmat, ko'p xotira oladi va tushuntirish qiyin. Ko'p vazifa va yorliqsiz ishlash esa aynan uning afzalliklari.",
@@ -177,10 +177,10 @@ window.QUIZ = {
       q: "Kino sharhlarida sozlangan distilbert ingliz kitob sharhlarida 0.976, o'zbekcha sharhlarda esa ancha past natija berdi. Yangi loyihada darsdagi amaliy qoida qaysi?",
       type: "single",
       options: [
-        "Har doim darhol fine-tuning qilish, chunki zero-shot ishonchsiz",
-        "Ingliz tilida avval zero-shot'ni sinash, boshqa tilda avval o'lchab keyin ishonish",
-        "Til qanday bo'lishidan qat'i nazar eng katta modelni tanlash",
-        "Zero-shot natijasi yuqori bo'lsa ham sklearn modelini qurish shart"
+        "Darhol fine-tuning qilish, chunki zero-shot natijasi doim ishonchsiz",
+        "Inglizchada avval zero-shot'ni sinash, boshqa tilda o'lchab keyin ishonish",
+        "Til qanday bo'lishidan qat'i nazar eng katta ko'p tilli modelni tanlash",
+        "Zero-shot natijasi yuqori bo'lsa ham baribir sklearn modelini qurish shart"
       ],
       answer: [1],
       explain: "Bir xil model, bir xil vazifa, teskari natija — yagona farq til. Ingliz tilida zero-shot'ni 10 daqiqada sinab ko'rish haftalab ish tejashi mumkin, boshqa tilda esa avval o'lchash kerak.",

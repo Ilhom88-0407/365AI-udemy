@@ -308,9 +308,9 @@ for db in [15, 20, 25, 30, 40, 60]:
 <details>
 <summary>✅ Javoblar</summary>
 
-**M1.** ## U RMS ni **1.0** ga *(0 dBFS)* keltiradi → ## 💥 o'lchandi: **84 163 ta clipping**.
+**M1.** ## U RMS ni **1.0** ga *(0 dBFS)* keltiradi → ## 💥 o'lchandi: **97 958 ta clipping** *(26%)*.
 
-**M2.** ## Aliasing + noto'g'ri sample rate. ## O'lchandi: uzunlik **518 436** *(kerakli 376 190 o'rniga)*, ## xato **0.118** — to'g'ri usuldan **66×** katta.
+**M2.** ## Aliasing + noto'g'ri sample rate. ## O'lchandi: uzunlik **518 436** *(kerakli 376 190 o'rniga)*, ## xato **0.131524** — qolgan usullardan **17×** katta.
 
 **M3.** ## **Vaqt siljishi** — ASR pozitsiyaga **bog'liq emas**. ## 💥 Teskari o'girish esa **zararli**.
 

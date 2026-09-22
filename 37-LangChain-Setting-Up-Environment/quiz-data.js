@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "Nega bu kurs uchun alohida virtual muhit ayniqsa muhim?",
       type: "single",
       options: [
-        "Chunki Jupyter faqat alohida muhitda ishga tushadi",
-        "Chunki OpenAI API kaliti faqat alohida muhitda saqlanadi",
-        "Chunki alohida muhit kodni tezroq ishlatadi",
-        "Chunki kurs kodi langchain 0.1/0.2 ni, yangi loyiha 1.3 ni kutadi — ikkalasi bir muhitga sig'maydi"
+        "Chunki Jupyter kernel faqat alohida conda muhitida ishga tushadi",
+        "Chunki OpenAI API kaliti faqat alohida muhit ichida saqlanadi",
+        "Chunki alohida muhitda kod tezroq ishlaydi va xotira kam ketadi",
+        "Chunki kurs langchain 0.1/0.2 ni, yangi loyiha esa 1.3 ni kutadi"
       ],
       answer: [3],
       explain: "Muhit paket versiyalarini izolyatsiya qiladi. Kurs kodi va yangi loyiha langchain ning turli versiyalarini talab qiladi, ularni bitta muhitda saqlab bo'lmaydi.",
@@ -23,9 +23,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Chunki u paketni aynan joriy kernel ishlatayotgan Python'ga o'rnatadi",
-        "Chunki u paketni barcha muhitlarga bir vaqtda o'rnatadi",
-        "Chunki u kernelni avtomatik langchain_env ga almashtiradi",
-        "Chunki ! belgisi pip ni conda bilan almashtiradi"
+        "Chunki u paketni kompyuterdagi barcha muhitlarga bir vaqtda o'rnatadi",
+        "Chunki u kernelni avtomatik ravishda langchain_env ga almashtiradi",
+        "Chunki ! belgisi pip ni conda install bilan almashtirib yuboradi"
       ],
       answer: [0],
       explain: "Eng ko'p uchraydigan xato — noto'g'ri kernel: paket bir muhitga o'rnatilgan, notebook esa boshqa Python'da ishlaydi. {sys.executable} aynan joriy kernel Python'ini ko'rsatadi.",
@@ -37,8 +37,8 @@ window.QUIZ = {
       options: [
         "Har safar eng yangi versiyani o'rnatish uchun pip install -U langchain",
         "Versiyalarni requirements.txt da qotirish, masalan langchain==1.3.17",
-        "Python ni eng so'nggi versiyaga (3.14) yangilash",
-        "conda o'rniga faqat global Python'dan foydalanish"
+        "Python ni eng so'nggi 3.14 versiyaga yangilab, hammasini qayta o'rnatish",
+        "conda o'rniga faqat global Python'dan foydalanib, muhitni soddalashtirish"
       ],
       answer: [1],
       explain: "Kurs versiyani ko'rsatmaydi, shuning uchun turli vaqtda o'rnatganlar turli versiya oladi. requirements.txt da versiyani qotirish takrorlanuvchanlikni ta'minlaydi; Python 3.14 kabi eng yangi versiyada esa ko'p paket ishlamaydi.",
@@ -86,10 +86,10 @@ window.QUIZ = {
       q: "Kalit sizib chiqishining eng ko'p uchraydigan sababi va unga qarshi eng muhim himoya qaysi?",
       type: "single",
       options: [
-        "Skrinshot — himoya: ekranni ulashmaslik",
-        "GitHub'ga yuklash — himoya: .env faylini .gitignore ga qo'shish",
+        "Skrinshot — himoya: ekran ulashishda kalitni yashirish",
+        "GitHub'ga yuklash — himoya: .env ni .gitignore ga qo'shish",
         "Log fayllar — himoya: jurnal yozishni butunlay o'chirish",
-        "Chatga nusxalash — himoya: kalitni kod ichida saqlash"
+        "Chatga nusxalash — himoya: kalitni to'g'ridan-to'g'ri kodda saqlash"
       ],
       answer: [1],
       explain: "Eng ko'p uchraydigani — GitHub'ga yuklash: botlar GitHub'ni doimiy skanerlaydi. Eng muhim himoya — .gitignore ga .env ni qo'shish; kurs buni umuman eslatmaydi.",
@@ -141,9 +141,9 @@ window.QUIZ = {
       q: "Kursdagi %load_ext dotenv va %dotenv buyruqlarini oddiy skript.py fayliga ko'chirdingiz. Nima bo'ladi va nima qilish kerak?",
       type: "single",
       options: [
-        "Xato beradi — bu IPython sehrli buyruqlari; .py da from dotenv import load_dotenv; load_dotenv() ishlatiladi",
-        "Ishlaydi, lekin sekinroq — .py da ham shu buyruqlar yetarli",
-        "Xato beradi — .py faylda .env umuman o'qib bo'lmaydi, kalitni kodda yozish kerak",
+        "Xato beradi — bu IPython buyruqlari; .py da load_dotenv() ishlatiladi",
+        "Ishlaydi, lekin sekinroq — .py da ham shu ikki buyruq yetarli bo'ladi",
+        "Xato beradi — .py da .env o'qilmaydi, kalitni kodda yozish kerak",
         "Ishlaydi — Python % bilan boshlangan satrlarni izoh deb o'tkazib yuboradi"
       ],
       answer: [0],
@@ -165,9 +165,9 @@ window.QUIZ = {
       q: "Windows'da Notepad bilan .env yaratdingiz, lekin load_dotenv() kalitni topmayapti. Eng ehtimolli sabab va dars tavsiya qilgan eng ishonchli yo'l qaysi?",
       type: "single",
       options: [
-        "Windows .env fayllarni yashiradi — faylni ko'rinadigan qilish kifoya",
+        "Windows .env fayllarni yashiradi — Explorer'da faylni ko'rinadigan qilish kifoya",
         "Fayl ANSI kodlashda saqlangan — faqat PYTHONIOENCODING ni o'rnatish kerak",
-        "Notepad .txt qo'shib yuborgan (.env.txt) — faylni Python'da Path(\".env\").write_text(...) bilan yarating",
+        "Fayl .env.txt bo'lib qolgan — uni Python'da Path(\".env\").write_text() bilan yarating",
         "load_dotenv() faqat Linux'da ishlaydi — Windows'da os.environ ishlatish kerak"
       ],
       answer: [2],
@@ -192,10 +192,10 @@ window.QUIZ = {
       q: "Nosozlik tuzatishda .env faylida qaysi o'zgaruvchi nomlari borligini xavfsiz ko'rmoqchisiz. Qaysi usul darsga mos?",
       type: "single",
       options: [
-        "print(os.environ) — hamma qiymatlarni bir yo'la ko'rish",
-        "print(os.environ.items()) — kurs taklif qilgan usul",
+        "print(os.environ) — hamma o'zgaruvchilarni bir yo'la ko'rish",
+        "print(os.environ.items()) — kurs taklif qilgan qulay usul",
         "load_dotenv(override=True) va keyin print(os.environ)",
-        "print(list(dotenv_values(\".env\").keys())) — muhitni o'zgartirmay, faqat nomlar"
+        "print(list(dotenv_values(\".env\").keys())) — faqat nomlar"
       ],
       answer: [3],
       explain: "dotenv_values() faylni muhitni o'zgartirmasdan o'qiydi, keys() esa faqat nomlarni beradi. print(os.environ) qiymatlarni ham chiqaradi va notebook commit qilinsa kalit GitHub'ga tushadi.",

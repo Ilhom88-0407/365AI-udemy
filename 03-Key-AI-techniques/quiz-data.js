@@ -9,7 +9,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "Qaysi algoritm eng aniq ishlashini — chunki loyiha taqdiri model tanlashga bog'liq",
-        "O'tmish tranzaksiyalar ro'yxati yetarlicha kattami — chunki ma'lumotsiz model qurib bo'lmaydi",
+        "O'tmish tranzaksiyalar ro'yxati kattami — chunki ma'lumotsiz model qurib bo'lmaydi",
         "Ilovadan nechta mijoz foydalanishini — chunki biznes foydasi aynan shunga bog'liq",
         "Uylar qaysi mahallada joylashganini — chunki narxni faqat joylashuv belgilaydi"
       ],
@@ -169,11 +169,11 @@ window.QUIZ = {
       q: "ANN haqidagi qaysi fikrlar to'g'ri? (bir nechta javob)",
       type: "multi",
       options: [
-        "Biologik neyron tarmoqlardan ilhomlangan, lekin ancha boshqacha ishlaydi",
+        "Biologik neyron tarmoqlardan ilhomlangan, lekin boshqacha ishlaydi",
         "Har bir qatlam tugunlari keyingi qatlamning har bir tuguniga bog'langan",
-        "Ko'proq qatlam qo'shish har doim yaxshiroq natija beradi",
-        "Qatlam qo'shish o'rganish sig'imini oshiradi, lekin ehtiyotkor boshqaruv talab qiladi",
-        "ANN — inson miyasining aniq raqamli nusxasi"
+        "Ko'proq qatlam qo'shish har doim yaxshiroq va aniqroq natija beradi",
+        "Qatlam qo'shish o'rganish sig'imini oshiradi, lekin ehtiyotkorlik talab qiladi",
+        "ANN — inson miyasining neyronma-neyron aniq raqamli nusxasi hisoblanadi"
       ],
       answer: [0, 1, 3],
       explain: "ANN miyadan faqat ilhomlangan, uning nusxasi emas. Qatlamlar o'rganish sig'imini oshiradi, ammo ko'proq qatlam har doim ham yaxshiroq degani emas — bu muhandislik qarori.",
@@ -183,9 +183,9 @@ window.QUIZ = {
       q: "3 raqamini tanishga o'rgangan tarmoqda 2-yashirin qatlam odatda nimani ajratadi?",
       type: "single",
       options: [
-        "Alohida piksellarning yorqinlik darajasini",
-        "Oddiy chekka va egri chiziqlarni",
-        "Halqa va kesishmalar kabi murakkabroq shakllarni",
+        "Alohida piksellarning yorqinlik (activation) darajasini",
+        "Rasmdagi oddiy chekka va egri chiziqlarni",
+        "Halqa va kesishma kabi murakkabroq shakllarni",
         "Raqam 3 mi yoki yo'qmi degan yakuniy qarorni"
       ],
       answer: [2],

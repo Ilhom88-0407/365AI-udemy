@@ -35,10 +35,10 @@ window.QUIZ = {
       q: "Tasodifiy normallashgan vektorlarda kosinus ballari std'si 2 o'lchamda 0.7068, 1536 o'lchamda 0.0256 chiqdi. Bundan qanday amaliy xulosa kelib chiqadi?",
       type: "single",
       options: [
-        "O'lchamni oshirgan sari qidiruv aniqligi o'z-o'zidan yaxshilanadi",
+        "O'lchamni oshirgan sari qidiruv aniqligi o'z-o'zidan yaxshilanib boradi",
         "Yuqori o'lchamda kosinus o'rniga faqat evklid masofasini ishlatish kerak",
         "1536 o'lchamli modellar 384 o'lchamlilardan doim yomonroq ishlaydi",
-        "Masofalar tenglashadi, shuning uchun yaxshi model vektorlarni klasterlashi va buni sinash kerak"
+        "Masofalar tenglashadi, shuning uchun modelning klasterlashini sinash kerak"
       ],
       answer: [3],
       explain: "O'lchamlar la'nati: yuqori o'lchamda tasodifiy masofalar deyarli teng. Qidiruv ishlashi uchun model vektorlarni klasterlashi kerak — buni o'z ma'lumotingizda mos va nomos juftliklar bilan tekshiring.",
@@ -70,10 +70,10 @@ window.QUIZ = {
       q: "Nega skalyar ko'paytma Mantis'ni so'rovning aynan nusxasi bo'lgan Dog'dan yuqori qo'ydi, kosinus esa Dog'ni birinchi qo'ydi?",
       type: "single",
       options: [
-        "Skalyar yo'nalish bilan birga magnitudani ham hisobga oladi, Mantis esa eng uzun vektor (|v| = 7.0)",
-        "Skalyar faqat birinchi o'lchamga qaraydi, Mantis'da u eng katta (6)",
-        "Kosinus manfiy qiymatlarni hisobga olmaydi, skalyar esa ularni qo'shadi",
-        "Skalyar masofa, shuning uchun unda kichik qiymat yaxshi hisoblanadi"
+        "Skalyar magnitudani ham hisobga oladi, Mantis esa eng uzun vektor (|v| = 7.0)",
+        "Skalyar faqat birinchi o'lchamga qaraydi, Mantis'da esa u eng katta (6)",
+        "Kosinus manfiy qiymatlarni hisobga olmaydi, skalyar esa ularni ham qo'shadi",
+        "Skalyar — masofa, shuning uchun unda kichikroq qiymat yaxshiroq hisoblanadi"
       ],
       answer: [0],
       explain: "Skalyar = yo'nalish × magnituda, shuning uchun uzun vektor yuqori ball oladi. Kosinus esa faqat yo'nalishni o'lchaydi: Dog so'rov bilan bir xil yo'nalishda, ya'ni 1.0000.",
@@ -111,10 +111,10 @@ window.QUIZ = {
       q: "Chroma kolleksiyasi metadata={\"hnsw:space\": \"cosine\"} bilan yaratilgan va qidiruv 0.12 ball qaytardi. Buni qanday talqin qilish kerak?",
       type: "single",
       options: [
-        "Bu o'xshashlik: 0.12 juda past, natija deyarli mos emas",
-        "Bu kosinus masofa: kichik qiymat yaxshi, o'xshashlik ≈ 1 − 0.12 = 0.88",
-        "Bu l2 masofa: Chroma cosine bo'lsa ham doim l2 qaytaradi",
-        "Bu skalyar ko'paytma: uni vektor normasiga bo'lish kerak"
+        "Bu o'xshashlik: 0.12 juda past, ya'ni natija deyarli mos emas",
+        "Bu kosinus masofa: kichigi yaxshi, o'xshashlik ≈ 1 − 0.12 = 0.88",
+        "Bu l2 masofa: Chroma cosine berilsa ham baribir l2 qaytaradi",
+        "Bu skalyar ko'paytma: uni avval vektor normasiga bo'lish kerak"
       ],
       answer: [1],
       explain: "Chroma ballari — masofa, o'xshashlik emas: cosine'da 0 aynan bir xil, 2 teskari. O'xshashlikka o'tkazish: 1 − kosinus_masofa. Metrikani esa keyin o'zgartirib bo'lmaydi — indeksni qayta yaratish kerak.",
@@ -124,10 +124,10 @@ window.QUIZ = {
       q: "\"uy sotib olish uchun pul kerak\" so'rovida skalyar, kosinus va evklid — uchalasi ham Debet kartani tanladi, Ipoteka esa eng past kosinus ballini (0.1029) oldi. Darsga ko'ra birinchi navbatda nima qilish kerak?",
       type: "single",
       options: [
-        "Metrikani Manhettenga almashtirish — u siyrak vektorlarda barqarorroq",
-        "Ball chegarasini 0.5872 dan yuqoriga ko'tarish",
-        "Modelni o'zbekcha sinov juftliklarida tekshirish, tavsiflarni boyitish va kalit so'z filtrini qo'shish",
-        "Vektorlarni normallashtirmay, skalyar ko'paytmaning o'zini ishlatish"
+        "Metrikani Manhettenga almashtirish — u siyrak vektorlarda ancha barqarorroq",
+        "Ball chegarasini 0.5872 dan yuqoriga ko'tarib, zaif natijalarni kesish",
+        "Modelni o'zbekcha juftliklarda sinash, tavsifni boyitish, kalit so'z filtri",
+        "Normallashtirishni olib tashlab, skalyar ko'paytmaning o'zini ishlatish"
       ],
       answer: [2],
       explain: "Sabab metrikada emas, modelda: u o'zbekcha iborani to'g'ri kodlay olmadi. Metrika tanlovi embedding sifatidan keyin keladi — model ma'noni tushunmasa, hech qanday metrika yordam bermaydi.",
@@ -137,9 +137,9 @@ window.QUIZ = {
       q: "\"He plays the lead guitar in a band.\" va \"They found high levels of lead in the drinking water.\" jumlalari atigi 0.1256 kosinus ball oldi. Bu nimani ko'rsatadi?",
       type: "single",
       options: [
-        "Jumla embeddingi butun jumlani kodlaydi va lead so'zining ikki ma'nosini kontekstdan ajratdi",
-        "Model lead so'zini tanimadi va uni jumladan olib tashladi",
-        "Jumlalar uzunligi har xil bo'lgani uchun ball past chiqdi",
+        "Jumla embeddingi kontekstni kodlab, lead so'zining ikki ma'nosini ajratdi",
+        "Model lead so'zini tanimadi va uni jumladan jimgina olib tashladi",
+        "Jumlalar uzunligi va so'zlar soni har xil bo'lgani uchun ball past chiqdi",
         "word2vec kabi model har so'zga bitta vektor bergani uchun ball past chiqdi"
       ],
       answer: [0],
@@ -178,10 +178,10 @@ window.QUIZ = {
       q: "365 bo'limlarini embedding qilishda matn qismlari qaysi tartibda birlashtirilgani ma'qul va nega?",
       type: "single",
       options: [
-        "course_description birinchi — u eng uzun va eng ko'p ma'lumot beradi",
+        "course_description birinchi — u eng uzun va eng ko'p ma'lumot beradigan qism",
         "section_description birinchi, keyin qolganlari — tartib natijaga ta'sir qilmaydi",
-        "Ixtiyoriy tartib — model butun matnni baribir o'qiydi",
-        "section_name, course_name, course_technology, section_description — muhim qism 256 token ichiga tushishi uchun"
+        "Ixtiyoriy tartib — model butun matnni baribir o'qiydi, uzunlik muhim emas",
+        "section_name, course_name, course_technology, section_description — muhimi oldinda"
       ],
       answer: [3],
       explain: "Uzun course_description oldinda bo'lsa, 256 token chegarasini yeydi va section_description umuman kirmasligi mumkin. Shuning uchun eng muhim ma'lumot oldinga qo'yiladi.",

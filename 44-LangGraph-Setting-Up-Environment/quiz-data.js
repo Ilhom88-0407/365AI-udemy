@@ -23,9 +23,9 @@ window.QUIZ = {
       options: [
         "Paket ziddiyatlari boshqa loyihalarga tegmaydi",
         "Biror narsa buzilsa, muhitni o'chirib qayta yaratish mumkin",
-        "Virtual muhit modelning javob sifatini oshiradi",
+        "Virtual muhit modelning javob sifati va tezligini oshiradi",
         "requirements.txt bilan boshqa mashinada aynan takrorlash mumkin",
-        "Virtual muhitda API kaliti avtomatik yaratiladi"
+        "Virtual muhitda API kaliti avtomatik yaratilib saqlanadi"
       ],
       answer: [0, 1, 3],
       explain: "Alohida muhit ziddiyatlarni ajratadi, qayta yaratishni osonlashtiradi va requirements.txt bilan takrorlanadi. Model sifati yoki API kalitiga uning aloqasi yo'q.",
@@ -88,9 +88,9 @@ window.QUIZ = {
       q: "Jamoa chatbot javoblarining sifati va to'g'riligini baholamoqchi. FakeListChatModel bu vazifaga mos keladimi?",
       type: "single",
       options: [
-        "Ha, chunki interfeysi ChatOpenAI bilan bir xil",
-        "Ha, chunki u takrorlanuvchan va bepul",
-        "Yo'q, chunki u LangGraph grafiga ulanmaydi",
+        "Ha, chunki interfeysi ChatOpenAI bilan aynan bir xil",
+        "Ha, chunki u takrorlanuvchan va bepul, natijani solishtirish oson",
+        "Yo'q, chunki u LangGraph grafiga to'g'ridan-to'g'ri ulanmaydi",
         "Yo'q, chunki javoblari soxta va sifatni sinab bo'lmaydi"
       ],
       answer: [3],
@@ -163,7 +163,7 @@ window.QUIZ = {
       q: "requirements.txt va pip freeze > requirements.lock.txt bilan olingan fayl farqi qanday?",
       type: "single",
       options: [
-        "Ikkalasi bir xil, lock fayl faqat zaxira nusxa",
+        "Ikkalasi bir xil, lock fayl faqat eski versiyalar uchun zaxira nusxa",
         "requirements.txt — oraliq versiyalar, lock fayl — aniq o'rnatilgan versiyalar",
         "requirements.txt aniq versiyalarni, lock fayl esa faqat paket nomlarini saqlaydi",
         "lock fayl faqat Anaconda muhitida ishlaydi, requirements.txt esa venv'da"
@@ -178,7 +178,7 @@ window.QUIZ = {
       options: [
         "PowerShell'da $env:PYTHONIOENCODING=\"utf-8\" o'rnatish",
         "Fayl boshida sys.stdout.reconfigure(encoding=\"utf-8\") chaqirish",
-        "langgraph ni 0.x versiyasiga tushirish",
+        "langgraph ni eski 0.x versiyasiga tushirib qayta o'rnatish",
         "cmd'da set PYTHONIOENCODING=utf-8 o'rnatish",
         "Barcha o'zbekcha harflarni lotin ASCII ga almashtirish"
       ],
@@ -190,9 +190,9 @@ window.QUIZ = {
       q: "Suhbatni JSON faylga saqlayapsiz va o'zbekcha matn faylda buzilmasdan, o'qiladigan holda qolishi kerak. Qaysi variant to'g'ri?",
       type: "single",
       options: [
-        "open(\"suhbat.json\", \"w\") va json.dump(data, f)",
-        "open(\"suhbat.json\", \"w\", encoding=\"utf-8\") va json.dump(data, f)",
-        "open(\"suhbat.json\", \"w\") va json.dump(data, f, ensure_ascii=False)",
+        "open(\"suhbat.json\", \"w\", encoding=\"ascii\") va json.dump(data, f, indent=2)",
+        "open(\"suhbat.json\", \"w\", encoding=\"utf-8\") va json.dump(data, f, ensure_ascii=True)",
+        "open(\"suhbat.json\", \"w\") va json.dump(data, f, ensure_ascii=False, indent=2)",
         "open(\"suhbat.json\", \"w\", encoding=\"utf-8\") va json.dump(data, f, ensure_ascii=False)"
       ],
       answer: [3],

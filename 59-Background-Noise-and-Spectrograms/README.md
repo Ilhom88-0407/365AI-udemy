@@ -230,7 +230,7 @@ biz  (2026):  ... engineer turn data scientist ... learning and artificial ...
 
 | Muammo | ## Ishlaydigan yechim |
 |---|---|
-| 50/60 Hz guli | ## ⭐ **notch filtr** |
+| 50/60 Hz g'uvillashi | ## ⭐ **notch filtr** |
 | Kesilgan uzun fayl | ## ⭐ **bo'laklash** *(58-modul)* |
 | Juda jim yozuv | ## ⭐ **normallash** |
 | Chastota/kanal mos emas | ## ⭐ **`librosa.load(sr=16000, mono=True)`** |

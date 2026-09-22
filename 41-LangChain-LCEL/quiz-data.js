@@ -117,10 +117,10 @@ window.QUIZ = {
       code: "from langchain_core.runnables import RunnablePassthrough\n\nkirish = {\"savol\": \"Depozit nima?\"}\nb = RunnablePassthrough.assign(kontekst=lambda d: \"hujjat matni\")\nprint(b.invoke(kirish))",
       type: "single",
       options: [
-        "{'kontekst': 'hujjat matni'}",
+        "[{'savol': 'Depozit nima?'}, 'hujjat matni']",
         "{'savol': 'Depozit nima?', 'kontekst': 'hujjat matni'}",
-        "{'savol': 'hujjat matni'}",
-        "hujjat matni"
+        "{'savol': 'hujjat matni', 'kontekst': 'Depozit nima?'}",
+        "{'savol': 'Depozit nima?', 'kontekst': <lambda>}"
       ],
       answer: [1],
       explain: "assign eski kalitlarni saqlab, yangisini qo'shadi. {\"kontekst\": ...} lug'atini ishlatganda esa savol yo'qolib, faqat kontekst qolardi — RAG'da bu prompt'ni buzadi.",
@@ -130,10 +130,10 @@ window.QUIZ = {
       q: "Birinchi zanjir str qaytaradi, ikkinchi zanjirning shabloni esa {tools} o'zgaruvchili lug'at kutadi. Ularni ulash uchun o'rtaga nima qo'yiladi?",
       type: "single",
       options: [
-        "StrOutputParser() — u str ni avtomatik lug'atga o'raydi",
-        "RunnableLambda(str) — natijani qatorga aylantiradi",
-        "{\"tools\": RunnablePassthrough()} — str ni {\"tools\": str} ga o'raydi",
-        "Hech narsa — LangChain str ni o'zi {tools} ga joylaydi"
+        "StrOutputParser() — u str ni avtomatik {tools} lug'atiga o'raydi",
+        "RunnableLambda(str) — natijani qatorga aylantirib shablonga beradi",
+        "{\"tools\": RunnablePassthrough()} — str ni kalit ostiga o'raydi",
+        "Hech narsa — LangChain yagona str ni o'zi {tools} ga joylaydi"
       ],
       answer: [2],
       explain: "RunnablePassthrough kirishni o'zgarishsiz qaytaradi, lug'at ichida esa u str ni kerakli kalit ostiga o'raydi. Lug'at avtomatik RunnableParallel ga aylanadi.",
@@ -145,8 +145,8 @@ window.QUIZ = {
       options: [
         "chain.get_graph().print_ascii() — har tugun yonida vaqt ko'rsatiladi",
         "chain.get_graph().draw_mermaid() — Mermaid diagrammasida qiymatlar chiqadi",
-        "chain.steps — har qadamning natijasini saqlaydi",
-        "chain.astream_events(kirish, version=\"v2\") — ish vaqtidagi hodisalarni ko'rsatadi"
+        "chain.steps — har qadamning natijasi va vaqtini saqlab boradi",
+        "chain.astream_events(kirish, version=\"v2\") — ish vaqti hodisalarini beradi"
       ],
       answer: [3],
       explain: "Graf faqat statik tuzilishni (ketma-ketlik, parallel shoxlar) ko'rsatadi; vaqt, qiymat va xato joyi uchun astream_events kerak. Eslatma: print_ascii() uchun alohida grandalf paketi o'rnatiladi.",
@@ -156,8 +156,8 @@ window.QUIZ = {
       q: "RunnableParallel ichida 3 ta shox bor, har biri modelni bir marta chaqiradi. Ketma-ket zanjirga nisbatan vaqt va narx qanday o'zgaradi?",
       type: "single",
       options: [
-        "Vaqt ham, narx ham 3 barobar kamayadi",
-        "Vaqt taxminan bitta chaqiruvnikiga teng, narx esa 3 ta chaqiruvnikiga teng",
+        "Vaqt ham, narx ham kamayadi — shoxlar bitta so'rovga birlashadi",
+        "Vaqt taxminan bitta chaqiruvnikicha, narx esa 3 barobar ko'p",
         "Vaqt o'zgarmaydi, narx esa bitta chaqiruvnikiga tushadi",
         "Vaqt 3 barobar oshadi, lekin narx bitta chaqiruvnikiga teng"
       ],

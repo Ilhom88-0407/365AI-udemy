@@ -31,9 +31,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Mel filtrlar past chastotalarda tor va zich, yuqorida esa keng joylashadi",
-        "Mel filtrlar butun diapazonda teng kenglikda joylashishi kerak",
-        "Quloq yuqori chastotalarda taxminan 20 marta sezgirroq ishlaydi",
-        "Mel shkalasi faqat 16 kHz dan yuqori chastotalar uchun kerak"
+        "Mel filtrlar butun diapazonda teng kenglikda joylashishi kerak bo'ladi",
+        "Quloq yuqori chastotalarda past chastotalardan ~20 marta sezgirroq",
+        "Mel shkalasi faqat 16 kHz dan yuqori chastotalarni o'lchash uchun kerak"
       ],
       answer: [0],
       explain: "Quloq past chastotalarda ~20× sezgirroq, shuning uchun mel filtrlar teng emas: eng tor filtr 44.4 Hz, eng kengi 518.6 Hz (11.7× farq). Past chastotalarga ko'proq e'tibor beriladi.",
@@ -146,8 +146,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Xona fon shovqinini ko'paytiradi va u nutqni to'liq bosib ketadi",
-        "Aks-sado faqat 4 kHz dan yuqori chastotalarni yo'q qiladi",
-        "Kechikkan nusxa qo'shilib, interferensiya tufayli ayrim chastotalar yo'qoladi",
+        "Aks-sado 4 kHz dan yuqori chastotalarni to'liq yutib, s va sh ni yo'qotadi",
+        "Kechikkan nusxa qo'shilib, interferensiya ayrim chastotalarni yo'qotadi",
         "Aks-sado nutqning asosiy chastotasini ikki baravar oshirib yuboradi"
       ],
       answer: [2],

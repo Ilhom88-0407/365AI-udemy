@@ -31,10 +31,10 @@ window.QUIZ = {
       code: "class S(TypedDict):\n    natijalar: Annotated[list, operator.add]\n\ndef a(s): return {\"natijalar\": [\"A dan\"]}\ndef b(s): return {\"natijalar\": [\"B dan\"]}\ndef c(s): return {\"natijalar\": s[\"natijalar\"]}\n\ng = StateGraph(S)\ng.add_node(\"a\", a); g.add_node(\"b\", b); g.add_node(\"c\", c)\ng.add_edge(START, \"a\"); g.add_edge(START, \"b\")\ng.add_edge(\"a\", \"c\"); g.add_edge(\"b\", \"c\"); g.add_edge(\"c\", END)\nprint(g.compile().invoke({\"natijalar\": []}))",
       type: "single",
       options: [
-        "{'natijalar': ['A dan', 'B dan']}",
+        "{'natijalar': ['A dan', 'B dan']} — c yangi hech narsa qo'shmaydi",
         "{'natijalar': ['A dan', 'B dan', 'A dan', 'B dan']}",
         "InvalidUpdateError: Can receive only one value per step",
-        "{'natijalar': ['B dan']}"
+        "{'natijalar': ['B dan']} — oxirgi yozgan tugun g'olib"
       ],
       answer: [1],
       explain: "operator.add reducer bo'lgani uchun parallel yozuvlar birlashadi. Lekin c mavjud ro'yxatni qaytardi va reducer uni yana qo'shdi, shuning uchun ma'lumot ikkilandi. Reducerli maydonga tugun faqat yangi qismni qaytarishi kerak.",
@@ -58,10 +58,10 @@ window.QUIZ = {
       q: "Tizimda eski OPENAI_API_KEY allaqachon o'rnatilgan, .env faylda esa yangisi bor. load_dotenv() qaysi holatda yangi kalitni ishlatadi?",
       type: "single",
       options: [
-        "Standart load_dotenv() bilan — .env har doim ustun turadi",
-        "Faqat Jupyter'da %dotenv yozilganda",
-        "load_dotenv(override=True) bilan — .env dagi qiymat ustun bo'ladi",
-        "Hech qachon — tizimdagi kalitni faqat qo'lda o'chirish kerak"
+        "Standart load_dotenv() bilan — .env avtomatik ustun turadi",
+        "Faqat Jupyter'da %dotenv sehrli buyrug'i yozilganda",
+        "load_dotenv(override=True) bilan — .env qiymati ustun bo'ladi",
+        "Iloji yo'q — tizimdagi kalitni avval qo'lda o'chirish kerak"
       ],
       answer: [2],
       explain: "Standart override=False tizimda bor kalitni saqlab qoladi. override=True bo'lsa .env dagi qiymat uni almashtiradi — eski kalit bilan kurashishning sababi shu.",
@@ -139,8 +139,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "input() ni alohida thread ichida chaqirib, javobni navbatda kutish",
-        "interrupt() + checkpointer, keyin Command(resume=...) bilan davom etish",
-        "Tugun ichida time.sleep() bilan javob kelguncha kutish",
+        "interrupt() + checkpointer, keyin Command(resume=...) bilan davom",
+        "Tugun ichida time.sleep() bilan javob kelguncha tsiklda kutish",
         "recursion_limit ni oshirib, javob kelguncha grafni aylantirish"
       ],
       answer: [1],
@@ -165,8 +165,8 @@ window.QUIZ = {
       q: "Siklli grafda routing funksiya hech qachon \"__end__\" qaytarmaydi va recursion_limit berilmagan. O'lchangan natijaga ko'ra nima bo'ladi?",
       type: "single",
       options: [
-        "25 qadamdan keyin graf jimgina to'xtaydi",
-        "compile() bosqichidayoq xato chiqadi",
+        "25 qadamdan keyin graf jimgina to'xtab, oxirgi state'ni qaytaradi",
+        "compile() bosqichidayoq sikl topilib, xato chiqadi",
         "Graf abadiy aylanadi, hech qanday xato chiqmaydi",
         "~5000 aylanishdan so'ng GraphRecursionError (10 007)"
       ],
@@ -191,10 +191,10 @@ window.QUIZ = {
       q: "add_conditional_edges(source=\"ask_another_question\", path=routing_function) qo'shildi, lekin vizualizatsiyada bu tugundan tarmoqlanish ko'rinmayapti. Qaysi yechimlar darsda keltirilgan? (bir nechta javob)",
       type: "multi",
       options: [
-        "routing_function ga -> Literal[\"ask_question\", \"__end__\"] tip ko'rsatmasini qo'shish",
-        "add_conditional_edges ga path_map xaritasini berish",
-        "Shartli qirra o'rniga ikkita oddiy add_edge qo'shish",
-        "grandalf o'rniga draw_mermaid_png() ishlatish"
+        "routing_function ga -> Literal[\"ask_question\", \"__end__\"] qo'shish",
+        "add_conditional_edges ga path_map xaritasini (qiymat → tugun) berish",
+        "Shartli qirra o'rniga ikkita oddiy add_edge bilan ikkala yo'lni qo'shish",
+        "draw_mermaid_png() ishlatish — u shartli qirrani o'zi topadi"
       ],
       answer: [0, 1],
       explain: "LangGraph mumkin bo'lgan yo'llarni Literal tip ko'rsatmasidan yoki path_map dan oladi. Ikkita oddiy add_edge esa shartni yo'q qiladi — ikkala tugun doim ishlaydi.",

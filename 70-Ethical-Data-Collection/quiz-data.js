@@ -23,10 +23,10 @@ window.QUIZ = {
       code: "m = Manba(\"Blog skreypi\", \"skreyp\", \"CC-BY\",\n          date(2024, 6, 1), \"nazarda tutilgan\")\nfor b in m.etik_baho():\n    print(b)",
       type: "single",
       options: [
-        "✅ muammo topilmadi",
+        "⚠️ rozilik faqat nazarda tutilgan\n💥 litsenziya noma'lum",
         "⚠️ rozilik faqat nazarda tutilgan\n⚠️ robots.txt tekshirilmagan",
-        "💥 rozilik yo'q\n💥 litsenziya noma'lum",
-        "⚠️ rozilik faqat nazarda tutilgan"
+        "💥 rozilik yo'q\n⚠️ robots.txt tekshirilmagan",
+        "⚠️ rozilik faqat nazarda tutilgan\n💥 litsenziya noma'lum\n⚠️ robots.txt tekshirilmagan"
       ],
       answer: [1],
       explain: "Rozilik \"nazarda tutilgan\" — ogohlantirish. Litsenziya CC-BY, muammo emas. Tur \"skreyp\" va izohda \"robots\" yo'q, shuning uchun robots.txt ogohlantirishi ham qo'shiladi.",
@@ -64,7 +64,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "GPS izlari odam qayerda yashashini aytib, shaxsni aniqlashi mumkin",
-        "GPS ma'lumoti har doim litsenziyasiz tarqatiladi",
+        "GPS ma'lumoti har doim litsenziyasiz, ochiq holda tarqatiladi",
         "Trafik ma'lumoti faqat davlat ichki ishlatishi uchun yig'iladi",
         "GPS izlari juda katta hajmli bo'lgani uchun saqlash qimmat"
       ],
@@ -77,9 +77,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Hech narsa o'zgarmaydi, chunki bo'sh qiymatlar tasodifiy taqsimlangan",
-        "Keksa respondentlarning yarmiga yaqini yo'qoladi va model yoshlarga moslashadi",
-        "Model aniqligi barcha guruhlarda teng ravishda oshadi",
-        "Faqat 20–29 yoshlilar guruhi to'plamdan chiqib ketadi"
+        "Keksalarning yarmiga yaqini yo'qoladi va model yoshlarga moslashadi",
+        "Model aniqligi barcha yosh guruhlarida teng ravishda oshadi",
+        "Faqat 20–29 yoshlilar guruhi to'plamdan butunlay chiqib ketadi"
       ],
       answer: [1],
       explain: "Bo'sh qiymatlar tasodifiy emas — yashirin bias manbai. Qoida: o'chirishdan oldin ular qaysi guruhda ko'pligini tekshiring.",
@@ -103,10 +103,10 @@ window.QUIZ = {
       code: "User-agent: MyBot\nAllow: /public/\nDisallow: /",
       type: "single",
       options: [
-        "Taqiqlangan, chunki Disallow: / butun saytni yopadi",
+        "Taqiqlangan, chunki Disallow: / butun saytni to'liq yopadi",
         "Taqiqlangan, chunki Disallow har doim Allow dan ustun",
-        "Ruxsat, chunki MyBot uchun qoida umuman yo'q",
-        "Ruxsat, chunki eng uzun mos qoida — Allow: /public/ (8 belgi) — g'olib"
+        "Ruxsat, chunki MyBot uchun alohida qoida umuman yo'q",
+        "Ruxsat, chunki eng uzun mos qoida — Allow: /public/ — g'olib"
       ],
       answer: [3],
       explain: "Funksiya eng uzun mos keladigan qoidani tanlaydi: /public/ (8 belgi) / (1 belgi) dan uzun. /jobs yo'li uchun esa faqat Disallow: / mos keladi va u taqiqlanadi.",
@@ -138,10 +138,10 @@ window.QUIZ = {
       q: "200 nomzod to'plamidan ism o'chirildi, lekin yosh, shahar va lavozim qoldi. Natijada 159 tasi baribir aynan aniqlandi. Buning sababi nima?",
       type: "single",
       options: [
-        "Ball ustuni shifrlanmagani uchun",
+        "Ball ustuni shifrlanmay, ochiq matnda qolgani uchun",
         "Ism to'liq o'chirilmay, qisman qolib ketgani uchun",
-        "To'plam GDPR talablariga javob bermagani uchun",
-        "Yosh + shahar + lavozim birgalikda kvazi-identifikator bo'lib, k = 1 chiqqani uchun"
+        "To'plam GDPR talablariga to'liq javob bermagani uchun",
+        "Yosh, shahar va lavozim birga kvazi-identifikator (k = 1)"
       ],
       answer: [3],
       explain: "Alohida hech biri PII emas, birgalikda esa shaxsni aniqlaydi. 159 ta yozuvning kombinatsiyasi to'plamda yagona edi.",
@@ -166,10 +166,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Anonimlik miqdor masalasi: 200 yozuvda 21.5%, 1000 yozuvda 99.2% saqlandi",
-        "k ≥ 5 bajarilsa, guruhdagi nozik qiymat har doim yashirin qoladi",
+        "k ≥ 5 bajarilsa, guruhdagi nozik qiymat (masalan, ball) har doim yashirin qoladi",
         "k < 5 guruhlarni o'chirish ko'pincha ozchilik guruhlarni yo'qotadi",
         "Netflix Prize da anonim reytinglar IMDb bilan solishtirilib foydalanuvchilar aniqlangan",
-        "Anonimlashtirish deanonimlashtirishdan to'liq kafolat beradi"
+        "Anonimlashtirish to'g'ri qilinsa, deanonimlashtirishdan to'liq kafolat beradi"
       ],
       answer: [0, 2, 3],
       explain: "k-anonimlik yetarli emas: guruhdagi hamma bir xil ball olgan bo'lsa (l = 1) ball baribir ma'lum. Anonimlashtirish kafolat emas, riskni kamaytirish.",

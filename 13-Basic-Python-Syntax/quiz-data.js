@@ -30,9 +30,9 @@ window.QUIZ = {
       q: "Eski Python 2 kodida float(16) / 3 deb yozilgan. Python 3 uchun qaysi gap to'g'ri?",
       type: "single",
       options: [
-        "float() shart emas: 16 / 3 ning o'zi ham 5.333333333333333 beradi",
-        "float() majburiy, aks holda 16 / 3 natijasi 5 bo'ladi",
-        "float(16) / 3 Python 3 da SyntaxError beradi",
+        "float() shart emas: 16 / 3 o'zi ham 5.333333333333333 beradi",
+        "float() majburiy, aks holda 16 / 3 natijasi butun son 5 bo'ladi",
+        "float(16) / 3 Python 3 da eskirgan sintaksis — SyntaxError beradi",
         "16 / 3 faqat 16.0 / 3 ko'rinishida yozilsa float bo'ladi"
       ],
       answer: [0],
@@ -44,7 +44,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "y ga 125 qiymatini qayta biriktirish buyrug'i sifatida",
-        "\"y rostdan 125 ga tengmi?\" degan savol sifatida — javobi True yoki False",
+        "\"y 125 ga tengmi?\" degan savol sifatida — javobi True/False",
         "y ning turini tekshirish buyrug'i sifatida — javobi int",
         "5 ** 3 ni qayta hisoblash va natijani chop etish sifatida"
       ],
@@ -95,9 +95,9 @@ window.QUIZ = {
       q: "Darsdagi qoidaga ko'ra qaysi izoh yaxshi izoh hisoblanadi?",
       type: "single",
       options: [
-        "narx = 5000  # narx 5000 ga teng",
-        "soni = soni + 1  # soni ga 1 qo'shamiz",
-        "chegirma = narx * 0.15  # doimiy mijozlar uchun 15% chegirma",
+        "narx = 5000  # narx o'zgaruvchisiga 5000 ni beramiz",
+        "soni = soni + 1  # soni o'zgaruvchisiga 1 ni qo'shamiz",
+        "chegirma = narx * 0.15  # doimiy mijozlarga 15% chegirma",
         "chegirma = narx * 0.15  # narxni 0.15 ga ko'paytiramiz"
       ],
       answer: [2],
@@ -140,8 +140,8 @@ window.QUIZ = {
       options: [
         "Satrlarni indekslab bo'lmaydi, faqat ro'yxatlarni",
         "Indeks kvadrat emas, oddiy qavsda yozilishi kerak",
-        "5 ta belgi bor, indekslar 0 dan 4 gacha — 5 chegaradan tashqarida",
-        "Manfiy indeks ishlatilmagani uchun"
+        "Indekslar 0 dan 4 gacha, 5 esa chegaradan tashqarida",
+        "Oxirgi belgi faqat manfiy indeks bilan olinadi: soz[-1]"
       ],
       answer: [2],
       explain: "n ta belgili satrda oxirgi indeks n - 1. \"Salom\" ning oxirgi belgisi soz[4] yoki soz[-1] bilan olinadi.",
@@ -152,8 +152,8 @@ window.QUIZ = {
       code: "def five(x):\n    x = 5\n    return x\n    print(five(3))",
       type: "single",
       options: [
-        "5",
-        "3",
+        "5 — return natijasi",
+        "3 — argument qiymati",
         "IndentationError",
         "Hech narsa chiqmaydi"
       ],

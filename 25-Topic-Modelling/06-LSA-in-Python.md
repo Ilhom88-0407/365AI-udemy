@@ -510,7 +510,8 @@ TUSHUNTIRILGAN O'ZGARUVCHANLIK
 ⚠️ FARQLAR
   · Vaznlar MANFIY bo'lishi mumkin (LDA'da yo'q)
   · 0-mavzu odatda ARALASH (umumiy)
-  · LSA DETERMINISTIK (LDA tasodifiy)
+  · LSA ancha BARQAROR (LDA tasodifiy) — lekin turli random_state da
+    bit-darajada bir xil emas; takrorlash: random_state ni qo'ying, aniqlik: algorithm='arpack'
 ```
 
 ---

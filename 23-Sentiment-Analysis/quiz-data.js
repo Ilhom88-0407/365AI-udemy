@@ -119,8 +119,8 @@ window.QUIZ = {
       q: "Neytral jumlalarni ham to'g'ri aniqlash kerak. Darsga ko'ra qaysi chaqiruv mos keladi?",
       type: "single",
       options: [
-        "pipeline(\"sentiment-analysis\", neutral=True)",
-        "pipeline(\"sentiment-analysis\")(matn[:512])",
+        "pipeline(\"sentiment-analysis\", num_labels=3, neutral=True)",
+        "pipeline(\"sentiment-analysis\", top_k=3)(matn[:512])",
         "pipeline(model=\"distilbert-base-uncased-finetuned-sst-2-english\")",
         "pipeline(model=\"cardiffnlp/twitter-roberta-base-sentiment-latest\")"
       ],

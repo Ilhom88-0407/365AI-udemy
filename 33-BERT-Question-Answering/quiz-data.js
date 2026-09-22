@@ -69,10 +69,10 @@ window.QUIZ = {
       q: "print(model.qa_outputs) natijasi Linear(in_features=1024, out_features=2, bias=True). Bu ikki chiqish nimani bildiradi?",
       type: "single",
       options: [
-        "Javob ijobiy yoki salbiy ekanini",
-        "Savol va kontekst segmentlarini",
-        "Javob bor yoki yo'qligini",
-        "Javobning boshlanish (START) va tugash (END) pozitsiyasini"
+        "Javob ijobiy yoki salbiy ekanini bildiruvchi ikki ball",
+        "Tokenning savol yoki kontekst segmentiga tegishliligini",
+        "Kontekstda javob bor yoki yo'qligini bildiruvchi ball",
+        "Javob boshlanishi (START) va tugashi (END) ballarini"
       ],
       answer: [3],
       explain: "qa_outputs — vazifaga xos chiqish qatlami. U har bir token uchun ikkita ball beradi: javob shu yerda boshlanadimi (START) va shu yerda tugaydimi (END).",
@@ -96,9 +96,9 @@ window.QUIZ = {
       q: "10 000 so'zli hujjat BERT QA ga berildi, javob esa taxminan 500-so'zda turibdi. Darsga ko'ra nima bo'ladi va qanday yechim tavsiya etiladi?",
       type: "single",
       options: [
-        "Model hujjatni o'zi bo'laklarga bo'lib, javobni baribir topadi",
-        "512 token chegarasi tufayli javob ko'rinmaydi; hujjatni bo'laklarga bo'lib, mos bo'lakni BERT QA ga berish kerak",
-        "attention_mask qo'shilsa, model butun hujjatni o'qiy oladi",
+        "Model hujjatni o'zi 512 tokenli bo'laklarga bo'lib, javobni baribir topadi",
+        "512 token chegarasi sabab javob ko'rinmaydi; mos bo'lakni ajratib berish kerak",
+        "attention_mask to'g'ri qo'shilsa, model butun hujjatni bir marta o'qiy oladi",
         "Model xato beradi; yagona yechim — BERT Large o'rniga BERT Base ishlatish"
       ],
       answer: [1],
@@ -123,10 +123,10 @@ window.QUIZ = {
       q: "DVD matnida ikkita sana bor edi. Model \"november 1 , 1996\" ni qaytardi, kurs esa \"March 24, 1997\" ni aytgan; top-5 da march 1.95 ball bilan 5-o'rinda (november 7.89). Darsga ko'ra to'g'ri xulosa qaysi?",
       type: "single",
       options: [
-        "Model xato qildi, chunki u march tokenini umuman ko'rmagan",
-        "Model xato qildi, chunki start_logits noto'g'ri hisoblangan",
-        "Kurs xato qildi, chunki matnda faqat bitta to'g'ri sana bor",
-        "Savolning o'zi noaniq: model ikkala variantni ko'rgan va himoyalanadigan javobni tanlagan"
+        "Model xato qildi, chunki u march tokenini kontekstda umuman ko'rmagan",
+        "Model xato qildi, chunki start_logits noto'g'ri tokenlar uchun hisoblangan",
+        "Kurs xato qildi, chunki matnda faqat bitta to'g'ri sana — november bor",
+        "Savol noaniq: model ikkala sanani ko'rib, himoyalanadigan javobni tanlagan"
       ],
       answer: [3],
       explain: "\"First DVD\" formatmi yoki pleyer va diskmi — savol noaniq. march ro'yxatda bor, lekin model november ni ancha ishonchli deb topgan. Ko'p \"model xatosi\" aslida noaniq savol bo'lib chiqadi.",
@@ -164,10 +164,10 @@ window.QUIZ = {
       q: "Sunset Motors botiga \"What is the capital of France?\" berildi va u 'what' ni 0.1143 ishonch bilan qaytardi (to'g'ri javoblar 0.60–0.99 oralig'ida). Botni qanday himoyalash kerak? (bir nechta javob)",
       type: "multi",
       options: [
-        "Ishonch (start × end ehtimollik) chegaradan, masalan 0.30 dan, past bo'lsa javobni rad etish",
+        "Ishonch (start × end) chegaradan, masalan 0.30 dan, past bo'lsa javobni rad etish",
         "end < start bo'lsa, javob o'rniga \"javob topa olmadim\" xabarini chiqarish",
-        "argmax o'rniga argmin ishlatib, eng past ballli tokenni olish",
-        "Kontekstni olib tashlab, modelga faqat savolni berish"
+        "argmax o'rniga argmin ishlatib, eng past ballli tokenni javob sifatida olish",
+        "Kontekstni olib tashlab, modelga faqat savolni berib, o'z bilimidan javob olish"
       ],
       answer: [0, 1],
       explain: "Model \"bilmayman\" deya olmaydi — argmax doim biror indeks qaytaradi. Ikki himoya ishlaydi: ishonch chegarasi (0.1143 vs 0.9479 kabi farqni ushlaydi) va end < start tekshiruvi (zid natijalar).",
@@ -179,9 +179,9 @@ window.QUIZ = {
       options: [
         "Oldindan o'qitishda NSP vazifasi olib tashlangan",
         "Dinamik maskalash — maska naqshi har batch uchun o'zgaradi",
-        "Qatlamlar soni 12 dan 6 ga qisqartirilgan",
+        "Qatlamlar soni 12 dan 6 ga qisqartirilib, model tezlashtirilgan",
         "Ancha ko'p ma'lumot (160 GB) va kattaroq batch bilan o'qitilgan",
-        "Segment embeddinglari butunlay o'chirilgan"
+        "Segment embeddinglari butunlay o'chirilib, faqat token va pozitsiya qolgan"
       ],
       answer: [0, 1, 3],
       explain: "RoBERTa — yaxshiroq o'qitilgan BERT: 10× ko'p ma'lumot, katta batch, NSP'siz va dinamik maskalash bilan. 6 qatlam va segment embeddinglarining yo'qligi esa DistilBERT'ga xos.",

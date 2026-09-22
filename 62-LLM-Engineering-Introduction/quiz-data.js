@@ -86,9 +86,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "gpt-4o-mini, keyin ValueError: noma'lum backend: gemini",
-        "gpt-4o-mini, keyin Qwen/Qwen2.5-0.5B-Instruct",
+        "gpt-4o-mini, keyin Qwen/Qwen2.5-0.5B-Instruct (standart backend)",
         "Birinchi print qatoridayoq ValueError, chunki model yuklanmagan",
-        "openai, keyin gemini"
+        "openai, keyin ValueError: noma'lum backend: gemini"
       ],
       answer: [0],
       explain: "\"openai\" uchun model gpt-4o-mini bo'ladi. \"gemini\" hech bir shartga tushmaydi va else shoxi ValueError ko'taradi — standart qiymatga jimgina o'tib ketmaydi.",
@@ -160,10 +160,10 @@ window.QUIZ = {
       code: "HR = {\"xulq\": \"Past behavior\", \"boshqotirma\": \"Logic puzzle\"}\nTEXNIK = {\"kod\": \"Write or debug Python code\", \"database\": \"SQL query\"}\n\ndef kategoriya_prompti(tur, kategoriya):\n    xarita = HR if tur == \"hr\" else TEXNIK\n    if kategoriya not in xarita:\n        raise ValueError(f\"noma'lum kategoriya: {kategoriya}\")\n    return f\"Question type: {xarita[kategoriya]}.\"\n\nprint(kategoriya_prompti(\"texnik\", \"kod\"))\nprint(kategoriya_prompti(\"hr\", \"kod\"))",
       type: "single",
       options: [
-        "Ikki marta Question type: Write or debug Python code.",
+        "Ikki marta Question type: Write or debug Python code. — xato chiqmaydi",
         "Question type: Write or debug Python code., keyin ValueError: noma'lum kategoriya: kod",
         "Birinchi chaqiruvdayoq ValueError, chunki \"texnik\" qiymati \"hr\" ga teng emas va lug'at topilmaydi",
-        "Question type: Write or debug Python code., keyin None"
+        "Question type: Write or debug Python code., keyin None — xato chiqmaydi"
       ],
       answer: [1],
       explain: "\"texnik\" uchun TEXNIK lug'ati olinadi va \"kod\" unda bor. \"hr\" uchun esa HR lug'ati olinadi — unda \"kod\" yo'q, shuning uchun ValueError ko'tariladi.",

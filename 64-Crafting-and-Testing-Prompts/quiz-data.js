@@ -50,7 +50,7 @@ window.QUIZ = {
       options: [
         "ASCII belgilar ulushi 100% dan 69.7% ga tushdi",
         "Noyob so'zlar ulushi 100% ga chiqdi — hech narsa takrorlanmaydi",
-        "Javob butunlay bo'sh qaytdi",
+        "Javob butunlay bo'sh qaytdi — model birorta ham token chiqarmadi",
         "O'rtacha so'z uzunligi 4.48 dan 12.74 ga oshdi",
         "Noyob so'zlar 20% ga tushib, bitta so'z takrorlanaverdi"
       ],
@@ -138,9 +138,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "['position', 'kategoriya']",
-        "['company']",
+        "['company', 'kategoriya', 'position']",
         "['kategoriya', 'position']",
-        "[]"
+        "['kategoriya']"
       ],
       answer: [2],
       explain: "findall uchta nomni topadi, sorted ularni alifbo tartibiga qo'yadi: company, kategoriya, position. company berilgan, qolgan ikkitasi ro'yxatda qoladi — toldir() shu sabab ValueError bilan to'ldirilmagan o'rinlarni erta tutadi.",

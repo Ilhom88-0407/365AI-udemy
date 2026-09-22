@@ -38,8 +38,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "0 dan 20 gacha juft sonlar chiqadi va sikl tugaydi",
-        "Faqat 0 chiqadi, keyin sikl to'xtaydi",
-        "Cheksiz sikl: x += 2 sikl tanasidan tashqarida, x hech qachon o'zgarmaydi",
+        "Faqat 0 chiqadi, keyin sikl o'z-o'zidan to'xtaydi",
+        "Cheksiz sikl: x += 2 sikl tanasiga kirmagan",
         "SyntaxError, chunki while dan keyin qavs kerak"
       ],
       answer: [2],
@@ -131,10 +131,10 @@ window.QUIZ = {
       q: "count funksiyasidagi total = 0 kabi noldan boshlanib, shart bajarilganda o'z qiymatini o'zgartiradigan o'zgaruvchi darsda qanday ataladi?",
       type: "single",
       options: [
-        "Inkrement",
-        "Sikl o'zgaruvchisi",
+        "Inkrement (increment)",
+        "Sikl o'zgaruvchisi (iterator)",
         "Yig'uvchi summa (rolling sum)",
-        "Range obyekti"
+        "Range obyekti (range object)"
       ],
       answer: [2],
       explain: "Bu yig'uvchi summa (rolling sum): noldan boshlanadi, sikl ichida shart bajarilganda o'sadi va sikldan keyin qaytariladi. Inkrement esa har safar qo'shiladigan miqdorning o'zi.",
@@ -158,10 +158,10 @@ window.QUIZ = {
       q: "Darsda iterator o'zgaruvchi nomini x ga va count o'zgaruvchisini total ga o'zgartirish bitta so'rov bilan bajarildi. Bunga nima yordam berdi?",
       type: "single",
       options: [
-        "So'rovni bir necha marta qayta yuborish",
-        "To'g'ri terminologiyadan (iterator, parametr, funksiya) foydalanish",
-        "Kodni avval Refactor orqali soddalashtirish",
-        "So'rovni imkon qadar uzun va batafsil yozish"
+        "So'rovni javob o'zgarguncha bir necha marta qayta yuborish",
+        "To'g'ri atamalardan (iterator, parametr, funksiya) foydalanish",
+        "Kodni avval Refactor tugmasi orqali soddalashtirib olish",
+        "So'rovni imkon qadar uzun va batafsil, misollar bilan yozish"
       ],
       answer: [1],
       explain: "To'g'ri atamalarni bilish AI bilan tezroq va aniqroq ishlashga yordam beradi — bitta aniq so'rovda bir nechta o'zgartirishni so'rash mumkin bo'ldi.",
@@ -193,10 +193,10 @@ window.QUIZ = {
       q: "Anaconda Assistant'ning \"Refactor the selected code\" variantidagi yashirin xavf nimada?",
       type: "single",
       options: [
-        "U kodga izoh qo'shib, uni o'qishni qiyinlashtiradi",
-        "U ishlayotgan kodni so'ramasdan o'chirib yuboradi",
-        "U siz hali bilmagan notanish vositalarni, masalan list comprehension'ni taklif qilishi mumkin",
-        "U faqat Python 2 sintaksisida javob beradi"
+        "U kodga ortiqcha izohlar qo'shib, uni o'qishni qiyinlashtiradi",
+        "U ishlayotgan kodni so'ramasdan o'chirib, o'rniga yangisini yozadi",
+        "U siz bilmagan vositalarni (list comprehension) taklif qilishi mumkin",
+        "U faqat Python 2 sintaksisida javob beradi, Python 3 da ishlamaydi"
       ],
       answer: [2],
       explain: "Refactor kodni soddalashtirish takliflarini beradi, lekin ularda notanish vositalar bo'lishi mumkin. Shuning uchun oltin qoida: tushunmagan kodni qabul qilmang.",

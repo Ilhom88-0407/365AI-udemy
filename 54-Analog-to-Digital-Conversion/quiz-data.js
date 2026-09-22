@@ -8,9 +8,9 @@ window.QUIZ = {
       q: "Nima uchun Whisper uchun 16 kHz sample rate yetarli, 44.1 kHz esa ortiqcha hisoblanadi?",
       type: "single",
       options: [
-        "16 kHz da bit chuqurligi avtomatik 24 bit ga oshadi",
-        "44.1 kHz faqat stereo yozuvlar uchun ishlatiladi",
-        "Nutqning ma'noli chastotalari 8 kHz gacha, 16 kHz ning Nayqvisti esa aynan 8 kHz",
+        "16 kHz da bit chuqurligi avtomatik 24 bit ga oshib, sifat saqlanadi",
+        "44.1 kHz faqat stereo musiqa yozuvlari uchun mo'ljallangan format",
+        "Nutqning ma'noli chastotalari 8 kHz gacha, bu 16 kHz ning Nayqvisti",
         "16 kHz da aliasing umuman yuz bermaydi, 44.1 kHz da esa yuz beradi"
       ],
       answer: [2],
@@ -31,9 +31,9 @@ window.QUIZ = {
       code: "y, sr = librosa.load('a.wav', sr=24000)\ny8 = y[::3]\nsf.write('a8.wav', y8, 8000)",
       type: "single",
       options: [
-        "Anti-aliasing filtr yo'q, 4 kHz dan yuqori chastotalar pastga buklanadi",
-        "Fayl uzunligi 3 baravar ortadi va audio sekinlashadi",
-        "sf.write 8000 Hz sample rate ni umuman qabul qilmaydi",
+        "Anti-aliasing filtr yo'q: 4 kHz dan yuqorisi pastga buklanadi",
+        "Fayl uzunligi 3 baravar ortib, audio sekin ijro etiladi",
+        "sf.write 8000 Hz sample rate ni qabul qilmay, xato beradi",
         "y[::3] faqat stereo fayllarda ishlaydi, mono faylda xato beradi"
       ],
       answer: [0],
@@ -44,10 +44,10 @@ window.QUIZ = {
       q: "Nutq faylida 16 bit kvantlashning o'lchangan SNR i 82.06 dB, darslik formulasi 6.02·b + 1.76 esa 98.08 dB beradi. ~16 dB farqning sababi nima?",
       type: "single",
       options: [
-        "16 bit da darajalar soni formulada hisoblanganidan kam",
-        "Kvantlash xatosi 16 bit da tasodifiy bo'lmay qoladi",
-        "Formula to'liq shkalali sinus uchun, nutqning krest-faktori esa 19.11 dB",
-        "SNR 10·log10 o'rniga 20·log10 bilan noto'g'ri hisoblangan"
+        "16 bit da haqiqiy darajalar soni formulada hisoblanganidan kam",
+        "Kvantlash xatosi 16 bit da tasodifiy bo'lmay, signalga bog'lanadi",
+        "Formula to'liq shkalali sinus uchun, nutq krest-faktori esa 19.11 dB",
+        "SNR 10·log10 o'rniga 20·log10 bilan noto'g'ri hisoblangani"
       ],
       answer: [2],
       explain: "Nutq shkalaning faqat bir qismidan foydalanadi. Tuzatilgan formula 6.02·b + 1.76 − krest + 3 16 bit uchun 81.97 dB beradi — o'lchangandan farqi 0.09 dB. Tasodifiylik buzilishi faqat 2 va 4 bit da kuzatilgan.",
@@ -67,10 +67,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "16 kHz dagi y ni sf.write(\"out.wav\", y, 8000) bilan yozish faylni sekinlashtiradi",
-        "sf.read(..., dtype=\"int16\") qiymatlari −32768..32767 oralig'ida, modelga bundan oldin float ga o'tkazish kerak",
+        "sf.read(..., dtype=\"int16\") qiymatlari −32768..32767, modelga float kerak",
         "Stereo fayl (n, 2) shaklda o'qiladi va y.mean(axis=1) bilan mono ga aylantiriladi",
         "sf.write da sample rate ni o'zgartirish librosa.resample bilan bir xil natija beradi",
-        "int16 massivni to'g'ridan-to'g'ri modelga berish natijaga ta'sir qilmaydi"
+        "int16 massivni to'g'ridan-to'g'ri modelga berish natijaga ta'sir qilmaydi, model moslashadi"
       ],
       answer: [0, 1, 2],
       explain: "Metadata dagi sample rate ni almashtirish signalni qayta namunalamaydi, faqat tezligini buzadi. int16 ni /32768.0 bilan float ga o'tkazish, stereoni esa mono ga aylantirish kerak — aks holda model ma'nosiz natija beradi.",
@@ -97,8 +97,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Z-normallash o'rtachani olib tashlagani uchun signal teskari bo'lib qoladi",
-        "Dispersiya 1 ga keltiriladi, ya'ni RMS 1.0 (0 dBFS) va cho'qqilar 6.57 gacha chiqadi",
-        "Z-normallash sample rate ni o'zgartirib, aliasing hosil qiladi",
+        "Dispersiya 1 ga keltiriladi: RMS 1.0 (0 dBFS), cho'qqilar 6.57 gacha",
+        "Z-normallash sample rate ni o'zgartirib, aliasing va clipping hosil qiladi",
         "Z-normallash faqat int16 formatida clipping beradi, float32 da emas"
       ],
       answer: [1],
@@ -109,10 +109,10 @@ window.QUIZ = {
       q: "Bir nechta faylni ASR uchun normallashtirish kerak. Nima uchun cho'qqi bo'yicha emas, RMS −20 dBFS bo'yicha normallash tavsiya etiladi?",
       type: "single",
       options: [
-        "RMS usuli hamma faylni bir xil balandlikka keltiradi, cho'qqi usulida bitta \"chert\" natijani buzadi",
-        "RMS usuli faylni siqib, hajmini ikki baravar kamaytiradi",
-        "Cho'qqi usuli har doim clipping hosil qiladi, RMS esa hech qachon",
-        "RMS usuli fon shovqinini avtomatik olib tashlaydi"
+        "RMS hamma faylni bir xil balandlikka keltiradi, cho'qqini bitta \"chert\" buzadi",
+        "RMS usuli faylni siqib, uning hajmini taxminan ikki baravar kamaytiradi",
+        "Cho'qqi usuli har doim clipping hosil qiladi, RMS usulida esa u bo'lmaydi",
+        "RMS usuli past darajadagi fon shovqinini avtomatik olib tashlaydi"
       ],
       answer: [0],
       explain: "RMS −20 dBFS dan keyin hamma faylda RMS aynan −20.00 bo'ladi. Cho'qqi usuli esa har faylni turlicha ko'taradi (masalan, −20.87 dan −16.44 ga). RMS usulida ham clipping himoyasi qo'shiladi.",
@@ -131,10 +131,10 @@ window.QUIZ = {
       q: "Darsdagi o'lchovga ko'ra 44.1 kHz → 16 kHz qayta namunalash uchun qaysi tanlov eng yaxshi?",
       type: "single",
       options: [
-        "scipy resample_poly — eng tez va eng aniq usul",
+        "scipy resample_poly — eng tez va eng aniq, qo'shimcha sozlashsiz",
         "librosa.resample (sukut bo'yicha soxr_hq) — eng tez va eng aniq",
         "res_type=\"kaiser_fast\" — qo'shimcha paketsiz eng tez ishlaydi",
-        "y[::k] — eng tez, shuning uchun katta arxivlar uchun mos"
+        "y[::k] — eng tez usul, shuning uchun katta arxivlar uchun mos"
       ],
       answer: [1],
       explain: "soxr_hq 4.2 ms da etalon natija berdi, scipy resample_poly 8.0 ms va xatosi 0.007574. kaiser_fast uchun alohida resampy paketi kerak, y[::k] esa hech qachon ishlatilmaydi.",
@@ -159,9 +159,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Bu augmentatsiyalardan butunlay voz kechish kerak",
-        "Faqat z-normallashni qo'llash kifoya",
-        "Sample rate ni 44.1 kHz ga ko'tarish kerak",
-        "Augmentatsiyadan keyin audioni qayta normallashtirish kerak"
+        "Faqat z-normallashni qo'llash kifoya qiladi",
+        "Sample rate ni 44.1 kHz ga ko'tarib qayta hisoblash",
+        "Augmentatsiyadan keyin audioni qayta normallashtirish"
       ],
       answer: [3],
       explain: "Fazali vokoder qayta qurishda energiyaning bir qismini yo'qotadi (~3.5 dB). Shuning uchun augmentatsiyadan keyin qayta normallashtiriladi; g'oyaning o'zi to'g'ri va foydali.",

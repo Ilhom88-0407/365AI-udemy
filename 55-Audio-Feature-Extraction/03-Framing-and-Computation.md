@@ -289,7 +289,7 @@ print(f"  birinchi 6: "
 
 **M2.** ## 25 ms — fonema **ichida** qoladi *(fonema 50–100 ms)*. ## 10 ms — **100 freym/s**, o'tishlarni **o'tkazib yubormaydi**.
 
-**M3.** ## Taqsimot **nosimmetrik**. ## O'lchandi: ZCR o'rtacha **0.1522**, median **0.1053** — **45% farq**.
+**M3.** ## Taqsimot **nosimmetrik**. ## O'lchandi: ZCR o'rtacha **0.1522**, median **0.1050** — **45% farq**.
 
 </details>
 

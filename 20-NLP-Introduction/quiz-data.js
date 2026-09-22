@@ -92,8 +92,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Klasterlash algoritmlariga — xatlarni yorliqsiz guruhlarga bo'ladi",
-        "Grammatik qoidalarga — xatdagi imlo xatolarini sanaydi",
-        "Tasniflash algoritmlariga — spam va qonuniy xatlarni farqlovchi naqshlarni topadi",
+        "Grammatik qoidalarga — xatdagi imlo xatolarini sanab baholaydi",
+        "Tasniflash algoritmlariga — spam va oddiy xat naqshlarini farqlaydi",
         "Tarjima algoritmlariga — xatni boshqa tilga o'girib tekshiradi"
       ],
       answer: [2],
@@ -113,9 +113,9 @@ window.QUIZ = {
       q: "Mini spam filtri \"Ob-havo yaxshi bugun\" xatini SPAM deb xato topdi. Darsga ko'ra, bu muammoning asosiy sababi nima?",
       type: "single",
       options: [
-        "Model atigi 6 ta xatda o'rgatilgan — yetarli ma'lumot yo'q",
+        "Model atigi 6 ta xatda o'rgatilgan — ma'lumot kam",
         "Model Naive Bayes o'rniga klasterlashdan foydalangan",
-        "Xat matni kichik harfga o'tkazilmagan",
+        "Xat matni kichik harfga o'tkazilmagan, so'zlar mos kelmagan",
         "Spam lug'atida so'zlar juda ko'p bo'lib ketgan"
       ],
       answer: [0],
@@ -147,11 +147,11 @@ window.QUIZ = {
       q: "Nazorat ostida va nazoratsiz o'rganish haqidagi qaysi fikrlar darsga mos? (bir nechta javob)",
       type: "multi",
       options: [
-        "Nazorat ostida o'rganishda kirish matni bilan birga to'g'ri chiqish (yorliq) beriladi",
+        "Nazorat ostida o'rganishda kirish bilan birga to'g'ri yorliq beriladi",
         "Nazoratsiz o'rganish guruhlarni topadi, lekin ularga nomni odam beradi",
-        "Nazoratsiz natijani baholash nazorat ostidagidan osonroq",
+        "Nazoratsiz natijani baholash osonroq, chunki to'g'ri javob kerak emas",
         "Nazorat ostida yondashuvda yorliqlash eng qimmat qism hisoblanadi",
-        "Klasterlash nazorat ostida o'rganishning misoli"
+        "Klasterlash nazorat ostida o'rganishning tipik misoli hisoblanadi"
       ],
       answer: [0, 1, 3],
       explain: "Nazorat ostida kirish–chiqish juftliklari kerak va yorliqlash qimmat; nazoratsiz esa guruhlarni topadi, nomlarini odam beradi. Nazoratsizni baholash qiyin, klasterlash esa nazoratsiz texnika.",
@@ -162,7 +162,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "Chunki \"xizmat\" ot so'z turkumi, otlar doim yuqori ball oladi",
-        "Chunki u faqat bitta ijobiy sharhda uchragan — ma'lumot kam va xilma-xil emas",
+        "Chunki u faqat bitta ijobiy sharhda uchragan — ma'lumot kam",
         "Chunki model ballarni o'rtacha emas, eng katta qiymat bo'yicha hisoblaydi",
         "Chunki \"xizmat\" so'zi ijobiy so'zlar ro'yxatiga qo'lda kiritilgan"
       ],

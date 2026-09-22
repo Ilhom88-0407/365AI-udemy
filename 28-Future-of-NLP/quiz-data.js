@@ -9,7 +9,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "Qatlamlar soni har epoxada oshiriladi, toki tarmoq \"chuqur\" bo'lsin",
-        "Neyronlar orasidagi vaznlar sozlanadi, bashorat va haqiqiy natija farqini kamaytirish uchun",
+        "Neyronlar orasidagi vaznlar sozlanadi, toki bashorat xatosi kamaysin",
         "Aktivatsiya funksiyasi olib tashlanadi, toki signal tezroq uzatilsin",
         "Kirish ma'lumoti o'zgartiriladi, toki u chiqish qatlamiga mos kelsin"
       ],
@@ -49,9 +49,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Hech qanday bog'liqlik yo'q — u qoidaga asoslangan VADER modeli edi",
-        "U RNN edi, ChatGPT esa CNN arxitekturasidan foydalanadi",
-        "U ChatGPT'ning o'zi edi, faqat bepul versiyasi",
-        "Ikkalasi ham transformer; farqi hajmda va bitta vazifaga moslashtirilganida"
+        "U RNN edi, ChatGPT esa undan farqli CNN arxitekturasidan foydalanadi",
+        "U ChatGPT'ning o'zi edi, faqat bepul va kichraytirilgan versiyasi",
+        "Ikkalasi ham transformer; farqi hajm va bitta vazifaga moslashtirishda"
       ],
       answer: [3],
       explain: "ChatGPT transformer arxitekturasidan foydalanadi. 23-moduldagi sentiment modeli ham transformer, faqat ancha kichik va bitta vazifaga o'qitilgan.",
@@ -61,10 +61,10 @@ window.QUIZ = {
       q: "Kompaniya har kuni 1 000 000 ta sharhni tasniflashi va har bir qaror sababini ko'rsatishi kerak. Darsga ko'ra nega bu yerda sklearn modeli LLM'dan afzal bo'lishi mumkin?",
       type: "single",
       options: [
-        "sklearn tez va arzon, logistik regressiya esa so'z vaznlari orqali qarorni tushuntiradi",
+        "sklearn tez, arzon va so'z vaznlari orqali qarorini tushuntira oladi",
         "LLM'lar sharhlarni tasniflay olmaydi, faqat matn generatsiya qiladi",
-        "sklearn modellari LLM'dan har doim aniqroq natija beradi",
-        "LLM'larda shipcha o'rganish muammosi umuman bo'lmaydi"
+        "sklearn modellari tor vazifada LLM'dan har doim aniqroq natija beradi",
+        "sklearn modeli shipcha o'rganishdan to'liq himoyalangan, LLM esa yo'q"
       ],
       answer: [0],
       explain: "Darsdagi uch sabab: LLM qimmat va sekin (sklearn 10 soniya va bepul), tushuntirib bermaydi (coef_ esa beradi) va uni ham shipchalar uchun tekshirish kerak.",
@@ -97,8 +97,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "CountVectorizer(stop_words=stopwords.words(\"uzbek\"))",
-        "CountVectorizer(lowercase=False)",
-        "CountVectorizer(min_df=2)",
+        "CountVectorizer(lowercase=False, min_df=1)",
+        "CountVectorizer(min_df=2, max_df=0.9)",
         "CountVectorizer(token_pattern=r\"[\\w'ʻ’]+\")"
       ],
       answer: [3],
@@ -124,9 +124,9 @@ window.QUIZ = {
       type: "multi",
       options: [
         "To'xtatish so'zlarini olib tashlash (NLTK)",
-        "spaCy bilan POS teglash va NER",
+        "spaCy modeli bilan POS teglash va NER",
         "TF-IDF vektorlashtirish (sklearn)",
-        "VADER bilan sentiment tahlili",
+        "VADER lug'ati bilan sentiment tahlili",
         "Yorliqli ma'lumotda tasniflagich o'qitish"
       ],
       answer: [0, 2, 4],
@@ -137,9 +137,9 @@ window.QUIZ = {
       q: "O'zbek tilining agglyutinativ tabiati Bag of Words uchun qanday muammo tug'diradi?",
       type: "single",
       options: [
-        "uyim, uyimda, uylarim, uylarimda alohida ustun bo'lib, lug'at tez kattalashadi",
+        "uyim, uyimda, uylarim alohida ustun bo'lib, lug'at tez kattalashadi",
         "Qo'shimchalar avtomatik o'chirilgani uchun so'z ma'nosi yo'qoladi",
-        "Lotin va kirill harflari bir xil ustunga tushib qoladi",
+        "Lotin va kirill yozuvidagi harflar bir xil ustunga tushib qoladi",
         "Uzun so'zlar CountVectorizer tomonidan umuman qabul qilinmaydi"
       ],
       answer: [0],
@@ -151,8 +151,8 @@ window.QUIZ = {
       code: "from sklearn.feature_extraction.text import CountVectorizer\ncv = CountVectorizer()\nX = cv.fit_transform([\"The dog bit the man\", \"The man bit the dog\"])\nprint(X.toarray())",
       type: "single",
       options: [
-        "[[1 1 1 2] [1 1 1 2]] — ma'nosi teskari jumlalar BOW uchun bir xil, kontekst yo'qoladi",
-        "[[1 1 1 2] [2 1 1 1]] — BOW so'z tartibini hisobga oladi",
+        "[[1 1 1 2] [1 1 1 2]] — ma'nosi teskari jumlalar BOW uchun bir xil",
+        "[[1 1 1 2] [2 1 1 1]] — BOW so'z tartibini ham hisobga oladi",
         "[[1 1 1 1] [1 1 1 1]] — the so'zi to'xtatish so'zi sifatida o'chirilgan",
         "Xato — bir xil so'zli jumlalarni vektorlashtirib bo'lmaydi"
       ],
@@ -190,10 +190,10 @@ window.QUIZ = {
       q: "27-moduldagi model 88.9% aniqlik berdi, lekin keyin u tilni emas, Reuters nomini o'rgangani ma'lum bo'ldi. Bu NLP kelajagining qaysi yo'nalishi bilan eng ko'p bog'liq?",
       type: "single",
       options: [
-        "Tezlik — model juda sekin ishlagani uchun",
-        "Ko'p modallik — rasmlar hisobga olinmagani uchun",
-        "Kontekst — model so'z tartibini bilmagani uchun",
-        "Axloq va shaffoflik — shipchani faqat modelni tekshirgan odam topa oladi"
+        "Tezlik — model real vaqtda juda sekin ishlagani uchun",
+        "Ko'p modallik — maqoladagi rasmlar hisobga olinmagani uchun",
+        "Kontekst — model so'z tartibini umuman bilmagani uchun",
+        "Axloq va shaffoflik — shipchani faqat modelni tekshirish ochadi"
       ],
       answer: [3],
       explain: "Bu shortcut learning: shaffoflik va tekshiruv bo'lmasa, yuqori aniqlik aldamchi bo'ladi. Shuning uchun axloqiy ro'yxatda \"shipcha bormi?\" bandi bor.",

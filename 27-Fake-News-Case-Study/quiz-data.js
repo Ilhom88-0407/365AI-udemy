@@ -9,9 +9,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Prefiks matnni juda uzun qilib, spaCy ishlashini sekinlashtiradi",
-        "Model matnni tushunmasdan \"Reuters bor → haqiqiy\" degan format hiylasini o'rganadi",
-        "Prefiksdagi katta harflar VADER sentiment ballini buzadi",
-        "Reuters so'zi to'xtatish so'zlari ro'yxatida bo'lgani uchun lug'at buziladi"
+        "Model mazmunni emas, \"Reuters bor → haqiqiy\" qoidasini o'rganib oladi",
+        "Prefiksdagi katta harflar VADER sentiment ballini buzib yuboradi",
+        "Reuters to'xtatish so'zlari ro'yxatida bo'lgani uchun lug'at buziladi"
       ],
       answer: [1],
       explain: "Agentlik prefiksi faqat haqiqiy yangiliklarda bor, shuning uchun model shipchani topadi. Haqiqiy hayotda AP yoki BBC yangiligida Reuters yo'q bo'lsa, model uni soxta deb qo'yadi.",
@@ -90,9 +90,9 @@ window.QUIZ = {
       q: "Bu modulda nega stemming emas, lemmatization tanlandi?",
       type: "single",
       options: [
-        "Ma'lumot kichik (198 maqola), shuning uchun tezlikdan ko'ra ma'no muhimroq",
+        "Ma'lumot kichik (198 maqola), shu bois tezlikdan ko'ra ma'no muhim",
         "Stemming ingliz tilida ishlamaydi, faqat lemmatization ishlaydi",
-        "Lemmatization Reuters prefiksini avtomatik olib tashlaydi",
+        "Lemmatization Reuters prefiksini ham avtomatik olib tashlaydi",
         "Stemming to'xtatish so'zlarini ham qaytarib qo'shib yuboradi"
       ],
       answer: [0],
@@ -106,7 +106,7 @@ window.QUIZ = {
         "text_clean ro'yxat ko'rinishida bo'lgani uchun VADER uni o'qiy olmaydi",
         "Xom matnda Reuters prefiksi bor va u sentimentni aniqroq qiladi",
         "text_clean'da to'xtatish so'zlari, jumladan not, no, never o'chirilgan",
-        "VADER faqat katta harfli matn bilan ishlaydi"
+        "VADER faqat lemmatizatsiya qilinmagan matnda ball hisoblay oladi"
       ],
       answer: [2],
       explain: "Sentiment uchun inkor hal qiluvchi. To'xtatish so'zlari olib tashlangan matnda \"not good\" shunchaki \"good\" bo'lib qoladi.",
@@ -124,10 +124,10 @@ window.QUIZ = {
       q: "Koherentlik ballari 2, 7 yoki 11 ta mavzuni ko'rsatdi. O'qituvchi 7 ni tanladi. Buning sababi nima edi?",
       type: "single",
       options: [
-        "7 ta mavzuda koherentlik eng yuqori, boshqalarida esa manfiy edi",
-        "2 ta mavzu yetarlicha qiziqarli emas, 11 tasini esa manfaatdorlarga tushuntirish juda qiyin",
-        "LDA algoritmi 7 dan ko'p mavzu bilan ishlay olmaydi",
-        "Soxta maqolalar soni 98 bo'lgani uchun uni 7 ga bo'lish qulay"
+        "7 ta mavzuda koherentlik eng yuqori, 2 va 11 da esa manfiy chiqqan edi",
+        "2 tasi yetarlicha qiziqarli emas, 11 tasini manfaatdorga tushuntirish qiyin",
+        "LDA algoritmi kichik ma'lumotda 7 dan ko'p mavzu bilan ishlay olmaydi",
+        "Soxta maqolalar soni 98 bo'lgani uchun ularni 7 ga teng bo'lish qulay"
       ],
       answer: [1],
       explain: "Koherentlik faqat taklif qiladi, qarorni inson qabul qiladi. 2 juda kam, 11 juda ko'p bo'lgani uchun 7 tanlandi.",
@@ -137,10 +137,10 @@ window.QUIZ = {
       q: "Bag of Words bilan qurilgan LDA mavzularida said 5/7, trump 4/7 mavzuda takrorlandi. Buning asosiy sababi nima?",
       type: "single",
       options: [
-        "LDA faqat eng qisqa so'zlarni mavzuga kiritadi",
+        "LDA har mavzuga faqat eng qisqa so'zlarni kiritadi, uzunlarini tashlaydi",
         "Koherentlik noto'g'ri hisoblangani uchun mavzular soni xato tanlangan",
-        "Matn tozalanmagani uchun tinish belgilar mavzularga tushgan",
-        "Bag of Words tez-tez uchraydigan trump kabi so'zlarga har mavzuda katta og'irlik beradi"
+        "Matn tozalanmagani uchun tinish belgilar va raqamlar mavzularga tushgan",
+        "Bag of Words ko'p uchraydigan so'zlarga har mavzuda katta og'irlik beradi"
       ],
       answer: [3],
       explain: "LDA Bag of Words ishlatadi: trump ko'p uchragani uchun har mavzuda og'ir bo'lib chiqadi. Keyingi darsdagi yechim — TF-IDF.",
@@ -176,10 +176,10 @@ window.QUIZ = {
       q: "Bitta bo'linishda LR 88.3%, SVM 81.7% berdi; 5-buklamali cross-validation'da esa LR 88.9%, SVM 90.4%. To'g'ri xulosa qaysi?",
       type: "single",
       options: [
-        "LR yaxshiroq, chunki u bitta bo'linishda g'olib chiqdi",
+        "LR yaxshiroq, chunki u bitta bo'linishda aniq farq bilan g'olib chiqdi",
         "Ikkala natija ham ishonchsiz, chunki 198 ta misol juda kam",
-        "SVM yaxshiroq — bitta bo'linishda u shunchaki omadsiz bo'linishga tushgan",
-        "Farq yo'q, chunki ikkalasi ham 80% dan yuqori"
+        "SVM yaxshiroq — bitta bo'linishda u omadsiz bo'linishga tushgan",
+        "Farq yo'q, chunki ikkalasi ham 80% dan yuqori va bir-biriga yaqin"
       ],
       answer: [2],
       explain: "Bitta bo'linish — bitta o'lchov. Cross-validation 5 marta o'lchaydi va xulosani teskari aylantirdi: SVM aslida yaxshiroq. Modellarni solishtirishda doim CV ishlating.",

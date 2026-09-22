@@ -9,9 +9,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "AI tizimlarining xatolarini aniqlaydigan texnik standartlar va testlar to'plami",
-        "AI foydasini umumiy manfaat uchun maksimallashtirish va zararini minimallashtirish uchun moral tamoyillar",
+        "AI foydasini maksimallashtirib, zararini minimallashtirishga qaratilgan moral tamoyillar",
         "AI ishlab chiqaruvchi kompaniyalarning foydasini himoya qiluvchi huquqiy qoidalar",
-        "Faqat AI qurollarini taqiqlashga qaratilgan xalqaro kelishuvlar majmuasi"
+        "Faqat AI qurollarini taqiqlashga qaratilgan xalqaro kelishuvlar va shartnomalar majmuasi"
       ],
       answer: [1],
       explain: "AI etikasi — AI ning umumiy manfaat uchun foydasini maksimallashtirish va rivojlanishidan kelib chiqadigan potensial zararni minimallashtirish uchun moral tamoyillar to'plami.",
@@ -21,10 +21,10 @@ window.QUIZ = {
       q: "Avtonom avtomobil piyodani urib yubordi. Dars nima uchun bunday holatda javobgarlik masalasini AI etikasining hayotiy masalasi deb biladi?",
       type: "single",
       options: [
-        "Chunki AI modellari hali ham insonlar tomonidan loyihalanadi va o'qitiladi, lekin kim javobgarligi hali aniq emas",
+        "Chunki modellarni hali ham odamlar quradi, lekin kim javobgar ekani hali aniq emas",
         "Chunki AI to'liq mustaqil qaror qiladi va javobgarlik faqat algoritmning o'ziga tushadi",
-        "Chunki qonunlarga ko'ra bunday holatda har doim faqat haydovchi javob beradi",
-        "Chunki avtonom avtomobillar hech qachon sinovdan o'tkazilmaydi"
+        "Chunki qonunga ko'ra bunday holatda javobgarlik to'liq haydovchi zimmasiga tushadi",
+        "Chunki avtonom avtomobillar ommaviy yo'llarda yetarli sinovdan o'tkazilmaydi"
       ],
       answer: [0],
       explain: "Dars AI ni inson nazoratidan tashqaridagi narsa deb o'ylashni xato deydi: modellarni hali ham odamlar quradi. Shuning uchun inson mas'uliyatini va AI harakatlari uchun kim javobgarligini belgilash — hali javobi yo'q savol.",
@@ -48,9 +48,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Yuqori malakali dasturchilar — bu IT sohasida ish haqini keskin tushiradi",
-        "Faqat qishloq xo'jaligi ishchilari — bu oziq-ovqat narxlarini oshiradi",
-        "Kam ma'lumotli va past daromadli ishchilar — bu tengsizlikni kuchaytirish xavfini oshiradi",
-        "Davlat xizmatchilari — bu davlat boshqaruvini falaj qiladi"
+        "Qishloq xo'jaligi ishchilari — bu oziq-ovqat narxlarini keskin oshiradi",
+        "Kam ma'lumotli, past daromadli ishchilar — bu tengsizlikni kuchaytirishi mumkin",
+        "Davlat xizmatchilari — bu davlat boshqaruvi va xizmatlarini falaj qiladi"
       ],
       answer: [2],
       explain: "Hisobot kam ma'lumotli va past daromadli ishchilar AI ga ayniqsa zaif ekanini aniqladi, bu esa texnologiya tengsizlikni kuchaytirishi xavfini oshiradi. Umuman AQSh ishchilarining taxminan 10% i eng jiddiy xavf ostida.",
@@ -73,8 +73,8 @@ window.QUIZ = {
       q: "Papa G7 sammitida AI ni tartibga solishni yoqlab chiqdi. Darsga ko'ra uning e'tiborini nima tortgan edi?",
       type: "single",
       options: [
-        "AI tufayli Italiyada ishsizlik keskin oshgani haqidagi hisobot",
-        "Uning o'zi deepfake orqali Balenciaga palto kiygan holda yolg'on tasvirlangani",
+        "AI tufayli Italiyada ishsizlik keskin oshgani haqidagi rasmiy hisobot",
+        "Uning deepfake orqali Balenciaga paltoda yolg'on tasvirlangani",
         "Vatikan kompyuter tizimlariga AI yordamida masofadan hujum qilingani",
         "Cherkov kitoblaridan ruxsatsiz LLM o'qitilgani haqidagi sud da'vosi"
       ],
@@ -86,10 +86,10 @@ window.QUIZ = {
       q: "EU AI Act haqida qaysi fikr darsga mos keladi?",
       type: "single",
       options: [
-        "U AI ni tartibga solishning birinchi global ramkasi bo'lib, fuqarolar, bizneslar va davlat idoralarini himoya qilishni maqsad qiladi",
+        "U birinchi global AI tartibga solish ramkasi bo'lib, AI ni xavfsizroq qilishni ko'zlaydi",
         "U barcha davlatlar uchun majburiy bo'lgan yagona xalqaro AI boshqaruvi ramkasidir",
-        "U AI ishlab chiquvchilardan hech qanday qo'shimcha xarajat talab qilmaydi",
-        "U faqat AI qurollarini taqiqlaydi va boshqa sohalarga tegmaydi"
+        "U AI ishlab chiquvchilardan hech qanday qo'shimcha xarajat yoki hujjat talab qilmaydi",
+        "U faqat AI qurollarini taqiqlaydi, fuqarolik sohalariga esa umuman tegmaydi"
       ],
       answer: [0],
       explain: "EU AI Act — birinchi global tartibga solish ramkasi, AI ni xavfsizroq va shaffofroq qilishni maqsad qiladi. Dastlab u qo'shimcha xarajat talab qiladi, milliy chegaralardan oshib o'tadigan yagona ramka esa hali faqat umid.",
@@ -108,9 +108,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "PwC prognozi to'g'ri, chunki u yangiroq va chuqurroq tahlilga asoslangan",
-        "Bloomberg prognozi to'g'ri, chunki u AQSh YaIM iga yaqinroq",
-        "Ikki prognoz ham noto'g'ri, chunki AI bozori tez orada qisqaradi",
-        "Qaysi biri to'g'riligini bilmaymiz, lekin sektor misli ko'rilmagan o'sishni boshdan kechiradi"
+        "Bloomberg prognozi to'g'ri, chunki u AQSh YaIM iga ancha yaqinroq va ehtiyotkor",
+        "Ikki prognoz ham noto'g'ri, chunki AI bozori tez orada qisqarib, pufak yoriladi",
+        "Qaysi biri to'g'riligi noma'lum, lekin sektor misli ko'rilmagan darajada o'smoqda"
       ],
       answer: [3],
       explain: "Ma'ruzachi halol tan oladi: prognozlar orasida ulkan tafovut bor va qaysi biri to'g'ri chiqishini bilmaymiz. Aniq ma'lum narsa — AI sektori misli ko'rilmagan o'sishni boshdan kechiradi.",
@@ -136,7 +136,7 @@ window.QUIZ = {
       options: [
         "Feedback loop lar paydo bo'lishi",
         "Model aniqligining pasayishi",
-        "Chip taqchilligining butunlay yo'qolishi",
+        "Chip taqchilligining yo'qolishi",
         "Mavjud bias larning kuchayishi"
       ],
       answer: [2],
@@ -147,10 +147,10 @@ window.QUIZ = {
       q: "Darsda ma'lumot muammosi bo'yicha keltirilgan ehtimoliy stsenariylardan biri qaysi?",
       type: "single",
       options: [
-        "LLM ishlab chiqaruvchilar foydalanuvchilarga shaxsiy ma'lumotlaridan foydalangani uchun pul to'lashi",
-        "Barcha AI kompaniyalari ma'lumot yig'ishni butunlay to'xtatib, faqat sintetik ma'lumot ishlatishi",
+        "Tashkilotlar foydalanuvchilarga shaxsiy ma'lumotidan foydalangani uchun pul to'lashi",
+        "Barcha AI kompaniyalari ma'lumot yig'ishni to'xtatib, faqat sintetik ma'lumot ishlatishi",
         "Ijtimoiy tarmoqlar o'z ma'lumotlarini hamma uchun bepul va cheklovsiz ochishi",
-        "Hukumatlar barcha foundation modellarni davlat mulkiga aylantirishi"
+        "Hukumatlar barcha foundation modellarni milliylashtirib, davlat mulkiga aylantirishi"
       ],
       answer: [0],
       explain: "Uchta stsenariy: ko'proq litsenziya shartnomalari, ba'zi hukumatlar shaxsiy ma'lumot bilan o'qitishni taqiqlashi va tashkilotlar foydalanuvchilarga ma'lumoti uchun pul to'lashi.",
@@ -174,9 +174,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Nvidia o'z LLM ini chiqargani uchun; raqobatchilar undan yaxshiroq LLM yaratmoqda",
-        "Nvidia narxlarni tushirgani uchun; endi narxlar yana ko'tarilmoqda",
+        "Nvidia chip narxlarini keskin tushirgani uchun; endi narxlar yana ko'tarilmoqda",
         "Hukumatlar Nvidia ni subsidiya qilgani uchun; subsidiyalar tugashi kutilmoqda",
-        "ChatGPT shov-shuvi chiplarga talabni oshirgani uchun; ulkan foyda boshqa ishlab chiqaruvchilarni jalb qilmoqda"
+        "ChatGPT shov-shuvi chip talabini oshirgani uchun; foyda raqobatchilarni jalb qilmoqda"
       ],
       answer: [3],
       explain: "Nvidia ChatGPT yaratgan AI shov-shuvi tufayli yarimo'tkazgichlarga o'sgan talabdan foyda ko'rish uchun eng yaxshi holatda edi. Sifatli chiplarda taqchillik bor, lekin Nvidia foydasi boshqa ishlab chiqaruvchilar e'tiborini tortdi.",
@@ -186,10 +186,10 @@ window.QUIZ = {
       q: "Dars AI sanoatidagi asosiy ochiq savol sifatida nimani ko'rsatadi?",
       type: "single",
       options: [
-        "AI chiplar narxi qachon kompyuter protsessorlari darajasiga tushishi",
-        "EU AI Act boshqa qit'alarda ham qabul qilinishi",
-        "Open source modellar closed source bilan raqobatbardosh bo'ladimi yoki big tech hukmronligi davom etadimi",
-        "Generativ AI bozori qachon AQSh YaIM idan oshib ketishi"
+        "AI chiplar narxi qachon oddiy kompyuter protsessorlari darajasiga tushishi",
+        "EU AI Act boshqa qit'alarda ham aynan shu ko'rinishda qabul qilinishi",
+        "Open source modellar big tech ning yopiq modellari bilan raqobatlasha oladimi",
+        "Generativ AI bozori hajmi qachon AQSh YaIM idan oshib ketishi mumkinligi"
       ],
       answer: [2],
       explain: "Asosiy syujet chizig'i: open source hamjamiyati modellari closed source AI bilan raqobatlasha oladimi, yoki Google va OpenAI kabi big tech firmalari bozorda hukmronlik qilishda davom etadimi.",

@@ -195,7 +195,7 @@ display(Audio("speech_01.wav"))          # ⭐ fayldan
 >
 > ## ⚠️ **UCHTA NOZIK JIHAT:**
 > ```
-> ① rate= ni UNUTMANG  →  aks holda 22050 deb hisoblanadi
+> ① rate= ni UNUTMANG  →  aks holda 💥 ValueError (massiv uchun rate SHART)
 > ② stereo uchun shakl (2, n) bo'lishi kerak — (n, 2) EMAS
 > ③ qiymatlar -1..1 oralig'ida bo'lsin
 >    →  💥 aks holda Audio ularni O'ZI normallashtiradi
@@ -297,7 +297,7 @@ def transkripsiya(yol, til="en"):
 
 **M1.** ## U — **ixtiyoriy submodul**, `matplotlib` ga bog'liq, ## va **avtomatik yuklanmaydi**.
 
-**M2.** ## Sukut **22050 Hz** deb hisoblanadi → ## 💥 audio **noto'g'ri tezlikda** eshitiladi.
+**M2.** ## Sukut qiymat **yo'q** → ## 💥 `ValueError: rate must be specified when data is a numpy array or list of audio samples.` ## ⚠️ `rate` ni **noto'g'ri** bersangiz esa — audio **noto'g'ri tezlikda** eshitiladi.
 
 **M3.** ## `transformers` — **4.12 s**. ## ⚠️ Lekin `from transformers import pipeline` — **9.53 s**.
 

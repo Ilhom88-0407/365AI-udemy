@@ -345,7 +345,7 @@ duration=1.5: threshold 417666.35   qolgan audio 22.03 s
 
 | Muammo | ## Ishlaydigan yechim |
 |---|---|
-| Doimiy gul (50/60 Hz) | ## ⭐ **notch filtr** — aniq chastotada |
+| Doimiy elektr g'uvillashi (50/60 Hz) | ## ⭐ **notch filtr** — aniq chastotada |
 | Kesilgan uzun fayl | ## ⭐ **bo'laklash** *(58-modul)* |
 | Juda jim yozuv | ## ⭐ **normallash** |
 | Stereo/chastota mos emas | ## ⭐ **`librosa.load(sr=16000, mono=True)`** |

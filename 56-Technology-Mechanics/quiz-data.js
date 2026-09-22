@@ -124,10 +124,10 @@ window.QUIZ = {
       q: "E'tibor formulasida Q·Kᵀ ni √d ga bo'lish olib tashlansa, darsga ko'ra nima bo'ladi?",
       type: "single",
       options: [
-        "Softmax taqsimoti tekislanadi va model hamma freymga teng qaraydi",
-        "Ballar katta bo'lib, softmax bitta freymga yig'iladi va gradient deyarli nolga tushadi",
+        "Softmax tekislanib ketadi va model barcha freymlarga deyarli teng qaraydi",
+        "Ballar kattalashib, softmax bitta freymga yig'iladi va gradient nolga tushadi",
         "Og'irliklar qatorlari yig'indisi 1 dan katta bo'lib, ehtimollik buziladi",
-        "Hisoblash murakkabligi O(n²) dan O(n³) ga oshadi"
+        "Hisoblash murakkabligi O(n²) dan O(n³) ga oshadi va xotira yetmay qoladi"
       ],
       answer: [1],
       explain: "√d siz ball diapazoni -6.64..25.20 gacha kengaydi va softmax maksimumi aynan 1.0000 bo'ldi. Softmax gradienti p(1−p) bo'lgani uchun p = 1 da gradient 0 — model o'rganmaydi. Qatorlar yig'indisi esa baribir 1 bo'lib qoladi.",
@@ -139,9 +139,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "encoder chaqiruviga output_hidden_states=True qo'shish",
-        "torch.no_grad() blokini olib tashlash",
+        "torch.no_grad() blokini olib tashlab, gradientlarni yoqish",
         "from_pretrained ga attn_implementation=\"eager\" qo'shish",
-        "m.eval() o'rniga m.train() chaqirish"
+        "m.eval() o'rniga m.train() chaqirib, dropout'ni yoqish"
       ],
       answer: [2],
       explain: "Sukut bo'yicha tezroq sdpa ishlatiladi va u output_attentions=True ni qo'llab-quvvatlamaydi — jimgina bo'sh natija qaytadi. attn_implementation=\"eager\" bilan 4 qatlam × (1, 6, 1500, 1500) e'tibor olinadi.",
@@ -191,9 +191,9 @@ window.QUIZ = {
       q: "Jonli efir uchun real vaqtli subtitr kerak. Nega Whisper'ni o'zicha ishlatish darsda yaramaydi deb baholangan?",
       type: "single",
       options: [
-        "U 30 soniyalik bo'lakni to'liq olib keyin ishlaydi — kamida 30 s kechikish bo'ladi",
+        "U 30 soniyalik bo'lakni to'liq kutadi — kamida 30 s kechikish bo'ladi",
         "U faqat ingliz tilini biladi, subtitr esa ko'p tilli bo'lishi kerak",
-        "U GPU siz ishlamaydi, efir serverlarida esa odatda GPU bo'lmaydi",
+        "U GPU siz umuman ishlamaydi, efir serverlarida esa odatda GPU bo'lmaydi",
         "U tinish belgilarini qo'ymaydi, subtitr esa o'qilishi qiyin bo'lib qoladi"
       ],
       answer: [0],

@@ -85,9 +85,9 @@ window.QUIZ = {
       options: [
         "Noyob so'zlar ulushi juda past (masalan 7.1%)",
         "Soniyasiga 4 dan ortiq so'z (masalan 14.38 so'z/s)",
-        "Matnda tinish belgilari ko'p ekani",
+        "Tinish belgilari ko'pligi (masalan har 6 so'zda vergul)",
         "Soniyasiga 0.5 dan kam so'z (masalan 0.04 so'z/s)",
-        "Jumlalar katta harf bilan boshlanishi"
+        "Jumlalarning hammasi katta harf bilan boshlanishi"
       ],
       answer: [0, 1, 3],
       explain: "Odam nutqi 2.0–3.5 so'z/s: 14.38 jismonan imkonsiz, 0.04 esa model taslim bo'lganini bildiradi. Shuning uchun detektor ikkala tomondan chegara qo'yadi. Tinish belgilari va katta harflar esa Whisper ning oddiy formatlashi.",
@@ -97,9 +97,9 @@ window.QUIZ = {
       q: "Kursning papka kodi for file_name in os.listdir(directory_path) bilan ishlaydi va natijalarni \"Track Number\" bilan CSV ga yozadi. Bunda qanday xavf bor?",
       type: "single",
       options: [
-        "os.listdir() tartibi kafolatlanmagan — tartib raqamlari noto'g'ri bo'lib qolishi mumkin; sorted() kerak",
-        "os.listdir() yashirin fayllarni ham qaytaradi, shuning uchun Whisper ularni ham transkripsiya qiladi",
-        "os.listdir() faqat birinchi 100 ta faylni qaytaradi, qolganlari e'tiborsiz qoladi",
+        "os.listdir() tartibi kafolatlanmagan — raqamlar noto'g'ri bo'lishi mumkin; sorted() kerak",
+        "os.listdir() yashirin fayllarni ham qaytaradi — Whisper ularni ham transkripsiya qiladi",
+        "os.listdir() faqat birinchi 100 ta faylni qaytaradi — qolganlari jimgina tashlab ketiladi",
         "os.listdir() to'liq yo'l qaytaradi, shuning uchun os.path.join ikki marta yo'l qo'shadi"
       ],
       answer: [0],
@@ -112,9 +112,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Pipeline bo'sh matn qaytarganda xatoni ushlab, faylni qayta yuborish uchun",
-        "Blokda bitta signal qolsa pipeline dict qaytaradi — uni ro'yxatga o'rab, zip() ni saqlash uchun",
-        "Vaqt belgilari yoqilganda chunks kalitini matnga birlashtirish uchun",
-        "CPU da batch_size to'yinganini aniqlab, ketma-ket rejimga o'tish uchun"
+        "Blokda bitta signal qolsa qaytgan dict'ni ro'yxatga o'rab, zip() ni saqlash uchun",
+        "Vaqt belgilari yoqilganda chunks kalitidagi bo'laklarni bitta matnga birlashtirish uchun",
+        "CPU da batch_size to'yinganini aniqlab, avtomatik ketma-ket rejimga o'tish uchun"
       ],
       answer: [1],
       explain: "Kod izohida aytilganidek, 1 ta element uchun natija dict bo'ladi. Keyingi zip(qism, r) ro'yxat kutadi, shuning uchun dict ro'yxatga o'raladi.",
@@ -125,8 +125,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "batch_size ni 8 ga oshirish kifoya — CPU da bu ishni taxminan 5–10× tezlashtiradi",
-        "Barcha natijalarni ro'yxatda yig'ib, oxirida bitta writerows() bilan yozish",
-        "Har faylni darhol CSV ga yozib flush() qilish va allaqachon qilinganlarni o'tkazib davom ettirish",
+        "Barcha natijalarni ro'yxatda yig'ib, oxirida bitta writerows() bilan tez yozish",
+        "Har faylni darhol CSV ga yozib flush() qilish, tayyorlarini o'tkazib davom ettirish",
         "Fayllarni tiny modelga o'tkazish, chunki katta hajmda base xotiraga sig'maydi"
       ],
       answer: [2],

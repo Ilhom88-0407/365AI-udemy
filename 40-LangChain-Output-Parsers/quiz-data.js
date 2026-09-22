@@ -23,7 +23,7 @@ window.QUIZ = {
       type: "multi",
       options: [
         "finish_reason — javob kesilganmi yoki yo'q",
-        "Modelning javob matni (content)",
+        "Modelning javob matnining o'zi (content maydoni)",
         "usage_metadata — chaqiruv narxi",
         "Javob bergan modelning aniq versiyasi"
       ],
@@ -85,7 +85,7 @@ window.QUIZ = {
       options: [
         "Muqaddimani ikki nuqta bo'yicha kesib tashlash",
         "Har bir elementdagi raqam va nuqtalarni tozalash",
-        "Promptda \"exactly 3\" deb yozib, elementlar sonini tekshirish",
+        "\"exactly 3\" so'rab, elementlar sonini tekshirish",
         "Juda uzun elementlarni ro'yxatdan chiqarib tashlash"
       ],
       answer: [2],
@@ -96,9 +96,9 @@ window.QUIZ = {
       q: "Toshkentdagi joylar ro'yxati so'raldi: \"Amir Temur maydoni, shahar markazida, Chorsu va Minor\". Dars bu muammoga qanday yechim beradi?",
       type: "single",
       options: [
-        "Vergul o'rniga yangi qator yoki ' | ' ajratuvchisini talab qilish",
+        "Vergul o'rniga yangi qator yoki ' | ' ajratuvchisini so'rash",
         "Sistem promptni o'zbekcha yozib, vergulni saqlab qolish",
-        "Parserni ikki marta ketma-ket chaqirish",
+        "Parserni ikki marta ketma-ket chaqirib, natijani birlashtirish",
         "Javobni StrOutputParser bilan olib, uni qo'lda o'qish"
       ],
       answer: [0],
@@ -110,8 +110,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "from langchain_core.output_parsers import DatetimeOutputParser",
-        "from langchain_openai import DatetimeOutputParser",
-        "pip install langchain-classic, keyin langchain_classic.output_parsers dan import",
+        "from langchain_openai.output_parsers import DatetimeOutputParser",
+        "langchain-classic o'rnatib, langchain_classic dan import qilish",
         "langchain ni 0.x versiyasiga tushirish — boshqa yo'l yo'q"
       ],
       answer: [2],
@@ -153,7 +153,7 @@ window.QUIZ = {
         "'{\"ism\": \"Ali\", \"yosh\": 30}'",
         "'```json\\n{\"ism\": \"Ali\"}\\n```'",
         "'Mana javob: {\"ism\": \"Ali\"}'",
-        "'{\"ism\": \"Ali\",}'"
+        "'{\"ism\": \"Ali\", \"yosh\": 30,}'"
       ],
       answer: [0, 1],
       explain: "JsonOutputParser ```json fence'ini avtomatik tozalaydi, lekin muqaddima va ortiqcha vergulli noto'g'ri JSON xato beradi. Shuning uchun promptda \"Output nothing else\" shart.",
@@ -176,10 +176,10 @@ window.QUIZ = {
       q: "Nega chat.with_structured_output(Hayvon) PydanticOutputParser dan ishonchliroq deb ko'rsatilgan?",
       type: "single",
       options: [
-        "Sxemani provayder kafolatlaydi, parser esa model matnni to'g'ri yozishiga umid qiladi",
+        "Sxemani API kafolatlaydi, parser esa model to'g'ri yozishiga tayanadi",
         "U javobni tezroq qaytaradi va har chaqiruvda kamroq token sarflaydi",
-        "U istalgan mahalliy kichik modelda ham bir xil ishlaydi",
-        "U format ko'rsatmasini promptga ikki marta qo'shib yuboradi"
+        "U istalgan mahalliy kichik modelda ham bir xil ishonchli ishlaydi",
+        "U format ko'rsatmasini promptga ikki marta qo'shib, mustahkamlaydi"
       ],
       answer: [0],
       explain: "with_structured_output sxemani API darajasida uzatadi, shuning uchun promptga ko'rsatma qo'shish ham shart emas. Cheklovi: faqat qo'llab-quvvatlaydigan modellarda (gpt-4o-mini va yangiroq, Claude, Gemini) ishlaydi.",

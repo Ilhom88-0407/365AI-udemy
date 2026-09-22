@@ -184,7 +184,7 @@ LSA QIDIRUV:
 | **Natija** | **Ehtimollar** *(0–1, jami 1)* | **Vaznlar** *(manfiy ham bo'ladi!)* |
 | **Talqin qilish** | ✅ Osonroq | ⚠️ Qiyinroq *(manfiy vaznlar)* |
 | **Tezlik** | 🐢 Sekinroq *(iterativ)* | ⚡ **Tezroq** *(bir marta hisoblanadi)* |
-| **Barqarorlik** | ⚠️ Tasodifiy | ✅ **Deterministik** |
+| **Barqarorlik** | ⚠️ Tasodifiy | ✅ **Barqarorroq** *(to'liq deterministik — `random_state` yoki `algorithm='arpack'` bilan)* |
 | **Mavzu sifati** | Odatda **aniqroq** | Ba'zan **aralashroq** |
 | **`sklearn`** | `LatentDirichletAllocation` | `TruncatedSVD` |
 | **`gensim`** | `LdaModel` | `LsiModel` |
@@ -304,7 +304,7 @@ Mavzu 1:  +0.62*"trump"  −0.31*"song"
 3. **Hujjat → mavzu**: qaysi hujjat qaysi mavzuga tegishli.
 4. Har bir mavzu **qanchalik muhim** *(o'zgaruvchanlikni qancha tushuntiradi)*.
 5. Ko'p ustunni **kam ustunga** siqish. Bizda: **8663 → 5**.
-6. **LDA** — ehtimollik, Bag of Words, iterativ, tasodifiy. **LSA** — chiziqli algebra, TF-IDF, bir marta hisoblanadi, deterministik.
+6. **LDA** — ehtimollik, Bag of Words, iterativ, tasodifiy. **LSA** — chiziqli algebra, TF-IDF, bir marta hisoblanadi, ancha barqaror *(`sklearn`da to'liq takrorlanish uchun `random_state` qo'ying)*.
 7. ## **YO'Q!** Ular **vaznlar** — **manfiy** ham bo'lishi mumkin.
 
 </details>
@@ -354,7 +354,7 @@ LDA vs LSA
 │ Kiritish     │ Bag of Words │ TF-IDF       │
 │ Natija       │ ehtimol 0-1  │ vazn (± !)   │
 │ Tezlik       │ sekinroq     │ TEZROQ       │
-│ Barqarorlik  │ tasodifiy    │ DETERMINISTIK│
+│ Barqarorlik  │ tasodifiy    │ BARQARORROQ  │
 │ Talqin       │ osonroq      │ qiyinroq     │
 │ sklearn      │ LatentDiri.. │ TruncatedSVD │
 └──────────────┴──────────────┴──────────────┘

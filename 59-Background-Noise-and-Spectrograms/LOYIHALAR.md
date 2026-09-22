@@ -223,7 +223,7 @@ d1 = sp.hisobot(sp.tahlil("speech_01.wav"))
 >
 > ## ⭐ **VA JADVAL MUAMMONI ANIQ KO'RSATADI:** ## undoshlar zonasida SNR **+3.23 dB** ## *(juda yuqorida esa +46.51 dB)*. ## ## 💡 Ya'ni shovqin **aynan kerakli joyda**.
 
-> ## ⚠️ **VA E'TIBOR BERING — ENERGIYANING 51.76% I 100–300 Hz DA.** ## Bu **asosiy ton** zonasi *(`f0` ≈ 138 Hz)*. ## ## 💥 **0–100 Hz da esa atigi 1.12%** — ## ya'ni bu faylda **gul (50/60 Hz) muammosi yo'q**.
+> ## ⚠️ **VA E'TIBOR BERING — ENERGIYANING 51.76% I 100–300 Hz DA.** ## Bu **asosiy ton** zonasi *(`f0` ≈ 138 Hz)*. ## ## 💥 **0–100 Hz da esa atigi 1.12%** — ## ya'ni bu faylda **elektr g'uvillashi (50/60 Hz) muammosi yo'q**.
 
 ---
 
@@ -423,7 +423,7 @@ x = ht.sinov(y16, GT, USULLAR, snr_lar=(30, 10, 0))
 | Whisper bilan takrorlash | **60-modul** — natija **butunlay boshqacha** bo'lishi mumkin |
 | Ko'p fayl bo'yicha statistika | Har bir usul uchun **o'rtacha va std** |
 | Haqiqiy shovqin | Oq shovqin o'rniga **kafe/transport** yozuvi |
-| Notch filtr | 50/60 Hz gulini o'chirish — `ss.iirnotch()` |
+| Notch filtr | 50/60 Hz g'uvillashini o'chirish — `ss.iirnotch()` |
 | Jimlik bo'yicha bo'laklash | `librosa.effects.split()` + 58-modul quvuri |
 | `noisereduce` paketi | `pip install noisereduce` — shu jadvalga qo'shing |
 

@@ -21,10 +21,10 @@ window.QUIZ = {
       q: "Darsga ko'ra source code nima?",
       type: "single",
       options: [
-        "Odam o'qiy oladigan kod bo'lib, dasturiy ta'minot uni kompyuterga nol va birlar shaklida yetkazadi",
+        "Odam o'qiy oladigan kod; maxsus dastur uni nol va birlarga o'girib beradi",
         "Kompyuter protsessori to'g'ridan-to'g'ri bajaradigan nol va birlar ketma-ketligi",
-        "Faqat kompyuter olimlari tushuna oladigan maxfiy mashina buyruqlari",
-        "Dastur ishga tushgandan keyin ekranga chiqadigan natija matni"
+        "Faqat kompyuter olimlari tushuna oladigan maxfiy mashina buyruqlari to'plami",
+        "Dastur ishga tushgandan keyin ekranga chiqadigan yakuniy natija matni"
       ],
       answer: [0],
       explain: "Source code — odam o'qiy oladigan kod. Uni dasturiy ta'minot o'qib, kompyuterga 0 va 1 shaklida yetkazadi; nol va birlarning o'zi source code emas.",
@@ -34,9 +34,9 @@ window.QUIZ = {
       q: "Do'stingiz: \"Dasturlashni o'rganish uchun avval computer science'ni tugatish kerak, ular bir narsa\" deydi. Dars bunga qanday javob beradi?",
       type: "single",
       options: [
-        "To'g'ri, chunki dasturlash computer science ning yagona predmeti",
-        "Noto'g'ri, computer science kompyuter nima qila olishini tushunadi, dasturlash esa unga nima qilishni aytadi",
-        "To'g'ri, chunki faqat \"geek\" lar va olimlar dastur yoza oladi",
+        "To'g'ri, chunki dasturlash computer science ning yagona va asosiy predmeti hisoblanadi",
+        "Noto'g'ri: CS kompyuter nima qila olishini o'rganadi, dasturlash esa nima qilishni aytadi",
+        "To'g'ri, chunki faqat \"geek\" lar va kompyuter olimlari haqiqiy dastur yoza oladi",
         "Noto'g'ri, chunki computer science faqat kompyuter apparatini ta'mirlash bilan shug'ullanadi"
       ],
       answer: [1],
@@ -88,10 +88,10 @@ window.QUIZ = {
       code: "a = 5\nb = a + 10\nprint(b)\n\nboshlangich_son = 5\nnatija = boshlangich_son + 10\nprint(natija)",
       type: "single",
       options: [
-        "Ikkinchi versiya kompyuterda tezroq bajariladi",
+        "Ikkinchi versiya kompyuterda ancha tezroq bajariladi",
         "Birinchi versiyada sintaksis xatosi bor va u ishlamaydi",
-        "Ikkinchi versiya kamroq xotira egallaydi",
-        "Ma'noli o'zgaruvchi nomlari kodni boshqa odamlar uchun o'qishni osonlashtiradi"
+        "Ikkinchi versiya kamroq operativ xotira egallaydi",
+        "Ma'noli nomlar kodni boshqa odamlar uchun o'qishli qiladi"
       ],
       answer: [3],
       explain: "Ikkala versiya ham ishlaydi va 15 ni chop etadi. Lekin amalda yuzlab satr kod boshqalarga yuboriladi, ma'nosiz nomlarga to'la kod esa yomon qabul qilinadi.",
@@ -110,8 +110,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Open source, general purpose, high level dasturlash tili",
-        "Pullik, domenga xos, low level dasturlash tili",
-        "Open source, domenga xos, machine language",
+        "Pullik, domenga xos, low level tizimli dasturlash tili",
+        "Open source, domenga xos, low level machine language",
         "Pullik, general purpose, high level dasturlash tili"
       ],
       answer: [0],
@@ -149,10 +149,10 @@ window.QUIZ = {
       q: "High level til haqida qaysi fikr darsga mos keladi?",
       type: "single",
       options: [
-        "Kompyuter high level tilni tarjimasiz bajaradi, shuning uchun u tezroq",
-        "U avval past darajali tilga tarjima qilinadi, lekin sintaksisi inson mantiqiga yaqin bo'lgani uchun o'rganish oson",
+        "Kompyuter high level tilni tarjimasiz bajaradi, shuning uchun u ancha tezroq",
+        "Avval past darajali tilga tarjima qilinadi, sintaksisi esa inson mantiqiga yaqin",
         "High level tillar juda texnik va faqat tajribali muhandislar uchun mo'ljallangan",
-        "High level til machine language ning boshqa nomi"
+        "High level til — machine language ning boshqacha, zamonaviy nomi"
       ],
       answer: [1],
       explain: "Kompyuterlar faqat past darajali (machine) tillarni ishga tushiradi, shuning uchun high level kod avval tarjima qilinadi. Afzalligi — sintaksis inson mantiqiga yaqin va dasturchi vazifaga e'tibor qaratadi.",
@@ -191,9 +191,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Chunki Excel faqat moliyaviy hisobotlar uchun ishlatilishi mumkin",
-        "Chunki Excel faqat Mac kompyuterlarda ishlaydi",
+        "Chunki Excel faqat Mac kompyuterlarida va bulutda ishlaydi",
         "Chunki Python ma'lumotni avtomatik ravishda strukturalangan jadvalga aylantiradi",
-        "Chunki big data da Excel kabi an'anaviy vositalarning hisoblash imkoniyatlari yetarli emas"
+        "Chunki big data uchun Excel kabi an'anaviy vositalar quvvati yetmaydi"
       ],
       answer: [3],
       explain: "Millionlab kuzatuv bo'lganda big data haqida gapiriladi, va bunday vaziyatda Excel kabi an'anaviy ilovalarning hisoblash imkoniyatlari yetmaydi — ancha kuchliroq vosita kerak.",

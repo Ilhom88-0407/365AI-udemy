@@ -23,10 +23,10 @@ window.QUIZ = {
       code: "matn = \"Python\"\nmatn.append(\"!\")\nprint(matn)",
       type: "single",
       options: [
-        "Python! chop etiladi",
+        "Python! chop etiladi — append satr oxiriga qo'shadi",
         "NameError: name 'append' is not defined",
         "['P', 'y', 't', 'h', 'o', 'n', '!'] chop etiladi",
-        "AttributeError: 'str' object has no attribute 'append'"
+        "AttributeError — str sinfida append metodi yo'q"
       ],
       answer: [3],
       explain: "Metod ma'lum sinfga tegishli: append — list sinfining metodi, str sinfida esa u yo'q. Shuning uchun satr obyektiga uni qo'llab bo'lmaydi.",
@@ -37,9 +37,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Metod parametr qabul qilmaydi, funksiya esa doim kamida bitta parametr oladi",
-        "Metod ma'lum sinfga tegishli va parametrlaridan biri obyektning o'zi, funksiya esa o'zicha mavjud",
+        "Metod sinfga tegishli va obyektni parametr sifatida oladi, funksiya esa mustaqil",
         "Metod faqat import qilingan modullarda bo'ladi, funksiya esa faqat standart kutubxonada",
-        "Farqi faqat nomda: ikkalasi ham obyektsiz bir xil chaqiriladi"
+        "Farqi faqat nomda: ikkalasi ham obyektsiz, bir xil tarzda chaqiriladi va ishlaydi"
       ],
       answer: [1],
       explain: "Metod — maxsus funksiya: u sinfga tegishli va qo'llanilayotgan obyektni o'z ichiga oladi, shuning uchun obyekt.metod() ko'rinishida yoziladi. Velosiped bo'lmasa — chapga burilib bo'lmaydi.",
@@ -51,7 +51,7 @@ window.QUIZ = {
       options: [
         "Ular Jupyter'ning maxsus buyruqlari, Python'ga tegishli emas",
         "Ular pandas paketi ichida keladi va avtomatik o'rnatiladi",
-        "Ular Python o'rnatilishi bilanoq mavjud bo'ladigan standart kutubxonaga kiradi",
+        "Ular Python bilan birga keladigan standart kutubxonaga kiradi",
         "Ularni har bir dastur boshida Python o'zi qaytadan yozib chiqadi"
       ],
       answer: [2],
@@ -85,8 +85,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "NameError: name 'math' is not defined",
-        "4.0 chop etiladi",
-        "4 chop etiladi",
+        "4.0 chop etiladi, chunki sqrt import qilingan",
+        "4 chop etiladi — math.sqrt butun son beradi",
         "ModuleNotFoundError: No module named 'math'"
       ],
       answer: [0],
@@ -112,9 +112,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Chunki u math modulidan faqat sqrt funksiyasini import qiladi",
-        "Chunki u faqat Python 2 da ishlaydi",
-        "Chunki bu usul dasturni sezilarli sekinlashtiradi",
-        "Chunki boshqa modulda ham sqrt bo'lsa, Python birini tanlaydi, siz esa tanlay olmaysiz"
+        "Chunki u faqat Python 2 da ishlaydi, Python 3 da esa xato beradi",
+        "Chunki bu usul dasturni ishga tushirishni sezilarli sekinlashtiradi",
+        "Chunki boshqa modulda ham sqrt bo'lsa, Python birini o'zi tanlaydi"
       ],
       answer: [3],
       explain: "import * hamma narsani keltiradi; ikkinchi modulda ham bir xil nomli funksiya bo'lsa to'qnashuv yuzaga keladi. Bu noprofessional kodlash belgisi, lekin interaktiv sessiyalarda qo'llash mumkin.",
@@ -127,7 +127,7 @@ window.QUIZ = {
         "help(math)",
         "math.help(sqrt)",
         "help(math.sqrt)",
-        "sqrt.help()"
+        "math.sqrt.help()"
       ],
       answer: [2],
       explain: "help(math.sqrt) bitta funksiya haqida ma'lumot beradi (Return the square root of x). help(math) esa butun modulning barcha funksiyalarini tavsiflaydi.",
@@ -138,10 +138,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Boshlovchiga vositaga tushunarli, oddiy tilda kirish kerak",
-        "Hujjatlardagi ma'lumot ko'pincha noto'g'ri bo'ladi",
-        "Hujjatlar freymvorkdan foydalanishning amaliy jihati haqida kam gapiradi",
-        "Tezlik, xotira va ma'lumot yo'qotish xavfi o'rtasidagi muvozanat kabi narsalar ularda bo'lmasligi mumkin",
-        "Hujjatlarni faqat vositaning yaratuvchilari o'qiy oladi"
+        "Hujjatlardagi ma'lumot ko'pincha eskirgan yoki noto'g'ri bo'ladi",
+        "Hujjatlar amaliy foydalanish jihati haqida kam gapiradi",
+        "Tezlik, xotira va ma'lumot yo'qotish xavfi muvozanati kabi jihatlar ularda bo'lmasligi mumkin",
+        "Hujjatlarni faqat vositaning yaratuvchilari tushunib, o'qiy oladi"
       ],
       answer: [0, 2, 3],
       explain: "Darsdagi uch sabab: oddiy tilda kirish kerak, amaliy jihat kam yoritilgan va ba'zi kuchli vositalar umuman yo'q. Hujjatlar noto'g'ri emas — aksincha, ziddiyatda ular ustunlik qiladi.",
@@ -151,10 +151,10 @@ window.QUIZ = {
       q: "Stack Overflow'dagi javob rasmiy hujjatlardagi ma'lumotga zid kelib qoldi. Qaysi biriga tayanish kerak?",
       type: "single",
       options: [
-        "Rasmiy hujjatlarga, chunki ularni vositaning yaratuvchilari yozgan",
+        "Rasmiy hujjatlarga, chunki ularni vosita yaratuvchilari yozgan",
         "Stack Overflow'ga, chunki u amaliy va tezroq javob beradi",
         "Ko'proq ovoz olgan javobga, chunki uni ko'p odam tasdiqlagan",
-        "Ikkalasiga ham emas, faqat AI assistent javobiga"
+        "Ikkalasiga ham emas, faqat AI assistent bergan javobga"
       ],
       answer: [0],
       explain: "Stack Overflow aniq yechimlar va sezgi berishda foydali, lekin ziddiyat holatida vosita yaratuvchilari yozgan hujjatlar ustunlik qiladi.",

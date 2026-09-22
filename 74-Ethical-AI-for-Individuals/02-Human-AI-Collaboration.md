@@ -83,7 +83,9 @@ Keyin:
 >
 > ## ## 🔑 Ular *"yoqmadi"* degani emas — ## ⭐ ular ## 💡 **hech qachon ko'rsatilmadi**.
 
-> ## 🏆 **VA BU — PUFAKNING ASOSIY MEXANIZMI:** ## ## 💥 **so'nish, tanlov emas.**
+> ## 🏆 **VA BU — PUFAKNING ASOSIY MEXANIZMI:** ## ## 💥 **tanlov (`top-k`), so'nish emas.**
+>
+> ## ## 🔑 So'nishni **butunlay o'chirsak** *(×1.00)* ham — ## 💥 **hamon `5.0`** *(4-mashq)*. ## ⭐ So'nish faqat farqni **kattalashtiradi**, pufakni **yaratmaydi**.
 
 ---
 
@@ -126,12 +128,12 @@ PUFAKDAN_CHIQISH = [
     ("Turli manbalarni ATAYIN oching",   "5% tasodifni O'ZINGIZ qo'shasiz"),
     ("Tavsiyalarni o'chiring",           "xronologik tartib"),
     ("Qidiruv ishlating, lentani emas",  "siz tanlaysiz, tizim emas"),
-    ("Rozi bo'lmagan manbani KUZATING",  "so'nishni to'xtatadi"),
+    ("Rozi bo'lmagan manbani KUZATING",  "tanlovga qaytaradi"),
     ("Vaqti-vaqti bilan tarixni tozalang", "qiziqishlarni tiklaydi"),
 ]
 ```
 
-> ## 🏆 **TO'RTINCHISI — ENG SAMARALISI.** ## ## 🔑 Modelimizda so'nish `×0.97` edi — ## ⭐ **bitta bosish** uni to'xtatadi.
+> ## 🏆 **TO'RTINCHISI — ENG SAMARALISI.** ## ## 🔑 Modelimizda pufakni `top-k` tanlovi yaratdi — ## ⭐ **bitta bosish** ko'rsatilmagan mavzuni **lentaga qaytaradi**.
 
 ---
 
@@ -170,9 +172,9 @@ PUFAKDAN_CHIQISH = [
 <summary>Javoblar</summary>
 
 1. ## **Birinchi qadamda** — 10 ta urug'ning **hammasida**. 🔧 Men asta-sekin torayishni kutgan edim. 💥 30 qadamdan keyin ham faqat **5/10** mavzu ko'rilgan.
-2. ## Chunki ular ⭐ **so'nadi** *(×0.97)*, lekin 💥 **hech qachon ko'rsatilmaydi** — ya'ni kuchayish imkoniyati **yo'q**. 🔑 Ular *"yoqmadi"* degani emas. 🏆 Pufakning mexanizmi — **so'nish, tanlov emas**.
+2. ## Chunki ular 💥 **hech qachon ko'rsatilmaydi** — ya'ni kuchayish imkoniyati **yo'q**; ⭐ so'nish *(×0.97)* esa farqni faqat kattalashtiradi. 🔑 Ular *"yoqmadi"* degani emas. 🏆 Pufakning mexanizmi — **tanlov (`top-k`), so'nish emas**: so'nish o'chirilsa ham hamon `5.0`.
 3. ## Ko'rilgan mavzular **5.0 → 8.3** *(1.7 barobar)*. ⭐ Ya'ni har **20 ta tavsiyadan bittasi** tasodifiy bo'lsa yetarli. 💡 `25%` — `9.9`, lekin tavsiya sifati tushadi.
-4. ## **Rozi bo'lmagan manbani kuzatish.** 🔑 Modelda so'nish `×0.97` edi — ⭐ **bitta bosish** uni to'xtatadi. ⚠️ Lekin `5%` tasodifni **tizim quruvchi** qo'shadi; foydalanuvchi buni o'zi tanlay olmaydi.
+4. ## **Rozi bo'lmagan manbani kuzatish.** 🔑 Modelda pufakni `top-k` tanlovi yaratdi — ⭐ **bitta bosish** ko'rsatilmagan mavzuni **lentaga qaytaradi**. ⚠️ Lekin `5%` tasodifni **tizim quruvchi** qo'shadi; foydalanuvchi buni o'zi tanlay olmaydi.
 
 </details>
 

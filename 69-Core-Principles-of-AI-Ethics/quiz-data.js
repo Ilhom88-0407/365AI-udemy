@@ -11,8 +11,8 @@ window.QUIZ = {
         "Vaqt — 2007-yilda post yozilganda AI hali yo'q edi",
         "Xabardorlik — foydalanuvchilar bundan bilmasdi",
         "Mintaqaviy tengsizlik — EU da opt-out bor, AQSh da yo'q",
-        "Postlar soxta akkauntlardan yig'ilgani",
-        "Model faqat ingliz tilidagi postlarda o'qitilgani"
+        "Manba — postlar asosan soxta akkauntlardan yig'ilgan",
+        "Til — model faqat ingliz tilidagi postlarda o'qitilgan"
       ],
       answer: [0, 1, 2],
       explain: "Darsda aynan uchta muammo sanaladi: vaqt, xabardorlik va mintaqaviy tengsizlik — bir xil kompaniya va ma'lumot, lekin turli huquqlar.",
@@ -22,9 +22,9 @@ window.QUIZ = {
       q: "Foydalanuvchi model o'qitilgandan keyin o'z postini o'chirdi. Bu model ichidagi ma'lumotni ham o'chiradimi?",
       type: "single",
       options: [
-        "Ha, post o'chirilishi bilan model uni avtomatik unutadi",
-        "Ha, lekin faqat EU foydalanuvchilari uchun",
-        "Yo'q, model mazmunni saqlab qolishi mumkin; amalda qayta o'qitish kerak",
+        "Ha, post o'chirilishi bilan model uni keyingi so'rovdayoq unutadi",
+        "Ha, lekin faqat EU foydalanuvchilari uchun, GDPR talabi bilan",
+        "Yo'q, model mazmunni saqlab qolishi mumkin; qayta o'qitish kerak",
         "Yo'q, lekin buni model vaznlaridan bitta qatorni o'chirib hal qilish mumkin"
       ],
       answer: [2],
@@ -35,10 +35,10 @@ window.QUIZ = {
       q: "Regex asosidagi PII detektori email, telefon, IP va profil havolasini topdi. Darsga ko'ra u nimani topa olmadi va eng xavflisi qaysi?",
       type: "single",
       options: [
-        "Karta raqamini; eng xavflisi — 16 xonali raqamlar",
-        "Ism-familiyani; eng xavflisi — \"32 yosh + Toshkent + ML muhandis\" kabi kombinatsiya",
-        "Email manzilini; eng xavflisi — yashirilgan domenlar",
-        "Pasport raqamini; eng xavflisi — kichik harfli seriyalar"
+        "Karta raqamini; eng xavflisi — bo'shliq bilan yozilgan 16 xonali raqamlar",
+        "Ism-familiyani; eng xavflisi — \"yosh + shahar + kasb\" kabi kombinatsiya",
+        "Email manzilini; eng xavflisi — yashirilgan yoki qisqartirilgan domenlar",
+        "Pasport raqamini; eng xavflisi — kichik harf bilan yozilgan seriyalar"
       ],
       answer: [1],
       explain: "\"Aziz Karimov\" matnda qoldi — ismni regex bilan topib bo'lmaydi. Alohida PII bo'lmagan belgilar birgalikda odamni aniqlaydi; bu k-anonimlik muammosi.",
@@ -75,10 +75,10 @@ window.QUIZ = {
       q: "O'qilish metrikasida tipik maxfiylik siyosati −29.1 ball, sodda variant 86.2 ball oldi. Bu farqning asosiy sababi nima?",
       type: "single",
       options: [
-        "Sodda variantda mazmun ancha kam va noaniqroq",
-        "Tipik siyosatda texnik atamalar noto'g'ri yozilgan",
-        "Tipik siyosatda bitta jumla 57 so'z, soddasida o'rtacha 8.5 so'z",
-        "Metrika faqat o'zbek tili uchun mo'ljallangan"
+        "Sodda variantda mazmun ancha kam, shartlar esa noaniqroq",
+        "Tipik siyosatda yuridik atamalar noto'g'ri va chalkash yozilgan",
+        "Jumla uzunligi: tipikda 57 so'z, soddasida o'rtacha 8.5 so'z",
+        "Metrika faqat o'zbek tilidagi matnlar uchun mo'ljallangan"
       ],
       answer: [2],
       explain: "Jumla uzunligi — universal signal. Mazmun deyarli bir xil, sodda variant hatto aniqroq (\"30 kun\", model o'qitish uchun emas). Metrika esa ingliz tili uchun mo'ljallangan.",
@@ -104,8 +104,8 @@ window.QUIZ = {
       options: [
         "AI piyodani to'g'ri tasniflay olmagani",
         "Tejash uchun sensorlar soni kamaytirilgani",
-        "Xavfsizlik haydovchisi e'tiborsiz bo'lgani",
-        "Sinov Arizonada o'tkazilgani"
+        "Xavfsizlik haydovchisi yo'lga e'tiborsiz bo'lgani",
+        "Sinovlar ochiq yo'lda, Arizonada o'tkazilgani"
       ],
       answer: [1],
       explain: "Sensorlarni kamaytirish — menejment qarori. Qolgan ikki xato ishlab chiquvchi va operatorga tegishli; har biri alohida \"men emas\" deyishi mumkin edi.",
@@ -116,8 +116,8 @@ window.QUIZ = {
       code: "j = Javobgarlik()\ntry:\n    j.qosh(\"ma'lumot sizib chiqdi\",\n           **{\"ishlab chiquvchi\": \"R\", \"operator\": \"C\"})\n    print(j.kim_javob_beradi(\"ma'lumot sizib chiqdi\"))\nexcept ValueError as e:\n    print(e)",
       type: "single",
       options: [
-        "ishlab chiquvchi",
-        "operator",
+        "💥 'ma'lumot sizib chiqdi': aynan BITTA 'A' bo'lishi kerak, 2 ta topildi",
+        "💥 'ma'lumot sizib chiqdi': 'C' roli faqat 'A' bilan birga bo'lishi mumkin",
         "💥 'ma'lumot sizib chiqdi': aynan BITTA 'A' bo'lishi kerak, 0 ta topildi",
         "💥 hodisa ro'yxatda yo'q — JAVOBGAR BELGILANMAGAN"
       ],
@@ -129,10 +129,10 @@ window.QUIZ = {
       q: "Hodisa jurnalida LLM ballni 8 dedi, kod esa uni rad etib 5 ga tushirdi. Jurnaldagi manba ustuni javobgarlik uchun nima beradi?",
       type: "single",
       options: [
-        "Qaror qayerdan kelganini: kod — siz javobgarsiz, LLM — model xatosi, MB — ma'lumot xatosi",
-        "Faqat hodisa sodir bo'lgan vaqtni aniqlashga yordam beradi",
-        "LLM chaqiruvlari narxini hisoblash uchun ishlatiladi",
-        "Foydalanuvchi qaysi qurilmadan kirganini ko'rsatadi"
+        "Qaror qayerdan kelganini: kod, LLM yoki MB — xato kimniki ekanini",
+        "Faqat hodisa vaqtini — qaysi soatda xato bo'lganini aniqlash uchun",
+        "LLM chaqiruvlari narxini — qaysi qaror qimmatga tushganini bilish uchun",
+        "Foydalanuvchi qaysi qurilma va IP manzildan kirganini ko'rsatadi"
       ],
       answer: [0],
       explain: "manba ustuni qarorning manbasini yozadi va nima bo'lganini qayta tiklash imkonini beradi. Bu yozuvsiz kod LLM ballini rad etganini hech qachon bilmasdingiz.",
@@ -142,10 +142,10 @@ window.QUIZ = {
       q: "COMPAS bahsida kompaniya PPV tengligini, jurnalistlar esa FPR tengsizligini ko'rsatdi. Darsga ko'ra kim haq edi?",
       type: "single",
       options: [
-        "Faqat kompaniya, chunki PPV farqi atigi 0.029",
-        "Faqat jurnalistlar, chunki PPV adolat metrikasi emas",
-        "Hech kim, chunki ma'lumot sun'iy edi",
-        "Ikkalasi ham matematik jihatdan haq — ular turli adolat ta'riflarini ishlatgan"
+        "Faqat kompaniya, chunki PPV farqi atigi 0.029 — chegaradan past",
+        "Faqat jurnalistlar, chunki PPV umuman adolat metrikasi emas",
+        "Hech kim, chunki ma'lumot sun'iy va namunalar juda kam edi",
+        "Ikkalasi ham haq — ular turli adolat ta'riflarini ishlatgan"
       ],
       answer: [3],
       explain: "PPV farqi 0.029 (o'tdi), FPR farqi 0.156 (buzildi). Shuning uchun \"model adolatli\" degan gap qaysi ta'rif ekani aytilmasa ma'nosiz.",
@@ -169,8 +169,8 @@ window.QUIZ = {
       q: "Mukammal, biassiz model (ehtimolni to'g'ri biladi, ikkala guruhga bir xil chegara) baza darajasi 20% va 50% bo'lgan guruhlarda demografik tenglik va tenglashtirilgan ehtimolni buzdi. Bunga nima sabab?",
       type: "single",
       options: [
-        "Modelda yashirin bias bor edi",
-        "Chegara 0.5 noto'g'ri tanlangan edi",
+        "Modelda o'qitish ma'lumotidan kelgan yashirin bias bor edi",
+        "Chegara 0.5 noto'g'ri tanlangan — 0.3 bo'lishi kerak edi",
         "Guruhlarda baza darajasi har xil — impossibility theorem",
         "Namunalar soni 20 000 ta bo'lgani uchun juda kam"
       ],
@@ -190,10 +190,10 @@ window.QUIZ = {
       q: "Siz yollash modelida bias auditini boshlayapsiz. Darsga ko'ra birinchi qadam va to'g'ri talqin qaysilar? (bir nechta javob)",
       type: "multi",
       options: [
-        "Avval audit farqni umuman seza olishini sifati turlicha javoblar bilan tekshirish",
-        "\"Farq yo'q\" chiqsa, darhol modelni adolatli deb e'lon qilish",
+        "Avval audit farqni seza olishini sifati turlicha javoblar bilan tekshirish",
+        "\"Farq yo'q\" chiqsa, darhol modelni adolatli deb e'lon qilib, auditni yopish",
         "\"Model adolatli\" deganda qaysi adolat ta'rifi nazarda tutilganini aytish",
-        "Faqat bitta metrika — aniqlikni guruhlar bo'yicha solishtirish yetarli",
+        "Faqat bitta metrika — aniqlikni guruhlar bo'yicha solishtirish yetarli deb bilish",
         "Adolat faqat kamsitmaslik emas, hamma uchun to'g'ri baholash ekanini hisobga olish"
       ],
       answer: [0, 2, 4],

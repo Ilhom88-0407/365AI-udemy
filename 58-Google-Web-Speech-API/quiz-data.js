@@ -9,8 +9,8 @@ window.QUIZ = {
       code: "import speech_recognition as sr\n\nrec = sr.Recognizer()\nwith sr.AudioFile(\"nutq.mp3\") as s:\n    audio = rec.record(s)",
       type: "single",
       options: [
-        "UnknownValueError chiqadi — MP3 dagi nutq juda siqilgan; bitreytni oshirish kerak",
-        "ValueError chiqadi — AudioFile faqat WAV, AIFF va FLAC ni o'qiydi; avval librosa bilan WAV ga aylantirish kerak",
+        "UnknownValueError chiqadi — MP3 dagi nutq juda siqilgan; avval bitreytni oshirish kerak",
+        "ValueError chiqadi — AudioFile faqat WAV, AIFF, FLAC o'qiydi; avval WAV ga aylantirish kerak",
         "Kod muammosiz ishlaydi — soundfile 0.14 MP3 ni qo'llab-quvvatlagani uchun AudioFile ham o'qiydi",
         "RequestError chiqadi — MP3 fayllar Google serveriga yuborilmaydi; language= berish kerak"
       ],
@@ -23,9 +23,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "OGG eng yomon natija berdi, chunki u eng kichik va eng ko'p siqilgan format",
-        "MP3 va OGG da WER ikki baravar oshdi, chunki SNR keskin tushdi",
-        "Uchalasi aynan bir xil matn berdi: siqish asosan quloq sezmaydigan qismlarni tashlaydi, nutq esa 0–4 kHz da",
-        "WAV eng yaxshi natija berdi, chunki u har bir nozik jihatni saqlaydi"
+        "MP3 va OGG da WER ikki baravar oshdi, chunki SNR 279 dB dan 15 dB ga tushdi",
+        "Uchalasi bir xil matn berdi: siqish nutq zonasiga (0–4 kHz) deyarli tegmaydi",
+        "WAV eng yaxshi natija berdi, chunki u siqilmagan va har bir nozik jihatni saqlaydi"
       ],
       answer: [2],
       explain: "Uchala holatda WER 0.4754 va matn bir xil chiqdi. MP3/OGG psixoakustik siqish ishlatadi, nutq esa siqish eng kam tegadigan zonada. Lekin juda past bitreyt yoki ketma-ket qayta siqish natijani buzishi mumkin.",
@@ -99,7 +99,7 @@ window.QUIZ = {
       options: [
         "API uzun faylda language= ni e'tiborsiz qoldirib, boshqa tilda javob beradi",
         "Matn to'liq, lekin tinish belgilari yo'qligi sabab WER sun'iy ravishda oshadi",
-        "API uzun faylni rad etib, UnknownValueError tashlaydi",
+        "API uzun faylni rad etib, UnknownValueError yoki RequestError tashlaydi",
         "API faqat birinchi segmentni qaytaradi — qolgan audio jimgina tashlab yuboriladi"
       ],
       answer: [3],
@@ -124,9 +124,9 @@ window.QUIZ = {
       q: "Bir xil audio 8 000, 16 000, 22 050 va 44 100 Hz da Google API ga yuborildi. Natija va undan kelib chiqadigan amaliy maslahat qaysi?",
       type: "single",
       options: [
-        "WER to'rtalasida 0.3390; Google audioni o'zi 16 kHz ga tushiradi, shuning uchun 16 kHz mono yuborish yetarli",
-        "44 100 Hz eng past WER berdi; imkon qadar yuqori chastotada yuborish kerak",
-        "8 000 Hz da WER keskin oshdi; telefon sifatidagi audio API ga yaramaydi",
+        "WER hammasida 0.3390; Google o'zi 16 kHz ga tushiradi, shuning uchun 16 kHz mono yetarli",
+        "44 100 Hz eng past WER berdi; shuning uchun imkon qadar yuqori chastotada yuborish kerak",
+        "8 000 Hz da WER keskin oshdi; demak telefon sifatidagi 8 kHz audio API ga yaramaydi",
         "WER bir xil, lekin 8 000 Hz da matn boshqa tilda qaytdi; language= ni berish shart"
       ],
       answer: [0],
@@ -193,9 +193,9 @@ window.QUIZ = {
       q: "To'liq normallashtirishdan keyin 61 so'zdan ikkita xato qoldi: ivan → yvonne va turned → turn. Muallif videoda o'z ismini Yvonne deb aytadi. Darsga ko'ra to'g'ri xulosa qaysi?",
       type: "single",
       options: [
-        "Model ikkita xato qildi, haqiqiy aniqlik 96.7% — ground truth'ni o'zgartirib bo'lmaydi",
+        "Model ikkita xato qildi, aniqlik 96.7% — ground truth'ni o'zgartirib bo'lmaydi",
         "Google ismni noto'g'ri tanidi, chunki Whisper generate() uni Iván deb yozgan",
-        "Ground truth'ning o'zi xato: model aslida bitta xato qilgan, haqiqiy aniqlik 60/61 = 98.4%",
+        "Ground truth'ning o'zi xato: model bitta xato qilgan, aniqlik 60/61 = 98.4%",
         "Ismlar WER ga kirmaydi, shuning uchun ikkala xato ham hisobga olinmaydi"
       ],
       answer: [2],

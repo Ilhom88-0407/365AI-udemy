@@ -8,8 +8,8 @@ window.QUIZ = {
       q: "Shifoxona uchta turdagi ma'lumotni saqlaydi. Ulardan qaysi biri strukturalangan (structured) ma'lumot hisoblanadi?",
       type: "single",
       options: [
-        "Bemorlarning rentgen suratlari",
-        "Shifokorlarning ovozli izohlari",
+        "Bemorlarning rentgen suratlari va MRT tasvirlari",
+        "Shifokorlarning diktofonga yozgan ovozli izohlari",
         "Qabullar jadvali: sana, shifokor, xona raqami",
         "Bemorlarning erkin matnli shikoyat xatlari"
       ],
@@ -119,8 +119,8 @@ window.QUIZ = {
       q: "Nega real jamoalar barcha ma'lumotni cheksiz belgilash o'rniga \"oltin o'rta\" ni qidiradi?",
       type: "single",
       options: [
-        "Chunki belgilangan ma'lumot model aniqligini pasaytiradi",
-        "Chunki unlabelled data doim yuqoriroq aniqlik beradi",
+        "Chunki belgilangan ma'lumot ko'paysa, model aniqligi pasayib ketadi",
+        "Chunki unlabelled data doim labelled'dan yuqoriroq aniqlik beradi",
         "Chunki ma'lum nuqtadan keyin har bir yangi belgidan foyda kamayadi",
         "Chunki belgilash faqat rasmlar uchun qo'llaniladi, matnga emas"
       ],
@@ -132,8 +132,8 @@ window.QUIZ = {
       q: "Papkada IMG_0001.jpg, IMG_0002.jpg ... nomli 10 000 ta rasm bor. \"2024-yil yozida olingan rasmlarni\" eng samarali qanday topasiz?",
       type: "single",
       options: [
-        "Har bir rasmni ochib, tasvirga qarab aniqlaysiz",
-        "Metadatadagi olingan sana (capture date) maydoni bo'yicha filtrlaysiz",
+        "Har bir rasmni ochib, tasvirga qarab faslini aniqlaysiz",
+        "Metadatadagi olingan sana maydoni bo'yicha filtrlaysiz",
         "Rasmlarni piksel qiymatlari bo'yicha saralab chiqasiz",
         "Avval barcha rasmlarni \"dog\" / \"not a dog\" deb belgilaysiz"
       ],
@@ -146,9 +146,9 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Qo'shiq ijrochisi va albom nomi",
-        "Rasmdagi itning o'zi",
+        "Rasmdagi itning tasviri",
         "Video davomiyligi: 10:24",
-        "Kitobning matni",
+        "Kitobning to'liq matni",
         "Rasm hajmi: 2.4 MB"
       ],
       answer: [0, 2, 4],
@@ -159,10 +159,10 @@ window.QUIZ = {
       q: "Uyda olingan rasmni EXIF metadatasini tozalamasdan ochiq internetga joylashning asosiy xavfi nima?",
       type: "single",
       options: [
-        "Rasm sifati avtomatik ravishda pasayib ketadi",
+        "Rasm sifati avtomatik ravishda siqilib, pasayib ketadi",
         "Rasmning fayl hajmi bir necha barobar oshib ketadi",
         "Rasm strukturalangan ma'lumotga aylanib qoladi",
-        "GPS koordinatalari orqali uyingiz joylashuvi oshkor bo'ladi"
+        "GPS koordinatalari uyingiz joylashuvini oshkor qiladi"
       ],
       answer: [3],
       explain: "EXIF da aniq vaqt, qurilma modeli va GPS koordinatalari bo'lishi mumkin. Ular rasm bilan birga tarqalsa, shaxsiy joylashuvingizni ochib beradi.",

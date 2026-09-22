@@ -133,7 +133,7 @@ window.QUIZ = {
         "\"ai\"",
         "\"Aziz\"",
         "\"human\"",
-        "\"\" (bo'sh satr)"
+        "\"\""
       ],
       answer: [0, 2, 4],
       explain: "ai taxallus sifatida assistant avatarini, human esa user avatarini oladi. system, Aziz va bo'sh satr xatosiz o'tadi, ammo avatarsiz qoladi — jimgina xato.",
@@ -156,10 +156,10 @@ window.QUIZ = {
       q: "st.write_stream(oqim()) chaqiruvi haqida qaysi gap to'g'ri?",
       type: "single",
       options: [
-        "U to'plangan to'liq matnni str sifatida qaytaradi, uni session_state ga saqlash mumkin",
+        "U to'plangan to'liq matnni str sifatida qaytaradi, uni saqlab qo'yish mumkin",
         "U hech narsa qaytarmaydi, javobni saqlash uchun generatorni qayta ishga tushirish kerak",
-        "U oddiy satrni ham qabul qiladi va uni so'zma-so'z chiqaradi",
-        "U asinxron ishlaydi: skript oqim tugashini kutmasdan davom etadi"
+        "U oddiy satrni ham qabul qiladi va uni so'zma-so'z oqim qilib chiqaradi",
+        "U asinxron ishlaydi: skript oqim tugashini kutmasdan keyingi qatorga o'tadi"
       ],
       answer: [0],
       explain: "write_stream matnni chizadi va to'plangan str ni qaytaradi. Satr berilsa StreamlitAPIException chiqadi, va u sinxron — skript oqim tugaguncha kutadi.",

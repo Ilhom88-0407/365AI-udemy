@@ -96,9 +96,9 @@ window.QUIZ = {
       q: "Yaxshi sistem promptning to'rtta elementidan (rol, vazifa, format, chegara) qaysi biri eng ko'p unutiladi va usiz model yolg'on to'qiy boshlaydi?",
       type: "single",
       options: [
-        "Format — \"qisqa, 2-3 jumla\" kabi ko'rsatma",
-        "Chegara — \"bilmasangiz operatorga murojaat qiling deng\"",
-        "Rol — \"siz bank yordamchisisiz\" kabi ta'rif",
+        "Format — \"qisqa, 2-3 jumla, ro'yxatsiz\" kabi ko'rsatma",
+        "Chegara — \"bilmasangiz, operatorga yo'naltiring\"",
+        "Rol — \"siz bank yordamchisisiz\" kabi qisqa ta'rif",
         "Vazifa — \"mijoz savollariga javob bering\" ko'rsatmasi"
       ],
       answer: [1],
@@ -110,9 +110,9 @@ window.QUIZ = {
       code: "completion = client.chat.completions.create(\n    model=\"gpt-4o-mini\",\n    messages=[{\"role\": \"user\", \"content\": \"Salom\"}])\nprint(completion.______)",
       type: "single",
       options: [
-        "message.content",
+        "choices.message.content",
         "choices[0].delta.content",
-        "choices.content[0]",
+        "choices[0].content.text",
         "choices[0].message.content"
       ],
       answer: [3],
@@ -172,9 +172,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "delta o'rniga message yozish: chunk.choices[0].message.content",
-        "c = chunk.choices[0].delta.content va faqat if c: bo'lsa chop etish",
-        "stream_options={\"include_usage\": True} qo'shish kifoya",
-        "print(...) ichida .strip() chaqirib None ni olib tashlash"
+        "c = chunk.choices[0].delta.content, keyin faqat if c: chop etish",
+        "stream_options={\"include_usage\": True} qo'shish kifoya bo'ladi",
+        "print(...) ichida .strip() chaqirib, None ni olib tashlash"
       ],
       answer: [1],
       explain: "Oqimda javob delta.content da keladi va oxirgi chunk'da u None bo'ladi, shuning uchun if c: tekshiruvi kerak. stream_options esa boshqa tuzoqni — usage yo'qligini hal qiladi.",

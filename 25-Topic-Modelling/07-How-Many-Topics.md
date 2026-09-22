@@ -130,7 +130,7 @@ Ikkalasi DOIM birga  →  D(wi,wj) ≈ D(wj)  →  log(1) ≈ 0    ← eng yaxsh
 Hech qachon birga    →  D(wi,wj) = 0      →  log(1/D) < 0  ← yomon
 ```
 
-> ## ⚠️ **UMass ballari DOIM MANFIY.** **0 ga yaqinroq — YAXSHIROQ.**
+> ## ⚠️ **UMass ballari ODATDA MANFIY** *(suratdagi `+1` tufayli ba'zan 0 dan biroz yuqori ham bo'lishi mumkin)*. **0 ga yaqinroq — YAXSHIROQ.**
 
 ---
 
@@ -366,7 +366,7 @@ for i, t in enumerate(final.components_):
 
 **M1.** Koherentlik nima o'lchaydi?
 
-**M2.** UMass ballari nima uchun manfiy?
+**M2.** UMass ballari nima uchun odatda manfiy?
 
 **M3.** Qaysi `k` eng yuqori ball oldi?
 
@@ -375,7 +375,7 @@ for i, t in enumerate(final.components_):
 
 **M1.** Mavzudagi **top so'zlar bir-biriga qanchalik mos** kelishini — ya'ni ular **birga qanchalik tez-tez** uchrashini.
 
-**M2.** Chunki formulada `log(kasr)` bor, va kasr **doim 1 dan kichik yoki teng**. `log(1) = 0` — **eng yaxshi** natija.
+**M2.** Chunki formulada `log(kasr)` bor, va kasr **odatda 1 dan kichik** *(D(wi,wj) < D(wj) bo'lsa)*. Faqat ikki so'z **doim birga** uchrasa, `+1` tufayli kasr 1 dan biroz katta bo'lib, ball **biroz musbat** chiqadi. `log(1) = 0` atrofi — **eng yaxshi** natija.
 
 **M3.** ## **k = 2** — ikkala algoritm uchun ham. ⚠️ **Lekin bu YOMON natija berdi!** *(5-bo'limga qarang)*
 
@@ -482,7 +482,7 @@ SABAB:  · Har bir mavzuga ANIQ nom bera oldik
 
 1. **Optimal mavzular sonini** *(`k`)* tanlashga yordam berish uchun.
 2. **`CoherenceModel`** *(`gensim.models.coherencemodel`)*. `sklearn`da tayyor **yo'q** — qo'lda yozamiz.
-3. **Manfiy.** **0 ga yaqinroq — yaxshiroq.**
+3. **Odatda manfiy** *(ba'zan biroz musbat)*. **0 ga yaqinroq — yaxshiroq.**
 4. Chunki `mr` va `said` **deyarli har bir hujjatda birga** uchraydi → **matematik** koherentlik yuqori, lekin mavzu **hech narsa** aytmaydi.
 5. ## **"Matematik eng aniq son har doim biznes uchun eng qimmatli emas."** Intuitsiya va biznes bilimini ham hisobga oling.
 6. ## **TOZALASH** *(`max_df`, `min_df`)*. Buni **o'tkazib yubormang**.
@@ -506,7 +506,8 @@ def umass_koherentlik(top_sozlar):
         log( (D(wi,wj) + 1) / D(wj) )
     → o'rtachasini qaytar
 
-    ⚠️ DOIM MANFIY. 0 ga yaqinroq = YAXSHIROQ.
+    ⚠️ ODATDA MANFIY (+1 tufayli biroz musbat ham bo'lishi mumkin).
+    0 ga yaqinroq = YAXSHIROQ.
 
 
 NATIJA (tozalashsiz)

@@ -356,10 +356,11 @@ BERT JAVOBNI QANDAY TOPADI?
 
 NATIJA
   Savol : "When was the first DVD released?"
-  Javob : "march 24 , 1997"          ✅
+  Javob : "november 1 , 1996"        (kursda: "March 24th, 1997")
 
   💡 Matnda IKKITA sana bor edi (1996 va 1997) —
-     model TO'G'RISINI tanladi (e'tibor mexanizmi, 30-modul)
+     savol NOANIQ: model "first released" jumlasini tanladi
+     (DVD FORMATI sanasi); kurs esa pleyer/disk sanasini aytgan
 
 
 ISHONCH (kurs ko'rsatmaydi, lekin MUHIM)

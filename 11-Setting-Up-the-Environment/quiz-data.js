@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "Jupyter arxitekturasida Jupyter server qanday vazifani bajaradi?",
       type: "single",
       options: [
-        "Python kodini o'qib bajaradi va natijani hisoblab beradi",
+        "Python kodini o'qib bajaradi va natijani hisoblab klientga qaytaradi",
         "Notebook fayllarini .ipynb formatiga o'girib, diskka saqlaydi",
-        "Klient mos keluvchi til kerneli bilan bog'lanadigan muhitni taqdim etadi",
-        "Veb-brauzer o'rnida kod yoziladigan interfeysni ko'rsatadi"
+        "Klientni mos til kerneli bilan bog'laydigan muhitni taqdim etadi",
+        "Veb-brauzer o'rnida kod yoziladigan grafik interfeysni ko'rsatadi"
       ],
       answer: [2],
       explain: "Server klient (veb-brauzer) va kernel o'rtasida turadi va ularni bog'laydi. Kodni o'qib bajarish esa kernelning ishi, kod yozish interfeysi — klientning.",
@@ -35,9 +35,9 @@ window.QUIZ = {
       q: "Anaconda saytida yuklab olishdan oldin elektron pochtangiz so'raldi. Darsga ko'ra nima qilish mumkin?",
       type: "single",
       options: [
-        "\"Skip registration\" ni tanlab, to'g'ridan-to'g'ri yuklab olish sahifasiga o'tish",
+        "\"Skip registration\" ni tanlab, yuklab olish sahifasiga o'tish",
         "Pochtasiz yuklab bo'lmaydi, shuning uchun ro'yxatdan o'tish majburiy",
-        "Ro'yxatsiz beriladigan pullik versiyani tanlash kerak",
+        "Ro'yxatsiz faqat pullik versiya beriladi, shuni tanlash kerak",
         "Anaconda o'rniga faqat Miniconda'ni o'rnatish kerak bo'ladi"
       ],
       answer: [0],
@@ -48,10 +48,10 @@ window.QUIZ = {
       q: "Anaconda Navigator'da Jupyter Notebook tugmasini bosdingiz. Nima sodir bo'lishi kerak?",
       type: "single",
       options: [
-        "Alohida oynada Python terminali ochilib, kod kutadi",
-        "Anaconda saytidagi onlayn muharrir ochiladi",
-        "Ish stolida bo'sh .ipynb fayl avtomatik yaratiladi",
-        "Brauzerda yangi tab ochiladi — foydalanuvchi papkasini ko'rsatuvchi Jupyter Dashboard"
+        "Alohida oynada Python terminali ochilib, kod kiritilishini kutadi",
+        "Brauzerda Anaconda saytidagi onlayn muharrir ochiladi",
+        "Ish stolida bo'sh .ipynb fayl avtomatik yaratilib ochiladi",
+        "Brauzerda yangi tab ochilib, Jupyter Dashboard ko'rsatiladi"
       ],
       answer: [3],
       explain: "Jupyter brauzerda yangi tab ochadi va u yerda standart holatda foydalanuvchi papkangizni ko'rsatuvchi Dashboard bo'ladi.",
@@ -117,11 +117,11 @@ window.QUIZ = {
       q: "Command mode'dagi qaysi tugma va amal juftliklari to'g'ri? (bir nechta javob)",
       type: "multi",
       options: [
-        "A — tanlangan yacheykadan yuqorida yangi yacheyka",
+        "A — yuqorida yangi yacheyka qo'shish",
         "D D — yacheykani o'chirish",
-        "B — tanlangan yacheykani nusxalash",
+        "B — tanlangan yacheykani nusxalab olish",
         "M — yacheykani Markdown'ga aylantirish",
-        "Y — yacheykani kesib olish"
+        "Y — tanlangan yacheykani kesib olish"
       ],
       answer: [0, 1, 3],
       explain: "A — Above (yuqorida), B — Below (pastda) yangi yacheyka, D D — o'chirish, M — Markdown. Nusxalash C, kesish X bilan; Y esa yacheykani kodga qaytaradi.",

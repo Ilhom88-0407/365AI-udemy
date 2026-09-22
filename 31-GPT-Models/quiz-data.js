@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "GPT qisqartmasidagi uchta harf va darsdagi ma'nosi qaysi qatorda to'g'ri berilgan?",
       type: "single",
       options: [
-        "General Purpose Transformer — umumiy maqsadli, encoder asosidagi model",
-        "Generative Pre-trained Transformer — matn yaratadi, oldindan o'qitilgan, faqat decoder",
+        "General Purpose Transformer — umumiy maqsadli, oldindan o'qitilgan encoder",
+        "Generative Pre-trained Transformer — matn yaratuvchi, oldindan o'qitilgan decoder",
         "Generative Pre-trained Translator — tarjimaga ixtisoslashgan encoder–decoder",
-        "Guided Prompt Transformer — faqat ko'rsatmaga amal qiluvchi encoder"
+        "Guided Prompt Transformer — ko'rsatmaga amal qiluvchi, encoder asosidagi model"
       ],
       answer: [1],
       explain: "G — keyingi so'zni bashorat qilib matn yaratadi, P — massiv ma'lumotda oldindan o'qitilgan, T — transformer; GPT niqoblangan e'tiborli, faqat decoder turidagi transformer.",
@@ -35,9 +35,9 @@ window.QUIZ = {
       type: "single",
       code: "from openai import OpenAI\nclient = OpenAI(api_key=os.environ.get(\"OPENAI_API_KEY\"))",
       options: [
-        "client.Completion.create(model=\"gpt-4o-mini\", prompt=\"Once upon a time\")",
-        "openai.ChatCompletion.create(model=\"gpt-4o-mini\", prompt=\"Once upon a time\")",
-        "client.completions.create(model=\"text-davinci-002\", messages=\"Once upon a time\")",
+        "client.Completion.create(model=\"gpt-4o-mini\", messages=[{\"role\": \"user\", \"content\": \"Once upon a time\"}])",
+        "openai.ChatCompletion.create(model=\"gpt-4o-mini\", messages=[{\"role\": \"user\", \"content\": \"Once upon a time\"}])",
+        "client.completions.create(model=\"text-davinci-002\", prompt=[{\"role\": \"user\", \"content\": \"Once upon a time\"}])",
         "client.chat.completions.create(model=\"gpt-4o-mini\", messages=[{\"role\": \"user\", \"content\": \"Once upon a time\"}])"
       ],
       answer: [3],
@@ -48,10 +48,10 @@ window.QUIZ = {
       q: "distilgpt2 va flan-t5-small ikkalasi ham ~80 million parametrli. Lekin \"Translate English to French: ...\" promptiga distilgpt2 matnni davom ettirdi, flan-t5 esa tarjima qildi. Sabab nima?",
       type: "single",
       options: [
-        "flan-t5 ko'rsatmalarga amal qilishga sozlangan (instruction-tuned), distilgpt2 esa yo'q",
-        "flan-t5 fransuz tilida, distilgpt2 esa faqat ingliz tilida o'qitilgan",
-        "distilgpt2 da temperature juda yuqori qo'yilgan edi",
-        "flan-t5 API orqali, distilgpt2 esa mahalliy ishlagani uchun"
+        "flan-t5 ko'rsatmaga amal qilishga sozlangan (instruction-tuned), distilgpt2 esa yo'q",
+        "flan-t5 fransuz matnlarida ham o'qitilgan, distilgpt2 esa faqat inglizcha matnda",
+        "distilgpt2 da temperature juda yuqori qo'yilib, u ko'rsatmadan chetga chiqdi",
+        "flan-t5 API orqali serverda, distilgpt2 esa mahalliy kompyuterda ishlagani uchun"
       ],
       answer: [0],
       explain: "Farq hajmda emas, sozlashda: flan-t5 instruction-tuned. Bu aynan GPT va ChatGPT o'rtasidagi farqning kichik nusxasi.",
@@ -61,10 +61,10 @@ window.QUIZ = {
       q: "distilgpt2 \"Once upon a time\" promptini ertak emas, urush haqida davom ettirdi. Darsdagi izoh qaysi?",
       type: "single",
       options: [
-        "Prompt noto'g'ri yozilgani uchun model uni savol deb tushundi",
-        "Model o'quv ma'lumotidagi naqshni takrorladi — u yerda bu ibora boshqa kontekstlarda ko'proq uchragan",
-        "max_tokens juda kichik bo'lgani uchun model ertakni boshlashga ulgurmadi",
-        "Model API kalitisiz ishlagani uchun natija buzildi"
+        "Prompt noto'g'ri yozilgani uchun model uni ertak boshlanishi emas, savol deb tushundi",
+        "Model o'quv ma'lumotida bu ibora qaysi kontekstda ko'p uchragan bo'lsa, shuni takrorladi",
+        "max_tokens juda kichik bo'lgani uchun model ertak qismiga yetib borishga ulgurmadi",
+        "Model API kalitisiz mahalliy ishlagani uchun uning natijasi tasodifiy buzildi"
       ],
       answer: [1],
       explain: "Ma'lumotda nima bo'lsa, model shuni o'rganadi. Bu 27-moduldagi \"Reuters\" shipchasi bilan bir xil hodisa — ma'lumotning ko'zgusi.",
@@ -103,7 +103,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "system — foydalanuvchi savoli; user — model javobi; assistant — ko'rsatma",
-        "system — modelga ko'rsatma; user — foydalanuvchi kiritmasi misoli; assistant — to'g'ri javob misoli",
+        "system — ko'rsatma; user — kiritma misoli; assistant — javob misoli",
         "system — suhbat tarixi; user — API kaliti; assistant — xato xabarlari",
         "system — model nomi; user — temperatura; assistant — max_tokens"
       ],
@@ -128,10 +128,10 @@ window.QUIZ = {
       q: "flan-t5-base viski haqida \"1808-yilda James Madison tomonidan Shotlandiyada\" degan ravon, batafsil, lekin butunlay noto'g'ri javob berdi. Darsga ko'ra bu nima uchun kichik modelning qisqa xato javobidan xavfliroq?",
       type: "single",
       options: [
-        "Chunki uzun javob ko'proq token ishlatib, qimmatroq turadi",
+        "Chunki uzun, batafsil javob ko'proq token ishlatib, API'da qimmatroq turadi",
         "Chunki ravon javob ishonchli eshitiladi va foydalanuvchi aldanishi mumkin",
-        "Chunki katta model system xabarini butunlay o'chirib yuboradi",
-        "Chunki bunday javobni RAG bilan ham tuzatib bo'lmaydi"
+        "Chunki katta model system xabarini e'tiborsiz qoldirib, uni butunlay o'chiradi",
+        "Chunki bunday ishonchli javobni keyinchalik RAG bilan ham tuzatib bo'lmaydi"
       ],
       answer: [1],
       explain: "Ravonlik to'g'rilikning kafolati emas. Kichik model ochiqchasiga yomon — unga ishonmaysiz; kattaroq model ishonarli eshitiladi va aldashi mumkin. Yechim — faktni modelga berish (RAG).",
@@ -192,10 +192,10 @@ window.QUIZ = {
       q: "O'zbekcha hujjatda \"Ofis qayerda?\" savoli \"Bizning ofisimiz Toshkent shahrida joylashgan.\" bo'lagini topa olmadi (ball 0.000). Sababi nima?",
       type: "single",
       options: [
-        "TfidfVectorizer o'zbek tilini qo'llab-quvvatlamaydi",
-        "Apostrofli so'zlar token_pattern bilan buzilib ketdi",
-        "Bo'lak juda uzun bo'lgani uchun kontekst chegarasidan oshdi",
-        "TF-IDF so'zlarni solishtiradi: \"ofis\" va \"ofisimiz\" turli token, \"qayerda\" esa hujjatda yo'q"
+        "TfidfVectorizer lotin yozuvidagi o'zbek tilini qo'llab-quvvatlamaydi",
+        "Apostrofli so'zlar standart token_pattern bilan bo'linib, buzilib ketdi",
+        "Bo'lak juda uzun bo'lgani uchun modelning kontekst chegarasidan oshdi",
+        "TF-IDF uchun \"ofis\" va \"ofisimiz\" turli token, \"qayerda\" esa hujjatda yo'q"
       ],
       answer: [3],
       explain: "TF-IDF ma'noni emas, so'zlarni solishtiradi. Qolgan savollarda o'zbekcha qidiruv yaxshi ishladi; yechim — stemming, sinonimlar yoki neyron embedding.",

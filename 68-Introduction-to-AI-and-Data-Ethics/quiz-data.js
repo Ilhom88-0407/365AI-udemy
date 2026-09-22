@@ -75,10 +75,10 @@ window.QUIZ = {
       q: "Etik auditda ✅ 3, 💥 9, ⚠️ 4 chiqdi. Darsga ko'ra nega ⚠️ belgisi 💥 dan ham xavfliroq?",
       type: "single",
       options: [
-        "⚠️ da muammo bor-yo'qligining o'zi ham noma'lum, 💥 da esa kamida muammoni bilasiz",
+        "⚠️ da muammo bor-yo'qligi ham noma'lum, 💥 da esa kamida muammoni bilasiz",
         "⚠️ qonun buzilganini bildiradi, 💥 esa faqat etik kamchilikni ko'rsatadi",
-        "⚠️ belgisi tuzatib bo'lmaydigan muammolarga qo'yiladi",
-        "⚠️ tayyorlik foizini 💥 dan ikki barobar ko'p kamaytiradi"
+        "⚠️ tuzatib bo'lmaydigan, 💥 esa oson tuzatiladigan muammolarga qo'yiladi",
+        "⚠️ tayyorlik foizini 💥 dan ikki barobar ko'p kamaytiradi, shuning uchun og'irroq"
       ],
       answer: [0],
       explain: "⚠️ — \"bilmaymiz\" degani. Birinchi qadam uni o'lchab, ✅ yoki 💥 ga aylantirish.",
@@ -109,10 +109,10 @@ window.QUIZ = {
       q: "Grok chatboti basketbol jargonidagi \"throwing bricks\" iborasini so'zma-so'z tushunib, Klay Thompsonni uylarni g'isht bilan buzganlikda aybladi. Bu qanday muammo?",
       type: "single",
       options: [
-        "Rozilikning vaqt muammosi",
-        "Ma'lumotni rozilliksiz yig'ish",
-        "Ish o'rinlarining yo'qolishi",
-        "Kontekstni yo'qotish, ya'ni gallyutsinatsiya"
+        "Rozilikning vaqt bilan eskirish muammosi",
+        "Ma'lumotni rozilliksiz yig'ish (scraping)",
+        "Ish o'rinlarining AI tufayli yo'qolishi",
+        "Kontekstni yo'qotish (gallyutsinatsiya)"
       ],
       answer: [3],
       explain: "Chatbot o'yin haqidagi iborani jinoyat haqida deb tushundi. Bu real odam haqida yolg'on ayblov bo'lgani uchun kulgili emas, jiddiy muammo.",
@@ -135,9 +135,9 @@ window.QUIZ = {
       q: "Clearview AI Fransiya, Italiya va Niderlandiyadan $30 mln dan ortiq jarima oldi. Darsga ko'ra jarima aslida nima uchun solingan?",
       type: "single",
       options: [
-        "Ma'lumot uchun — rasmlar rozilliksiz va sayt siyosatiga zid yig'ilgan",
+        "Ma'lumot uchun — rasmlar rozilliksiz, sayt siyosatiga zid yig'ilgan",
         "Model yomon ishlagani va odamlarni noto'g'ri tanigani uchun",
-        "Kompaniya soliq to'lamagani uchun",
+        "Kompaniya Yevropadagi daromadidan soliq to'lamagani uchun",
         "Yuz tanish texnologiyasining o'zi Yevropada taqiqlangani uchun"
       ],
       answer: [0],
@@ -152,7 +152,7 @@ window.QUIZ = {
         "100% []",
         "71% ['uchinchi_tomonlar', 'bolalar_uchun']",
         "29% ['uchinchi_tomonlar', 'bolalar_uchun']",
-        "83% ['bolalar_uchun']"
+        "43% ['maqsad', 'taqiqlangan', 'uchinchi_tomonlar', 'bolalar_uchun']"
       ],
       answer: [1],
       explain: "Yettita talabdan beshtasi bor: 5/7 × 100 ≈ 71%. Kim bilan bo'lishilishi va 18 yoshgacha bo'lganlar uchun qoida yetishmaydi.",
@@ -191,9 +191,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Robot to'g'ri qildi, chunki ehtimolni maksimallashtirish yagona to'g'ri yo'l",
-        "Inson to'g'ri, chunki deontologiya har doim utilitarizmdan ustun",
-        "Bu yerda noto'g'ri javob yo'q — utilitarizm va deontologiya turli qadriyatlarni ifodalaydi",
-        "Robot qonunni buzdi, chunki bolalarni qutqarish qonunda belgilangan"
+        "Inson to'g'ri, chunki deontologiya bunday holatda utilitarizmdan ustun turadi",
+        "Noto'g'ri javob yo'q — utilitarizm va deontologiya turli qadriyatlarni ifodalaydi",
+        "Robot qonunni buzdi, chunki bolalarni birinchi qutqarish qonunda belgilangan"
       ],
       answer: [2],
       explain: "\"Ehtimolni maksimallashtir\" va \"zaifni himoya qil\" — ikki xil qadriyat. Ilovadagi teng muomala va teng imkoniyat tanlovi ham shunday: u ongli qaror bo'lishi kerak.",

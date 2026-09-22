@@ -48,10 +48,10 @@ window.QUIZ = {
       q: "O'qituvchi nima uchun ma'ruzalarni tashlab ketmaslikni qat'iy tavsiya qiladi?",
       type: "single",
       options: [
-        "Har bir ma'ruza oxirida bonus kursga kirish havolasi beriladi",
-        "Ma'ruzalar ko'rilmasa, yuklab olinadigan resurslar ochilmaydi",
-        "Ular bilimni bosqichma-bosqich chuqurlashtirib, keyingi mavzularga poydevor yaratadi",
-        "Kurs Python'ni oldindan bilishingizni faraz qiladi, shuning uchun takrorlash kerak"
+        "Har bir ma'ruza oxirida bonus kursga kirish uchun maxsus havola beriladi",
+        "Ma'ruzalar ko'rilmasa, yuklab olinadigan resurs va quizlar ochilmaydi",
+        "Ular bilimni bosqichma-bosqich chuqurlashtirib, keyingilarga poydevor bo'ladi",
+        "Kurs Python'ni oldindan bilishingizni faraz qiladi, takrorlash shart"
       ],
       answer: [2],
       explain: "Ma'ruzalar bilimni bosqichma-bosqich chuqurlashtiradi va boshidan boshlash keyingi murakkab mavzular uchun poydevor yaratadi. Kurs aksincha Python'ni bilmaysiz deb faraz qiladi va noldan o'rgatadi.",
@@ -62,9 +62,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Yo'q, chunki u qat'iy parametrlar bilan ishlaydi va o'rganmaydi",
-        "Ha, chunki u vaziyatga qarab dasturni o'zi tanlay oladi",
-        "Ha, chunki u murakkab va foydali vazifalarni bajaradi",
-        "Yo'q, chunki u inson bilan tabiiy tilda gaplasha olmaydi"
+        "Ha, chunki u vaziyatga qarab dasturni o'zi mustaqil tanlay oladi",
+        "Ha, chunki u murakkab va foydali vazifalarni o'zi bajaradi",
+        "Yo'q, chunki u inson bilan tabiiy tilda muloqot qila olmaydi"
       ],
       answer: [0],
       explain: "Intellekt — bilim va ko'nikmalarni egallash hamda qo'llash qobiliyati. Kir yuvish mashinasi dasturni tanlasa ham, hech narsa o'rganmaydi; kuchli yoki foydali bo'lish aqlli degani emas.",
@@ -74,9 +74,9 @@ window.QUIZ = {
       q: "Darsdagi \"Aqllimi yoki yo'q?\" mashqiga ko'ra, quyidagilardan qaysilari aqlli tizim hisoblanadi? (bir nechta javob)",
       type: "multi",
       options: [
-        "Kalkulyator",
+        "Ilmiy kalkulyator",
         "Netflix tavsiya tizimi",
-        "Lift",
+        "Ko'p qavatli uydagi lift",
         "Telefondagi Face ID",
         "Avtomobildagi kruiz-kontrol"
       ],
@@ -116,7 +116,7 @@ window.QUIZ = {
       options: [
         "Deep Blue g'alabasidan keyin hukumatlar AI ga cheksiz mablag' ajrata boshladi",
         "Transformers paydo bo'lguncha neyron tarmoq g'oyasining o'zi mavjud bo'lmagan",
-        "Internet tufayli ulkan raqamli ma'lumot paydo bo'ldi va hisoblash quvvati keskin oshdi",
+        "Internet ulkan raqamli ma'lumot berdi, hisoblash quvvati ham keskin oshdi",
         "AI Winter davrida qo'lda yozilgan qoidalar bazasi nihoyat yetarli hajmga yetdi"
       ],
       answer: [2],
@@ -138,7 +138,7 @@ window.QUIZ = {
         "Savdo ma'lumotini grafikda tasvirlab, mavsumiy trendni ko'rsatish",
         "Mijozning keyingi oy ketib qolish ehtimolini bashorat qilish",
         "A/B testi natijasi statistik ahamiyatlimi — tekshirish",
-        "Rasmda kimning yuzi borligini aniqlash",
+        "Rasmdagi yuzni tanib, u kimga tegishli ekanini aniqlash",
         "O'rtacha chek summasi va uning standart og'ishini hisoblash"
       ],
       answer: [0, 2, 4],
@@ -162,10 +162,10 @@ window.QUIZ = {
       q: "Darsda muzqaymoq sotuvi va cho'kish holatlari birga oshishi misoli keltiriladi. Bu misol ML haqida nimani ko'rsatadi?",
       type: "single",
       options: [
-        "ML ikki ko'rsatkich birga o'sishini topish bilan cheklanadi",
-        "ML ko'p omilni birga hisobga olib, korrelyatsiyadan chuqurroq bog'liqlik topadi",
+        "ML ikki ko'rsatkich birga o'sishini topish bilan cheklanib qoladi",
+        "ML ko'p omilni birga hisobga olib, murakkab bog'liqliklarni topadi",
         "ML faqat muzqaymoq kabi mavsumiy mahsulotlar savdosini bashorat qiladi",
-        "ML bitta omilni oladi va yashirin sababni e'tiborsiz qoldiradi"
+        "ML bitta omilni oladi va yashirin sababni (yozni) e'tiborsiz qoldiradi"
       ],
       answer: [1],
       explain: "Oddiy korrelyatsiya faqat \"ikkalasi birga o'sadi\" deydi, yashirin sabab esa yoz. ML harorat, mavsum, hudud kabi yuzlab omilni bir vaqtda hisobga olib, murakkab bog'liqliklarni (intricate dependencies) aniqlaydi.",

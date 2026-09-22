@@ -21,10 +21,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Ma'lumot tasnifi (Xitoy DSL)",
-        "Aniq rozilik olish",
-        "Chegaradan o'tkazish ruxsati (Xitoy PIPL)",
+        "Aniq rozilik olish (Xitoy PIPL)",
+        "Chegaradan o'tkazish (Xitoy PIPL)",
         "Nomzodga xabar berish (NY LL144)",
-        "Saqlash muddatini cheklash"
+        "Saqlash muddatini cheklash (POPIA)"
       ],
       answer: [0, 2, 3],
       explain: "EU 10 ta talabning faqat 6 tasini (60%) qoplaydi. Qolgan to'rttasi: ma'lumot tasnifi, chegaradan o'tkazish ruxsati, nomzodga xabar va POPIA ning kirish talabi. Rozilik va saqlash muddati EU da bor.",
@@ -48,7 +48,7 @@ window.QUIZ = {
       q: "Cambridge Analytica ~87 mln foydalanuvchi ma'lumotini qanday qo'lga kiritgani darsda qanday tushuntiriladi?",
       type: "single",
       options: [
-        "~270 000 kishi testni to'ldirdi, har birining ~320 do'sti profili ham olindi — ular rozilik bermagan",
+        "~270 000 kishi testni to'ldirdi va ularning ~320 tadan do'sti profili ham olindi",
         "87 mln kishining har biri shaxsiyat testini to'ldirib, rozilik bergan edi",
         "Facebook serverlari buzib kirilib, 87 mln profil to'g'ridan-to'g'ri o'g'irlandi",
         "~87 000 kishi testni to'ldirdi va har biri 1000 tadan do'stini taklif qildi"
@@ -61,9 +61,9 @@ window.QUIZ = {
       q: "Darsdagi AI Act tasniflagichiga ko'ra yollashda ishlatiladigan AI ilova va mijoz chatboti qaysi toifalarga tushadi?",
       type: "single",
       options: [
-        "Ikkalasi ham minimal xavf — majburiy talab yo'q",
-        "Yollash — yuqori xavf (8 ta talab), chatbot — shaffoflik majburiyati",
-        "Yollash — taqiqlangan, chatbot — yuqori xavf",
+        "Ikkalasi ham minimal xavf — hech qanday majburiy talab yo'q",
+        "Yollash — yuqori xavf, chatbot — shaffoflik majburiyati",
+        "Yollash — taqiqlangan amaliyot, chatbot — yuqori xavf",
         "Yollash — shaffoflik majburiyati, chatbot — minimal xavf"
       ],
       answer: [1],
@@ -74,10 +74,10 @@ window.QUIZ = {
       q: "Nega darsda o'chirish huquqi (erasure) GDPR ning eng chuqur muammosi deb ataladi?",
       type: "single",
       options: [
-        "Chunki foydalanuvchilar bu huquqdan juda kam foydalanadi",
-        "Chunki bazadan o'chirish texnik jihatdan imkonsiz",
-        "Chunki bu huquq faqat EI fuqarolariga tegishli emas",
-        "Chunki bazadan o'chirish oson, lekin modeldan o'chirish deyarli imkonsiz"
+        "Chunki foydalanuvchilar bu huquqdan amalda juda kam foydalanadi",
+        "Chunki bazadan va zaxira nusxalardan o'chirish texnik jihatdan imkonsiz",
+        "Chunki bu huquq faqat davlat tashkilotlariga nisbatan qo'llanadi",
+        "Chunki bazadan o'chirish oson, modeldan o'chirish esa deyarli imkonsiz"
       ],
       answer: [3],
       explain: "Model o'qigan narsani unutmaydi. Shuning uchun 70-modul qoidasi muhim: ma'lumotni yig'maslik keyin o'chirishdan arzonroq.",
@@ -88,8 +88,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Chunki federal qonun shtat talablarini 10 ta bilan cheklaydi",
-        "Chunki talablar qoplashadi: opt_out va kirish bir necha shtatda takrorlanadi",
-        "Chunki beshinchi shtatda AI bo'yicha umuman qonun yo'q",
+        "Chunki talablar qoplashadi: opt_out va kirish bir necha shtatda bor",
+        "Chunki beshinchi shtatda AI bo'yicha umuman alohida qonun yo'q",
         "Chunki Nyu-York talablari boshqa shtatlarnikini bekor qiladi"
       ],
       answer: [1],
@@ -122,10 +122,10 @@ window.QUIZ = {
       q: "Xitoyning DSL qonuni qo'yadigan asosiy talab nima va u EU da bormi?",
       type: "single",
       options: [
-        "Ma'lumotni muhimligiga qarab darajalarga tasniflash; EU da bunday talab yo'q",
-        "Foydalanuvchidan aniq rozilik olish; EU da ham xuddi shunday",
-        "AI kontentini belgilash; EU da faqat tavsiya sifatida",
-        "Yollashda bias auditi; EU da bu AI Act orqali qoplanadi"
+        "Ma'lumotni muhimligiga qarab tasniflash; EU da bunday talab yo'q",
+        "Foydalanuvchidan aniq rozilik olish; EU da ham xuddi shunday talab",
+        "AI kontentini belgilash; EU da bu faqat ixtiyoriy tavsiya sifatida",
+        "Yollashda bias auditi; EU da bu AI Act orqali to'liq qoplanadi"
       ],
       answer: [0],
       explain: "DSL ma'lumotni tasniflashni talab qiladi va GDPR ni bajarish uni qoplamaydi. Bu tasnif 70-moduldagi \"ma'lumot pasporti\"ning rasmiy versiyasi.",
@@ -135,9 +135,9 @@ window.QUIZ = {
       q: "Xitoydagi foydalanuvchilar uchun ilova ularning ma'lumotini OpenAI API ga yuboradi. Darsga ko'ra muammo nima va qanday yechim bor?",
       type: "single",
       options: [
-        "Muammo yo'q, chunki TLS ma'lumotni yo'lda himoya qiladi",
-        "Ma'lumot chegaradan o'tadi (PIPL); mahalliy model bu muammoni bartaraf qiladi",
-        "Faqat narx muammosi; arzonroq API tarifiga o'tish kifoya",
+        "Muammo yo'q, chunki TLS ma'lumotni yo'lda to'liq shifrlab himoya qiladi",
+        "Ma'lumot chegaradan o'tadi (PIPL); mahalliy model buni bartaraf qiladi",
+        "Faqat narx muammosi; arzonroq API tarifiga o'tish kifoya qiladi",
         "Muammo AI kontentini belgilamaslikda; watermark qo'shish kerak"
       ],
       answer: [1],
@@ -163,9 +163,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Ular eng ko'p token oldi, chunki inglizcha familiyalar uzun",
-        "Ular 2 tadan 5 tagacha tokenga bo'lindi, o'rtacha 3.5",
-        "Hammasi aynan 2 token (min = max = 2) — tokenizator ularni butun so'z sifatida biladi",
-        "Ular o'zbek ismlari bilan bir xil — o'rtacha 6.67 token oldi"
+        "Ular 2 tadan 5 tagacha tokenga bo'lindi, o'rtacha 3.5 token",
+        "Hammasi aynan 2 token: tokenizator ularni butun so'z sifatida biladi",
+        "Ular o'zbek ismlari bilan bir xil natija berdi — o'rtacha 6.67 token"
       ],
       answer: [2],
       explain: "AQSh/Britaniya ismlarining har biri 2 token, Shahnoza Yo'ldosheva esa 10 token — 5 barobar qimmat. O'zbek ismlari o'rtacha 6.67, Nigeriya 6.17 token.",

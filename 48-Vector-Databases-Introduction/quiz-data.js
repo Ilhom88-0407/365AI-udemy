@@ -63,13 +63,13 @@ window.QUIZ = {
       q: "all-MiniLM-L6-v2 bilan \"mashinali o'qitish\" so'rovi atigi 0.2150 ball oldi, inglizcha so'rovlar esa 0.65 dan yuqori. Darsdagi yechim qaysi?",
       type: "single",
       options: [
-        "paraphrase-multilingual-MiniLM-L12-v2 kabi ko'p tilli modelga o'tish",
-        "top_k ni oshirib, ko'proq natija qaytarish",
-        "Ball chegarasini 0.2 gacha tushirish",
-        "Chroma o'rniga Pinecone indeksidan foydalanish"
+        "O'zbekchani tushunadigan ko'p tilli embedding modeliga o'tish",
+        "top_k ni oshirib, ko'proq natija qaytarish va eng yaxshisini tanlash",
+        "Ball chegarasini 0.2 gacha tushirib, past ballarni ham qabul qilish",
+        "Chroma o'rniga Pinecone indeksidan foydalanib, HNSW'ni sozlash"
       ],
       answer: [0],
-      explain: "all-MiniLM-L6-v2 faqat inglizcha, shuning uchun o'zbekcha so'rovlar 0.20–0.38 ball oladi. Muammo modelda, baza yoki chegarada emas.",
+      explain: "all-MiniLM-L6-v2 faqat inglizcha, shuning uchun o'zbekcha so'rovlar 0.20–0.38 ball oladi. Yechim — paraphrase-multilingual-MiniLM-L12-v2 kabi ko'p tilli model: muammo modelda, baza yoki chegarada emas.",
       lesson: { title: "Vektor bazalari — kirish", href: "01-Introduction-to-the-Course.md" }
     },
     {
@@ -97,11 +97,11 @@ window.QUIZ = {
       q: "Darsga ko'ra vektor bazasining zaif tomonlari qaysilar? (bir nechta javob)",
       type: "multi",
       options: [
-        "Qat'iy sxema — har o'zgarishda migratsiya kerak",
+        "Qat'iy sxema — har bir yangi maydonda migratsiya kerak",
         "Embedding modeli o'zgarsa, hammasini qayta indekslash kerak",
         "course_id = 37 kabi aniq moslik qidiruvi samarasiz",
-        "Metadata saqlab bo'lmaydi, faqat vektor saqlanadi",
-        "HNSW/IVF natijasi taxminiy — 100% to'g'rilik kafolatlanmaydi"
+        "Metadata saqlab bo'lmaydi, faqat ID va vektor saqlanadi",
+        "HNSW/IVF natijasi taxminiy, 100% aniqlik kafolatlanmaydi"
       ],
       answer: [1, 2, 4],
       explain: "Vektor bazasida aniq moslik sekin, yangilanish qimmat, model almashsa qayta indekslash kerak va natija taxminiy. Qat'iy sxema SQL'ning zaif tomoni, metadata esa vektor bazasida bor.",
@@ -139,7 +139,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "True — np.dot natijasini to'g'ridan-to'g'ri kosinus sifatida ishlatish mumkin",
-        "False — norma ~5.86, shuning uchun np.dot kosinus emas, vektorlarni normaga bo'lish kerak",
+        "False — norma ~5.86: np.dot kosinus emas, avval normaga bo'lish kerak",
         "False — model 768 o'lchamli, shuning uchun Chroma'ga yuklab bo'lmaydi",
         "True — lekin faqat inglizcha matnlar uchun, o'zbekchada norma boshqacha"
       ],
@@ -154,7 +154,7 @@ window.QUIZ = {
         "Chroma'da hnsw:space noto'g'ri tanlangan, \"l2\" qo'yilsa 10/10 bo'lardi",
         "numpy brute force xato natija bergan, chunki float32 yetarlicha aniq emas",
         "HNSW faqat 1000 vektorgacha ishlaydi, undan keyin tasodifiy natija qaytaradi",
-        "Yuqori o'lchamda tasodifiy vektorlar orasidagi masofalar deyarli teng — o'lchamlar la'nati"
+        "Yuqori o'lchamda tasodifiy vektorlar masofasi deyarli teng (o'lchamlar la'nati)"
       ],
       answer: [3],
       explain: "Tasodifiy vektorlarda \"eng yaqin 10 ta\" tushunchasi ma'nosiz bo'lib qoladi. Haqiqiy embeddinglar klasterlangani uchun ularda aniqlik ancha yuqori.",

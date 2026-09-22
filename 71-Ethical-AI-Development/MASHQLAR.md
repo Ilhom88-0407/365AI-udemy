@@ -366,15 +366,15 @@ Uni **mazmun qo'shmasdan** qanday aldash mumkin?
 
 ```
     belgilar    sezilarli naqsh   (haqiqiy: 0)
-          10                0.3
-          50                0.7
-         200                3.6
-        1000               17.6
+          10                0.4
+          50                3.0
+         200               10.2
+        1000               52.4
 ```
 
-> ## 💥💥💥 **1 000 TA BELGIDA — 17.6 TA "SEZILARLI" NAQSH.** ## ## ⭐ Hammasi **tasodifiy**.
+> ## 💥💥💥 **1 000 TA BELGIDA — 52.4 TA "SEZILARLI" NAQSH.** ## ## ⭐ Hammasi **tasodifiy**.
 
-> ## 🔑 **VA O'SISH CHIZIQLI EMAS:** ## 10 → 200 belgi *(20×)* ## naqshni **12×** ko'paytirdi, ## lekin 200 → 1000 *(5×)* — ## 💥 yana **4.9×**.
+> ## 🔑 **VA O'SISH TAXMINAN CHIZIQLI:** ## har tasodifiy belgining ## ⭐ **~5% ehtimoli** bor `0.15` dan oshishga *(200 → 1000 belgi, 5× — naqsh ham **5.1×**)*. ## 💥 Belgi qancha ko'p — soxta naqsh **shuncha ko'p**.
 
 > ## 🏆 **BU — `Star Wars` MISOLINING SONI.** ## Agar tizim ## ⭐ **1 000 ta belgini** sinasa, ## u ## 💥 **o'nlab soxta "qoida"** topadi — ## va ularning biri ## 🔑 **`Star Wars` bo'lishi mumkin**.
 
@@ -401,7 +401,7 @@ Uni **mazmun qo'shmasdan** qanday aldash mumkin?
 | 12 | Drift signali | ⚠️ `OGOHLANTIRISH` ko'rinmadi |
 | 13 | Baholovchi profili | ⭐ `C` kalibrlanadi, `D` — yo'q |
 | 14 | ## **Reward hacking** | ## 💥 **13× mukofot, 0 mazmun** |
-| 15 | ## **Soxta naqshlar** | ## 💥 **1 000 belgi → 17.6 ta** |
+| 15 | ## **Soxta naqshlar** | ## 💥 **1 000 belgi → 52.4 ta** |
 
 ---
 

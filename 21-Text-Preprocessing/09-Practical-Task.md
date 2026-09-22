@@ -337,7 +337,7 @@ Agar biz uni to'xtatish so'zlaridan **olib tashlamaganimizda**, bu **122 ta muhi
 
 **2 · `nt` — 81 marta ⚠️**
 
-Bu **qayerdan keldi?** `word_tokenize` `"don't"` ni `"do"` + `"n't"` ga ajratadi. Keyin regex `"'"` ni o'chiradi → `"nt"` qoladi.
+Bu **qayerdan keldi?** Ma'lumot to'plamida qisqartmalar **allaqachon ajratilgan** holda yozilgan: `"did n't"`, `"wo n't"` (xuddi `word_tokenize` `"don't"` ni `"do"` + `"n't"` ga ajratgandek). `"n't"` to'xtatish so'zlari ro'yxatida **yo'q** — 2-qadamdan omon qoladi. Keyin 3b-qadamdagi regex (tokenizatsiyadan **oldin**) `"'"` ni o'chiradi → `"nt"` qoladi, 4-qadamdagi `word_tokenize` esa uni alohida token sifatida saqlaydi.
 
 > ## 🔑 **Bu — QUVURDAGI XATO.** Uni `"nt"` ni to'xtatish so'zlariga qo'shib tuzatish mumkin.
 
@@ -723,7 +723,7 @@ nt         81  ⚠️      pike place       12
 
 ⚠️  KUZATUVLAR
 "not" 122 marta   →  uni saqlaganimiz TO'G'RI bo'ldi
-"nt"   81 marta   →  QUVURDAGI XATO ("don't" → "do"+"n't"→"nt")
+"nt"   81 marta   →  QUVURDAGI XATO ("did n't" → regex → "did nt")
 "seattle" 79      →  barcha mehmonxonalar SIETLDA
 
 

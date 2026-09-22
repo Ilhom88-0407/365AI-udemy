@@ -9,8 +9,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Python 3.9 da venv moduli yo'q, shuning uchun faqat Anaconda bilan ishlaydi",
-        "NumPy 2.x bilan moslik muammosi hal bo'lgan, 3.9 ning qo'llab-quvvatlashi esa tugagan",
-        "librosa 1.0 Python 3.9 ni umuman o'rnatishga ruxsat bermaydi",
+        "NumPy 2.x mosligi muammosi hal bo'lgan, 3.9 qo'llab-quvvatlashi esa tugagan",
+        "librosa 1.0 Python 3.9 ni umuman o'rnatishga ruxsat bermaydi va xato beradi",
         "Python 3.9 da transformers ishlamaydi, faqat openai-whisper ishlaydi"
       ],
       answer: [1],
@@ -21,10 +21,10 @@ window.QUIZ = {
       q: "GPU'si yo'q noutbukda talaba shunchaki pip install torch yozdi va yuklab olish juda uzoq davom etdi. Darsga ko'ra nima bo'lgan?",
       type: "single",
       options: [
-        "Sukut bo'yicha GPU versiyasi (~2.5 GB) yuklangan; CPU versiyasi --index-url bilan ~0.49 GB",
-        "pip eski bo'lgani uchun torch manbadan kompilyatsiya qilingan va shu sabab sekinlashgan",
+        "Sukut bo'yicha ~2.5 GB lik GPU versiyasi yuklangan; CPU versiyasi ~0.49 GB",
+        "pip eski bo'lgani uchun torch manbadan kompilyatsiya qilinib sekinlashgan",
         "torch Anaconda'siz o'rnatilmaydi, shuning uchun pip uni qayta-qayta urinib ko'rgan",
-        "torch bilan birga avtomatik ravishda ffmpeg ham yuklab olingan"
+        "torch bilan birga avtomatik ravishda ffmpeg va librosa ham yuklab olingan"
       ],
       answer: [0],
       explain: "pip install torch GPU bo'lmasa ham GPU versiyasini yuklaydi. CPU uchun pip install torch --index-url https://download.pytorch.org/whl/cpu — o'lchangan hajm 0.49 GB, taxminan 5 marta kichik.",
@@ -48,10 +48,10 @@ window.QUIZ = {
       q: "Kompyuterda faqat Python 3.14 bor, loyihaga esa Python 3.12 muhiti kerak. Darsga ko'ra venv va uv ning farqi bu yerda qanday namoyon bo'ladi?",
       type: "single",
       options: [
-        "venv kerakli versiyani o'zi yuklab oladi, uv esa faqat mavjud versiyadan foydalanadi",
+        "venv kerakli versiyani o'zi yuklaydi, uv esa faqat mavjud Python'dan muhit yaratadi",
         "Ikkalasi ham faqat mavjud versiyadan muhit yaratadi, buning uchun conda shart",
-        "venv faqat mavjud Python'dan muhit yaratadi, uv esa kerakli versiyani o'zi yuklab oladi",
-        "uv faqat Linux'da ishlaydi, Windows'da esa venv yagona yo'l"
+        "venv faqat mavjud Python'dan muhit yaratadi, uv esa kerakli versiyani o'zi yuklaydi",
+        "uv faqat Linux va macOS'da ishlaydi, Windows'da esa venv yagona yo'l"
       ],
       answer: [2],
       explain: "venv ning yagona jiddiy cheklovi — u mavjud Python versiyasidan muhit yaratadi. uv venv speech_env --python 3.12 esa kerakli versiyani o'zi yuklab oladi va paketlarni 10–100× tez o'rnatadi.",
@@ -70,10 +70,10 @@ window.QUIZ = {
       code: "import sys\nprint(sys.executable)",
       type: "single",
       options: [
-        "!pip install librosa",
+        "!pip install --force-reinstall librosa",
         "!{sys.executable} -m pip install librosa",
-        "!jupyter kernelspec install librosa",
-        "!python -m venv librosa"
+        "!jupyter kernelspec install --user librosa",
+        "!python -m venv librosa_env"
       ],
       answer: [1],
       explain: "!{sys.executable} -m pip aynan ishlayotgan yadroning pip'ini chaqiradi. Oddiy !pip install esa boshqa muhitga o'rnatib yuborishi mumkin.",
@@ -83,10 +83,10 @@ window.QUIZ = {
       q: "Darsga ko'ra pip freeze > requirements.txt ning qaysi kamchiliklari bor? (bir nechta javob)",
       type: "multi",
       options: [
-        "Paket versiyalarini umuman yozmaydi",
-        "Hamma paketni, bog'liqliklarni ham yozadi — fayl 200+ qatorli bo'ladi",
+        "Paket versiyalarini umuman yozmaydi, faqat nomlarini qoldiradi",
+        "Hamma paketni, bog'liqliklarni ham yozadi — 200+ qatorli fayl chiqadi",
         "Faqat siz import qilgan paketlarni yozadi, bog'liqliklarni tashlab ketadi",
-        "Platformaga xos paketlarni ham yozadi — Windows'da yozilgani Linux'da ishlamasligi mumkin"
+        "Platformaga xos paketlarni ham yozadi — boshqa OS da ishlamasligi mumkin"
       ],
       answer: [1, 3],
       explain: "O'lchovda pip freeze 234 qator berdi, qo'lda yozilgan requirements.txt esa 9 qator. U hamma narsani, jumladan platformaga xos paketlarni yozadi; versiyalarni esa yozadi.",
@@ -110,10 +110,10 @@ window.QUIZ = {
       q: "O'zbekcha nutq uchun Hugging Face'dagi fine-tuned Whisper modelidan foydalanmoqchisiz. Darsga ko'ra nima uchun transformers yo'li openai-whisper'dan qulayroq?",
       type: "single",
       options: [
-        "openai-whisper faqat tiny modelini beradi, boshqa o'lchamlar yo'q",
+        "openai-whisper faqat tiny modelini beradi, boshqa o'lchamlar unda yo'q",
         "transformers so'z darajasidagi vaqt belgilarini qo'shimcha kodsiz beradi",
-        "openai-whisper Python 3.12 da o'rnatilmaydi",
-        "transformers fine-tuned modellarni bir qatorda ishlatadi va ffmpeg talab qilmaydi"
+        "openai-whisper Python 3.12 da o'rnatilmaydi, faqat 3.9 gacha ishlaydi",
+        "transformers fine-tuned modelni bir qatorda ishlatadi, ffmpeg talab qilmaydi"
       ],
       answer: [3],
       explain: "transformers orqali minglab modellar, jumladan o'zbekchaga moslashtirilgan Whisper'lar bir qator bilan ishlatiladi, ffmpeg kerak emas. So'z darajasidagi vaqt belgilari esa aksincha openai-whisper'da tayyor, transformers'da qo'shimcha kod talab qiladi.",
@@ -149,7 +149,7 @@ window.QUIZ = {
       q: "Alohida jarayonda o'lchanganda import librosa 37.8 ms oldi — numpy dan ham tez. Lekin import + librosa.load() 1155 ms bo'ldi. Sababi nima?",
       type: "single",
       options: [
-        "librosa lazy_loader ishlatadi: bog'liqliklar import paytida emas, birinchi ishlatishda yuklanadi",
+        "librosa lazy_loader ishlatadi: bog'liqliklar birinchi chaqiruvda yuklanadi",
         "librosa C tilida yozilgan, shuning uchun uning importi har doim tez bo'ladi",
         "O'lchov xato: librosa allaqachon sys.modules da bo'lgani uchun qayta yuklanmagan",
         "load() faylni internetdan yuklab oladi, import esa faqat mahalliy ishlaydi"
@@ -177,8 +177,8 @@ window.QUIZ = {
       code: "jim = y * 0.05\ndisplay(Audio(y, rate=sr))\ndisplay(Audio(jim, rate=sr))",
       type: "single",
       options: [
-        "rate noto'g'ri berilgan; rate=22050 qilinsa farq eshitiladi",
-        "Audio sukut bo'yicha normallashtiradi; normalize=False bilan haqiqiy farq eshitiladi",
+        "rate noto'g'ri berilgan; rate=22050 qilinsa haqiqiy farq eshitiladi",
+        "Audio sukut bo'yicha normallashtiradi; normalize=False bilan farq eshitiladi",
         "Brauzer ovozni avtomatik tekislaydi; buni faqat fayl sifatida saqlab tekshirish mumkin",
         "0.05 ga ko'paytirish balandlikni o'zgartirmaydi; dB ga aylantirish kerak"
       ],

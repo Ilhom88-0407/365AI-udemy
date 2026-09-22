@@ -301,7 +301,7 @@ Audio(audio_signal, rate=44100)  # ② massiv + chastota SHART
 
 | Xato | Nima bo'ladi |
 |---|---|
-| `Audio(y)` — `rate` siz | ## 💥 `TypeError` |
+| `Audio(y)` — `rate` siz | ## 💥 `ValueError` |
 | `Audio(y, rate=22050)` — noto'g'ri | ## ⚠️ **ovoz sekin/tez** bo'ladi |
 | Stereo `(2, N)` massiv | ## ✅ ishlaydi |
 | Stereo `(N, 2)` massiv | ## 💥 **shovqin** — o'qni almashtiring |

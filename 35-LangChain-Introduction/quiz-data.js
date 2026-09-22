@@ -22,9 +22,9 @@ window.QUIZ = {
       q: "O'zbekcha javob beradigan chatbot uchun dars sistem promptni qanday yozishni maslahat beradi?",
       type: "single",
       options: [
-        "To'liq o'zbekcha — model ko'rsatmani ona tilida aniqroq tushunsin",
-        "Ko'rsatmani inglizcha, masalan \"You are a helpful assistant. Always answer in Uzbek.\"",
-        "Inglizcha va o'zbekcha aralash — model ikkala tilga ham moslashsin",
+        "To'liq o'zbekcha — model ko'rsatmani javob tilida aniqroq tushunsin",
+        "Ko'rsatma inglizcha, masalan \"You are a helpful assistant. Answer in Uzbek.\"",
+        "Inglizcha va o'zbekcha aralash — model ikkala tilga ham bir xil moslashsin",
         "Sistem promptni umuman yozmaslik — model tilni savoldan o'zi aniqlaydi"
       ],
       answer: [1],
@@ -86,10 +86,10 @@ window.QUIZ = {
       q: "PII maskalash uchun NER chegarasi 0.9 emas, 0.75 qilib olindi. Buning sababi nima?",
       type: "single",
       options: [
-        "0.75 da model tezroq ishlaydi va maskalash arzonroq tushadi",
-        "O'tkazib yuborish ortiqcha maskalashdan ancha qimmat — maxfiy ma'lumot chiqadi",
-        "0.9 chegarasi o'zbekcha matnda umuman hech narsa topmaydi",
-        "Presidio 0.8 dan yuqori chegarani qo'llab-quvvatlamaydi"
+        "0.75 da NER modeli tezroq ishlaydi va maskalash arzonroq tushadi",
+        "O'tkazib yuborish ortiqcha maskalashdan qimmat: maxfiy ma'lumot chiqadi",
+        "0.9 chegarasi o'zbekcha matndagi ismlarning hech birini topmaydi",
+        "Presidio 0.8 dan yuqori ishonch chegarasini qo'llab-quvvatlamaydi"
       ],
       answer: [1],
       explain: "Xavfsizlikda asimmetriya bor: ortiqcha maskalash xulosani biroz noaniq qiladi (arzon), o'tkazib yuborish esa maxfiy ma'lumotni chiqarib yuboradi (qimmat). Shuning uchun chegara pastroq qo'yiladi.",
@@ -192,10 +192,10 @@ window.QUIZ = {
       q: "O'quvchida OpenAI API kaliti yo'q va u kursni o'zbekcha misollar bilan davom ettirmoqchi. Dars qaysi variantni eng yaxshi deb tavsiya qiladi?",
       type: "single",
       options: [
-        "Ollama va qwen2.5 modeli — bepul, maxfiy, kurs kodining 95% i o'zgarmaydi",
+        "Ollama va qwen2.5 — bepul, maxfiy, kurs kodining 95% i o'zgarmaydi",
         "Ollama va llama3.2 modeli — u o'zbekchada eng ko'p o'qitilgan model",
-        "Groq bepul kvotasi — ma'lumot hech qayerga chiqmaydi",
-        "HuggingFace'ning kichik modeli — sifati gpt-4o bilan bir xil"
+        "Groq bepul kvotasi — tez ishlaydi va ma'lumot hech qayerga chiqmaydi",
+        "HuggingFace'ning kichik modeli — sifati gpt-4o bilan deyarli bir xil"
       ],
       answer: [0],
       explain: "Tavsiya — Ollama: bepul, internetsiz, ma'lumot kompyuterdan chiqmaydi. O'zbekcha uchun llama3.2 emas, qwen2.5 tanlanadi — u ko'p tilli ma'lumotda ko'proq o'qitilgan. Bepul kvotali provayderlarda ma'lumot chet elga chiqadi.",

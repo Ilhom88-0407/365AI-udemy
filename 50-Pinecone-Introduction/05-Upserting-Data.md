@@ -677,8 +677,9 @@ coll.upsert(ids=[...], embeddings=[...], metadatas=[...])
 ⭐ upsert — BARQAROR ID bilan → dublikat YO'Q
 💥 tasodifiy ID (uuid4) → qayta indekslashda baza IKKI BARAVAR oshadi
 ⭐ batch: Pinecone 100–500 · Chroma 5000
-💥 Chroma metadata: str/int/float/bool. list/dict/None → XATO
-   → CSV bo'sh katakcha → NaN → None → 💥 (toza_metadata() kerak)
+💥 Chroma metadata (chromadb 1.5.9): str/int/float/bool/list/None ✅ · faqat dict → XATO
+   ⚠️ Pinecone'da None ham rad etiladi, eski Chroma'da list/None ham
+   → CSV bo'sh katakcha → NaN → None → doim tozalang (toza_metadata())
 ```
 
 ---

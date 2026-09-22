@@ -8,8 +8,8 @@ window.QUIZ = {
       q: "Siz ChatGPT'ga bir xil savolni ikki xil sessiyada berdingiz: birida aqlli, ikkinchisida ancha zaif javob oldingiz. Darsga ko'ra bu qanday hodisa va uning sababi nima?",
       type: "single",
       options: [
-        "Gallyutsinatsiya — model faktik noto'g'ri ma'lumotda o'qitilgani uchun",
-        "Izchilsizlik — tashqarida hostlangan modelni ishlatuvchi apparatdagi farqlar tufayli",
+        "Gallyutsinatsiya — model boshidanoq faktik noto'g'ri ma'lumotda o'qitilgani uchun",
+        "Izchilsizlik — tashqi hostlangan modelni ishlatuvchi apparat farqlari tufayli",
         "Gallyutsinatsiya — model keyingi so'zni bashorat qilishda adashgani uchun",
         "Izchilsizlik — foydalanuvchi promptni ikki marta bir xil yoza olmagani uchun"
       ],
@@ -34,11 +34,11 @@ window.QUIZ = {
       q: "Darsda gallyutsinatsiyaning qaysi sabablari keltirilgan? (bir nechta javob)",
       type: "multi",
       options: [
-        "Model keyingi so'zni ehtimollik bilan bashorat qiladi va bu bashorat ba'zan noto'g'ri bo'ladi",
-        "Modelni ishlatuvchi serverlar va apparat har safar bir xil bo'lmaydi",
-        "Foydalanuvchi modelga \"vaqt ol\" deb ko'rsatma bermagan bo'ladi",
-        "Model dastlabki paytdayoq faktik noto'g'ri ma'lumotda o'qitilgan bo'lishi mumkin",
-        "Model faqat mahalliy kompyuterda ishga tushirilgan bo'ladi"
+        "Model keyingi so'zni ehtimollik bilan bashorat qiladi va ba'zan adashadi",
+        "Modelni ishlatuvchi serverlar va apparat har bir sessiyada bir xil bo'lmaydi",
+        "Foydalanuvchi modelga \"vaqt ol, shoshilma\" deb ko'rsatma bermagan bo'ladi",
+        "Model boshidanoq faktik noto'g'ri ma'lumotda o'qitilgan bo'lishi mumkin",
+        "Model internetsiz, faqat mahalliy kompyuterda ishga tushirilgan bo'ladi"
       ],
       answer: [0, 3],
       explain: "Gallyutsinatsiyaning ikki sababi: keyingi so'z bashorati kafolat emas va noto'g'ri training data (garbage in, garbage out). Apparat farqlari va tashqi hosting esa izchilsizlik sabablari.",
@@ -69,10 +69,10 @@ window.QUIZ = {
       q: "Jamoangiz yangi AI model qurmoqchi. Darsga ko'ra budjetlashtirishning to'g'ri yo'li qaysi va nega?",
       type: "single",
       options: [
-        "Budjetni oldindan ma'lumot va hisoblash quvvati o'rtasida taqsimlash, chunki ko'pchilik bir necha marta urina olmaydi",
-        "Avval modelni qurishni boshlab, hajm va narxni o'qitish davomida aniqlash, chunki natijani oldindan bilib bo'lmaydi",
-        "Butun budjetni eng katta modelga sarflash, chunki katta model har doim eng yaxshi strategiya",
-        "Butun budjetni faqat hisoblash quvvatiga sarflash, chunki ma'lumotni har doim bepul topish mumkin"
+        "Budjetni oldindan ma'lumot va hisoblash quvvatiga taqsimlash, chunki ko'pchilik qayta urinishga qodir emas",
+        "Avval modelni qurib, hajm va narxni o'qitish davomida aniqlash, chunki natijani oldindan bilib bo'lmaydi",
+        "Butun budjetni eng katta modelga sarflash, chunki parametri ko'p model har doim eng yaxshi natija beradi",
+        "Butun budjetni faqat hisoblash quvvatiga sarflash, chunki o'quv ma'lumotini har doim bepul topish mumkin"
       ],
       answer: [0],
       explain: "GPT-4 ni o'qitish $100 milliondan ortiq turgan, shuning uchun ko'p tashkilot birinchi urinishda muvaffaqiyat qozonishi shart. Budjetni oldindan ko'rib, ma'lumot sotib olish va hisoblash quvvatiga taqsimlash kerak.",
@@ -85,7 +85,7 @@ window.QUIZ = {
       options: [
         "90,000",
         "33,000",
-        "33",
+        "3,300",
         "15,000"
       ],
       answer: [1],
@@ -96,10 +96,10 @@ window.QUIZ = {
       q: "Darsga ko'ra qaysi holatda kichikroq model qurish mantiqiyroq?",
       type: "single",
       options: [
-        "Model iloji boricha ko'p sohada umumiy maqsadli ishlashi kerak bo'lganda",
-        "Kompaniya birinchi urinishda eng yuqori unumdorlikka erishmoqchi bo'lganda",
-        "Cheklangan qo'llanish uchun model tez-tez qayta o'qitilib, fine-tune qilinishi kerak bo'lganda",
-        "Tashkilotda ma'lumot va hisoblash quvvati uchun cheklanmagan budjet bo'lganda"
+        "Model iloji boricha ko'p sohada umumiy maqsadli, universal ishlashi kerak bo'lganda",
+        "Kompaniya birinchi urinishdayoq eng yuqori unumdorlik va aniqlikka erishmoqchi bo'lganda",
+        "Tor vazifa uchun model tez-tez qayta o'qitilishi va fine-tune qilinishi kerak bo'lganda",
+        "Tashkilotda ma'lumot va hisoblash quvvati uchun deyarli cheklanmagan budjet bo'lganda"
       ],
       answer: [2],
       explain: "Katta model faqat maqsad va resurslarga mos sezilarli samaradorlik o'sishi bersa oqlanadi. Cheklangan qo'llanishlar uchun kichik ixtisoslashgan modellarni o'qitish arzonroq va tezroq.",
@@ -136,10 +136,10 @@ window.QUIZ = {
       q: "AI ilovangiz javobni juda sekin beryapti. Darsga ko'ra darhol amal qiladigan samarali strategiya qaysi?",
       type: "single",
       options: [
-        "Model hajmini optimallashtirib, kichikroq va tezroq modelga o'tish",
-        "Yangi turdagi arxitekturani noldan ishlab chiqishni boshlash",
-        "Modelni kattaroq qilib, unga ko'proq parametr qo'shish",
-        "Promptga \"tezroq javob ber\" degan ko'rsatmani qo'shish"
+        "Model hajmini kamaytirib, kichikroq va tezroq modelga o'tish",
+        "Yangi turdagi tezkor arxitekturani noldan ishlab chiqishni boshlash",
+        "Modelni kattaroq qilib, unga ko'proq parametr va qatlam qo'shish",
+        "Promptga \"tezroq va qisqaroq javob ber\" degan ko'rsatmani qo'shish"
       ],
       answer: [0],
       explain: "Kichikroq modellar ko'pincha kattaroq hamkasblaridan tezroq, bu darhol ishlaydigan yechim. Yangi arxitekturalar va parallel hisoblash esa tadqiqot bosqichida va yillar oladi.",

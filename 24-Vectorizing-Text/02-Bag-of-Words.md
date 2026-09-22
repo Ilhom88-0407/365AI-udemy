@@ -599,7 +599,7 @@ for s in ["shark beach", "old man worms", "vampire blood"]:
 5. **Ustun nomlarini** — ya'ni lug'atdagi barcha noyob so'zlarni *(alifbo tartibida)*.
 6. ## **YO'Q!** `CountVectorizer` **SANAYDI**. Bizning ma'lumotda maksimum **3** *(`the` so'zi)*.
 7. `CountVectorizer(binary=True)`
-8. **Nollar ulushi.** Bizda **80.8%**. Katta korpusda **99.9%** ga chiqadi — bu **xotira** va **tezlik** muammosi.
+8. **Nollar ulushi.** Bizda **80.0%**. Katta korpusda **99.9%** ga chiqadi — bu **xotira** va **tezlik** muammosi.
 
 </details>
 
@@ -644,11 +644,11 @@ NATIJA: (6, 71)   6 hujjat × 71 noyob so'z
 
 MUAMMOLAR
   · "the" 12 marta — hech narsa aytmaydi
-  · Siyraklik 80.8% nol
+  · Siyraklik 80.0% nol
   · So'z tartibi YO'QOLGAN
 
 YECHIMLAR
-  · stop_words='english'    →  71 → 42 ustun
+  · stop_words='english'    →  71 → 39 ustun
   · ngram_range=(1,2)       →  "not good" bitta ustun
   · TF-IDF  ⭐              →  keyingi dars
 ```

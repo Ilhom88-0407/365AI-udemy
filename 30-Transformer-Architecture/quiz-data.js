@@ -9,9 +9,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Model hajmini kamaytirish uchun qatlamlarni olib tashlash",
-        "Og'irliklarni bashorat va haqiqiy natija farqini kamaytiradigan qilib yangilash",
-        "Kirish matnini tozalab, stop so'zlardan xalos qilish",
-        "Gul turini aniqlash uchun qoidalarni qo'lda yozish"
+        "Og'irliklarni bashorat xatosini kamaytiradigan qilib yangilash",
+        "Kirish matnini tozalab, stop so'zlar va shovqindan xalos qilish",
+        "Gul turini aniqlash uchun qoidalarni qo'lda yozib, sozlab chiqish"
       ],
       answer: [1],
       explain: "O'qitish davomida og'irliklar bashorat va haqiqat o'rtasidagi farqni minimallashtirish uchun millionlab marta sozlanadi. SGDClassifier dagi SGD ham aynan shu jarayon.",
@@ -36,10 +36,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "Uzun matnda boshida aytilgan narsani unutadi",
-        "So'z tartibini umuman saqlay olmaydi",
-        "So'zlarni ketma-ket qayta ishlagani uchun parallellashtirib bo'lmaydi",
-        "Faqat rasmlar bilan ishlashga mo'ljallangan",
-        "Sekin o'qitilgani uchun ulkan ma'lumot to'plamlarini uddalay olmaydi"
+        "So'z tartibini saqlay olmaydi, jumlani so'zlar to'plami deb ko'radi",
+        "Ketma-ket ishlagani uchun uni parallellashtirib bo'lmaydi",
+        "Faqat rasmlar bilan ishlashga mo'ljallangan, matn uchun emas",
+        "Sekin o'qitiladi, ulkan ma'lumotlarni uddalay olmaydi"
       ],
       answer: [0, 2, 4],
       explain: "RNN tartibni saqlaydi, lekin uzoq kontekstni unutadi va ketma-ket ishlagani uchun sekin — shu sababli LLM hajmidagi ma'lumotda o'qitib bo'lmasdi. Rasm uchun esa CNN mo'ljallangan.",
@@ -62,10 +62,10 @@ window.QUIZ = {
       q: "E'tibor formulasida Q·Kᵀ ballari nima uchun √d_k ga bo'linadi?",
       type: "single",
       options: [
-        "Og'irliklar yig'indisini aniq 1 ga keltirish uchun",
-        "Kelajakdagi tokenlarni modeldan yashirish uchun",
-        "d_k katta bo'lganda ballar ulkanlashib, softmax bitta tokenga yopishib qolmasligi uchun",
-        "Parametrlar sonini d_k baravar kamaytirish uchun"
+        "Og'irliklar yig'indisini softmax'dan oldin aniq 1 ga keltirish uchun",
+        "Kelajakdagi tokenlarni modeldan yashirish (niqoblash) uchun",
+        "Katta d_k da ballar ulkanlashib, softmax bitta tokenga yopishmasin",
+        "Parametrlar sonini d_k baravar kamaytirib, hisobni tezlatish uchun"
       ],
       answer: [2],
       explain: "Q·Kᵀ — d_k ta ko'paytmaning yig'indisi, shuning uchun o'lcham oshsa ballar o'sadi. Masshtabsiz softmax bitta tokenga yopishadi va gradiyent yo'qoladi. Yig'indini 1 ga keltirish esa softmax ning ishi.",
@@ -103,8 +103,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "Embedding matritsasi noto'g'ri o'qitilgan va uni qayta o'qitish kerak",
-        "Kirish embeddingi kontekstsiz bo'lib, grammatik rolni ko'radi, sentimentni esa e'tibor qatlamlari quradi",
-        "\"good\" va \"bad\" aslida sinonim so'zlar hisoblanadi",
+        "Kirish embeddingi kontekstsiz; sentimentni keyingi e'tibor qatlamlari quradi",
+        "\"good\" va \"bad\" aslida sinonim so'zlar, shuning uchun vektorlari yaqin",
         "Kosinus o'xshashligi so'zlarni solishtirish uchun yaroqsiz o'lchov"
       ],
       answer: [1],
@@ -131,8 +131,8 @@ window.QUIZ = {
       options: [
         "O'rtacha olishda softmax qayta qo'llanmagani uchun qiymatlar buziladi",
         "Faqat oxirgi qatlamni ko'rish kerak, o'rtacha esa barcha qatlamlarni aralashtiradi",
-        "Har bosh boshqa narsani o'rganadi, o'rtacha esa signallarni aralashtirib yo'qotadi",
-        "O'rtacha olish [CLS] tokenini hisobdan chiqarib yuboradi"
+        "Har bosh boshqa narsani o'rganadi, o'rtacha esa signallarni yo'qotadi",
+        "O'rtacha olish [CLS] va [SEP] tokenlarini hisobdan chiqarib yuboradi"
       ],
       answer: [2],
       explain: "Masalan, qatlam 1 bosh 0 faqat keyingi so'zga qaraydi, qatlam 5 bosh 5 esa koreferensiyani topadi. Ularni o'rtacha qilish \"multi-head\" ma'nosini yo'q qiladi.",
@@ -142,10 +142,10 @@ window.QUIZ = {
       q: "\"very good\" va \"not good\" jumlalaridagi \"good\" vektorlari 0-qatlamda cos = 1.0000, 6-qatlamda esa cos = -0.1150 berdi. Bu nimani isbotlaydi?",
       type: "single",
       options: [
-        "Model 6-qatlamda \"good\" so'zining ID sini o'zgartirib yuboradi",
+        "Model 6-qatlamda \"good\" so'zining token ID sini boshqasiga almashtiradi",
         "Pozitsion kodlash ikki jumlada turlicha bo'lgani uchun vektorlar farqlanadi",
-        "Chuqur qatlamlarda vektorlar tasodifiy shovqinga aylanadi",
-        "E'tibor qatlamlari kontekstga (\"not\" so'ziga) qarab so'z vektorini o'zgartiradi"
+        "Chuqur qatlamlarda vektorlar ma'nosiz tasodifiy shovqinga aylanadi",
+        "E'tibor qatlamlari kontekstga (\"not\" ga) qarab so'z vektorini o'zgartiradi"
       ],
       answer: [3],
       explain: "Bir xil so'z, bir xil ID, bir xil boshlang'ich vektor — lekin model \"not\" ni ko'rib \"good\" ma'nosini o'zgartirdi. Bu kontekstual embeddingning mohiyati.",
@@ -155,10 +155,10 @@ window.QUIZ = {
       q: "Feed-forward qatlamidagi GELU kabi aktivatsiya funksiyasi olib tashlansa (lin2(lin1(x))), nima bo'ladi?",
       type: "single",
       options: [
-        "Ikki chiziqli qatlam bitta chiziqli qatlamga teng bo'lib, model chuqurligini yo'qotadi",
+        "Ikki chiziqli qatlam bitta chiziqli qatlamga teng bo'lib qoladi",
         "Model faqat manfiy qiymatlarni o'tkazadigan bo'lib qoladi",
-        "Tokenlar endi parallel emas, ketma-ket qayta ishlanadi",
-        "Qatlam 768 → 3072 o'rniga 768 → 768 o'lchamga o'tadi"
+        "Tokenlar endi parallel emas, bittalab ketma-ket qayta ishlanadi",
+        "Qatlam 768 → 3072 o'rniga 768 → 768 o'lchamga o'tib qoladi"
       ],
       answer: [0],
       explain: "W₂·(W₁·x) = (W₂·W₁)·x = W·x — chiziqsizliksiz 6 qatlam ham bitta qatlamga teng bo'lardi. O'lchamlar va parallellik esa aktivatsiyaga bog'liq emas.",

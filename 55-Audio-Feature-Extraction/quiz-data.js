@@ -43,10 +43,10 @@ window.QUIZ = {
       q: "Spektral flatness ovozli freymlarda ~0.02, ovozsizlarda ~0.10 chiqdi. Flatness aslida nimani o'lchaydi?",
       type: "single",
       options: [
-        "Energiyaning 85% i qaysi chastotagacha to'planganini",
-        "Spektr tonga (o'tkir cho'qqilar) yoki shovqinga (tekis) qanchalik o'xshashligini",
+        "Spektr energiyasining 85% i qaysi chastotagacha to'planganini",
+        "Spektr tonga (cho'qqili) yoki shovqinga (tekis) qanchalik o'xshashligini",
         "Spektrdagi chastotalar o'rtacha chastota atrofida qanchalik tarqoqligini",
-        "Freym ichida signal nol chizig'ini necha marta kesganini"
+        "Freym ichida signal nol chizig'ini necha marta kesib o'tganini"
       ],
       answer: [1],
       explain: "Flatness = geometrik o'rtacha / arifmetik o'rtacha: garmonikali ton ~0, oq shovqin ~1. Birinchi variant rolloff, uchinchisi bandwidth, to'rtinchisi ZCR ta'rifi.",
@@ -92,10 +92,10 @@ window.QUIZ = {
       q: "Nima uchun MFCC da aynan 13 koeffitsient sanoat standarti hisoblanadi?",
       type: "single",
       options: [
-        "13 ta koeffitsient dispersiyaning 89.4% ini beradi, 40 ta esa atigi +10.6% qo'shib, o'lchamni 3× oshiradi",
-        "librosa 13 dan ortiq koeffitsientni hisoblay olmaydi",
+        "13 ta dispersiyaning 89.4% ini beradi, 40 ta esa atigi +10.6% qo'shadi",
+        "librosa n_mfcc ni 13 dan oshirishga ruxsat bermaydi, bu chegara",
         "13 ta koeffitsient mel filtrlar soniga teng bo'lishi shart",
-        "c0 dan boshqa hamma koeffitsientlar 13-dan keyin nolga teng bo'ladi"
+        "c0 dan boshqa hamma koeffitsientlar 13-dan keyin nolga teng bo'lib qoladi"
       ],
       answer: [0],
       explain: "Bu tasodifiy son emas, dispersiya tahlilining natijasi: c0 yolg'iz 57.56%, 13 ta 89.40%. Mel filtrlar esa odatda 40 ta bo'ladi.",
@@ -135,11 +135,11 @@ window.QUIZ = {
       q: "Freymlash va xotira haqida qaysi fikrlar darsdagi o'lchovlarga mos? (bir nechta javob)",
       type: "multi",
       options: [
-        "sig.get_window() float64 qaytaradi va float32 freymlar xotirasini jim ravishda ikki baravar oshiradi",
+        "sig.get_window() float64 qaytarib, float32 freymlar xotirasini 2× oshiradi",
         "sliding_window_view nusxa yaratmaydi va nusxali usuldan ~15× tez",
-        "Ko'rinish uchun F.base.nbytes haqiqiy xotirani to'g'ri ko'rsatadi",
+        "Ko'rinish uchun F.base.nbytes haqiqiy egallangan xotirani to'g'ri ko'rsatadi",
         "Freymlangan xotira ustma-ustlikka bog'liq, oyna o'lchamiga esa bog'liq emas",
-        "sliding_window_view ga oyna ko'paytirilsa ham nusxa yaratilmaydi"
+        "sliding_window_view ga oyna ko'paytirilsa ham nusxa yaratilmaydi, xotira tejaladi"
       ],
       answer: [0, 1, 3],
       explain: "F.base.nbytes 573.4 MB kabi yolg'on qiymat beradi — haqiqiy xotira asl signalning o'zi. Ko'rinishga oyna ko'paytirilsa, nusxa baribir yaratiladi. Xotira freym × oyna ko'paytmasiga bog'liq, u faqat ustma-ustlik bilan o'zgaradi.",
@@ -149,10 +149,10 @@ window.QUIZ = {
       q: "1000 Hz sinus (aynan bin markazida) bilan hamma oyna bir xil −290 dB berdi, 1015.6 Hz da esa boxcar −25 dB, hann −70 dB. Bundan qanday xulosa chiqadi?",
       type: "single",
       options: [
-        "Oyna funksiyasi faqat bin markazidagi chastotalar uchun kerak",
-        "Boxcar eng aniq oyna, chunki cho'qqisi eng tor",
-        "Haqiqiy signallar bin markazida bo'lmaydi, shuning uchun oyna funksiyasi majburiy",
-        "Oyna tanlovi natijaga ta'sir qilmaydi, faqat n_fft muhim"
+        "Oyna funksiyasi faqat bin markazidagi chastotalar uchun kerak bo'ladi",
+        "Boxcar eng aniq oyna, chunki uning asosiy cho'qqisi hammadan tor",
+        "Haqiqiy signallar bin markazida bo'lmaydi, shuning uchun oyna majburiy",
+        "Oyna tanlovi natijaga ta'sir qilmaydi, faqat n_fft qiymati muhim"
       ],
       answer: [2],
       explain: "Bin markazida signal oynaga butun sonli davr bilan sig'adi va sizib chiqish bo'lmaydi. Nutq chastotalari uzluksiz o'zgaradi, oynasiz (boxcar) kuchli sizib chiqish jim komponentlarni bosib ketadi; nutq uchun hann/hamming standart.",

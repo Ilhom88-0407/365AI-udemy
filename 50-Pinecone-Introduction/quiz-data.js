@@ -63,10 +63,10 @@ window.QUIZ = {
       code: "import chromadb\nclient = chromadb.PersistentClient(path=\"./vdb-demo\")\nclient.create_collection(\"b\")",
       type: "single",
       options: [
-        "\"b\" nomli kolleksiya odatdagidek yaratiladi",
+        "\"b\" nomli kolleksiya odatdagidek diskda yaratiladi",
         "Kolleksiya yaratiladi, lekin nomi avtomatik \"b00\" ga to'ldiriladi",
-        "InvalidArgumentError: nom kamida 3 belgidan iborat bo'lishi kerak",
-        "DuplicateIDError: bunday nom allaqachon mavjud"
+        "InvalidArgumentError: nom kamida 3 belgi bo'lishi kerak",
+        "DuplicateIDError: bunday nomli kolleksiya allaqachon mavjud"
       ],
       answer: [2],
       explain: "Chroma'da nom 3–512 belgi, faqat [a-zA-Z0-9._-] va boshi hamda oxiri harf yoki raqam bo'lishi kerak. \"b\" juda qisqa, shuning uchun InvalidArgumentError chiqadi.",
@@ -89,10 +89,10 @@ window.QUIZ = {
       q: "Darsda nima uchun os.environ.get(\"PINECONE_API_KEY\") o'rniga os.environ[\"PINECONE_API_KEY\"] yozish tavsiya qilinadi?",
       type: "single",
       options: [
-        "Kalit yo'q bo'lsa get() None qaytaradi va xato tushunarsiz bo'ladi, [] esa aniq KeyError beradi",
+        "get() None qaytarib xatoni yashiradi, [] esa darhol aniq KeyError beradi",
         "get() faqat eski Pinecone SDK bilan ishlaydi, [] esa yangi 3.x versiya bilan",
         "[] kalitni jurnalga yozmaydi, get() esa uni ekranga to'liq chiqaradi",
-        "get() .env faylni o'qimaydi, [] esa uni yuqoriga qarab qidiradi"
+        "get() .env faylni o'qimaydi, [] esa uni papkadan yuqoriga qarab qidiradi"
       ],
       answer: [0],
       explain: "get() kalit topilmasa None qaytaradi va keyinroq tushunarsiz 401 yoki \"Failed to parse API key\" xatosi chiqadi. os.environ[...] esa darhol aniq KeyError beradi.",
@@ -102,10 +102,10 @@ window.QUIZ = {
       q: "Notebook'dagi \"bor bo'lsa o'chir, keyin yarat\" naqshi ishlab chiqarishda nega xavfli va darsda qaysi xavfsiz almashtirish tavsiya qilinadi?",
       type: "single",
       options: [
-        "U metrikani o'zgartiradi; o'rniga list_collections() ishlatiladi",
-        "U API kalitini oshkor qiladi; o'rniga .env.example ishlatiladi",
+        "U metrikani jimgina o'zgartiradi; o'rniga list_collections() ishlatiladi",
+        "U API kalitini logga oshkor qiladi; o'rniga .env.example ishlatiladi",
         "U o'lchamni tekshirmaydi; o'rniga describe_index_stats() ishlatiladi",
-        "Butun indeks yo'qolishi mumkin; o'rniga get_or_create_collection() ishlatiladi"
+        "Indeks yo'qolishi mumkin; o'rniga get_or_create_collection() ishlatiladi"
       ],
       answer: [3],
       explain: "Notebook'ni qayta ishga tushirish millionlab vektorli indeksni o'chirib yuborishi mumkin. get_or_create_collection() bor bo'lsa oladi, yo'q bo'lsa yaratadi; tasdiqlash va versiyalash ham xavfsiz variantlar.",
@@ -142,9 +142,9 @@ window.QUIZ = {
       q: "Indekslash skripti har kuni qayta ishga tushiriladi va ID sifatida str(uuid.uuid4()) ishlatiladi. Darsga ko'ra natija qanday bo'ladi?",
       type: "single",
       options: [
-        "Har ishga tushirishda yangi ID paydo bo'lib, baza dublikatlar bilan kattalashadi",
-        "Upsert eski yozuvlarni topib, ularni yangilab qo'yadi",
-        "Chroma tasodifiy ID'ni rad etib, DuplicateIDError beradi",
+        "Har ishga tushirishda yangi ID paydo bo'lib, baza dublikatlarga to'ladi",
+        "Upsert eski yozuvlarni matni bo'yicha topib, ularni yangilab qo'yadi",
+        "Chroma tasodifiy ID'ni rad etib, har safar DuplicateIDError beradi",
         "Hech narsa o'zgarmaydi, chunki vektorlar bir xil bo'lsa ular birlashtiriladi"
       ],
       answer: [0],
@@ -168,10 +168,10 @@ window.QUIZ = {
       q: "FineWeb'ni load_dataset(..., streaming=True) bilan yuklashning asosiy foydasi nima?",
       type: "single",
       options: [
-        "Embedding'lar 8 marta tezroq hisoblanadi",
-        "Ma'lumot qatorma-qator o'qiladi, butun to'plam diskka yuklanmaydi",
+        "Embedding'lar GPU'siz ham 8 marta tezroq hisoblanadi",
+        "Ma'lumot qatorma-qator o'qiladi, to'plam diskka yuklanmaydi",
         "Matnlar avtomatik 256 tokenlik bo'laklarga ajratiladi",
-        "Faqat ingliz tilidagi yozuvlar filtrlab olinadi"
+        "Faqat ingliz tilidagi sifatli yozuvlar filtrlab olinadi"
       ],
       answer: [1],
       explain: "streaming=True bo'lmasa sample-10BT (taxminan 45 GB) diskka yuklanadi. streaming bilan yozuvlar qatorma-qator o'qiladi. Tezlanish esa batch embedding'dan keladi.",

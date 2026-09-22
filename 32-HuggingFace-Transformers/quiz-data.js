@@ -8,10 +8,10 @@ window.QUIZ = {
       q: "Bank mijozlar shikoyatlarini tahlil qilmoqchi, lekin ma'lumot bank serverlaridan tashqariga chiqmasligi shart. Qaysi yondashuv bu talabga mos?",
       type: "single",
       options: [
-        "OpenAI API — chunki u eng yuqori sifatni beradi va tez ishlaydi",
-        "Hugging Face modelini o'z kompyuterida ishlatish — ma'lumot hech qayerga chiqmaydi",
-        "OpenAI API — chunki model faqat birinchi marta internetga ulanadi",
-        "Istalgan bulutli API — chunki ular ma'lumotni saqlab qolmaydi"
+        "OpenAI API — chunki u eng yuqori sifatni beradi va so'rovlarni tez bajaradi",
+        "Hugging Face modelini o'z serverida ishlatish — ma'lumot tashqariga chiqmaydi",
+        "OpenAI API — chunki model faqat birinchi so'rovda internetga ulanadi, keyin emas",
+        "Istalgan bulutli API — chunki ular yuborilgan ma'lumotni saqlab qolmaydi"
       ],
       answer: [1],
       explain: "Hugging Face modeli sizning kompyuteringizda ishlaydi, shuning uchun tibbiy, moliyaviy yoki korporativ ma'lumot tashqi serverga yuborilmaydi. OpenAI API esa ma'lumotni ularning serveriga yuboradi.",
@@ -29,10 +29,10 @@ window.QUIZ = {
       q: "pipeline(\"sentiment-analysis\") ni model ko'rsatmasdan chaqirganda \"No model was supplied\" xabari chiqdi. Nega ishlab chiqarishda modelni doim ko'rsatish tavsiya etiladi?",
       type: "single",
       options: [
-        "Model ko'rsatilmasa pipeline umuman ishlamaydi va xato qaytaradi",
-        "Model ko'rsatilmasa pipeline internetsiz ishlay olmaydi",
-        "Standart model paket versiyasi bilan o'zgarishi va natija boshqacha chiqishi mumkin",
-        "Standart model faqat TensorFlow bilan ishlaydi, PyTorch bilan emas"
+        "Model ko'rsatilmasa pipeline umuman ishlamaydi va darhol xato qaytaradi",
+        "Model ko'rsatilmasa pipeline internetsiz ishlay olmaydi va har safar yuklaydi",
+        "Standart model paket versiyasi bilan o'zgarib, natija boshqacha chiqishi mumkin",
+        "Standart model faqat TensorFlow bilan ishlaydi, PyTorch bilan esa ishlamaydi"
       ],
       answer: [2],
       explain: "Pipeline ishlaydi, lekin o'zining standart modeliga o'tadi. Bu model versiya bilan o'zgarishi mumkin, shuning uchun bugun ishlagan kod ertaga boshqa natija beradi — model=\"...\" yozish natijani barqaror qiladi.",
@@ -84,10 +84,10 @@ window.QUIZ = {
       type: "multi",
       options: [
         "XLNet tokenlari oldida so'z oldidagi bo'shliqni bildiruvchi ▁ belgisi bor",
-        "XLNet harf registrini saqlaydi (▁I), BERT esa hammasini kichik harfga o'tkazadi (i)",
-        "XLNet ham [CLS] ga o'xshash tokenni input_ids ning boshiga qo'yadi",
+        "XLNet registrni saqlaydi (▁I), BERT esa hammasini kichik harfga o'tkazadi (i)",
+        "XLNet ham BERT'dagi [CLS] ga o'xshash tokenni input_ids ning boshiga qo'yadi",
         "XLNet maxsus tokenlari (<sep>, <cls>) ikkalasi ham oxirida turadi",
-        "Ikkala tokenizator bir xil so'z uchun bir xil ID beradi"
+        "Ikkala tokenizator bir xil so'z uchun bir xil ID beradi, faqat belgilar farq qiladi"
       ],
       answer: [0, 1, 3],
       explain: "Uchta farq: ▁ belgisi (SentencePiece), harf registri (uncased vs cased) va maxsus tokenlar joyi — BERT'da [CLS] boshida, XLNet'da <sep> va <cls> ikkalasi oxirida. ID'lar esa butunlay boshqacha.",
@@ -124,7 +124,7 @@ window.QUIZ = {
       q: "all_special_tokens ni chop etganda BERT'da 5 ta, distilgpt2 da esa atigi bitta (<|endoftext|>) maxsus token chiqdi. Buning sababi nima?",
       type: "single",
       options: [
-        "GPT faqat decoder: u matnni davom ettiradi, shuning uchun [CLS] va [MASK] kerak emas",
+        "GPT faqat decoder: u matnni davom ettiradi, [CLS] va [MASK] unga kerak emas",
         "distilgpt2 kichik model bo'lgani uchun maxsus tokenlar siqib tashlangan",
         "GPT tokenizatori maxsus tokenlarni lug'atning oxiriga yashirib qo'yadi",
         "distilgpt2 faqat bitta jumla bilan ishlaydi, shuning uchun unga [PAD] yetarli"
@@ -152,7 +152,7 @@ window.QUIZ = {
       type: "single",
       options: [
         "NEGATIVE",
-        "1",
+        "tensor(1)",
         "POSITIVE",
         "4.2408"
       ],
@@ -178,10 +178,10 @@ window.QUIZ = {
       q: "save_pretrained dan keyin katalogda model.safetensors paydo bo'ldi, pytorch_model.bin emas. Nega safetensors formati afzal?",
       type: "single",
       options: [
-        "U og'irliklarni siqib, model hajmini o'n barobar kamaytiradi",
-        "U lug'at va tokenizatsiya qoidalarini ham o'z ichiga oladi",
-        "U modelni TensorFlow'da ham ochishning yagona usuli",
-        "U faqat raqamlarni saqlaydi, .bin (pickle) esa yuklashda kod bajarishi mumkin"
+        "U og'irliklarni siqib, model hajmini diskda o'n barobar kamaytiradi",
+        "U lug'at va tokenizatsiya qoidalarini ham og'irliklar bilan birga saqlaydi",
+        "U modelni TensorFlow'da ham ochishning yagona rasmiy usuli hisoblanadi",
+        "U faqat raqamlarni saqlaydi, pickle'li .bin esa kod bajarishi mumkin"
       ],
       answer: [3],
       explain: "pytorch_model.bin Python pickle formatida — notanish manbadan yuklanganda zararli kod ishga tushishi mumkin. safetensors faqat raqamlarni saqlaydi, shuning uchun xavfsiz. Lug'at esa tokenizer.json da.",
@@ -191,10 +191,10 @@ window.QUIZ = {
       q: "from_pretrained Hub'dan modelni istalgan vaqtda yuklab bera oladi. Unda nima uchun ishlab chiqarishda modelni o'zingizda saqlash tavsiya etiladi?",
       type: "single",
       options: [
-        "Hub'dan yuklangan model har safar qayta o'qitilishi kerak",
+        "Hub'dan yuklangan model har safar ishga tushganda qayta o'qitilishi kerak",
         "Hub'dagi model muallif tomonidan yangilanishi yoki o'chirilishi mumkin",
-        "Hub'dan yuklangan model diskdagidan boshqacha logit beradi",
-        "from_pretrained disk yo'lini qabul qilmaydi, faqat Hub nomini"
+        "Hub'dan yuklangan model diskdagi nusxadan boshqacha logit qaytaradi",
+        "from_pretrained disk yo'lini qabul qilmaydi, faqat Hub'dagi model nomini"
       ],
       answer: [1],
       explain: "Barqarorlik — eng ko'p unutiladigan sabab: Hub'dagi model o'zgarsa yoki o'chirilsa, undan to'g'ridan-to'g'ri yuklaydigan tizim ishlamay qoladi. from_pretrained esa disk yo'lini ham qabul qiladi.",

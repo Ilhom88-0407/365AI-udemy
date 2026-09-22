@@ -24,7 +24,7 @@ window.QUIZ = {
       options: [
         "Shartdan keyin ikki nuqta emas, nuqtali vergul qo'yilishi kerak",
         "15 / 3 kasr son qaytargani uchun uni butun son bilan solishtirib bo'lmaydi",
-        "Biz tekshiryapmiz, biriktirmayapmiz — == kerak; bundan tashqari 5 o'zgaruvchi emas, son",
+        "Tenglikni tekshirish uchun == kerak, bitta = esa biriktirish",
         "if ichida faqat o'zgaruvchilarni solishtirish mumkin, sonlarni emas"
       ],
       answer: [2],
@@ -65,9 +65,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Hech narsa chiqmaydi",
-        "Katta",
-        "Kichik",
-        "Katta va Kichik"
+        "Faqat Katta chiqadi",
+        "Faqat Kichik chiqadi",
+        "Katta, keyin Kichik chiqadi"
       ],
       answer: [0],
       explain: "x = 3 hech qaysi shartga tushmaydi, shuning uchun hech narsa chiqmaydi. if/else bilan bunday bo'lishi mumkin emas: else qolgan hamma holatni qamraydi.",
@@ -107,10 +107,10 @@ window.QUIZ = {
       q: "compare_to_five da elif y < 5 bloki elif y < 0 dan oldin tursa, -3 uchun Negative o'rniga Less qaytadi. Buni qaysi qoida tuzatadi?",
       type: "single",
       options: [
-        "Eng tor shartni eng oldin, eng keng shartni eng oxirida yozish",
+        "Eng tor shartni eng oldin, eng kengini eng oxirida yozish",
         "Eng keng shartni eng oldin yozish, chunki u ko'p holatni qamraydi",
-        "Barcha elif larni alohida if larga almashtirish",
-        "elif lar sonini ikkitadan oshirmaslik"
+        "Barcha elif larni alohida if larga almashtirib, har birini tekshirish",
+        "elif lar sonini ikkitadan oshirmaslik, qolganini else ga berish"
       ],
       answer: [0],
       explain: "y < 0 tor shart, y < 5 keng shart. Tor shart oldin tursa, manfiy sonlar to'g'ri Negative ga tushadi, qolganlari keyingi elif ga o'tadi.",
@@ -121,9 +121,9 @@ window.QUIZ = {
       type: "single",
       options: [
         "Qolgan elif larni ham tekshirib, hamma rost bloklarni bajaradi",
-        "Faqat oxirgi rost shartning blokini bajaradi",
-        "Avval else ni tekshiradi, keyin yuqoriga qaytadi",
-        "Tegishli blokni bajaradi va zanjirning qolgan qismini bajarmaydi"
+        "Oxirigacha tekshirib, faqat oxirgi rost shartning blokini bajaradi",
+        "Avval else ni tekshiradi, keyin yuqoriga qaytib elif larni ko'radi",
+        "Shu blokni bajarib, zanjirning qolgan qismini o'tkazib yuboradi"
       ],
       answer: [3],
       explain: "Kompyuter buyruqlarni yuqoridan pastga, bittadan o'qiydi va birinchi rost shartda tegishli natijani bajaradi; qolgan elif va else e'tiborga olinmaydi.",
@@ -133,9 +133,9 @@ window.QUIZ = {
       q: "Bitta if/else konstruksiyasiga nechta elif qo'shish mumkin?",
       type: "single",
       options: [
-        "Faqat bitta",
+        "Faqat bitta — qolgani uchun yangi if",
         "Kerak bo'lgancha — cheklov yo'q",
-        "Ko'pi bilan uchta",
+        "Ko'pi bilan uchta — Python cheklovi",
         "if lar soniga teng miqdorda"
       ],
       answer: [1],
@@ -147,8 +147,8 @@ window.QUIZ = {
       type: "single",
       options: [
         "U majburiy, busiz 250 ham Average bo'lib qoladi",
-        "U x manfiy bo'lganda xatoni oldini oladi",
-        "U ortiqcha: elif ga yetganda x > 200 allaqachon yolg'on, demak x <= 200 avtomatik rost",
+        "U x manfiy bo'lganda Average chiqishining oldini oladi",
+        "U ortiqcha: elif ga yetganda x <= 200 allaqachon rost",
         "U kerak, chunki elif oldingi shartlarni hisobga olmaydi"
       ],
       answer: [2],
@@ -159,7 +159,7 @@ window.QUIZ = {
       q: "x = 2 va if x > 4: ... else: ... konstruksiyasida kompyuter natijani qanday tanlaydi?",
       type: "single",
       options: [
-        "Shartni hisoblab, unga boolean qiymat (bu yerda False) biriktiradi va else blokini tanlaydi",
+        "Shartni hisoblab, False qiymatini oladi va else blokini tanlaydi",
         "x ning qiymatini 4 bilan almashtiradi va if blokini bajaradi",
         "Ikkala blokni ham bajarib, oxirgisining natijasini ko'rsatadi",
         "Shart son qaytargani uchun uni satrga aylantirib solishtiradi"
@@ -171,7 +171,7 @@ window.QUIZ = {
     {
       q: "if ichida qaysi qiymatlar yolg'on (falsy) hisoblanadi? (bir nechta javob)",
       type: "multi",
-      options: ["0", "\"\" (bo'sh satr)", "[0]", "None", "-5"],
+      options: ["0 (int)", "\"\" (str)", "[0] (list)", "None", "-5 (int)"],
       answer: [0, 1, 3],
       explain: "0, bo'sh satr, bo'sh ro'yxat, bo'sh lug'at va None yolg'on hisoblanadi. [0] bo'sh emas, -5 esa noldan farqli son, shuning uchun ikkalasi rost.",
       lesson: { title: "Boolean qiymatlar haqida eslatma", href: "04-A-Note-on-Boolean-Values.md" }
