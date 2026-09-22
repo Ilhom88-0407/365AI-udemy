@@ -150,6 +150,6 @@ Qiynalgan savol bo'lsa → o'sha darsga qayting.
 
 ## ➡️ Keyingi qadam
 
-1. **Quiz 1** ni yeching (`7.1 Quiz 1.html`)
+1. **[Quiz 1](quiz.html)** ni yeching — brauzerda oching (o'zbekcha, 15 savol, darhol izoh bilan)
 2. **[02-modul: Ma'lumot — AI ning asosiy ingredienti](../02-Data-is-essential-for-building-AI/README.md)** ga o'ting
 

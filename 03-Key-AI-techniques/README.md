@@ -145,6 +145,6 @@ Har bir darsdagi **"O'zini tekshirish savollari"** — jami **26 ta savol**.
 
 ## ➡️ Keyingi qadam
 
-1. **Quiz 3** ni yeching (`4.3 Quiz 3.html`)
+1. **[Quiz 3](quiz.html)** ni yeching — brauzerda oching (o'zbekcha, 15 savol, darhol izoh bilan)
 2. **04-modul: Important AI branches** ga o'ting
 

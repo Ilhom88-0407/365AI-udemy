@@ -267,4 +267,4 @@ Face ID, spam          ChatGPT                   mustaqil fan yaratadi
 
 ⬅️ [Oldingi: AI, DS, ML va DL farqi](05-Demystifying-AI-DS-ML-DL.md) · 🏠 [Modul boshiga](README.md)
 
-➡️ **Keyingi qadam:** **Quiz 1** (`7.1 Quiz 1.html`), so'ngra **[02-modul: Ma'lumot — AI ning asosiy ingredienti](../02-Data-is-essential-for-building-AI/README.md)**
+➡️ **Keyingi qadam:** **[Quiz 1](quiz.html)** — o'zbekcha interaktiv test, so'ngra **[02-modul: Ma'lumot — AI ning asosiy ingredienti](../02-Data-is-essential-for-building-AI/README.md)**

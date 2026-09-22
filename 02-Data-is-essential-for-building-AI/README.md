@@ -131,6 +131,6 @@ Qiynalgan savol bo'lsa → o'sha darsga qayting.
 
 ## ➡️ Keyingi qadam
 
-1. **Quiz 2** ni yeching (`5.2 Quiz 2.html`)
+1. **[Quiz 2](quiz.html)** ni yeching — brauzerda oching (o'zbekcha, 15 savol, darhol izoh bilan)
 2. **03-modul: Key AI techniques** ga o'ting
 

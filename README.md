@@ -20,6 +20,8 @@
 | 09 | [Kelajakka nazar](09-Looking-ahead/README.md) | 2 | ✅ Tayyor |
 
 > 🎓 **"Intro to AI" bo'limi to'liq tugallandi — 9 modul, 41 dars.**
+>
+> 📝 **Interaktiv quizlar:** 01–04-modullarda `quiz.html` bor — faylni brauzerda oching (15 savol, har biriga izoh va darsga havola).
 
 ### 🐍 Python bo'limi
 

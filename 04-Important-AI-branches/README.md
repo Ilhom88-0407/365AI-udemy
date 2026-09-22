@@ -143,6 +143,6 @@ Har bir darsdagi **"O'zini tekshirish savollari"** — jami **37 ta savol**.
 
 ## ➡️ Keyingi qadam
 
-1. **Quiz 4** ni yeching (`5.4 Quiz 4.html`)
+1. **[Quiz 4](quiz.html)** ni yeching — brauzerda oching (o'zbekcha, 15 savol, darhol izoh bilan)
 2. **05-modul: Generativ AI ni tushunish** ga o'ting
 

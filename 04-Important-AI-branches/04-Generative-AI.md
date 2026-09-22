@@ -353,4 +353,4 @@ Umumiy tamoyil: o'quv ma'lumotidagi NAQSHLARDAN yangi kontent
 
 ⬅️ [Oldingi: An'anaviy ML](03-Traditional-ML.md) · 🏠 [Modul boshiga](README.md)
 
-➡️ **Keyingi qadam:** **Quiz 4** (`5.4 Quiz 4.html`), so'ngra **05-modul: Generativ AI ni tushunish**
+➡️ **Keyingi qadam:** **[Quiz 4](quiz.html)** — o'zbekcha interaktiv test, so'ngra **05-modul: Generativ AI ni tushunish**

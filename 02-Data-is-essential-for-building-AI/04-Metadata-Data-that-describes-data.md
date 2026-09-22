@@ -351,4 +351,4 @@ Ma'lumot tavsifi     →  Metadata                         (4-dars)
 
 ⬅️ [Oldingi: Belgilangan va belgilanmagan ma'lumot](03-Labelled-and-unlabelled-data.md) · 🏠 [Modul boshiga](README.md)
 
-➡️ **Keyingi qadam:** **Quiz 2** (`5.2 Quiz 2.html`), so'ngra **03-modul: Key AI techniques**
+➡️ **Keyingi qadam:** **[Quiz 2](quiz.html)** — o'zbekcha interaktiv test, so'ngra **03-modul: Key AI techniques**

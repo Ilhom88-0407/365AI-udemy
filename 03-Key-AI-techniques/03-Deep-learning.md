@@ -439,4 +439,4 @@ O'RGANISH = minglab takrorlash orqali eng yaxshi weights va biases ni topish
 
 ⬅️ [Oldingi: Uchta ML turi](02-Supervised-Unsupervised-Reinforcement.md) · 🏠 [Modul boshiga](README.md)
 
-➡️ **Keyingi qadam:** **Quiz 3** (`4.3 Quiz 3.html`), so'ngra **04-modul: Important AI branches**
+➡️ **Keyingi qadam:** **[Quiz 3](quiz.html)** — o'zbekcha interaktiv test, so'ngra **04-modul: Important AI branches**
